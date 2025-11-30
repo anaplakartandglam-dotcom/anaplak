@@ -1,0 +1,161 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500&family=Montserrat:wght@300;400;600;700;800&display=swap");
+
+/* ---- CUSTOM VARIANT ---- */
+@custom-variant dark (&:is(.dark *));
+
+/* ---------------------------------------------------------
+   🎨 COLOR SYSTEM (REWRITTEN FROM ZERO)
+---------------------------------------------------------- */
+
+:root {
+  /* Primary brand colors */
+  --color-primary: #53675C;      /* Green */
+  --color-secondary: #F8C8DC;    /* Pink */
+  --color-accent: #F2D2BD;       /* Cream */
+
+  /* Neutral colors */
+  --color-background: transparent;   /* MUST be transparent for hero */
+  --color-foreground: #ffffff;
+
+  /* Supporting colors */
+  --color-muted: #cccccc;
+  --color-muted-foreground: #666666;
+
+  --color-border: rgba(255, 255, 255, 0.15);
+  --color-input: rgba(255, 255, 255, 0.1);
+  --color-ring: rgba(255, 255, 255, 0.4);
+
+  /* Radius */
+  --radius: 0.625rem;
+}
+
+/* DARK MODE */
+.dark {
+  --color-background: #0f0f0f;       /* Dark background */
+  --color-foreground: #ffffff;
+
+  --color-primary: #53675C;
+  --color-secondary: #F8C8DC;
+  --color-accent: #F2D2BD;
+
+  --color-muted: #222;
+  --color-muted-foreground: #999;
+
+  --color-border: rgba(255, 255, 255, 0.15);
+  --color-input: rgba(255, 255, 255, 0.1);
+  --color-ring: rgba(255, 255, 255, 0.3);
+}
+
+/* ---------------------------------------------------------
+   🔥 Tailwind Theme Mapping
+---------------------------------------------------------- */
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: #000000;
+
+  --color-accent: var(--color-accent);
+  --color-accent-foreground: #000000;
+
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted-foreground);
+
+  --color-border: var(--color-border);
+  --color-input: var(--color-input);
+  --color-ring: var(--color-ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ---------------------------------------------------------
+   🧼 Base Styles (RESET + FIX)
+---------------------------------------------------------- */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply text-foreground;
+    background: transparent !important;   /* FIXED HERO + NAVBAR TRANSPARENCY */
+  }
+}
+
+/* Words that cycle */
+.stroke-words::before {
+  content: "hairstyles";
+  animation: wordCycle 6s infinite;
+  font-style: italic;
+}
+
+/* Cursor removed (not needed) */
+
+/* Smooth rotation for logo */
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-slow-delay {
+  animation: rotate-slow 12s linear infinite;
+  animation-delay: 1.5s;
+}
+
+/* Stroke + Fill Animation */
+@keyframes strokeFill {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 2px #E5C9C9;
+  }
+  20% {
+    color: #E5C9C9;
+    -webkit-text-stroke: 0px #E5C9C9;
+  }
+  40% {
+    color: #E5C9C9;
+  }
+  60% {
+    color: transparent;
+    -webkit-text-stroke: 2px #E5C9C9;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 2px #E5C9C9;
+  }
+}
+
+/* Word cycle logic */
+@keyframes wordCycle {
+  0% {
+    content: "hairstyles";
+    animation: strokeFill 2s;
+  }
+  33% {
+    content: "style";
+    animation: strokeFill 2s;
+  }
+  66% {
+    content: "fashion";
+    animation: strokeFill 2s;
+  }
+  100% {
+    content: "hairstyles";
+    animation: strokeFill 2s;
+  }
+}

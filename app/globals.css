@@ -1,0 +1,205 @@
+/* ---------------------------------------------------------
+   TAILWIND + ANIMATION IMPORTS
+--------------------------------------------------------- */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* ---------------------------------------------------------
+   BRAND COLORS
+--------------------------------------------------------- */
+:root {
+  --background: #0e0e0e;
+  --foreground: #ffffff;
+
+  --primary: #53675c;
+  --secondary: #f8c8dc;
+  --accent: #f2d2bd;
+
+  --border: rgba(255, 255, 255, 0.15);
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: rgba(255, 255, 255, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar on ALL browsers when using .no-scrollbar */
+.no-scrollbar {
+  -ms-overflow-style: none !important; /* IE + Edge */
+  scrollbar-width: none !important;    /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  display: none !important;            /* Safari + Chrome */
+}
+
+/* ---------------------------------------------------------
+   DARK MODE
+--------------------------------------------------------- */
+.dark {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+}
+
+/* ---------------------------------------------------------
+   TAILWIND VARIABLE MAP
+--------------------------------------------------------- */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+/* ---------------------------------------------------------
+   BASE STYLING
+--------------------------------------------------------- */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-reddit-sans, "Reddit Sans", sans-serif);
+  }
+}
+
+/* ---------------------------------------------------------
+   PARALLAX ANIMATION (used by slider if needed)
+--------------------------------------------------------- */
+@keyframes parallax {
+  0% {
+    transform: scale(1.1) translateY(0);
+  }
+  50% {
+    transform: scale(1.12) translateY(-35px);
+  }
+  100% {
+    transform: scale(1.1) translateY(0);
+  }
+}
+
+/* ---------------------------------------------------------
+   ROTATING LOGO (About section, circle section, etc.)
+--------------------------------------------------------- */
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-slow-delay {
+  animation: rotateSlow 12s linear infinite;
+  animation-delay: 1.2s;
+  transform-origin: center;
+}
+
+/* ---------------------------------------------------------
+   WORD REVEAL (About section)
+   - cycles between "hairstyles / styles / fashion"
+--------------------------------------------------------- */
+.word-reveal {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 1.2em;
+  line-height: 1.2em;
+  vertical-align: bottom;
+}
+
+.word-reveal span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideWords 6s infinite ease-in-out;
+}
+
+/* sequence for 3 words */
+.word-reveal span:nth-child(1) {
+  animation-delay: 0s;
+}
+.word-reveal span:nth-child(2) {
+  animation-delay: 2s;
+}
+.word-reveal span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes slideWords {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  12% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  45% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* ---------------------------------------------------------
+   TYPE CURSOR (used in footer JS typing: "|")
+--------------------------------------------------------- */
+.typed-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 400;
+  animation: typedBlink 0.7s infinite;
+}
+
+@keyframes typedBlink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------
+   CUSTOM SCROLLBAR (global)
+--------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}

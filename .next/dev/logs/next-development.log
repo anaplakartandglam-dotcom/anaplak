@@ -1,0 +1,700 @@
+[00:00:00.711] Server  LOG      ✓ Ready in 485ms
+[00:00:03.015] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:03.024] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:03.418] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:03.427] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:03.741] Server  ERROR   Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:04.001] Server  ERROR    ⨯ "unhandledRejection:" Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:04.234] Server  ERROR    ⨯ "unhandledRejection: " Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:04.562] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:04.572] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:04.851] Server  ERROR   Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:05.126] Server  ERROR    ⨯ "unhandledRejection:" Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:05.531] Server  ERROR    ⨯ "unhandledRejection: " Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__1da12600._.js from module [project]/Downloads/haires/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/Downloads/haires/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/Downloads/haires/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/Downloads/haires/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:00:06.005] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.820] Browser ERROR   uncaughtError: SyntaxError: Invalid or unexpected token
+[00:00:06.822] Browser ERROR   uncaughtError: SyntaxError: Invalid or unexpected token
+[00:00:40.885] Server  LOG      ✓ Compiled in 187ms
+[00:00:41.103] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__aca72eaf._.css
+[00:00:41.817] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__aca72eaf._.css
+[00:00:42.805] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:01.594] Server  LOG      ✓ Compiled in 130ms
+[00:02:01.819] Browser ERROR   ./Downloads/haires/components/footer.tsx:1:7
+Parsing ecmascript source code failed
+> 1 | #53675C
+    |       ^
+  2 |
+
+Identifier cannot follow number
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/haires/components/footer.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/haires/components/footer.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Server Component]
+[00:02:01.819] Browser ERROR   ./Downloads/haires/components/footer.tsx:1:7
+Parsing ecmascript source code failed
+> 1 | #53675C
+    |       ^
+  2 |
+
+Identifier cannot follow number
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/haires/components/footer.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/haires/components/footer.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Server Component]
+[00:02:02.989] Server  LOG      ✓ Compiled in 112ms
+[00:02:03.060] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:03.167] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:03.557] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:08.091] Server  LOG      ✓ Compiled in 119ms
+[00:03:23.755] Server  LOG      ✓ Compiled in 249ms
+[00:03:33.310] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:06:33.183] Server  LOG      ✓ Compiled in 170ms
+[00:09:04.549] Server  LOG      ✓ Compiled in 121ms
+[00:09:53.788] Server  LOG      ✓ Compiled in 200ms
+[00:09:56.186] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:56.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:22.225] Server  LOG      ✓ Compiled in 52ms
+[00:10:22.546] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:22.819] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:28.390] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:10:28.398] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:10:33.477] Server  LOG      ✓ Compiled in 42ms
+[00:10:33.759] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:33.848] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:36.223] Server  ERROR    ⨯ ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+
+
+[00:10:36.348] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:36.852] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:36.852] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:37.055] Browser ERROR   uncaughtError: Error: ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+
+
+[00:10:37.219] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:37.219] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:37.820] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:37.820] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:37.820] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:37.820] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:37.820] Browser ERROR   ./Downloads/haires/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/rajesh07/Downloads/haires/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    [at Input.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/rajesh07/Downloads/haires/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at async LazyResult.runAsync (turbopack:///[project]/Downloads/haires/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/haires/app/globals.css [Client Component Browser]
+    ./Downloads/haires/app/layout.tsx [Server Component]
+[00:10:38.982] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:10:39.012] Server  LOG      ✓ Compiled in 312ms
+[00:10:39.048] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:10:39.101] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:10:39.307] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:48.128] Server  LOG      ✓ Compiled in 413ms
+[00:13:45.530] Server  LOG      ✓ Compiled in 249ms
+[00:14:00.953] Server  LOG      ✓ Compiled in 50ms
+[00:14:02.562] Server  LOG      ✓ Compiled in 37ms
+[00:14:14.614] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:14:14.866] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:41.510] Server  LOG      ✓ Compiled in 129ms
+[00:14:48.057] Server  LOG      ✓ Compiled in 94ms
+[00:15:11.227] Server  LOG      ✓ Compiled in 84ms
+[00:15:18.564] Server  LOG      ✓ Compiled in 103ms
+[00:16:47.638] Server  LOG      ✓ Compiled in 205ms
+[00:16:47.806] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:47.829] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:51.934] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:51.941] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:54.610] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:54.992] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:03.898] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:03.905] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:05.321] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:05.327] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:09.556] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:09.563] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:11.392] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:11.555] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:14.992] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:15.013] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:26.770] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:26.787] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:29.444] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:43.862] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:17:43.869] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:21:38.344] Server  LOG      ✓ Compiled in 233ms
+[00:21:38.819] Browser ERROR   ./Downloads/haires/components/header.tsx:160:7
+Parsing ecmascript source code failed
+  158 |   </button>
+  159 | </div>
+> 160 |     </>
+      |       ^
+  161 |   )
+  162 | }
+  163 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/haires/components/header.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/haires/components/header.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Server Component]
+[00:21:38.820] Browser ERROR   ./Downloads/haires/components/header.tsx:160:7
+Parsing ecmascript source code failed
+  158 |   </button>
+  159 | </div>
+> 160 |     </>
+      |       ^
+  161 |   )
+  162 | }
+  163 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/haires/components/header.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/haires/components/header.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Server Component]
+[00:21:46.698] Server  LOG      ✓ Compiled in 91ms
+[00:21:46.745] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:21:46.756] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:21:52.283] Server  LOG      ✓ Compiled in 50ms
+[00:21:55.737] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:22:08.419] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:24:10.344] Server  LOG      ✓ Compiled in 170ms
+[00:26:16.896] Server  LOG      ✓ Compiled in 191ms
+[00:28:23.029] Server  LOG      ✓ Compiled in 192ms
+[00:30:14.240] Server  LOG      ✓ Compiled in 321ms
+[00:32:28.328] Server  LOG      ✓ Compiled in 135ms
+[00:34:18.069] Server  LOG      ✓ Compiled in 107ms
+[00:34:54.435] Server  LOG      ✓ Compiled in 42ms
+[00:36:57.888] Server  LOG      ✓ Compiled in 174ms
+[00:37:02.936] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:37:03.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:36.718] Server  LOG      ✓ Compiled in 193ms
+[00:42:28.929] Server  LOG      ✓ Compiled in 232ms
+[00:45:14.421] Server  LOG      ✓ Compiled in 168ms
+[00:47:22.645] Server  LOG      ✓ Compiled in 217ms
+[00:48:26.658] Server  LOG      ✓ Compiled in 248ms
+[00:48:30.566] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:48:31.018] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:56.039] Server  LOG      ✓ Compiled in 200ms
+[01:05:56.230] Server  LOG      ✓ Compiled in 289ms
+[01:06:15.145] Server  LOG      ✓ Compiled in 224ms
+[01:06:32.038] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:09:27.472] Server  LOG      ✓ Compiled in 244ms
+[01:09:29.673] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:10:03.314] Browser LOG     Form submitted: {"email":"","name":"","phone":"","procedure":""}
+[01:10:07.204] Browser LOG     Form submitted: {"email":"","name":"","phone":"","procedure":""}
+[01:12:56.295] Server  LOG      ✓ Compiled in 377ms
+[01:15:45.403] Server  LOG      ✓ Compiled in 227ms
+[01:15:46.974] Server  LOG      ✓ Compiled in 145ms
+[01:17:04.856] Server  LOG      ✓ Compiled in 270ms
+[01:17:17.250] Server  LOG      ✓ Compiled in 70ms
+[01:17:20.460] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:19:00.890] Server  LOG      ✓ Compiled in 251ms
+[01:19:03.286] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:19:28.208] Server  LOG      ✓ Compiled in 236ms
+[01:19:30.334] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:22:14.066] Server  LOG      ✓ Compiled in 265ms
+[01:24:17.382] Server  LOG      ✓ Compiled in 429ms
+[01:24:20.341] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:24:56.884] Server  LOG      ✓ Compiled in 268ms
+[01:24:58.806] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:32:48.586] Server  LOG      ✓ Compiled in 262ms
+[01:33:02.301] Server  LOG      ✓ Compiled in 131ms
+[01:33:07.270] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:49.064] Server  LOG      ✓ Compiled in 163ms
+[01:35:50.461] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:50.470] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:36:05.929] Server  LOG      ✓ Compiled in 135ms
+[01:41:04.909] Server  LOG      ✓ Compiled in 229ms
+[01:42:48.414] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:42:53.666] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:43:07.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:48.542] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:45:50.739] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:46:45.989] Server  LOG      ✓ Compiled in 282ms
+[01:46:54.191] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:46:56.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:48:00.610] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:48:02.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:04.686] Server  LOG      ✓ Compiled in 209ms
+[01:49:18.714] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:49:20.573] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:51:43.357] Server  LOG      ✓ Compiled in 185ms
+[01:54:08.933] Server  LOG      ✓ Compiled in 255ms
+[01:54:19.798] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:54:26.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:18.028] Server  LOG      ✓ Compiled in 388ms
+[01:59:13.719] Server  LOG      ✓ Compiled in 345ms
+[02:01:18.039] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:01:22.846] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:01:50.697] Server  LOG      ✓ Compiled in 220ms
+[02:02:12.535] Server  LOG      ✓ Compiled in 139ms
+[02:02:13.413] Server  LOG      ✓ Compiled in 68ms
+[02:02:16.108] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:03:10.259] Server  LOG      ✓ Compiled in 95ms
+[02:03:13.672] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:03:17.848] Server  LOG      ✓ Compiled in 119ms
+[02:03:20.615] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:03:26.016] Server  LOG      ✓ Compiled in 62ms
+[02:04:15.384] Server  LOG      ✓ Compiled in 271ms
+[02:07:02.261] Server  LOG      ✓ Compiled in 328ms
+[02:09:30.325] Server  LOG      ✓ Compiled in 213ms
+[02:11:41.610] Server  LOG      ✓ Compiled in 268ms
+[02:12:23.031] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:12:28.730] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:14:53.190] Server  LOG      ✓ Compiled in 1102ms
+[02:14:57.228] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:16:55.086] Server  LOG      ✓ Compiled in 318ms
+[02:17:21.214] Server  LOG      ✓ Compiled in 106ms
+[02:17:24.009] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:17:32.342] Server  LOG      ✓ Compiled in 183ms
+[02:17:32.753] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[02:17:32.754] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[02:17:35.706] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:17:35.959] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[02:17:35.965] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:17:36.706] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[02:17:42.487] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:17:42.636] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[02:17:42.640] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:17:43.119] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[02:17:54.396] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:17:54.398] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:17:54.412] Server  LOG      ✓ Compiled in 141ms
+[02:17:54.602] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:17:54.700] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:17:55.035] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:18:41.732] Server  LOG      ✓ Compiled in 86ms
+[02:18:47.801] Server  LOG      ✓ Compiled in 68ms
+[02:19:04.353] Server  LOG      ✓ Compiled in 233ms
+[02:19:22.081] Server  LOG      ✓ Compiled in 117ms
+[02:23:04.886] Server  LOG      ✓ Compiled in 607ms
+[02:23:10.344] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:25:56.170] Server  LOG      ✓ Compiled in 189ms
+[02:26:00.685] Server  LOG      ✓ Compiled in 88ms
+[02:26:23.462] Server  LOG      ✓ Compiled in 159ms
+[02:26:42.000] Server  LOG      ✓ Compiled in 135ms
+[02:26:44.749] Server  LOG      ✓ Compiled in 99ms
+[02:26:47.158] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:27:00.117] Server  LOG      ✓ Compiled in 59ms
+[02:27:23.446] Server  LOG      ✓ Compiled in 60ms
+[02:27:24.753] Server  LOG      ✓ Compiled in 44ms
+[02:30:42.702] Server  LOG      ✓ Compiled in 477ms
+[02:30:46.641] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:32:05.983] Server  LOG      ✓ Compiled in 193ms
+[02:32:06.570] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. textPath
+[02:32:06.570] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. textPath
+[02:32:06.570] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. text
+[02:32:06.755] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. textPath
+[02:32:06.755] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. textPath
+[02:32:06.755] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. text
+[02:32:16.988] Server  LOG      ✓ Compiled in 74ms
+[02:32:17.754] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. tspan
+[02:32:17.754] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. textPath
+[02:32:17.757] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. tspan
+[02:32:17.757] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. textPath
+[02:34:52.401] Server  LOG      ✓ Compiled in 310ms
+[02:35:12.735] Server  LOG      ✓ Compiled in 79ms
+[02:35:13.754] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. textPath
+[02:35:13.754] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. textPath
+[02:35:15.289] Server  LOG      ✓ Compiled in 44ms
+[02:35:24.987] Server  LOG      ✓ Compiled in 57ms
+[02:40:22.021] Server  LOG      ✓ Compiled in 282ms
+[02:44:05.973] Server  LOG      ✓ Compiled in 281ms
+[02:47:22.489] Server  LOG      ✓ Compiled in 764ms
+[02:48:24.105] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:48:26.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:53:26.936] Server  LOG      ✓ Compiled in 179ms
+[02:55:57.244] Server  LOG      ✓ Compiled in 519ms
+[02:55:58.387] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:55:58.913] Server  ERROR    ⨯ ReferenceError: testimonials is not defined
+[02:55:58.925] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:55:58.939] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:55:59.108] Server  ERROR    ⨯ ReferenceError: testimonials is not defined
+[02:55:59.116] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:55:59.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:56:00.006] Browser ERROR   uncaughtError: ReferenceError: testimonials is not defined
+[02:56:00.761] Browser ERROR   uncaughtError: ReferenceError: testimonials is not defined
+[02:56:06.860] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:56:06.862] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./Downloads/haires/components/testimonials.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:56:06.864] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:56:06.865] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:56:06.868] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./Downloads/haires/components/testimonials.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:56:06.871] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:56:06.876] Server  LOG      ✓ Compiled in 133ms
+[02:56:07.113] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:56:07.255] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:56:07.623] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:56:34.484] Server  LOG      ✓ Compiled in 138ms
+[02:56:56.207] Server  LOG      ✓ Compiled in 61ms
+[03:00:48.373] Server  LOG      ✓ Compiled in 364ms
+[03:01:55.860] Server  LOG      ✓ Compiled in 135ms
+[03:03:57.566] Server  LOG      ✓ Compiled in 262ms
+[03:05:50.587] Server  LOG      ✓ Compiled in 276ms
+[03:05:50.752] Browser ERROR   ./Downloads/haires/components/features.tsx:65:18
+Parsing ecmascript source code failed
+  63 | </div>
+  64 |
+> 65 |               <p className="text-white text-[11px] uppercase tracking-widest mt-2 pl-1">
+     |                  ^^^^^^^^^
+  66 |                 {item.title}
+  67 |               </p>
+  68 |             </div>
+
+Expected '</', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/haires/components/features.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/haires/components/features.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Server Component]
+[03:05:50.758] Browser ERROR   ./Downloads/haires/components/features.tsx:65:18
+Parsing ecmascript source code failed
+  63 | </div>
+  64 |
+> 65 |               <p className="text-white text-[11px] uppercase tracking-widest mt-2 pl-1">
+     |                  ^^^^^^^^^
+  66 |                 {item.title}
+  67 |               </p>
+  68 |             </div>
+
+Expected '</', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/haires/components/features.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Client Component Browser]
+    ./Downloads/haires/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/haires/components/features.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Client Component SSR]
+    ./Downloads/haires/app/page.tsx [Server Component]
+[03:05:54.314] Server  LOG      ✓ Compiled in 78ms
+[03:05:55.023] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[03:05:55.091] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[03:06:07.927] Server  LOG      ✓ Compiled in 141ms
+[03:08:00.139] Server  LOG      ✓ Compiled in 280ms
