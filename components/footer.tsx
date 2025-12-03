@@ -118,7 +118,7 @@ export default function Footer() {
         {/* COL 1 – LOGO */}
         <div className="flex md:block items-center md:items-start">
           <img
-            src="/logo.png"
+            src="/LOGO_NEW.png"
             alt="Anaplak Art & Glam Salon"
             className="w-[140px] md:w-[155px] object-contain"
           />
@@ -127,24 +127,10 @@ export default function Footer() {
         {/* COL 2 – AESTHETIC HARMONY */}
         <div className="text-white">
           <h3 className="text-[30px] md:text-[34px] leading-[1.1] font-semibold uppercase tracking-[0.08em]">
-            Aesthetic
+            ALWAYS 
             <br />
-            Harmony
+            BE ANAPLAK
           </h3>
-
-          <h4 className="mt-2 text-[26px] md:text-[28px] italic leading-[1.1]">
-            of your
-          </h4>
-
-          <h4 className="mt-1 text-[30px] md:text-[32px] font-semibold leading-[1.1]">
-            <span className="text-[#C8AFAE]">{words[typedIndex]}</span>
-            <span className="typed-cursor">|</span>
-          </h4>
-
-          <p className="mt-4 text-[15px] md:text-[16px] leading-[1.7] text-gray-300 max-w-md">
-            Our team of experts creates modern stylish looks while focusing
-            on the health and long-term beauty of your hair.
-          </p>
         </div>
 
         {/* COL 3 – EXPLORE */}

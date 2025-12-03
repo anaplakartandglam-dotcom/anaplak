@@ -121,7 +121,7 @@ export default function Header() {
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3 md:gap-4">
             <img
-              src="/logo.png"
+              src="/LOGO_NEW.png"
               alt="Anaplak Logo"
               className="w-[70px] md:w-[85px] h-auto object-contain"
             />
@@ -145,14 +145,19 @@ export default function Header() {
           </nav>
 
           {/* CTA (Desktop) */}
-          <div className="hidden lg:flex items-center gap-6">
-            <button
-              className="px-8 py-3 rounded-md text-white text-xs tracking-wider uppercase flex items-center gap-2"
-              style={{ backgroundColor: PRIMARY }}
-            >
-              An Appointment <ArrowRight size={14} />
-            </button>
-          </div>
+         <div className="hidden lg:flex items-center gap-6">
+  <Link
+    href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+    target="_blank"
+  >
+    <button
+      className="px-8 py-3 rounded-md text-white text-xs tracking-wider uppercase flex items-center gap-2"
+      style={{ backgroundColor: PRIMARY }}
+    >
+      Book An Appointment <ArrowRight size={14} />
+    </button>
+  </Link>
+</div>
 
           {/* Mobile Toggle */}
           <button
