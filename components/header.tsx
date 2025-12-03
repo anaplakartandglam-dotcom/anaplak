@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <>
       {/* --------------------------------------------------
-           TOP BAR — Contact Numbers + Social Icons
+           TOP BAR
       -------------------------------------------------- */}
       <div
         className="
@@ -45,15 +45,13 @@ export default function Header() {
         }}
       >
         <div className="w-full max-w-6xl px-4 md:px-10 flex justify-between items-center">
-          {/* LEFT — CONTACT NUMBERS */}
-
-          {/* Mobile: single main number */}
+          {/* Mobile Number */}
           <div className="flex md:hidden items-center gap-2 text-white text-xs tracking-wide">
             <Phone size={15} />
             <span>+91-98400&nbsp;88867</span>
           </div>
 
-          {/* Desktop / Tablet: both numbers */}
+          {/* Desktop Numbers */}
           <div className="hidden md:flex items-center gap-6 text-white text-sm tracking-wide">
             <span className="flex items-center gap-1">
               <Phone size={15} />
@@ -66,9 +64,8 @@ export default function Header() {
             </span>
           </div>
 
-          {/* RIGHT — SOCIAL ICONS */}
+          {/* Right Icons */}
           <div className="flex items-center gap-4 md:gap-6 text-white">
-            {/* Instagram */}
             <a
               href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D"
               target="_blank"
@@ -78,7 +75,6 @@ export default function Header() {
               <Instagram size={20} className="hidden md:block" />
             </a>
 
-            {/* Facebook */}
             <a
               href="https://www.facebook.com/anaplakartandglam"
               target="_blank"
@@ -88,7 +84,6 @@ export default function Header() {
               <Facebook size={20} className="hidden md:block" />
             </a>
 
-            {/* WhatsApp */}
             <a
               href="https://wa.me/919840088867"
               target="_blank"
@@ -102,7 +97,7 @@ export default function Header() {
       </div>
 
       {/* --------------------------------------------------
-           MAIN NAVBAR (FULL WIDTH)
+           MAIN NAVBAR
       -------------------------------------------------- */}
       <header
         className={`
@@ -118,17 +113,16 @@ export default function Header() {
         }}
       >
         <div className="w-full max-w-6xl mx-auto px-4 md:px-10 py-4 md:py-5 flex justify-between items-center">
-          {/* LOGO */}
+          
+          {/* Desktop Logo (with wrapper fix) */}
           <Link href="/" className="flex items-center gap-3 md:gap-4">
-            <img
-              src="/LOGO_NEW.png"
-              alt="Anaplak Logo"
-              className="w-[70px] md:w-[85px] h-auto object-contain"
-            />
-
-            <span className="text-white text-lg md:text-xl tracking-[4px] md:tracking-[6px] uppercase">
-              ANAPLAK
-            </span>
+            <div className="w-[150px] md:w-[200px] h-auto overflow-hidden flex items-center">
+              <img
+                src="/LOGO_NEW.png"
+                alt="Anaplak Logo"
+                className="w-full h-auto object-contain object-center"
+              />
+            </div>
           </Link>
 
           {/* Desktop Menu */}
@@ -144,26 +138,23 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA (Desktop) */}
-         <div className="hidden lg:flex items-center gap-6">
-  <Link
-    href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
-    target="_blank"
-  >
-    <button
-      className="px-8 py-3 rounded-md text-white text-xs tracking-wider uppercase flex items-center gap-2"
-      style={{ backgroundColor: PRIMARY }}
-    >
-      Book An Appointment <ArrowRight size={14} />
-    </button>
-  </Link>
-</div>
+          {/* CTA */}
+          <div className="hidden lg:flex items-center gap-6">
+            <Link
+              href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+              target="_blank"
+            >
+              <button
+                className="px-8 py-3 rounded-md text-white text-xs tracking-wider uppercase flex items-center gap-2"
+                style={{ backgroundColor: PRIMARY }}
+              >
+                Book An Appointment <ArrowRight size={14} />
+              </button>
+            </Link>
+          </div>
 
           {/* Mobile Toggle */}
-          <button
-            onClick={() => setOpen(true)}
-            className="lg:hidden text-white"
-          >
+          <button onClick={() => setOpen(true)} className="lg:hidden text-white">
             <Menu size={26} />
           </button>
         </div>
@@ -172,74 +163,75 @@ export default function Header() {
       {/* --------------------------------------------------
            MOBILE MENU
       -------------------------------------------------- */}
+{/* MOBILE MENU */}
+<div
+  className={`
+    fixed top-0 right-0 w-full h-full bg-[#0F0F0F]
+    p-8 flex flex-col gap-8 z-[70]
+    transition-transform duration-[650ms] ease-[cubic-bezier(0.77,0,0.175,1)]
+    ${open ? "translate-x-0" : "translate-x-full"}
+  `}
+>
+  <button
+    onClick={() => setOpen(false)}
+    className="absolute top-6 right-6 text-white"
+  >
+    <X size={26} />
+  </button>
 
-      {/* BACKDROP */}
-      <div
-        className={`
-          fixed inset-0 bg-black/40 backdrop-blur-sm z-[60]
-          transition-opacity duration-300
-          ${open ? "opacity-100 visible" : "opacity-0 invisible"}
-        `}
-        onClick={() => setOpen(false)}
+  {/* Mobile Logo */}
+  <div className="flex items-center gap-4 mt-6">
+    <div className="w-[150px] h-auto overflow-hidden flex items-center">
+      <img
+        src="/LOGO_NEW.png"
+        alt="Anaplak Logo"
+        className="w-full h-auto object-contain object-center"
       />
+    </div>
+  </div>
 
-      {/* SLIDE PANEL */}
-      <div
-        className={`
-          fixed top-0 right-0 w-full h-full bg-[#0F0F0F]
-          p-8 flex flex-col gap-8 z-[70]
-          transition-transform duration-[650ms] ease-[cubic-bezier(0.77,0,0.175,1)]
-          ${open ? "translate-x-0" : "translate-x-full"}
-        `}
+  {/* Links */}
+  <div className="flex flex-col gap-6 mt-8">
+    {["Home", "About", "Blog", "Store", "Contacts"].map((item) => (
+      <Link
+        key={item}
+        href="#"
+        className="text-white/90 uppercase tracking-[4px] text-lg hover:text-[#F8C8DC] transition"
       >
-        <button
-          onClick={() => setOpen(false)}
-          className="absolute top-6 right-6 text-white"
-        >
-          <X size={26} />
-        </button>
+        {item}
+      </Link>
+    ))}
+  </div>
 
-        {/* Mobile Logo */}
-        <div className="flex items-center gap-4 mt-6">
-          <img
-            src="/logo.png"
-            alt="Anaplak Logo"
-            className="w-[80px] h-auto object-contain"
-          />
-          <span className="text-white text-2xl tracking-[6px] uppercase">
-            ANAPLAK
-          </span>
-        </div>
+  {/* 📌 MOBILE CTA BUTTON INSERTED HERE */}
+  <div className="mt-4">
+    <Link
+      href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+      target="_blank"
+    >
+      <button
+        className="w-full py-3 rounded-md text-white text-sm tracking-wider uppercase flex items-center justify-center gap-2"
+        style={{ backgroundColor: PRIMARY }}
+      >
+        Book An Appointment <ArrowRight size={14} />
+      </button>
+    </Link>
+  </div>
 
-        {/* Links */}
-        <div className="flex flex-col gap-6 mt-8">
-          {["Home", "About", "Blog", "Store", "Contacts"].map((item) => (
-            <Link
-              key={item}
-              href="#"
-              className="text-white/90 uppercase tracking-[4px] text-lg hover:text-[#F8C8DC] transition"
-            >
-              {item}
-            </Link>
-          ))}
-        </div>
+  {/* Social Icons */}
+  <div className="flex gap-6 text-white mt-8">
+    <a href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D" target="_blank">
+      <Instagram size={24} />
+    </a>
+    <a href="https://www.facebook.com/anaplakartandglam" target="_blank">
+      <Facebook size={24} />
+    </a>
+    <a href="https://wa.me/919840088867" target="_blank">
+      <MessageCircle size={24} />
+    </a>
+  </div>
+</div>
 
-        {/* Social (mobile) */}
-        <div className="flex gap-6 text-white mt-8">
-          <a
-            href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D"
-            target="_blank"
-          >
-            <Instagram size={24} />
-          </a>
-          <a href="https://www.facebook.com/anaplakartandglam" target="_blank">
-            <Facebook size={24} />
-          </a>
-          <a href="https://wa.me/919840088867" target="_blank">
-            <MessageCircle size={24} />
-          </a>
-        </div>
-      </div>
     </>
   )
 }

@@ -63,7 +63,7 @@ export default function About() {
           }`}
         >
           <img
-            src="/about_img_01.jpg"
+            src="/aboutus.jpg"
             className="w-full h-[650px] md:h-[780px] object-cover rounded-xl"
           />
 
@@ -103,7 +103,7 @@ export default function About() {
           {/* BOTTOM IMAGE BLOCK */}
           <div className="relative w-full">
             <img
-              src="/about_img_02.jpg"
+              src="/aboutus2.jpg"
               className="w-full h-[480px] md:h-[580px] object-cover rounded-xl"
             />
 
