@@ -2782,11 +2782,6 @@
     line-height: 1.6;
   }
 
-  .leading-\[1\.7\] {
-    --tw-leading: 1.7;
-    line-height: 1.7;
-  }
-
   .leading-\[1\.25\] {
     --tw-leading: 1.25;
     line-height: 1.25;
@@ -5474,18 +5469,6 @@
   @media (min-width: 48rem) {
     .md\:text-\[22px\] {
       font-size: 22px;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:text-\[28px\] {
-      font-size: 28px;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:text-\[32px\] {
-      font-size: 32px;
     }
   }
 
