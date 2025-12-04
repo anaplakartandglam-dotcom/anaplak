@@ -112,7 +112,7 @@ export default function About() {
             {/* ROTATING LOGO */}
             {/* ROTATING LOGO — TOP RIGHT CORNER */}
 <img
-  src="/stamp.png"
+  src="/a.png"
   className="
     w-[150px] h-[150px]
     md:w-[180px] md:h-[180px]

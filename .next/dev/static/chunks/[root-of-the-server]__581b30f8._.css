@@ -924,10 +924,6 @@
     margin-top: calc(var(--spacing) * 12);
   }
 
-  .mt-\[2px\] {
-    margin-top: 2px;
-  }
-
   .mt-auto {
     margin-top: auto;
   }
@@ -1227,36 +1223,16 @@
     height: 260px;
   }
 
-  .h-\[360px\] {
-    height: 360px;
-  }
-
   .h-\[380px\] {
     height: 380px;
-  }
-
-  .h-\[400px\] {
-    height: 400px;
   }
 
   .h-\[420px\] {
     height: 420px;
   }
 
-  .h-\[460px\] {
-    height: 460px;
-  }
-
   .h-\[480px\] {
     height: 480px;
-  }
-
-  .h-\[500px\] {
-    height: 500px;
-  }
-
-  .h-\[540px\] {
-    height: 540px;
   }
 
   .h-\[650px\] {
@@ -1277,10 +1253,6 @@
 
   .h-\[calc\(100\%-1px\)\] {
     height: calc(100% - 1px);
-  }
-
-  .h-\[px\] {
-    height: px;
   }
 
   .h-\[var\(--radix-navigation-menu-viewport-height\)\] {
@@ -1325,10 +1297,6 @@
 
   .max-h-\[300px\] {
     max-height: 300px;
-  }
-
-  .max-h-\[450px\] {
-    max-height: 450px;
   }
 
   .max-h-screen {
@@ -1431,24 +1399,8 @@
     width: 2px;
   }
 
-  .w-\[8px\] {
-    width: 8px;
-  }
-
-  .w-\[10px\] {
-    width: 10px;
-  }
-
-  .w-\[10x\] {
-    width: 10x;
-  }
-
   .w-\[18px\] {
     width: 18px;
-  }
-
-  .w-\[18x\] {
-    width: 18x;
   }
 
   .w-\[20px\] {
@@ -1964,12 +1916,6 @@
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
-  }
-
-  :where(.space-y-5 > :not(:last-child)) {
-    --tw-space-y-reverse: 0;
-    margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
-    margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
   }
 
   :where(.space-y-6 > :not(:last-child)) {
@@ -4977,12 +4923,6 @@
     margin-top: calc(var(--spacing) * -1);
   }
 
-  @media not (min-width: 40rem) {
-    .max-sm\:scale-\[0\.92\] {
-      scale: .92;
-    }
-  }
-
   @media (min-width: 40rem) {
     .sm\:top-auto {
       top: auto;
@@ -5052,12 +4992,6 @@
   @media (min-width: 40rem) {
     .sm\:h-\[360px\] {
       height: 360px;
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:max-h-\[500px\] {
-      max-height: 500px;
     }
   }
 
@@ -5356,12 +5290,6 @@
   @media (min-width: 48rem) {
     .md\:h-\[780px\] {
       height: 780px;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:max-h-\[550px\] {
-      max-height: 550px;
     }
   }
 

@@ -901,7 +901,7 @@ function About() {
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/stamp.png",
+                                    src: "/a.png",
                                     className: " w-[150px] h-[150px] md:w-[180px] md:h-[180px] absolute -top-10 md:-top-14 -right-10 md:-right-14 opacity-90 rotate-slow-delay pointer-events-none "
                                 }, void 0, false, {
                                     fileName: "[project]/components/about.tsx",
