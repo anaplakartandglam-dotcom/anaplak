@@ -262,14 +262,7 @@
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --color-primary: var(--primary);
-    --color-secondary: var(--secondary);
-    --color-accent: var(--accent);
     --color-border: var(--border);
-    --color-input: var(--input);
-    --color-ring: var(--ring);
   }
 
   @supports (color: lab(0% 0 0)) {
