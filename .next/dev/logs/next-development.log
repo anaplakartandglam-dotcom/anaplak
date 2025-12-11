@@ -1,6 +1,195 @@
-[00:00:00.756] Server  LOG      ✓ Ready in 547ms
-[00:00:04.557] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+[00:00:00.688] Server  LOG      ✓ Ready in 486ms
+[00:00:03.428] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:08.636] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+[00:00:07.471] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:08.805] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:07.633] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:09.903] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:03:10.614] Server  LOG      ✓ Compiled in 144ms
+[00:04:00.075] Server  LOG      ✓ Compiled in 79ms
+[00:07:56.410] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:00.618] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:02.260] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:13:31.592] Server  LOG      ✓ Compiled in 228ms
+[00:17:24.775] Server  LOG      ✓ Compiled in 214ms
+[00:21:49.096] Server  LOG      ✓ Compiled in 123ms
+[00:22:18.179] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:23:00.437] Server  LOG      ✓ Compiled in 118ms
+[00:24:37.065] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:24:37.249] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:25:05.087] Server  LOG      ✓ Compiled in 189ms
+[00:25:22.166] Server  LOG      ✓ Compiled in 80ms
+[00:25:41.220] Server  LOG      ✓ Compiled in 138ms
+[00:26:02.593] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:27:50.271] Server  LOG      ✓ Compiled in 152ms
+[00:28:10.780] Server  LOG      ✓ Compiled in 116ms
+[00:28:29.216] Server  LOG      ✓ Compiled in 68ms
+[00:28:45.957] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.959] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.960] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.960] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.960] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.960] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.960] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.960] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [, false, 0, MODERN EDGE,PERFECT LOOK,BEAUTY NEEDS,STYLE GOALS]
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:28:45.961] Browser ERROR   uncaughtError: ReferenceError: fullText is not defined
+[00:55:04.624] Server  LOG      ✓ Compiled in 335ms
+[00:55:53.798] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:29.177] Server  LOG      ✓ Compiled in 137ms
+[00:59:00.020] Server  LOG      ✓ Compiled in 130ms
+[01:01:04.817] Server  LOG      ✓ Compiled in 219ms
+[01:01:44.776] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:05:17.187] Server  LOG      ✓ Compiled in 201ms
+[01:06:58.896] Server  LOG      ✓ Compiled in 228ms
+[01:07:11.490] Server  LOG      ✓ Compiled in 223ms
+[01:09:44.620] Server  LOG      ✓ Compiled in 226ms
+[01:10:06.355] Browser LOG     Open video modal
+[01:10:07.273] Browser LOG     Open video modal
+[01:10:15.573] Browser LOG     Open video modal
+[01:11:08.010] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:11:08.195] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:11:47.794] Server  LOG      ✓ Compiled in 132ms
+[01:12:34.902] Server  LOG      ✓ Compiled in 117ms
+[01:12:52.355] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:12:57.443] Server  LOG      ✓ Compiled in 255ms
+[01:18:25.472] Server  LOG      ✓ Compiled in 454ms
+[01:18:26.088] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:21:31.919] Server  LOG      ✓ Compiled in 240ms
+[01:22:06.592] Server  LOG      ✓ Compiled in 287ms
+[01:22:17.164] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:22:17.471] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:22:42.216] Server  LOG      ✓ Compiled in 210ms
+[01:23:55.113] Server  LOG      ✓ Compiled in 186ms
+[01:24:15.798] Server  LOG      ✓ Compiled in 96ms
+[01:25:33.911] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:25:34.079] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:26:48.326] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:26:48.416] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:27:18.728] Server  LOG      ✓ Compiled in 96ms
+[01:27:23.988] Server  LOG      ✓ Compiled in 43ms
+[01:27:36.109] Server  LOG      ✓ Compiled in 62ms
+[01:28:07.080] Server  LOG      ✓ Compiled in 95ms
+[01:28:24.346] Server  LOG      ✓ Compiled in 97ms
+[01:31:06.660] Server  LOG      ✓ Compiled in 246ms
+[01:33:20.634] Server  LOG      ✓ Compiled in 123ms
+[01:33:21.252] Browser ERROR   uncaughtError: ReferenceError: FAQAccordion is not defined
+[01:33:46.754] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:33:46.790] Server  LOG      ✓ Compiled in 152ms
+[01:33:46.960] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:33:47.149] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:33:47.349] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:34:13.037] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:34:14.863] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:34:14.950] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:34:15.012] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:34:48.775] Server  LOG      ✓ Compiled in 131ms
+[01:34:58.344] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:08.632] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:23.834] Server  LOG      ✓ Compiled in 66ms
+[01:35:39.855] Server  LOG      ✓ Compiled in 60ms
+[01:35:39.890] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:43.486] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:43.648] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:46.388] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:35:46.566] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:35:55.510] Server  LOG      ✓ Compiled in 65ms
+[01:35:58.796] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:36:06.156] Server  LOG      ✓ Compiled in 70ms
+[01:36:06.191] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:36:09.481] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:36:09.589] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:36:13.212] Server  LOG      ✓ Compiled in 73ms
+[01:37:21.298] Server  LOG      ✓ Compiled in 176ms
+[01:38:07.262] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:38:07.403] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:38:09.489] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:38:11.328] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:38:12.557] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:38:21.090] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:38:22.009] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:38:23.340] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:38:26.393] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:39:37.643] Server  LOG      ✓ Compiled in 130ms
+[01:39:55.200] Server  LOG      ✓ Compiled in 92ms
+[01:40:25.048] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:40:36.739] Server  LOG      ✓ Compiled in 180ms
+[01:41:22.034] Server  LOG      ✓ Compiled in 95ms
+[01:42:47.087] Server  LOG      ✓ Compiled in 109ms
+[01:44:16.548] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:44:16.704] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:44:18.486] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:44:20.241] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:44:20.802] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:44:21.385] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:44:22.057] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:44:38.231] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport

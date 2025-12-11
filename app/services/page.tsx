@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react"
 import { ChevronDown, Sparkles, Scissors, Palette, Heart, Crown } from "lucide-react"
 import Image from "next/image"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
 
 const services = [
   {
@@ -278,194 +280,195 @@ export default function ServicesSection() {
   }
 
   return (
-    <div className="min-h-screen text-white" style={{ backgroundColor: "#0e0e0e" }}>
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#f8c8dc]/10 via-transparent to-transparent"></div>
-        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1
-              className="text-balance font-serif text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
-              style={{ color: "#53675C" }}
-            >
-              Our Services
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-300">
-              Discover our comprehensive range of beauty and wellness services, tailored to bring out your natural
-              elegance
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Services Grid */}
-      <div className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
-        {services.map((category) => {
-          const Icon = category.icon
-          const isVisible = visibleCategories.has(category.category)
-
-          return (
-            <div
-              key={category.category}
-              data-category={category.category}
-              className={`mb-16 transition-all duration-700 ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
-            >
-              {/* Category Header */}
-              <div className="mb-8 flex items-center gap-3">
-                <Icon className="h-8 w-8" style={{ color: category.color }} />
-                <h2 className="font-serif text-3xl font-bold" style={{ color: category.color }}>
-                  {category.category}
-                </h2>
-              </div>
-
-              {/* Service Cards */}
-              <div className="grid gap-6 md:grid-cols-2">
-                {category.items.map((service) => {
-                  const isExpanded = expandedService === service.title
-
-                  return (
-                    <div
-                      key={service.title}
-                      className="group relative overflow-hidden rounded-lg bg-zinc-800/50 backdrop-blur transition-all"
-                      style={{ borderWidth: "1px", borderColor: "#ffffff26" }}
-                    >
-                      <div className="relative h-48 w-full overflow-hidden">
-                        <Image
-                          src={service.image || "/placeholder.svg"}
-                          alt={service.title}
-                          fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e]/90 to-transparent"></div>
-                      </div>
-
-                      <button onClick={() => toggleService(service.title)} className="w-full p-6 text-left">
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="flex-1">
-                            <h3 className="text-xl font-semibold text-white">{service.title}</h3>
-                            <p className="mt-2 text-zinc-400">{service.description}</p>
-                          </div>
-                          <ChevronDown
-                            className={`h-5 w-5 flex-shrink-0 text-zinc-400 transition-transform ${
-                              isExpanded ? "rotate-180" : ""
-                            }`}
-                          />
-                        </div>
-                      </button>
-
-                      {/* Expanded Content */}
-                      <div
-                        className={`overflow-hidden transition-all duration-300 ${
-                          isExpanded ? "max-h-[2000px]" : "max-h-0"
-                        }`}
-                      >
-                        <div className="p-6 pt-6" style={{ borderTopWidth: "1px", borderTopColor: "#ffffff26" }}>
-                          <p className="mb-6 leading-relaxed text-zinc-300">{service.details}</p>
-
-                          {/* Benefits */}
-                          <div className="mb-6">
-                            <h4 className="mb-3 font-semibold" style={{ color: category.color }}>
-                              Benefits
-                            </h4>
-                            <ul className="space-y-2">
-                              {service.benefits.map((benefit, idx) => (
-                                <li key={idx} className="flex items-start gap-2 text-sm text-zinc-300">
-                                  <span
-                                    className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full"
-                                    style={{ backgroundColor: category.color }}
-                                  ></span>
-                                  <span>{benefit}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          {/* Process */}
-                          <div className="mb-6">
-                            <h4 className="mb-3 font-semibold" style={{ color: category.color }}>
-                              Process
-                            </h4>
-                            <ol className="space-y-2">
-                              {service.process.map((step, idx) => (
-                                <li key={idx} className="flex items-start gap-3 text-sm text-zinc-300">
-                                  <span
-                                    className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-xs font-semibold"
-                                    style={{ backgroundColor: category.color, color: "#fff" }}
-                                  >
-                                    {idx + 1}
-                                  </span>
-                                  <span className="pt-0.5">{step}</span>
-                                </li>
-                              ))}
-                            </ol>
-                          </div>
-
-                          {/* Deliverables */}
-                          <div className="rounded-lg p-4" style={{ backgroundColor: "#0e0e0e" }}>
-                            <h4 className="mb-2 text-sm font-semibold" style={{ color: category.color }}>
-                              What You Get
-                            </h4>
-                            <p className="text-sm leading-relaxed text-zinc-300">{service.deliverables}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
-          )
-        })}
-      </div>
-
-      {/* Booking CTA Section */}
-      <div className="relative mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
-        <div
-          className="relative overflow-hidden rounded-2xl p-12 text-center"
-          style={{
-            background: "linear-gradient(135deg, #53675C 0%, #0e0e0e 100%)",
-            borderWidth: "1px",
-            borderColor: "#ffffff26",
-          }}
-        >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-[#f8c8dc]/20 via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#f2d2bd]/20 via-transparent to-transparent"></div>
-
-          <div className="relative">
-            <h2 className="text-balance font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Ready to Transform Your Look?
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-200">
-              Book your appointment today and experience the luxury of personalized beauty services
-            </p>
-
-            <a
-              href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              style={{
-                background: "linear-gradient(90deg, #f8c8dc 0%, #f2d2bd 100%)",
-              }}
-            >
-              {/* Animated shine effect */}
-              <span className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/30 to-transparent"></span>
-
-              <span className="relative text-[#0e0e0e]">Book Your Appointment</span>
-              <svg
-                className="relative h-5 w-5 text-[#0e0e0e] transition-transform group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+    <>
+      <Header />
+      <div className="min-h-screen text-white" style={{ backgroundColor: "#0e0e0e" }}>
+        {/* Hero Section */}
+        <div className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#f8c8dc]/10 via-transparent to-transparent"></div>
+          <div className="relative mx-auto max-w-7xl px-4 pt-40 pb-24 sm:px-6 lg:px-8 md:pt-48">
+            <div className="text-center">
+              <h1
+                className="text-balance font-serif text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
+                style={{ color: "#53675C" }}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </a>
+                Our Services
+              </h1>
+              <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-300">
+                Discover our comprehensive range of beauty and wellness services, tailored to bring out your natural
+                elegance
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Services Grid */}
+        <div className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+          {services.map((category) => {
+            const Icon = category.icon
+            const isVisible = visibleCategories.has(category.category)
+
+            return (
+              <div
+                key={category.category}
+                data-category={category.category}
+                className={`mb-16 transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                  }`}
+              >
+                {/* Category Header */}
+                <div className="mb-8 flex items-center gap-3">
+                  <Icon className="h-8 w-8" style={{ color: category.color }} />
+                  <h2 className="font-serif text-3xl font-bold" style={{ color: category.color }}>
+                    {category.category}
+                  </h2>
+                </div>
+
+                {/* Service Cards */}
+                <div className="grid gap-6 md:grid-cols-2">
+                  {category.items.map((service) => {
+                    const isExpanded = expandedService === service.title
+
+                    return (
+                      <div
+                        key={service.title}
+                        className="group relative overflow-hidden rounded-lg bg-zinc-800/50 backdrop-blur transition-all"
+                        style={{ borderWidth: "1px", borderColor: "#ffffff26" }}
+                      >
+                        <div className="relative h-48 w-full overflow-hidden">
+                          <Image
+                            src={service.image || "/placeholder.svg"}
+                            alt={service.title}
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e]/90 to-transparent"></div>
+                        </div>
+
+                        <button onClick={() => toggleService(service.title)} className="w-full p-6 text-left">
+                          <div className="flex items-start justify-between gap-4">
+                            <div className="flex-1">
+                              <h3 className="text-xl font-semibold text-white">{service.title}</h3>
+                              <p className="mt-2 text-zinc-400">{service.description}</p>
+                            </div>
+                            <ChevronDown
+                              className={`h-5 w-5 flex-shrink-0 text-zinc-400 transition-transform ${isExpanded ? "rotate-180" : ""
+                                }`}
+                            />
+                          </div>
+                        </button>
+
+                        {/* Expanded Content */}
+                        <div
+                          className={`overflow-hidden transition-all duration-300 ${isExpanded ? "max-h-[2000px]" : "max-h-0"
+                            }`}
+                        >
+                          <div className="p-6 pt-6" style={{ borderTopWidth: "1px", borderTopColor: "#ffffff26" }}>
+                            <p className="mb-6 leading-relaxed text-zinc-300">{service.details}</p>
+
+                            {/* Benefits */}
+                            <div className="mb-6">
+                              <h4 className="mb-3 font-semibold" style={{ color: category.color }}>
+                                Benefits
+                              </h4>
+                              <ul className="space-y-2">
+                                {service.benefits.map((benefit, idx) => (
+                                  <li key={idx} className="flex items-start gap-2 text-sm text-zinc-300">
+                                    <span
+                                      className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full"
+                                      style={{ backgroundColor: category.color }}
+                                    ></span>
+                                    <span>{benefit}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+
+                            {/* Process */}
+                            <div className="mb-6">
+                              <h4 className="mb-3 font-semibold" style={{ color: category.color }}>
+                                Process
+                              </h4>
+                              <ol className="space-y-2">
+                                {service.process.map((step, idx) => (
+                                  <li key={idx} className="flex items-start gap-3 text-sm text-zinc-300">
+                                    <span
+                                      className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-xs font-semibold"
+                                      style={{ backgroundColor: category.color, color: "#fff" }}
+                                    >
+                                      {idx + 1}
+                                    </span>
+                                    <span className="pt-0.5">{step}</span>
+                                  </li>
+                                ))}
+                              </ol>
+                            </div>
+
+                            {/* Deliverables */}
+                            <div className="rounded-lg p-4" style={{ backgroundColor: "#0e0e0e" }}>
+                              <h4 className="mb-2 text-sm font-semibold" style={{ color: category.color }}>
+                                What You Get
+                              </h4>
+                              <p className="text-sm leading-relaxed text-zinc-300">{service.deliverables}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Booking CTA Section */}
+        <div className="relative mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+          <div
+            className="relative overflow-hidden rounded-2xl p-12 text-center"
+            style={{
+              background: "linear-gradient(135deg, #53675C 0%, #0e0e0e 100%)",
+              borderWidth: "1px",
+              borderColor: "#ffffff26",
+            }}
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-[#f8c8dc]/20 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#f2d2bd]/20 via-transparent to-transparent"></div>
+
+            <div className="relative">
+              <h2 className="text-balance font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                Ready to Transform Your Look?
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-200">
+                Book your appointment today and experience the luxury of personalized beauty services
+              </p>
+
+              <a
+                href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{
+                  background: "linear-gradient(90deg, #f8c8dc 0%, #f2d2bd 100%)",
+                }}
+              >
+                {/* Animated shine effect */}
+                <span className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/30 to-transparent"></span>
+
+                <span className="relative text-[#0e0e0e]">Book Your Appointment</span>
+                <svg
+                  className="relative h-5 w-5 text-[#0e0e0e] transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   )
 }
