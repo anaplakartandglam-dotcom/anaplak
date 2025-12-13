@@ -20,7 +20,7 @@
       "jsx",
       "js"
     ],
-    "poweredByHeader": true,
+    "poweredByHeader": false,
     "compress": true,
     "images": {
       "deviceSizes": [
@@ -34,6 +34,7 @@
         3840
       ],
       "imageSizes": [
+        16,
         32,
         48,
         64,
@@ -47,14 +48,15 @@
       "loaderFile": "",
       "domains": [],
       "disableStaticImages": false,
-      "minimumCacheTTL": 14400,
+      "minimumCacheTTL": 31536000,
       "formats": [
+        "image/avif",
         "image/webp"
       ],
       "maximumRedirects": 3,
       "dangerouslyAllowLocalIP": false,
-      "dangerouslyAllowSVG": false,
-      "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
+      "dangerouslyAllowSVG": true,
+      "contentSecurityPolicy": "default-src 'self'; script-src 'none'; sandbox;",
       "contentDispositionType": "attachment",
       "localPatterns": [
         {
@@ -66,7 +68,7 @@
       "qualities": [
         75
       ],
-      "unoptimized": true
+      "unoptimized": false
     },
     "devIndicators": {
       "position": "bottom-left"
@@ -82,7 +84,7 @@
     "productionBrowserSourceMaps": false,
     "excludeDefaultMomentLocales": true,
     "reactProductionProfiling": false,
-    "reactStrictMode": null,
+    "reactStrictMode": true,
     "reactMaxHeadersLength": 6000,
     "httpAgentOptions": {
       "keepAlive": true
@@ -207,6 +209,7 @@
       "mcpServer": true,
       "optimizePackageImports": [
         "lucide-react",
+        "@radix-ui/react-icons",
         "date-fns",
         "lodash-es",
         "ramda",
@@ -288,6 +291,8 @@
     "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight",
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
+    "swcMinify": true,
+    "optimizeFonts": true,
     "turbopack": {
       "root": "/Users/rajesh07/Downloads/haires"
     },

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0)
@@ -13,22 +14,22 @@ export default function HeroSlider() {
     {
       line1: "PREMIUM SALON",
       line2: "BEAUTY EXPERTS",
-      image: "https://haires.like-themes.com/wp-content/uploads/2025/09/SLIDE_01.jpg",
+      image: "/SLIDE_01.jpg",
     },
     {
       line1: "BRIDAL MAKEUP",
       line2: "GLAM STUDIO",
-      image: "https://haires.like-themes.com/wp-content/uploads/2025/09/SLIDE_02.jpg",
+      image: "/SLIDE_02.jpg",
     },
     {
       line1: "STYLE DESIGN",
       line2: "HAIR ARTISTS",
-      image: "https://haires.like-themes.com/wp-content/uploads/2025/09/SLIDE_03.jpg",
+      image: "/SLIDE_03.jpg",
     },
     {
       line1: "SKIN CARE",
       line2: "BEAUTY BAR",
-      image: "https://haires.like-themes.com/wp-content/uploads/2025/09/SLIDE_04.jpg",
+      image: "/SLIDE_04.jpg",
     },
   ]
 
@@ -52,14 +53,18 @@ export default function HeroSlider() {
             ${current === index ? "opacity-100" : "opacity-0"}
           `}
         >
-          <img
+          <Image
             src={slide.image}
+            alt={`${slide.line1} ${slide.line2}`}
+            fill
+            priority={index === 0}
+            quality={90}
+            sizes="100vw"
             className={`
-              absolute inset-0 w-full h-full object-cover
+              object-cover
               transition-transform duration-[9000ms] ease-out
               ${current === index ? "scale-[1.18]" : "scale-[1.05]"}
             `}
-            alt="slide"
           />
           <div className="absolute inset-0"></div>
         </div>
@@ -112,42 +117,42 @@ export default function HeroSlider() {
           </h1>
 
           {/* BUTTON */}
-      <button
-  className="mt-8 px-12 py-4 rounded-full shadow-lg transition-all duration-500 animate-fadeUp"
-  style={{
-    backgroundColor: PRIMARY,
-    color: SECONDARY,
-    fontFamily: "Gilroy",
-    fontWeight: 600,
-    fontSize: "14px",
-    letterSpacing: "3px",
-    textTransform: "uppercase",
-    animationDelay: "0.6s",
-    boxShadow: "0 0 20px rgba(83,103,92,0.35)",
-  }}
-  onMouseOver={(e) => {
-    e.currentTarget.style.backgroundColor = SECONDARY
-    e.currentTarget.style.color = PRIMARY
-    e.currentTarget.style.boxShadow = "0 0 34px rgba(248,200,220,0.45)"
-    e.currentTarget.style.transform = "translateY(-3px)"
-  }}
-  onMouseOut={(e) => {
-    e.currentTarget.style.backgroundColor = PRIMARY
-    e.currentTarget.style.color = SECONDARY
-    e.currentTarget.style.boxShadow = "0 0 20px rgba(83,103,92,0.35)"
-    e.currentTarget.style.transform = "translateY(0px)"
-  }}
->
-  Read More
-</button>
+          <button
+            className="mt-8 px-12 py-4 rounded-full shadow-lg transition-all duration-500 animate-fadeUp"
+            style={{
+              backgroundColor: PRIMARY,
+              color: SECONDARY,
+              fontFamily: "Gilroy",
+              fontWeight: 600,
+              fontSize: "14px",
+              letterSpacing: "3px",
+              textTransform: "uppercase",
+              animationDelay: "0.6s",
+              boxShadow: "0 0 20px rgba(83,103,92,0.35)",
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = SECONDARY
+              e.currentTarget.style.color = PRIMARY
+              e.currentTarget.style.boxShadow = "0 0 34px rgba(248,200,220,0.45)"
+              e.currentTarget.style.transform = "translateY(-3px)"
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = PRIMARY
+              e.currentTarget.style.color = SECONDARY
+              e.currentTarget.style.boxShadow = "0 0 20px rgba(83,103,92,0.35)"
+              e.currentTarget.style.transform = "translateY(0px)"
+            }}
+          >
+            Read More
+          </button>
 
 
         </div>
       </div>
 
       {/* RIGHT BULLETS (hidden on mobile) */}
-  {/* RIGHT BULLETS (hidden on mobile) */}
-{/* <div
+      {/* RIGHT BULLETS (hidden on mobile) */}
+      {/* <div
   className="
     hidden sm:flex flex-col gap-6
     absolute right-10 top-1/2 -translate-y-1/2 z-20

@@ -12,6 +12,7 @@
       3840
     ],
     "imageSizes": [
+      16,
       32,
       48,
       64,
@@ -25,14 +26,15 @@
     "loaderFile": "",
     "domains": [],
     "disableStaticImages": false,
-    "minimumCacheTTL": 14400,
+    "minimumCacheTTL": 31536000,
     "formats": [
+      "image/avif",
       "image/webp"
     ],
     "maximumRedirects": 3,
     "dangerouslyAllowLocalIP": false,
-    "dangerouslyAllowSVG": false,
-    "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
+    "dangerouslyAllowSVG": true,
+    "contentSecurityPolicy": "default-src 'self'; script-src 'none'; sandbox;",
     "contentDispositionType": "attachment",
     "localPatterns": [
       {
@@ -44,7 +46,7 @@
     "qualities": [
       75
     ],
-    "unoptimized": true,
+    "unoptimized": false,
     "sizes": [
       640,
       750,
@@ -54,6 +56,7 @@
       1920,
       2048,
       3840,
+      16,
       32,
       48,
       64,
