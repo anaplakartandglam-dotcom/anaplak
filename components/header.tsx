@@ -50,21 +50,21 @@ export default function Header() {
         }}
       >
         <div className="w-full max-w-6xl px-4 md:px-10 flex justify-between items-center">
-          
+
           {/* Mobile Number */}
-          <div className="flex md:hidden items-center gap-2 text-white text-xs tracking-wide">
+          <a href="tel:+919840088867" className="flex md:hidden items-center gap-2 text-white text-xs tracking-wide hover:text-[#F8C8DC] transition">
             <Phone size={15} />
             <span>+91-98400&nbsp;88867</span>
-          </div>
+          </a>
 
           {/* Desktop Numbers */}
           <div className="hidden md:flex items-center gap-6 text-white text-sm tracking-wide">
-            <span className="flex items-center gap-1">
+            <a href="tel:+919840088867" className="flex items-center gap-1 hover:text-[#F8C8DC] transition">
               <Phone size={15} /> +91-98400&nbsp;88867
-            </span>
-            <span className="flex items-center gap-1">
+            </a>
+            <a href="tel:+919840088861" className="flex items-center gap-1 hover:text-[#F8C8DC] transition">
               <Phone size={15} /> +91-98400&nbsp;88861
-            </span>
+            </a>
           </div>
 
           {/* Social Icons */}
@@ -102,11 +102,11 @@ export default function Header() {
         }}
       >
         <div className="w-full max-w-6xl mx-auto px-4 md:px-10 py-4 md:py-5 flex justify-between items-center">
-          
+
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 md:gap-4">
             <div className="w-[150px] md:w-[200px] h-auto">
-              <img src="/LOGO_NEW.png" className="w-full h-auto object-contain" />
+              <img src="/LOGO_NEW.png" className="w-full h-auto object-contain" alt="Anaplak Art and Glam Salon" />
             </div>
           </Link>
 
@@ -165,7 +165,7 @@ export default function Header() {
 
         {/* Mobile Logo */}
         <div className="w-[150px] h-auto mt-6">
-          <img src="/LOGO_NEW.png" className="w-full" />
+          <img src="/LOGO_NEW.png" className="w-full h-auto object-contain" alt="Anaplak Art and Glam Salon" />
         </div>
 
         {/* MOBILE NAV LINKS */}

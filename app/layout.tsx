@@ -98,6 +98,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${redditSans.variable} scroll-smooth`}>
       <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/LOGO_NEW.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/LOGO_NEW.png" />
+        <link rel="apple-touch-icon" href="/LOGO_NEW.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

@@ -73,8 +73,9 @@ function Header() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-full max-w-6xl px-4 md:px-10 flex justify-between items-center",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex md:hidden items-center gap-2 text-white text-xs tracking-wide",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "tel:+919840088867",
+                            className: "flex md:hidden items-center gap-2 text-white text-xs tracking-wide hover:text-[#F8C8DC] transition",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
                                     size: 15
@@ -99,8 +100,9 @@ function Header() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "hidden md:flex items-center gap-6 text-white text-sm tracking-wide",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "flex items-center gap-1",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "tel:+919840088867",
+                                    className: "flex items-center gap-1 hover:text-[#F8C8DC] transition",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
                                             size: 15
@@ -116,8 +118,9 @@ function Header() {
                                     lineNumber: 62,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "flex items-center gap-1",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "tel:+919840088861",
+                                    className: "flex items-center gap-1 hover:text-[#F8C8DC] transition",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
                                             size: 15
@@ -245,7 +248,8 @@ function Header() {
                                 className: "w-[150px] md:w-[200px] h-auto",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: "/LOGO_NEW.png",
-                                    className: "w-full h-auto object-contain"
+                                    className: "w-full h-auto object-contain",
+                                    alt: "Anaplak Art and Glam Salon"
                                 }, void 0, false, {
                                     fileName: "[project]/components/header.tsx",
                                     lineNumber: 109,
@@ -365,7 +369,8 @@ function Header() {
                         className: "w-[150px] h-auto mt-6",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: "/LOGO_NEW.png",
-                            className: "w-full"
+                            className: "w-full h-auto object-contain",
+                            alt: "Anaplak Art and Glam Salon"
                         }, void 0, false, {
                             fileName: "[project]/components/header.tsx",
                             lineNumber: 168,
@@ -1908,17 +1913,38 @@ function Testimonials() {
     const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const testimonials = [
         {
-            name: "Stefanie Rashford",
-            role: "IT Developer",
-            img: "/testimonials_01-140x140.jpg",
-            text: "This place is wonderful. The staff are friendly and professional, and the atmosphere is relaxing. I loved my haircut and color, and people keep complimenting me. I will definitely come",
+            name: "Bala Murugan",
+            role: "Verified Customer",
+            iconColor: "#53675C",
+            text: "I visited Anaplak Art and Glam Salon for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect. The staff members were very friendly, polite, and professional. The salon's atmosphere is clean, classy, and gives a very royal vibe.",
             rating: 5
         },
         {
-            name: "Patric Stone",
-            role: "Barista",
-            img: "/testimonials_02-140x140.jpg",
-            text: "Service was exceptional, and it's clear that you have a genuine passion for what you do. The attention to detail and willingness to personalize the experience made it truly memorable.",
+            name: "Lokesh R",
+            role: "Verified Customer",
+            iconColor: "#C8AFAE",
+            text: "Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team!",
+            rating: 5
+        },
+        {
+            name: "Ajay Thenneti",
+            role: "Verified Customer",
+            iconColor: "#8B9A8E",
+            text: "The salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of.",
+            rating: 5
+        },
+        {
+            name: "Anand V",
+            role: "Verified Customer",
+            iconColor: "#A68A89",
+            text: "Excellent service by staff Vignesh, eye brows raise ambience, warm welcome staffs. Keep rocking CEO in the house Kalpana!",
+            rating: 5
+        },
+        {
+            name: "Santhi Babu",
+            role: "Verified Customer",
+            iconColor: "#6B7F73",
+            text: "I received an excellent service from Rajani. Her attention to detail, professionalism, and friendly approach made the experience exceptional. Highly recommended!",
             rating: 5
         }
     ];
@@ -1950,7 +1976,7 @@ function Testimonials() {
                             children: "TESTIMONIALS"
                         }, void 0, false, {
                             fileName: "[project]/components/testimonials.tsx",
-                            lineNumber: 43,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1958,18 +1984,18 @@ function Testimonials() {
                             children: "WHAT OUR CUSTOMERS SAY"
                         }, void 0, false, {
                             fileName: "[project]/components/testimonials.tsx",
-                            lineNumber: 46,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/testimonials.tsx",
-                    lineNumber: 42,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 gap-8",
-                    children: testimonials.map((t, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: testimonials.slice(active * 2, active * 2 + 2).map((t, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: `bg-[#1B1B1B] border border-[#2A2A2A] p-10 transition-all duration-700 relative ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1982,23 +2008,41 @@ function Testimonials() {
                                         d: "M18 18h-6l6-12h-6L6 18v12h12V18zm24 0h-6l6-12h-6l-6 12v12h12V18z"
                                     }, void 0, false, {
                                         fileName: "[project]/components/testimonials.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 90,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/testimonials.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 83,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center gap-5 mb-8",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: t.img,
-                                            className: "w-[75px] h-[75px] rounded-full object-cover"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-[75px] h-[75px] rounded-full flex items-center justify-center",
+                                            style: {
+                                                backgroundColor: t.iconColor
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                className: "w-[45px] h-[45px] text-white",
+                                                fill: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    d: "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/testimonials.tsx",
+                                                    lineNumber: 105,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/testimonials.tsx",
+                                                lineNumber: 100,
+                                                columnNumber: 19
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/testimonials.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 96,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2008,7 +2052,7 @@ function Testimonials() {
                                                     children: t.name.toUpperCase()
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/testimonials.tsx",
-                                                    lineNumber: 80,
+                                                    lineNumber: 109,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2016,26 +2060,26 @@ function Testimonials() {
                                                     children: t.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/testimonials.tsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 112,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/testimonials.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 108,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/testimonials.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "w-full border-t border-[#2A2A2A] mb-8"
                                 }, void 0, false, {
                                     fileName: "[project]/components/testimonials.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 117,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2043,7 +2087,7 @@ function Testimonials() {
                                     children: t.text
                                 }, void 0, false, {
                                     fileName: "[project]/components/testimonials.tsx",
-                                    lineNumber: 91,
+                                    lineNumber: 120,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2051,10 +2095,10 @@ function Testimonials() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-gray-500 text-[14px] mb-2",
-                                            children: "Customer’s rate"
+                                            children: "Customer's rate"
                                         }, void 0, false, {
                                             fileName: "[project]/components/testimonials.tsx",
-                                            lineNumber: 97,
+                                            lineNumber: 126,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2066,55 +2110,59 @@ function Testimonials() {
                                                     children: "★"
                                                 }, i, false, {
                                                     fileName: "[project]/components/testimonials.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 129,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/testimonials.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 127,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/testimonials.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 125,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/components/testimonials.tsx",
-                            lineNumber: 55,
+                            lineNumber: 76,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/testimonials.tsx",
-                    lineNumber: 52,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex justify-center gap-3 mt-12",
-                    children: testimonials.map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    children: [
+                        0,
+                        1,
+                        2
+                    ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActive(i),
                             className: `w-3 h-3 rounded-full transition ${active === i ? "bg-[#F8C8DC]" : "bg-[#666]"}`
                         }, i, false, {
                             fileName: "[project]/components/testimonials.tsx",
-                            lineNumber: 113,
+                            lineNumber: 142,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/testimonials.tsx",
-                    lineNumber: 111,
+                    lineNumber: 140,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/testimonials.tsx",
-            lineNumber: 39,
+            lineNumber: 60,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/testimonials.tsx",
-        lineNumber: 38,
+        lineNumber: 59,
         columnNumber: 5
     }, this);
 }
@@ -2658,12 +2706,12 @@ function Footer() {
                                 }, void 0, false, {
                                     fileName: "[project]/components/footer.tsx",
                                     lineNumber: 50,
-                                    columnNumber: 5
+                                    columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/footer.tsx",
                                 lineNumber: 49,
-                                columnNumber: 3
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "text-left",
@@ -2674,7 +2722,7 @@ function Footer() {
                                     }, void 0, false, {
                                         fileName: "[project]/components/footer.tsx",
                                         lineNumber: 54,
-                                        columnNumber: 5
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-200 text-[16px] leading-tight",
@@ -2682,7 +2730,7 @@ function Footer() {
                                     }, void 0, false, {
                                         fileName: "[project]/components/footer.tsx",
                                         lineNumber: 58,
-                                        columnNumber: 5
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-200 text-[16px] leading-tight",
@@ -2690,7 +2738,7 @@ function Footer() {
                                     }, void 0, false, {
                                         fileName: "[project]/components/footer.tsx",
                                         lineNumber: 61,
-                                        columnNumber: 5
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-200 text-[16px] leading-tight",
@@ -2698,7 +2746,7 @@ function Footer() {
                                     }, void 0, false, {
                                         fileName: "[project]/components/footer.tsx",
                                         lineNumber: 64,
-                                        columnNumber: 5
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-200 text-[16px] leading-tight",
@@ -2706,19 +2754,19 @@ function Footer() {
                                     }, void 0, false, {
                                         fileName: "[project]/components/footer.tsx",
                                         lineNumber: 67,
-                                        columnNumber: 5
+                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/footer.tsx",
                                 lineNumber: 53,
-                                columnNumber: 3
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/footer.tsx",
                         lineNumber: 44,
-                        columnNumber: 1
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex w-full items-start gap-4 mb-10",
@@ -2748,16 +2796,18 @@ function Footer() {
                                         lineNumber: 81,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-200 text-[16px] leading-tight",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "tel:+919840088867",
+                                        className: "text-gray-200 text-[16px] leading-tight block hover:text-[#D2B6B6] transition",
                                         children: "+91 98400 88867"
                                     }, void 0, false, {
                                         fileName: "[project]/components/footer.tsx",
                                         lineNumber: 84,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-200 text-[16px] leading-tight",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "tel:+919840088861",
+                                        className: "text-gray-200 text-[16px] leading-tight block hover:text-[#D2B6B6] transition",
                                         children: "+91 98400 88861"
                                     }, void 0, false, {
                                         fileName: "[project]/components/footer.tsx",
@@ -2979,12 +3029,12 @@ function Footer() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/footer.tsx",
                                                     lineNumber: 162,
-                                                    columnNumber: 5
+                                                    columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/footer.tsx",
                                                 lineNumber: 161,
-                                                columnNumber: 3
+                                                columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
@@ -2994,7 +3044,7 @@ function Footer() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/footer.tsx",
                                                         lineNumber: 166,
-                                                        columnNumber: 5
+                                                        columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-gray-300 leading-tight group-hover:text-white",
@@ -3002,7 +3052,7 @@ function Footer() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/footer.tsx",
                                                         lineNumber: 170,
-                                                        columnNumber: 5
+                                                        columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-gray-300 leading-tight group-hover:text-white",
@@ -3010,7 +3060,7 @@ function Footer() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/footer.tsx",
                                                         lineNumber: 173,
-                                                        columnNumber: 5
+                                                        columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-gray-300 leading-tight group-hover:text-white",
@@ -3018,7 +3068,7 @@ function Footer() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/footer.tsx",
                                                         lineNumber: 176,
-                                                        columnNumber: 5
+                                                        columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-gray-300 leading-tight group-hover:text-white",
@@ -3026,19 +3076,19 @@ function Footer() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/footer.tsx",
                                                         lineNumber: 179,
-                                                        columnNumber: 5
+                                                        columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/footer.tsx",
                                                 lineNumber: 165,
-                                                columnNumber: 3
+                                                columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/footer.tsx",
                                         lineNumber: 156,
-                                        columnNumber: 12
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex gap-3 items-start",
@@ -3067,16 +3117,18 @@ function Footer() {
                                                         lineNumber: 194,
                                                         columnNumber: 17
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-gray-300 leading-tight",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "tel:+919840088867",
+                                                        className: "text-gray-300 leading-tight block hover:text-white transition",
                                                         children: "+91 98400 88867"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/footer.tsx",
                                                         lineNumber: 198,
                                                         columnNumber: 17
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-gray-300 leading-tight",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "tel:+919840088861",
+                                                        className: "text-gray-300 leading-tight block hover:text-white transition",
                                                         children: "+91 98400 88861"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/footer.tsx",
