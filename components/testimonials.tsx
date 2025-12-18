@@ -161,7 +161,14 @@ export default function Testimonials() {
   useEffect(() => {
     async function fetchReviews() {
       try {
-        const response = await fetch('/api/reviews')
+        // Add timestamp to prevent caching
+        const timestamp = new Date().getTime()
+        const response = await fetch(`/api/reviews?t=${timestamp}`, {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache',
+          }
+        })
 
         if (!response.ok) {
           throw new Error('Failed to fetch reviews')

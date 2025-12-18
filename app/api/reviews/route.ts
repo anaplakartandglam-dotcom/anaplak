@@ -78,6 +78,12 @@ export async function GET() {
             reviews,
             totalRating: data.result.rating,
             totalReviews: data.result.user_ratings_total,
+        }, {
+            headers: {
+                'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+                'Pragma': 'no-cache',
+                'Expires': '0',
+            }
         })
     } catch (error) {
         console.error('Error fetching Google reviews:', error)
