@@ -39,7 +39,7 @@ export default function ContactUs() {
             <Header />
             <div className="min-h-screen font-sans" style={{ backgroundColor }}>
                 {/* Introduction Section */}
-                <section className="relative pt-40 pb-16 md:pt-48 md:pb-24 px-4 text-center">
+                <section className="relative pt-56 pb-16 md:pt-64 md:pb-24 px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-serif font-medium mb-6 text-white">Connect With Us</h1>
                     <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/70 font-light leading-relaxed">
                         Whether it's for your big day, a special occasion, or a moment of self-care, we invited you to experience
@@ -159,11 +159,9 @@ export default function ContactUs() {
                         <div className="space-y-12">
                             {/* Why Contact Us */}
                             <div className="pl-0 lg:pl-6">
-                                <h2 className="text-2xl md:text-3xl font-serif mb-6 text-white">Visit Our Studio</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif mb-6 text-white">Visit Our Premium Salon</h2>
                                 <p className="text-white/70 mb-8 leading-relaxed">
-                                    Step into a world of elegance and transformation. Our studio is designed to provide a relaxing, premium
-                                    experience for all your bridal and beauty needs. Walk-ins are welcome for consultations, but
-                                    appointments are recommended.
+                                    "Anaplak Salon is one of the most trusted premium salon in Maduravoyal, with a wide range of services from hair care, hair coloring, manicures, and nail care to keratin nourishment,And skincare, under the consultation of professional staff offering the best customer satisfaction in every versatile range of services. A landmark building in the most prestigious CDN Nagar, MMDA Colony Anaplak is designed to provide a premium sensory experience with dedicated Ground Floor parking garages. If you’re wondering how a salon can change your mood, Pay us a visit at Anaplak Salon in Maduravoyal,. We’ll show you how it’s done right!"
                                 </p>
 
                                 <div className="space-y-8">
@@ -201,10 +199,10 @@ export default function ContactUs() {
                                             <h3 className="font-bold text-lg text-white mb-1">Working Hours</h3>
                                             <ul className="text-white/70 space-y-1">
                                                 <li className="flex justify-between gap-4">
-                                                    <span>Mon - Sat:</span> <span className="whitespace-nowrap">10:00 AM - 8:00 PM</span>
+                                                    <span>Mon - Sat:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
                                                 </li>
                                                 <li className="flex justify-between gap-4">
-                                                    <span>Sunday:</span> <span className="whitespace-nowrap">10:00 AM - 5:00 PM</span>
+                                                    <span>Sunday:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
                                                 </li>
                                             </ul>
                                         </div>

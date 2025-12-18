@@ -64,7 +64,11 @@ export default function CircleSection() {
             xs:w-[120px] xs:h-[120px]
           "
         >
-          <img src="/a.png" className="w-full h-full object-cover" />
+          <img
+            src="/a.png"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: '52% center' }}
+          />
         </div>
 
         {/* INNER RING — DESKTOP SAME */}

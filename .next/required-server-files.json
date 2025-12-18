@@ -64,7 +64,20 @@
           "search": ""
         }
       ],
-      "remotePatterns": [],
+      "remotePatterns": [
+        {
+          "protocol": "https",
+          "hostname": "lh3.googleusercontent.com"
+        },
+        {
+          "protocol": "https",
+          "hostname": "maps.gstatic.com"
+        },
+        {
+          "protocol": "https",
+          "hostname": "maps.googleapis.com"
+        }
+      ],
       "qualities": [
         75
       ],

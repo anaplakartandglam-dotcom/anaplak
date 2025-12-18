@@ -138,7 +138,7 @@ export default function AboutPage() {
 
                     {/* Hero Content */}
                     <div className="relative h-full flex flex-col items-center justify-center text-center px-4 z-10">
-                        <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-wider">
+                        <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-wider" style={{ marginTop: '90px' }}>
                             ABOUT US
                         </h1>
 

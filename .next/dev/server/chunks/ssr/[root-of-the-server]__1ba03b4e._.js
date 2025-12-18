@@ -74,30 +74,52 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$r
 ;
 ;
 const metadata = {
-    metadataBase: new URL('https://anaplak.com'),
+    metadataBase: new URL('https://anaplakartandglamsalon.com'),
     title: {
-        default: "ANAPLAK Art and Glam Salon | Premium Hair & Beauty Services in Chennai",
-        template: "%s | ANAPLAK Art and Glam Salon"
+        default: "Anaplak Art and Glam Salon | Premium Hair & Beauty Salon in Maduravoyal, Chennai",
+        template: "%s | Anaplak Art and Glam Salon"
     },
-    description: "ANAPLAK Art and Glam Salon - Premium hair styling, cuts, coloring, and beauty services in Maduravoyal, Chennai. Expert stylists providing luxury grooming experiences with personalized care.",
+    description: "Anaplak Art and Glam Salon in Maduravoyal, Chennai offers premium hair styling, bridal makeup, hair coloring, facials, manicure, pedicure & beauty treatments. Expert stylists with 16+ years experience. Book your appointment today!",
     keywords: [
+        // Primary Keywords
         "hair salon Chennai",
         "beauty salon Maduravoyal",
+        "Anaplak salon Chennai",
+        "premium salon Chennai",
+        // Service Keywords
+        "bridal makeup Chennai",
         "hair styling Chennai",
         "hair coloring Chennai",
-        "premium salon Chennai",
-        "ANAPLAK salon",
-        "luxury hair salon",
-        "professional hair care",
-        "beauty treatments Chennai"
+        "hair treatment Chennai",
+        "facial treatment Chennai",
+        "manicure pedicure Chennai",
+        "party makeup Chennai",
+        "engagement makeup Chennai",
+        // Location Keywords
+        "salon in Maduravoyal",
+        "beauty parlour Maduravoyal",
+        "salon near MMDA Colony",
+        "salon in CDN Nagar",
+        "best salon in Chennai",
+        // Brand Keywords
+        "Anaplak Art and Glam",
+        "Anaplak salon",
+        "luxury hair salon Chennai",
+        "professional hair care Chennai",
+        // Long-tail Keywords
+        "best bridal makeup artist Chennai",
+        "hair spa treatment Chennai",
+        "keratin treatment Chennai",
+        "anti-aging facial Chennai",
+        "wedding makeup Chennai"
     ],
     authors: [
         {
-            name: "ANAPLAK Art and Glam Salon"
+            name: "Anaplak Art and Glam Salon"
         }
     ],
-    creator: "ANAPLAK Art and Glam Salon",
-    publisher: "ANAPLAK Art and Glam Salon",
+    creator: "Anaplak Art and Glam Salon",
+    publisher: "Anaplak Art and Glam Salon",
     formatDetection: {
         email: false,
         address: false,
@@ -106,25 +128,25 @@ const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_IN',
-        url: 'https://anaplak.com',
-        siteName: 'ANAPLAK Art and Glam Salon',
-        title: 'ANAPLAK Art and Glam Salon | Premium Hair & Beauty Services',
-        description: 'Premium hair styling, cuts, coloring, and beauty services in Maduravoyal, Chennai. Expert stylists providing luxury grooming experiences.',
+        url: 'https://anaplakartandglamsalon.com',
+        siteName: 'Anaplak Art and Glam Salon',
+        title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services in Chennai',
+        description: 'Experience luxury beauty services at Anaplak Salon in Maduravoyal, Chennai. Expert bridal makeup, hair styling, coloring, facials & more. 16+ years of excellence. Book now!',
         images: [
             {
-                url: '/LOGO_NEW.png',
+                url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'ANAPLAK Art and Glam Salon'
+                alt: 'Anaplak Art and Glam Salon - Premium Beauty Services in Chennai'
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'ANAPLAK Art and Glam Salon | Premium Hair & Beauty Services',
-        description: 'Premium hair styling, cuts, coloring, and beauty services in Maduravoyal, Chennai.',
+        title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services',
+        description: 'Experience luxury beauty services in Maduravoyal, Chennai. Expert bridal makeup, hair styling, facials & more. Book your appointment today!',
         images: [
-            '/LOGO_NEW.png'
+            '/og-image.jpg'
         ]
     },
     robots: {
@@ -137,6 +159,9 @@ const metadata = {
             'max-image-preview': 'large',
             'max-snippet': -1
         }
+    },
+    alternates: {
+        canonical: 'https://anaplakartandglamsalon.com'
     },
     verification: {
     }
@@ -162,7 +187,7 @@ function RootLayout({ children }) {
                         href: "/LOGO_NEW.png"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 101,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -172,7 +197,7 @@ function RootLayout({ children }) {
                         href: "/LOGO_NEW.png"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 102,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -180,7 +205,7 @@ function RootLayout({ children }) {
                         href: "/LOGO_NEW.png"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 103,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -188,7 +213,7 @@ function RootLayout({ children }) {
                         href: "https://fonts.googleapis.com"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 104,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -197,13 +222,13 @@ function RootLayout({ children }) {
                         crossOrigin: "anonymous"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 105,
+                        lineNumber: 135,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 100,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -211,13 +236,13 @@ function RootLayout({ children }) {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 107,
+                lineNumber: 137,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 99,
+        lineNumber: 129,
         columnNumber: 5
     }, this);
 }

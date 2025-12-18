@@ -71,7 +71,7 @@ export default function HeroSlider() {
       ))}
 
       {/* CONTENT */}
-      <div className="absolute inset-0 flex items-center">
+      <div className="absolute left-0 right-0 bottom-0 flex items-center" style={{ top: '200px' }}>
         <div className="pl-6 sm:pl-10 md:pl-16 lg:pl-24">
 
           {/* LINE 1 */}

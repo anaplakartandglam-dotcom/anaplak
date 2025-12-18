@@ -290,7 +290,7 @@ export default function ServicesSection() {
             <div className="text-center">
               <h1
                 className="text-balance font-serif text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
-                style={{ color: "#53675C" }}
+                style={{ color: "#53675C", marginTop: '90px' }}
               >
                 Our Services
               </h1>

@@ -51,12 +51,39 @@ const VideoParallax = dynamic(() => import("@/components/video_parrlex"), {
 })
 
 export const metadata: Metadata = {
-  title: 'Home',
-  description: 'ANAPLAK Art and Glam Salon - Premium hair styling, cuts, coloring, and beauty services in Maduravoyal, Chennai.',
+  title: 'Best Hair & Beauty Salon in Maduravoyal, Chennai | Anaplak Art and Glam',
+  description: 'Top-rated salon in Maduravoyal with 4.9★ rating! Expert bridal makeup, hair styling, coloring, keratin treatment, facials & spa. 16+ years experience. Walk-ins welcome. Book online or call +91 98400 88867. Open 10 AM - 9 PM daily.',
+  keywords: [
+    'best salon in Maduravoyal',
+    'hair salon near me Chennai',
+    'bridal makeup artist Maduravoyal',
+    'top rated beauty salon Chennai',
+    'hair coloring salon Maduravoyal',
+    'keratin treatment Chennai',
+    'facial spa Maduravoyal',
+    'salon near MMDA Colony',
+    'Anaplak salon',
+  ],
+  openGraph: {
+    title: 'Best Hair & Beauty Salon in Maduravoyal | 4.9★ Rated | Anaplak',
+    description: '🌟 Top-rated salon with 16+ years experience. Bridal makeup, hair styling, coloring, facials & more. Book now! Open daily 10 AM - 9 PM.',
+    url: 'https://anaplakartandglamsalon.com',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Anaplak Art and Glam Salon - Best Beauty Salon in Maduravoyal, Chennai',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://anaplakartandglamsalon.com',
+  },
 }
 
 // Enable ISR with revalidation
-export const revalidate = 3600 // Revalidate every hour
+export const revalidate = 60 // Revalidate every minute for fresh reviews
 
 export default function Home() {
   return (

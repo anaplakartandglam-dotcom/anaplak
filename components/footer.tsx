@@ -27,9 +27,9 @@ export default function Footer() {
       <div className="md:hidden flex flex-col items-center text-center px-8">
 
         {/* MOBILE LOGO */}
-        <div className="w-[150px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2">
+        <div className="w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2">
           <img
-            src="/LOGO_NEW.png"
+            src="/logo_updated.png"
             alt="Anaplak Art & Glam Salon"
             className="w-full h-auto object-contain object-center"
           />
@@ -114,9 +114,9 @@ export default function Footer() {
 
         {/* LOGO */}
         <div className="flex md:block items-center md:items-start">
-          <div className="w-[200px] h-auto overflow-hidden flex items-center">
+          <div className="w-[280px] h-auto overflow-hidden flex items-center">
             <img
-              src="/LOGO_NEW.png"
+              src="/logo_updated.png"
               alt="Anaplak Art & Glam Salon"
               className="w-full h-auto object-contain object-center"
             />
@@ -124,7 +124,7 @@ export default function Footer() {
         </div>
 
         {/* TEXT */}
-        <div className="text-white">
+        <div className="text-white" style={{ marginTop: '90px' }}>
           <h3 className="text-[30px] md:text-[34px] font-semibold uppercase tracking-[0.08em] leading-[1.1]">
             ALWAYS <br /> BE ANAPLAK
           </h3>
@@ -137,7 +137,7 @@ export default function Footer() {
           </h6>
 
           <ul className="space-y-2.5 text-[15px] md:text-[16px] uppercase tracking-[0.18em] text-white/85">
-            {["Home", "About", "Blog", "Services", "Contacts"].map((item) => (
+            {["Home", "About", "Services", "Contacts"].map((item) => (
               <li key={item}>
                 <span className="hover:text-[#C8AFAE] cursor-pointer transition">{item} +</span>
               </li>

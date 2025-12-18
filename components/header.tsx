@@ -16,7 +16,7 @@ export default function Header() {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Blog", href: "/blog" },
+    // { label: "Blog", href: "/blog" },
     { label: "Services", href: "/services" },
     { label: "Contacts", href: "/contact" },
   ]
@@ -101,12 +101,20 @@ export default function Header() {
           borderBottom: isSticky ? "1px solid rgba(255,255,255,0.15)" : "none",
         }}
       >
-        <div className="w-full max-w-6xl mx-auto px-4 md:px-10 py-4 md:py-5 flex justify-between items-center">
+        <div className="w-full max-w-6xl mx-auto px-4 md:px-10 py-8 md:py-10 flex justify-between items-center">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 md:gap-4">
-            <div className="w-[150px] md:w-[200px] h-auto">
-              <img src="/LOGO_NEW.png" className="w-full h-auto object-contain" alt="Anaplak Art and Glam Salon" />
+          <Link href="/" className="flex items-center gap-3 md:gap-4" style={{ marginTop: '13px' }}>
+            <div className="w-[180px] md:w-[250px] h-auto flex items-center justify-center">
+              <img
+                src="/logo_updated.png"
+                className="w-full h-auto"
+                style={{
+                  objectFit: 'contain',
+                  objectPosition: '52% center'
+                }}
+                alt="Anaplak Art and Glam Salon"
+              />
             </div>
           </Link>
 
@@ -116,7 +124,7 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-white/80 text-[12px] tracking-[3px] uppercase hover:text-[#F8C8DC] transition"
+                className="text-white/80 text-[14px] tracking-[3px] uppercase hover:text-[#F8C8DC] transition"
               >
                 {item.label}
               </Link>
@@ -130,10 +138,10 @@ export default function Header() {
               target="_blank"
             >
               <button
-                className="px-8 py-3 rounded-md text-white text-xs tracking-wider uppercase flex items-center gap-2"
+                className="px-10 py-4 rounded-md text-white text-sm tracking-wider uppercase flex items-center gap-2"
                 style={{ backgroundColor: PRIMARY }}
               >
-                Book An Appointment <ArrowRight size={14} />
+                Book An Appointment <ArrowRight size={16} />
               </button>
             </Link>
           </div>
@@ -165,7 +173,7 @@ export default function Header() {
 
         {/* Mobile Logo */}
         <div className="w-[150px] h-auto mt-6">
-          <img src="/LOGO_NEW.png" className="w-full h-auto object-contain" alt="Anaplak Art and Glam Salon" />
+          <img src="/logo_updated.png" className="w-full h-auto object-contain" alt="Anaplak Art and Glam Salon" />
         </div>
 
         {/* MOBILE NAV LINKS */}

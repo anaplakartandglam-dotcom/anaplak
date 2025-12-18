@@ -58,14 +58,13 @@ export default function About() {
 
         {/* LEFT IMAGE BLOCK */}
         <div
-          className={`transition-all duration-[1200ms] ${
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`transition-all duration-[1200ms] ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
-        <img
-  src="/aboutus.jpg"
-  className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
-/>
+          <img
+            src="/aboutus.jpg"
+            className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
+          />
 
 
           <h6 className="uppercase mt-6 text-white font-semibold text-[15px] leading-relaxed max-w-[450px]">
@@ -76,9 +75,8 @@ export default function About() {
 
         {/* RIGHT CONTENT BLOCK */}
         <div
-          className={`transition-all duration-[1200ms] delay-200 ${
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`transition-all duration-[1200ms] delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           <h6 className="uppercase text-[#C8AFAE] tracking-[0.3em] text-[14px] mb-6">
             about hair salon
@@ -103,17 +101,17 @@ export default function About() {
 
           {/* BOTTOM IMAGE BLOCK */}
           <div className="relative w-full">
-          <img
-  src="/aboutus2.jpg"
-  className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
-/>
+            <img
+              src="/aboutus2.jpg"
+              className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
+            />
 
 
             {/* ROTATING LOGO */}
             {/* ROTATING LOGO — TOP RIGHT CORNER */}
-<img
-  src="/a.png"
-  className="
+            <img
+              src="/a.png"
+              className="
     w-[150px] h-[150px]
     md:w-[180px] md:h-[180px]
     absolute
@@ -122,10 +120,11 @@ export default function About() {
     opacity-90
     rotate-slow-delay
     pointer-events-none
-    rounded-full         // ➜ makes the image circular
-    object-cover         // ➜ ensures image fills the circle
+    rounded-full
+    object-cover
   "
-/>
+              style={{ objectPosition: '52% center' }}
+            />
 
           </div>
         </div>
