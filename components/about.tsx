@@ -7,6 +7,24 @@ export default function About() {
   const [visible, setVisible] = useState(false);
 
   /* ----------------------------
+      MOBILE DETECTION
+  ----------------------------- */
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Check on mount
+    checkMobile();
+
+    // Check on resize
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  /* ----------------------------
       TYPEWRITER ANIMATION LOGIC
   ----------------------------- */
   const words = ["hairstyles", "styles", "fashion"];
@@ -15,6 +33,12 @@ export default function About() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
+    // Disable typewriter effect on mobile
+    if (isMobile) {
+      setDisplayedWord(words[0]); // Show first word without animation
+      return;
+    }
+
     const currentWord = words[wordIndex];
     let speed = isDeleting ? 70 : 120;
 
@@ -36,7 +60,7 @@ export default function About() {
     }, speed);
 
     return () => clearTimeout(timeout);
-  }, [displayedWord, isDeleting, wordIndex]);
+  }, [displayedWord, isDeleting, wordIndex, isMobile]);
 
   /* ----------------------------
           FADE-IN ON SCROLL
@@ -89,7 +113,7 @@ export default function About() {
             Find the perfect balance between elegance and comfort with{" "}
             <span className="text-[#C8AFAE]">
               {displayedWord}
-              <span className="inline-block w-[2px] h-[1em] bg-[#C8AFAE] ml-1 animate-pulse"></span>
+              {!isMobile && <span className="inline-block w-[2px] h-[1em] bg-[#C8AFAE] ml-1 animate-pulse"></span>}
             </span>
           </h2>
 
@@ -109,22 +133,28 @@ export default function About() {
 
             {/* ROTATING LOGO */}
             {/* ROTATING LOGO — TOP RIGHT CORNER */}
-            <img
-              src="/a.png"
+            <div
               className="
-    w-[150px] h-[150px]
-    md:w-[180px] md:h-[180px]
+    w-[100px] h-[100px]
+    md:w-[120px] md:h-[120px]
     absolute
-    -top-10 md:-top-14
-    -right-10 md:-right-14
-    opacity-90
+    -top-8 md:-top-10
+    -right-8 md:-right-10
+    rounded-full
+    bg-white
+    flex items-center justify-center
     rotate-slow-delay
     pointer-events-none
-    rounded-full
-    object-cover
+    shadow-lg
   "
-              style={{ objectPosition: '52% center' }}
-            />
+            >
+              <img
+                src="/a.png"
+                className="w-[70%] h-auto object-contain"
+                alt="Anaplak Logo"
+              />
+            </div>
+
 
           </div>
         </div>

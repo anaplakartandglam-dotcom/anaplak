@@ -761,6 +761,25 @@ function About() {
     const sectionRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [visible, setVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     /* ----------------------------
+      MOBILE DETECTION
+  ----------------------------- */ const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "About.useEffect": ()=>{
+            const checkMobile = {
+                "About.useEffect.checkMobile": ()=>{
+                    setIsMobile(window.innerWidth < 768);
+                }
+            }["About.useEffect.checkMobile"];
+            // Check on mount
+            checkMobile();
+            // Check on resize
+            window.addEventListener('resize', checkMobile);
+            return ({
+                "About.useEffect": ()=>window.removeEventListener('resize', checkMobile)
+            })["About.useEffect"];
+        }
+    }["About.useEffect"], []);
+    /* ----------------------------
       TYPEWRITER ANIMATION LOGIC
   ----------------------------- */ const words = [
         "hairstyles",
@@ -772,6 +791,11 @@ function About() {
     const [isDeleting, setIsDeleting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "About.useEffect": ()=>{
+            // Disable typewriter effect on mobile
+            if (isMobile) {
+                setDisplayedWord(words[0]); // Show first word without animation
+                return;
+            }
             const currentWord = words[wordIndex];
             let speed = isDeleting ? 70 : 120;
             const timeout = setTimeout({
@@ -801,7 +825,8 @@ function About() {
     }["About.useEffect"], [
         displayedWord,
         isDeleting,
-        wordIndex
+        wordIndex,
+        isMobile
     ]);
     /* ----------------------------
           FADE-IN ON SCROLL
@@ -832,7 +857,7 @@ function About() {
                             className: "w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
                         }, void 0, false, {
                             fileName: "[project]/components/about.tsx",
-                            lineNumber: 64,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
@@ -840,13 +865,13 @@ function About() {
                             children: "Experience the artistry of hair styling with a team that values your comfort, your time, and your personal beauty journey."
                         }, void 0, false, {
                             fileName: "[project]/components/about.tsx",
-                            lineNumber: 70,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/about.tsx",
-                    lineNumber: 60,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -857,7 +882,7 @@ function About() {
                             children: "about hair salon"
                         }, void 0, false, {
                             fileName: "[project]/components/about.tsx",
-                            lineNumber: 81,
+                            lineNumber: 105,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -869,23 +894,23 @@ function About() {
                                     className: "text-[#C8AFAE]",
                                     children: [
                                         displayedWord,
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        !isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "inline-block w-[2px] h-[1em] bg-[#C8AFAE] ml-1 animate-pulse"
                                         }, void 0, false, {
                                             fileName: "[project]/components/about.tsx",
-                                            lineNumber: 92,
-                                            columnNumber: 15
+                                            lineNumber: 116,
+                                            columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/about.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/about.tsx",
-                            lineNumber: 88,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -893,7 +918,7 @@ function About() {
                             children: "Our stylists use modern techniques and trusted products to create hairstyles that remain stylish and practical. We focus on both style and hair health, ensuring beauty that lasts beyond the salon visit."
                         }, void 0, false, {
                             fileName: "[project]/components/about.tsx",
-                            lineNumber: 96,
+                            lineNumber: 120,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -904,45 +929,50 @@ function About() {
                                     className: "w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
                                 }, void 0, false, {
                                     fileName: "[project]/components/about.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 128,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/a.png",
-                                    className: " w-[150px] h-[150px] md:w-[180px] md:h-[180px] absolute -top-10 md:-top-14 -right-10 md:-right-14 opacity-90 rotate-slow-delay pointer-events-none rounded-full object-cover ",
-                                    style: {
-                                        objectPosition: '52% center'
-                                    }
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: " w-[100px] h-[100px] md:w-[120px] md:h-[120px] absolute -top-8 md:-top-10 -right-8 md:-right-10 rounded-full bg-white flex items-center justify-center rotate-slow-delay pointer-events-none shadow-lg ",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: "/a.png",
+                                        className: "w-[70%] h-auto object-contain",
+                                        alt: "Anaplak Logo"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/about.tsx",
+                                        lineNumber: 151,
+                                        columnNumber: 15
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/about.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/about.tsx",
-                            lineNumber: 103,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/about.tsx",
-                    lineNumber: 77,
+                    lineNumber: 101,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/about.tsx",
-            lineNumber: 57,
+            lineNumber: 81,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/about.tsx",
-        lineNumber: 54,
+        lineNumber: 78,
         columnNumber: 5
     }, this);
 }
-_s(About, "5o6iv0PYAAcGSXjrxRqsgUId9/c=");
+_s(About, "Cn/j8xN50lmX4LrRvzuUcPLiKEs=");
 _c = About;
 var _c;
 __turbopack_context__.k.register(_c, "About");
@@ -2586,12 +2616,31 @@ function Features() {
                             lineNumber: 30,
                             columnNumber: 11
                         }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            className: "hidden md:block text-2xl md:text-3xl font-medium text-white/90 max-w-3xl mx-auto mt-6",
+                            children: [
+                                "Find the perfect balance between elegance and comfort with",
+                                " ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[#C8AFAE]",
+                                    children: "hairstyles"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/features.tsx",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/features.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-gray-400 max-w-xl mx-auto mt-4",
                             children: "that highlight your natural beauty while keeping your hair strong healthy"
                         }, void 0, false, {
                             fileName: "[project]/components/features.tsx",
-                            lineNumber: 34,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this)
                     ]
@@ -2622,22 +2671,22 @@ function Features() {
     `
                                 }, void 0, false, {
                                     fileName: "[project]/components/features.tsx",
-                                    lineNumber: 48,
-                                    columnNumber: 3
+                                    lineNumber: 54,
+                                    columnNumber: 17
                                 }, this)
                             }, i, false, {
                                 fileName: "[project]/components/features.tsx",
-                                lineNumber: 47,
-                                columnNumber: 2
+                                lineNumber: 53,
+                                columnNumber: 15
                             }, this)
                         }, i, false, {
                             fileName: "[project]/components/features.tsx",
-                            lineNumber: 46,
+                            lineNumber: 52,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/features.tsx",
-                    lineNumber: 40,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             ]

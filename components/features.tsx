@@ -31,6 +31,12 @@ export default function Features() {
             Transform your style with professional hair services
           </h2>
 
+          {/* Desktop-only heading */}
+          <h3 className="hidden md:block text-2xl md:text-3xl font-medium text-white/90 max-w-3xl mx-auto mt-6">
+            Find the perfect balance between elegance and comfort with{" "}
+            <span className="text-[#C8AFAE]">hairstyles</span>
+          </h3>
+
           <p className="text-gray-400 max-w-xl mx-auto mt-4">
             that highlight your natural beauty while keeping your hair strong healthy
           </p>
@@ -44,10 +50,10 @@ export default function Features() {
         >
           {items.map((item, i) => (
             <div key={i} className="mb-6 overflow-hidden rounded">
- <div key={i} className="mb-6 overflow-hidden rounded">
-  <img
-    src={item.image}
-    className={`
+              <div key={i} className="mb-6 overflow-hidden rounded">
+                <img
+                  src={item.image}
+                  className={`
       w-full object-cover 
       ${i === 0 ? "h-[380px]" : ""}
       ${i === 1 ? "h-[480px]" : ""}
@@ -57,11 +63,11 @@ export default function Features() {
       ${i === 5 ? "h-[480px]" : ""}
       hover:scale-[1.03] transition
     `}
-  />
-</div>
+                />
+              </div>
 
 
-{/* 
+              {/* 
               <p className="text-white text-[11px] uppercase tracking-widest mt-2 pl-1">
                 {item.title}
               </p> */}

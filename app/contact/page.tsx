@@ -34,7 +34,7 @@ export default function ContactUs() {
                             {/* Map Embed */}
                             <div className="relative w-full h-[450px] md:h-[550px] rounded-lg overflow-hidden shadow-2xl mb-6">
                                 <iframe
-                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:ChIJ5R3P1HxIuJoRk3OviXZ9FVA"
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Anaplak+Art+and+Glam+Salon,No.4B/9,+New+No.+3,+2nd+floor,+First+Main+road,+4th+block,+MMDA+Colony,+Maduravoyal,+Chennai+600095"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -48,7 +48,7 @@ export default function ContactUs() {
 
                             {/* View on Google Maps Button */}
                             <a
-                                href="https://www.google.com/maps/search/?api=1&query=place_id:ChIJ5R3P1HxIuJoRk3OviXZ9FVA"
+                                href="https://www.google.com/maps/search/?api=1&query=Anaplak+Art+and+Glam+Salon+No.4B/9+New+No.+3+2nd+floor+First+Main+road+4th+block+MMDA+Colony+Maduravoyal+Chennai+600095"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="group relative w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#53675C] to-[#3d4d46] text-white font-semibold text-sm uppercase tracking-widest rounded-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
