@@ -74,6 +74,13 @@ export async function GET() {
             }
         })
 
+        console.log('=== ALL REVIEWS FROM GOOGLE API ===')
+        console.log('Total reviews fetched:', reviews.length)
+        reviews.forEach((review, idx) => {
+            console.log(`${idx + 1}. ${review.name} - ${review.rating}★ - ${review.relativeTime}`)
+        })
+        console.log('===================================')
+
         return NextResponse.json({
             reviews,
             totalRating: data.result.rating,

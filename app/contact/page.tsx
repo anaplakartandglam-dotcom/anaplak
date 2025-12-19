@@ -1,46 +1,24 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
 import { Phone, MapPin, Clock, Mail, Instagram, Facebook, Youtube } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
-export default function ContactUs() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: "",
-    })
 
+export default function ContactUs() {
     // Theme colors
     const primaryColor = "#53675C" // Green
     const backgroundColor = "rgb(14, 14, 14)" // Dark background
     const textColor = "#ffffff" // White text for dark background
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        console.log("Form submitted:", formData)
-        // Add logic to send data here
-        alert("Thank you for contacting us! We will get back to you shortly.")
-        setFormData({ name: "", email: "", phone: "", service: "", message: "" })
-    }
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target
-        setFormData((prev) => ({ ...prev, [name]: value }))
-    }
 
     return (
         <>
             <Header />
             <div className="min-h-screen font-sans" style={{ backgroundColor }}>
                 {/* Introduction Section */}
-                <section className="relative pt-56 pb-16 md:pt-64 md:pb-24 px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-serif font-medium mb-6 text-white">Connect With Us</h1>
+                <section className="relative pt-40 pb-16 md:pt-48 md:pb-24 px-4 text-center">
+                    <h1 className="text-4xl md:text-6xl font-serif font-medium mb-6 text-white" style={{ marginTop: '90px' }}>Connect With Us</h1>
                     <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/70 font-light leading-relaxed">
                         Whether it's for your big day, a special occasion, or a moment of self-care, we invited you to experience
                         luxury beauty services tailored just for you.
@@ -50,109 +28,72 @@ export default function ContactUs() {
                 {/* Main Content Grid */}
                 <section className="container mx-auto px-4 pb-20 md:pb-32">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20">
-                        {/* Left Column: Contact Form */}
+                        {/* Left Column: Google Map */}
                         <div className="bg-white/5 backdrop-blur-sm p-8 md:p-12 rounded-xl border border-white/10 shadow-sm">
-                            <h2 className="text-2xl md:text-3xl font-serif mb-8 text-white">Send us a Message</h2>
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div className="group">
-                                        <label className="block text-sm font-medium mb-2 text-white/60 uppercase tracking-widest">Name</label>
-                                        <input
-                                            name="name"
-                                            type="text"
-                                            required
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            className="w-full bg-transparent border-b border-white/20 py-3 text-white focus:border-[#53675C] focus:outline-none transition-colors placeholder:text-white/30"
-                                            placeholder="Jane Doe"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-medium mb-2 text-white/60 uppercase tracking-widest">
-                                            Phone
-                                        </label>
-                                        <input
-                                            name="phone"
-                                            type="tel"
-                                            required
-                                            value={formData.phone}
-                                            onChange={handleChange}
-                                            className="w-full bg-transparent border-b border-white/20 py-3 text-white focus:border-[#53675C] focus:outline-none transition-colors placeholder:text-white/30"
-                                            placeholder="+91 98765 43210"
-                                        />
-                                    </div>
-                                </div>
+                            <h2 className="text-2xl md:text-3xl font-serif mb-8 text-white">Find Us Here</h2>
+                            {/* Map Embed */}
+                            <div className="relative w-full h-[450px] md:h-[550px] rounded-lg overflow-hidden shadow-2xl mb-6">
+                                <iframe
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:ChIJ5R3P1HxIuJoRk3OviXZ9FVA"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Anaplak Art And Glam Salon Location"
+                                />
+                            </div>
 
-                                <div>
-                                    <label className="block text-sm font-medium mb-2 text-white/60 uppercase tracking-widest">Email</label>
-                                    <input
-                                        name="email"
-                                        type="email"
-                                        required
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        className="w-full bg-transparent border-b border-white/20 py-3 text-white focus:border-[#53675C] focus:outline-none transition-colors placeholder:text-white/30"
-                                        placeholder="jane@example.com"
-                                    />
-                                </div>
 
-                                <div>
-                                    <label className="block text-sm font-medium mb-2 text-white/60 uppercase tracking-widest">
-                                        Service Interested In
-                                    </label>
-                                    <select
-                                        name="service"
-                                        value={formData.service}
-                                        onChange={handleChange}
-                                        className="w-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg py-3 px-4 text-white focus:border-[#53675C] focus:outline-none cursor-pointer"
-                                        style={{
-                                            colorScheme: "dark",
-                                        }}
+                            {/* View on Google Maps Button */}
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=place_id:ChIJ5R3P1HxIuJoRk3OviXZ9FVA"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="group relative w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#53675C] to-[#3d4d46] text-white font-semibold text-sm uppercase tracking-widest rounded-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
+                                style={{
+                                    boxShadow: 'var(--button-shadow, 0 0 0 rgba(83, 103, 92, 0))',
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.setProperty('--button-shadow', '0 25px 50px -12px rgba(83, 103, 92, 0.3)');
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.setProperty('--button-shadow', '0 0 0 rgba(83, 103, 92, 0)');
+                                }}
+                            >
+                                {/* Animated background overlay */}
+                                <span className="absolute inset-0 bg-gradient-to-r from-[#3d4d46] to-[#53675C] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+                                {/* Shimmer effect */}
+                                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
+
+                                {/* Button content */}
+                                <span className="relative flex items-center gap-3">
+                                    <svg
+                                        className="w-5 h-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
                                     >
-                                        <option value="" disabled className="bg-[rgb(14,14,14)] text-white">
-                                            Select a Service
-                                        </option>
-                                        <option value="Bridal Makeup" className="bg-[rgb(14,14,14)] text-white">
-                                            Bridal Makeup
-                                        </option>
-                                        <option value="Party Makeup" className="bg-[rgb(14,14,14)] text-white">
-                                            Party Makeup
-                                        </option>
-                                        <option value="Hair Styling" className="bg-[rgb(14,14,14)] text-white">
-                                            Hair Styling
-                                        </option>
-                                        <option value="Skin Treatment" className="bg-[rgb(14,14,14)] text-white">
-                                            Skin Treatment
-                                        </option>
-                                        <option value="Consultation" className="bg-[rgb(14,14,14)] text-white">
-                                            Consultation
-                                        </option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label className="block text-sm font-medium mb-2 text-white/60 uppercase tracking-widest">
-                                        Message
-                                    </label>
-                                    <textarea
-                                        name="message"
-                                        rows={4}
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        className="w-full bg-transparent border-b border-white/20 py-3 text-white focus:border-[#53675C] focus:outline-none resize-none placeholder:text-white/30"
-                                        placeholder="Tell us about your event date, requirements, or any questions..."
-                                    ></textarea>
-                                </div>
-
-                                <div className="pt-4">
-                                    <button
-                                        type="submit"
-                                        className="w-full md:w-auto px-10 py-4 bg-[#53675C] text-white text-sm font-bold uppercase tracking-widest hover:bg-[#3d4d46] transition-all duration-300 shadow-md hover:shadow-lg border-radius: 0.75rem;"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <span className="relative">
+                                        View on Google Maps
+                                        {/* Underline animation */}
+                                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-500"></span>
+                                    </span>
+                                    <svg
+                                        className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
                                     >
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </span>
+                            </a>
                         </div>
 
                         {/* Right Column: Contact Info & Details */}
