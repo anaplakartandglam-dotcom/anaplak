@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { DM_Sans, Reddit_Sans } from "next/font/google"
 import "./globals.css"
 import StructuredData from "@/components/structured-data"
+import WhatsAppFloat from "@/components/whatsapp_float"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -137,6 +138,7 @@ export default function RootLayout({
       <body className="font-dm-sans antialiased bg-black text-gray-100">
         <StructuredData />
         {children}
+        <WhatsAppFloat />
       </body>
     </html>
   )

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import VideoParallax from "@/components/video_parrlex"
@@ -111,6 +112,92 @@ export default function AboutPage() {
 
     return (
         <>
+            {/* SEO Meta Tags */}
+            <Script
+                id="about-page-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "AboutPage",
+                        "name": "About Anaplak Art & Glam Salon",
+                        "description": "Learn about Anaplak Salon - Chennai's premier beauty destination with 16+ years of experience, 5600+ satisfied customers, and expert beauty specialists.",
+                        "url": "https://anaplakartandglamsalon.com/about",
+                        "mainEntity": {
+                            "@type": "BeautySalon",
+                            "name": "Anaplak Art & Glam Salon",
+                            "foundingDate": "2008",
+                            "numberOfEmployees": "23",
+                            "slogan": "Transform Your Look with Expert Care",
+                            "award": "Best Salon in Maduravoyal 2024"
+                        },
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://anaplakartandglamsalon.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "About Us",
+                                    "item": "https://anaplakartandglamsalon.com/about"
+                                }
+                            ]
+                        }
+                    })
+                }}
+            />
+
+            {/* FAQ Schema */}
+            <Script
+                id="faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "How often should I get a haircut or styling?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "For maintaining a fresh look, we recommend visiting every 4-6 weeks for haircuts. For color treatments and styling, the frequency depends on your hair type and desired look. Our stylists will create a personalized maintenance schedule during your consultation."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What is included in a bridal makeup package?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Our bridal packages include pre-wedding consultation, trial makeup session, wedding day makeup and hairstyling, touch-up kit, and on-location services. We also offer packages for bridesmaids and family members to ensure everyone looks stunning on your special day."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Do you use premium products for treatments?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Absolutely! We exclusively use internationally recognized premium brands for all our services. From hair treatments to makeup products, we ensure only the finest quality products touch your hair and skin, delivering superior results and lasting beauty."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How long does a typical salon session take?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The duration varies by service: a haircut takes 45-60 minutes, color treatments 2-3 hours, bridal makeup 2-3 hours, and full spa treatments 3-4 hours. We recommend booking in advance and allowing extra time to fully enjoy your pampering experience."
+                                }
+                            }
+                        ]
+                    })
+                }}
+            />
+
             <Header />
             <div className="relative min-h-screen bg-[#0e0e0e]">
                 {/* Hero Section with Parallax Background - 600px height */}

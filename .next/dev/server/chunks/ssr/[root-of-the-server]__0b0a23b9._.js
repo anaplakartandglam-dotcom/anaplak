@@ -284,34 +284,70 @@ const VideoParallax = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
     ssr: true
 });
 const metadata = {
-    title: 'Best Hair & Beauty Salon in Maduravoyal, Chennai | Anaplak Art and Glam',
-    description: 'Top-rated salon in Maduravoyal with 4.9★ rating! Expert bridal makeup, hair styling, coloring, keratin treatment, facials & spa. 16+ years experience. Walk-ins welcome. Book online or call +91 98400 88867. Open 10 AM - 9 PM daily.',
+    title: 'Best Bridal Makeup & Hair Salon Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9',
+    description: '🏆 #1 Rated Salon in Maduravoyal! ✨ Expert Bridal Makeup, Hair Coloring, Keratin Treatment, Facials & Spa. 16+ Years Experience | 5600+ Happy Customers | Premium Products | Ground Floor Parking. Book Now ☎️ +91-9840088867 | Open 10AM-9PM Daily',
     keywords: [
-        'best salon in Maduravoyal',
+        // Primary Commercial Keywords
+        'best bridal makeup artist Chennai',
+        'bridal makeup Maduravoyal',
         'hair salon near me Chennai',
-        'bridal makeup artist Maduravoyal',
-        'top rated beauty salon Chennai',
-        'hair coloring salon Maduravoyal',
+        'top rated salon Maduravoyal',
+        'luxury salon Chennai',
+        // Service Keywords
         'keratin treatment Chennai',
-        'facial spa Maduravoyal',
-        'salon near MMDA Colony',
-        'Anaplak salon'
+        'hair coloring specialist Maduravoyal',
+        'bridal makeup packages Chennai',
+        'facial treatment Chennai',
+        'hair spa Maduravoyal',
+        'wedding makeup artist Chennai',
+        // Location Keywords
+        'salon MMDA Colony',
+        'beauty parlour Maduravoyal',
+        'salon near me Chennai 600095',
+        'CDN Nagar salon',
+        // Long-tail Keywords
+        'best salon for bridal makeup in Chennai',
+        'affordable luxury salon Maduravoyal',
+        'salon with parking Chennai',
+        'premium beauty services Maduravoyal'
     ],
     openGraph: {
-        title: 'Best Hair & Beauty Salon in Maduravoyal | 4.9★ Rated | Anaplak',
-        description: '🌟 Top-rated salon with 16+ years experience. Bridal makeup, hair styling, coloring, facials & more. Book now! Open daily 10 AM - 9 PM.',
+        title: '🌟 Best Bridal Makeup & Hair Salon in Maduravoyal | 4.9★ | Anaplak',
+        description: '💎 Premium Beauty Services | Bridal Makeup Packages | Hair Coloring & Keratin | Facials & Spa | 16+ Years Experience | Book Your Appointment Today!',
         url: 'https://anaplakartandglamsalon.com',
+        siteName: 'Anaplak Art & Glam Salon',
+        type: 'website',
+        locale: 'en_IN',
         images: [
             {
                 url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Anaplak Art and Glam Salon - Best Beauty Salon in Maduravoyal, Chennai'
+                alt: 'Anaplak Art and Glam Salon - Best Bridal Makeup & Beauty Salon in Maduravoyal, Chennai'
             }
+        ]
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Best Bridal Makeup & Hair Salon Maduravoyal | Anaplak ⭐4.9',
+        description: '💎 Premium Beauty Services | Expert Bridal Makeup | Hair Coloring | Facials | Book Now!',
+        images: [
+            '/og-image.jpg'
         ]
     },
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com'
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1
+        }
     }
 };
 const revalidate = 60 // Revalidate every minute for fresh reviews
@@ -322,53 +358,53 @@ function Home() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 91,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$hero$2d$slider$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 92,
+                lineNumber: 129,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$about$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 93,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(VideoParallax, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 94,
+                lineNumber: 131,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Features, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 95,
+                lineNumber: 132,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(CircularSlider, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 96,
+                lineNumber: 133,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Team, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 97,
+                lineNumber: 134,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Testimonials, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 98,
+                lineNumber: 135,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Footer, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 99,
+                lineNumber: 136,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 90,
+        lineNumber: 127,
         columnNumber: 5
     }, this);
 }

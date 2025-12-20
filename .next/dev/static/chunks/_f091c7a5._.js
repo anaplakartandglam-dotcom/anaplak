@@ -1191,9 +1191,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/instagram.js [app-client] (ecmascript) <export default as Instagram>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript) <export default as Facebook>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript) <export default as Youtube>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/script.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/header.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-client] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -1208,9 +1210,86 @@ function ContactUs() {
     ;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                id: "contact-page-schema",
+                type: "application/ld+json",
+                dangerouslySetInnerHTML: {
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ContactPage",
+                        "name": "Contact Anaplak Art & Glam Salon",
+                        "description": "Contact Anaplak Salon for appointments, inquiries, and directions. Located in Maduravoyal, Chennai with convenient parking.",
+                        "url": "https://anaplakartandglamsalon.com/contact",
+                        "mainEntity": {
+                            "@type": "LocalBusiness",
+                            "name": "Anaplak Art & Glam Salon",
+                            "telephone": "+91-9840088867",
+                            "email": "anaplakartandglamsalon@gmail.com",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony",
+                                "addressLocality": "Maduravoyal",
+                                "addressRegion": "Chennai",
+                                "postalCode": "600095",
+                                "addressCountry": "IN"
+                            },
+                            "geo": {
+                                "@type": "GeoCoordinates",
+                                "latitude": "13.0515",
+                                "longitude": "80.1656"
+                            },
+                            "openingHoursSpecification": [
+                                {
+                                    "@type": "OpeningHoursSpecification",
+                                    "dayOfWeek": [
+                                        "Monday",
+                                        "Tuesday",
+                                        "Wednesday",
+                                        "Thursday",
+                                        "Friday",
+                                        "Saturday",
+                                        "Sunday"
+                                    ],
+                                    "opens": "10:00",
+                                    "closes": "21:00"
+                                }
+                            ],
+                            "hasMap": "https://www.google.com/maps/search/?api=1&query=Anaplak+Art+and+Glam+Salon+No.4B/9+New+No.+3+2nd+floor+First+Main+road+4th+block+MMDA+Colony+Maduravoyal+Chennai+600095",
+                            "amenityFeature": [
+                                {
+                                    "@type": "LocationFeatureSpecification",
+                                    "name": "Parking",
+                                    "value": "Ground Floor Parking Available"
+                                }
+                            ]
+                        },
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://anaplakartandglamsalon.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Contact",
+                                    "item": "https://anaplakartandglamsalon.com/contact"
+                                }
+                            ]
+                        }
+                    })
+                }
+            }, void 0, false, {
+                fileName: "[project]/app/contact/page.tsx",
+                lineNumber: 19,
+                columnNumber: 13
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/contact/page.tsx",
-                lineNumber: 17,
+                lineNumber: 85,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1230,7 +1309,7 @@ function ContactUs() {
                                 children: "Connect With Us"
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.tsx",
-                                lineNumber: 21,
+                                lineNumber: 89,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1238,13 +1317,13 @@ function ContactUs() {
                                 children: "Whether it's for your big day, a special occasion, or a moment of self-care, we invited you to experience luxury beauty services tailored just for you."
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.tsx",
-                                lineNumber: 22,
+                                lineNumber: 90,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/contact/page.tsx",
-                        lineNumber: 20,
+                        lineNumber: 88,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1260,7 +1339,7 @@ function ContactUs() {
                                             children: "Find Us Here"
                                         }, void 0, false, {
                                             fileName: "[project]/app/contact/page.tsx",
-                                            lineNumber: 33,
+                                            lineNumber: 101,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1278,12 +1357,12 @@ function ContactUs() {
                                                 title: "Anaplak Art And Glam Salon Location"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.tsx",
-                                                lineNumber: 36,
+                                                lineNumber: 104,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/contact/page.tsx",
-                                            lineNumber: 35,
+                                            lineNumber: 103,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1305,14 +1384,14 @@ function ContactUs() {
                                                     className: "absolute inset-0 bg-gradient-to-r from-[#3d4d46] to-[#53675C] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 66,
+                                                    lineNumber: 134,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 137,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1331,7 +1410,7 @@ function ContactUs() {
                                                                     d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 79,
+                                                                    lineNumber: 147,
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1341,13 +1420,13 @@ function ContactUs() {
                                                                     d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 80,
+                                                                    lineNumber: 148,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 73,
+                                                            lineNumber: 141,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1358,13 +1437,13 @@ function ContactUs() {
                                                                     className: "absolute bottom-0 left-0 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-500"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 85,
+                                                                    lineNumber: 153,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 82,
+                                                            lineNumber: 150,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1379,30 +1458,30 @@ function ContactUs() {
                                                                 d: "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/contact/page.tsx",
-                                                                lineNumber: 93,
+                                                                lineNumber: 161,
                                                                 columnNumber: 41
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 155,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 140,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/contact/page.tsx",
-                                            lineNumber: 50,
+                                            lineNumber: 118,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/contact/page.tsx",
-                                    lineNumber: 32,
+                                    lineNumber: 100,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1416,7 +1495,7 @@ function ContactUs() {
                                                     children: "Visit Our Premium Salon"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 103,
+                                                    lineNumber: 171,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1424,7 +1503,7 @@ function ContactUs() {
                                                     children: '"Anaplak Salon is one of the most trusted premium salon in Maduravoyal, with a wide range of services from hair care, hair coloring, manicures, and nail care to keratin nourishment,And skincare, under the consultation of professional staff offering the best customer satisfaction in every versatile range of services. A landmark building in the most prestigious CDN Nagar, MMDA Colony Anaplak is designed to provide a premium sensory experience with dedicated Ground Floor parking garages. If you’re wondering how a salon can change your mood, Pay us a visit at Anaplak Salon in Maduravoyal,. We’ll show you how it’s done right!"'
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 104,
+                                                    lineNumber: 172,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1439,12 +1518,12 @@ function ContactUs() {
                                                                         size: 22
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/contact/page.tsx",
-                                                                        lineNumber: 112,
+                                                                        lineNumber: 180,
                                                                         columnNumber: 45
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 111,
+                                                                    lineNumber: 179,
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1454,7 +1533,7 @@ function ContactUs() {
                                                                             children: "Anaplak Art & Glam Salon"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                            lineNumber: 115,
+                                                                            lineNumber: 183,
                                                                             columnNumber: 45
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1463,20 +1542,20 @@ function ContactUs() {
                                                                                 "No.4B/9, New No. 3, 2nd floor,",
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                                    lineNumber: 118,
+                                                                                    lineNumber: 186,
                                                                                     columnNumber: 49
                                                                                 }, this),
                                                                                 "First Main road, 4th block, MMDA Colony,",
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                                    lineNumber: 120,
+                                                                                    lineNumber: 188,
                                                                                     columnNumber: 49
                                                                                 }, this),
                                                                                 "Maduravoyal, Chennai - 600095"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                            lineNumber: 116,
+                                                                            lineNumber: 184,
                                                                             columnNumber: 45
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1487,19 +1566,19 @@ function ContactUs() {
                                                                             children: "View on Google Maps"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                            lineNumber: 123,
+                                                                            lineNumber: 191,
                                                                             columnNumber: 45
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 114,
+                                                                    lineNumber: 182,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 110,
+                                                            lineNumber: 178,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1511,12 +1590,12 @@ function ContactUs() {
                                                                         size: 22
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/contact/page.tsx",
-                                                                        lineNumber: 137,
+                                                                        lineNumber: 205,
                                                                         columnNumber: 45
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 136,
+                                                                    lineNumber: 204,
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1526,7 +1605,7 @@ function ContactUs() {
                                                                             children: "Working Hours"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                            lineNumber: 140,
+                                                                            lineNumber: 208,
                                                                             columnNumber: 45
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1539,7 +1618,7 @@ function ContactUs() {
                                                                                             children: "Mon - Sat:"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                                            lineNumber: 143,
+                                                                                            lineNumber: 211,
                                                                                             columnNumber: 53
                                                                                         }, this),
                                                                                         " ",
@@ -1548,13 +1627,13 @@ function ContactUs() {
                                                                                             children: "10:00 AM - 9:00 PM"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                                            lineNumber: 143,
+                                                                                            lineNumber: 211,
                                                                                             columnNumber: 77
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                                    lineNumber: 142,
+                                                                                    lineNumber: 210,
                                                                                     columnNumber: 49
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1564,7 +1643,7 @@ function ContactUs() {
                                                                                             children: "Sunday:"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                                            lineNumber: 146,
+                                                                                            lineNumber: 214,
                                                                                             columnNumber: 53
                                                                                         }, this),
                                                                                         " ",
@@ -1573,31 +1652,31 @@ function ContactUs() {
                                                                                             children: "10:00 AM - 9:00 PM"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                                            lineNumber: 146,
+                                                                                            lineNumber: 214,
                                                                                             columnNumber: 74
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                                    lineNumber: 145,
+                                                                                    lineNumber: 213,
                                                                                     columnNumber: 49
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                            lineNumber: 141,
+                                                                            lineNumber: 209,
                                                                             columnNumber: 45
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 139,
+                                                                    lineNumber: 207,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 135,
+                                                            lineNumber: 203,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1609,12 +1688,12 @@ function ContactUs() {
                                                                         size: 22
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/contact/page.tsx",
-                                                                        lineNumber: 155,
+                                                                        lineNumber: 223,
                                                                         columnNumber: 45
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 154,
+                                                                    lineNumber: 222,
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1624,7 +1703,7 @@ function ContactUs() {
                                                                             children: "Quick Contact"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                            lineNumber: 158,
+                                                                            lineNumber: 226,
                                                                             columnNumber: 45
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1638,12 +1717,12 @@ function ContactUs() {
                                                                                         children: "+91-9840088867"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/contact/page.tsx",
-                                                                                        lineNumber: 164,
+                                                                                        lineNumber: 232,
                                                                                         columnNumber: 53
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                                    lineNumber: 160,
+                                                                                    lineNumber: 228,
                                                                                     columnNumber: 49
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1654,12 +1733,12 @@ function ContactUs() {
                                                                                         children: "+91-9840088861"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/contact/page.tsx",
-                                                                                        lineNumber: 170,
+                                                                                        lineNumber: 238,
                                                                                         columnNumber: 53
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                                    lineNumber: 166,
+                                                                                    lineNumber: 234,
                                                                                     columnNumber: 49
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1669,50 +1748,50 @@ function ContactUs() {
                                                                                             size: 16
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                                            lineNumber: 173,
+                                                                                            lineNumber: 241,
                                                                                             columnNumber: 53
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                             children: "anaplakartandglamsalon@gmail.com"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                                            lineNumber: 174,
+                                                                                            lineNumber: 242,
                                                                                             columnNumber: 53
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                                    lineNumber: 172,
+                                                                                    lineNumber: 240,
                                                                                     columnNumber: 49
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/contact/page.tsx",
-                                                                            lineNumber: 159,
+                                                                            lineNumber: 227,
                                                                             columnNumber: 45
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/contact/page.tsx",
-                                                                    lineNumber: 157,
+                                                                    lineNumber: 225,
                                                                     columnNumber: 41
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 153,
+                                                            lineNumber: 221,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 108,
+                                                    lineNumber: 176,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/contact/page.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 170,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1723,7 +1802,7 @@ function ContactUs() {
                                                     children: "Follow Our Journey"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 252,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1738,12 +1817,12 @@ function ContactUs() {
                                                                 size: 20
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/contact/page.tsx",
-                                                                lineNumber: 192,
+                                                                lineNumber: 260,
                                                                 columnNumber: 41
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 186,
+                                                            lineNumber: 254,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1755,12 +1834,12 @@ function ContactUs() {
                                                                 size: 20
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/contact/page.tsx",
-                                                                lineNumber: 200,
+                                                                lineNumber: 268,
                                                                 columnNumber: 41
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 194,
+                                                            lineNumber: 262,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1772,18 +1851,18 @@ function ContactUs() {
                                                                 size: 20
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/contact/page.tsx",
-                                                                lineNumber: 208,
+                                                                lineNumber: 276,
                                                                 columnNumber: 41
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.tsx",
-                                                            lineNumber: 202,
+                                                            lineNumber: 270,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 185,
+                                                    lineNumber: 253,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1791,41 +1870,41 @@ function ContactUs() {
                                                     children: "Get the latest bridal trends & offers on our social handles."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/contact/page.tsx",
-                                                    lineNumber: 211,
+                                                    lineNumber: 279,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/contact/page.tsx",
-                                            lineNumber: 183,
+                                            lineNumber: 251,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/contact/page.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 168,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/contact/page.tsx",
-                            lineNumber: 30,
+                            lineNumber: 98,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.tsx",
-                        lineNumber: 29,
+                        lineNumber: 97,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/contact/page.tsx",
-                lineNumber: 18,
+                lineNumber: 86,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/contact/page.tsx",
-                lineNumber: 219,
+                lineNumber: 287,
                 columnNumber: 13
             }, this)
         ]

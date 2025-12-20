@@ -1,8 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import { ChevronDown, Sparkles, Scissors, Palette, Heart, Crown } from "lucide-react"
 import Image from "next/image"
+import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
@@ -281,6 +282,93 @@ export default function ServicesSection() {
 
   return (
     <>
+      {/* Services Schema Markup */}
+      <Script
+        id="services-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Beauty Services at Anaplak Salon",
+            "description": "Complete range of premium beauty services including bridal makeup, hair styling, facials, and spa treatments",
+            "url": "https://anaplakartandglamsalon.com/services",
+            "itemListElement": [
+              {
+                "@type": "Service",
+                "name": "Complete Bridal Package",
+                "provider": {
+                  "@type": "BeautySalon",
+                  "name": "Anaplak Art & Glam Salon"
+                },
+                "serviceType": "Bridal Makeup",
+                "areaServed": "Chennai",
+                "description": "Transform into the most radiant version of yourself on your special day with our complete bridal package"
+              },
+              {
+                "@type": "Service",
+                "name": "Hair Coloring",
+                "provider": {
+                  "@type": "BeautySalon",
+                  "name": "Anaplak Art & Glam Salon"
+                },
+                "serviceType": "Hair Services",
+                "areaServed": "Chennai",
+                "description": "Expert hair coloring services with premium products and latest techniques"
+              },
+              {
+                "@type": "Service",
+                "name": "Facial Treatments",
+                "provider": {
+                  "@type": "BeautySalon",
+                  "name": "Anaplak Art & Glam Salon"
+                },
+                "serviceType": "Skin Care",
+                "areaServed": "Chennai",
+                "description": "Rejuvenating facial treatments customized to your skin type"
+              },
+              {
+                "@type": "Service",
+                "name": "Manicure & Pedicure",
+                "provider": {
+                  "@type": "BeautySalon",
+                  "name": "Anaplak Art & Glam Salon"
+                },
+                "serviceType": "Nail Care",
+                "areaServed": "Chennai",
+                "description": "Luxury nail care services with premium products"
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Breadcrumb Schema */}
+      <Script
+        id="services-breadcrumb"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://anaplakartandglamsalon.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://anaplakartandglamsalon.com/services"
+              }
+            ]
+          })
+        }}
+      />
+
       <Header />
       <div className="min-h-screen text-white" style={{ backgroundColor: "#0e0e0e" }}>
         {/* Hero Section */}

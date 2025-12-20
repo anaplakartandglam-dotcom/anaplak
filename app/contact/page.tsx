@@ -1,6 +1,7 @@
 "use client"
 
 import { Phone, MapPin, Clock, Mail, Instagram, Facebook, Youtube } from "lucide-react"
+import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
@@ -14,6 +15,73 @@ export default function ContactUs() {
 
     return (
         <>
+            {/* Contact Page Schema Markup */}
+            <Script
+                id="contact-page-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ContactPage",
+                        "name": "Contact Anaplak Art & Glam Salon",
+                        "description": "Contact Anaplak Salon for appointments, inquiries, and directions. Located in Maduravoyal, Chennai with convenient parking.",
+                        "url": "https://anaplakartandglamsalon.com/contact",
+                        "mainEntity": {
+                            "@type": "LocalBusiness",
+                            "name": "Anaplak Art & Glam Salon",
+                            "telephone": "+91-9840088867",
+                            "email": "anaplakartandglamsalon@gmail.com",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony",
+                                "addressLocality": "Maduravoyal",
+                                "addressRegion": "Chennai",
+                                "postalCode": "600095",
+                                "addressCountry": "IN"
+                            },
+                            "geo": {
+                                "@type": "GeoCoordinates",
+                                "latitude": "13.0515",
+                                "longitude": "80.1656"
+                            },
+                            "openingHoursSpecification": [
+                                {
+                                    "@type": "OpeningHoursSpecification",
+                                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                                    "opens": "10:00",
+                                    "closes": "21:00"
+                                }
+                            ],
+                            "hasMap": "https://www.google.com/maps/search/?api=1&query=Anaplak+Art+and+Glam+Salon+No.4B/9+New+No.+3+2nd+floor+First+Main+road+4th+block+MMDA+Colony+Maduravoyal+Chennai+600095",
+                            "amenityFeature": [
+                                {
+                                    "@type": "LocationFeatureSpecification",
+                                    "name": "Parking",
+                                    "value": "Ground Floor Parking Available"
+                                }
+                            ]
+                        },
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://anaplakartandglamsalon.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Contact",
+                                    "item": "https://anaplakartandglamsalon.com/contact"
+                                }
+                            ]
+                        }
+                    })
+                }}
+            />
+
             <Header />
             <div className="min-h-screen font-sans" style={{ backgroundColor }}>
                 {/* Introduction Section */}
