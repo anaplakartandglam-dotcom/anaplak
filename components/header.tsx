@@ -16,6 +16,7 @@ export default function Header() {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
+    { label: "Gallery", href: "/gallery" },
     // { label: "Blog", href: "/blog" },
     { label: "Services", href: "/services" },
     { label: "Contacts", href: "/contact" },
@@ -49,7 +50,7 @@ export default function Header() {
           zIndex: 50,
         }}
       >
-        <div className="w-full max-w-6xl px-4 md:px-10 flex justify-between items-center">
+        <div className="w-full px-4 md:px-10 flex justify-between items-center">
 
           {/* Mobile Number */}
           <a href="tel:+919840088867" className="flex md:hidden items-center gap-2 text-white text-xs tracking-wide hover:text-[#F8C8DC] transition">
@@ -101,7 +102,7 @@ export default function Header() {
           borderBottom: isSticky ? "1px solid rgba(255,255,255,0.15)" : "none",
         }}
       >
-        <div className="w-full max-w-6xl mx-auto px-4 md:px-10 py-8 md:py-10 flex justify-between items-center">
+        <div className="w-full px-4 md:px-10 py-8 md:py-10 flex justify-between items-center">
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 md:gap-4" style={{ marginTop: '13px' }}>
@@ -119,7 +120,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Menu (FIXED) */}
-          <nav className="hidden lg:flex gap-10 items-center">
+          <nav className="hidden lg:flex gap-12 items-center">
             {navItems.map((item) => (
               <Link
                 key={item.label}

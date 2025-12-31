@@ -144,6 +144,9 @@ export default function Footer() {
               <a href="/about" className="hover:text-[#C8AFAE] cursor-pointer transition">About +</a>
             </li>
             <li>
+              <a href="/gallery" className="hover:text-[#C8AFAE] cursor-pointer transition">Gallery +</a>
+            </li>
+            <li>
               <a href="/services" className="hover:text-[#C8AFAE] cursor-pointer transition">Services +</a>
             </li>
             <li>
