@@ -26,7 +26,7 @@ export async function GET() {
         const placeId = process.env.GOOGLE_PLACE_ID
 
         if (!apiKey || !placeId) {
-            console.error('Missing Google API credentials')
+            // Silently return error without verbose logging
             return NextResponse.json(
                 { error: 'API configuration missing' },
                 { status: 500 }
@@ -42,18 +42,16 @@ export async function GET() {
         )
 
         if (!response.ok) {
-            throw new Error('Failed to fetch reviews from Google')
+            return NextResponse.json(
+                { error: 'Failed to fetch reviews from Google' },
+                { status: 500 }
+            )
         }
 
         const data: GooglePlaceDetailsResponse = await response.json()
 
-        // Debug logging
-        console.log('Google API Response Status:', data.status)
-        console.log('Total reviews from API:', data.result?.reviews?.length)
-        console.log('First review sample:', data.result?.reviews?.[0])
-
         if (data.status !== 'OK' || !data.result?.reviews) {
-            console.error('Google API error:', data.status)
+            // Silently return error - client will use fallback reviews
             return NextResponse.json(
                 { error: 'Failed to fetch reviews', status: data.status },
                 { status: 500 }
@@ -61,25 +59,15 @@ export async function GET() {
         }
 
         // Transform Google reviews to our format
-        const reviews = data.result.reviews.map((review) => {
-            console.log('Review photo URL:', review.profile_photo_url)
-            return {
-                name: review.author_name,
-                role: 'Google Review',
-                text: review.text,
-                rating: review.rating,
-                time: review.time,
-                relativeTime: review.relative_time_description,
-                photoUrl: review.profile_photo_url,
-            }
-        })
-
-        console.log('=== ALL REVIEWS FROM GOOGLE API ===')
-        console.log('Total reviews fetched:', reviews.length)
-        reviews.forEach((review, idx) => {
-            console.log(`${idx + 1}. ${review.name} - ${review.rating}★ - ${review.relativeTime}`)
-        })
-        console.log('===================================')
+        const reviews = data.result.reviews.map((review) => ({
+            name: review.author_name,
+            role: 'Google Review',
+            text: review.text,
+            rating: review.rating,
+            time: review.time,
+            relativeTime: review.relative_time_description,
+            photoUrl: review.profile_photo_url,
+        }))
 
         return NextResponse.json({
             reviews,
@@ -93,7 +81,7 @@ export async function GET() {
             }
         })
     } catch (error) {
-        console.error('Error fetching Google reviews:', error)
+        // Silently catch errors - client will use fallback reviews
         return NextResponse.json(
             { error: 'Failed to fetch reviews' },
             { status: 500 }

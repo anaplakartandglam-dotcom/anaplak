@@ -214,7 +214,7 @@ const services = [
         description: "Pamper yourself with our relaxing nail care services",
         image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg",
         details:
-          "Indulge in our luxurious manicure and pedicure services. We use premium products and techniques to give you beautiful, healthy nails while providing a relaxing spa experience.",
+          "Indulge in our luxurious manicure and pedicure services. We use premium products and techniques to give you beautiful, healthy nails while providing a relaxing beauty experience.",
         benefits: [
           "Nail health improvement",
           "Cuticle care and shaping",
@@ -291,7 +291,7 @@ export default function ServicesSection() {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "name": "Beauty Services at Anaplak Salon",
-            "description": "Complete range of premium beauty services including bridal makeup, hair styling, facials, and spa treatments",
+            "description": "Complete range of premium beauty services including bridal makeup, hair styling, facials, and beauty treatments",
             "url": "https://anaplakartandglamsalon.com/services",
             "itemListElement": [
               {

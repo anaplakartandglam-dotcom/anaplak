@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Anaplak Art and Glam Salon in Maduravoyal, Chennai offers premium hair styling, bridal makeup, hair coloring, facials, manicure, pedicure & beauty treatments. Expert stylists with 16+ years experience. Book your appointment today!",
   keywords: [
     // Primary Keywords
-    "hair salon Chennai",
+    "premium hair salon Chennai",
     "beauty salon Maduravoyal",
     "Anaplak salon Chennai",
     "premium salon Chennai",
@@ -51,12 +51,12 @@ export const metadata: Metadata = {
     // Brand Keywords
     "Anaplak Art and Glam",
     "Anaplak salon",
-    "luxury hair salon Chennai",
+    "luxury premium hair salon Chennai",
     "professional hair care Chennai",
 
     // Long-tail Keywords
     "best bridal makeup artist Chennai",
-    "hair spa treatment Chennai",
+    "hair treatment Chennai",
     "keratin treatment Chennai",
     "anti-aging facial Chennai",
     "wedding makeup Chennai",

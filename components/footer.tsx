@@ -137,11 +137,18 @@ export default function Footer() {
           </h6>
 
           <ul className="space-y-2.5 text-[15px] md:text-[16px] uppercase tracking-[0.18em] text-white/85">
-            {["Home", "About", "Services", "Contacts"].map((item) => (
-              <li key={item}>
-                <span className="hover:text-[#C8AFAE] cursor-pointer transition">{item} +</span>
-              </li>
-            ))}
+            <li>
+              <a href="/" className="hover:text-[#C8AFAE] cursor-pointer transition">Home +</a>
+            </li>
+            <li>
+              <a href="/about" className="hover:text-[#C8AFAE] cursor-pointer transition">About +</a>
+            </li>
+            <li>
+              <a href="/services" className="hover:text-[#C8AFAE] cursor-pointer transition">Services +</a>
+            </li>
+            <li>
+              <a href="/contact" className="hover:text-[#C8AFAE] cursor-pointer transition">Contacts +</a>
+            </li>
           </ul>
         </div>
 

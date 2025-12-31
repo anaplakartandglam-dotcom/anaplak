@@ -171,19 +171,16 @@ export default function Testimonials() {
         })
 
         if (!response.ok) {
-          throw new Error('Failed to fetch reviews')
+          // Silently fail and use fallback reviews
+          console.log('Using fallback reviews (API unavailable)')
+          setIsFromGoogle(false)
+          setLoading(false)
+          return
         }
 
         const data = await response.json()
-        console.log('Received reviews data:', data)
-        console.log('Number of reviews:', data.reviews?.length)
 
         if (data.reviews && data.reviews.length > 0) {
-          // Log photo URLs
-          data.reviews.forEach((review: any, idx: number) => {
-            console.log(`Review ${idx + 1} - ${review.name} - Photo URL:`, review.photoUrl)
-          })
-
           // Transform reviews - show ALL reviews
           const transformedReviews: Review[] = data.reviews
             .filter((review: any) => review.rating >= 4) // Only show 4-5 star reviews
@@ -203,15 +200,18 @@ export default function Testimonials() {
               photoUrl: review.photoUrl,
             }))
 
-          console.log('Transformed reviews:', transformedReviews)
           setTestimonials(transformedReviews)
           setIsFromGoogle(true)
           setTotalRating(data.totalRating)
           setTotalReviews(data.totalReviews)
+        } else {
+          // No reviews returned, use fallback
+          console.log('Using fallback reviews (no reviews from API)')
+          setIsFromGoogle(false)
         }
       } catch (error) {
-        console.error('Error fetching reviews:', error)
-        // Keep fallback reviews
+        // Silently catch all errors and use fallback reviews
+        console.log('Using fallback reviews (error occurred)')
         setIsFromGoogle(false)
       } finally {
         setLoading(false)

@@ -103,7 +103,7 @@ export default function About() {
             }`}
         >
           <h6 className="uppercase text-[#C8AFAE] tracking-[0.3em] text-[14px] mb-6">
-            about hair salon
+            about premium hair salon
           </h6>
 
           {/* ----------------------------

@@ -8,12 +8,12 @@
 
 ### Title (60 characters)
 ```
-Best Hair & Beauty Salon in Maduravoyal, Chennai | Anaplak Art and Glam
+Best Premium Hair Salon & Bridal Makeup in Maduravoyal, Chennai | Anaplak Art and Glam
 ```
 
 ### Description (155 characters)
 ```
-Top-rated salon in Maduravoyal with 4.9★ rating! Expert bridal makeup, hair styling, coloring, keratin treatment, facials & spa. 16+ years experience. Walk-ins welcome. Book online or call +91 98400 88867. Open 10 AM - 9 PM daily.
+Top-rated salon in Maduravoyal with 4.9★ rating! Expert bridal makeup, hair styling, coloring, keratin treatment, facials & beauty treatments. 16+ years experience. Walk-ins welcome. Book online or call +91 98400 88867. Open 10 AM - 9 PM daily.
 ```
 
 ### Why It Works:
@@ -27,7 +27,7 @@ Top-rated salon in Maduravoyal with 4.9★ rating! Expert bridal makeup, hair st
 
 ### Target Keywords:
 - best salon in Maduravoyal
-- hair salon near me Chennai
+- premium hair salon near me Chennai
 - bridal makeup artist Maduravoyal
 - top rated beauty salon Chennai
 - keratin treatment Chennai
@@ -153,7 +153,7 @@ Book your appointment at Anaplak Art and Glam Salon, Maduravoyal. 📍 2nd Floor
 ### **Improved Rankings For:**
 1. "best salon in Maduravoyal" → Homepage
 2. "bridal makeup Chennai" → Services Page
-3. "hair salon near me" → Homepage + Contact
+3. "premium hair salon near me" → Homepage + Contact
 4. "keratin treatment Chennai" → Services Page
 5. "salon MMDA Colony" → Contact Page
 

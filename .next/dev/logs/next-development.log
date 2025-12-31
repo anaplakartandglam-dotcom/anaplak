@@ -1,131 +1,159 @@
-[00:00:00.797] Server  LOG      ✓ Ready in 586ms
-[00:00:03.988] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:00.691] Server  LOG      ✓ Ready in 494ms
+[00:00:04.607] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:03.990] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:04.610] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:03.991] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:04.610] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.001] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:04.611] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.641] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:05.170] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.641] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:05.171] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.641] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:05.171] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:04.641] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:05.171] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:05.401] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-logo.png" "received" null
-[00:00:05.801] Server  LOG     Google API Response Status: "OK"
-[00:00:05.801] Server  LOG     Total reviews from API: 5
-[00:00:05.802] Server  LOG     First review sample: {}
-[00:00:05.802] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4"
-[00:00:05.802] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo"
-[00:00:05.802] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo"
-[00:00:05.802] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo"
-[00:00:05.802] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo"
-[00:00:05.802] Server  LOG     === ALL REVIEWS FROM GOOGLE API ===
-[00:00:05.803] Server  LOG     Total reviews fetched: 5
-[00:00:05.803] Server  LOG     1. Santhosh Anto - 5★ - a week ago
-[00:00:05.803] Server  LOG     2. bala murugan - 5★ - 2 weeks ago
-[00:00:05.803] Server  LOG     3. lokesh R - 5★ - a month ago
-[00:00:05.803] Server  LOG     4. SANJAY KUMAR P - 5★ - a week ago
-[00:00:05.803] Server  LOG     5. Ajay Thenneti - 5★ - 4 weeks ago
-[00:00:05.804] Server  LOG     ===================================
-[00:00:05.912] Browser LOG     Received reviews data: {"reviews":[{"name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550},{"name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355}],"totalRating":4.9,"totalReviews":28}
-[00:00:05.912] Browser LOG     Number of reviews: 5
-[00:00:05.912] Browser LOG     Review 1 - Santhosh Anto - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:00:05.912] Browser LOG     Review 2 - bala murugan - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:00:05.912] Browser LOG     Review 3 - lokesh R - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:00:05.912] Browser LOG     Review 4 - SANJAY KUMAR P - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:00:05.912] Browser LOG     Review 5 - Ajay Thenneti - Photo URL: https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:00:05.912] Browser LOG     Transformed reviews: [{"iconColor":"#53675C","name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"iconColor":"#C8AFAE","name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"iconColor":"#8B9A8E","name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"iconColor":"#A68A89","name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355},{"iconColor":"#6B7F73","name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550}]
-[00:00:07.774] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-logo.png" "received" null
-[00:00:07.809] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:06.475] Server  LOG     Google API Response Status: "REQUEST_DENIED"
+[00:00:06.476] Server  LOG     Total reviews from API: undefined
+[00:00:06.476] Server  LOG     First review sample: undefined
+[00:00:06.476] Server  ERROR   Google API error: "REQUEST_DENIED"
+[00:00:06.587] Browser ERROR   Error fetching reviews: {}
+[00:00:33.699] Server  LOG        Reload env: .env
+[00:00:33.870] Server  LOG      ✓ Compiled in 97ms
+[00:00:34.201] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:07.809] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:34.201] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:07.809] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:34.201] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:07.809] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:34.201] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:07.858] Server  LOG     Google API Response Status: "OK"
-[00:00:07.858] Server  LOG     Total reviews from API: 5
-[00:00:07.858] Server  LOG     First review sample: {}
-[00:00:07.859] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4"
-[00:00:07.859] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo"
-[00:00:07.859] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo"
-[00:00:07.859] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo"
-[00:00:07.859] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo"
-[00:00:07.859] Server  LOG     === ALL REVIEWS FROM GOOGLE API ===
-[00:00:07.860] Server  LOG     Total reviews fetched: 5
-[00:00:07.860] Server  LOG     1. Santhosh Anto - 5★ - a week ago
-[00:00:07.860] Server  LOG     2. bala murugan - 5★ - 2 weeks ago
-[00:00:07.860] Server  LOG     3. lokesh R - 5★ - a month ago
-[00:00:07.860] Server  LOG     4. SANJAY KUMAR P - 5★ - a week ago
-[00:00:07.860] Server  LOG     5. Ajay Thenneti - 5★ - 4 weeks ago
-[00:00:07.860] Server  LOG     ===================================
-[00:00:07.964] Browser LOG     Received reviews data: {"reviews":[{"name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550},{"name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355}],"totalRating":4.9,"totalReviews":28}
-[00:00:07.964] Browser LOG     Number of reviews: 5
-[00:00:07.964] Browser LOG     Review 1 - Santhosh Anto - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:00:07.964] Browser LOG     Review 2 - bala murugan - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:00:07.964] Browser LOG     Review 3 - lokesh R - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:00:07.964] Browser LOG     Review 4 - SANJAY KUMAR P - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:00:07.964] Browser LOG     Review 5 - Ajay Thenneti - Photo URL: https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:00:07.964] Browser LOG     Transformed reviews: [{"iconColor":"#53675C","name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"iconColor":"#C8AFAE","name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"iconColor":"#8B9A8E","name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"iconColor":"#A68A89","name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355},{"iconColor":"#6B7F73","name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550}]
-[00:00:14.177] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:00:14.177] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:00:19.185] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:00:24.177] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:00:24.178] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:00:29.229] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:00:29.239] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:00:39.185] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:00:39.188] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:00:44.177] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:00:44.177] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:00:49.177] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:00:59.176] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:00:59.177] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:01:14.177] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:01:14.178] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:01:19.176] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:01:24.176] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:01:24.176] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:01:29.176] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:01:29.176] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:01:34.176] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:01:39.177] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:01:39.177] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:01:44.183] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:01:44.184] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:01:49.191] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:01:54.178] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:01:54.178] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:01:59.176] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:01:59.176] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:02:04.177] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:02:09.177] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:02:09.177] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:02:30.140] Server  LOG      ✓ Compiled in 268ms
-[00:02:30.289] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-float.png" "received" null
-[00:02:37.298] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:38.890] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.299] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:38.892] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.299] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:38.892] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.299] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:38.893] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.652] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:39.282] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.652] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:39.283] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.652] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:39.283] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.652] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:39.283] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:37.652] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:39.435] Server  LOG     Google API Response Status: "REQUEST_DENIED"
+[00:00:39.436] Server  LOG     Total reviews from API: undefined
+[00:00:39.436] Server  LOG     First review sample: undefined
+[00:00:39.437] Server  ERROR   Google API error: "REQUEST_DENIED"
+[00:00:39.830] Browser ERROR   Error fetching reviews: {}
+[00:00:44.501] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:44.501] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:44.501] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:44.501] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:44.738] Server  LOG     Google API Response Status: "REQUEST_DENIED"
+[00:00:44.739] Server  LOG     Total reviews from API: undefined
+[00:00:44.739] Server  LOG     First review sample: undefined
+[00:00:44.739] Server  ERROR   Google API error: "REQUEST_DENIED"
+[00:00:44.842] Browser ERROR   Error fetching reviews: {}
+[00:05:56.358] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:56.358] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:56.358] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:56.358] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:56.763] Server  LOG     Google API Response Status: "REQUEST_DENIED"
+[00:05:56.764] Server  LOG     Total reviews from API: undefined
+[00:05:56.764] Server  LOG     First review sample: undefined
+[00:05:56.764] Server  ERROR   Google API error: "REQUEST_DENIED"
+[00:05:56.869] Browser ERROR   Error fetching reviews: {}
+[00:07:53.099] Server  LOG      ✓ Compiled in 253ms
+[00:08:53.147] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:53.147] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:53.148] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:53.148] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:53.730] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:53.730] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:53.730] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:53.730] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:08:54.298] Browser LOG     Using fallback reviews (API unavailable)
+[00:11:01.585] Server  LOG      ✓ Compiled in 763ms
+[00:11:57.062] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:11:57.370] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.370] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.370] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.370] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.533] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.533] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.533] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.533] Browser WARN    Image with src "/hair-coloring-highlights-balayage-salon-transforma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.685] Browser WARN    Image with src "/eyebrow-threading-professional-beauty-salon-treatm.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:11:57.685] Browser WARN    Image with src "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:12:01.249] Browser LOG     Using fallback reviews (API unavailable)
+[00:12:01.353] Browser LOG     Using fallback reviews (API unavailable)
+[00:14:15.870] Server  LOG      ✓ Compiled in 437ms
+[00:14:28.954] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:28.956] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:28.956] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:28.956] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:29.584] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:29.584] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:29.584] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:29.584] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:30.227] Browser LOG     Using fallback reviews (API unavailable)
+[00:15:13.429] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:15:13.979] Browser LOG     Using fallback reviews (API unavailable)
+[00:15:13.979] Browser LOG     Using fallback reviews (API unavailable)
+[00:18:13.833] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:13.833] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:13.833] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:13.833] Browser WARN    Image with src "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:13.833] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:13.833] Browser WARN    Image with src "/eyebrow-threading-professional-beauty-salon-treatm.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:14.050] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:14.050] Browser WARN    Image with src "/hair-coloring-highlights-balayage-salon-transforma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:14.050] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:14.050] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:15.281] Server  LOG      ✓ Compiled in 433ms
+[00:18:26.400] Browser LOG     Using fallback reviews (API unavailable)
+[00:18:26.551] Browser LOG     Using fallback reviews (API unavailable)
+[00:20:37.316] Browser LOG     Using fallback reviews (API unavailable)
+[00:20:37.316] Browser LOG     Using fallback reviews (API unavailable)
+[00:20:38.199] Browser LOG     Using fallback reviews (API unavailable)
+[00:20:38.199] Browser LOG     Using fallback reviews (API unavailable)
+[00:21:34.783] Server  LOG      ✓ Compiled in 346ms
+[00:22:14.595] Browser LOG     Using fallback reviews (API unavailable)
+[00:22:14.770] Browser LOG     Using fallback reviews (API unavailable)
+[00:22:16.871] Server  LOG      ✓ Compiled in 269ms
+[00:24:15.655] Server  LOG      ✓ Compiled in 283ms
+[00:25:42.634] Server  LOG      ✓ Compiled in 135ms
+[00:26:03.925] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -135,179 +163,215 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-%s%s https://react.dev/link/hydration-mismatch 
+https://react.dev/link/hydration-mismatch
 
   ...
-    <AppDevOverlayErrorBoundary globalError={[...]}>
-      <ReplaySsrOnlyErrors>
-      <DevRootHTTPAccessFallbackBoundary>
-        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-          <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-            <RedirectBoundary>
-              <RedirectErrorBoundary router={{...}}>
-                <Head>
-                <__next_root_layout_boundary__>
-                  <SegmentViewNode type="layout" pagePath="layout.tsx">
-                    <SegmentTrieNode>
-                    <link>
-                    <script>
-                    <script>
-                    <script>
-                    <RootLayout>
-                      <html lang="en" className="dm_sans_ef...">
-                        <head>
-                        <body className="font-dm-sa...">
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="about/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url="/about" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                    <SegmentViewNode type="page" pagePath="about/page...">
+                      <SegmentTrieNode>
+                      <ClientPageRoot Component={function AboutPage} serverProvidedParams={{...}}>
+                        <AboutPage params={Promise} searchParams={Promise}>
                           <Script>
                           <Script>
-                          <OuterLayoutRouter>
-                          <WhatsAppFloat>
-                            <a href={"https://..."} target="_blank" rel="noopener n..." aria-label="Contact us..." ...>
-                              <img
-                                alt="WhatsApp"
-                                fetchPriority={undefined}
-                                loading="lazy"
-                                width={60}
-                                height={60}
-                                decoding="async"
-                                data-nimg="1"
-                                className="whatsapp-icon"
-                                style={{color:"transparent"}}
-                                sizes={undefined}
-+                               srcSet={"/_next/image?url=%2Fwhatsapp-logo.png&w=64&q=75 1x, /_next/image?url=%2Fwhat..."}
--                               srcSet={"/_next/image?url=%2Fwhatsapp-float.png&w=64&q=75 1x, /_next/image?url=%2Fwha..."}
-+                               src={"/_next/image?url=%2Fwhatsapp-logo.png&w=128&q=75"}
--                               src={"/_next/image?url=%2Fwhatsapp-float.png&w=128&q=75"}
-                                ref={function}
-                                onLoad={function onLoad}
-                                onError={function onError}
+                          <Header>
+                          <div className="relative m...">
+                            <div>
+                            <section>
+                            <section>
+                            <div className="relative b...">
+                              <section>
+                              <section>
+                              <Testimonials>
+                              <section>
+                              <section
++                               className="py-20 px-4 bg-[#C8AFAE]"
+-                               className="py-20 px-4 bg-[#0E0E0E]"
                               >
-                              ...
-                ...
+                                <div
++                                 className="max-w-4xl mx-auto text-center"
+-                                 className="max-w-6xl mx-auto"
+                                >
++                                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-black mb-2">
+-                                 <div className="text-center mb-16">
+                                  ...
+                          ...
+                    ...
+                  ...
+        ...
 
-[00:02:37.671] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-float.png" "received" null
-[00:02:38.283] Server  LOG     Google API Response Status: "OK"
-[00:02:38.283] Server  LOG     Total reviews from API: 5
-[00:02:38.284] Server  LOG     First review sample: {}
-[00:02:38.284] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4"
-[00:02:38.285] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo"
-[00:02:38.285] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo"
-[00:02:38.285] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo"
-[00:02:38.285] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo"
-[00:02:38.286] Server  LOG     === ALL REVIEWS FROM GOOGLE API ===
-[00:02:38.286] Server  LOG     Total reviews fetched: 5
-[00:02:38.287] Server  LOG     1. Santhosh Anto - 5★ - a week ago
-[00:02:38.287] Server  LOG     2. bala murugan - 5★ - 2 weeks ago
-[00:02:38.288] Server  LOG     3. lokesh R - 5★ - a month ago
-[00:02:38.288] Server  LOG     4. SANJAY KUMAR P - 5★ - a week ago
-[00:02:38.288] Server  LOG     5. Ajay Thenneti - 5★ - 4 weeks ago
-[00:02:38.288] Server  LOG     ===================================
-[00:02:38.394] Browser LOG     Received reviews data: {"reviews":[{"name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550},{"name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355}],"totalRating":4.9,"totalReviews":28}
-[00:02:38.394] Browser LOG     Number of reviews: 5
-[00:02:38.394] Browser LOG     Review 1 - Santhosh Anto - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:02:38.394] Browser LOG     Review 2 - bala murugan - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:02:38.394] Browser LOG     Review 3 - lokesh R - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:02:38.394] Browser LOG     Review 4 - SANJAY KUMAR P - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:02:38.394] Browser LOG     Review 5 - Ajay Thenneti - Photo URL: https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:02:38.394] Browser LOG     Transformed reviews: [{"iconColor":"#53675C","name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"iconColor":"#C8AFAE","name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"iconColor":"#8B9A8E","name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"iconColor":"#A68A89","name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355},{"iconColor":"#6B7F73","name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550}]
-[00:02:39.519] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-float.png" "received" null
-[00:02:39.562] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:04.131] Browser LOG     Using fallback reviews (API unavailable)
+[00:26:04.291] Browser LOG     Using fallback reviews (API unavailable)
+[00:26:06.354] Server  LOG      ✓ Compiled in 89ms
+[00:26:07.829] Browser LOG     Using fallback reviews (API unavailable)
+[00:26:29.861] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:39.562] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:29.870] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:39.562] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:29.871] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:39.562] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:29.872] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:39.583] Server  LOG     Google API Response Status: "OK"
-[00:02:39.584] Server  LOG     Total reviews from API: 5
-[00:02:39.585] Server  LOG     First review sample: {}
-[00:02:39.586] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4"
-[00:02:39.588] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo"
-[00:02:39.599] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo"
-[00:02:39.608] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo"
-[00:02:39.609] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo"
-[00:02:39.609] Server  LOG     === ALL REVIEWS FROM GOOGLE API ===
-[00:02:39.609] Server  LOG     Total reviews fetched: 5
-[00:02:39.609] Server  LOG     1. Santhosh Anto - 5★ - a week ago
-[00:02:39.609] Server  LOG     2. bala murugan - 5★ - 2 weeks ago
-[00:02:39.610] Server  LOG     3. lokesh R - 5★ - a month ago
-[00:02:39.610] Server  LOG     4. SANJAY KUMAR P - 5★ - a week ago
-[00:02:39.610] Server  LOG     5. Ajay Thenneti - 5★ - 4 weeks ago
-[00:02:39.610] Server  LOG     ===================================
-[00:02:39.720] Browser LOG     Received reviews data: {"reviews":[{"name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550},{"name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355}],"totalRating":4.9,"totalReviews":28}
-[00:02:39.720] Browser LOG     Number of reviews: 5
-[00:02:39.720] Browser LOG     Review 1 - Santhosh Anto - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:02:39.720] Browser LOG     Review 2 - bala murugan - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:02:39.720] Browser LOG     Review 3 - lokesh R - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:02:39.720] Browser LOG     Review 4 - SANJAY KUMAR P - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:02:39.720] Browser LOG     Review 5 - Ajay Thenneti - Photo URL: https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:02:39.720] Browser LOG     Transformed reviews: [{"iconColor":"#53675C","name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"iconColor":"#C8AFAE","name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"iconColor":"#8B9A8E","name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"iconColor":"#A68A89","name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355},{"iconColor":"#6B7F73","name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550}]
-[00:02:41.540] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-float.png" "received" null
-[00:02:41.593] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:30.296] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:41.593] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:30.296] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:41.593] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:30.296] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:41.593] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:26:30.296] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:41.603] Server  LOG     Google API Response Status: "OK"
-[00:02:41.603] Server  LOG     Total reviews from API: 5
-[00:02:41.604] Server  LOG     First review sample: {}
-[00:02:41.604] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4"
-[00:02:41.604] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo"
-[00:02:41.604] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo"
-[00:02:41.604] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo"
-[00:02:41.604] Server  LOG     Review photo URL: "https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo"
-[00:02:41.604] Server  LOG     === ALL REVIEWS FROM GOOGLE API ===
-[00:02:41.604] Server  LOG     Total reviews fetched: 5
-[00:02:41.604] Server  LOG     1. Santhosh Anto - 5★ - a week ago
-[00:02:41.605] Server  LOG     2. bala murugan - 5★ - 2 weeks ago
-[00:02:41.605] Server  LOG     3. lokesh R - 5★ - a month ago
-[00:02:41.605] Server  LOG     4. SANJAY KUMAR P - 5★ - a week ago
-[00:02:41.605] Server  LOG     5. Ajay Thenneti - 5★ - 4 weeks ago
-[00:02:41.605] Server  LOG     ===================================
-[00:02:41.709] Browser LOG     Received reviews data: {"reviews":[{"name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550},{"name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355}],"totalRating":4.9,"totalReviews":28}
-[00:02:41.709] Browser LOG     Number of reviews: 5
-[00:02:41.709] Browser LOG     Review 1 - Santhosh Anto - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:02:41.709] Browser LOG     Review 2 - bala murugan - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:02:41.709] Browser LOG     Review 3 - lokesh R - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:02:41.709] Browser LOG     Review 4 - SANJAY KUMAR P - Photo URL: https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:02:41.709] Browser LOG     Review 5 - Ajay Thenneti - Photo URL: https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:02:41.709] Browser LOG     Transformed reviews: [{"iconColor":"#53675C","name":"Santhosh Anto","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"Wonderful Experience I had my pedicure done here!\nVery Friendly People out there. Had a great Care and the Massage Chair was amazing during pedicure session. Highly recommended for Haircut and Styling. Awesome Work Anaplak Keep it up.","time":1765284287},{"iconColor":"#C8AFAE","name":"SANJAY KUMAR P","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a week ago","role":"Google Review","text":"I visit the salon today. Kalpana did an amazing haircut I went for 9rs haircut for students December month offer but they treating everyone calmly and wonderfully. Fully satisfied with anaplak","time":1765195792},{"iconColor":"#8B9A8E","name":"bala murugan","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"2 weeks ago","role":"Google Review","text":"I visited Anaplak Art and Glam Salon yesterday for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect.\nThe staff members were very friendly, polite, and professional, which made the entire experience very comfortable. The salon’s atmosphere is clean, classy, and gives a very royal vibe.\n\nOverall, I had a great experience and I’m very satisfied with their service.\nIf they make the pricing slightly more affordable,😉 it will definitely help them grow even more.\nHighly recommended! 😄","time":1764485827},{"iconColor":"#A68A89","name":"Ajay Thenneti","photoUrl":"https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"4 weeks ago","role":"Google Review","text":"anaplak art and glam salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of. It truly added to the overall experience and made the visit even more enjoyable.","time":1763648355},{"iconColor":"#6B7F73","name":"lokesh R","photoUrl":"https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo","rating":5,"relativeTime":"a month ago","role":"Google Review","text":"Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team! Highly recommend Anaplak Art And Glam Salon for a top-notch haircut experience!","time":1762673550}]
-[00:02:58.176] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:02:58.176] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:03:03.176] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:03:03.177] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:03:08.177] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:03:13.177] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:03:13.177] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:03:18.175] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:03:18.175] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:03:23.178] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:03:28.175] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:03:28.175] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:03:33.176] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:03:33.176] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:03:38.177] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:03:43.175] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:03:43.175] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:03:48.177] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:03:48.177] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:03:53.176] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:04:02.176] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:04:02.176] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:04:22.150] Server  LOG      ✓ Compiled in 152ms
-[00:04:22.303] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-logo.png" "received" null
-[00:04:29.099] Server  LOG      ✓ Compiled in 56ms
-[00:04:29.230] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/whatsapp-float.png" "received" null
-[00:04:48.529] Server  LOG      ✓ Compiled in 46ms
-[00:05:17.443] Server  LOG      ✓ Compiled in 232ms
-[00:05:43.179] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:05:48.193] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
-[00:05:48.195] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:05:53.178] Browser LOG     Image failed to load for: bala murugan https://lh3.googleusercontent.com/a-/ALV-UjWoLAusrO-RHcoVBUxBqIK8MfxGrGxjz5yg0LRISE9EkAlA0wCq=s128-c0x00000000-cc-rp-mo
-[00:05:53.178] Browser LOG     Image failed to load for: Ajay Thenneti https://lh3.googleusercontent.com/a/ACg8ocJPLzBYK6zPqFvIzN42nRoln4kr4-5tPtYftoUR4yZbGZAs=s128-c0x00000000-cc-rp-mo
-[00:05:58.180] Browser LOG     Image failed to load for: lokesh R https://lh3.googleusercontent.com/a-/ALV-UjVFdwPOCz6eIOnv-zxy7RE2zJOfMHLwP5SYb9gYd8tr5DrI_EYX=s128-c0x00000000-cc-rp-mo
-[00:06:03.176] Browser LOG     Image failed to load for: Santhosh Anto https://lh3.googleusercontent.com/a-/ALV-UjX1ntuRygpzpd3f4xZjRcXo2oI8kIviuXSv6inmGTE-iNhHrMaZPA=s128-c0x00000000-cc-rp-mo-ba4
-[00:06:03.176] Browser LOG     Image failed to load for: SANJAY KUMAR P https://lh3.googleusercontent.com/a-/ALV-UjXoeHYy56voDDp3LkigiTm3RWY3_KFp5rM6RTVXUtk-cctPwaWi=s128-c0x00000000-cc-rp-mo
+[00:26:30.296] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Home>
+              <main className="overflow-h...">
+                <Header>
+                <HeroSlider>
+                <About>
+                <Suspense>
+                <Suspense>
+                <Suspense>
+                <Suspense>
+                <Suspense>
+                <LoadableComponent>
+                  <Suspense fallback={<div>}>
+                    <PreloadChunks>
+                    <Footer>
+                      <footer className="relative b..." style={{...}}>
+                        <div>
+                        <div className="hidden md:...">
+                          <div>
+                          <div>
+                          <div>
+                            <h6>
+                            <ul className="space-y-2....">
+                              <li>
++                               <span className="hover:text-[#C8AFAE] cursor-pointer transition">
+-                               <a href="/" className="hover:text-[#C8AFAE] cursor-pointer transition">
+                              ...
+                          ...
+                        ...
+          ...
+        ...
+
+[00:26:31.197] Browser LOG     Using fallback reviews (API unavailable)
+[00:26:36.975] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:36.975] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:36.975] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:36.975] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:37.440] Browser LOG     Using fallback reviews (API unavailable)
+[00:26:40.863] Browser LOG     Using fallback reviews (API unavailable)
+[00:26:43.820] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/contact" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="contact/pa...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function ContactUs} serverProvidedParams={{...}}>
+                <ContactUs params={Promise} searchParams={Promise}>
+                  <Script>
+                  <Header>
+                  <div>
+                  <Footer>
+                    <footer className="relative b..." style={{...}}>
+                      <div>
+                      <div className="hidden md:...">
+                        <div>
+                        <div>
+                        <div>
+                          <h6>
+                          <ul className="space-y-2....">
+                            <li>
++                             <span className="hover:text-[#C8AFAE] cursor-pointer transition">
+-                             <a href="/" className="hover:text-[#C8AFAE] cursor-pointer transition">
+                            ...
+                        ...
+                      ...
+            ...
+          ...
+
+[00:26:50.792] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:50.792] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:50.792] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:50.792] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:50.792] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:26:50.993] Browser LOG     Using fallback reviews (API unavailable)
+[00:26:51.168] Browser LOG     Using fallback reviews (API unavailable)
+[00:27:00.056] Browser LOG     Using fallback reviews (API unavailable)
+[00:27:00.208] Browser LOG     Using fallback reviews (API unavailable)
+[00:27:18.559] Browser LOG     Using fallback reviews (API unavailable)
+[00:27:18.721] Browser LOG     Using fallback reviews (API unavailable)
+[00:28:00.136] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:00.136] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:00.136] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:00.136] Browser WARN    Image with src "/hair-coloring-highlights-balayage-salon-transforma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:00.136] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:00.136] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:00.136] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:00.136] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:24.946] Server  LOG      ✓ Compiled in 121ms
+[00:28:55.269] Browser LOG     Using fallback reviews (API unavailable)
+[00:28:55.433] Browser LOG     Using fallback reviews (API unavailable)
+[00:32:11.787] Server  LOG      ✓ Compiled in 124ms
+[00:32:17.077] Browser LOG     Using fallback reviews (API unavailable)
+[00:32:25.457] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:32:25.457] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:32:25.457] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:32:25.457] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [70, 70, 70, 70, 70, 75]. Please update your config to [70, 70, 70, 70, 70, 75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:32:25.457] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:32:25.895] Browser LOG     Using fallback reviews (API unavailable)
+[00:32:25.895] Browser LOG     Using fallback reviews (API unavailable)
+[00:32:28.954] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.954] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.954] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.954] Browser WARN    Image with src "/hair-coloring-highlights-balayage-salon-transforma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.954] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.954] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.954] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.954] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

@@ -193,10 +193,10 @@ const CircularSlider = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_
         }, ("TURBOPACK compile-time value", void 0)),
     ssr: true
 });
-const Team = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/components/team.tsx [app-rsc] (ecmascript, next/dynamic entry, async loader)"), {
+const ServicesShowcase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(()=>__turbopack_context__.A("[project]/components/services-showcase.tsx [app-rsc] (ecmascript, next/dynamic entry, async loader)"), {
     loadableGenerated: {
         modules: [
-            "[project]/components/team.tsx [app-client] (ecmascript, next/dynamic entry)"
+            "[project]/components/services-showcase.tsx [app-client] (ecmascript, next/dynamic entry)"
         ]
     },
     loading: ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -284,13 +284,13 @@ const VideoParallax = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
     ssr: true
 });
 const metadata = {
-    title: 'Best Bridal Makeup & Hair Salon Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9',
-    description: '🏆 #1 Rated Salon in Maduravoyal! ✨ Expert Bridal Makeup, Hair Coloring, Keratin Treatment, Facials & Spa. 16+ Years Experience | 5600+ Happy Customers | Premium Products | Ground Floor Parking. Book Now ☎️ +91-9840088867 | Open 10AM-9PM Daily',
+    title: 'Best Premium Hair Salon & Bridal Makeup Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9',
+    description: '🏆 #1 Rated Salon in Maduravoyal! ✨ Expert Bridal Makeup, Hair Coloring, Keratin Treatment, Facials & Beauty Treatments. 16+ Years Experience | 5600+ Happy Customers | Premium Products | Ground Floor Parking. Book Now ☎️ +91-9840088867 | Open 10AM-9PM Daily',
     keywords: [
         // Primary Commercial Keywords
         'best bridal makeup artist Chennai',
         'bridal makeup Maduravoyal',
-        'hair salon near me Chennai',
+        'premium hair salon near me Chennai',
         'top rated salon Maduravoyal',
         'luxury salon Chennai',
         // Service Keywords
@@ -298,7 +298,7 @@ const metadata = {
         'hair coloring specialist Maduravoyal',
         'bridal makeup packages Chennai',
         'facial treatment Chennai',
-        'hair spa Maduravoyal',
+        'hair treatment Maduravoyal',
         'wedding makeup artist Chennai',
         // Location Keywords
         'salon MMDA Colony',
@@ -312,8 +312,8 @@ const metadata = {
         'premium beauty services Maduravoyal'
     ],
     openGraph: {
-        title: '🌟 Best Bridal Makeup & Hair Salon in Maduravoyal | 4.9★ | Anaplak',
-        description: '💎 Premium Beauty Services | Bridal Makeup Packages | Hair Coloring & Keratin | Facials & Spa | 16+ Years Experience | Book Your Appointment Today!',
+        title: '🌟 Best Premium Hair Salon & Bridal Makeup in Maduravoyal | 4.9★ | Anaplak',
+        description: '💎 Premium Beauty Services | Bridal Makeup Packages | Hair Coloring & Keratin | Facials & Beauty Treatments | 16+ Years Experience | Book Your Appointment Today!',
         url: 'https://anaplakartandglamsalon.com',
         siteName: 'Anaplak Art & Glam Salon',
         type: 'website',
@@ -329,7 +329,7 @@ const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Best Bridal Makeup & Hair Salon Maduravoyal | Anaplak ⭐4.9',
+        title: 'Best Premium Hair Salon & Bridal Makeup Maduravoyal | Anaplak ⭐4.9',
         description: '💎 Premium Beauty Services | Expert Bridal Makeup | Hair Coloring | Facials | Book Now!',
         images: [
             '/og-image.jpg'
@@ -386,7 +386,7 @@ function Home() {
                 lineNumber: 133,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Team, {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(ServicesShowcase, {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 134,
                 columnNumber: 7
