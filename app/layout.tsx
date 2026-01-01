@@ -127,6 +127,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${redditSans.variable} scroll-smooth`}>
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMZRTGH4NB"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RMZRTGH4NB');
+            `,
+          }}
+        />
         <link rel="icon" type="image/png" sizes="32x32" href="/LOGO_NEW.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/LOGO_NEW.png" />
         <link rel="apple-touch-icon" href="/LOGO_NEW.png" />
