@@ -106,9 +106,7 @@ export const metadata: Metadata = {
     canonical: 'https://anaplakartandglamsalon.com',
   },
   verification: {
-    // Add your verification codes here when available
-    // google: 'your-google-verification-code',
-    // yandex: 'your-yandex-verification-code',
+    google: 'oCqa8wjtslCGmaZRYF4EbGN9BztUVLs9c-EQOVwcELk',
   },
 }
 
