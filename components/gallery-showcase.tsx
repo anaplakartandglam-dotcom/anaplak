@@ -72,7 +72,7 @@ export default function GalleryShowcase() {
     return (
         <div className="relative">
             {/* Hero Section - Now positioned below header */}
-            <section className="relative h-[40vh] md:h-[50vh] overflow-hidden">
+            <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] pt-20 md:pt-24 overflow-hidden">
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #53675C 0%, #3d4f46 50%, #2a3830 100%)' }}>
                     <div className="absolute inset-0 bg-black/40" />
                     <motion.div

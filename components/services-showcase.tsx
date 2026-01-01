@@ -84,22 +84,25 @@ export default function ServicesShowcase() {
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
-                <div
-                    className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                <a
+                    href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block text-center mb-16 transition-all duration-1000 cursor-pointer group ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                         }`}
                 >
-                    <p className="text-[#C8AFAE] uppercase tracking-[0.3em] text-sm mb-4 font-medium">
+                    <p className="text-[#C8AFAE] uppercase tracking-[0.3em] text-sm mb-4 font-medium group-hover:text-[#F8C8DC] transition-colors">
                         Our Services
                     </p>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 group-hover:text-[#C8AFAE] transition-colors">
                         Discover Our{" "}
-                        <span className="text-[#C8AFAE] italic">Premium Services</span>
+                        <span className="text-[#C8AFAE] italic group-hover:text-[#F8C8DC]">Premium Services</span>
                     </h2>
-                    <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed group-hover:text-white transition-colors">
                         From bridal transformations to everyday beauty, we offer a complete range of premium services
                         tailored to your unique style and needs.
                     </p>
-                </div>
+                </a>
 
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
