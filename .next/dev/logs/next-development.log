@@ -1,242 +1,5 @@
-[00:00:00.925] Server  LOG      ✓ Ready in 718ms
-[00:00:06.185] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.188] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.188] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.189] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:07.297] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-                <RedirectBoundary>
-                  <RedirectErrorBoundary router={{...}}>
-                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                      <SegmentViewNode type="page" pagePath="page.tsx">
-                        <SegmentTrieNode>
-                        <Home>
-                          <main className="overflow-h...">
-                            <Header>
-                              <div className={" flex w-..."} style={{...}}>
-                                <div
-+                                 className="w-full max-w-6xl px-4 md:px-10 flex justify-between items-center"
--                                 className="w-full px-4 md:px-10 flex justify-between items-center"
-                                >
-                              <header className={"\n      ..."} style={{top:46, ...}}>
-                                <div
-+                                 className="w-full max-w-6xl mx-auto px-4 md:px-10 py-8 md:py-10 flex justify-between..."
--                                 className="w-full px-4 md:px-10 py-8 md:py-10 flex justify-between items-center"
-                                >
-                                  <LinkComponent>
-                                  <nav
-+                                   className="hidden lg:flex gap-10 items-center"
--                                   className="hidden lg:flex gap-12 items-center"
-                                  >
-                                  ...
-                              ...
-                            ...
-                              <div className={"\n      ..."}>
-                                <img
-                                  alt="PREMIUM SALON BEAUTY EXPERTS"
-                                  fetchPriority={undefined}
-                                  loading={undefined}
-                                  width={undefined}
-                                  height={undefined}
-                                  decoding="async"
-                                  data-nimg="fill"
-                                  className={"\n              object-cover\n              transition-transform durati..."}
-                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
-                                  sizes="100vw"
-+                                 srcSet={"/_next/image?url=%2FSLIDE_01.jpg&w=640&q=90 640w, /_next/image?url=%2FSLID..."}
--                                 srcSet={"/_next/image?url=%2FSLIDE_01.jpg&w=640&q=75 640w, /_next/image?url=%2FSLID..."}
-+                                 src={"/_next/image?url=%2FSLIDE_01.jpg&w=3840&q=90"}
--                                 src={"/_next/image?url=%2FSLIDE_01.jpg&w=3840&q=75"}
-                                  ref={function}
-                                  onLoad={function onLoad}
-                                  onError={function onError}
-                                >
-                                ...
-                                ...
-                              <div className={"\n      ..."}>
-                                <img
-                                  alt="BRIDAL MAKEUP GLAM STUDIO"
-                                  fetchPriority={undefined}
-                                  loading="lazy"
-                                  width={undefined}
-                                  height={undefined}
-                                  decoding="async"
-                                  data-nimg="fill"
-                                  className={"\n              object-cover\n              transition-transform durati..."}
-                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
-                                  sizes="100vw"
-+                                 srcSet={"/_next/image?url=%2FSLIDE_02.jpg&w=640&q=90 640w, /_next/image?url=%2FSLID..."}
--                                 srcSet={"/_next/image?url=%2FSLIDE_02.jpg&w=640&q=75 640w, /_next/image?url=%2FSLID..."}
-+                                 src={"/_next/image?url=%2FSLIDE_02.jpg&w=3840&q=90"}
--                                 src={"/_next/image?url=%2FSLIDE_02.jpg&w=3840&q=75"}
-                                  ref={function}
-                                  onLoad={function onLoad}
-                                  onError={function onError}
-                                >
-                                ...
-                              <div className={"\n      ..."}>
-                                <img
-                                  alt="STYLE DESIGN HAIR ARTISTS"
-                                  fetchPriority={undefined}
-                                  loading="lazy"
-                                  width={undefined}
-                                  height={undefined}
-                                  decoding="async"
-                                  data-nimg="fill"
-                                  className={"\n              object-cover\n              transition-transform durati..."}
-                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
-                                  sizes="100vw"
-+                                 srcSet={"/_next/image?url=%2FSLIDE_03.jpg&w=640&q=90 640w, /_next/image?url=%2FSLID..."}
--                                 srcSet={"/_next/image?url=%2FSLIDE_03.jpg&w=640&q=75 640w, /_next/image?url=%2FSLID..."}
-+                                 src={"/_next/image?url=%2FSLIDE_03.jpg&w=3840&q=90"}
--                                 src={"/_next/image?url=%2FSLIDE_03.jpg&w=3840&q=75"}
-                                  ref={function}
-                                  onLoad={function onLoad}
-                                  onError={function onError}
-                                >
-                                ...
-                              <div className={"\n      ..."}>
-                                <img
-                                  alt="SKIN CARE BEAUTY BAR"
-                                  fetchPriority={undefined}
-                                  loading="lazy"
-                                  width={undefined}
-                                  height={undefined}
-                                  decoding="async"
-                                  data-nimg="fill"
-                                  className={"\n              object-cover\n              transition-transform durati..."}
-                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
-                                  sizes="100vw"
-+                                 srcSet={"/_next/image?url=%2FSLIDE_04.jpg&w=640&q=90 640w, /_next/image?url=%2FSLID..."}
--                                 srcSet={"/_next/image?url=%2FSLIDE_04.jpg&w=640&q=75 640w, /_next/image?url=%2FSLID..."}
-+                                 src={"/_next/image?url=%2FSLIDE_04.jpg&w=3840&q=90"}
--                                 src={"/_next/image?url=%2FSLIDE_04.jpg&w=3840&q=75"}
-                                  ref={function}
-                                  onLoad={function onLoad}
-                                  onError={function onError}
-                                >
-                                ...
-                            ...
-                      ...
-                    ...
-        ...
-
-[00:00:07.529] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
-            <SegmentTrieNode>
-            <Home>
-              <main className="overflow-h...">
-                <Header>
-                <HeroSlider>
-                <About>
-                <Suspense>
-                <Suspense>
-                <Suspense>
-                <Suspense>
-                <Suspense>
-                <LoadableComponent>
-                  <Suspense fallback={<div>}>
-                    <PreloadChunks>
-                    <Footer>
-                      <footer className="relative b..." style={{...}}>
-                        <div>
-                        <div className="hidden md:...">
-                          <div>
-                          <div>
-                          <div>
-                            <h6>
-                            <ul className="space-y-2....">
-                              <li>
-                              <li>
-                              <li>
-                                <a
-+                                 href="/services"
--                                 href="/gallery"
-                                  className="hover:text-[#C8AFAE] cursor-pointer transition"
-                                >
-+                                 Services +
--                                 Gallery +
-                              ...
-                          ...
-                        ...
-          ...
-        ...
-
-[00:00:07.944] Browser LOG     Using fallback reviews (API unavailable)
-[00:00:09.650] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.650] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.650] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.650] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.772] Browser LOG     Using fallback reviews (API unavailable)
-[00:00:12.258] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:00:47.130] Browser LOG     Using fallback reviews (API unavailable)
-[00:00:47.130] Browser LOG     Using fallback reviews (API unavailable)
-[00:00:50.726] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:50.726] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:50.726] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:50.726] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:50.894] Browser LOG     Using fallback reviews (API unavailable)
-[00:01:04.301] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:01:04.301] Browser WARN    Image with src "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.301] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.301] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.301] Browser WARN    Image with src "/eyebrow-threading-professional-beauty-salon-treatm.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.301] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.301] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.550] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.550] Browser WARN    Image with src "/hair-coloring-highlights-balayage-salon-transforma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.550] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:04.550] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:06.452] Browser LOG     Using fallback reviews (API unavailable)
-[00:01:06.452] Browser LOG     Using fallback reviews (API unavailable)
-[00:02:18.195] Server  LOG      ✓ Compiled in 165ms
-[00:02:38.037] Browser LOG     Using fallback reviews (API unavailable)
-[00:02:38.037] Browser LOG     Using fallback reviews (API unavailable)
-[00:02:45.838] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:01.042] Server  LOG      ✓ Ready in 820ms
+[00:00:07.320] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -252,15 +15,15 @@ https://react.dev/link/hydration-mismatch
     <ScrollAndFocusHandler segmentPath={[...]}>
       <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
         <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="services/" loading={null}>
+          <LoadingBoundary name="about/" loading={null}>
             <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
-                  <InnerLayoutRouter url="/services" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                    <SegmentViewNode type="page" pagePath="services/p...">
+                  <InnerLayoutRouter url="/about" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                    <SegmentViewNode type="page" pagePath="about/page...">
                       <SegmentTrieNode>
-                      <ClientPageRoot Component={function ServicesSection} serverProvidedParams={{...}}>
-                        <ServicesSection params={Promise} searchParams={Promise}>
+                      <ClientPageRoot Component={function AboutPage} serverProvidedParams={{...}}>
+                        <AboutPage params={Promise} searchParams={Promise}>
                           <Script>
                           <Script>
                           <Header>
@@ -301,26 +64,80 @@ https://react.dev/link/hydration-mismatch
                   ...
         ...
 
-[00:02:45.838] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:45.838] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:45.838] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:45.838] Browser WARN    Image with src "/hair-coloring-highlights-balayage-salon-transforma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:45.838] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:45.838] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:45.838] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:45.838] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:46.832] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:02:49.651] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:49.651] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:49.651] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:49.651] Browser WARN    Image with src "/hair-coloring-highlights-balayage-salon-transforma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:49.651] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:49.651] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:49.651] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:49.651] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:50.575] Browser WARN    Image with src "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:50.575] Browser WARN    Image with src "/eyebrow-threading-professional-beauty-salon-treatm.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:52.903] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:02:53.106] Browser LOG     Using fallback reviews (API unavailable)
-[00:02:53.106] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:07.980] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:07.980] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:08.816] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:08.817] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:08.817] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:08.818] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.301] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.301] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.301] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.301] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:09.301] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="page.tsx">
+                  <SegmentTrieNode>
+                  <Home>
+                    <main className="overflow-h...">
+                      <Header>
+                      <HeroSlider>
+                      <About>
+                      <Suspense>
+                      <Suspense>
+                      <Suspense>
+                      <LoadableComponent>
+                        <Suspense fallback={<div>}>
+                          <PreloadChunks>
+                          <ServicesShowcase>
+                            <section ref={{current:null}} className="relative b...">
+                              <div>
+                              <div>
+                              <div className="relative m...">
++                               <div className="text-center mb-16 transition-all duration-1000 opacity-0 translate-y-8">
+-                               <a
+-                                 href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 className="block text-center mb-16 transition-all duration-1000 cursor-pointer group..."
+-                               >
+                                ...
+                      ...
+                ...
+              ...
+
+[00:00:09.301] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:11.194] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:11.194] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:11.194] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:11.194] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:11.296] Browser LOG     Using fallback reviews (API unavailable)
