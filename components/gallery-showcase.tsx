@@ -12,25 +12,37 @@ interface GalleryImage {
 }
 
 const galleryImages: GalleryImage[] = [
-    { src: '/IMG_0672.JPEG', alt: 'Bridal Makeup - Glamorous Look', category: 'Bridal Makeup' },
-    { src: '/IMG_0673.JPEG', alt: 'Bridal Transformation - Complete Look', category: 'Bridal Makeup' },
-    { src: '/IMG_0718.JPG', alt: 'Bridal Makeup - Red Saree Look', category: 'Bridal Makeup' },
-    { src: '/IMG_0722.JPG', alt: 'Bridal Hairstyling - Traditional Style', category: 'Bridal Hair' },
-    { src: '/IMG_0725.JPG', alt: 'Bridal Makeup - Orange Saree', category: 'Bridal Makeup' },
-    { src: '/IMG_0726.JPG', alt: 'Bridal Makeup - Pink Saree Look', category: 'Bridal Makeup' },
-    { src: '/IMG_0824.JPG', alt: 'Bridal Makeup - Blue Saree', category: 'Bridal Makeup' },
-    { src: '/IMG_0827.JPG', alt: 'Bridal Makeup - Purple Saree', category: 'Bridal Makeup' },
-    { src: '/IMG_0847.JPG', alt: 'Bridal Makeup - Pink Traditional', category: 'Bridal Makeup' },
-    { src: '/IMG_0851.JPG', alt: 'Bridal Makeup - Yellow Saree', category: 'Bridal Makeup' },
-    { src: '/IMG_0855.JPG', alt: 'Bridal Makeup - Cream Saree', category: 'Bridal Makeup' },
-    { src: '/IMG_0858.JPG', alt: 'Bridal Hairstyling - Purple Outfit', category: 'Bridal Hair' },
-    { src: '/IMG_0867.JPG', alt: 'Bridal Makeup - Red Traditional', category: 'Bridal Makeup' },
-    { src: '/IMG_0891.JPG', alt: 'Bridal Hairstyling - Dark Outfit', category: 'Bridal Hair' },
-    { src: '/IMG_0894.JPG', alt: 'Bridal Makeup - Orange Traditional', category: 'Bridal Makeup' },
-    { src: '/IMG_0900.JPG', alt: 'Bridal Makeup - Pink Outfit', category: 'Bridal Makeup' },
-    { src: '/IMG_0902.JPG', alt: 'Bridal Hairstyling - Purple Look', category: 'Bridal Hair' },
-    { src: '/IMG_0908.JPG', alt: 'Bridal Hairstyling - Blue Outfit', category: 'Bridal Hair' },
-    { src: '/IMG_0910.JPG', alt: 'Bridal Hairstyling - Purple Traditional', category: 'Bridal Hair' },
+    { src: '/gal1.JPEG', alt: 'Bridal Makeup - Glamorous Look', category: 'Bridal Makeup' },
+    { src: '/gal2.JPEG', alt: 'Bridal Transformation - Complete Look', category: 'Bridal Makeup' },
+    { src: '/gal3.JPG', alt: 'Bridal Makeup - Elegant Style', category: 'Bridal Makeup' },
+    { src: '/gal4.JPG', alt: 'Bridal Hairstyling - Traditional Style', category: 'Bridal Hair' },
+    { src: '/gal5.JPG', alt: 'Bridal Makeup - Radiant Look', category: 'Bridal Makeup' },
+    { src: '/gal6.JPG', alt: 'Bridal Makeup - Classic Beauty', category: 'Bridal Makeup' },
+    { src: '/gal7.JPG', alt: 'Bridal Makeup - Stunning Transformation', category: 'Bridal Makeup' },
+    { src: '/gal8.JPG', alt: 'Bridal Makeup - Premium Style', category: 'Bridal Makeup' },
+    { src: '/gal9.JPG', alt: 'Bridal Makeup - Sophisticated Look', category: 'Bridal Makeup' },
+    { src: '/gal10.JPG', alt: 'Bridal Makeup - Gorgeous Style', category: 'Bridal Makeup' },
+    { src: '/gal11.JPG', alt: 'Bridal Makeup - Beautiful Transformation', category: 'Bridal Makeup' },
+    { src: '/gal12.JPG', alt: 'Bridal Hairstyling - Elegant Design', category: 'Bridal Hair' },
+    { src: '/gal13.JPG', alt: 'Bridal Makeup - Flawless Look', category: 'Bridal Makeup' },
+    { src: '/gal14.JPG', alt: 'Bridal Hairstyling - Modern Style', category: 'Bridal Hair' },
+    { src: '/gal15.JPG', alt: 'Bridal Makeup - Exquisite Beauty', category: 'Bridal Makeup' },
+    { src: '/gal16.JPG', alt: 'Bridal Makeup - Graceful Look', category: 'Bridal Makeup' },
+    { src: '/gal17.JPG', alt: 'Bridal Hairstyling - Stunning Design', category: 'Bridal Hair' },
+    { src: '/gal18.JPG', alt: 'Bridal Hairstyling - Perfect Finish', category: 'Bridal Hair' },
+    { src: '/gal19.jpg', alt: 'Bridal Makeup - Timeless Elegance', category: 'Bridal Makeup' },
+    { src: '/gal20.jpg', alt: 'Bridal Hairstyling - Luxurious Style', category: 'Bridal Hair' },
+    { src: '/gal21.jpg', alt: 'Bridal Makeup - Radiant Glow', category: 'Bridal Makeup' },
+    { src: '/gal22.jpg', alt: 'Bridal Makeup - Captivating Look', category: 'Bridal Makeup' },
+    { src: '/gal23.jpg', alt: 'Bridal Hairstyling - Classic Updo', category: 'Bridal Hair' },
+    { src: '/gal24.jpg', alt: 'Bridal Makeup - Enchanting Beauty', category: 'Bridal Makeup' },
+    { src: '/gal25.jpg', alt: 'Bridal Makeup - Divine Look', category: 'Bridal Makeup' },
+    { src: '/gal26.jpg', alt: 'Bridal Hairstyling - Regal Style', category: 'Bridal Hair' },
+    { src: '/gal27.jpg', alt: 'Bridal Makeup - Mesmerizing Transformation', category: 'Bridal Makeup' },
+    { src: '/gal28.jpg', alt: 'Bridal Hairstyling - Graceful Design', category: 'Bridal Hair' },
+    { src: '/team1.jpg', alt: 'Professional Makeup Artist - Our Expert Team', category: 'Our Team' },
+    { src: '/team2.jpg', alt: 'Hair Styling Specialist - Our Expert Team', category: 'Our Team' },
+    { src: '/team3.jpg', alt: 'Beauty Expert - Our Professional Team', category: 'Our Team' },
 ];
 
 export default function GalleryShowcase() {
@@ -81,9 +93,9 @@ export default function GalleryShowcase() {
                         transition={{ duration: 1.5 }}
                         className="absolute inset-0"
                         style={{
-                            backgroundImage: 'url(/gallery1.JPG)',
+                            backgroundImage: 'url(/gal9.JPG)',
                             backgroundSize: 'cover',
-                            backgroundPosition: 'center',
+                            backgroundPosition: 'top',
                         }}
                     />
                 </div>
@@ -108,19 +120,10 @@ export default function GalleryShowcase() {
                         Explore our stunning portfolio of bridal makeup, hair styling, and beauty transformations
                     </motion.p>
                 </div>
-
-                {/* Decorative Wave */}
-                <div className="absolute bottom-0 left-0 right-0">
-                    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
-                        <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="white" fillOpacity="0.1" />
-                        <path d="M0 40L60 46.7C120 53 240 67 360 70C480 73 600 67 720 63.3C840 60 960 60 1080 63.3C1200 67 1320 73 1380 76.7L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V40Z" fill="white" fillOpacity="0.2" />
-                        <path d="M0 80L60 83.3C120 87 240 93 360 93.3C480 93 600 87 720 83.3C840 80 960 80 1080 83.3C1200 87 1320 93 1380 96.7L1440 100V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V80Z" fill="white" />
-                    </svg>
-                </div>
             </section>
 
             {/* Gallery Grid - No Filter Section */}
-            <section className="container mx-auto px-4 py-12" style={{ backgroundColor: '#f8f9fa' }}>
+            <section className="container mx-auto px-4 py-12">
                 <motion.div
                     layout
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
@@ -135,7 +138,6 @@ export default function GalleryShowcase() {
                                 exit={{ opacity: 0, scale: 0.8 }}
                                 transition={{ duration: 0.4 }}
                                 className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300"
-                                style={{ backgroundColor: '#f8f9fa' }}
                                 onClick={() => openLightbox(index)}
                             >
                                 <Image
@@ -162,11 +164,6 @@ export default function GalleryShowcase() {
                                         </div>
                                     </div>
                                 </div>
-
-                                {/* Category Badge */}
-                                <div className="absolute top-3 right-3 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg" style={{ background: '#53675C' }}>
-                                    {image.category}
-                                </div>
                             </motion.div>
                         ))}
                     </AnimatePresence>
@@ -180,7 +177,7 @@ export default function GalleryShowcase() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm"
+                        className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm"
                         onClick={closeLightbox}
                     >
                         {/* Close Button */}

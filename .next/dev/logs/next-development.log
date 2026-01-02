@@ -1,5 +1,21 @@
-[00:00:01.042] Server  LOG      ✓ Ready in 820ms
-[00:00:07.320] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:00.788] Server  LOG      ✓ Ready in 584ms
+[00:00:05.105] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:05.108] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:05.108] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:05.109] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:06.237] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:06.237] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:06.237] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:06.237] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:06.237] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -9,80 +25,42 @@
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-https://react.dev/link/hydration-mismatch
+%s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="about/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <InnerLayoutRouter url="/about" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                    <SegmentViewNode type="page" pagePath="about/page...">
-                      <SegmentTrieNode>
-                      <ClientPageRoot Component={function AboutPage} serverProvidedParams={{...}}>
-                        <AboutPage params={Promise} searchParams={Promise}>
-                          <Script>
-                          <Script>
-                          <Header>
-                            <div className={" flex w-..."} style={{...}}>
-                              <div
-+                               className="w-full max-w-6xl px-4 md:px-10 flex justify-between items-center"
--                               className="w-full px-4 md:px-10 flex justify-between items-center"
-                              >
-                            <header className={"\n      ..."} style={{top:46, ...}}>
-                              <div
-+                               className="w-full max-w-6xl mx-auto px-4 md:px-10 py-8 md:py-10 flex justify-between i..."
--                               className="w-full px-4 md:px-10 py-8 md:py-10 flex justify-between items-center"
-                              >
-                                <LinkComponent>
-                                <nav
-+                                 className="hidden lg:flex gap-10 items-center"
--                                 className="hidden lg:flex gap-12 items-center"
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <Home>
+                  <main className="overflow-h...">
+                    <Header>
+                    <HeroSlider>
+                    <About>
+                      <section ref={{current:null}} className="bg-[#0E0E0...">
+                        <div className="w-full gri...">
+                          <div>
+                          <div className="transition...">
+                            <h6>
+                            <h2>
+                            <p>
+                            <div className="relative w...">
+                              <img>
+                              <div className={" w-[100p..."}>
+                                <img
++                                 src="/a.png"
+-                                 src="/newk.png"
+                                  className="w-[70%] h-auto object-contain"
+                                  alt="Anaplak Logo"
                                 >
-                                  <LinkComponent>
-                                  <LinkComponent>
-                                  <LinkComponent href="/services" className="text-white...">
-                                    <a
-                                      className="text-white/80 text-[14px] tracking-[3px] uppercase hover:text-[#F8C8D..."
-                                      ref={function}
-                                      onClick={function onClick}
-                                      onMouseEnter={function onMouseEnter}
-                                      onTouchStart={function onTouchStart}
-+                                     href="/services"
--                                     href="/gallery"
-                                    >
-+                                     Services
--                                     Gallery
-                                  ...
-                                ...
-                            ...
-                          ...
                     ...
-                  ...
-        ...
+              ...
+            ...
 
-[00:00:07.980] Browser LOG     Using fallback reviews (API unavailable)
-[00:00:07.980] Browser LOG     Using fallback reviews (API unavailable)
-[00:00:08.816] Server  WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.817] Server  WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.817] Server  WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.818] Server  WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.301] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.301] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.301] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.301] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:09.301] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:06.237] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -92,52 +70,1075 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-https://react.dev/link/hydration-mismatch
+%s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <LoadingBoundary name="/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-                <SegmentViewNode type="page" pagePath="page.tsx">
-                  <SegmentTrieNode>
-                  <Home>
-                    <main className="overflow-h...">
-                      <Header>
-                      <HeroSlider>
-                      <About>
-                      <Suspense>
-                      <Suspense>
-                      <Suspense>
-                      <LoadableComponent>
-                        <Suspense fallback={<div>}>
-                          <PreloadChunks>
-                          <ServicesShowcase>
-                            <section ref={{current:null}} className="relative b...">
-                              <div>
-                              <div>
-                              <div className="relative m...">
-+                               <div className="text-center mb-16 transition-all duration-1000 opacity-0 translate-y-8">
--                               <a
--                                 href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
--                                 target="_blank"
--                                 rel="noopener noreferrer"
--                                 className="block text-center mb-16 transition-all duration-1000 cursor-pointer group..."
--                               >
-                                ...
-                      ...
-                ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <Home>
+                  <main className="overflow-h...">
+                    <Header>
+                    <HeroSlider>
+                    <About>
+                    <Suspense>
+                    <Suspense>
+                    <LoadableComponent>
+                      <Suspense fallback={<div>}>
+                        <PreloadChunks>
+                        <CircleSection>
+                          <section className="relative w...">
+                            <div>
+                            <div>
+                            <div className={" relativ..."}>
+                              <div className={" absolut..."}>
+                                <img
++                                 src="/a.png"
+-                                 src="/newk.png"
+                                  className="w-full h-full object-cover"
+                                  style={{objectPosition:"52% center"}}
+                                >
+                              ...
+                    ...
               ...
+            ...
 
-[00:00:09.301] Browser LOG     Using fallback reviews (API unavailable)
-[00:00:11.194] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:06.237] Browser LOG     
+    ____                   _        _____
+   / ___| ___   ___   __ _| | ___  |_   _|_ _  __ _
+  | |  _ / _ \ / _ \ / _` | |/ _ \   | |/ _` |/ _` |
+  | |_| | (_) | (_) | (_| | |  __/   | | (_| | (_| |
+   \____|\___/ \___/ \__, |_|\___|   |_|\__,_|\__, |
+                     |___/                    |___/
+
+[00:00:06.237] Browser GROUP   Processing commands (2)
+[00:00:06.237] Browser GROUP   Processing data layer push: {event: "gtm.init_consent", gtm.uniqueEventId: 1}
+[00:00:06.237] Browser GROUPEND 
+[00:00:06.237] Browser GROUP   Processing data layer push: {event: "gtm.init", gtm.uniqueEventId: 2}
+[00:00:06.237] Browser LOG     Tag fired: {function: "__ogt_1p_data_v2", priority: 13, vtp_isAutoEnabled: true, vtp_autoPhoneEnabled: true, vtp_autoCollectExclusionSelectors: ["list", ["map", "exclusionSelector", ""]], vtp_isEnabled: true, vtp_autoAddressEnabled: true, vtp_autoEmailEnabled: true, vtp_isAutoCollectPiiEnabledFlag: true, tag_id: 4}
+[00:00:06.237] Browser LOG     Tag fired: {function: "__ccd_ga_first", priority: 12, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 18}
+[00:00:06.237] Browser LOG     Tag fired: {function: "__set_product_settings", priority: 11, vtp_instanceDestinationId: "G-RMZRTGH4NB", vtp_foreignTldMacroResult: ["macro", 1], vtp_isChinaVipRegionMacroResult: ["macro", 2], tag_id: 17}
+[00:00:06.237] Browser LOG     Tag fired: {function: "__ccd_ga_regscope", priority: 10, vtp_settingsTable: ["list", ["map", "redactFieldGroup", "DEVICE_AND_GEO", "disallowAllRegions", false, "disallowedRegions", ""], ["map", "redactFieldGroup", "GOOGLE_SIGNALS", "disallowAllRegions", true, "disallowedRegions", ""]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 16}
+[00:00:06.237] Browser LOG     Tag fired: {function: "__ccd_em_download", priority: 9, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 15}
+[00:00:06.237] Browser LOG     Tag fired: {function: "__ccd_em_form", priority: 8, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 14}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_em_outbound_click", priority: 7, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 13}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_em_page_view", priority: 6, vtp_historyEvents: true, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 12}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_em_scroll", priority: 5, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 11}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_em_site_search", priority: 4, vtp_searchQueryParams: "q,s,search,query,keyword", vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 10}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_em_video", priority: 3, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 9}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_conversion_marking", priority: 2, vtp_conversionRules: ["list", ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"close_convert_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"qualify_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"purchase"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 8}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_auto_redact", priority: 1, vtp_redactEmail: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 7}
+[00:00:06.238] Browser LOG     Tag fired: {function: "__ccd_ga_last", priority: 0, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 6}
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUP   Processing GTAG command: ["js", Fri Jan 02 2026 21:25:28 GMT+0530 (India Standard Time)]
+[00:00:06.238] Browser LOG     Tag fired: {function: "__gct", vtp_trackingId: "G-RMZRTGH4NB", vtp_sessionDuration: 0, tag_id: 1}
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUP   Processing GTAG command: ["config", "G-RMZRTGH4NB"]
+[00:00:06.238] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:00:06.238] Browser LOG     Starting new session 1767369329
+[00:00:06.238] Browser GROUP   Sending event "page_view" to undefined
+[00:00:06.238] Browser GROUP   Request parameters:
+[00:00:06.238] Browser LOG     v: 2
+[00:00:06.238] Browser LOG     tid: G-RMZRTGH4NB
+[00:00:06.238] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:00:06.238] Browser LOG     _p: 1767369328297
+[00:00:06.238] Browser LOG     _dbg: 1
+[00:00:06.238] Browser LOG     gcd: 13l3l3l3l1l1
+[00:00:06.238] Browser LOG     npa: 0
+[00:00:06.238] Browser LOG     dma: 0
+[00:00:06.238] Browser LOG     cid: 864388489.1760692716
+[00:00:06.238] Browser LOG     ul: en-gb
+[00:00:06.238] Browser LOG     sr: 1470x956
+[00:00:06.238] Browser LOG     uaa: arm
+[00:00:06.238] Browser LOG     uab: 64
+[00:00:06.238] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:00:06.238] Browser LOG     uamb: 0
+[00:00:06.238] Browser LOG     uam: 
+[00:00:06.238] Browser LOG     uap: macOS
+[00:00:06.238] Browser LOG     uapv: 26.1.0
+[00:00:06.238] Browser LOG     uaw: 0
+[00:00:06.238] Browser LOG     are: 1
+[00:00:06.238] Browser LOG     frm: 0
+[00:00:06.238] Browser LOG     pscdl: noapi
+[00:00:06.238] Browser LOG     _eu: AAAAAAQ
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUP   Event parameters:
+[00:00:06.238] Browser LOG     en: page_view
+[00:00:06.238] Browser LOG     _ss: 1
+[00:00:06.238] Browser LOG     _ee: 1
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUP   Shared parameters:
+[00:00:06.238] Browser LOG     tag_exp: 103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682875
+[00:00:06.238] Browser LOG     sid: 1767369329
+[00:00:06.238] Browser LOG     sct: 3
+[00:00:06.238] Browser LOG     seg: 0
+[00:00:06.238] Browser LOG     dl: http://localhost/
+[00:00:06.238] Browser LOG     dt: Best Premium Hair Salon & Bridal Makeup Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser LOG     GTAG Command: "config", target: "G-RMZRTGH4NB", configuration: {}
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUP   Processing commands (1)
+[00:00:06.238] Browser GROUP   Processing data layer push: {event: "gtm.dom"}
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.238] Browser GROUPEND 
+[00:00:06.550] Browser GROUP   Processing commands (1)
+[00:00:06.550] Browser GROUP   Processing data layer push: {event: "gtm.load"}
+[00:00:06.550] Browser GROUPEND 
+[00:00:06.550] Browser GROUPEND 
+[00:00:06.840] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:08.308] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:09.685] Browser GROUP   Processing commands (1)
+[00:00:09.686] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "pushState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/", gtm.newUrl: "http://localhost:3000/gallery", gtm.triggers: "6"}
+[00:00:09.686] Browser GROUPEND 
+[00:00:09.686] Browser GROUP   Processing GTAG command: ["event", "page_view", {page_location: "http://localhost:3000/gallery", page_referrer: "http://localhost:3000/", send_to: "G-RMZRTGH4NB"}]
+[00:00:09.686] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:00:09.686] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:00:09.686] Browser GROUP   Sending event "page_view" to undefined
+[00:00:09.686] Browser GROUP   Request parameters:
+[00:00:09.686] Browser LOG     v: 2
+[00:00:09.686] Browser LOG     tid: G-RMZRTGH4NB
+[00:00:09.686] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:00:09.686] Browser LOG     _p: 1767369328297
+[00:00:09.686] Browser LOG     _dbg: 1
+[00:00:09.686] Browser LOG     gcd: 13l3l3l3l1l1
+[00:00:09.686] Browser LOG     npa: 0
+[00:00:09.686] Browser LOG     dma: 0
+[00:00:09.686] Browser LOG     cid: 864388489.1760692716
+[00:00:09.687] Browser LOG     ul: en-gb
+[00:00:09.687] Browser LOG     sr: 1470x956
+[00:00:09.687] Browser LOG     uaa: arm
+[00:00:09.687] Browser LOG     uab: 64
+[00:00:09.687] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:00:09.687] Browser LOG     uamb: 0
+[00:00:09.687] Browser LOG     uam: 
+[00:00:09.687] Browser LOG     uap: macOS
+[00:00:09.687] Browser LOG     uapv: 26.1.0
+[00:00:09.687] Browser LOG     uaw: 0
+[00:00:09.687] Browser LOG     are: 1
+[00:00:09.687] Browser LOG     frm: 0
+[00:00:09.687] Browser LOG     pscdl: noapi
+[00:00:09.687] Browser LOG     _eu: AEAAAAQ
+[00:00:09.687] Browser GROUPEND 
+[00:00:09.687] Browser GROUP   Event parameters:
+[00:00:09.687] Browser LOG     en: page_view
+[00:00:09.687] Browser LOG     _et: 3538
+[00:00:09.687] Browser GROUPEND 
+[00:00:09.687] Browser GROUP   Shared parameters:
+[00:00:09.687] Browser LOG     tag_exp: 103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682875
+[00:00:09.687] Browser LOG     dl: http://localhost:3000/gallery
+[00:00:09.687] Browser LOG     dr: http://localhost:3000/
+[00:00:09.687] Browser LOG     sid: 1767369329
+[00:00:09.687] Browser LOG     sct: 3
+[00:00:09.687] Browser LOG     seg: 1
+[00:00:09.687] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:00:09.687] Browser GROUPEND 
+[00:00:09.687] Browser GROUPEND 
+[00:00:09.687] Browser GROUPEND 
+[00:00:09.687] Browser GROUPEND 
+[00:00:11.935] Browser LOG     
+    ____                   _        _____
+   / ___| ___   ___   __ _| | ___  |_   _|_ _  __ _
+  | |  _ / _ \ / _ \ / _` | |/ _ \   | |/ _` |/ _` |
+  | |_| | (_) | (_) | (_| | |  __/   | | (_| | (_| |
+   \____|\___/ \___/ \__, |_|\___|   |_|\__,_|\__, |
+                     |___/                    |___/
+
+[00:00:11.935] Browser GROUP   Processing commands (2)
+[00:00:11.935] Browser GROUP   Processing data layer push: {event: "gtm.init_consent", gtm.uniqueEventId: 1}
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUP   Processing data layer push: {event: "gtm.init", gtm.uniqueEventId: 2}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ogt_1p_data_v2", priority: 13, vtp_isAutoEnabled: true, vtp_autoPhoneEnabled: true, vtp_autoCollectExclusionSelectors: ["list", ["map", "exclusionSelector", ""]], vtp_isEnabled: true, vtp_autoAddressEnabled: true, vtp_autoEmailEnabled: true, vtp_isAutoCollectPiiEnabledFlag: true, tag_id: 4}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_ga_first", priority: 12, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 18}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__set_product_settings", priority: 11, vtp_instanceDestinationId: "G-RMZRTGH4NB", vtp_foreignTldMacroResult: ["macro", 1], vtp_isChinaVipRegionMacroResult: ["macro", 2], tag_id: 17}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_ga_regscope", priority: 10, vtp_settingsTable: ["list", ["map", "redactFieldGroup", "DEVICE_AND_GEO", "disallowAllRegions", false, "disallowedRegions", ""], ["map", "redactFieldGroup", "GOOGLE_SIGNALS", "disallowAllRegions", true, "disallowedRegions", ""]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 16}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_em_download", priority: 9, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 15}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_em_form", priority: 8, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 14}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_em_outbound_click", priority: 7, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 13}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_em_page_view", priority: 6, vtp_historyEvents: true, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 12}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_em_scroll", priority: 5, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 11}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_em_site_search", priority: 4, vtp_searchQueryParams: "q,s,search,query,keyword", vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 10}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_em_video", priority: 3, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 9}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_conversion_marking", priority: 2, vtp_conversionRules: ["list", ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"close_convert_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"qualify_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"purchase"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 8}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_auto_redact", priority: 1, vtp_redactEmail: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 7}
+[00:00:11.935] Browser LOG     Tag fired: {function: "__ccd_ga_last", priority: 0, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 6}
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUP   Processing GTAG command: ["js", Fri Jan 02 2026 21:25:33 GMT+0530 (India Standard Time)]
+[00:00:11.935] Browser LOG     Tag fired: {function: "__gct", vtp_trackingId: "G-RMZRTGH4NB", vtp_sessionDuration: 0, tag_id: 1}
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUP   Processing GTAG command: ["config", "G-RMZRTGH4NB"]
+[00:00:11.935] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:00:11.935] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:00:11.935] Browser GROUP   Sending event "page_view" to undefined
+[00:00:11.935] Browser GROUP   Request parameters:
+[00:00:11.935] Browser LOG     v: 2
+[00:00:11.935] Browser LOG     tid: G-RMZRTGH4NB
+[00:00:11.935] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:00:11.935] Browser LOG     _p: 1767369333575
+[00:00:11.935] Browser LOG     _dbg: 1
+[00:00:11.935] Browser LOG     gcd: 13l3l3l3l1l1
+[00:00:11.935] Browser LOG     npa: 0
+[00:00:11.935] Browser LOG     dma: 0
+[00:00:11.935] Browser LOG     cid: 864388489.1760692716
+[00:00:11.935] Browser LOG     ul: en-gb
+[00:00:11.935] Browser LOG     sr: 1470x956
+[00:00:11.935] Browser LOG     uaa: arm
+[00:00:11.935] Browser LOG     uab: 64
+[00:00:11.935] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:00:11.935] Browser LOG     uamb: 0
+[00:00:11.935] Browser LOG     uam: 
+[00:00:11.935] Browser LOG     uap: macOS
+[00:00:11.935] Browser LOG     uapv: 26.1.0
+[00:00:11.935] Browser LOG     uaw: 0
+[00:00:11.935] Browser LOG     are: 1
+[00:00:11.935] Browser LOG     frm: 0
+[00:00:11.935] Browser LOG     pscdl: noapi
+[00:00:11.935] Browser LOG     _eu: AAAAAAQ
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUP   Event parameters:
+[00:00:11.935] Browser LOG     en: page_view
+[00:00:11.935] Browser LOG     _ee: 1
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUP   Shared parameters:
+[00:00:11.935] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875~116744866
+[00:00:11.935] Browser LOG     sid: 1767369329
+[00:00:11.935] Browser LOG     sct: 3
+[00:00:11.935] Browser LOG     seg: 1
+[00:00:11.935] Browser LOG     dl: http://localhost/gallery
+[00:00:11.935] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser LOG     GTAG Command: "config", target: "G-RMZRTGH4NB", configuration: {}
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUP   Processing commands (1)
+[00:00:11.935] Browser GROUP   Processing data layer push: {event: "gtm.dom"}
+[00:00:11.935] Browser GROUPEND 
+[00:00:11.935] Browser GROUPEND 
+[00:00:15.213] Browser GROUP   Processing commands (1)
+[00:00:15.213] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "replaceState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/gallery", gtm.newUrl: "http://localhost:3000/gallery", gtm.triggers: "6"}
+[00:00:15.213] Browser GROUPEND 
+[00:00:15.213] Browser GROUPEND 
+[00:00:15.407] Browser GROUP   Processing commands (1)
+[00:00:15.407] Browser GROUP   Processing data layer push: {event: "gtm.load"}
+[00:00:15.407] Browser GROUPEND 
+[00:00:15.407] Browser GROUPEND 
+[00:00:48.248] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:11.194] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:48.248] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:11.194] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:48.248] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:11.194] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:48.248] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:11.296] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:48.248] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:48.615] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:48.723] Browser LOG     Using fallback reviews (API unavailable)
+[00:00:49.237] Browser GROUP   Processing commands (1)
+[00:00:49.237] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "pushState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/gallery", gtm.newUrl: "http://localhost:3000/", gtm.triggers: "6"}
+[00:00:49.237] Browser GROUPEND 
+[00:00:49.237] Browser GROUP   Processing GTAG command: ["event", "page_view", {page_location: "http://localhost:3000/", page_referrer: "http://localhost:3000/gallery", send_to: "G-RMZRTGH4NB"}]
+[00:00:49.237] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:00:49.237] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:00:49.237] Browser GROUP   Sending event "page_view" to undefined
+[00:00:49.237] Browser GROUP   Request parameters:
+[00:00:49.237] Browser LOG     v: 2
+[00:00:49.237] Browser LOG     tid: G-RMZRTGH4NB
+[00:00:49.237] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:00:49.237] Browser LOG     _p: 1767369333575
+[00:00:49.237] Browser LOG     _dbg: 1
+[00:00:49.237] Browser LOG     gcd: 13l3l3l3l1l1
+[00:00:49.237] Browser LOG     npa: 0
+[00:00:49.237] Browser LOG     dma: 0
+[00:00:49.237] Browser LOG     cid: 864388489.1760692716
+[00:00:49.237] Browser LOG     ul: en-gb
+[00:00:49.237] Browser LOG     sr: 1470x956
+[00:00:49.237] Browser LOG     uaa: arm
+[00:00:49.237] Browser LOG     uab: 64
+[00:00:49.237] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:00:49.237] Browser LOG     uamb: 0
+[00:00:49.237] Browser LOG     uam: 
+[00:00:49.237] Browser LOG     uap: macOS
+[00:00:49.237] Browser LOG     uapv: 26.1.0
+[00:00:49.237] Browser LOG     uaw: 0
+[00:00:49.237] Browser LOG     are: 1
+[00:00:49.237] Browser LOG     frm: 0
+[00:00:49.237] Browser LOG     pscdl: noapi
+[00:00:49.237] Browser LOG     _eu: AEAAAAQ
+[00:00:49.237] Browser GROUPEND 
+[00:00:49.237] Browser GROUP   Event parameters:
+[00:00:49.237] Browser LOG     en: page_view
+[00:00:49.237] Browser LOG     _et: 12535
+[00:00:49.237] Browser GROUPEND 
+[00:00:49.237] Browser GROUP   Shared parameters:
+[00:00:49.237] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875~116744866
+[00:00:49.237] Browser LOG     dl: http://localhost:3000/
+[00:00:49.237] Browser LOG     dr: http://localhost:3000/gallery
+[00:00:49.237] Browser LOG     sid: 1767369329
+[00:00:49.237] Browser LOG     sct: 3
+[00:00:49.237] Browser LOG     seg: 1
+[00:00:49.237] Browser LOG     dt: Best Premium Hair Salon & Bridal Makeup Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9
+[00:00:49.237] Browser GROUPEND 
+[00:00:49.237] Browser GROUPEND 
+[00:00:49.237] Browser GROUPEND 
+[00:00:49.237] Browser GROUPEND 
+[00:00:54.130] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:54.131] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:54.131] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:54.131] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:54.401] Browser LOG     
+    ____                   _        _____
+   / ___| ___   ___   __ _| | ___  |_   _|_ _  __ _
+  | |  _ / _ \ / _ \ / _` | |/ _ \   | |/ _` |/ _` |
+  | |_| | (_) | (_) | (_| | |  __/   | | (_| | (_| |
+   \____|\___/ \___/ \__, |_|\___|   |_|\__,_|\__, |
+                     |___/                    |___/
+
+[00:00:54.401] Browser GROUP   Processing commands (2)
+[00:00:54.401] Browser GROUP   Processing data layer push: {event: "gtm.init_consent", gtm.uniqueEventId: 1}
+[00:00:54.401] Browser GROUPEND 
+[00:00:54.401] Browser GROUP   Processing data layer push: {event: "gtm.init", gtm.uniqueEventId: 2}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ogt_1p_data_v2", priority: 13, vtp_isAutoEnabled: true, vtp_autoPhoneEnabled: true, vtp_autoCollectExclusionSelectors: ["list", ["map", "exclusionSelector", ""]], vtp_isEnabled: true, vtp_autoAddressEnabled: true, vtp_autoEmailEnabled: true, vtp_isAutoCollectPiiEnabledFlag: true, tag_id: 4}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_ga_first", priority: 12, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 18}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__set_product_settings", priority: 11, vtp_instanceDestinationId: "G-RMZRTGH4NB", vtp_foreignTldMacroResult: ["macro", 1], vtp_isChinaVipRegionMacroResult: ["macro", 2], tag_id: 17}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_ga_regscope", priority: 10, vtp_settingsTable: ["list", ["map", "redactFieldGroup", "DEVICE_AND_GEO", "disallowAllRegions", false, "disallowedRegions", ""], ["map", "redactFieldGroup", "GOOGLE_SIGNALS", "disallowAllRegions", true, "disallowedRegions", ""]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 16}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_em_download", priority: 9, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 15}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_em_form", priority: 8, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 14}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_em_outbound_click", priority: 7, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 13}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_em_page_view", priority: 6, vtp_historyEvents: true, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 12}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_em_scroll", priority: 5, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 11}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_em_site_search", priority: 4, vtp_searchQueryParams: "q,s,search,query,keyword", vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 10}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_em_video", priority: 3, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 9}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_conversion_marking", priority: 2, vtp_conversionRules: ["list", ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"close_convert_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"qualify_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"purchase"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 8}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_auto_redact", priority: 1, vtp_redactEmail: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 7}
+[00:00:54.401] Browser LOG     Tag fired: {function: "__ccd_ga_last", priority: 0, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 6}
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUP   Processing GTAG command: ["js", Fri Jan 02 2026 21:26:16 GMT+0530 (India Standard Time)]
+[00:00:54.402] Browser LOG     Tag fired: {function: "__gct", vtp_trackingId: "G-RMZRTGH4NB", vtp_sessionDuration: 0, tag_id: 1}
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUP   Processing GTAG command: ["config", "G-RMZRTGH4NB"]
+[00:00:54.402] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:00:54.402] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:00:54.402] Browser GROUP   Sending event "page_view" to undefined
+[00:00:54.402] Browser GROUP   Request parameters:
+[00:00:54.402] Browser LOG     v: 2
+[00:00:54.402] Browser LOG     tid: G-RMZRTGH4NB
+[00:00:54.402] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:00:54.402] Browser LOG     _p: 1767369376776
+[00:00:54.402] Browser LOG     _dbg: 1
+[00:00:54.402] Browser LOG     gcd: 13l3l3l3l1l1
+[00:00:54.402] Browser LOG     npa: 0
+[00:00:54.402] Browser LOG     dma: 0
+[00:00:54.402] Browser LOG     cid: 864388489.1760692716
+[00:00:54.402] Browser LOG     ul: en-gb
+[00:00:54.402] Browser LOG     sr: 1470x956
+[00:00:54.402] Browser LOG     uaa: arm
+[00:00:54.402] Browser LOG     uab: 64
+[00:00:54.402] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:00:54.402] Browser LOG     uamb: 0
+[00:00:54.402] Browser LOG     uam: 
+[00:00:54.402] Browser LOG     uap: macOS
+[00:00:54.402] Browser LOG     uapv: 26.1.0
+[00:00:54.402] Browser LOG     uaw: 0
+[00:00:54.402] Browser LOG     are: 1
+[00:00:54.402] Browser LOG     frm: 0
+[00:00:54.402] Browser LOG     pscdl: noapi
+[00:00:54.402] Browser LOG     _eu: AAAAAAQ
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUP   Event parameters:
+[00:00:54.402] Browser LOG     en: page_view
+[00:00:54.402] Browser LOG     _ee: 1
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUP   Shared parameters:
+[00:00:54.402] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116251938~116251940
+[00:00:54.402] Browser LOG     sid: 1767369329
+[00:00:54.402] Browser LOG     sct: 3
+[00:00:54.402] Browser LOG     seg: 1
+[00:00:54.402] Browser LOG     dl: http://localhost/
+[00:00:54.402] Browser LOG     dt: Best Premium Hair Salon & Bridal Makeup Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser LOG     GTAG Command: "config", target: "G-RMZRTGH4NB", configuration: {}
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUP   Processing commands (1)
+[00:00:54.402] Browser GROUP   Processing data layer push: {event: "gtm.dom"}
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.402] Browser GROUPEND 
+[00:00:54.763] Browser GROUP   Processing commands (1)
+[00:00:54.763] Browser GROUP   Processing data layer push: {event: "gtm.load"}
+[00:00:54.763] Browser GROUPEND 
+[00:00:54.763] Browser GROUPEND 
+[00:00:54.763] Browser LOG     Using fallback reviews (API unavailable)
+[00:01:00.110] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:01:02.323] Browser GROUP   Processing commands (1)
+[00:01:02.325] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "pushState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/", gtm.newUrl: "http://localhost:3000/gallery", gtm.triggers: "6"}
+[00:01:02.325] Browser GROUPEND 
+[00:01:02.325] Browser GROUP   Processing GTAG command: ["event", "page_view", {page_location: "http://localhost:3000/gallery", page_referrer: "http://localhost:3000/", send_to: "G-RMZRTGH4NB"}]
+[00:01:02.325] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:01:02.325] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:01:02.325] Browser GROUP   Sending event "page_view" to undefined
+[00:01:02.325] Browser GROUP   Request parameters:
+[00:01:02.325] Browser LOG     v: 2
+[00:01:02.325] Browser LOG     tid: G-RMZRTGH4NB
+[00:01:02.325] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:01:02.325] Browser LOG     _p: 1767369376776
+[00:01:02.325] Browser LOG     _dbg: 1
+[00:01:02.325] Browser LOG     gcd: 13l3l3l3l1l1
+[00:01:02.325] Browser LOG     npa: 0
+[00:01:02.325] Browser LOG     dma: 0
+[00:01:02.325] Browser LOG     cid: 864388489.1760692716
+[00:01:02.325] Browser LOG     ul: en-gb
+[00:01:02.325] Browser LOG     sr: 1470x956
+[00:01:02.325] Browser LOG     uaa: arm
+[00:01:02.325] Browser LOG     uab: 64
+[00:01:02.325] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:01:02.325] Browser LOG     uamb: 0
+[00:01:02.325] Browser LOG     uam: 
+[00:01:02.325] Browser LOG     uap: macOS
+[00:01:02.325] Browser LOG     uapv: 26.1.0
+[00:01:02.325] Browser LOG     uaw: 0
+[00:01:02.325] Browser LOG     are: 1
+[00:01:02.325] Browser LOG     frm: 0
+[00:01:02.325] Browser LOG     pscdl: noapi
+[00:01:02.325] Browser LOG     _eu: AEAAAAQ
+[00:01:02.325] Browser GROUPEND 
+[00:01:02.326] Browser GROUP   Event parameters:
+[00:01:02.326] Browser LOG     en: page_view
+[00:01:02.326] Browser LOG     _et: 7008
+[00:01:02.326] Browser GROUPEND 
+[00:01:02.326] Browser GROUP   Shared parameters:
+[00:01:02.326] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116251938~116251940
+[00:01:02.326] Browser LOG     dl: http://localhost:3000/gallery
+[00:01:02.326] Browser LOG     dr: http://localhost:3000/
+[00:01:02.326] Browser LOG     sid: 1767369329
+[00:01:02.326] Browser LOG     sct: 3
+[00:01:02.326] Browser LOG     seg: 1
+[00:01:02.326] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:01:02.326] Browser GROUPEND 
+[00:01:02.326] Browser GROUPEND 
+[00:01:02.326] Browser GROUPEND 
+[00:01:02.326] Browser GROUPEND 
+[00:05:45.343] Browser GROUP   Processing commands (1)
+[00:05:45.349] Browser GROUP   Processing data layer push: {event: "gtm.scrollDepth", gtm.scrollThreshold: 90, gtm.scrollUnits: "percent", gtm.scrollDirection: "vertical", gtm.triggers: "7"}
+[00:05:45.349] Browser GROUPEND 
+[00:05:45.349] Browser GROUP   Processing GTAG command: ["event", "scroll", {percent_scrolled: 90, send_to: "G-RMZRTGH4NB"}]
+[00:05:45.349] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:05:45.349] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:05:45.349] Browser GROUP   Sending event "scroll" to undefined
+[00:05:45.349] Browser GROUP   Request parameters:
+[00:05:45.349] Browser LOG     v: 2
+[00:05:45.349] Browser LOG     tid: G-RMZRTGH4NB
+[00:05:45.349] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:05:45.350] Browser LOG     _p: 1767369376776
+[00:05:45.350] Browser LOG     _dbg: 1
+[00:05:45.350] Browser LOG     gcd: 13l3l3l3l1l1
+[00:05:45.350] Browser LOG     npa: 0
+[00:05:45.350] Browser LOG     dma: 0
+[00:05:45.350] Browser LOG     cid: 864388489.1760692716
+[00:05:45.350] Browser LOG     ul: en-gb
+[00:05:45.350] Browser LOG     sr: 1470x956
+[00:05:45.350] Browser LOG     uaa: arm
+[00:05:45.350] Browser LOG     uab: 64
+[00:05:45.350] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:05:45.350] Browser LOG     uamb: 0
+[00:05:45.350] Browser LOG     uam: 
+[00:05:45.350] Browser LOG     uap: macOS
+[00:05:45.350] Browser LOG     uapv: 26.1.0
+[00:05:45.350] Browser LOG     uaw: 0
+[00:05:45.350] Browser LOG     are: 1
+[00:05:45.350] Browser LOG     frm: 0
+[00:05:45.350] Browser LOG     pscdl: noapi
+[00:05:45.350] Browser LOG     _eu: AEAAAAQ
+[00:05:45.350] Browser GROUPEND 
+[00:05:45.350] Browser GROUP   Event parameters:
+[00:05:45.350] Browser LOG     en: scroll
+[00:05:45.350] Browser LOG     epn.percent_scrolled: 90
+[00:05:45.350] Browser LOG     _et: 12155
+[00:05:45.350] Browser GROUPEND 
+[00:05:45.352] Browser GROUP   Shared parameters:
+[00:05:45.356] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116251938~116251940
+[00:05:45.357] Browser LOG     sid: 1767369329
+[00:05:45.358] Browser LOG     sct: 3
+[00:05:45.358] Browser LOG     seg: 1
+[00:05:45.358] Browser LOG     dl: http://localhost/gallery
+[00:05:45.358] Browser LOG     dr: http://localhost:3000/
+[00:05:45.358] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:05:45.358] Browser GROUPEND 
+[00:05:45.358] Browser GROUPEND 
+[00:05:45.358] Browser GROUPEND 
+[00:05:45.359] Browser GROUPEND 
+[00:05:50.180] Server  LOG      ✓ Compiled in 1091ms
+[00:06:06.514] Browser GROUP   Processing commands (1)
+[00:06:06.514] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "replaceState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/gallery", gtm.newUrl: "http://localhost:3000/gallery", gtm.triggers: "6"}
+[00:06:06.514] Browser GROUPEND 
+[00:06:06.514] Browser GROUPEND 
+[00:06:14.483] Server  LOG      ✓ Compiled in 125ms
+[00:06:52.918] Browser LOG     
+    ____                   _        _____
+   / ___| ___   ___   __ _| | ___  |_   _|_ _  __ _
+  | |  _ / _ \ / _ \ / _` | |/ _ \   | |/ _` |/ _` |
+  | |_| | (_) | (_) | (_| | |  __/   | | (_| | (_| |
+   \____|\___/ \___/ \__, |_|\___|   |_|\__,_|\__, |
+                     |___/                    |___/
+
+[00:06:52.918] Browser GROUP   Processing commands (2)
+[00:06:52.919] Browser GROUP   Processing data layer push: {event: "gtm.init_consent", gtm.uniqueEventId: 1}
+[00:06:52.919] Browser GROUPEND 
+[00:06:52.919] Browser GROUP   Processing data layer push: {event: "gtm.init", gtm.uniqueEventId: 2}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ogt_1p_data_v2", priority: 13, vtp_isAutoEnabled: true, vtp_autoPhoneEnabled: true, vtp_autoCollectExclusionSelectors: ["list", ["map", "exclusionSelector", ""]], vtp_isEnabled: true, vtp_autoAddressEnabled: true, vtp_autoEmailEnabled: true, vtp_isAutoCollectPiiEnabledFlag: true, tag_id: 4}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_ga_first", priority: 12, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 18}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__set_product_settings", priority: 11, vtp_instanceDestinationId: "G-RMZRTGH4NB", vtp_foreignTldMacroResult: ["macro", 1], vtp_isChinaVipRegionMacroResult: ["macro", 2], tag_id: 17}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_ga_regscope", priority: 10, vtp_settingsTable: ["list", ["map", "redactFieldGroup", "DEVICE_AND_GEO", "disallowAllRegions", false, "disallowedRegions", ""], ["map", "redactFieldGroup", "GOOGLE_SIGNALS", "disallowAllRegions", true, "disallowedRegions", ""]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 16}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_em_download", priority: 9, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 15}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_em_form", priority: 8, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 14}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_em_outbound_click", priority: 7, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 13}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_em_page_view", priority: 6, vtp_historyEvents: true, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 12}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_em_scroll", priority: 5, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 11}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_em_site_search", priority: 4, vtp_searchQueryParams: "q,s,search,query,keyword", vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 10}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_em_video", priority: 3, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 9}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_conversion_marking", priority: 2, vtp_conversionRules: ["list", ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"close_convert_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"qualify_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"purchase"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 8}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_auto_redact", priority: 1, vtp_redactEmail: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 7}
+[00:06:52.919] Browser LOG     Tag fired: {function: "__ccd_ga_last", priority: 0, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 6}
+[00:06:52.919] Browser GROUPEND 
+[00:06:52.919] Browser GROUP   Processing GTAG command: ["js", Fri Jan 02 2026 21:32:15 GMT+0530 (India Standard Time)]
+[00:06:52.919] Browser LOG     Tag fired: {function: "__gct", vtp_trackingId: "G-RMZRTGH4NB", vtp_sessionDuration: 0, tag_id: 1}
+[00:06:52.919] Browser GROUPEND 
+[00:06:52.919] Browser GROUP   Processing GTAG command: ["config", "G-RMZRTGH4NB"]
+[00:06:52.919] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:06:52.919] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:06:52.919] Browser GROUP   Sending event "page_view" to undefined
+[00:06:52.919] Browser GROUP   Request parameters:
+[00:06:52.919] Browser LOG     v: 2
+[00:06:52.919] Browser LOG     tid: G-RMZRTGH4NB
+[00:06:52.919] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:06:52.919] Browser LOG     _p: 1767369735006
+[00:06:52.919] Browser LOG     _dbg: 1
+[00:06:52.919] Browser LOG     gcd: 13l3l3l3l1l1
+[00:06:52.919] Browser LOG     npa: 0
+[00:06:52.919] Browser LOG     dma: 0
+[00:06:52.919] Browser LOG     cid: 864388489.1760692716
+[00:06:52.919] Browser LOG     ul: en-gb
+[00:06:52.919] Browser LOG     sr: 1470x956
+[00:06:52.919] Browser LOG     uaa: arm
+[00:06:52.919] Browser LOG     uab: 64
+[00:06:52.919] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:06:52.919] Browser LOG     uamb: 0
+[00:06:52.919] Browser LOG     uam: 
+[00:06:52.919] Browser LOG     uap: macOS
+[00:06:52.919] Browser LOG     uapv: 26.1.0
+[00:06:52.919] Browser LOG     uaw: 0
+[00:06:52.919] Browser LOG     are: 1
+[00:06:52.919] Browser LOG     frm: 0
+[00:06:52.919] Browser LOG     pscdl: noapi
+[00:06:52.919] Browser LOG     _eu: AAAAAAQ
+[00:06:52.919] Browser GROUPEND 
+[00:06:52.919] Browser GROUP   Event parameters:
+[00:06:52.920] Browser LOG     en: page_view
+[00:06:52.920] Browser LOG     _ee: 1
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser GROUP   Shared parameters:
+[00:06:52.920] Browser LOG     tag_exp: 103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116251938~116251940
+[00:06:52.920] Browser LOG     sid: 1767369329
+[00:06:52.920] Browser LOG     sct: 3
+[00:06:52.920] Browser LOG     seg: 1
+[00:06:52.920] Browser LOG     dl: http://localhost/gallery
+[00:06:52.920] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser LOG     GTAG Command: "config", target: "G-RMZRTGH4NB", configuration: {}
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser GROUP   Processing commands (1)
+[00:06:52.920] Browser GROUP   Processing data layer push: {event: "gtm.dom"}
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser GROUP   Processing commands (1)
+[00:06:52.920] Browser GROUP   Processing data layer push: {event: "gtm.load"}
+[00:06:52.920] Browser GROUPEND 
+[00:06:52.920] Browser GROUPEND 
+[00:09:14.571] Server  LOG      ✓ Compiled in 154ms
+[00:09:53.974] Server  LOG      ✓ Compiled in 166ms
+[00:10:10.284] Browser GROUP   Processing commands (1)
+[00:10:10.284] Browser GROUP   Processing data layer push: {event: "gtm.scrollDepth", gtm.scrollThreshold: 90, gtm.scrollUnits: "percent", gtm.scrollDirection: "vertical", gtm.triggers: "7"}
+[00:10:10.284] Browser GROUPEND 
+[00:10:10.284] Browser GROUP   Processing GTAG command: ["event", "scroll", {percent_scrolled: 90, send_to: "G-RMZRTGH4NB"}]
+[00:10:10.284] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:10:10.284] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:10:10.284] Browser GROUP   Sending event "scroll" to undefined
+[00:10:10.284] Browser GROUP   Request parameters:
+[00:10:10.284] Browser LOG     v: 2
+[00:10:10.284] Browser LOG     tid: G-RMZRTGH4NB
+[00:10:10.284] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:10:10.284] Browser LOG     _p: 1767369735006
+[00:10:10.284] Browser LOG     _dbg: 1
+[00:10:10.284] Browser LOG     gcd: 13l3l3l3l1l1
+[00:10:10.284] Browser LOG     npa: 0
+[00:10:10.284] Browser LOG     dma: 0
+[00:10:10.284] Browser LOG     cid: 864388489.1760692716
+[00:10:10.284] Browser LOG     ul: en-gb
+[00:10:10.284] Browser LOG     sr: 1470x956
+[00:10:10.287] Browser LOG     uaa: arm
+[00:10:10.287] Browser LOG     uab: 64
+[00:10:10.287] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:10:10.287] Browser LOG     uamb: 0
+[00:10:10.287] Browser LOG     uam: 
+[00:10:10.287] Browser LOG     uap: macOS
+[00:10:10.287] Browser LOG     uapv: 26.1.0
+[00:10:10.287] Browser LOG     uaw: 0
+[00:10:10.287] Browser LOG     are: 1
+[00:10:10.287] Browser LOG     frm: 0
+[00:10:10.287] Browser LOG     pscdl: noapi
+[00:10:10.287] Browser LOG     _eu: AEAAAAQ
+[00:10:10.287] Browser GROUPEND 
+[00:10:10.287] Browser GROUP   Event parameters:
+[00:10:10.287] Browser LOG     en: scroll
+[00:10:10.287] Browser LOG     epn.percent_scrolled: 90
+[00:10:10.287] Browser LOG     _et: 82151
+[00:10:10.287] Browser GROUPEND 
+[00:10:10.287] Browser GROUP   Shared parameters:
+[00:10:10.287] Browser LOG     tag_exp: 103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116251938~116251940
+[00:10:10.287] Browser LOG     sid: 1767369329
+[00:10:10.287] Browser LOG     sct: 3
+[00:10:10.287] Browser LOG     seg: 1
+[00:10:10.287] Browser LOG     dl: http://localhost/gallery
+[00:10:10.287] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:10:10.287] Browser GROUPEND 
+[00:10:10.287] Browser GROUPEND 
+[00:10:10.287] Browser GROUPEND 
+[00:10:10.287] Browser GROUPEND 
+[00:10:12.752] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/gallery" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="gallery/pa...">
+              <SegmentTrieNode>
+              <GalleryPage>
+                <Header>
+                <GalleryPage>
+                  <main className="min-h-screen">
+                    <GalleryShowcase>
+                      <div className="relative">
+                        <section className="relative h...">
+                          <div className="absolute i..." style={{...}}>
+                            <div>
+                            <motion.div initial={{scale:1.2, ...}} animate={{scale:1, ...}} transition={{duration:1.5}} ...>
+                              <div
+                                className="absolute inset-0"
+                                style={{
++                                 backgroundImage: "url(/gal1.JPEG)"
++                                 backgroundSize: "cover"
++                                 backgroundPosition: "center"
++                                 opacity: 0
+-                                 opacity: "0"
++                                 transform: "scale(1.2)"
+-                                 transform: "scale(1.2)"
+-                                 background-image: "url(\"/gal9.JPG\")"
+-                                 background-size: "cover"
+-                                 background-position-x: "center"
+-                                 background-position-y: "top"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                          ...
+                        ...
+                ...
+            ...
+          ...
+
+[00:10:13.509] Browser LOG     
+    ____                   _        _____
+   / ___| ___   ___   __ _| | ___  |_   _|_ _  __ _
+  | |  _ / _ \ / _ \ / _` | |/ _ \   | |/ _` |/ _` |
+  | |_| | (_) | (_) | (_| | |  __/   | | (_| | (_| |
+   \____|\___/ \___/ \__, |_|\___|   |_|\__,_|\__, |
+                     |___/                    |___/
+
+[00:10:13.510] Browser GROUP   Processing commands (2)
+[00:10:13.510] Browser GROUP   Processing data layer push: {event: "gtm.init_consent", gtm.uniqueEventId: 1}
+[00:10:13.510] Browser GROUPEND 
+[00:10:13.510] Browser GROUP   Processing data layer push: {event: "gtm.init", gtm.uniqueEventId: 2}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ogt_1p_data_v2", priority: 13, vtp_isAutoEnabled: true, vtp_autoPhoneEnabled: true, vtp_autoCollectExclusionSelectors: ["list", ["map", "exclusionSelector", ""]], vtp_isEnabled: true, vtp_autoAddressEnabled: true, vtp_autoEmailEnabled: true, vtp_isAutoCollectPiiEnabledFlag: true, tag_id: 4}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_ga_first", priority: 12, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 18}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__set_product_settings", priority: 11, vtp_instanceDestinationId: "G-RMZRTGH4NB", vtp_foreignTldMacroResult: ["macro", 1], vtp_isChinaVipRegionMacroResult: ["macro", 2], tag_id: 17}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_ga_regscope", priority: 10, vtp_settingsTable: ["list", ["map", "redactFieldGroup", "DEVICE_AND_GEO", "disallowAllRegions", false, "disallowedRegions", ""], ["map", "redactFieldGroup", "GOOGLE_SIGNALS", "disallowAllRegions", true, "disallowedRegions", ""]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 16}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_em_download", priority: 9, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 15}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_em_form", priority: 8, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 14}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_em_outbound_click", priority: 7, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 13}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_em_page_view", priority: 6, vtp_historyEvents: true, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 12}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_em_scroll", priority: 5, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 11}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_em_site_search", priority: 4, vtp_searchQueryParams: "q,s,search,query,keyword", vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 10}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_em_video", priority: 3, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 9}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_conversion_marking", priority: 2, vtp_conversionRules: ["list", ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"close_convert_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"qualify_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"purchase"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 8}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_auto_redact", priority: 1, vtp_redactEmail: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 7}
+[00:10:13.510] Browser LOG     Tag fired: {function: "__ccd_ga_last", priority: 0, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 6}
+[00:10:13.510] Browser GROUPEND 
+[00:10:13.510] Browser GROUP   Processing GTAG command: ["js", Fri Jan 02 2026 21:35:35 GMT+0530 (India Standard Time)]
+[00:10:13.510] Browser LOG     Tag fired: {function: "__gct", vtp_trackingId: "G-RMZRTGH4NB", vtp_sessionDuration: 0, tag_id: 1}
+[00:10:13.510] Browser GROUPEND 
+[00:10:13.510] Browser GROUP   Processing GTAG command: ["config", "G-RMZRTGH4NB"]
+[00:10:13.510] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:10:13.510] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:10:13.511] Browser GROUP   Sending event "page_view" to undefined
+[00:10:13.511] Browser GROUP   Request parameters:
+[00:10:13.511] Browser LOG     v: 2
+[00:10:13.511] Browser LOG     tid: G-RMZRTGH4NB
+[00:10:13.511] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:10:13.511] Browser LOG     _p: 1767369935328
+[00:10:13.511] Browser LOG     _dbg: 1
+[00:10:13.511] Browser LOG     gcd: 13l3l3l3l1l1
+[00:10:13.511] Browser LOG     npa: 0
+[00:10:13.511] Browser LOG     dma: 0
+[00:10:13.511] Browser LOG     cid: 864388489.1760692716
+[00:10:13.511] Browser LOG     ul: en-gb
+[00:10:13.511] Browser LOG     sr: 1470x956
+[00:10:13.511] Browser LOG     uaa: arm
+[00:10:13.511] Browser LOG     uab: 64
+[00:10:13.511] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:10:13.511] Browser LOG     uamb: 0
+[00:10:13.511] Browser LOG     uam: 
+[00:10:13.511] Browser LOG     uap: macOS
+[00:10:13.511] Browser LOG     uapv: 26.1.0
+[00:10:13.511] Browser LOG     uaw: 0
+[00:10:13.511] Browser LOG     are: 1
+[00:10:13.511] Browser LOG     frm: 0
+[00:10:13.511] Browser LOG     pscdl: noapi
+[00:10:13.511] Browser LOG     _eu: AAAAAAQ
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUP   Event parameters:
+[00:10:13.511] Browser LOG     en: page_view
+[00:10:13.511] Browser LOG     _ee: 1
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUP   Shared parameters:
+[00:10:13.511] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940
+[00:10:13.511] Browser LOG     sid: 1767369329
+[00:10:13.511] Browser LOG     sct: 3
+[00:10:13.511] Browser LOG     seg: 1
+[00:10:13.511] Browser LOG     dl: http://localhost/gallery
+[00:10:13.511] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser LOG     GTAG Command: "config", target: "G-RMZRTGH4NB", configuration: {}
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUP   Processing commands (1)
+[00:10:13.511] Browser GROUP   Processing data layer push: {event: "gtm.dom"}
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUP   Processing commands (1)
+[00:10:13.511] Browser GROUP   Processing data layer push: {event: "gtm.load"}
+[00:10:13.511] Browser GROUPEND 
+[00:10:13.511] Browser GROUPEND 
+[00:13:20.776] Browser LOG     
+    ____                   _        _____
+   / ___| ___   ___   __ _| | ___  |_   _|_ _  __ _
+  | |  _ / _ \ / _ \ / _` | |/ _ \   | |/ _` |/ _` |
+  | |_| | (_) | (_) | (_| | |  __/   | | (_| | (_| |
+   \____|\___/ \___/ \__, |_|\___|   |_|\__,_|\__, |
+                     |___/                    |___/
+
+[00:13:20.776] Browser GROUP   Processing commands (2)
+[00:13:20.776] Browser GROUP   Processing data layer push: {event: "gtm.init_consent", gtm.uniqueEventId: 1}
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUP   Processing data layer push: {event: "gtm.init", gtm.uniqueEventId: 2}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ogt_1p_data_v2", priority: 13, vtp_isAutoEnabled: true, vtp_autoPhoneEnabled: true, vtp_autoCollectExclusionSelectors: ["list", ["map", "exclusionSelector", ""]], vtp_isEnabled: true, vtp_autoAddressEnabled: true, vtp_autoEmailEnabled: true, vtp_isAutoCollectPiiEnabledFlag: true, tag_id: 4}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_ga_first", priority: 12, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 18}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__set_product_settings", priority: 11, vtp_instanceDestinationId: "G-RMZRTGH4NB", vtp_foreignTldMacroResult: ["macro", 1], vtp_isChinaVipRegionMacroResult: ["macro", 2], tag_id: 17}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_ga_regscope", priority: 10, vtp_settingsTable: ["list", ["map", "redactFieldGroup", "DEVICE_AND_GEO", "disallowAllRegions", false, "disallowedRegions", ""], ["map", "redactFieldGroup", "GOOGLE_SIGNALS", "disallowAllRegions", true, "disallowedRegions", ""]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 16}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_em_download", priority: 9, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 15}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_em_form", priority: 8, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 14}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_em_outbound_click", priority: 7, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 13}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_em_page_view", priority: 6, vtp_historyEvents: true, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 12}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_em_scroll", priority: 5, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 11}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_em_site_search", priority: 4, vtp_searchQueryParams: "q,s,search,query,keyword", vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 10}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_em_video", priority: 3, vtp_includeParams: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 9}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_conversion_marking", priority: 2, vtp_conversionRules: ["list", ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"close_convert_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"qualify_lead"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"], ["map", "matchingRules", "{"type":5,"args":[{"stringValue":"purchase"},{"contextValue":{"namespaceType":1,"keyParts":["eventName"]}}]}"]], vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 8}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_auto_redact", priority: 1, vtp_redactEmail: true, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 7}
+[00:13:20.777] Browser LOG     Tag fired: {function: "__ccd_ga_last", priority: 0, vtp_instanceDestinationId: "G-RMZRTGH4NB", tag_id: 6}
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUP   Processing GTAG command: ["js", Fri Jan 02 2026 21:38:43 GMT+0530 (India Standard Time)]
+[00:13:20.777] Browser LOG     Tag fired: {function: "__gct", vtp_trackingId: "G-RMZRTGH4NB", vtp_sessionDuration: 0, tag_id: 1}
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUP   Processing GTAG command: ["config", "G-RMZRTGH4NB"]
+[00:13:20.777] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:13:20.777] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:13:20.777] Browser GROUP   Sending event "page_view" to undefined
+[00:13:20.777] Browser GROUP   Request parameters:
+[00:13:20.777] Browser LOG     v: 2
+[00:13:20.777] Browser LOG     tid: G-RMZRTGH4NB
+[00:13:20.777] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:13:20.777] Browser LOG     _p: 1767370123034
+[00:13:20.777] Browser LOG     _dbg: 1
+[00:13:20.777] Browser LOG     gcd: 13l3l3l3l1l1
+[00:13:20.777] Browser LOG     npa: 0
+[00:13:20.777] Browser LOG     dma: 0
+[00:13:20.777] Browser LOG     cid: 864388489.1760692716
+[00:13:20.777] Browser LOG     ul: en-gb
+[00:13:20.777] Browser LOG     sr: 1470x956
+[00:13:20.777] Browser LOG     uaa: arm
+[00:13:20.777] Browser LOG     uab: 64
+[00:13:20.777] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:13:20.777] Browser LOG     uamb: 0
+[00:13:20.777] Browser LOG     uam: 
+[00:13:20.777] Browser LOG     uap: macOS
+[00:13:20.777] Browser LOG     uapv: 26.1.0
+[00:13:20.777] Browser LOG     uaw: 0
+[00:13:20.777] Browser LOG     are: 1
+[00:13:20.777] Browser LOG     frm: 0
+[00:13:20.777] Browser LOG     pscdl: noapi
+[00:13:20.777] Browser LOG     _eu: AAAAAAQ
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUP   Event parameters:
+[00:13:20.777] Browser LOG     en: page_view
+[00:13:20.777] Browser LOG     _ee: 1
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUP   Shared parameters:
+[00:13:20.777] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940
+[00:13:20.777] Browser LOG     sid: 1767369329
+[00:13:20.777] Browser LOG     sct: 3
+[00:13:20.777] Browser LOG     seg: 1
+[00:13:20.777] Browser LOG     dl: http://localhost/gallery
+[00:13:20.777] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser LOG     GTAG Command: "config", target: "G-RMZRTGH4NB", configuration: {}
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUP   Processing commands (1)
+[00:13:20.777] Browser GROUP   Processing data layer push: {event: "gtm.dom"}
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUP   Processing commands (1)
+[00:13:20.777] Browser GROUP   Processing data layer push: {event: "gtm.load"}
+[00:13:20.777] Browser GROUPEND 
+[00:13:20.777] Browser GROUPEND 
+[00:13:38.193] Server  LOG      ✓ Compiled in 308ms
+[00:13:58.981] Browser GROUP   Processing commands (1)
+[00:13:58.981] Browser GROUP   Processing data layer push: {event: "gtm.scrollDepth", gtm.scrollThreshold: 90, gtm.scrollUnits: "percent", gtm.scrollDirection: "vertical", gtm.triggers: "7"}
+[00:13:58.981] Browser GROUPEND 
+[00:13:58.981] Browser GROUP   Processing GTAG command: ["event", "scroll", {percent_scrolled: 90, send_to: "G-RMZRTGH4NB"}]
+[00:13:58.981] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:13:58.981] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:13:58.981] Browser GROUP   Sending event "scroll" to undefined
+[00:13:58.981] Browser GROUP   Request parameters:
+[00:13:58.981] Browser LOG     v: 2
+[00:13:58.981] Browser LOG     tid: G-RMZRTGH4NB
+[00:13:58.981] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:13:58.981] Browser LOG     _p: 1767370123034
+[00:13:58.981] Browser LOG     _dbg: 1
+[00:13:58.981] Browser LOG     gcd: 13l3l3l3l1l1
+[00:13:58.981] Browser LOG     npa: 0
+[00:13:58.981] Browser LOG     dma: 0
+[00:13:58.981] Browser LOG     cid: 864388489.1760692716
+[00:13:58.981] Browser LOG     ul: en-gb
+[00:13:58.981] Browser LOG     sr: 1470x956
+[00:13:58.981] Browser LOG     uaa: arm
+[00:13:58.981] Browser LOG     uab: 64
+[00:13:58.981] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:13:58.981] Browser LOG     uamb: 0
+[00:13:58.981] Browser LOG     uam: 
+[00:13:58.981] Browser LOG     uap: macOS
+[00:13:58.981] Browser LOG     uapv: 26.1.0
+[00:13:58.981] Browser LOG     uaw: 0
+[00:13:58.981] Browser LOG     are: 1
+[00:13:58.981] Browser LOG     frm: 0
+[00:13:58.981] Browser LOG     pscdl: noapi
+[00:13:58.981] Browser LOG     _eu: AEAAAAQ
+[00:13:58.981] Browser GROUPEND 
+[00:13:58.981] Browser GROUP   Event parameters:
+[00:13:58.981] Browser LOG     en: scroll
+[00:13:58.981] Browser LOG     epn.percent_scrolled: 90
+[00:13:58.981] Browser LOG     _et: 6114
+[00:13:58.981] Browser GROUPEND 
+[00:13:58.981] Browser GROUP   Shared parameters:
+[00:13:58.981] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940
+[00:13:58.981] Browser LOG     sid: 1767369329
+[00:13:58.981] Browser LOG     sct: 3
+[00:13:58.981] Browser LOG     seg: 1
+[00:13:58.981] Browser LOG     dl: http://localhost/gallery
+[00:13:58.981] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:13:58.981] Browser GROUPEND 
+[00:13:58.981] Browser GROUPEND 
+[00:13:58.981] Browser GROUPEND 
+[00:13:58.981] Browser GROUPEND 
+[00:15:48.534] Server  LOG      ✓ Compiled in 200ms
+[00:16:43.931] Server  LOG      ✓ Compiled in 163ms
+[00:17:25.203] Server  LOG      ✓ Compiled in 162ms
+[00:19:11.785] Server  LOG      ✓ Compiled in 147ms
+[00:19:34.301] Browser WARN    Image with src "/SLIDE_01.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:19:34.301] Browser WARN    Image with src "/SLIDE_02.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:19:34.301] Browser WARN    Image with src "/SLIDE_03.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:19:34.301] Browser WARN    Image with src "/SLIDE_04.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:19:34.301] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:19:34.733] Browser LOG     Using fallback reviews (API unavailable)
+[00:19:34.930] Browser LOG     Using fallback reviews (API unavailable)
+[00:19:35.146] Browser GROUP   Processing commands (1)
+[00:19:35.146] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "pushState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/gallery", gtm.newUrl: "http://localhost:3000/", gtm.triggers: "6"}
+[00:19:35.146] Browser GROUPEND 
+[00:19:35.146] Browser GROUP   Processing GTAG command: ["event", "page_view", {page_location: "http://localhost:3000/", page_referrer: "http://localhost:3000/gallery", send_to: "G-RMZRTGH4NB"}]
+[00:19:35.146] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:19:35.146] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:19:35.146] Browser GROUP   Sending event "page_view" to undefined
+[00:19:35.146] Browser GROUP   Request parameters:
+[00:19:35.146] Browser LOG     v: 2
+[00:19:35.146] Browser LOG     tid: G-RMZRTGH4NB
+[00:19:35.146] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:19:35.146] Browser LOG     _p: 1767370123034
+[00:19:35.146] Browser LOG     _dbg: 1
+[00:19:35.146] Browser LOG     gcd: 13l3l3l3l1l1
+[00:19:35.146] Browser LOG     npa: 0
+[00:19:35.146] Browser LOG     dma: 0
+[00:19:35.146] Browser LOG     cid: 864388489.1760692716
+[00:19:35.146] Browser LOG     ul: en-gb
+[00:19:35.146] Browser LOG     sr: 1470x956
+[00:19:35.146] Browser LOG     uaa: arm
+[00:19:35.146] Browser LOG     uab: 64
+[00:19:35.146] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:19:35.146] Browser LOG     uamb: 0
+[00:19:35.146] Browser LOG     uam: 
+[00:19:35.146] Browser LOG     uap: macOS
+[00:19:35.146] Browser LOG     uapv: 26.1.0
+[00:19:35.146] Browser LOG     uaw: 0
+[00:19:35.146] Browser LOG     are: 1
+[00:19:35.146] Browser LOG     frm: 0
+[00:19:35.146] Browser LOG     pscdl: noapi
+[00:19:35.146] Browser LOG     _eu: AEAAAAQ
+[00:19:35.146] Browser GROUPEND 
+[00:19:35.146] Browser GROUP   Event parameters:
+[00:19:35.146] Browser LOG     en: page_view
+[00:19:35.146] Browser LOG     _et: 111378
+[00:19:35.146] Browser GROUPEND 
+[00:19:35.146] Browser GROUP   Shared parameters:
+[00:19:35.146] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940
+[00:19:35.146] Browser LOG     dl: http://localhost:3000/
+[00:19:35.146] Browser LOG     dr: http://localhost:3000/gallery
+[00:19:35.146] Browser LOG     sid: 1767369329
+[00:19:35.146] Browser LOG     sct: 3
+[00:19:35.146] Browser LOG     seg: 1
+[00:19:35.146] Browser LOG     dt: Best Premium Hair Salon & Bridal Makeup Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9
+[00:19:35.146] Browser GROUPEND 
+[00:19:35.146] Browser GROUPEND 
+[00:19:35.146] Browser GROUPEND 
+[00:19:35.146] Browser GROUPEND 
+[00:19:36.912] Browser GROUP   Processing commands (1)
+[00:19:36.912] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "pushState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/", gtm.newUrl: "http://localhost:3000/gallery", gtm.triggers: "6"}
+[00:19:36.912] Browser GROUPEND 
+[00:19:36.912] Browser GROUP   Processing GTAG command: ["event", "page_view", {page_location: "http://localhost:3000/gallery", page_referrer: "http://localhost:3000/", send_to: "G-RMZRTGH4NB"}]
+[00:19:36.912] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:19:36.912] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:19:36.912] Browser GROUP   Sending event "page_view" to undefined
+[00:19:36.912] Browser GROUP   Request parameters:
+[00:19:36.912] Browser LOG     v: 2
+[00:19:36.912] Browser LOG     tid: G-RMZRTGH4NB
+[00:19:36.912] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:19:36.912] Browser LOG     _p: 1767370123034
+[00:19:36.912] Browser LOG     _dbg: 1
+[00:19:36.912] Browser LOG     gcd: 13l3l3l3l1l1
+[00:19:36.912] Browser LOG     npa: 0
+[00:19:36.912] Browser LOG     dma: 0
+[00:19:36.912] Browser LOG     cid: 864388489.1760692716
+[00:19:36.912] Browser LOG     ul: en-gb
+[00:19:36.912] Browser LOG     sr: 1470x956
+[00:19:36.912] Browser LOG     uaa: arm
+[00:19:36.912] Browser LOG     uab: 64
+[00:19:36.912] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:19:36.912] Browser LOG     uamb: 0
+[00:19:36.912] Browser LOG     uam: 
+[00:19:36.912] Browser LOG     uap: macOS
+[00:19:36.912] Browser LOG     uapv: 26.1.0
+[00:19:36.912] Browser LOG     uaw: 0
+[00:19:36.912] Browser LOG     are: 1
+[00:19:36.912] Browser LOG     frm: 0
+[00:19:36.912] Browser LOG     pscdl: noapi
+[00:19:36.912] Browser LOG     _eu: AEAAAAQ
+[00:19:36.912] Browser GROUPEND 
+[00:19:36.912] Browser GROUP   Event parameters:
+[00:19:36.912] Browser LOG     en: page_view
+[00:19:36.912] Browser LOG     _et: 1762
+[00:19:36.912] Browser GROUPEND 
+[00:19:36.912] Browser GROUP   Shared parameters:
+[00:19:36.912] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940
+[00:19:36.912] Browser LOG     dl: http://localhost:3000/gallery
+[00:19:36.912] Browser LOG     dr: http://localhost:3000/
+[00:19:36.912] Browser LOG     sid: 1767369329
+[00:19:36.912] Browser LOG     sct: 3
+[00:19:36.912] Browser LOG     seg: 1
+[00:19:36.912] Browser LOG     dt: Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9 | Anaplak Art and Glam Salon
+[00:19:36.912] Browser GROUPEND 
+[00:19:36.912] Browser GROUPEND 
+[00:19:36.912] Browser GROUPEND 
+[00:19:36.912] Browser GROUPEND 
+[00:19:42.878] Browser GROUP   Processing commands (1)
+[00:19:42.878] Browser GROUP   Processing data layer push: {event: "gtm.historyChange-v2", gtm.historyChangeSource: "pushState", gtm.oldUrlFragment: "", gtm.newUrlFragment: "", gtm.oldHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.newHistoryState: {__NA: true, __PRIVATE_NEXTJS_INTERNALS_TREE: {tree: ["", {...}, undefined, undefined, true], renderedSearch: ""}}, gtm.oldUrl: "http://localhost:3000/gallery", gtm.newUrl: "http://localhost:3000/contact", gtm.triggers: "6"}
+[00:19:42.879] Browser GROUPEND 
+[00:19:42.879] Browser GROUP   Processing GTAG command: ["event", "page_view", {page_location: "http://localhost:3000/contact", page_referrer: "http://localhost:3000/gallery", send_to: "G-RMZRTGH4NB"}]
+[00:19:42.879] Browser LOG     Loaded existing client id: 864388489.1760692716
+[00:19:42.879] Browser LOG     Event would be batched, but batching is disabled in debug mode.
+[00:19:42.879] Browser GROUP   Sending event "page_view" to undefined
+[00:19:42.879] Browser GROUP   Request parameters:
+[00:19:42.879] Browser LOG     v: 2
+[00:19:42.879] Browser LOG     tid: G-RMZRTGH4NB
+[00:19:42.879] Browser LOG     gtm: 45je5ca1v9239371387za200zd9239371387
+[00:19:42.879] Browser LOG     _p: 1767370123034
+[00:19:42.879] Browser LOG     _dbg: 1
+[00:19:42.879] Browser LOG     gcd: 13l3l3l3l1l1
+[00:19:42.879] Browser LOG     npa: 0
+[00:19:42.879] Browser LOG     dma: 0
+[00:19:42.879] Browser LOG     cid: 864388489.1760692716
+[00:19:42.879] Browser LOG     ul: en-gb
+[00:19:42.879] Browser LOG     sr: 1470x956
+[00:19:42.879] Browser LOG     uaa: arm
+[00:19:42.879] Browser LOG     uab: 64
+[00:19:42.879] Browser LOG     uafvl: Google%20Chrome;143.0.7499.170|Chromium;143.0.7499.170|Not%20A(Brand;24.0.0.0
+[00:19:42.879] Browser LOG     uamb: 0
+[00:19:42.879] Browser LOG     uam: 
+[00:19:42.879] Browser LOG     uap: macOS
+[00:19:42.879] Browser LOG     uapv: 26.1.0
+[00:19:42.879] Browser LOG     uaw: 0
+[00:19:42.879] Browser LOG     are: 1
+[00:19:42.879] Browser LOG     frm: 0
+[00:19:42.879] Browser LOG     pscdl: noapi
+[00:19:42.879] Browser LOG     _eu: AEAAAAQ
+[00:19:42.879] Browser GROUPEND 
+[00:19:42.879] Browser GROUP   Event parameters:
+[00:19:42.879] Browser LOG     en: page_view
+[00:19:42.879] Browser LOG     _et: 5262
+[00:19:42.879] Browser GROUPEND 
+[00:19:42.879] Browser GROUP   Shared parameters:
+[00:19:42.879] Browser LOG     tag_exp: 103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940
+[00:19:42.879] Browser LOG     dl: http://localhost:3000/contact
+[00:19:42.879] Browser LOG     dr: http://localhost:3000/gallery
+[00:19:42.879] Browser LOG     sid: 1767369329
+[00:19:42.879] Browser LOG     sct: 3
+[00:19:42.879] Browser LOG     seg: 1
+[00:19:42.879] Browser LOG     dt: Contact & Book Appointment | Anaplak Salon Maduravoyal | ☎️ +91-9840088867 | Anaplak Art and Glam Salon
+[00:19:42.879] Browser GROUPEND 
+[00:19:42.879] Browser GROUPEND 
+[00:19:42.879] Browser GROUPEND 
+[00:19:42.879] Browser GROUPEND 

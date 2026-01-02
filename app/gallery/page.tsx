@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: '/gallery1.JPG',
+                url: '/gal1.JPEG',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Salon Gallery - Bridal Makeup and Hair Styling Portfolio'
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Gallery - Bridal Makeup & Hair Portfolio | Anaplak Salon',
         description: 'Stunning bridal makeup and hair styling transformations from Chennai\'s premium salon',
-        images: ['/gallery1.JPG']
+        images: ['/gal1.JPEG']
     }
 };
 

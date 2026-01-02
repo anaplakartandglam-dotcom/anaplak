@@ -65,7 +65,7 @@ export default function CircleSection() {
           "
         >
           <img
-            src="/a.png"
+            src="/newk.png"
             className="w-full h-full object-cover"
             style={{ objectPosition: '52% center' }}
           />

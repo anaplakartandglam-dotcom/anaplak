@@ -149,7 +149,7 @@ export default function About() {
   "
             >
               <img
-                src="/a.png"
+                src="/newk.png"
                 className="w-[70%] h-auto object-contain"
                 alt="Anaplak Logo"
               />
