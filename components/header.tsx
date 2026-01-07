@@ -125,7 +125,7 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-white/80 text-[14px] tracking-[3px] uppercase hover:text-[#F8C8DC] transition"
+                className="text-white/90 text-[18px] font-bold tracking-[3px] uppercase hover:text-[#F8C8DC] transition"
               >
                 {item.label}
               </Link>
@@ -184,7 +184,7 @@ export default function Header() {
               key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="text-white/90 uppercase tracking-[4px] text-lg hover:text-[#F8C8DC] transition"
+              className="text-white/90 uppercase tracking-[4px] text-2xl font-bold hover:text-[#F8C8DC] transition"
             >
               {item.label}
             </Link>

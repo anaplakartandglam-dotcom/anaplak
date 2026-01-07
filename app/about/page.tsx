@@ -542,7 +542,7 @@ export default function AboutPage() {
 
                                             <div className="flex justify-between items-center">
                                                 <span className="text-sm font-medium text-black">Sunday</span>
-                                                <span className="text-sm text-[#C8AFAE] font-semibold">CLOSED</span>
+                                                <span className="text-sm text-[#53675C]">10:00 - 21:00</span>
                                             </div>
                                         </div>
                                     </div>

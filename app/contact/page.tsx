@@ -170,7 +170,7 @@ export default function ContactUs() {
                             <div className="pl-0 lg:pl-6">
                                 <h2 className="text-2xl md:text-3xl font-serif mb-6 text-white">Visit Our Premium Salon</h2>
                                 <p className="text-white/70 mb-8 leading-relaxed">
-                                    "Anaplak Salon is one of the most trusted premium salon in Maduravoyal, with a wide range of services from hair care, hair coloring, manicures, and nail care to keratin nourishment,And skincare, under the consultation of professional staff offering the best customer satisfaction in every versatile range of services. A landmark building in the most prestigious CDN Nagar, MMDA Colony Anaplak is designed to provide a premium sensory experience with dedicated Ground Floor parking garages. If you’re wondering how a salon can change your mood, Pay us a visit at Anaplak Salon in Maduravoyal,. We’ll show you how it’s done right!"
+                                    Anaplak Salon is one of the most trusted premium salon in Maduravoyal, with a wide range of services from hair care, hair colouring, pedicure, manicures, and nail care to keratin nourishment ,skincare, And  Bridal , under the consultation of professional staff offering the best customer satisfaction in every versatile range of services. A landmark building in the most prestigious CDN Nagar, MMDA Colony Anaplak is designed to provide a premium sensory experience with dedicated Ground Floor parking garages. If you’re wondering how a salon can change your mood, Pay us a visit at Anaplak Salon in Maduravoyal,. We’ll show you how it’s done right!"
                                 </p>
 
                                 <div className="space-y-8">
