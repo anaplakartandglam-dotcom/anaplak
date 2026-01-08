@@ -512,37 +512,37 @@ export default function AboutPage() {
                                         <div className="space-y-4">
                                             <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                                                 <span className="text-sm font-medium text-black">Monday</span>
-                                                <span className="text-sm text-[#53675C]">12:00 - 19:00</span>
+                                                <span className="text-sm text-[#53675C]">10:00 AM - 9:00 PM</span>
                                             </div>
 
                                             <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                                                 <span className="text-sm font-medium text-black">Tuesday</span>
-                                                <span className="text-sm text-[#53675C]">09:00 - 19:00</span>
+                                                <span className="text-sm text-[#53675C]">10:00 AM - 9:00 PM</span>
                                             </div>
 
                                             <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                                                 <span className="text-sm font-medium text-black">Wednesday</span>
-                                                <span className="text-sm text-[#53675C]">09:00 - 19:00</span>
+                                                <span className="text-sm text-[#53675C]">10:00 AM - 9:00 PM</span>
                                             </div>
 
                                             <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                                                 <span className="text-sm font-medium text-black">Thursday</span>
-                                                <span className="text-sm text-[#53675C]">09:00 - 19:00</span>
+                                                <span className="text-sm text-[#53675C]">10:00 AM - 9:00 PM</span>
                                             </div>
 
                                             <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                                                 <span className="text-sm font-medium text-black">Friday</span>
-                                                <span className="text-sm text-[#53675C]">09:00 - 20:00</span>
+                                                <span className="text-sm text-[#53675C]">10:00 AM - 9:00 PM</span>
                                             </div>
 
                                             <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                                                 <span className="text-sm font-medium text-black">Saturday</span>
-                                                <span className="text-sm text-[#53675C]">10:00 - 21:00</span>
+                                                <span className="text-sm text-[#53675C]">10:00 AM - 9:00 PM</span>
                                             </div>
 
                                             <div className="flex justify-between items-center">
                                                 <span className="text-sm font-medium text-black">Sunday</span>
-                                                <span className="text-sm text-[#53675C]">10:00 - 21:00</span>
+                                                <span className="text-sm text-[#53675C]">Open</span>
                                             </div>
                                         </div>
                                     </div>

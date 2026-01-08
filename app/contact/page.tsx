@@ -211,7 +211,7 @@ export default function ContactUs() {
                                                     <span>Mon - Sat:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
                                                 </li>
                                                 <li className="flex justify-between gap-4">
-                                                    <span>Sunday:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
+                                                    <span>Sunday:</span> <span className="whitespace-nowrap">Open</span>
                                                 </li>
                                             </ul>
                                         </div>
