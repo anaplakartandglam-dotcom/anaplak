@@ -5,7 +5,7 @@ export default function StructuredData() {
         "@context": "https://schema.org",
         "@type": "HairSalon",
         "name": "Anaplak Art and Glam Salon",
-        "image": "https://anaplakartandglamsalon.com/logo_updated.png",
+        "image": "https://anaplakartandglamsalon.com/logo.png",
         "@id": "https://anaplakartandglamsalon.com",
         "url": "https://anaplakartandglamsalon.com",
         "telephone": "+919840088867",

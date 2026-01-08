@@ -320,7 +320,7 @@ const metadata = {
         locale: 'en_IN',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/logo.png',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Art and Glam Salon - Best Bridal Makeup & Beauty Salon in Maduravoyal, Chennai'
@@ -332,7 +332,7 @@ const metadata = {
         title: 'Best Premium Hair Salon & Bridal Makeup Maduravoyal | Anaplak ⭐4.9',
         description: '💎 Premium Beauty Services | Expert Bridal Makeup | Hair Coloring | Facials | Book Now!',
         images: [
-            '/og-image.jpg'
+            '/logo.png'
         ]
     },
     alternates: {

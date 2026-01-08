@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         locale: 'en_IN',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/logo.png',
                 width: 1200,
                 height: 630,
                 alt: 'Contact Anaplak Salon - Book Your Beauty Appointment in Maduravoyal, Chennai',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Contact Anaplak Salon | Book Appointment ☎️ +91-9840088867',
         description: '📍 Maduravoyal, Chennai | ⏰ Open Daily 10AM-9PM | Book Now!',
-        images: ['/og-image.jpg'],
+        images: ['/logo.png'],
     },
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com/contact',
