@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         locale: 'en_IN',
         images: [
             {
-                url: '/logo.png',
+                url: '/logo_new.jpeg',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Salon Team - Premium Hair Salon & Bridal Makeup Experts in Maduravoyal, Chennai',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'About Anaplak | Premium Hair Salon & Bridal Makeup Experts Chennai',
         description: '🏆 23 Expert Stylists | 5600+ Happy Customers | Premium Hair Services | Luxury Bridal Makeup | Book Now!',
-        images: ['/logo.png'],
+        images: ['/logo_new.jpeg'],
     },
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com/about',

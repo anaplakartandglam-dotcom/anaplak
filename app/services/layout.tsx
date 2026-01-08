@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         locale: 'en_IN',
         images: [
             {
-                url: '/logo.png',
+                url: '/logo_new.jpeg',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Premium Hair Salon Services - Hair Coloring, Keratin Treatment & Bridal Makeup in Maduravoyal, Chennai',
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Premium Hair Salon & Bridal Makeup Services | Anaplak Chennai',
         description: '💇 Hair Coloring & Keratin | 💄 Bridal Makeup | 💆 Facials | 💅 Nail Care | Book Now!',
-        images: ['/logo.png'],
+        images: ['/logo_new.jpeg'],
     },
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com/services',

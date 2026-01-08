@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     description: 'Experience luxury beauty services at Anaplak Salon in Maduravoyal, Chennai. Expert bridal makeup, hair styling, coloring, facials & more. 16+ years of excellence. Book now!',
     images: [
       {
-        url: '/logo.png',
+        url: '/logo_new.jpeg',
         width: 1200,
         height: 630,
         alt: 'Anaplak Art and Glam Salon - Premium Beauty Services in Chennai',
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services',
     description: 'Experience luxury beauty services in Maduravoyal, Chennai. Expert bridal makeup, hair styling, facials & more. Book your appointment today!',
-    images: ['/logo.png'],
+    images: ['/logo_new.jpeg'],
   },
   robots: {
     index: true,
@@ -139,9 +139,9 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="icon" type="image/jpeg" sizes="32x32" href="/logo_new.jpeg" />
+        <link rel="icon" type="image/jpeg" sizes="16x16" href="/logo_new.jpeg" />
+        <link rel="apple-touch-icon" href="/logo_new.jpeg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

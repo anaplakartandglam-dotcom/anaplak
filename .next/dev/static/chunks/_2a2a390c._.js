@@ -251,7 +251,7 @@ function Header() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-[180px] md:w-[250px] h-auto flex items-center justify-center",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/logo_updated.png",
+                                    src: "/logo_new.jpeg",
                                     className: "w-full h-auto",
                                     style: {
                                         objectFit: 'contain',
@@ -376,7 +376,7 @@ function Header() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-[150px] h-auto mt-6",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/logo_updated.png",
+                            src: "/logo_new.jpeg",
                             className: "w-full h-auto object-contain",
                             alt: "Anaplak Art and Glam Salon"
                         }, void 0, false, {
@@ -579,7 +579,7 @@ function Footer() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/logo_updated.png",
+                            src: "/logo_new.jpeg",
                             alt: "Anaplak Art & Glam Salon",
                             className: "w-full h-auto object-contain object-center"
                         }, void 0, false, {
@@ -823,7 +823,7 @@ function Footer() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-[280px] h-auto overflow-hidden flex items-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: "/logo_updated.png",
+                                src: "/logo_new.jpeg",
                                 alt: "Anaplak Art & Glam Salon",
                                 className: "w-full h-auto object-contain object-center"
                             }, void 0, false, {
@@ -4248,7 +4248,7 @@ function AboutPage() {
                                                         "📸 Share your transformation with ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "text-[#C8AFAE] font-semibold",
-                                                            children: "#AnaplakGlam"
+                                                            children: "#alwaysbeanaplak"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/about/page.tsx",
                                                             lineNumber: 765,

@@ -762,7 +762,7 @@ export default function AboutPage() {
                                     Join our community and get inspired daily!
                                 </p>
                                 <p className="text-gray-400 text-base">
-                                    📸 Share your transformation with <span className="text-[#C8AFAE] font-semibold">#AnaplakGlam</span>
+                                    📸 Share your transformation with <span className="text-[#C8AFAE] font-semibold">#alwaysbeanaplak</span>
                                 </p>
                             </div>
                         </div>
