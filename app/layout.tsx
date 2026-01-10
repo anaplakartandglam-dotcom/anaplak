@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { DM_Sans, Reddit_Sans } from "next/font/google"
+import { DM_Sans, Reddit_Sans, Dancing_Script } from "next/font/google"
 import "./globals.css"
 import StructuredData from "@/components/structured-data"
 import WhatsAppFloat from "@/components/whatsapp_float"
@@ -13,6 +13,11 @@ const dmSans = DM_Sans({
 const redditSans = Reddit_Sans({
   subsets: ["latin"],
   variable: "--font-reddit-sans",
+  display: "swap",
+})
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-dancing-script",
   display: "swap",
 })
 
@@ -78,7 +83,7 @@ export const metadata: Metadata = {
     description: 'Experience luxury beauty services at Anaplak Salon in Maduravoyal, Chennai. Expert bridal makeup, hair styling, coloring, facials & more. 16+ years of excellence. Book now!',
     images: [
       {
-        url: '/logo_new.jpeg',
+        url: '/newk.png',
         width: 1200,
         height: 630,
         alt: 'Anaplak Art and Glam Salon - Premium Beauty Services in Chennai',
@@ -89,7 +94,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services',
     description: 'Experience luxury beauty services in Maduravoyal, Chennai. Expert bridal makeup, hair styling, facials & more. Book your appointment today!',
-    images: ['/logo_new.jpeg'],
+    images: ['/newk.png'],
   },
   robots: {
     index: true,
@@ -125,7 +130,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${redditSans.variable} scroll-smooth`}>
+    <html lang="en" className={`${dmSans.variable} ${redditSans.variable} ${dancingScript.variable} scroll-smooth`}>
       <head>
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMZRTGH4NB"></script>
@@ -139,9 +144,9 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="icon" type="image/jpeg" sizes="32x32" href="/logo_new.jpeg" />
-        <link rel="icon" type="image/jpeg" sizes="16x16" href="/logo_new.jpeg" />
-        <link rel="apple-touch-icon" href="/logo_new.jpeg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/newk.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/newk.png" />
+        <link rel="apple-touch-icon" href="/newk.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

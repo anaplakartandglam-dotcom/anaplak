@@ -27,7 +27,7 @@ export default function About() {
   /* ----------------------------
       TYPEWRITER ANIMATION LOGIC
   ----------------------------- */
-  const words = ["hairstyles", "styles", "fashion"];
+  const words = ["signature looks", "salon perfection", "luxury styling", "hairstyles"];
   const [wordIndex, setWordIndex] = useState(0);
   const [displayedWord, setDisplayedWord] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -92,8 +92,7 @@ export default function About() {
 
 
           <h6 className="uppercase mt-6 text-white font-semibold text-[15px] leading-relaxed max-w-[450px]">
-            Experience the artistry of hair styling with a team that values your
-            comfort, your time, and your personal beauty journey.
+           Embrace exceptional hair artistry guided by experts who honor your comfort, your time, and your transformation journey.
           </h6>
         </div>
 
@@ -111,16 +110,17 @@ export default function About() {
           ----------------------------- */}
           <h2 className="text-white font-bold text-[44px] md:text-[52px] leading-[1.2] max-w-2xl mb-6">
             Find the perfect balance between elegance and comfort with{" "}
-            <span className="text-[#C8AFAE]">
+            <span
+              className="text-[#C8AFAE]"
+            >
               {displayedWord}
               {!isMobile && <span className="inline-block w-[2px] h-[1em] bg-[#C8AFAE] ml-1 animate-pulse"></span>}
             </span>
           </h2>
 
           <p className="text-[#C2C2C2] text-[18px] leading-[1.75] max-w-2xl mb-12">
-            Our stylists use modern techniques and trusted products to create
-            hairstyles that remain stylish and practical. We focus on both style
-            and hair health, ensuring beauty that lasts beyond the salon visit.
+          Welcome to ANAPLAK ART AND GLAM SALON — where beauty meets luxury. Located in the heart of Chennai ,Maduravoyal, we are a premier destination for personalized hair care, creative styling, and rejuvenating beauty experiences.
+At ANAPLAK ART AND GLAM SALON , we believe your hair is an expression of who you are. Our mission is to help you look and feel your absolute best with expert services rooted in innovation, premium products, and individualized care.
           </p>
 
           {/* BOTTOM IMAGE BLOCK */}

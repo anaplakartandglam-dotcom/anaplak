@@ -29,7 +29,7 @@ export default function Footer() {
         {/* MOBILE LOGO */}
         <div className="w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2">
           <img
-            src="/logo_new.jpeg"
+            src="/logo_updated.png"
             alt="Anaplak Art & Glam Salon"
             className="w-full h-auto object-contain object-center"
           />
@@ -116,7 +116,7 @@ export default function Footer() {
         <div className="flex md:block items-center md:items-start">
           <div className="w-[280px] h-auto overflow-hidden flex items-center">
             <img
-              src="/logo_new.jpeg"
+              src="/logo_updated.png"
               alt="Anaplak Art & Glam Salon"
               className="w-full h-auto object-contain object-center"
             />

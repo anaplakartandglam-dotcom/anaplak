@@ -430,7 +430,7 @@ export default function AboutPage() {
                                         <line x1="24" y1="30" x2="24" y2="38" strokeLinecap="round" />
                                         <line x1="40" y1="34" x2="40" y2="40" strokeLinecap="round" />
                                     </svg>
-                                </div>
+                                </div>  
                                 <h3 className="text-base font-bold uppercase tracking-wide text-black">HAIR TREATMENTS</h3>
                                 <p className="text-sm text-gray-600 leading-relaxed px-2">
                                     Experienced professionals provide services with skill creativity and personal attention

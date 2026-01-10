@@ -108,7 +108,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 md:gap-4" style={{ marginTop: '13px' }}>
             <div className="w-[180px] md:w-[250px] h-auto flex items-center justify-center">
               <img
-                src="/logo_new.jpeg"
+                src="/logo_updated.png"
                 className="w-full h-auto"
                 style={{
                   objectFit: 'contain',
@@ -174,7 +174,7 @@ export default function Header() {
 
         {/* Mobile Logo */}
         <div className="w-[150px] h-auto mt-6">
-          <img src="/logo_new.jpeg" className="w-full h-auto object-contain" alt="Anaplak Art and Glam Salon" />
+          <img src="/logo_updated.png" className="w-full h-auto object-contain" alt="Anaplak Art and Glam Salon" />
         </div>
 
         {/* MOBILE NAV LINKS */}

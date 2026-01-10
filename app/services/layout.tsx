@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         locale: 'en_IN',
         images: [
             {
-                url: '/logo_new.jpeg',
+                url: '/newk.png',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Premium Hair Salon Services - Hair Coloring, Keratin Treatment & Bridal Makeup in Maduravoyal, Chennai',
