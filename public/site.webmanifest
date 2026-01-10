@@ -1,0 +1,33 @@
+{
+    "name": "Anaplak Art and Glam Salon",
+    "short_name": "Anaplak Salon",
+    "description": "Premium hair salon and bridal makeup studio in Maduravoyal, Chennai",
+    "icons": [
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/newk.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#53675C",
+    "background_color": "#0E0E0E",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}

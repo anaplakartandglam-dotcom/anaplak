@@ -51,7 +51,7 @@ const VideoParallax = dynamic(() => import("@/components/video_parrlex"), {
 })
 
 export const metadata: Metadata = {
-  title: 'Best Premium Hair Salon & Bridal Makeup Maduravoyal Chennai | Anaplak Art & Glam ⭐4.9',
+  title: 'Anaplak Art & Glam Salon – Premium Hair Salon & Bridal Makeup in Maduravoyal, Chennai',
   description: '🏆 #1 Rated Salon in Maduravoyal! ✨ Expert Bridal Makeup, Hair Coloring, Keratin Treatment, Facials & Beauty Treatments. 16+ Years Experience | 5600+ Happy Customers | Premium Products | Ground Floor Parking. Book Now ☎️ +91-9840088867 | Open 10AM-9PM Daily',
   keywords: [
     // Primary Commercial Keywords
