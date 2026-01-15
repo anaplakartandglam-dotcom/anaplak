@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Contact & Book Appointment | Anaplak Salon Maduravoyal | ☎️ +91-9840088867',
+    title: 'Contact - Anaplak Art And Glam',
     description: '📍 Visit Anaplak Salon: No.4B/9, 2nd Floor, MMDA Colony, Maduravoyal, Chennai 600095 | ☎️ Call: +91-9840088867 | 📱 WhatsApp Booking Available | ⏰ Open 10AM-9PM Daily | 🚗 Ground Floor Parking | Book Bridal Makeup, Hair Styling & Beauty Services Online or Walk-in Welcome!',
     keywords: [
         // Booking Intent Keywords
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
         title: '📍 Contact Anaplak Salon Maduravoyal | Book Now ☎️ +91-9840088867',
         description: '🏆 #1 Rated Salon | 📍 MMDA Colony, Chennai | ⏰ Open 10AM-9PM Daily | 🚗 Parking Available | 📱 WhatsApp Booking | Walk-ins Welcome! Book Your Appointment Today!',
         url: 'https://anaplakartandglamsalon.com/contact',
-        siteName: 'Anaplak Art & Glam Salon',
+        siteName: 'Anaplak Art And Glam Salon',
         type: 'website',
         locale: 'en_IN',
         images: [
             {
-                url: '/newk.png',
+                url: '/og-logo.png',
                 width: 1200,
                 height: 630,
                 alt: 'Contact Anaplak Salon - Book Your Beauty Appointment in Maduravoyal, Chennai',

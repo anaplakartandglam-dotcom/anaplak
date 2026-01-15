@@ -4,7 +4,7 @@ import Footer from '@/components/footer';
 import GalleryShowcase from '@/components/gallery-showcase';
 
 export const metadata: Metadata = {
-    title: 'Gallery - Bridal Makeup Portfolio | Hair Styling Photos | Anaplak Salon ⭐4.9',
+    title: 'Gallery - Anaplak Art And Glam',
     description: 'Explore our stunning portfolio of bridal makeup, hair styling, hair coloring, and beauty transformations. View real client photos from Chennai\'s premium hair salon and makeup studio.',
     keywords: [
         'bridal makeup gallery Chennai',

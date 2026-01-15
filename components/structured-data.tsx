@@ -4,8 +4,8 @@ export default function StructuredData() {
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "HairSalon",
-        "name": "Anaplak Art and Glam Salon",
-        "image": "https://anaplakartandglamsalon.com/newk.png",
+        "name": "Anaplak Art And Glam Salon",
+        "image": "https://anaplakartandglamsalon.com/og-logo.png",
         "@id": "https://anaplakartandglamsalon.com",
         "url": "https://anaplakartandglamsalon.com",
         "telephone": "+919840088867",
@@ -101,10 +101,10 @@ export default function StructuredData() {
     const organizationSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Anaplak Art and Glam Salon",
+        "name": "Anaplak Art And Glam Salon",
         "alternateName": "Anaplak Salon",
         "url": "https://anaplakartandglamsalon.com",
-        "logo": "https://anaplakartandglamsalon.com/newk.png",
+        "logo": "https://anaplakartandglamsalon.com/og-logo.png",
         "description": "Premium hair salon and bridal makeup studio in Maduravoyal, Chennai offering expert hair coloring, keratin treatment, facials, and luxury beauty services.",
         "contactPoint": {
             "@type": "ContactPoint",
@@ -124,7 +124,7 @@ export default function StructuredData() {
     const websiteSchema = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Anaplak Art and Glam Salon",
+        "name": "Anaplak Art And Glam Salon",
         "url": "https://anaplakartandglamsalon.com",
         "potentialAction": {
             "@type": "SearchAction",

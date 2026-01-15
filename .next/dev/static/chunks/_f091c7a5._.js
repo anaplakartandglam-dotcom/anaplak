@@ -580,7 +580,7 @@ function Footer() {
                         className: "w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: "/logo_updated.png",
-                            alt: "Anaplak Art & Glam Salon",
+                            alt: "Anaplak Art And Glam Salon",
                             className: "w-full h-auto object-contain object-center"
                         }, void 0, false, {
                             fileName: "[project]/components/footer.tsx",
@@ -824,7 +824,7 @@ function Footer() {
                             className: "w-[280px] h-auto overflow-hidden flex items-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                 src: "/logo_updated.png",
-                                alt: "Anaplak Art & Glam Salon",
+                                alt: "Anaplak Art And Glam Salon",
                                 className: "w-full h-auto object-contain object-center"
                             }, void 0, false, {
                                 fileName: "[project]/components/footer.tsx",
@@ -1209,7 +1209,7 @@ function Footer() {
                 className: "w-full border-t border-white/10 mt-10 pt-5",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-center text-gray-400 text-[13px] md:text-[14px] tracking-wide",
-                    children: "© Anaplak Art & Glam Salon — All Rights Reserved — 2025"
+                    children: "© Anaplak Art And Glam Salon — All Rights Reserved — 2025"
                 }, void 0, false, {
                     fileName: "[project]/components/footer.tsx",
                     lineNumber: 235,
@@ -1276,12 +1276,12 @@ function ContactUs() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "ContactPage",
-                        "name": "Contact Anaplak Art & Glam Salon",
+                        "name": "Contact Anaplak Art And Glam Salon",
                         "description": "Contact Anaplak Salon for appointments, inquiries, and directions. Located in Maduravoyal, Chennai with convenient parking.",
                         "url": "https://anaplakartandglamsalon.com/contact",
                         "mainEntity": {
                             "@type": "LocalBusiness",
-                            "name": "Anaplak Art & Glam Salon",
+                            "name": "Anaplak Art And Glam Salon",
                             "telephone": "+91-9840088867",
                             "email": "anaplakartandglamsalon@gmail.com",
                             "address": {
@@ -1589,7 +1589,7 @@ function ContactUs() {
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                             className: "font-bold text-lg text-white mb-1",
-                                                                            children: "Anaplak Art & Glam Salon"
+                                                                            children: "Anaplak Art And Glam Salon"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/contact/page.tsx",
                                                                             lineNumber: 183,

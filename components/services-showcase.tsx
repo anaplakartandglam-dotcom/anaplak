@@ -36,10 +36,18 @@ export default function ServicesShowcase() {
         },
         {
             icon: Scissors,
-            title: "Hair Styling & Treatments",
-            description: "Expert hair care from everyday styles to special occasions. Keratin treatments, coloring, and professional styling.",
-            features: ["Customized styling", "Keratin treatment", "Hair coloring", "Professional products"],
+            title: "Hair Styling",
+            description: "Expert hair care from everyday styles to special occasions. Professional styling for all hair types and events.",
+            features: ["Customized styling", "Bridal hairstyles", "Party updos", "Professional products"],
             color: "#F8C8DC",
+            image: "/professional-hair-styling-salon-treatment-luxury.jpg"
+        },
+        {
+            icon: Sparkles,
+            title: "Hair Treatment",
+            description: "Advanced texture treatments for healthy, manageable hair. Transform your hair with our premium treatment services.",
+            features: ["Perming & Smoothing", "Keratin treatment", "Botox & Botoplex", "Nano Plastia"],
+            color: "#C8AFAE",
             image: "/professional-hair-styling-salon-treatment-luxury.jpg"
         },
         {
@@ -49,6 +57,14 @@ export default function ServicesShowcase() {
             features: ["Balayage & highlights", "Ammonia-free options", "Color protection", "Free touch-ups"],
             color: "#F2D2BD",
             image: "/hair-coloring-highlights-balayage-salon-transforma.jpg"
+        },
+        {
+            icon: Scissors,
+            title: "Hair Extension",
+            description: "Add length, volume, and style with premium hair extensions. Seamless, natural-looking results.",
+            features: ["Tape extensions", "Nano extensions", "Clip & Go", "Maintenance services"],
+            color: "#C8AFAE",
+            image: "/professional-hair-styling-salon-treatment-luxury.jpg"
         },
         {
             icon: Sparkles,
@@ -64,6 +80,14 @@ export default function ServicesShowcase() {
             description: "Pamper yourself with luxurious nail care. Premium products for beautiful, healthy nails.",
             features: ["Nail health care", "Gel polish options", "Hand/foot massage", "Hygiene-focused"],
             color: "#F8C8DC",
+            image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg"
+        },
+        {
+            icon: Heart,
+            title: "Nail Art & Extension",
+            description: "Creative nail designs and professional extensions. From French tips to 3D art and bridal designs.",
+            features: ["Gel & Acrylic extensions", "French & Chrome art", "3D & Marble designs", "Bridal nail art"],
+            color: "#F2D2BD",
             image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg"
         },
         {

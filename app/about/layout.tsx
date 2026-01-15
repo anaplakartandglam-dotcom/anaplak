@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'About Us - Premium Hair Salon & Bridal Makeup Experts | Anaplak Maduravoyal Chennai',
-    description: '🏆 Discover Anaplak Art & Glam - Maduravoyal\'s #1 Premium Hair Salon & Bridal Makeup Studio. 23 Expert Stylists | 4.9★ Google Rating | 5600+ Happy Customers | Professional Hair Coloring, Keratin Treatment & Luxury Bridal Services. Visit us in MMDA Colony, Chennai.',
+    title: 'About Us - Anaplak Art And Glam',
+    description: '🏆 Discover Anaplak Art And Glam - Maduravoyal\'s #1 Premium Hair Salon & Bridal Makeup Studio. 23 Expert Stylists | 4.9★ Google Rating | 5600+ Happy Customers | Professional Hair Coloring, Keratin Treatment & Luxury Bridal Services. Visit us in MMDA Colony, Chennai.',
     keywords: [
         // Premium Hair Salon Keywords (Priority)
         'premium hair salon Chennai',
@@ -48,12 +48,12 @@ export const metadata: Metadata = {
         title: '🌟 About Anaplak | Premium Hair Salon & Bridal Makeup | 4.9★ Maduravoyal',
         description: '💎 Meet our expert team of 23 beauty specialists. 5600+ happy customers trust us for premium hair services, bridal makeup & luxury beauty treatments. MMDA Colony, Chennai.',
         url: 'https://anaplakartandglamsalon.com/about',
-        siteName: 'Anaplak Art & Glam Salon',
+        siteName: 'Anaplak Art And Glam Salon',
         type: 'website',
         locale: 'en_IN',
         images: [
             {
-                url: '/newk.png',
+                url: '/og-logo.png',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Salon Team - Premium Hair Salon & Bridal Makeup Experts in Maduravoyal, Chennai',

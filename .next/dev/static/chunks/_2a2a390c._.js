@@ -251,7 +251,7 @@ function Header() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-[180px] md:w-[250px] h-auto flex items-center justify-center",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/logo_new.jpeg",
+                                    src: "/logo_updated.png",
                                     className: "w-full h-auto",
                                     style: {
                                         objectFit: 'contain',
@@ -376,7 +376,7 @@ function Header() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-[150px] h-auto mt-6",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/logo_new.jpeg",
+                            src: "/logo_updated.png",
                             className: "w-full h-auto object-contain",
                             alt: "Anaplak Art and Glam Salon"
                         }, void 0, false, {
@@ -579,8 +579,8 @@ function Footer() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/logo_new.jpeg",
-                            alt: "Anaplak Art & Glam Salon",
+                            src: "/logo_updated.png",
+                            alt: "Anaplak Art And Glam Salon",
                             className: "w-full h-auto object-contain object-center"
                         }, void 0, false, {
                             fileName: "[project]/components/footer.tsx",
@@ -823,8 +823,8 @@ function Footer() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-[280px] h-auto overflow-hidden flex items-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: "/logo_new.jpeg",
-                                alt: "Anaplak Art & Glam Salon",
+                                src: "/logo_updated.png",
+                                alt: "Anaplak Art And Glam Salon",
                                 className: "w-full h-auto object-contain object-center"
                             }, void 0, false, {
                                 fileName: "[project]/components/footer.tsx",
@@ -1209,7 +1209,7 @@ function Footer() {
                 className: "w-full border-t border-white/10 mt-10 pt-5",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-center text-gray-400 text-[13px] md:text-[14px] tracking-wide",
-                    children: "© Anaplak Art & Glam Salon — All Rights Reserved — 2025"
+                    children: "© Anaplak Art And Glam Salon — All Rights Reserved — 2025"
                 }, void 0, false, {
                     fileName: "[project]/components/footer.tsx",
                     lineNumber: 235,
@@ -2286,12 +2286,12 @@ function AboutPage() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "AboutPage",
-                        "name": "About Anaplak Art & Glam Salon",
+                        "name": "About Anaplak Art And Glam Salon",
                         "description": "Learn about Anaplak Salon - Chennai's premier beauty destination with 16+ years of experience, 5600+ satisfied customers, and expert beauty specialists.",
                         "url": "https://anaplakartandglamsalon.com/about",
                         "mainEntity": {
                             "@type": "BeautySalon",
-                            "name": "Anaplak Art & Glam Salon",
+                            "name": "Anaplak Art And Glam Salon",
                             "foundingDate": "2008",
                             "numberOfEmployees": "23",
                             "slogan": "Transform Your Look with Expert Care",
@@ -2516,9 +2516,9 @@ function AboutPage() {
                                                     e.currentTarget.style.borderRadius = "0px";
                                                 },
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                    src: "/about2.1.jpg",
+                                                    src: "/aboutus.jpg",
                                                     alt: "Professional Hair Styling",
-                                                    className: "w-full h-[600px] object-cover"
+                                                    className: "w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/about/page.tsx",
                                                     lineNumber: 279,
@@ -2614,19 +2614,19 @@ function AboutPage() {
                                                         },
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                                src: "/about2.2.jpg",
+                                                                src: "/aboutus2.jpg",
                                                                 alt: "Beauty Specialist",
-                                                                className: "w-full h-[400px] object-cover"
+                                                                className: "w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/about/page.tsx",
                                                                 lineNumber: 335,
                                                                 columnNumber: 41
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "absolute top-4 right-8 w-40 h-40 rounded-full flex flex-col items-center justify-center text-white shadow-xl bg-[#53675C] z-10",
+                                                                className: "absolute bottom-4 left-4 md:top-4 md:left-auto md:right-8 md:bottom-auto w-28 h-28 md:w-40 md:h-40 rounded-full flex flex-col items-center justify-center text-white shadow-xl bg-[#53675C] z-10",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-6xl font-bold leading-none mb-2",
+                                                                        className: "text-4xl md:text-6xl font-bold leading-none mb-1 md:mb-2",
                                                                         children: "16"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/about/page.tsx",
@@ -2634,7 +2634,7 @@ function AboutPage() {
                                                                         columnNumber: 45
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "text-xs font-semibold uppercase tracking-wide text-center leading-tight",
+                                                                        className: "text-[9px] md:text-xs font-semibold uppercase tracking-wide text-center leading-tight",
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 children: "YEARS"
@@ -3369,7 +3369,7 @@ function AboutPage() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-sm text-[#53675C]",
-                                                                            children: "12:00 - 19:00"
+                                                                            children: "10:00 AM - 9:00 PM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/about/page.tsx",
                                                                             lineNumber: 515,
@@ -3394,7 +3394,7 @@ function AboutPage() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-sm text-[#53675C]",
-                                                                            children: "09:00 - 19:00"
+                                                                            children: "10:00 AM - 9:00 PM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/about/page.tsx",
                                                                             lineNumber: 520,
@@ -3419,7 +3419,7 @@ function AboutPage() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-sm text-[#53675C]",
-                                                                            children: "09:00 - 19:00"
+                                                                            children: "10:00 AM - 9:00 PM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/about/page.tsx",
                                                                             lineNumber: 525,
@@ -3444,7 +3444,7 @@ function AboutPage() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-sm text-[#53675C]",
-                                                                            children: "09:00 - 19:00"
+                                                                            children: "10:00 AM - 9:00 PM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/about/page.tsx",
                                                                             lineNumber: 530,
@@ -3469,7 +3469,7 @@ function AboutPage() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-sm text-[#53675C]",
-                                                                            children: "09:00 - 20:00"
+                                                                            children: "10:00 AM - 9:00 PM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/about/page.tsx",
                                                                             lineNumber: 535,
@@ -3494,7 +3494,7 @@ function AboutPage() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-sm text-[#53675C]",
-                                                                            children: "10:00 - 21:00"
+                                                                            children: "10:00 AM - 9:00 PM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/about/page.tsx",
                                                                             lineNumber: 540,
@@ -3519,7 +3519,7 @@ function AboutPage() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "text-sm text-[#53675C]",
-                                                                            children: "10:00 - 21:00"
+                                                                            children: "10:00 AM - 9:00 PM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/about/page.tsx",
                                                                             lineNumber: 545,
@@ -3576,7 +3576,7 @@ function AboutPage() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-5xl md:text-6xl font-bold text-[#53675C] mb-2",
-                                                        children: "5600+"
+                                                        children: "1000+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/about/page.tsx",
                                                         lineNumber: 560,
@@ -3601,7 +3601,7 @@ function AboutPage() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-5xl md:text-6xl font-bold text-[#53675C] mb-2",
-                                                        children: "23"
+                                                        children: "15"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/about/page.tsx",
                                                         lineNumber: 566,
@@ -3626,7 +3626,7 @@ function AboutPage() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-5xl md:text-6xl font-bold text-[#53675C] mb-2",
-                                                        children: "370+"
+                                                        children: "100+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/about/page.tsx",
                                                         lineNumber: 572,
@@ -3651,7 +3651,7 @@ function AboutPage() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                         className: "text-5xl md:text-6xl font-bold text-[#53675C] mb-2",
-                                                        children: "45"
+                                                        children: "20"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/about/page.tsx",
                                                         lineNumber: 578,
@@ -3983,7 +3983,7 @@ function AboutPage() {
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "text-gray-400 text-sm mb-4",
-                                                                    children: "Anaplak Art & Glam"
+                                                                    children: "Anaplak Art And Glam"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/about/page.tsx",
                                                                     lineNumber: 692,

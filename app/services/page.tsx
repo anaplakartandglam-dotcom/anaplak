@@ -63,25 +63,47 @@ const services = [
     color: "#53675C", // Updated to new heading color
     items: [
       {
-        title: "Hair Styling & Treatments",
-        description: "Expert hair care services for healthy, beautiful locks",
+        title: "Hair Styling",
+        description: "Expert hair styling services for any occasion",
         image: "/professional-hair-styling-salon-treatment-luxury.jpg",
         details:
           "From everyday styles to special occasion updos, our hair specialists create looks that complement your features and lifestyle. We use premium products to ensure your hair stays healthy and vibrant.",
         benefits: [
           "Customized styling solutions",
+          "Bridal and party hairstyles",
           "Professional-grade products",
-          "Hair health consultation",
           "Style maintenance tips",
-          "Damage prevention guidance",
+          "Expert consultation included",
         ],
         process: [
           "Hair analysis and consultation",
-          "Treatment or styling preparation",
-          "Professional application",
-          "Styling and finishing",
+          "Style planning and preparation",
+          "Professional styling application",
+          "Final touches and setting",
         ],
-        deliverables: "Complete hair transformation, maintenance guide, and product recommendations",
+        deliverables: "Complete hair styling, maintenance guide, and product recommendations",
+      },
+      {
+        title: "Hair Treatment",
+        description: "Advanced texture treatments for healthy, manageable hair",
+        image: "/professional-hair-styling-salon-treatment-luxury.jpg",
+        details:
+          "Transform your hair with our premium texture treatments. From smoothing and straightening to adding volume and curls, we offer a complete range of advanced hair treatments using the latest techniques and products for long-lasting, beautiful results. Our treatments include Perming, Keratin, Smoothing, Botox, Nano Plastia, and Botoplex - all customized to your hair type and desired results.",
+        benefits: [
+          "Perming - Partial & Full (adds volume and curls)",
+          "Keratin - Partial & Full (smoothing and strengthening)",
+          "Smoothing - Partial & Full (frizz control and shine)",
+          "Botox - Customized (deep conditioning and repair)",
+          "Nano Plastia - Customized (advanced smoothing)",
+          "Botoplex - Customized (bond repair and restoration)",
+        ],
+        process: [
+          "Hair analysis and treatment consultation",
+          "Pre-treatment preparation and protection",
+          "Professional treatment application",
+          "Post-treatment care and styling",
+        ],
+        deliverables: "Complete hair treatment with detailed aftercare instructions and maintenance schedule",
       },
       {
         title: "Hair Coloring",
@@ -103,6 +125,26 @@ const services = [
           "Post-color treatment and styling",
         ],
         deliverables: "Complete hair coloring, styling, and aftercare kit",
+      },
+      {
+        title: "Hair Extension",
+        description: "Add length, volume, and style with premium hair extensions",
+        image: "/professional-hair-styling-salon-treatment-luxury.jpg",
+        details:
+          "Transform your look instantly with our premium hair extension services. From tape-in to nano extensions, we offer a variety of methods to add length, volume, and dimension to your hair. Our expert stylists ensure seamless blending and natural-looking results.",
+        benefits: [
+          "Tape Hair Extension - 100gms (seamless and comfortable)",
+          "Nano Hair Extension - 100gms (ultra-fine and invisible)",
+          "Clip & Go - 100gms (temporary and easy to use)",
+          "Professional maintenance services available",
+        ],
+        process: [
+          "Hair consultation and extension type selection",
+          "Color matching and preparation",
+          "Professional extension application",
+          "Styling and maintenance guidance",
+        ],
+        deliverables: "Complete hair extension application with care instructions and maintenance schedule",
       },
     ],
   },
@@ -251,6 +293,27 @@ const services = [
         ],
         deliverables: "Smooth, hair-free skin with aftercare guidance",
       },
+      {
+        title: "Nail Art & Extension",
+        description: "Creative nail designs and professional nail extensions",
+        image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg",
+        details:
+          "Express your style with our stunning nail art and extension services. From classic French designs to creative 3D art, our skilled nail technicians create beautiful, long-lasting nail designs. We offer a complete range of nail extension options including gel, acrylic, and poly gel extensions.",
+        benefits: [
+          "Gel Extensions - Soft & Poly (natural look and flexibility)",
+          "Acrylic Extensions (durable and customizable)",
+          "Nail Art - French, Cat Eye, Galaxy, Chrome, Ombre, 3D, Marble",
+          "Bridal Customised Nail Art (special occasion designs)",
+          "Professional maintenance and repair services",
+        ],
+        process: [
+          "Nail consultation and design selection",
+          "Nail preparation and shaping",
+          "Extension application or nail art creation",
+          "Finishing, sealing, and aftercare guidance",
+        ],
+        deliverables: "Beautiful nail extensions or nail art with maintenance tips and care instructions",
+      },
     ],
   },
 ]
@@ -299,7 +362,7 @@ export default function ServicesSection() {
                 "name": "Complete Bridal Package",
                 "provider": {
                   "@type": "BeautySalon",
-                  "name": "Anaplak Art & Glam Salon"
+                  "name": "Anaplak Art And Glam Salon"
                 },
                 "serviceType": "Bridal Makeup",
                 "areaServed": "Chennai",
@@ -310,7 +373,7 @@ export default function ServicesSection() {
                 "name": "Hair Coloring",
                 "provider": {
                   "@type": "BeautySalon",
-                  "name": "Anaplak Art & Glam Salon"
+                  "name": "Anaplak Art And Glam Salon"
                 },
                 "serviceType": "Hair Services",
                 "areaServed": "Chennai",
@@ -321,7 +384,7 @@ export default function ServicesSection() {
                 "name": "Facial Treatments",
                 "provider": {
                   "@type": "BeautySalon",
-                  "name": "Anaplak Art & Glam Salon"
+                  "name": "Anaplak Art And Glam Salon"
                 },
                 "serviceType": "Skin Care",
                 "areaServed": "Chennai",
@@ -332,7 +395,7 @@ export default function ServicesSection() {
                 "name": "Manicure & Pedicure",
                 "provider": {
                   "@type": "BeautySalon",
-                  "name": "Anaplak Art & Glam Salon"
+                  "name": "Anaplak Art And Glam Salon"
                 },
                 "serviceType": "Nail Care",
                 "areaServed": "Chennai",

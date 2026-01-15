@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Premium Hair Salon Services - Hair Coloring, Keratin & Bridal Makeup | Anaplak Chennai',
+    title: 'Services - Anaplak Art And Glam',
     description: '💇 Premium Hair Salon Services in Maduravoyal | Professional Hair Coloring & Balayage | Keratin Treatment | Hair Smoothening | Bridal Makeup Packages from ₹15,000 | Facials & Beauty Treatments | Expert Stylists | Book +91-9840088867',
     keywords: [
         // Premium Hair Services Keywords (Priority)
@@ -61,12 +61,12 @@ export const metadata: Metadata = {
         title: '💎 Premium Hair Salon & Bridal Makeup Services | Anaplak Maduravoyal Chennai',
         description: '✨ Professional Hair Coloring, Keratin Treatment, Hair Smoothening | Bridal Makeup Packages | Facials & Beauty Treatments | Expert Stylists | Premium Products | Book Now!',
         url: 'https://anaplakartandglamsalon.com/services',
-        siteName: 'Anaplak Art & Glam Salon',
+        siteName: 'Anaplak Art And Glam Salon',
         type: 'website',
         locale: 'en_IN',
         images: [
             {
-                url: '/newk.png',
+                url: '/og-logo.png',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Premium Hair Salon Services - Hair Coloring, Keratin Treatment & Bridal Makeup in Maduravoyal, Chennai',

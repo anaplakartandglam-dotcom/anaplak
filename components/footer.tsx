@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2">
           <img
             src="/logo_updated.png"
-            alt="Anaplak Art & Glam Salon"
+            alt="Anaplak Art And Glam Salon"
             className="w-full h-auto object-contain object-center"
           />
         </div>
@@ -117,7 +117,7 @@ export default function Footer() {
           <div className="w-[280px] h-auto overflow-hidden flex items-center">
             <img
               src="/logo_updated.png"
-              alt="Anaplak Art & Glam Salon"
+              alt="Anaplak Art And Glam Salon"
               className="w-full h-auto object-contain object-center"
             />
           </div>
@@ -233,7 +233,7 @@ export default function Footer() {
       {/* COPYRIGHT */}
       <div className="w-full border-t border-white/10 mt-10 pt-5">
         <p className="text-center text-gray-400 text-[13px] md:text-[14px] tracking-wide">
-          © Anaplak Art & Glam Salon — All Rights Reserved — 2025
+          © Anaplak Art And Glam Salon — All Rights Reserved — 2025
         </p>
       </div>
     </footer>

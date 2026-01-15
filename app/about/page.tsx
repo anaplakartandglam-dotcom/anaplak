@@ -120,12 +120,12 @@ export default function AboutPage() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "AboutPage",
-                        "name": "About Anaplak Art & Glam Salon",
+                        "name": "About Anaplak Art And Glam Salon",
                         "description": "Learn about Anaplak Salon - Chennai's premier beauty destination with 16+ years of experience, 5600+ satisfied customers, and expert beauty specialists.",
                         "url": "https://anaplakartandglamsalon.com/about",
                         "mainEntity": {
                             "@type": "BeautySalon",
-                            "name": "Anaplak Art & Glam Salon",
+                            "name": "Anaplak Art And Glam Salon",
                             "foundingDate": "2008",
                             "numberOfEmployees": "23",
                             "slogan": "Transform Your Look with Expert Care",
@@ -277,9 +277,9 @@ export default function AboutPage() {
                                     }}
                                 >
                                     <img
-                                        src="/about2.1.jpg"
+                                        src="/aboutus.jpg"
                                         alt="Professional Hair Styling"
-                                        className="w-full h-[600px] object-cover"
+                                        className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
                                     />
                                 </div>
                             </div>
@@ -333,16 +333,16 @@ export default function AboutPage() {
                                         }}
                                     >
                                         <img
-                                            src="/about2.2.jpg"
+                                            src="/aboutus2.jpg"
                                             alt="Beauty Specialist"
-                                            className="w-full h-[400px] object-cover"
+                                            className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
                                         />
                                         {/* Experience Badge */}
                                         <div
-                                            className="absolute top-4 right-8 w-40 h-40 rounded-full flex flex-col items-center justify-center text-white shadow-xl bg-[#53675C] z-10"
+                                            className="absolute bottom-4 left-4 md:top-4 md:left-auto md:right-8 md:bottom-auto w-28 h-28 md:w-40 md:h-40 rounded-full flex flex-col items-center justify-center text-white shadow-xl bg-[#53675C] z-10"
                                         >
-                                            <span className="text-6xl font-bold leading-none mb-2">16</span>
-                                            <div className="text-xs font-semibold uppercase tracking-wide text-center leading-tight">
+                                            <span className="text-4xl md:text-6xl font-bold leading-none mb-1 md:mb-2">16</span>
+                                            <div className="text-[9px] md:text-xs font-semibold uppercase tracking-wide text-center leading-tight">
                                                 <div>YEARS</div>
                                                 <div>OF EXPERIENCE</div>
                                                 <div>IN HAIRCUTS</div>
@@ -430,7 +430,7 @@ export default function AboutPage() {
                                         <line x1="24" y1="30" x2="24" y2="38" strokeLinecap="round" />
                                         <line x1="40" y1="34" x2="40" y2="40" strokeLinecap="round" />
                                     </svg>
-                                </div>  
+                                </div>
                                 <h3 className="text-base font-bold uppercase tracking-wide text-black">HAIR TREATMENTS</h3>
                                 <p className="text-sm text-gray-600 leading-relaxed px-2">
                                     Experienced professionals provide services with skill creativity and personal attention
@@ -542,7 +542,7 @@ export default function AboutPage() {
 
                                             <div className="flex justify-between items-center">
                                                 <span className="text-sm font-medium text-black">Sunday</span>
-                                                <span className="text-sm text-[#53675C]">Open</span>
+                                                <span className="text-sm text-[#53675C]">10:00 AM - 9:00 PM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -557,25 +557,25 @@ export default function AboutPage() {
                             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
                                 {/* Stat 1 */}
                                 <div className="text-center">
-                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">5600+</h2>
+                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">1000+</h2>
                                     <p className="text-xs uppercase tracking-wider text-black font-medium">SATISFIED CUSTOMERS</p>
                                 </div>
 
                                 {/* Stat 2 */}
                                 <div className="text-center">
-                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">23</h2>
+                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">15</h2>
                                     <p className="text-xs uppercase tracking-wider text-black font-medium">EXPERIENCED BARBERS</p>
                                 </div>
 
                                 {/* Stat 3 */}
                                 <div className="text-center">
-                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">370+</h2>
+                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">100+</h2>
                                     <p className="text-xs uppercase tracking-wider text-black font-medium">HAIRCUTS PER MONTH</p>
                                 </div>
 
                                 {/* Stat 4 */}
                                 <div className="text-center">
-                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">45</h2>
+                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">20</h2>
                                     <p className="text-xs uppercase tracking-wider text-black font-medium">BARBER AWARDS</p>
                                 </div>
                             </div>
@@ -689,7 +689,7 @@ export default function AboutPage() {
                                             </svg>
                                         </div>
                                         <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#F8C8DC] transition-colors">Facebook</h3>
-                                        <p className="text-gray-400 text-sm mb-4">Anaplak Art & Glam</p>
+                                        <p className="text-gray-400 text-sm mb-4">Anaplak Art And Glam</p>
                                         <div className="text-[#F8C8DC] font-semibold group-hover:underline flex items-center justify-center gap-2">
                                             Like Our Page
                                             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

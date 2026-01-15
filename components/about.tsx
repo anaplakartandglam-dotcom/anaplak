@@ -86,13 +86,13 @@ export default function About() {
             }`}
         >
           <img
-            src="/aboutus.jpg"
+            src="/gal15.JPG"
             className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
           />
 
 
-          <h6 className="uppercase mt-6 text-white font-semibold text-[15px] leading-relaxed max-w-[450px]">
-           Embrace exceptional hair artistry guided by experts who honor your comfort, your time, and your transformation journey.
+          <h6 className="uppercase mt-6 text-white font-semibold text-[20px] leading-relaxed max-w-[450px] text-justify">
+            Embrace exceptional hair artistry guided by experts who honor your comfort, your time, and your transformation journey.
           </h6>
         </div>
 
@@ -101,7 +101,7 @@ export default function About() {
           className={`transition-all duration-[1200ms] delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          <h6 className="uppercase text-[#C8AFAE] tracking-[0.3em] text-[14px] mb-6">
+          <h6 className="uppercase text-[#C8AFAE] tracking-[0.3em] text-[20px] mb-6">
             about premium hair salon
           </h6>
 
@@ -118,15 +118,15 @@ export default function About() {
             </span>
           </h2>
 
-          <p className="text-[#C2C2C2] text-[18px] leading-[1.75] max-w-2xl mb-12">
-          Welcome to ANAPLAK ART AND GLAM SALON — where beauty meets luxury. Located in the heart of Chennai ,Maduravoyal, we are a premier destination for personalized hair care, creative styling, and rejuvenating beauty experiences.
-At ANAPLAK ART AND GLAM SALON , we believe your hair is an expression of who you are. Our mission is to help you look and feel your absolute best with expert services rooted in innovation, premium products, and individualized care.
+          <p className="text-[#C2C2C2] text-[20px] leading-[1.75] max-w-2xl mb-12 text-justify">
+            Welcome to ANAPLAK ART AND GLAM SALON — where beauty meets luxury. Located in the heart of Chennai ,Maduravoyal, we are a premier destination for personalized hair care, creative styling, and rejuvenating beauty experiences.
+            At ANAPLAK ART AND GLAM SALON , we believe your hair is an expression of who you are. Our mission is to help you look and feel your absolute best with expert services rooted in innovation, premium products, and individualized care.
           </p>
 
           {/* BOTTOM IMAGE BLOCK */}
           <div className="relative w-full">
             <img
-              src="/aboutus2.jpg"
+              src="/gallery3.JPG"
               className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
             />
 

@@ -23,10 +23,7 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://anaplakartandglamsalon.com'),
-  title: {
-    default: "Anaplak Art and Glam Salon | Premium Hair & Beauty Salon in Maduravoyal, Chennai",
-    template: "%s | Anaplak Art and Glam Salon"
-  },
+  title: "Anaplak Art And Glam",
   description:
     "Anaplak Art and Glam Salon in Maduravoyal, Chennai offers premium hair styling, bridal makeup, hair coloring, facials, manicure, pedicure & beauty treatments. Expert stylists with 16+ years experience. Book your appointment today!",
   keywords: [
@@ -83,10 +80,10 @@ export const metadata: Metadata = {
     description: 'Experience luxury beauty services at Anaplak Salon in Maduravoyal, Chennai. Expert bridal makeup, hair styling, coloring, facials & more. 16+ years of excellence. Book now!',
     images: [
       {
-        url: '/newk.png',
+        url: '/og-logo.png',
         width: 1200,
         height: 630,
-        alt: 'Anaplak Art and Glam Salon - Premium Beauty Services in Chennai',
+        alt: 'Anaplak Art And Glam Salon - Premium Beauty Services in Chennai',
       },
     ],
   },
@@ -94,7 +91,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services',
     description: 'Experience luxury beauty services in Maduravoyal, Chennai. Expert bridal makeup, hair styling, facials & more. Book your appointment today!',
-    images: ['/newk.png'],
+    images: ['/og-logo.png'],
   },
   robots: {
     index: true,
@@ -145,11 +142,11 @@ export default function RootLayout({
           }}
         />
         {/* Favicons - Comprehensive Setup */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="theme-color" content="#53675C" />
         <meta name="msapplication-TileColor" content="#53675C" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

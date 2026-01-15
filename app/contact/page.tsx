@@ -23,12 +23,12 @@ export default function ContactUs() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "ContactPage",
-                        "name": "Contact Anaplak Art & Glam Salon",
+                        "name": "Contact Anaplak Art And Glam Salon",
                         "description": "Contact Anaplak Salon for appointments, inquiries, and directions. Located in Maduravoyal, Chennai with convenient parking.",
                         "url": "https://anaplakartandglamsalon.com/contact",
                         "mainEntity": {
                             "@type": "LocalBusiness",
-                            "name": "Anaplak Art & Glam Salon",
+                            "name": "Anaplak Art And Glam Salon",
                             "telephone": "+91-9840088867",
                             "email": "anaplakartandglamsalon@gmail.com",
                             "address": {
@@ -180,7 +180,7 @@ export default function ContactUs() {
                                             <MapPin size={22} />
                                         </div>
                                         <div>
-                                            <h3 className="font-bold text-lg text-white mb-1">Anaplak Art & Glam Salon</h3>
+                                            <h3 className="font-bold text-lg text-white mb-1">Anaplak Art And Glam Salon</h3>
                                             <p className="text-white/70 leading-relaxed">
                                                 No.4B/9, New No. 3, 2nd floor,
                                                 <br />
@@ -211,7 +211,7 @@ export default function ContactUs() {
                                                     <span>Mon - Sat:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
                                                 </li>
                                                 <li className="flex justify-between gap-4">
-                                                    <span>Sunday:</span> <span className="whitespace-nowrap">Open</span>
+                                                    <span>Sunday:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
                                                 </li>
                                             </ul>
                                         </div>
