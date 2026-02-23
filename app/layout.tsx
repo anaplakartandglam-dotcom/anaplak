@@ -4,6 +4,7 @@ import { DM_Sans, Reddit_Sans, Dancing_Script } from "next/font/google"
 import "./globals.css"
 import StructuredData from "@/components/structured-data"
 import WhatsAppFloat from "@/components/whatsapp_float"
+import Script from "next/script"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -156,6 +157,12 @@ export default function RootLayout({
         <StructuredData />
         {children}
         <WhatsAppFloat />
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7823087641"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   )

@@ -50,7 +50,7 @@ export default function Header() {
           zIndex: 50,
         }}
       >
-        <div className="w-full px-4 md:px-10 flex justify-between items-center">
+        <div className="w-full px-4 flex justify-between items-center">
 
           {/* Mobile Number */}
           <a href="tel:+919840088867" className="flex md:hidden items-center gap-2 text-white text-xs tracking-wide hover:text-[#F8C8DC] transition">
@@ -85,7 +85,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-
       {/* --------------------------------------------------
            MAIN NAVBAR
       -------------------------------------------------- */}
@@ -102,11 +101,10 @@ export default function Header() {
           borderBottom: isSticky ? "1px solid rgba(255,255,255,0.15)" : "none",
         }}
       >
-        <div className="w-full px-4 md:px-10 py-8 md:py-10 flex justify-between items-center">
-
+        <div className="w-full p-4 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 md:gap-4" style={{ marginTop: '13px' }}>
-            <div className="w-[180px] md:w-[250px] h-auto flex items-center justify-center">
+            <div className="w-[180px] md:w-[240px] h-auto flex items-center justify-center mb-2">
               <img
                 src="/logo_updated.png"
                 className="w-full h-auto"
@@ -120,7 +118,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Menu (FIXED) */}
-          <nav className="hidden lg:flex gap-12 items-center">
+          <nav className="hidden lg:flex gap-6 items-center">
             {navItems.map((item) => (
               <Link
                 key={item.label}
@@ -139,7 +137,7 @@ export default function Header() {
               target="_blank"
             >
               <button
-                className="px-10 py-4 rounded-md text-white text-sm tracking-wider uppercase flex items-center gap-2"
+                className="px-6 py-4 rounded-md text-white text-sm tracking-wider uppercase flex items-center gap-2"
                 style={{ backgroundColor: PRIMARY }}
               >
                 Book An Appointment <ArrowRight size={16} />
@@ -167,7 +165,7 @@ export default function Header() {
       >
         <button
           onClick={() => setOpen(false)}
-          className="absolute top-6 right-6 text-white"
+          className="absolute top-10 right-6 text-white"
         >
           <X size={26} />
         </button>
