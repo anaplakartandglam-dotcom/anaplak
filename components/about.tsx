@@ -86,12 +86,13 @@ export default function About() {
             }`}
         >
           <img
-            src="/gal15.JPG"
+            src="/make-up.webp"
+            alt="Professional bridal makeup artist at Anaplak salon"
             className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
           />
 
 
-          <h6 className="uppercase mt-6 text-white font-semibold text-[20px] leading-relaxed max-w-[450px] text-justify">
+          <h6 className="uppercase mt-6 text-white font-semibold text-[16px] leading-relaxed max-w-[450px] text-justify">
             Embrace exceptional hair artistry guided by experts who honor your comfort, your time, and your transformation journey.
           </h6>
         </div>
@@ -101,24 +102,24 @@ export default function About() {
           className={`transition-all duration-[1200ms] delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          <h6 className="uppercase text-[#C8AFAE] tracking-[0.3em] text-[20px] mb-6">
+          <h6 className="uppercase text-[#F8C8DC] tracking-[0.3em] text-sm mb-6">
             about premium hair salon
           </h6>
 
           {/* ----------------------------
              HEADING + TYPEWRITER EFFECT
           ----------------------------- */}
-          <h2 className="text-white font-bold text-[44px] md:text-[52px] leading-[1.2] max-w-2xl mb-6">
+          <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-6xl leading-[1.2] max-w-2xl mb-6">
             Find the perfect balance between elegance and comfort with{" "}
             <span
-              className="text-[#C8AFAE]"
+              className="text-[#F8C8DC]"
             >
               {displayedWord}
-              {!isMobile && <span className="inline-block w-[2px] h-[1em] bg-[#C8AFAE] ml-1 animate-pulse"></span>}
+              {!isMobile && <span className="inline-block w-[2px] h-[1em] bg-[#F8C8DC] ml-1 animate-pulse"></span>}
             </span>
           </h2>
 
-          <p className="text-[#C2C2C2] text-[20px] leading-[1.75] max-w-2xl mb-12 text-justify">
+          <p className="text-[#C2C2C2] leading-[1.75] max-w-2xl mb-12 text-justify">
             Welcome to ANAPLAK ART AND GLAM SALON — where beauty meets luxury. Located in the heart of Chennai ,Maduravoyal, we are a premier destination for personalized hair care, creative styling, and rejuvenating beauty experiences.
             At ANAPLAK ART AND GLAM SALON , we believe your hair is an expression of who you are. Our mission is to help you look and feel your absolute best with expert services rooted in innovation, premium products, and individualized care.
           </p>
@@ -126,32 +127,33 @@ export default function About() {
           {/* BOTTOM IMAGE BLOCK */}
           <div className="relative w-full">
             <img
-              src="/gallery3.JPG"
+              src="/haircut.webp"
+              alt="Expert hairstylist creating elegant transformations"
               className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
             />
 
 
             {/* ROTATING LOGO */}
-            {/* ROTATING LOGO — TOP RIGHT CORNER */}
+{/* ROTATING LOGO — TOP RIGHT CORNER */}
             <div
-              className="
-    w-[100px] h-[100px]
-    md:w-[120px] md:h-[120px]
-    absolute
-    -top-8 md:-top-10
-    -right-8 md:-right-10
-    rounded-full
-    bg-white
-    flex items-center justify-center
-    rotate-slow-delay
-    pointer-events-none
-    shadow-lg
-  "
+               className="
+     w-[100px] h-[100px]
+     md:w-[120px] md:h-[120px]
+     absolute
+     -top-8 md:-top-10
+     -right-8 md:-right-10
+     rounded-full
+     bg-white
+     flex items-center justify-center
+     rotate-slow-delay
+     pointer-events-none
+     shadow-lg
+   "
             >
               <img
-                src="/newk.png"
+                src="/newk.webp"
+                alt=""
                 className="w-[70%] h-auto object-contain"
-                alt="Anaplak Logo"
               />
             </div>
 

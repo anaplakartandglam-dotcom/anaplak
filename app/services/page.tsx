@@ -16,7 +16,7 @@ const services = [
       {
         title: "Complete Bridal Package",
         description: "Transform into the most radiant version of yourself on your special day",
-        image: "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg",
+        image: "/elegant-bride-makeup-and-hairstyling-beauty-portra.webp",
         details:
           "Our signature bridal experience includes pre-wedding consultations, trial sessions, and day-of services. We create a personalized beauty timeline ensuring you look flawless from ceremony to reception.",
         benefits: [
@@ -37,7 +37,7 @@ const services = [
       {
         title: "Engagement Makeup",
         description: "Look stunning for your engagement ceremony and photoshoot",
-        image: "/engagement-makeup-look-natural-glowing-beauty.jpg",
+        image: "/engagement-makeup-look-natural-glowing-beauty.webp",
         details:
           "Specially designed for engagement ceremonies, this service ensures you look radiant in person and photos. We use high-definition makeup techniques perfect for both traditional and modern celebrations.",
         benefits: [
@@ -65,7 +65,7 @@ const services = [
       {
         title: "Hair Styling",
         description: "Expert hair styling services for any occasion",
-        image: "/professional-hair-styling-salon-treatment-luxury.jpg",
+        image: "/transformation-1.webp",
         details:
           "From everyday styles to special occasion updos, our hair specialists create looks that complement your features and lifestyle. We use premium products to ensure your hair stays healthy and vibrant.",
         benefits: [
@@ -86,7 +86,7 @@ const services = [
       {
         title: "Hair Treatment",
         description: "Advanced texture treatments for healthy, manageable hair",
-        image: "/professional-hair-styling-salon-treatment-luxury.jpg",
+        image: "/professional-hair-styling-salon-treatment-luxury.webp",
         details:
           "Transform your hair with our premium texture treatments. From smoothing and straightening to adding volume and curls, we offer a complete range of advanced hair treatments using the latest techniques and products for long-lasting, beautiful results. Our treatments include Perming, Keratin, Smoothing, Botox, Nano Plastia, and Botoplex - all customized to your hair type and desired results.",
         benefits: [
@@ -108,7 +108,7 @@ const services = [
       {
         title: "Hair Coloring",
         description: "Transform your look with expert color services",
-        image: "/hair-coloring-highlights-balayage-salon-transforma.jpg",
+        image: "/hair-coloring.webp",
         details:
           "Whether you want subtle highlights or a complete color transformation, our colorists use the latest techniques and premium products to achieve stunning, long-lasting results.",
         benefits: [
@@ -129,7 +129,7 @@ const services = [
       {
         title: "Hair Extension",
         description: "Add length, volume, and style with premium hair extensions",
-        image: "/professional-hair-styling-salon-treatment-luxury.jpg",
+        image: "/hair_extension.webp",
         details:
           "Transform your look instantly with our premium hair extension services. From tape-in to nano extensions, we offer a variety of methods to add length, volume, and dimension to your hair. Our expert stylists ensure seamless blending and natural-looking results.",
         benefits: [
@@ -177,7 +177,7 @@ const services = [
       {
         title: "Fashion & Editorial Makeup",
         description: "Bold, creative looks for photoshoots and fashion events",
-        image: "/professional-makeup-artist-beauty-glamour-studio.jpg",
+        image: "/professional-makeup-artist-beauty-glamour-studio.webp",
         details:
           "Specialized makeup artistry for fashion shows, editorial shoots, and creative projects. We collaborate with photographers and designers to bring artistic visions to life.",
         benefits: [
@@ -205,7 +205,7 @@ const services = [
       {
         title: "Facial Treatments",
         description: "Rejuvenate and refresh your skin with our signature facials",
-        image: "/luxury-facial-treatment-spa-skincare-relaxation.jpg",
+        image: "/luxury-facial-treatment-spa-skincare-relaxation.webp",
         details:
           "Our facial treatments are customized to your skin type and concerns. Using advanced techniques and premium products, we help you achieve healthy, glowing skin.",
         benefits: [
@@ -226,7 +226,7 @@ const services = [
       {
         title: "Anti-Aging Treatments",
         description: "Advanced solutions for youthful, radiant skin",
-        image: "/anti-aging-skincare-treatment-youthful-glowing-ski.jpg",
+        image: "/anti-aging-skincare-treatment-youthful-glowing-ski.webp",
         details:
           "Combat signs of aging with our specialized treatments that target fine lines, wrinkles, and loss of elasticity. We use clinically-proven ingredients and techniques for visible results.",
         benefits: [
@@ -254,7 +254,7 @@ const services = [
       {
         title: "Manicure & Pedicure",
         description: "Pamper yourself with our relaxing nail care services",
-        image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg",
+        image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.webp",
         details:
           "Indulge in our luxurious manicure and pedicure services. We use premium products and techniques to give you beautiful, healthy nails while providing a relaxing beauty experience.",
         benefits: [
@@ -275,7 +275,7 @@ const services = [
       {
         title: "Threading & Waxing",
         description: "Professional hair removal for smooth, beautiful skin",
-        image: "/eyebrow-threading-professional-beauty-salon-treatm.jpg",
+        image: "/eyebrow-and-waxing.webp",
         details:
           "Our expert technicians provide gentle, effective hair removal services using premium products. We ensure minimal discomfort while delivering smooth, long-lasting results.",
         benefits: [
@@ -296,7 +296,7 @@ const services = [
       {
         title: "Nail Art & Extension",
         description: "Creative nail designs and professional nail extensions",
-        image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg",
+        image: "/nails-2.webp",
         details:
           "Express your style with our stunning nail art and extension services. From classic French designs to creative 3D art, our skilled nail technicians create beautiful, long-lasting nail designs. We offer a complete range of nail extension options including gel, acrylic, and poly gel extensions.",
         benefits: [
@@ -475,7 +475,7 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Service Cards */}
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-6 md:grid-cols-3">
                   {category.items.map((service) => {
                     const isExpanded = expandedService === service.title
 
@@ -485,7 +485,7 @@ export default function ServicesSection() {
                         className="group relative overflow-hidden rounded-lg bg-zinc-800/50 backdrop-blur transition-all"
                         style={{ borderWidth: "1px", borderColor: "#ffffff26" }}
                       >
-                        <div className="relative h-48 w-full overflow-hidden">
+                        <div className="relative h-100 w-full overflow-hidden">
                           <Image
                             src={service.image || "/placeholder.svg"}
                             alt={service.title}
@@ -495,7 +495,13 @@ export default function ServicesSection() {
                           <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e]/90 to-transparent"></div>
                         </div>
 
-                        <button onClick={() => toggleService(service.title)} className="w-full p-6 text-left">
+                        <button 
+                          onClick={() => toggleService(service.title)} 
+                          className="w-full p-6 text-left"
+                          aria-controls={`service-content-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                          aria-expanded={isExpanded}
+                          id={`service-button-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                        >
                           <div className="flex items-start justify-between gap-4">
                             <div className="flex-1">
                               <h3 className="text-xl font-semibold text-white">{service.title}</h3>
@@ -510,6 +516,9 @@ export default function ServicesSection() {
 
                         {/* Expanded Content */}
                         <div
+                          id={`service-content-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                          role="region"
+                          aria-labelledby={`service-button-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                           className={`overflow-hidden transition-all duration-300 ${isExpanded ? "max-h-[2000px]" : "max-h-0"
                             }`}
                         >

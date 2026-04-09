@@ -18,7 +18,7 @@ A comprehensive value proposition section featuring:
 #### **6 Key Value Propositions:**
 
 1. **16+ Years Excellence** 🏆
-   - Highlights: 5600+ satisfied customers since 2008
+   - Highlights: 1000+ satisfied customers since 2008
    - Award-winning salon with proven expertise
 
 2. **Premium Products** ✨
@@ -47,7 +47,7 @@ A comprehensive value proposition section featuring:
 - **Gradient backgrounds** with subtle color overlays
 - **Icon-based cards** with hover animations
 - **Smooth transitions** and staggered animations
-- **Premium color palette** (#C8AFAE, #F8C8DC, #F2D2BD)
+- **Premium color palette** (#F8C8DC, #F8C8DC, #F2D2BD)
 
 ### Interactive Features
 - **Hover effects** on each card (scale, color change, gradient overlay)
@@ -57,7 +57,7 @@ A comprehensive value proposition section featuring:
 ### Call-to-Action
 - **Primary CTA**: "Book Your Appointment" button (gradient style)
 - **Secondary CTA**: "Call +91 98400 88867" button (outline style)
-- **Social proof**: "⭐ Rated 4.9/5 by 5600+ Happy Customers"
+- **Social proof**: "⭐ Rated 4.9/5 by 1000+ Happy Customers"
 
 ## Technical Implementation
 
@@ -128,7 +128,7 @@ A comprehensive value proposition section featuring:
 ┌─────────────────────────────────────────┐
 │           Call-to-Action                 │
 │  [Book Appointment] [Call Now]          │
-│  ⭐ Rated 4.9/5 by 5600+ Customers      │
+│  ⭐ Rated 4.9/5 by 1000+ Customers      │
 └─────────────────────────────────────────┘
 ```
 
@@ -162,7 +162,7 @@ Each card communicates:
 
 ### Trust Elements
 - 4.9/5 star rating display
-- 5600+ customer count
+- 1000+ customer count
 - 16+ years experience badge
 - Award-winning mention
 

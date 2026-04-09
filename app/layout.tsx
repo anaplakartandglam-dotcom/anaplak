@@ -5,6 +5,11 @@ import "./globals.css"
 import StructuredData from "@/components/structured-data"
 import WhatsAppFloat from "@/components/whatsapp_float"
 import Script from "next/script"
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import SparkleCursor from "@/components/SparkleCursor"
+
+config.autoAddCss = false
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -157,6 +162,9 @@ export default function RootLayout({
         <StructuredData />
         {children}
         <WhatsAppFloat />
+        <div className="hidden lg:block">
+          <SparkleCursor />
+        </div>
         <Script
           async
           strategy="afterInteractive"

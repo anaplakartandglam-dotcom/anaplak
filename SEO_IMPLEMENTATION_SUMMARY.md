@@ -18,7 +18,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 
 ### Key Features:
 ✅ Emoji-enhanced titles for higher CTR
-✅ Social proof in meta description (5600+ customers, 4.9★ rating)
+✅ Social proof in meta description (1000+ customers, 4.9★ rating)
 ✅ Location-specific keywords (Maduravoyal, Chennai, MMDA Colony)
 ✅ Service-specific keywords (Bridal Makeup, Keratin, Hair Coloring)
 ✅ Commercial intent keywords (best, top rated, luxury)
@@ -28,7 +28,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 ## 📄 **2. ABOUT PAGE** (`/app/about/`)
 
 ### Layout Meta Tags (`layout.tsx`):
-- **Title**: "About Us - 16+ Years Beauty Excellence | 5600+ Happy Customers | Anaplak Salon"
+- **Title**: "About Us - 16+ Years Beauty Excellence | 1000+ Happy Customers | Anaplak Salon"
 - **Description**: Trust-building with credentials and social proof
 - **Keywords**: 25+ keywords focused on expertise, trust, and team
 - **Complete social media optimization**
@@ -42,7 +42,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 ### Key Features:
 - Founding date (2008) for trust signals
 - Number of employees (23 specialists)
-- Customer count (5600+) for social proof
+- Customer count (1000+) for social proof
 - Awards and recognition
 - Complete FAQ structured data for featured snippets
 

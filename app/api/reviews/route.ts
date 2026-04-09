@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 
 interface GoogleReview {
     author_name: string
@@ -37,7 +37,7 @@ export async function GET() {
         const response = await fetch(
             `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews,rating,user_ratings_total&key=${apiKey}`,
             {
-                cache: 'no-store' // Always fetch fresh reviews - no caching
+                next: { revalidate: 3600 } // cache for 1 hour
             }
         )
 
@@ -73,12 +73,6 @@ export async function GET() {
             reviews,
             totalRating: data.result.rating,
             totalReviews: data.result.user_ratings_total,
-        }, {
-            headers: {
-                'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
-                'Pragma': 'no-cache',
-                'Expires': '0',
-            }
         })
     } catch (error) {
         // Silently catch errors - client will use fallback reviews

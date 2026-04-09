@@ -62,6 +62,7 @@ export default function Contact() {
               <button
                 type="submit"
                 className="w-full bg-[#53675C] text-white py-3 font-bold uppercase tracking-wider hover:bg-[#3d4d46] transition mt-8"
+                aria-label="Make an appointment"
               >
                 Make an appointment
               </button>

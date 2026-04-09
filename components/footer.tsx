@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 import { MapPin, Phone } from "lucide-react"
 
 export default function Footer() {
@@ -27,11 +28,12 @@ export default function Footer() {
       <div className="md:hidden flex flex-col items-center text-center px-8">
 
         {/* MOBILE LOGO */}
-        <div className="w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2">
-          <img
-            src="/logo_updated.png"
+        <div className="w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2 relative" style={{ height: '70px' }}>
+          <Image
+            src="/logo_updated.webp"
             alt="Anaplak Art And Glam Salon"
-            className="w-full h-auto object-contain object-center"
+            fill
+            style={{ objectFit: 'contain', objectPosition: 'center' }}
           />
         </div>
 
@@ -93,16 +95,16 @@ export default function Footer() {
         {/* SOCIAL (MOBILE) */}
         <div className="flex gap-10 text-[#D2B6B6] mt-2 mb-6">
           <a href="https://www.facebook.com/anaplakartandglam" target="_blank">
-            <img src="/facebook.png" alt="Facebook" className="w-[28px] h-[28px]" />
+            <img src="/facebook.webp" alt="Facebook" className="w-[28px] h-[28px]" />
           </a>
           <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank">
-            <img src="/instagram.png" alt="Instagram" className="w-[28px] h-[28px]" />
+            <img src="/instagram.webp" alt="Instagram" className="w-[28px] h-[28px]" />
           </a>
           <a href="https://wa.me/919840088867" target="_blank">
-            <img src="/whatsapp.png" alt="WhatsApp" className="w-[28px] h-[28px]" />
+            <img src="/whatsapp.webp" alt="WhatsApp" className="w-[28px] h-[28px]" />
           </a>
           <a href="https://www.youtube.com/@Anaplakartandglamsalon" target="_blank">
-            <img src="/youtube.png" alt="YouTube" className="w-[28px] h-[28px]" />
+            <img src="/youtube.webp" alt="YouTube" className="w-[28px] h-[28px]" />
           </a>
         </div>
       </div>
@@ -114,11 +116,12 @@ export default function Footer() {
 
         {/* LOGO */}
         <div className="flex md:block items-center md:items-start">
-          <div className="w-[280px] h-auto overflow-hidden flex items-center">
-            <img
-              src="/logo_updated.png"
+          <div className="w-[280px] h-auto overflow-hidden flex items-center relative" style={{ height: '90px' }}>
+            <Image
+              src="/logo_updated.webp"
               alt="Anaplak Art And Glam Salon"
-              className="w-full h-auto object-contain object-center"
+              fill
+              style={{ objectFit: 'contain', objectPosition: 'center' }}
             />
           </div>
         </div>
@@ -132,32 +135,32 @@ export default function Footer() {
 
         {/* EXPLORE */}
         <div>
-          <h6 className="uppercase text-[#C8AFAE] tracking-[0.35em] text-[13px] mb-4 font-semibold">
+          <h6 className="uppercase text-[#F8C8DC] tracking-[0.35em] text-[13px] mb-4 font-semibold">
             Explore
           </h6>
 
           <ul className="space-y-2.5 text-[15px] md:text-[16px] uppercase tracking-[0.18em] text-white/85">
             <li>
-              <a href="/" className="hover:text-[#C8AFAE] cursor-pointer transition">Home +</a>
+              <a href="/" className="hover:text-[#F8C8DC] cursor-pointer transition">Home +</a>
             </li>
             <li>
-              <a href="/about" className="hover:text-[#C8AFAE] cursor-pointer transition">About +</a>
+              <a href="/about" className="hover:text-[#F8C8DC] cursor-pointer transition">About +</a>
             </li>
             <li>
-              <a href="/gallery" className="hover:text-[#C8AFAE] cursor-pointer transition">Gallery +</a>
+              <a href="/gallery" className="hover:text-[#F8C8DC] cursor-pointer transition">Gallery +</a>
             </li>
             <li>
-              <a href="/services" className="hover:text-[#C8AFAE] cursor-pointer transition">Services +</a>
+              <a href="/services" className="hover:text-[#F8C8DC] cursor-pointer transition">Services +</a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-[#C8AFAE] cursor-pointer transition">Contacts +</a>
+              <a href="/contact" className="hover:text-[#F8C8DC] cursor-pointer transition">Contacts +</a>
             </li>
           </ul>
         </div>
 
         {/* CONTACT INFO */}
         <div>
-          <h6 className="uppercase text-[#C8AFAE] text-[13px] tracking-[0.35em] mb-4 font-semibold">
+          <h6 className="uppercase text-[#F8C8DC] text-[13px] tracking-[0.35em] mb-4 font-semibold">
             Contact Info
           </h6>
 
@@ -168,7 +171,7 @@ export default function Footer() {
               target="_blank"
               className="flex gap-3 items-start cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-full bg-[#C8AFAE] flex items-center justify-center text-black transition group-hover:bg-white">
+              <div className="w-10 h-10 rounded-full bg-[#F8C8DC] flex items-center justify-center text-black transition group-hover:bg-white">
                 <MapPin size={18} />
               </div>
 
@@ -196,7 +199,7 @@ export default function Footer() {
 
             {/* CONTACT */}
             <div className="flex gap-3 items-start">
-              <div className="w-10 h-10 rounded-full bg-[#C8AFAE] flex items-center justify-center text-black">
+              <div className="w-10 h-10 rounded-full bg-[#F8C8DC] flex items-center justify-center text-black">
                 <Phone size={18} />
               </div>
 
@@ -211,18 +214,18 @@ export default function Footer() {
             </div>
 
             {/* SOCIAL */}
-            <div className="flex gap-4 pt-1 text-[#C8AFAE]">
+            <div className="flex gap-4 pt-1 text-[#F8C8DC]">
               <a href="https://www.facebook.com/anaplakartandglam" target="_blank">
-                <img src="/facebook.png" alt="Facebook" className="w-[20px] h-[20px]" />
+                <img src="/facebook.webp" alt="Facebook" className="w-[20px] h-[20px]" />
               </a>
               <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank">
-                <img src="/instagram.png" alt="Instagram" className="w-[20px] h-[20px]" />
+                <img src="/instagram.webp" alt="Instagram" className="w-[20px] h-[20px]" />
               </a>
               <a href="https://wa.me/919840088867" target="_blank">
-                <img src="/whatsapp.png" alt="WhatsApp" className="w-[20px] h-[20px]" />
+                <img src="/whatsapp.webp" alt="WhatsApp" className="w-[20px] h-[20px]" />
               </a>
               <a href="https://www.youtube.com/@Anaplakartandglamsalon" target="_blank">
-                <img src="/youtube.png" alt="YouTube" className="w-[22px] h-[22px]" />
+                <img src="/youtube.webp" alt="YouTube" className="w-[22px] h-[22px]" />
               </a>
             </div>
 

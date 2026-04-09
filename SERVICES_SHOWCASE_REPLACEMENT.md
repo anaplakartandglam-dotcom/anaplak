@@ -247,7 +247,7 @@ Homepage → Services Preview → Services Page → Booking
 ┌─────────────────────────────────────────┐
 │  "Want to See Our Complete Menu?"       │
 │  [Explore All Services] [Book Now]      │
-│  ⭐ 4.9/5 • 5600+ Customers             │
+│  ⭐ 4.9/5 • 1000+ Customers             │
 └─────────────────────────────────────────┘
 ```
 

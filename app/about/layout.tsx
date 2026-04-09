@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: 'About Us - Anaplak Art And Glam',
-    description: '🏆 Discover Anaplak Art And Glam - Maduravoyal\'s #1 Premium Hair Salon & Bridal Makeup Studio. 23 Expert Stylists | 4.9★ Google Rating | 5600+ Happy Customers | Professional Hair Coloring, Keratin Treatment & Luxury Bridal Services. Visit us in MMDA Colony, Chennai.',
+    description: '🏆 Discover Anaplak Art And Glam - Maduravoyal\'s #1 Premium Hair Salon & Bridal Makeup Studio. 23 Expert Stylists | 4.9★ Google Rating | 1000+ Happy Customers | Professional Hair Coloring, Keratin Treatment & Luxury Bridal Services. Visit us in MMDA Colony, Chennai.',
     keywords: [
         // Premium Hair Salon Keywords (Priority)
         'premium hair salon Chennai',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         'skilled salon team',
 
         // Social Proof
-        '5600+ satisfied customers',
+        '1000+ satisfied customers',
         '4.9 star rated salon',
         'trusted salon Chennai',
         'best reviewed salon Maduravoyal',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: '🌟 About Anaplak | Premium Hair Salon & Bridal Makeup | 4.9★ Maduravoyal',
-        description: '💎 Meet our expert team of 23 beauty specialists. 5600+ happy customers trust us for premium hair services, bridal makeup & luxury beauty treatments. MMDA Colony, Chennai.',
+        description: '💎 Meet our expert team of 23 beauty specialists. 1000+ happy customers trust us for premium hair services, bridal makeup & luxury beauty treatments. MMDA Colony, Chennai.',
         url: 'https://anaplakartandglamsalon.com/about',
         siteName: 'Anaplak Art And Glam Salon',
         type: 'website',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'About Anaplak | Premium Hair Salon & Bridal Makeup Experts Chennai',
-        description: '🏆 23 Expert Stylists | 5600+ Happy Customers | Premium Hair Services | Luxury Bridal Makeup | Book Now!',
+        description: '🏆 23 Expert Stylists | 1000+ Happy Customers | Premium Hair Services | Luxury Bridal Makeup | Book Now!',
         images: ['/logo_new.jpeg'],
     },
     alternates: {

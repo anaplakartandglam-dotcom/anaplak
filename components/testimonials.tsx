@@ -26,7 +26,7 @@ const FALLBACK_REVIEWS: Review[] = [
   {
     name: "Lokesh R",
     role: "Google Review",
-    iconColor: "#C8AFAE",
+    iconColor: "#F8C8DC",
     text: "Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team!",
     rating: 5,
   },
@@ -54,7 +54,7 @@ const FALLBACK_REVIEWS: Review[] = [
 ]
 
 // Color palette for user icons
-const ICON_COLORS = ["#53675C", "#C8AFAE", "#8B9A8E", "#A68A89", "#6B7F73", "#9B8B7E"]
+const ICON_COLORS = ["#53675C", "#F8C8DC", "#8B9A8E", "#A68A89", "#6B7F73", "#9B8B7E"]
 
 // Single Review Card Component
 function ReviewCard({ review, index }: { review: Review; index: number }) {
@@ -64,7 +64,7 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
 
   return (
     <div
-      className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-lg p-6 hover:border-[#C8AFAE] transition-all duration-300"
+      className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-lg p-6 hover:border-[#F8C8DC] transition-all duration-300"
       style={{
         animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
       }}
@@ -104,9 +104,9 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
 
         {/* Name and Time */}
         <div className="flex-1 min-w-0">
-          <h4 className="text-white font-medium text-base truncate">
+          <p className="text-white font-medium text-base truncate">
             {review.name}
-          </h4>
+          </p>
           {review.relativeTime && (
             <p className="text-gray-500 text-sm">{review.relativeTime}</p>
           )}
@@ -128,7 +128,7 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
       </div>
 
       {/* Review Text */}
-      <p className="text-gray-300 text-sm leading-relaxed">
+      <p id={`review-text-${index}`} className="text-gray-300 text-sm leading-relaxed">
         {shouldTruncate && !expanded
           ? `${review.text.substring(0, 200)}...`
           : review.text}
@@ -138,7 +138,9 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
       {shouldTruncate && (
         <button
           onClick={() => setExpanded(!expanded)}
-          className="text-[#C8AFAE] text-sm font-medium mt-2 hover:underline"
+          className="text-[#F8C8DC] text-sm font-medium mt-2 hover:underline"
+          aria-controls={`review-text-${index}`}
+          aria-expanded={expanded}
         >
           {expanded ? "Show less" : "Read more"}
         </button>
@@ -151,75 +153,69 @@ export default function Testimonials() {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
   const [active, setActive] = useState(0) // Current page index
-  const [testimonials, setTestimonials] = useState<Review[]>(FALLBACK_REVIEWS)
-  const [loading, setLoading] = useState(true)
+  const [testimonials, setTestimonials] = useState(FALLBACK_REVIEWS)
+  // const [testimonials, setTestimonials] = useState<Review[]>(FALLBACK_REVIEWS)
+  const [loading, setLoading] = useState(false)
   const [isFromGoogle, setIsFromGoogle] = useState(false)
   const [totalRating, setTotalRating] = useState<number | null>(null)
   const [totalReviews, setTotalReviews] = useState<number | null>(null)
 
   // Fetch Google reviews
-  useEffect(() => {
-    async function fetchReviews() {
-      try {
-        // Add timestamp to prevent caching
-        const timestamp = new Date().getTime()
-        const response = await fetch(`/api/reviews?t=${timestamp}`, {
-          cache: 'no-store',
-          headers: {
-            'Cache-Control': 'no-cache',
-          }
-        })
+  // useEffect(() => {
+  //   async function fetchReviews() {
+  //     try {
+  //       // Add timestamp to prevent caching
+  //       const response = await fetch('/api/reviews')
+  //       const data = await response.json()
+  //       console.log("GOOGLE RESPONSE:", data)
+  //       if (!response.ok) {
+  //         // Silently fail and use fallback reviews
+  //         console.log('Using fallback reviews (API unavailable)')
+  //         setIsFromGoogle(false)
+  //         setLoading(false)
+  //         return
+  //       }
 
-        if (!response.ok) {
-          // Silently fail and use fallback reviews
-          console.log('Using fallback reviews (API unavailable)')
-          setIsFromGoogle(false)
-          setLoading(false)
-          return
-        }
+  //       if (data.reviews && data.reviews.length > 0) {
+  //         // Transform reviews - show ALL reviews
+  //         const transformedReviews: Review[] = data.reviews
+  //           .filter((review: any) => review.rating >= 4) // Only show 4-5 star reviews
+  //           .sort((a: any, b: any) => {
+  //             // Sort by rating first, then by time
+  //             if (b.rating !== a.rating) return b.rating - a.rating
+  //             return b.time - a.time
+  //           })
+  //           .map((review: any, index: number) => ({
+  //             name: review.name,
+  //             role: "Google Review",
+  //             iconColor: ICON_COLORS[index % ICON_COLORS.length],
+  //             text: review.text,
+  //             rating: review.rating,
+  //             time: review.time,
+  //             relativeTime: review.relativeTime,
+  //             photoUrl: review.photoUrl,
+  //           }))
 
-        const data = await response.json()
+  //         setTestimonials(transformedReviews)
+  //         setIsFromGoogle(true)
+  //         setTotalRating(data.totalRating)
+  //         setTotalReviews(data.totalReviews)
+  //       } else {
+  //         // No reviews returned, use fallback
+  //         console.log('Using fallback reviews (no reviews from API)')
+  //         setIsFromGoogle(false)
+  //       }
+  //     } catch (error) {
+  //       // Silently catch all errors and use fallback reviews
+  //       console.log('Using fallback reviews (error occurred)')
+  //       setIsFromGoogle(false)
+  //     } finally {
+  //       setLoading(false)
+  //     }
+  //   }
 
-        if (data.reviews && data.reviews.length > 0) {
-          // Transform reviews - show ALL reviews
-          const transformedReviews: Review[] = data.reviews
-            .filter((review: any) => review.rating >= 4) // Only show 4-5 star reviews
-            .sort((a: any, b: any) => {
-              // Sort by rating first, then by time
-              if (b.rating !== a.rating) return b.rating - a.rating
-              return b.time - a.time
-            })
-            .map((review: any, index: number) => ({
-              name: review.name,
-              role: "Google Review",
-              iconColor: ICON_COLORS[index % ICON_COLORS.length],
-              text: review.text,
-              rating: review.rating,
-              time: review.time,
-              relativeTime: review.relativeTime,
-              photoUrl: review.photoUrl,
-            }))
-
-          setTestimonials(transformedReviews)
-          setIsFromGoogle(true)
-          setTotalRating(data.totalRating)
-          setTotalReviews(data.totalReviews)
-        } else {
-          // No reviews returned, use fallback
-          console.log('Using fallback reviews (no reviews from API)')
-          setIsFromGoogle(false)
-        }
-      } catch (error) {
-        // Silently catch all errors and use fallback reviews
-        console.log('Using fallback reviews (error occurred)')
-        setIsFromGoogle(false)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchReviews()
-  }, [])
+  //   fetchReviews()
+  // }, [])
 
   // Scroll animation
   useEffect(() => {
@@ -249,15 +245,14 @@ export default function Testimonials() {
       <div className="max-w-[1280px] mx-auto px-6">
 
         {/* Main Section Heading */}
-        <div className="text-center mb-12">
-          <p className="text-[#C8AFAE] text-sm tracking-[0.35em] uppercase mb-2">
+        <div className="text-center mb-5">
+          <p className="text-[#F8C8DC] text-sm tracking-[0.35em] uppercase">
             TESTIMONIALS
           </p>
         </div>
 
         {/* Google Map Section */}
-        <div className="mb-16">
-          {/* Map Embed */}
+        {/* <div className="mb-16">
           <div className="relative w-full h-[450px] md:h-[550px] rounded-lg overflow-hidden shadow-2xl">
             <iframe
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:ChIJ5R3P1HxIuJoRk3OviXZ9FVA"
@@ -270,7 +265,7 @@ export default function Testimonials() {
               title="Anaplak Art And Glam Salon Location"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Reviews Heading with Google Branding */}
         <div className="text-center mb-12">
@@ -316,12 +311,12 @@ export default function Testimonials() {
         {/* Loading State */}
         {loading ? (
           <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#C8AFAE]"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#F8C8DC]"></div>
           </div>
         ) : (
           <>
             {/* Carousel - Show 2 Reviews at a Time */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div id="testimonials-carousel" className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12" role="region" aria-label="Customer reviews carousel">
               {testimonials.slice(active * 2, active * 2 + 2).map((review, index) => (
                 <ReviewCard
                   key={active * 2 + index}
@@ -333,14 +328,17 @@ export default function Testimonials() {
 
             {/* Pagination Dots */}
             {totalPages > 1 && (
-              <div className="flex justify-center gap-3">
+              <div className="flex justify-center gap-3" role="tablist" aria-label="Review pages">
                 {[...Array(totalPages)].map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setActive(i)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${active === i ? "bg-[#C8AFAE] w-8" : "bg-[#666] hover:bg-[#888]"
+                    className={`cursor-pointer w-3 h-3 rounded-full transition-all duration-300 ${active === i ? "bg-[#F8C8DC] w-8" : "bg-[#666] hover:bg-[#888]"
                       }`}
                     aria-label={`Go to page ${i + 1}`}
+                    aria-controls="testimonials-carousel"
+                    aria-selected={active === i}
+                    role="tab"
                   />
                 ))}
               </div>

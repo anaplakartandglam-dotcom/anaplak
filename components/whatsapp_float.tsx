@@ -16,7 +16,7 @@ export default function WhatsAppFloat() {
             aria-label="Contact us on WhatsApp"
         >
             <Image
-                src="/whatsapp_float.png"
+                src="/whatsapp_float.webp"
                 alt="WhatsApp"
                 width={60}
                 height={60}

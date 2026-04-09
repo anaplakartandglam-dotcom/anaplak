@@ -38,6 +38,9 @@ function FAQAccordion() {
                     <button
                         onClick={() => setOpenIndex(openIndex === index ? null : index)}
                         className="w-full flex items-start justify-between text-left group"
+                        aria-controls={`faq-answer-${index}`}
+                        aria-expanded={openIndex === index}
+                        id={`faq-question-${index}`}
                     >
                         <span className="text-sm font-medium text-black uppercase tracking-wide">
                             {faq.question}
@@ -47,7 +50,12 @@ function FAQAccordion() {
                         </span>
                     </button>
                     {openIndex === index && (
-                        <div className="mt-4 text-sm text-gray-600 leading-relaxed">
+                        <div 
+                            id={`faq-answer-${index}`}
+                            role="region"
+                            aria-labelledby={`faq-question-${index}`}
+                            className="mt-4 text-sm text-gray-600 leading-relaxed"
+                        >
                             {faq.answer}
                         </div>
                     )}
@@ -121,7 +129,7 @@ export default function AboutPage() {
                         "@context": "https://schema.org",
                         "@type": "AboutPage",
                         "name": "About Anaplak Art And Glam Salon",
-                        "description": "Learn about Anaplak Salon - Chennai's premier beauty destination with 16+ years of experience, 5600+ satisfied customers, and expert beauty specialists.",
+                        "description": "Learn about Anaplak Salon - Chennai's premier beauty destination with 16+ years of experience, 1000+ satisfied customers, and expert beauty specialists.",
                         "url": "https://anaplakartandglamsalon.com/about",
                         "mainEntity": {
                             "@type": "BeautySalon",
@@ -457,6 +465,9 @@ export default function AboutPage() {
                             <button
                                 onClick={() => setIsVideoOpen(true)}
                                 className="group relative"
+                                aria-controls="video-player-modal"
+                                aria-expanded={isVideoOpen}
+                                aria-haspopup="dialog"
                             >
                                 {/* Expanding ring on hover */}
                                 <div className="absolute inset-0 rounded-full border border-white/40 opacity-0 scale-125 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500" />
@@ -629,12 +640,12 @@ export default function AboutPage() {
                         <div className="max-w-6xl mx-auto">
                             {/* Section Header */}
                             <div className="text-center mb-16">
-                                <p className="text-[#C8AFAE] uppercase tracking-[0.3em] text-sm mb-4 font-medium">
+                                <p className="text-[#F8C8DC] uppercase tracking-[0.3em] text-sm mb-4 font-medium">
                                     Stay Connected
                                 </p>
                                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                                     Follow Our{" "}
-                                    <span className="text-[#C8AFAE] italic">Beauty Journey</span>
+                                    <span className="text-[#F8C8DC] italic">Beauty Journey</span>
                                 </h2>
                                 <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
                                     Join our community for daily inspiration, beauty tips, and exclusive behind-the-scenes content
@@ -648,10 +659,10 @@ export default function AboutPage() {
                                     href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="group relative bg-gradient-to-br from-[#C8AFAE]/10 to-[#F8C8DC]/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-[#C8AFAE]/30 hover:border-[#C8AFAE] transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
+                                    className="group relative bg-gradient-to-br from-[#F8C8DC]/10 to-[#F8C8DC]/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-[#F8C8DC]/30 hover:border-[#F8C8DC] transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
                                 >
                                     {/* Gradient Background on Hover */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-[#C8AFAE]/20 to-[#F8C8DC]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#F8C8DC]/20 to-[#F8C8DC]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                                     <div className="relative z-10">
                                         {/* Instagram Icon */}
@@ -660,9 +671,9 @@ export default function AboutPage() {
                                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                             </svg>
                                         </div>
-                                        <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#C8AFAE] transition-colors">Instagram</h3>
+                                        <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#F8C8DC] transition-colors">Instagram</h3>
                                         <p className="text-gray-400 text-sm mb-4">@anaplakartandglam</p>
-                                        <div className="text-[#C8AFAE] font-semibold group-hover:underline flex items-center justify-center gap-2">
+                                        <div className="text-[#F8C8DC] font-semibold group-hover:underline flex items-center justify-center gap-2">
                                             Follow Us
                                             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -704,10 +715,10 @@ export default function AboutPage() {
                                     href="https://www.youtube.com/@Anaplakartandglamsalon/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="group relative bg-gradient-to-br from-[#F2D2BD]/10 to-[#C8AFAE]/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-[#F2D2BD]/30 hover:border-[#F2D2BD] transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
+                                    className="group relative bg-gradient-to-br from-[#F2D2BD]/10 to-[#F8C8DC]/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-[#F2D2BD]/30 hover:border-[#F2D2BD] transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
                                 >
                                     {/* Gradient Background on Hover */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-[#F2D2BD]/20 to-[#C8AFAE]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#F2D2BD]/20 to-[#F8C8DC]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                                     <div className="relative z-10">
                                         {/* YouTube Icon */}
@@ -732,10 +743,10 @@ export default function AboutPage() {
                                     href="https://wa.me/919840088867"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="group relative bg-gradient-to-br from-[#C8AFAE]/10 to-[#F8C8DC]/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-[#C8AFAE]/30 hover:border-[#C8AFAE] transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
+                                    className="group relative bg-gradient-to-br from-[#F8C8DC]/10 to-[#F8C8DC]/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-[#F8C8DC]/30 hover:border-[#F8C8DC] transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
                                 >
                                     {/* Gradient Background on Hover */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-[#C8AFAE]/20 to-[#F8C8DC]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#F8C8DC]/20 to-[#F8C8DC]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                                     <div className="relative z-10">
                                         {/* WhatsApp Icon */}
@@ -744,9 +755,9 @@ export default function AboutPage() {
                                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                                             </svg>
                                         </div>
-                                        <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#C8AFAE] transition-colors">WhatsApp</h3>
+                                        <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#F8C8DC] transition-colors">WhatsApp</h3>
                                         <p className="text-gray-400 text-sm mb-4">+91 98400 88867</p>
-                                        <div className="text-[#C8AFAE] font-semibold group-hover:underline flex items-center justify-center gap-2">
+                                        <div className="text-[#F8C8DC] font-semibold group-hover:underline flex items-center justify-center gap-2">
                                             Chat Now
                                             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -757,12 +768,12 @@ export default function AboutPage() {
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="text-center bg-gradient-to-r from-[#C8AFAE]/10 to-[#F8C8DC]/10 border border-[#C8AFAE]/30 rounded-2xl p-8">
+                            <div className="text-center bg-gradient-to-r from-[#F8C8DC]/10 to-[#F8C8DC]/10 border border-[#F8C8DC]/30 rounded-2xl p-8">
                                 <p className="text-white text-xl mb-3 font-medium">
                                     Join our community and get inspired daily!
                                 </p>
                                 <p className="text-gray-400 text-base">
-                                    📸 Share your transformation with <span className="text-[#C8AFAE] font-semibold">#alwaysbeanaplak</span>
+                                    📸 Share your transformation with <span className="text-[#F8C8DC] font-semibold">#alwaysbeanaplak</span>
                                 </p>
                             </div>
                         </div>

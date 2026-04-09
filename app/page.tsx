@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import Header from "@/components/header"
 import HeroSlider from "@/components/hero-slider"
 import About from "@/components/about"
+import WhyChooseUs from '@/components/why-choose-us'
+import CTASection from '@/components/ui/CTASection'
 
 // Dynamic imports for below-the-fold components with loading states
 const Pricing = dynamic(() => import("@/components/pricing"), {
@@ -52,7 +54,7 @@ const VideoParallax = dynamic(() => import("@/components/video_parrlex"), {
 
 export const metadata: Metadata = {
   title: 'Home - Anaplak Art And Glam',
-  description: '🏆 #1 Rated Salon in Maduravoyal! ✨ Expert Bridal Makeup, Hair Coloring, Keratin Treatment, Facials & Beauty Treatments. 16+ Years Experience | 5600+ Happy Customers | Premium Products | Ground Floor Parking. Book Now ☎️ +91-9840088867 | Open 10AM-9PM Daily',
+  description: '🏆 #1 Rated Salon in Maduravoyal! ✨ Expert Bridal Makeup, Hair Coloring, Keratin Treatment, Facials & Beauty Treatments. 16+ Years Experience | 1000+ Happy Customers | Premium Products | Ground Floor Parking. Book Now ☎️ +91-9840088867 | Open 10AM-9PM Daily',
   keywords: [
     // Primary Commercial Keywords
     'best bridal makeup artist Chennai',
@@ -127,12 +129,14 @@ export default function Home() {
     <main className="overflow-hidden">
       <Header />
       <HeroSlider />
+      <WhyChooseUs />
+      <ServicesShowcase />
       <About />
+      <Testimonials />
       <VideoParallax />
       <Features />
-      <CircularSlider />
-      <ServicesShowcase />
-      <Testimonials />
+      <CTASection />
+      {/* <CircularSlider /> */}
       <Footer />
     </main>
   )

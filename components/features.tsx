@@ -4,12 +4,12 @@ import Masonry from "react-masonry-css"
 
 export default function Features() {
   const items = [
-    { title: "", image: "/gallery1.JPG" },         // 1
-    { title: "", image: "/gallery2.JPG" },               // 2
-    { title: "", image: "/gallery3.JPG" },           // 3
-    { title: "", image: "/gallery4.JPG" },                  // 4
-    { title: "", image: "/gallery5.JPG" },           // 5
-    { title: "", image: "/gallery6.JPG" },                   // 6 (LAST)
+    { title: "", image: "/transformation-1.webp", alt: "Professional hair styling transformation at Anaplak salon" },
+    { title: "", image: "/transformation-2.webp", alt: "Bridal makeup and hair styling service" },
+    { title: "", image: "/transformation-3.webp", alt: "Expert haircut and styling result" },
+    { title: "", image: "/transformation-4.webp", alt: "Hair coloring and highlights transformation" },
+    { title: "", image: "/transformation-5.webp", alt: "Premium hair treatment results" },
+    { title: "", image: "/transformation-6.webp", alt: "Creative hairstyling and beauty transformation" },
   ]
 
   const breakpoints = {
@@ -23,7 +23,7 @@ export default function Features() {
       <div className="max-w-[1400px] mx-auto px-4">
 
         <div className="text-center mb-16">
-          <p className="text-[#C8AFAE] text-xs uppercase tracking-[0.3em] mb-3">
+          <p className="text-[#F8C8DC] text-xs uppercase tracking-[0.3em] mb-3">
             Unique Beauty Needs
           </p>
 
@@ -34,7 +34,7 @@ export default function Features() {
           {/* Desktop-only heading */}
           <h3 className="hidden md:block text-2xl md:text-3xl font-medium text-white/90 max-w-3xl mx-auto mt-6">
             Find the perfect balance between elegance and comfort with{" "}
-            <span className="text-[#C8AFAE]">hairstyles</span>
+            <span className="text-[#F8C8DC]">hairstyles</span>
           </h3>
 
           <p className="text-gray-400 max-w-xl mx-auto mt-4">
@@ -53,6 +53,7 @@ export default function Features() {
               <div key={i} className="mb-6 overflow-hidden rounded">
                 <img
                   src={item.image}
+                  alt={item.alt}
                   className={`
       w-full object-cover 
       ${i === 0 ? "h-[380px]" : ""}

@@ -174,16 +174,22 @@ export default function GalleryShowcase() {
             <AnimatePresence>
                 {selectedImage !== null && (
                     <motion.div
+                        id="gallery-lightbox"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm"
                         onClick={closeLightbox}
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label="Image lightbox"
                     >
                         {/* Close Button */}
                         <button
                             onClick={closeLightbox}
                             className="absolute top-4 right-4 z-50 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all"
+                            aria-label="Close image"
+                            aria-controls="gallery-lightbox"
                         >
                             <X size={28} />
                         </button>
@@ -195,6 +201,8 @@ export default function GalleryShowcase() {
                                 navigateImage('prev');
                             }}
                             className="absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all"
+                            aria-label="Previous image"
+                            aria-controls="gallery-lightbox"
                         >
                             <ChevronLeft size={32} />
                         </button>
@@ -205,6 +213,8 @@ export default function GalleryShowcase() {
                                 navigateImage('next');
                             }}
                             className="absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all"
+                            aria-label="Next Image"
+                            aria-controls="gallery-lightbox"
                         >
                             <ChevronRight size={32} />
                         </button>

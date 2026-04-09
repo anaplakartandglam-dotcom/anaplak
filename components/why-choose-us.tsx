@@ -28,8 +28,8 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "16+ Years Excellence",
-            description: "Trusted by 5600+ satisfied customers since 2008. Award-winning salon with proven expertise.",
-            color: "#C8AFAE",
+            description: "Trusted by 1000+ satisfied customers since 2008. Award-winning salon with proven expertise.",
+            color: "#F8C8DC",
         },
         {
             icon: Sparkles,
@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
             icon: Shield,
             title: "Hygiene First",
             description: "Sterilized tools, premium sanitization, and strict safety protocols for your peace of mind.",
-            color: "#C8AFAE",
+            color: "#F8C8DC",
         },
         {
             icon: Clock,
@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
     return (
         <section ref={sectionRef} className="relative bg-[#0E0E0E] py-20 md:py-32 overflow-hidden">
             {/* Background Gradient Effects */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-[#C8AFAE]/5 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-[#F8C8DC]/5 via-transparent to-transparent" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-[#F8C8DC]/5 via-transparent to-transparent" />
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,12 +75,12 @@ export default function WhyChooseUs() {
                     className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                         }`}
                 >
-                    <p className="text-[#C8AFAE] uppercase tracking-[0.3em] text-sm mb-4 font-medium">
+                    <p className="text-[#F8C8DC] uppercase tracking-[0.3em] text-sm mb-4 font-medium">
                         Why Choose Anaplak
                     </p>
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
                         Your Beauty, Our{" "}
-                        <span className="text-[#C8AFAE] italic">Promise</span>
+                        <span className="text-[#F8C8DC] italic">Promise</span>
                     </h2>
                     <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
                         Experience the difference of a salon that truly cares about your beauty journey.
@@ -95,7 +95,7 @@ export default function WhyChooseUs() {
                         return (
                             <div
                                 key={index}
-                                className={`group relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#C8AFAE]/50 transition-all duration-500 hover:transform hover:scale-105 ${isVisible
+                                className={`group relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#F8C8DC]/50 transition-all duration-500 hover:transform hover:scale-105 ${isVisible
                                         ? "opacity-100 translate-y-0"
                                         : "opacity-0 translate-y-8"
                                     }`}
@@ -104,7 +104,7 @@ export default function WhyChooseUs() {
                                 }}
                             >
                                 {/* Gradient Overlay on Hover */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#C8AFAE]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#F8C8DC]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
 
                                 {/* Content */}
                                 <div className="relative z-10">
@@ -122,7 +122,7 @@ export default function WhyChooseUs() {
                                     </div>
 
                                     {/* Title */}
-                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#C8AFAE] transition-colors duration-300">
+                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#F8C8DC] transition-colors duration-300">
                                         {feature.title}
                                     </h3>
 
@@ -154,21 +154,18 @@ export default function WhyChooseUs() {
                             href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group relative px-8 py-4 bg-gradient-to-r from-[#C8AFAE] to-[#F8C8DC] text-black font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                            className="group relative px-8 py-4 bg-gradient-to-r from-[#F8C8DC] to-[#F8C8DC] text-black font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                         >
                             <span className="relative z-10">Book Your Appointment</span>
                             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                         </a>
                         <a
                             href="tel:+919840088867"
-                            className="px-8 py-4 border-2 border-[#C8AFAE] text-[#C8AFAE] font-semibold rounded-full hover:bg-[#C8AFAE] hover:text-black transition-all duration-300"
+                            className="px-8 py-4 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all duration-300"
                         >
                             Call +91 98400 88867
                         </a>
                     </div>
-                    <p className="text-gray-400 text-sm mt-6">
-                        ⭐ Rated 4.9/5 by 5600+ Happy Customers
-                    </p>
                 </div>
             </div>
         </section>

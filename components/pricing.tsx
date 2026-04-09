@@ -49,7 +49,7 @@ export default function Pricing() {
       {/* MORE VISIBLE SCISSORS BG */}
       <img
         src={bg}
-        alt="scissors"
+        alt=""
         className="
           absolute top-1/2 left-1/2
           -translate-x-1/2 -translate-y-1/2
@@ -80,9 +80,8 @@ export default function Pricing() {
         </div>
 
         {/* TABS – ALWAYS IN 1 ROW (MOBILE FRIENDLY) */}
-     {/* TABS — MOBILE SPECIAL DESIGN */}
 {/* TABS — MOBILE SPECIAL DESIGN */}
-<div className="mb-12 sm:mb-16 max-w-md mx-auto">
+ <div className="mb-12 sm:mb-16 max-w-md mx-auto">
 
   {/* Outer pill background */}
   <div className="
@@ -93,7 +92,7 @@ export default function Pricing() {
     w-full
     shadow-md
     border border-[#1C1C1C]
-  ">
+  " role="tablist" aria-label="Service pricing tabs">
     {tabs.map((tab, idx) => {
       const active = activeTab === idx
 
@@ -117,6 +116,10 @@ export default function Pricing() {
                 : "text-gray-200"
             }
           `}
+          role="tab"
+          aria-selected={active}
+          aria-controls={`pricing-panel-${idx}`}
+          id={`pricing-tab-${idx}`}
         >
           {tab.name}
         </button>
@@ -128,7 +131,11 @@ export default function Pricing() {
 
 
         {/* PRICE LIST */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12 max-w-5xl mx-auto">
+        <div 
+          id={`pricing-panel-${activeTab}`}
+          role="tabpanel"
+          aria-labelledby={`pricing-tab-${activeTab}`}
+          className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12 max-w-5xl mx-auto">
           {tabs[activeTab].services.map((item, idx) => (
             <div key={idx} className="pb-4 sm:pb-6">
               <div className="flex items-center justify-between mb-2 sm:mb-3">

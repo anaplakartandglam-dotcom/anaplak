@@ -34,8 +34,8 @@ export default function Team() {
       <div className="max-w-[1400px] mx-auto px-6">
 
         <div className="w-full mb-12">
-  <h2
-  className="
+          <h2
+            className="
     text-white 
     font-semibold 
     leading-[1.25] 
@@ -50,16 +50,16 @@ export default function Team() {
     md:text-left
     text-justify md:text-left     /* ← Added for mobile justify */
   "
->
-  EACH SPECIALIST IS DEDICATED TO UNDERSTANDING YOUR GOALS,
-  <br className="hidden md:block" />
-  ENSURING TREATMENTS ARE{" "}
-  <span className="italic font-light">
-    TAILORED TO YOUR UNIQUE BEAUTY NEEDS
-  </span>
-</h2>
+          >
+            EACH SPECIALIST IS DEDICATED TO UNDERSTANDING YOUR GOALS,
+            <br className="hidden md:block" />
+            ENSURING TREATMENTS ARE{" "}
+            <span className="italic font-light">
+              TAILORED TO YOUR UNIQUE BEAUTY NEEDS
+            </span>
+          </h2>
 
-</div>
+        </div>
 
 
         <div className="flex gap-4 justify-end mb-4">
@@ -67,6 +67,8 @@ export default function Team() {
             onClick={() => scroll("left")}
             className="w-12 h-12 border border-white/20 rounded-full flex items-center justify-center
             text-white hover:bg-white hover:text-black transition cursor-pointer"
+            aria-label="scroll left"
+            aria-controls="team-slider"
           >
             <ChevronLeft size={22} />
           </button>
@@ -75,6 +77,8 @@ export default function Team() {
             onClick={() => scroll("right")}
             className="w-12 h-12 border border-white/20 rounded-full flex items-center justify-center
             text-white hover:bg-white hover:text-black transition cursor-pointer"
+            aria-label="scroll right"
+            aria-controls="team-slider"
           >
             <ChevronRight size={22} />
           </button>
@@ -82,8 +86,11 @@ export default function Team() {
 
         {/* SLIDER */}
         <div
+          id="team-slider"
           ref={scrollRef}
           className="flex gap-6 overflow-x-scroll no-scrollbar scroll-smooth"
+          role="region"
+          aria-label="Team members carousel"
           style={{
             scrollSnapType: "x mandatory",
           }}

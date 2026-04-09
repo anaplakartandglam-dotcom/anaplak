@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFaceSmile, faStar } from "@fortawesome/free-solid-svg-icons"
 
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0)
@@ -14,22 +17,22 @@ export default function HeroSlider() {
     {
       line1: "PREMIUM SALON",
       line2: "BEAUTY EXPERTS",
-      image: "/SLIDE_01.jpg",
+      image: "/SLIDE_01.webp",
     },
     {
       line1: "BRIDAL MAKEUP",
       line2: "GLAM STUDIO",
-      image: "/SLIDE_02.jpg",
+      image: "/SLIDE_02.webp",
     },
     {
       line1: "STYLE DESIGN",
       line2: "HAIR ARTISTS",
-      image: "/SLIDE_03.jpg",
+      image: "/SLIDE_03.webp",
     },
     {
       line1: "SKIN CARE",
       line2: "BEAUTY BAR",
-      image: "/SLIDE_04.jpg",
+      image: "/SLIDE_04.webp",
     },
   ]
 
@@ -42,7 +45,7 @@ export default function HeroSlider() {
   }, [])
 
   return (
-    <section className="relative h-screen overflow-hidden bg-transparent">
+    <section className="relative min-h-screen overflow-hidden bg-transparent">
 
       {/* SLIDES STACK — FADES + ZOOMS */}
       {slides.map((slide, index) => (
@@ -58,6 +61,7 @@ export default function HeroSlider() {
             alt={`${slide.line1} ${slide.line2}`}
             fill
             priority={index === 0}
+            fetchPriority={index === 0 ? "high" : "auto"}
             quality={90}
             sizes="100vw"
             className={`
@@ -70,9 +74,11 @@ export default function HeroSlider() {
         </div>
       ))}
 
+      <div className="absolute inset-0 w-full h-full bg-black/40" />
+
       {/* CONTENT */}
-      <div className="absolute left-0 right-0 bottom-0 flex items-center" style={{ top: '200px' }}>
-        <div className="pl-6 sm:pl-10 md:pl-16 lg:pl-24">
+      <div className="absolute inset-0 flex items-center" style={{ top: '140px' }}>
+        <div className="pl-6 sm:pl-10 md:pl-16 lg:pl-24 max-w-[1000px]">
 
           {/* LINE 1 */}
           <h1
@@ -84,68 +90,83 @@ export default function HeroSlider() {
               animationDelay: "0.2s",
             }}
           >
-            <span
-              className="block 
-                text-[45px] 
-                sm:text-[70px] 
-                md:text-[95px] 
-                lg:text-[115px]"
-            >
+            <span className="block text-[35px] sm:text-[45px] md:text-[55px] lg:text-[70px]">
               {slides[current].line1}
             </span>
-          </h1>
-
-          {/* LINE 2 */}
-          <h1
-            className="uppercase text-[#e8ded3] mt-1 animate-fadeUp"
-            style={{
-              fontFamily: "Gilroy",
-              fontWeight: 800,
-              lineHeight: "1.05",
-              animationDelay: "0.4s",
-            }}
-          >
-            <span
-              className="block 
-                text-[45px] 
-                sm:text-[70px] 
-                md:text-[95px] 
-                lg:text-[115px]"
-            >
+            <span className="block text-[35px] sm:text-[45px] md:text-[55px] lg:text-[70px]">
               {slides[current].line2}
             </span>
           </h1>
 
-          {/* BUTTON */}
-          <button
-            className="mt-8 px-12 py-4 rounded-full shadow-lg transition-all duration-500 animate-fadeUp"
-            style={{
-              backgroundColor: PRIMARY,
-              color: SECONDARY,
-              fontFamily: "Gilroy",
-              fontWeight: 600,
-              fontSize: "14px",
-              letterSpacing: "3px",
-              textTransform: "uppercase",
-              animationDelay: "0.6s",
-              boxShadow: "0 0 20px rgba(83,103,92,0.35)",
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.backgroundColor = SECONDARY
-              e.currentTarget.style.color = PRIMARY
-              e.currentTarget.style.boxShadow = "0 0 34px rgba(248,200,220,0.45)"
-              e.currentTarget.style.transform = "translateY(-3px)"
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.backgroundColor = PRIMARY
-              e.currentTarget.style.color = SECONDARY
-              e.currentTarget.style.boxShadow = "0 0 20px rgba(83,103,92,0.35)"
-              e.currentTarget.style.transform = "translateY(0px)"
-            }}
+          {/* SUBTEXT (CLEAN & PREMIUM) */}
+          <p
+            className="mt-4 text-[16px] sm:text-[18px] md:text-[20px] text-[#e8ded3]/90 max-w-[650px] animate-fadeUp"
+            style={{ animationDelay: "0.4s" }}
           >
-            Read More
-          </button>
+            Premium bridal makeup, luxury hair styling & personalized beauty services in Chennai.
+          </p>
 
+          {/* CTA BUTTONS */}
+          <div
+            className="flex flex-wrap items-center gap-4 mt-8 animate-fadeUp"
+            style={{ animationDelay: "0.6s" }}
+          >
+            <Link
+              href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+              target="_blank"
+            >
+              {/* PRIMARY CTA */}
+              <button
+                className="px-10 py-4 rounded-full transition-all duration-400 cursor-pointer"
+                style={{
+                  backgroundColor: PRIMARY,
+                  color: SECONDARY,
+                  fontFamily: "Gilroy",
+                  fontWeight: 600,
+                  fontSize: "13px",
+                  letterSpacing: "2px",
+                  textTransform: "uppercase",
+                  boxShadow: "0 0 25px rgba(83,103,92,0.45)",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = SECONDARY
+                  e.currentTarget.style.color = PRIMARY
+                  e.currentTarget.style.transform = "translateY(-3px)"
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = PRIMARY
+                  e.currentTarget.style.color = SECONDARY
+                  e.currentTarget.style.transform = "translateY(0px)"
+                }}
+                aria-label="Book appointment"
+              >
+                Book Appointment
+              </button>
+            </Link>
+
+            {/* SECONDARY CTA */}
+            <a
+              href="https://wa.me/919840088867"
+              target="_blank"
+              className="px-8 py-4 rounded-full border border-white/40 text-white text-[13px] tracking-[2px] uppercase transition-all duration-300 hover:bg-white hover:text-black"
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "translateY(-3px)"
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "translateY(0px)"
+              }}
+            >
+              WhatsApp Now
+            </a>
+          </div>
+
+          {/* TRUST SIGNAL */}
+          <div
+            className="mt-6 text-white/80 text-sm animate-fadeUp"
+            style={{ animationDelay: "0.8s" }}
+          >
+            <FontAwesomeIcon icon={faStar} className="mr-1 text-yellow-400" /> Rated 4.9/5 by 1000+ Happy Customers
+          </div>
 
         </div>
       </div>

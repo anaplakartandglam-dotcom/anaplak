@@ -27,13 +27,13 @@ export default function CircleSection() {
       {/* LEFT/RIGHT IMAGES — HIDDEN ON MOBILE */}
       <div className="absolute left-[2%] top-[18%] hidden lg:block">
         <div className="w-[260px] h-[260px] border border-white/10 rounded-full flex items-center justify-center">
-          <img src="/circle_l-500x500.jpg" className="w-[210px] h-[210px] rounded-full object-cover" />
+          <img src="/circle_l-500x500.jpg" alt="" className="w-[210px] h-[210px] rounded-full object-cover" />
         </div>
       </div>
 
       <div className="absolute right-[2%] top-[58%] hidden lg:block">
         <div className="w-[260px] h-[260px] border border-white/10 rounded-full flex items-center justify-center">
-          <img src="/circle_r.jpg" className="w-[210px] h-[210px] rounded-full object-cover" />
+          <img src="/circle_r.jpg" alt="" className="w-[210px] h-[210px] rounded-full object-cover" />
         </div>
       </div>
 
@@ -66,6 +66,7 @@ export default function CircleSection() {
         >
           <img
             src="/newk.png"
+            alt=""
             className="w-full h-full object-cover"
             style={{ objectPosition: '52% center' }}
           />
