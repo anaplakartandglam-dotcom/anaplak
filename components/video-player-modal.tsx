@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { X, Play, Pause, Volume2, VolumeX, Maximize2 } from "lucide-react"
+import Image from "next/image"
 
 export default function VideoPlayerModal({
   isOpen,
@@ -88,9 +89,11 @@ export default function VideoPlayerModal({
           {/* FALLBACK IMAGE IF YOUTUBE BLOCKS AUTOPLAY */}
           {!isPlaying && (
             <>
-              <img
+              <Image
                 src="/video_parralax.jpg"
-                className="w-full h-full object-cover opacity-80"
+                fill
+                sizes="(max-width: 420px) 100vw, 420px"
+                className="object-cover opacity-80"
                 alt="Video thumbnail"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40">

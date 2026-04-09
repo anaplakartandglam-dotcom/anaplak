@@ -1,5 +1,7 @@
-[00:00:10.735] Server  LOG      ✓ Ready in 8.5s
-[00:00:10.994] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:07.406] Server  LOG      ✓ Ready in 6.2s
+[00:00:10.543] Server  LOG      ○ Compiling / ...
+[00:00:37.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.890] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -10,131 +12,6 @@
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
 https://react.dev/link/hydration-mismatch
-
-  ...
-    <LoadingBoundary name="/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-                <SegmentViewNode type="page" pagePath="page.tsx">
-                  <SegmentTrieNode>
-                  <Home>
-                    <main className="overflow-h...">
-                      <Header>
-                      <HeroSlider>
-                      <WhyChooseUs>
-                      <Suspense>
-                      <About>
-                      <LoadableComponent>
-                        <Suspense fallback={<div>}>
-                          <PreloadChunks>
-                          <Testimonials>
-                            <section ref={{current:null}} className="jsx-c21cbb...">
-                              <div className="jsx-c21cbb...">
-                                <div>
-                                <div>
-                                <div
-+                                 className="jsx-c21cbb298a0e5551 flex justify-center items-center py-20"
--                                 className="jsx-c21cbb298a0e5551 grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
--                                 id="testimonials-carousel"
--                                 role="region"
--                                 aria-label="Customer reviews carousel"
-                                >
-                                  <div
-+                                   className="jsx-c21cbb298a0e5551 animate-spin rounded-full h-12 w-12 border-t-2 bor..."
--                                   className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-lg p-6 hover:border-[#F8C8..."
--                                   style={{animation-duration:"0.6s",animation-timing-function:"ease-out",animation-delay:"0s", ...}}
-                                  >
--                                   <div className="flex items-start gap-4 mb-4">
--                                   <div className="flex gap-0.5 mb-3">
--                                   <p id="review-text-0" className="text-gray-300 text-sm leading-relaxed">
--                                   <button
--                                     className="text-[#F8C8DC] text-sm font-medium mt-2 hover:underline"
--                                     aria-controls="review-text-0"
--                                     aria-expanded="false"
--                                   >
-                              ...
-                      ...
-                ...
-              ...
-
-[00:00:14.135] Server  LOG      ○ Compiling / ...
-[00:00:25.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:26.575] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:27.968] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <LoadingBoundary name="/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-                <SegmentViewNode type="page" pagePath="page.tsx">
-                  <SegmentTrieNode>
-                  <Home>
-                    <main className="overflow-h...">
-                      <Header>
-                      <HeroSlider>
-                      <WhyChooseUs>
-                      <Suspense>
-                      <About>
-                      <LoadableComponent>
-                        <Suspense fallback={<div>}>
-                          <PreloadChunks>
-                          <Testimonials>
-                            <section ref={{current:null}} className="jsx-c21cbb...">
-                              <div className="jsx-c21cbb...">
-                                <div>
-                                <div>
-                                <div
-+                                 className="jsx-c21cbb298a0e5551 flex justify-center items-center py-20"
--                                 className="jsx-c21cbb298a0e5551 grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
--                                 id="testimonials-carousel"
--                                 role="region"
--                                 aria-label="Customer reviews carousel"
-                                >
-                                  <div
-+                                   className="jsx-c21cbb298a0e5551 animate-spin rounded-full h-12 w-12 border-t-2 bor..."
--                                   className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-lg p-6 hover:border-[#F8C8..."
--                                   style={{animation-duration:"0.6s",animation-timing-function:"ease-out",animation-delay:"0s", ...}}
-                                  >
--                                   <div className="flex items-start gap-4 mb-4">
--                                   <div className="flex gap-0.5 mb-3">
--                                   <p id="review-text-0" className="text-gray-300 text-sm leading-relaxed">
--                                   <button
--                                     className="text-[#F8C8DC] text-sm font-medium mt-2 hover:underline"
--                                     aria-controls="review-text-0"
--                                     aria-expanded="false"
--                                   >
-                              ...
-                      ...
-                ...
-              ...
-
-[00:00:28.954] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
 
   ...
     <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
@@ -158,14 +35,163 @@ It can also happen if the client has a browser extension installed which messes 
 -                           data-new-gr-c-s-check-loaded="14.1135.0"
 -                           data-gr-ext-installed=""
                           >
+                            <Script>
+                            <Script>
+                            <Script>
+                            <Script>
+                            ...
+                              <Home>
+                                <main className="overflow-h...">
+                                  <Header>
+                                    <div className={"   flex ..."} style={{...}}>
+                                      <div className="w-full px-...">
+                                        <a>
+                                        <div>
+                                        <div className="flex items...">
+                                          <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/instagram.webp"
+-                                             src={"/_next/image?url=%2Finstagram.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="Instagram"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Finstagram.webp&w=32&q=75 1x, /_next/image?..."}
+                                            >
+                                          <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/facebook.webp"
+-                                             src={"/_next/image?url=%2Ffacebook.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="Facebook"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Ffacebook.webp&w=32&q=75 1x, /_next/image?u..."}
+                                            >
+                                          <a href="https://wa..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/whatsapp.webp"
+-                                             src={"/_next/image?url=%2Fwhatsapp.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="WhatsApp"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Fwhatsapp.webp&w=32&q=75 1x, /_next/image?u..."}
+                                            >
+                                          <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/youtube.webp"
+-                                             src={"/_next/image?url=%2Fyoutube.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="YouTube"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Fyoutube.webp&w=32&q=75 1x, /_next/image?ur..."}
+                                            >
+                                    <header>
+                                    <div id="mobile-menu" className={"\n      ..."} role="dialog" aria-modal="true" ...>
+                                      <button>
+                                      <div>
+                                      <div>
+                                      <div>
+                                      <div className="flex gap-6...">
+                                        <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/instagram.webp"
+-                                           src={"/_next/image?url=%2Finstagram.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="Instagram"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Finstagram.webp&w=32&q=75 1x, /_next/image?ur..."}
+                                          >
+                                        <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/facebook.webp"
+-                                           src={"/_next/image?url=%2Ffacebook.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="Facebook"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Ffacebook.webp&w=32&q=75 1x, /_next/image?url..."}
+                                          >
+                                        <a href="https://wa..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/whatsapp.webp"
+-                                           src={"/_next/image?url=%2Fwhatsapp.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="WhatsApp"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Fwhatsapp.webp&w=32&q=75 1x, /_next/image?url..."}
+                                          >
+                                        <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/youtube.webp"
+-                                           src={"/_next/image?url=%2Fyoutube.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="YouTube"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Fyoutube.webp&w=32&q=75 1x, /_next/image?url=..."}
+                                          >
+                                  <HeroSlider>
+                                  <WhyChooseUs>
+                                  <Suspense>
+                                  <About>
+                                    <section ref={{current:null}} className="bg-[#0E0E0...">
+                                      <div className="w-full gri...">
+                                        <div className="transition...">
++                                         <img
++                                           src="/make-up.webp"
++                                           alt="Professional bridal makeup artist at Anaplak salon"
++                                           className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
++                                         >
+-                                         <div className="relative w-full h-[650px] md:h-[780px]">
+                                          ...
+                                        ...
+                                  ...
+                            ...
                   ...
 
-[00:00:28.955] Browser WARN    Image with src "/logo_updated.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.050] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:47.920] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:35.141] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:38.841] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:39.947] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:42.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:43.529] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -175,7 +201,186 @@ It can also happen if the client has a browser extension installed which messes 
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-%s%s https://react.dev/link/hydration-mismatch 
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+          <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+                  <SegmentViewNode type="page" pagePath="page.tsx">
+                    <SegmentTrieNode>
+                    <Home>
+                      <main className="overflow-h...">
+                        <Header>
+                          <div className={"   flex ..."} style={{...}}>
+                            <div className="w-full px-...">
+                              <a>
+                              <div>
+                              <div className="flex items...">
+                                <a href="https://ww..." target="_blank" rel="noopener n..." aria-label="Follow us ...">
+                                  <img
++                                   src="/instagram.webp"
+-                                   src={"/_next/image?url=%2Finstagram.webp&w=48&q=75"}
++                                   alt=""
+-                                   alt="Instagram"
+                                    className="w-[18px] h-[18px]"
+-                                   width="18"
+-                                   height="18"
+-                                   decoding="async"
+-                                   data-nimg="1"
+-                                   style={{color:"transparent"}}
+-                                   srcset={"/_next/image?url=%2Finstagram.webp&w=32&q=75 1x, /_next/image?url=%2Fins..."}
+                                  >
+                                <a href="https://ww..." target="_blank" rel="noopener n..." aria-label="Follow us ...">
+                                  <img
++                                   src="/facebook.webp"
+-                                   src={"/_next/image?url=%2Ffacebook.webp&w=48&q=75"}
++                                   alt=""
+-                                   alt="Facebook"
+                                    className="w-[18px] h-[18px]"
+-                                   width="18"
+-                                   height="18"
+-                                   decoding="async"
+-                                   data-nimg="1"
+-                                   style={{color:"transparent"}}
+-                                   srcset={"/_next/image?url=%2Ffacebook.webp&w=32&q=75 1x, /_next/image?url=%2Fface..."}
+                                  >
+                                <a href="https://wa..." target="_blank" rel="noopener n..." aria-label="Contact us...">
+                                  <img
++                                   src="/whatsapp.webp"
+-                                   src={"/_next/image?url=%2Fwhatsapp.webp&w=48&q=75"}
++                                   alt=""
+-                                   alt="WhatsApp"
+                                    className="w-[18px] h-[18px]"
+-                                   width="18"
+-                                   height="18"
+-                                   decoding="async"
+-                                   data-nimg="1"
+-                                   style={{color:"transparent"}}
+-                                   srcset={"/_next/image?url=%2Fwhatsapp.webp&w=32&q=75 1x, /_next/image?url=%2Fwhat..."}
+                                  >
+                                <a href="https://ww..." target="_blank" rel="noopener n..." aria-label="Subscribe ...">
+                                  <img
++                                   src="/youtube.webp"
+-                                   src={"/_next/image?url=%2Fyoutube.webp&w=48&q=75"}
++                                   alt=""
+-                                   alt="YouTube"
+                                    className="w-[18px] h-[18px]"
+-                                   width="18"
+-                                   height="18"
+-                                   decoding="async"
+-                                   data-nimg="1"
+-                                   style={{color:"transparent"}}
+-                                   srcset={"/_next/image?url=%2Fyoutube.webp&w=32&q=75 1x, /_next/image?url=%2Fyoutu..."}
+                                  >
+                          <header>
+                          <div id="mobile-menu" className={"\n      ..."} role="dialog" aria-modal="true" ...>
+                            <button>
+                            <div>
+                            <div>
+                            <div>
+                            <div className="flex gap-6...">
+                              <a href="https://ww..." target="_blank" rel="noopener n..." aria-label="Follow us ...">
+                                <img
++                                 src="/instagram.webp"
+-                                 src={"/_next/image?url=%2Finstagram.webp&w=48&q=75"}
++                                 alt=""
+-                                 alt="Instagram"
+                                  className="w-[24px] h-[24px]"
+-                                 loading="lazy"
+-                                 width="24"
+-                                 height="24"
+-                                 decoding="async"
+-                                 data-nimg="1"
+-                                 style={{color:"transparent"}}
+-                                 srcset={"/_next/image?url=%2Finstagram.webp&w=32&q=75 1x, /_next/image?url=%2Finsta..."}
+                                >
+                              <a href="https://ww..." target="_blank" rel="noopener n..." aria-label="Follow us ...">
+                                <img
++                                 src="/facebook.webp"
+-                                 src={"/_next/image?url=%2Ffacebook.webp&w=48&q=75"}
++                                 alt=""
+-                                 alt="Facebook"
+                                  className="w-[24px] h-[24px]"
+-                                 loading="lazy"
+-                                 width="24"
+-                                 height="24"
+-                                 decoding="async"
+-                                 data-nimg="1"
+-                                 style={{color:"transparent"}}
+-                                 srcset={"/_next/image?url=%2Ffacebook.webp&w=32&q=75 1x, /_next/image?url=%2Ffacebo..."}
+                                >
+                              <a href="https://wa..." target="_blank" rel="noopener n..." aria-label="Contact us...">
+                                <img
++                                 src="/whatsapp.webp"
+-                                 src={"/_next/image?url=%2Fwhatsapp.webp&w=48&q=75"}
++                                 alt=""
+-                                 alt="WhatsApp"
+                                  className="w-[24px] h-[24px]"
+-                                 loading="lazy"
+-                                 width="24"
+-                                 height="24"
+-                                 decoding="async"
+-                                 data-nimg="1"
+-                                 style={{color:"transparent"}}
+-                                 srcset={"/_next/image?url=%2Fwhatsapp.webp&w=32&q=75 1x, /_next/image?url=%2Fwhatsa..."}
+                                >
+                              <a href="https://ww..." target="_blank" rel="noopener n..." aria-label="Subscribe ...">
+                                <img
++                                 src="/youtube.webp"
+-                                 src={"/_next/image?url=%2Fyoutube.webp&w=48&q=75"}
++                                 alt=""
+-                                 alt="YouTube"
+                                  className="w-[24px] h-[24px]"
+-                                 loading="lazy"
+-                                 width="24"
+-                                 height="24"
+-                                 decoding="async"
+-                                 data-nimg="1"
+-                                 style={{color:"transparent"}}
+-                                 srcset={"/_next/image?url=%2Fyoutube.webp&w=32&q=75 1x, /_next/image?url=%2Fyoutube..."}
+                                >
+                        <HeroSlider>
+                        <WhyChooseUs>
+                        <Suspense>
+                        <About>
+                          <section ref={{current:null}} className="bg-[#0E0E0...">
+                            <div className="w-full gri...">
+                              <div className="transition...">
++                               <img
++                                 src="/make-up.webp"
++                                 alt="Professional bridal makeup artist at Anaplak salon"
++                                 className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
++                               >
+-                               <div className="relative w-full h-[650px] md:h-[780px]">
+                                ...
+                              ...
+                        ...
+                  ...
+                ...
+
+[00:00:50.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:58.141] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:04.230] Browser WARN    Image with src "/logo_updated.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:17.726] Server  LOG      ○ Compiling /robots.txt ...
+[00:02:25.975] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:32.328] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:34.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:35.490] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
 
   ...
     <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
@@ -199,10 +404,229 @@ It can also happen if the client has a browser extension installed which messes 
 -                           data-new-gr-c-s-check-loaded="14.1135.0"
 -                           data-gr-ext-installed=""
                           >
+                            <Script>
+                            <Script>
+                            <Script>
+                            <Script>
+                            ...
+                              <Home>
+                                <main className="overflow-h...">
+                                  <Header>
+                                    <div className={"   flex ..."} style={{...}}>
+                                      <div className="w-full px-...">
+                                        <a>
+                                        <div>
+                                        <div className="flex items...">
+                                          <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/instagram.webp"
+-                                             src={"/_next/image?url=%2Finstagram.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="Instagram"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Finstagram.webp&w=32&q=75 1x, /_next/image?..."}
+                                            >
+                                          <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/facebook.webp"
+-                                             src={"/_next/image?url=%2Ffacebook.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="Facebook"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Ffacebook.webp&w=32&q=75 1x, /_next/image?u..."}
+                                            >
+                                          <a href="https://wa..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/whatsapp.webp"
+-                                             src={"/_next/image?url=%2Fwhatsapp.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="WhatsApp"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Fwhatsapp.webp&w=32&q=75 1x, /_next/image?u..."}
+                                            >
+                                          <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                            <img
++                                             src="/youtube.webp"
+-                                             src={"/_next/image?url=%2Fyoutube.webp&w=48&q=75"}
++                                             alt=""
+-                                             alt="YouTube"
+                                              className="w-[18px] h-[18px]"
+-                                             width="18"
+-                                             height="18"
+-                                             decoding="async"
+-                                             data-nimg="1"
+-                                             style={{color:"transparent"}}
+-                                             srcset={"/_next/image?url=%2Fyoutube.webp&w=32&q=75 1x, /_next/image?ur..."}
+                                            >
+                                    <header>
+                                    <div id="mobile-menu" className={"\n      ..."} role="dialog" aria-modal="true" ...>
+                                      <button>
+                                      <div>
+                                      <div>
+                                      <div>
+                                      <div className="flex gap-6...">
+                                        <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/instagram.webp"
+-                                           src={"/_next/image?url=%2Finstagram.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="Instagram"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Finstagram.webp&w=32&q=75 1x, /_next/image?ur..."}
+                                          >
+                                        <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/facebook.webp"
+-                                           src={"/_next/image?url=%2Ffacebook.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="Facebook"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Ffacebook.webp&w=32&q=75 1x, /_next/image?url..."}
+                                          >
+                                        <a href="https://wa..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/whatsapp.webp"
+-                                           src={"/_next/image?url=%2Fwhatsapp.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="WhatsApp"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Fwhatsapp.webp&w=32&q=75 1x, /_next/image?url..."}
+                                          >
+                                        <a href="https://ww..." target="_blank" rel="noopener n..." ...>
+                                          <img
++                                           src="/youtube.webp"
+-                                           src={"/_next/image?url=%2Fyoutube.webp&w=48&q=75"}
++                                           alt=""
+-                                           alt="YouTube"
+                                            className="w-[24px] h-[24px]"
+-                                           loading="lazy"
+-                                           width="24"
+-                                           height="24"
+-                                           decoding="async"
+-                                           data-nimg="1"
+-                                           style={{color:"transparent"}}
+-                                           srcset={"/_next/image?url=%2Fyoutube.webp&w=32&q=75 1x, /_next/image?url=..."}
+                                          >
+                                  <HeroSlider>
+                                  <WhyChooseUs>
+                                  <Suspense>
+                                  <About>
+                                    <section ref={{current:null}} className="bg-[#0E0E0...">
+                                      <div className="w-full gri...">
+                                        <div className="transition...">
++                                         <img
++                                           src="/make-up.webp"
++                                           alt="Professional bridal makeup artist at Anaplak salon"
++                                           className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
++                                         >
+-                                         <div className="relative w-full h-[650px] md:h-[780px]">
+                                          ...
+                                        ...
+                                  ...
+                            ...
                   ...
 
-[00:01:40.923] Browser WARN    Image with src "/logo_updated.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:46.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:18.376] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:58.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:07.479] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:58.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:20.038] Browser WARN    Image with src "/logo_updated.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:47.101] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:56.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:09:08.687] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:33:37.749] Server  LOG      ○ Compiling /services ...
+[01:33:39.900] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:39.900] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:39.900] Browser WARN    Image with src "/transformation-1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:39.900] Browser WARN    Image with src "/hair-coloring.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:39.900] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:39.900] Browser WARN    Image with src "/hair_extension.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:41.638] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:41.638] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:41.968] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:41.968] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:42.284] Browser WARN    Image with src "/luxury-manicure-pedicure-nail-salon-spa-treatment.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:42.284] Browser WARN    Image with src "/eyebrow-and-waxing.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:42.284] Browser WARN    Image with src "/nails-2.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:44.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:52:45.318] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/gallery" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" className="__variable...">
+                          <head>
+                          <body
+                            className="font-dm-sans antialiased bg-black text-gray-100"
+-                           data-new-gr-c-s-check-loaded="14.1135.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[01:52:52.191] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:52:53.864] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:52:54.427] Browser WARN    Image with src "/engagement-makeup-look-natural-glowing-beauty.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:54.427] Browser WARN    Image with src "/elegant-bride-makeup-and-hairstyling-beauty-portra.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:54.427] Browser WARN    Image with src "/transformation-1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:54.427] Browser WARN    Image with src "/professional-hair-styling-salon-treatment-luxury.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:54.428] Browser WARN    Image with src "/hair-coloring.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:54.428] Browser WARN    Image with src "/hair_extension.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:55.750] Browser WARN    Image with src "/glamorous-party-makeup-evening-look-celebration.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:55.750] Browser WARN    Image with src "/professional-makeup-artist-beauty-glamour-studio.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:55.882] Browser WARN    Image with src "/luxury-facial-treatment-spa-skincare-relaxation.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:55.882] Browser WARN    Image with src "/anti-aging-skincare-treatment-youthful-glowing-ski.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:56.565] Browser WARN    Image with src "/luxury-manicure-pedicure-nail-salon-spa-treatment.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:56.565] Browser WARN    Image with src "/nails-2.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:56.565] Browser WARN    Image with src "/eyebrow-and-waxing.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

@@ -33,6 +33,7 @@ export default function Footer() {
             src="/logo_updated.webp"
             alt="Anaplak Art And Glam Salon"
             fill
+            sizes="200px"
             style={{ objectFit: 'contain', objectPosition: 'center' }}
           />
         </div>
@@ -94,17 +95,17 @@ export default function Footer() {
 
         {/* SOCIAL (MOBILE) */}
         <div className="flex gap-10 text-[#D2B6B6] mt-2 mb-6">
-          <a href="https://www.facebook.com/anaplakartandglam" target="_blank">
-            <img src="/facebook.webp" alt="Facebook" className="w-[28px] h-[28px]" />
+          <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <Image src="/facebook.webp" alt="Facebook" width={28} height={28} className="w-[28px] h-[28px]" />
           </a>
-          <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank">
-            <img src="/instagram.webp" alt="Instagram" className="w-[28px] h-[28px]" />
+          <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <Image src="/instagram.webp" alt="Instagram" width={28} height={28} className="w-[28px] h-[28px]" />
           </a>
-          <a href="https://wa.me/919840088867" target="_blank">
-            <img src="/whatsapp.webp" alt="WhatsApp" className="w-[28px] h-[28px]" />
+          <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+            <Image src="/whatsapp.webp" alt="WhatsApp" width={28} height={28} className="w-[28px] h-[28px]" />
           </a>
-          <a href="https://www.youtube.com/@Anaplakartandglamsalon" target="_blank">
-            <img src="/youtube.webp" alt="YouTube" className="w-[28px] h-[28px]" />
+          <a href="https://www.youtube.com/@Anaplakartandglamsalon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
+            <Image src="/youtube.webp" alt="YouTube" width={28} height={28} className="w-[28px] h-[28px]" />
           </a>
         </div>
       </div>
@@ -121,6 +122,7 @@ export default function Footer() {
               src="/logo_updated.webp"
               alt="Anaplak Art And Glam Salon"
               fill
+              sizes="(max-width: 768px) 200px, 280px"
               style={{ objectFit: 'contain', objectPosition: 'center' }}
             />
           </div>
@@ -215,17 +217,17 @@ export default function Footer() {
 
             {/* SOCIAL */}
             <div className="flex gap-4 pt-1 text-[#F8C8DC]">
-              <a href="https://www.facebook.com/anaplakartandglam" target="_blank">
-                <img src="/facebook.webp" alt="Facebook" className="w-[20px] h-[20px]" />
+              <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                <Image src="/facebook.webp" alt="Facebook" width={20} height={20} className="w-[20px] h-[20px]" />
               </a>
-              <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank">
-                <img src="/instagram.webp" alt="Instagram" className="w-[20px] h-[20px]" />
+              <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                <Image src="/instagram.webp" alt="Instagram" width={20} height={20} className="w-[20px] h-[20px]" />
               </a>
-              <a href="https://wa.me/919840088867" target="_blank">
-                <img src="/whatsapp.webp" alt="WhatsApp" className="w-[20px] h-[20px]" />
+              <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+                <Image src="/whatsapp.webp" alt="WhatsApp" width={20} height={20} className="w-[20px] h-[20px]" />
               </a>
-              <a href="https://www.youtube.com/@Anaplakartandglamsalon" target="_blank">
-                <img src="/youtube.webp" alt="YouTube" className="w-[22px] h-[22px]" />
+              <a href="https://www.youtube.com/@Anaplakartandglamsalon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
+                <Image src="/youtube.webp" alt="YouTube" width={22} height={22} className="w-[22px] h-[22px]" />
               </a>
             </div>
 

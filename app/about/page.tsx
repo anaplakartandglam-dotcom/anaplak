@@ -285,7 +285,7 @@ export default function AboutPage() {
                                     }}
                                 >
                                     <img
-                                        src="/aboutus.jpg"
+                                        src="/aboutus.webp"
                                         alt="Professional Hair Styling"
                                         className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
                                     />
@@ -341,7 +341,7 @@ export default function AboutPage() {
                                         }}
                                     >
                                         <img
-                                            src="/aboutus2.jpg"
+                                            src="/aboutus2.webp"
                                             alt="Beauty Specialist"
                                             className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
                                         />
@@ -506,7 +506,7 @@ export default function AboutPage() {
                                 <div className="lg:col-span-4 flex justify-center">
                                     <div className="relative w-[450px] h-[450px] rounded-full overflow-hidden">
                                         <img
-                                            src="/aboutus2.jpg"
+                                            src="/aboutus2.webp"
                                             alt="Professional Barber"
                                             className="w-full h-full object-cover"
                                         />
@@ -626,7 +626,7 @@ export default function AboutPage() {
                                 {/* Right - Image */}
                                 <div className="relative">
                                     <img
-                                        src="/faq_img-1.jpg"
+                                        src="/faq_img-1.webp"
                                         alt="Professional Salon Tools"
                                         className="w-full h-auto"
                                     />

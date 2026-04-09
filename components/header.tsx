@@ -72,16 +72,16 @@ export default function Header() {
           {/* Social Icons */}
           <div className="flex items-center gap-4 md:gap-6 text-white">
             <a href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-              <img src="/instagram.webp" alt="" className="w-[18px] h-[18px]" />
+              <Image src="/instagram.webp" alt="Instagram" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
             <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-              <img src="/facebook.webp" alt="" className="w-[18px] h-[18px]" />
+              <Image src="/facebook.webp" alt="Facebook" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
             <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-              <img src="/whatsapp.webp" alt="" className="w-[18px] h-[18px]" />
+              <Image src="/whatsapp.webp" alt="WhatsApp" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
             <a href="https://www.youtube.com/@Anaplakartandglamsalon/" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-              <img src="/youtube.webp" alt="" className="w-[18px] h-[18px]" />
+              <Image src="/youtube.webp" alt="YouTube" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
           </div>
         </div>
@@ -242,16 +242,16 @@ export default function Header() {
         {/* Social Icons */}
         <div className="flex gap-6 text-white items-center justify-center">
           <a href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-            <img src="/instagram.webp" alt="" className="w-[24px] h-[24px]" />
+            <Image src="/instagram.webp" alt="Instagram" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
           <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-            <img src="/facebook.webp" alt="" className="w-[24px] h-[24px]" />
+            <Image src="/facebook.webp" alt="Facebook" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
           <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-            <img src="/whatsapp.webp" alt="" className="w-[24px] h-[24px]" />
+            <Image src="/whatsapp.webp" alt="WhatsApp" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
           <a href="https://www.youtube.com/@Anaplakartandglamsalon/" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-            <img src="/youtube.webp" alt="" className="w-[24px] h-[24px]" />
+            <Image src="/youtube.webp" alt="YouTube" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
         </div>
       </div>

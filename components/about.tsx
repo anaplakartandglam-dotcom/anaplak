@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export default function About() {
   const sectionRef = useRef(null);
@@ -85,11 +86,15 @@ export default function About() {
           className={`transition-all duration-[1200ms] ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          <img
-            src="/make-up.webp"
-            alt="Professional bridal makeup artist at Anaplak salon"
-            className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
-          />
+          <div className="relative w-full h-[650px] md:h-[780px]">
+            <Image
+              src="/make-up.webp"
+              alt="Professional bridal makeup artist at Anaplak salon"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover object-top rounded-xl"
+            />
+          </div>
 
 
           <h6 className="uppercase mt-6 text-white font-semibold text-[16px] leading-relaxed max-w-[450px] text-justify">
@@ -124,13 +129,17 @@ export default function About() {
             At ANAPLAK ART AND GLAM SALON , we believe your hair is an expression of who you are. Our mission is to help you look and feel your absolute best with expert services rooted in innovation, premium products, and individualized care.
           </p>
 
-          {/* BOTTOM IMAGE BLOCK */}
+{/* BOTTOM IMAGE BLOCK */}
           <div className="relative w-full">
-            <img
-              src="/haircut.webp"
-              alt="Expert hairstylist creating elegant transformations"
-              className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
-            />
+            <div className="relative w-full h-[480px] md:h-[580px]">
+              <Image
+                src="/haircut.webp"
+                alt="Expert hairstylist creating elegant transformations"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-[50%_15%] rounded-xl"
+              />
+            </div>
 
 
             {/* ROTATING LOGO */}
@@ -150,9 +159,11 @@ export default function About() {
      shadow-lg
    "
             >
-              <img
+              <Image
                 src="/newk.webp"
-                alt=""
+                alt="Anaplak logo"
+                width={70}
+                height={70}
                 className="w-[70%] h-auto object-contain"
               />
             </div>

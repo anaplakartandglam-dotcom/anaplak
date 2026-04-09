@@ -1,6 +1,7 @@
 "use client"
 
 import Masonry from "react-masonry-css"
+import Image from "next/image"
 
 export default function Features() {
   const items = [
@@ -50,20 +51,13 @@ export default function Features() {
         >
           {items.map((item, i) => (
             <div key={i} className="mb-6 overflow-hidden rounded">
-              <div key={i} className="mb-6 overflow-hidden rounded">
-                <img
+              <div className={`relative w-full ${i === 0 || i === 2 || i === 4 ? "h-[380px]" : "h-[480px]"}`}>
+                <Image
                   src={item.image}
                   alt={item.alt}
-                  className={`
-      w-full object-cover 
-      ${i === 0 ? "h-[380px]" : ""}
-      ${i === 1 ? "h-[480px]" : ""}
-      ${i === 2 ? "h-[380px]" : ""}
-      ${i === 3 ? "h-[480px]" : ""}
-      ${i === 4 ? "h-[380px]" : ""}
-      ${i === 5 ? "h-[480px]" : ""}
-      hover:scale-[1.03] transition
-    `}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover hover:scale-[1.03] transition"
                 />
               </div>
 

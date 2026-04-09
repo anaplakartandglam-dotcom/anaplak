@@ -81,10 +81,7 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
               height={48}
               className="rounded-full"
               unoptimized
-              onError={() => {
-                console.log('Image failed to load for:', review.name, review.photoUrl)
-                setImageError(true)
-              }}
+              onError={() => setImageError(true)}
             />
           ) : (
             <div
@@ -152,70 +149,12 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
 export default function Testimonials() {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
-  const [active, setActive] = useState(0) // Current page index
+  const [active, setActive] = useState(0)
   const [testimonials, setTestimonials] = useState(FALLBACK_REVIEWS)
-  // const [testimonials, setTestimonials] = useState<Review[]>(FALLBACK_REVIEWS)
   const [loading, setLoading] = useState(false)
   const [isFromGoogle, setIsFromGoogle] = useState(false)
   const [totalRating, setTotalRating] = useState<number | null>(null)
   const [totalReviews, setTotalReviews] = useState<number | null>(null)
-
-  // Fetch Google reviews
-  // useEffect(() => {
-  //   async function fetchReviews() {
-  //     try {
-  //       // Add timestamp to prevent caching
-  //       const response = await fetch('/api/reviews')
-  //       const data = await response.json()
-  //       console.log("GOOGLE RESPONSE:", data)
-  //       if (!response.ok) {
-  //         // Silently fail and use fallback reviews
-  //         console.log('Using fallback reviews (API unavailable)')
-  //         setIsFromGoogle(false)
-  //         setLoading(false)
-  //         return
-  //       }
-
-  //       if (data.reviews && data.reviews.length > 0) {
-  //         // Transform reviews - show ALL reviews
-  //         const transformedReviews: Review[] = data.reviews
-  //           .filter((review: any) => review.rating >= 4) // Only show 4-5 star reviews
-  //           .sort((a: any, b: any) => {
-  //             // Sort by rating first, then by time
-  //             if (b.rating !== a.rating) return b.rating - a.rating
-  //             return b.time - a.time
-  //           })
-  //           .map((review: any, index: number) => ({
-  //             name: review.name,
-  //             role: "Google Review",
-  //             iconColor: ICON_COLORS[index % ICON_COLORS.length],
-  //             text: review.text,
-  //             rating: review.rating,
-  //             time: review.time,
-  //             relativeTime: review.relativeTime,
-  //             photoUrl: review.photoUrl,
-  //           }))
-
-  //         setTestimonials(transformedReviews)
-  //         setIsFromGoogle(true)
-  //         setTotalRating(data.totalRating)
-  //         setTotalReviews(data.totalReviews)
-  //       } else {
-  //         // No reviews returned, use fallback
-  //         console.log('Using fallback reviews (no reviews from API)')
-  //         setIsFromGoogle(false)
-  //       }
-  //     } catch (error) {
-  //       // Silently catch all errors and use fallback reviews
-  //       console.log('Using fallback reviews (error occurred)')
-  //       setIsFromGoogle(false)
-  //     } finally {
-  //       setLoading(false)
-  //     }
-  //   }
-
-  //   fetchReviews()
-  // }, [])
 
   // Scroll animation
   useEffect(() => {
