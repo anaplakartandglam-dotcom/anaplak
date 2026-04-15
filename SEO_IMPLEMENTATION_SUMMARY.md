@@ -28,7 +28,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 ## 📄 **2. ABOUT PAGE** (`/app/about/`)
 
 ### Layout Meta Tags (`layout.tsx`):
-- **Title**: "About Us - 16+ Years Beauty Excellence | 1000+ Happy Customers | Anaplak Salon"
+- **Title**: "About Us - 6+ Years Beauty Excellence | 1000+ Happy Customers | Anaplak Salon"
 - **Description**: Trust-building with credentials and social proof
 - **Keywords**: 25+ keywords focused on expertise, trust, and team
 - **Complete social media optimization**
@@ -40,7 +40,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 ✅ **Organization Schema** - Establishes brand authority
 
 ### Key Features:
-- Founding date (2008) for trust signals
+- Founding date (2020) for trust signals
 - Number of employees (23 specialists)
 - Customer count (1000+) for social proof
 - Awards and recognition

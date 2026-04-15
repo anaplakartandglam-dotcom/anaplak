@@ -40,9 +40,6 @@ const galleryImages: GalleryImage[] = [
     { src: '/gal26.webp', alt: 'Bridal Hairstyling - Regal Style', category: 'Bridal Hair' },
     { src: '/gal27.webp', alt: 'Bridal Makeup - Mesmerizing Transformation', category: 'Bridal Makeup' },
     { src: '/gal28.webp', alt: 'Bridal Hairstyling - Graceful Design', category: 'Bridal Hair' },
-    { src: '/team1.webp', alt: 'Professional Makeup Artist - Our Expert Team', category: 'Our Team' },
-    { src: '/team2.webp', alt: 'Hair Styling Specialist - Our Expert Team', category: 'Our Team' },
-    { src: '/team3.webp', alt: 'Beauty Expert - Our Professional Team', category: 'Our Team' },
 ];
 
 export default function GalleryShowcase() {

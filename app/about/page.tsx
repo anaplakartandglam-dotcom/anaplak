@@ -129,15 +129,15 @@ export default function AboutPage() {
                         "@context": "https://schema.org",
                         "@type": "AboutPage",
                         "name": "About Anaplak Art And Glam Salon",
-                        "description": "Learn about Anaplak Salon - Chennai's premier beauty destination with 16+ years of experience, 1000+ satisfied customers, and expert beauty specialists.",
+                        "description": "Learn about Anaplak Salon - Chennai's premier beauty destination with 6+ years of experience, 1000+ satisfied customers, and expert beauty specialists.",
                         "url": "https://anaplakartandglamsalon.com/about",
                         "mainEntity": {
                             "@type": "BeautySalon",
                             "name": "Anaplak Art And Glam Salon",
-                            "foundingDate": "2008",
+                            "foundingDate": "2020",
                             "numberOfEmployees": "23",
                             "slogan": "Transform Your Look with Expert Care",
-                            "award": "Best Salon in Maduravoyal 2024"
+                            "award": "Best Salon in Maduravoyal 2026"
                         },
                         "breadcrumb": {
                             "@type": "BreadcrumbList",

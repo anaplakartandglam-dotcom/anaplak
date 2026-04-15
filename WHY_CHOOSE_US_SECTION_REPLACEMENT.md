@@ -17,8 +17,8 @@ A comprehensive value proposition section featuring:
 
 #### **6 Key Value Propositions:**
 
-1. **16+ Years Excellence** 🏆
-   - Highlights: 1000+ satisfied customers since 2008
+1. **6+ Years Excellence** 🏆
+   - Highlights: 1000+ satisfied customers since 2020
    - Award-winning salon with proven expertise
 
 2. **Premium Products** ✨
@@ -117,7 +117,7 @@ A comprehensive value proposition section featuring:
                     ↓
 ┌──────────┬──────────┬──────────┐
 │  Card 1  │  Card 2  │  Card 3  │
-│  16+ Yrs │ Premium  │  Expert  │
+│   6+ Yrs │ Premium  │  Expert  │
 │          │ Products │ Stylists │
 ├──────────┼──────────┼──────────┤
 │  Card 4  │  Card 5  │  Card 6  │
@@ -163,7 +163,7 @@ Each card communicates:
 ### Trust Elements
 - 4.9/5 star rating display
 - 1000+ customer count
-- 16+ years experience badge
+- 6+ years experience badge
 - Award-winning mention
 
 ## Mobile Responsiveness

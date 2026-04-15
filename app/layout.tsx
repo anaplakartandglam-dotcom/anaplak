@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://anaplakartandglamsalon.com'),
   title: "Anaplak Art And Glam",
   description:
-    "Anaplak Art and Glam Salon in Maduravoyal, Chennai offers premium hair styling, bridal makeup, hair coloring, facials, manicure, pedicure & beauty treatments. Expert stylists with 16+ years experience. Book your appointment today!",
+    "Anaplak Art and Glam Salon in Maduravoyal, Chennai offers premium hair styling, bridal makeup, hair coloring, facials, manicure, pedicure & beauty treatments. Expert stylists with 6+ years experience. Book your appointment today!",
   keywords: [
     // Primary Keywords
     "premium hair salon Chennai",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     url: 'https://anaplakartandglamsalon.com',
     siteName: 'Anaplak Art and Glam Salon',
     title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services in Chennai',
-    description: 'Experience luxury beauty services at Anaplak Salon in Maduravoyal, Chennai. Expert bridal makeup, hair styling, coloring, facials & more. 16+ years of excellence. Book now!',
+    description: 'Experience luxury beauty services at Anaplak Salon in Maduravoyal, Chennai. Expert bridal makeup, hair styling, coloring, facials & more. 6+ years of excellence. Book now!',
     images: [
       {
         url: '/og-logo.png',

@@ -27,8 +27,8 @@ export default function WhyChooseUs() {
     const features = [
         {
             icon: Award,
-            title: "16+ Years Excellence",
-            description: "Trusted by 1000+ satisfied customers since 2008. Award-winning salon with proven expertise.",
+            title: "6+ Years Excellence",
+            description: "Trusted by 1000+ satisfied customers since 2020. Award-winning salon with proven expertise.",
             color: "#F8C8DC",
         },
         {

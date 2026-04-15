@@ -1,12 +1,10 @@
-/* ---------------------------------------------------------
-   TAILWIND + ANIMATION IMPORTS
---------------------------------------------------------- */
+/*
+   TAILWIND + ANIMATION IMPORTS */
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* ---------------------------------------------------------
-   BRAND COLORS
---------------------------------------------------------- */
+/*
+   BRAND COLORS */
 :root {
   --background: #0e0e0e;
   --foreground: #ffffff;
@@ -36,17 +34,15 @@ html {
   display: none !important;            /* Safari + Chrome */
 }
 
-/* ---------------------------------------------------------
-   DARK MODE
---------------------------------------------------------- */
+/*
+   DARK MODE */
 .dark {
   --background: #0f0f0f;
   --foreground: #ffffff;
 }
 
-/* ---------------------------------------------------------
-   TAILWIND VARIABLE MAP
---------------------------------------------------------- */
+/*
+   TAILWIND VARIABLE MAP */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -60,9 +56,8 @@ html {
   --color-ring: var(--ring);
 }
 
-/* ---------------------------------------------------------
-   BASE STYLING
---------------------------------------------------------- */
+/*
+   BASE STYLING */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -82,9 +77,8 @@ html {
   }
 }
 
-/* ---------------------------------------------------------
-   PARALLAX ANIMATION (used by slider if needed)
---------------------------------------------------------- */
+/*
+   PARALLAX ANIMATION (used by slider if needed) */
 @keyframes parallax {
   0% {
     transform: scale(1.1) translateY(0);
@@ -97,9 +91,8 @@ html {
   }
 }
 
-/* ---------------------------------------------------------
-   ROTATING LOGO (About section, circle section, etc.)
---------------------------------------------------------- */
+/*
+   ROTATING LOGO (About section, circle section, etc.) */
 @keyframes rotateSlow {
   from {
     transform: rotate(0deg);
@@ -115,10 +108,9 @@ html {
   transform-origin: center;
 }
 
-/* ---------------------------------------------------------
+/*
    WORD REVEAL (About section)
-   - cycles between "hairstyles / styles / fashion"
---------------------------------------------------------- */
+   - cycles between "hairstyles / styles / fashion" */
 .word-reveal {
   display: inline-block;
   position: relative;
@@ -172,9 +164,8 @@ html {
   }
 }
 
-/* ---------------------------------------------------------
-   TYPE CURSOR (used in footer JS typing: "|")
---------------------------------------------------------- */
+/*
+   TYPE CURSOR (used in footer JS typing: "|") */
 .typed-cursor {
   display: inline-block;
   margin-left: 2px;
@@ -193,9 +184,8 @@ html {
   }
 }
 
-/* ---------------------------------------------------------
-   CUSTOM SCROLLBAR (global)
---------------------------------------------------------- */
+/*
+   CUSTOM SCROLLBAR (global) */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -206,9 +196,6 @@ html {
 
 /* CUSTOM CURSOR */
 
-/* Hide default cursor */
-/* REMOVE cursor:none from here ❌ */
-
 /* Canvas */
 .sparkle-canvas {
   position: fixed;
@@ -218,55 +205,7 @@ html {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-}
-
-/* Sparkle cursor (star shape) */
-.cursor-dot {
-  position: fixed;
-  width: 14px;
-  height: 14px;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-}
-
-/* star lines */
-.cursor-dot::before,
-.cursor-dot::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: white;
-  transform: translate(-50%, -50%);
-}
-
-/* vertical */
-.cursor-dot::before {
-  width: 2px;
-  height: 14px;
-  box-shadow: 0 0 8px rgba(255,255,255,0.9);
-}
-
-/* horizontal */
-.cursor-dot::after {
-  width: 14px;
-  height: 2px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
-}
-
-/* subtle pulse */
-.cursor-dot {
-  animation: sparklePulse 1.2s infinite ease-in-out;
-}
-
-@keyframes sparklePulse {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.3);
-  }
+  cursor: default;
 }
 
 .sr-only {
@@ -278,4 +217,296 @@ html {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+/* BLOG STYLES */
+
+.blog-card {
+  @apply bg-[#1B1B1B] border border-[#2A2A2A] rounded-xl overflow-hidden hover:border-[#F8C8DC] transition-all duration-300;
+}
+
+.blog-card:hover {
+  @apply shadow-lg shadow-[#F8C8DC]/5;
+}
+
+.blog-title {
+  @apply text-white text-xl md:text-2xl font-bold leading-tight;
+}
+
+.blog-subtitle {
+  @apply text-gray-400 text-base;
+}
+
+.blog-content {
+  @apply text-gray-300 leading-relaxed;
+}
+
+.blog-image {
+  @apply w-full rounded-xl object-cover;
+}
+
+.blog-meta {
+  @apply text-gray-500 text-sm;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* BLOG CONTENT STYLES */
+
+.blog-article {
+  @apply text-gray-300;
+}
+
+.blog-article h2 {
+  @apply text-2xl md:text-3xl font-bold text-white mt-10 mb-4 leading-tight;
+}
+
+.blog-article h2.blog-cta,
+.cta-card .cta-heading {
+  @apply text-2xl md:text-3xl font-bold text-white leading-tight;
+}
+
+.blog-article p.blog-cta-text,
+.cta-card .cta-text {
+  @apply text-gray-300 text-base md:text-lg leading-relaxed;
+}
+
+.cta-card {
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  border-radius: 1rem;
+  border: 1px solid rgba(248, 200, 220, 0.18);
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(248, 200, 220, 0.08) 0%, rgba(83, 103, 92, 0.08) 100%);
+}
+
+.cta-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #F8C8DC, #53675C);
+  border-radius: 1rem 0 0 1rem;
+}
+
+.cta-card .cta-heading {
+  padding: 1.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.cta-card .cta-text {
+  padding: 0 1.75rem 1.25rem 1.75rem;
+  margin: 0;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem 1.75rem 1.5rem 1.75rem;
+  border-top: 1px solid rgba(248, 200, 220, 0.1);
+  margin-top: 0;
+}
+
+.cta-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: #F8C8DC;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-btn-primary:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+.cta-btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  color: #F8C8DC;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  border: 2px solid #F8C8DC;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-btn-whatsapp:hover {
+  background: #F8C8DC;
+  color: #000;
+}
+
+.blog-article h3 {
+  @apply text-xl md:text-2xl font-bold text-white mt-8 mb-3;
+}
+
+.blog-article h4 {
+  @apply text-lg md:text-xl font-semibold text-white mt-6 mb-2;
+}
+
+.blog-article p {
+  @apply text-gray-300 leading-relaxed mb-4 text-base md:text-lg;
+}
+
+.blog-article ul {
+  @apply list-disc list-inside my-4 space-y-2 pl-4;
+}
+
+.blog-article ol {
+  @apply list-decimal list-inside my-4 space-y-2 pl-4;
+}
+
+.blog-article li {
+  @apply text-gray-300 leading-relaxed pl-2;
+}
+
+.blog-article li::marker {
+  color: #F8C8DC;
+}
+
+.blog-article a {
+  @apply text-[#F8C8DC] underline underline-offset-2 hover:text-white transition-colors;
+}
+
+.blog-article strong {
+  @apply text-white font-semibold;
+}
+
+.blog-article em {
+  @apply italic text-gray-200;
+}
+
+.blog-article blockquote {
+  @apply border-l-4 border-[#F8C8DC] pl-6 py-2 my-6 bg-[#1B1B1B] rounded-r-lg italic;
+}
+
+.blog-article blockquote p {
+  @apply m-0;
+}
+
+.blog-article hr {
+  @apply border-t border-[#2A2A2A] my-8;
+}
+
+.blog-article code {
+  @apply bg-[#1B1B1B] px-2 py-1 rounded text-[#F8C8DC] text-sm font-mono;
+}
+
+.blog-article pre {
+  @apply bg-[#1B1B1B] p-4 rounded-lg overflow-x-auto my-4;
+}
+
+.blog-article pre code {
+  @apply bg-transparent p-0;
+}
+
+.blog-article img {
+  @apply rounded-xl my-6 mx-auto;
+}
+
+.blog-article figure {
+  @apply my-6;
+}
+
+.blog-article figcaption {
+  @apply text-center text-gray-500 text-sm mt-2;
+}
+
+.blog-article table {
+  @apply w-full my-6 border-collapse;
+}
+
+.blog-article th {
+  @apply bg-[#1B1B1B] text-white text-left p-4 border border-[#2A2A2A];
+}
+
+.blog-article td {
+  @apply p-4 border border-[#2A2A2A];
+}
+
+.blog-article tr:nth-child(even) td {
+  @apply bg-[#0E0E0E];
+}
+
+/* TABLE OF CONTENTS */
+.toc-nav {
+  @apply border border-[#2A2A2A] rounded-xl bg-[#1B1B1B]/80 p-5;
+}
+
+.toc-title {
+  @apply text-[#F8C8DC] text-sm font-semibold uppercase tracking-wider mb-4;
+}
+
+.toc-list {
+  @apply space-y-1 list-none;
+}
+
+.toc-item {
+  @apply relative;
+}
+
+.toc-item-h3 {
+  @apply pl-4;
+}
+
+.toc-link {
+  @apply block text-sm text-gray-400 py-1.5 px-3 rounded-md transition-colors duration-200 hover:text-white hover:bg-[#2A2A2A]/60 no-underline;
+}
+
+.toc-item-active > .toc-link {
+  @apply text-[#F8C8DC] bg-[#2A2A2A]/80 font-medium;
+}
+
+/* Active indicator bar */
+.toc-item-active::before {
+  content: '';
+  @apply absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-5 bg-[#F8C8DC] rounded-full;
+}
+
+/* ---------------------------------------------------------
+   SPIRAL GRADIENT ANIMATION
+--------------------------------------------------------- */
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 25s linear infinite;
+}
+
+.bg-gradient-conic {
+  background: conic-gradient(from 0deg, var(--tw-gradient-stops));
 }

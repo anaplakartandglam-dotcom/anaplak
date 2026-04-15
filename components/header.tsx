@@ -15,11 +15,10 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   const navItems = [
-    { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Gallery", href: "/gallery" },
-    // { label: "Blog", href: "/blog" },
     { label: "Services", href: "/services" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Blogs", href: "/blogs" },
     { label: "Contacts", href: "/contact" },
   ]
 
@@ -102,7 +101,7 @@ export default function Header() {
           borderBottom: isSticky ? "1px solid rgba(255,255,255,0.15)" : "none",
         }}
       >
-        <div className="w-full p-4 flex justify-between items-center">
+        <div className="w-full px-4 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 md:gap-4" style={{ marginTop: '13px' }}>
             <div className="w-[160px] md:w-[200px] h-auto flex items-center justify-center mb-2 relative" style={{ height: '60px' }}>

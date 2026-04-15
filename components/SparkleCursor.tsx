@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useMemo, useCallback } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 
 type Sparkle = {
     x: number;
@@ -13,7 +13,7 @@ type Sparkle = {
 export default function SparkleCursor() {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const sparkles = useRef<Sparkle[]>([]);
-    const dotRef = useRef<HTMLDivElement | null>(null);
+    
     const animationRef = useRef<number>(0);
     const lastTimeRef = useRef<number>(0);
 
@@ -62,19 +62,10 @@ export default function SparkleCursor() {
 
     useEffect(() => {
         const canvas = canvasRef.current;
-        const dot = dotRef.current;
-
-        if (!canvas || !dot) return;
+        if (!canvas) return;
 
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
-
-        document.body.style.cursor = 'none';
-
-        const moveDot = (e: MouseEvent) => {
-            dot.style.left = e.clientX + 'px';
-            dot.style.top = e.clientY + 'px';
-        };
 
         const handleMouseMove = (e: MouseEvent) => {
             sparkles.current.push({
@@ -106,7 +97,6 @@ export default function SparkleCursor() {
 
         resize();
         window.addEventListener('resize', resize);
-        window.addEventListener('mousemove', moveDot);
         window.addEventListener('mousemove', handleMouseMove);
 
         const animate = (currentTime: number) => {
@@ -141,8 +131,6 @@ export default function SparkleCursor() {
         animationRef.current = requestAnimationFrame(animate);
 
         return () => {
-            document.body.style.cursor = 'auto';
-            window.removeEventListener('mousemove', moveDot);
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('resize', resize);
             if (animationRef.current) {
@@ -154,7 +142,6 @@ export default function SparkleCursor() {
     return (
         <>
             <canvas ref={canvasRef} className="sparkle-canvas" aria-hidden="true" />
-            <div ref={dotRef} className="cursor-dot" aria-hidden="true" />
         </>
     );
 }
