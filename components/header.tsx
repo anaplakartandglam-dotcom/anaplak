@@ -76,9 +76,9 @@ export default function Header() {
             <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
               <Image src="/facebook.webp" alt="Facebook" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
-            <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+            {/* <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
               <Image src="/whatsapp.webp" alt="WhatsApp" width={18} height={18} className="w-[18px] h-[18px]" priority />
-            </a>
+            </a> */}
             <a href="https://www.youtube.com/@Anaplakartandglamsalon/" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
               <Image src="/youtube.webp" alt="YouTube" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
@@ -90,15 +90,13 @@ export default function Header() {
       -------------------------------------------------- */}
       <header
         className={`
-          fixed left-0 w-full z-[60]
+          fixed left-0 w-full z-60
           transition-all duration-500
-          ${isSticky ? "shadow-lg" : ""}
+          ${isSticky ? "shadow-lg backdrop-blur-lg bg-[rgba(0,0,0,0.25)]" : "bg-transparent"}
         `}
         style={{
-          top: isSticky ? 0 : TOPBAR_HEIGHT,
-          background: isSticky ? "rgba(0,0,0,0.25)" : "transparent",
-          backdropFilter: isSticky ? "blur(18px)" : "none",
-          borderBottom: isSticky ? "1px solid rgba(255,255,255,0.15)" : "none",
+          top: TOPBAR_HEIGHT,
+          borderBottom: "none",
         }}
       >
         <div className="w-full px-4 flex justify-between items-center">
@@ -246,9 +244,9 @@ export default function Header() {
           <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
             <Image src="/facebook.webp" alt="Facebook" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
-          <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+          {/* <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
             <Image src="/whatsapp.webp" alt="WhatsApp" width={24} height={24} className="w-[24px] h-[24px]" />
-          </a>
+          </a> */}
           <a href="https://www.youtube.com/@Anaplakartandglamsalon/" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
             <Image src="/youtube.webp" alt="YouTube" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
