@@ -39,7 +39,7 @@ export default function BlogsPage() {
     <main className="min-h-screen bg-black mt-10 md:mt-25">
       <Header />
       
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#F8C8DC] uppercase tracking-[0.3em] text-sm mb-4 font-medium">
