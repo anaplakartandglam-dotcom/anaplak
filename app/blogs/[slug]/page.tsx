@@ -223,7 +223,7 @@ export default async function BlogPage({ params }: Props) {
       {relatedBlogs.length > 0 && (
         <section className="py-16 bg-[#0E0E0E]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Related Articles</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Recent Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {relatedBlogs.map((relatedBlog) => (
                 <BlogCard key={relatedBlog.id} blog={relatedBlog} />
