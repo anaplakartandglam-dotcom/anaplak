@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
+import PageHeader from '@/components/page-header';
 
 interface GalleryImage {
     src: string;
@@ -80,44 +81,12 @@ export default function GalleryShowcase() {
 
     return (
         <div className="relative">
-            {/* Hero Section - Now positioned below header */}
-            <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] pt-32 md:pt-24 overflow-hidden">
-                <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #53675C 0%, #3d4f46 50%, #2a3830 100%)' }}>
-                    <div className="absolute inset-0 bg-black/40" />
-                    <motion.div
-                        initial={{ scale: 1.2, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 0.3 }}
-                        transition={{ duration: 1.5 }}
-                        className="absolute inset-0"
-                        style={{
-                            backgroundImage: 'url(/gal9.JPG)',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'top',
-                        }}
-                    />
-                </div>
-
-                <div className="relative h-full flex flex-col items-center justify-center text-white px-4">
-                    <motion.h1
-                        initial={{ y: 30, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-4"
-                        style={{ textShadow: '2px 4px 8px rgba(0,0,0,0.3)' }}
-                    >
-                        Our Gallery
-                    </motion.h1>
-                    <motion.p
-                        initial={{ y: 30, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-lg md:text-xl lg:text-2xl text-center max-w-3xl"
-                        style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.3)' }}
-                    >
-                        Explore our stunning portfolio of bridal makeup, hair styling, and beauty transformations
-                    </motion.p>
-                </div>
-            </section>
+            <PageHeader
+                label="Our Gallery"
+                title="Our"
+                titleAccent="Gallery"
+                description="Explore our stunning portfolio of bridal makeup, hair styling, and beauty transformations"
+            />
 
             {/* Gallery Grid - No Filter Section */}
             <section className="container mx-auto px-4 py-12">

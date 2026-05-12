@@ -2,14 +2,17 @@
 
 import { Blog } from "@/data/blogData"
 import BlogCard from "./BlogCard"
+import BlogCardSkeleton from "./BlogCardSkeleton"
 
 interface BlogListProps {
   blogs: Blog[]
   priorityFirst?: boolean
+  loading?: boolean
+  skeletonCount?: number
 }
 
-export default function BlogList({ blogs, priorityFirst = false }: BlogListProps) {
-  if (blogs.length === 0) {
+export default function BlogList({ blogs, priorityFirst = false, loading = false, skeletonCount = 9 }: BlogListProps) {
+  if (!loading && blogs.length === 0) {
     return (
       <div className="text-center py-16">
         <svg
@@ -33,15 +36,6 @@ export default function BlogList({ blogs, priorityFirst = false }: BlogListProps
     )
   }
 
-  const formatDate = (dateString: string) => {
-    const [year, month, day] = dateString.split("-").map(Number)
-    return new Date(year, month - 1, day).toLocaleDateString("en-IN", {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    })
-  }
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {blogs.map((blog, index) => (
@@ -50,6 +44,9 @@ export default function BlogList({ blogs, priorityFirst = false }: BlogListProps
           blog={blog}
           priority={priorityFirst && index === 0}
         />
+      ))}
+      {loading && Array.from({ length: skeletonCount }).map((_, i) => (
+        <BlogCardSkeleton key={`skeleton-${i}`} />
       ))}
     </div>
   )

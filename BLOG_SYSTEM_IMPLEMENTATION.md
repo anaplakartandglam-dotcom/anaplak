@@ -20,7 +20,8 @@ A complete blog system has been integrated into the ANAPLAK website, matching th
 /components
   /blog
     ├── BlogCard.tsx              # Individual blog card component
-    ├── BlogList.tsx              # Grid layout for blog cards
+    ├── BlogCardSkeleton.tsx      # Skeleton loading placeholder for blog cards
+    ├── BlogList.tsx              # Grid layout for blog cards (with skeleton support)
     └── BlogSearch.tsx            # Search and filter component
   /sections
     └── BlogPreview.tsx           # Homepage blog preview section
@@ -71,6 +72,8 @@ getLatestBlogs(count)      // Get latest blogs sorted by date
 getBlogsByCategory(cat)    // Filter blogs by category
 searchBlogs(query)         // Search by title, desc, tags
 getAllCategories()         // Get unique categories
+BLOGS_PER_PAGE             // Constant: 9 (blogs per page load)
+getTotalPages(count)       // Calculate total pages for pagination
 ```
 
 ---
@@ -83,7 +86,9 @@ getAllCategories()         // Get unique categories
 - Responsive grid layout (1/2/3 columns)
 - Real-time search filtering
 - Category filter buttons
-- Clean, animated cards
+- Infinite scroll pagination (9 blogs per load)
+- Skeleton loading animation while loading next batch
+- Intersection Observer-based auto-loading
 
 **URL:** `https://anaplakartandglamsalon.com/blogs`
 
@@ -230,6 +235,22 @@ Five pre-written blogs included:
    - Category: Hair Care
    - Topics: seasonal care, frizz control
 
+6. **Top Hair Styling Trends in 2026 for Women**
+   - Category: Hair Styling
+   - Topics: trending hairstyles, women's cuts
+
+7. **Top Hair Styling Trends in 2026 for Men**
+   - Category: Hair Styling
+   - Topics: men's grooming, trending cuts
+
+8. **Bridal Beauty Checklist Before Wedding**
+   - Category: Bridal
+   - Topics: bridal prep, wedding checklist
+
+9. **Anti-Aging Skincare Routine**
+   - Category: Skincare
+   - Topics: anti-aging, skincare routine
+
 ---
 
 ## 🧩 COMPONENTS
@@ -257,8 +278,22 @@ Five pre-written blogs included:
 <BlogList 
   blogs={blogs}          // Array of blog data
   priorityFirst={true}   // Optional: priority for first item
+  loading={false}        // Show skeleton loading state
+  skeletonCount={9}      // Number of skeleton cards to show
 />
 ```
+
+### BlogCardSkeleton (`/components/blog/BlogCardSkeleton.tsx`)
+
+```tsx
+<BlogCardSkeleton />     // Animated skeleton placeholder card
+```
+
+Displays a pulsing placeholder card matching BlogCard dimensions:
+- Image placeholder (220-240px height)
+- Title line placeholders
+- Description line placeholders
+- Author avatar and metadata placeholders
 
 ### BlogSearch (`/components/blog/BlogSearch.tsx`)
 
@@ -332,6 +367,8 @@ npm run build
 - [x] BlogPreview section
 - [x] Blog listing page
 - [x] Single blog page
+- [x] Infinite scroll pagination
+- [x] Skeleton loading animation
 - [x] Dynamic metadata
 - [x] Static generation
 - [x] Global styles added
@@ -383,6 +420,41 @@ npm start
 
 ---
 
+## 📜 INFINITE SCROLL PAGINATION
+
+### How It Works
+
+The blog listing page uses an Infinite Scroll pattern to improve performance and user experience:
+
+1. **Initial Load**: First 9 blogs are displayed (`BLOGS_PER_PAGE = 9`)
+2. **Scroll Detection**: An `IntersectionObserver` watches a sentinel `div` at the bottom of the blog list
+3. **Load More**: When the sentinel enters the viewport (with 200px root margin), the next batch of 9 blogs is loaded
+4. **Skeleton Loading**: While loading, 9 animated skeleton cards (`BlogCardSkeleton`) appear below the loaded blogs
+5. **Simulated Delay**: A 600ms delay simulates network latency for smooth skeleton display
+6. **Reset on Filter**: When search query or category filter changes, pagination resets to show the first 9 blogs
+
+### Key Files
+
+| File | Role |
+|------|------|
+| `BLOGS_PER_PAGE` in `blogData.ts` | Controls batch size (default: 9) |
+| `BlogCardSkeleton.tsx` | Animated skeleton placeholder card |
+| `BlogList.tsx` | Accepts `loading` and `skeletonCount` props |
+| `app/blogs/page.tsx` | Manages `visibleCount` state and IntersectionObserver |
+
+### Implementation Flow
+
+```
+User scrolls to bottom
+  → IntersectionObserver triggers
+  → setLoading(true) → Show 9 skeleton cards
+  → 600ms delay
+  → setVisibleCount(prev + 9)
+  → setLoading(false) → Skeleton cards replaced with real blogs
+```
+
+---
+
 ## 📚 FUTURE ENHANCEMENTS
 
 ### Potential Improvements
@@ -397,6 +469,7 @@ npm start
 8. **Image Gallery in Blog Content**
 9. **Comments Section**
 10. **Newsletter Subscription**
+11. **Server-Side Pagination** (currently client-side slicing for Static Generation)
 
 ---
 

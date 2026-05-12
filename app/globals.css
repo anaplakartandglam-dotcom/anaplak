@@ -295,13 +295,6 @@ html {
 
 .cta-card::before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 100%;
-  background: linear-gradient(to bottom, #F8C8DC, #53675C);
-  border-radius: 1rem 0 0 1rem;
 }
 
 .cta-card .cta-heading {
@@ -361,6 +354,39 @@ html {
 .cta-btn-whatsapp:hover {
   background: #F8C8DC;
   color: #000;
+}
+
+/* MID-CONTENT CTA (inline between sections) */
+.blog-mid-cta {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, rgba(248, 200, 220, 0.06) 0%, rgba(83, 103, 92, 0.06) 100%);
+  /* border-left: 3px solid #F8C8DC; */
+  border-radius: 0.75rem;
+}
+
+.blog-mid-cta p {
+  margin: 0;
+  color: #d1d5db;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.blog-mid-cta strong {
+  color: #F8C8DC;
+  font-weight: 600;
+}
+
+.blog-mid-cta a {
+  color: #F8C8DC;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.blog-mid-cta a:hover {
+  color: #fff;
 }
 
 .blog-article h3 {

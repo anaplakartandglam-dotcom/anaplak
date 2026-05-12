@@ -56,7 +56,7 @@ export default function GalleryPage() {
     return (
         <>
             <Header />
-            <main className="min-h-screen">
+            <main className="min-h-screen bg-black mt-10 md:mt-25">
                 <GalleryShowcase />
             </main>
             <Footer />

@@ -6,6 +6,7 @@ import Image from "next/image"
 import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import PageHeader from "@/components/page-header"
 
 const services = [
   {
@@ -433,25 +434,13 @@ export default function ServicesSection() {
       />
 
       <Header />
-      <div className="min-h-screen text-white" style={{ backgroundColor: "#0e0e0e" }}>
-        {/* Hero Section */}
-        <div className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#f8c8dc]/10 via-transparent to-transparent"></div>
-          <div className="relative mx-auto max-w-7xl px-4 pt-40 pb-24 sm:px-6 lg:px-8 md:pt-48">
-            <div className="text-center">
-              <h1
-                className="text-balance font-serif text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
-                style={{ color: "#53675C", marginTop: '90px' }}
-              >
-                Our Services
-              </h1>
-              <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-300">
-                Discover our comprehensive range of beauty and wellness services, tailored to bring out your natural
-                elegance
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="min-h-screen bg-black mt-10 md:mt-25">
+        <PageHeader
+          label="Our Services"
+          title="Our"
+          titleAccent="Services"
+          description="Discover our comprehensive range of beauty and wellness services, tailored to bring out your natural elegance"
+        />
 
         {/* Services Grid */}
         <div className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">

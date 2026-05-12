@@ -4,15 +4,10 @@ import { Phone, MapPin, Clock, Mail, Instagram, Facebook, Youtube } from "lucide
 import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import PageHeader from "@/components/page-header"
 
 
 export default function ContactUs() {
-    // Theme colors
-    const primaryColor = "#53675C" // Green
-    const backgroundColor = "rgb(14, 14, 14)" // Dark background
-    const textColor = "#ffffff" // White text for dark background
-
-
     return (
         <>
             {/* Contact Page Schema Markup */}
@@ -83,15 +78,13 @@ export default function ContactUs() {
             />
 
             <Header />
-            <div className="min-h-screen font-sans" style={{ backgroundColor }}>
-                {/* Introduction Section */}
-                <section className="relative pt-40 pb-16 md:pt-48 md:pb-24 px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-serif font-medium mb-6 text-white" style={{ marginTop: '90px' }}>Connect With Us</h1>
-                    <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/70 font-light leading-relaxed">
-                        Whether it's for your big day, a special occasion, or a moment of self-care, we invited you to experience
-                        luxury beauty services tailored just for you.
-                    </p>
-                </section>
+            <div className="min-h-screen bg-black mt-10 md:mt-25">
+                <PageHeader
+                    label="Contact Us"
+                    title="Connect"
+                    titleAccent="With Us"
+                    description="Whether it's for your big day, a special occasion, or a moment of self-care, we invite you to experience luxury beauty services tailored just for you"
+                />
 
                 {/* Main Content Grid */}
                 <section className="container mx-auto px-4 pb-20 md:pb-32">

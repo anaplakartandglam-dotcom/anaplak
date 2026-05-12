@@ -1,10 +1,10 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import VideoParallax from "@/components/video_parrlex"
+import PageHeader from "@/components/page-header"
 import VideoPlayerModal from "@/components/video-player-modal"
 import Testimonials from "@/components/testimonials"
 
@@ -66,57 +66,7 @@ function FAQAccordion() {
 }
 
 export default function AboutPage() {
-    const heroRef = useRef<HTMLDivElement>(null)
-    const [typewriterText, setTypewriterText] = useState("")
-    const [wordIndex, setWordIndex] = useState(0)
-    const [isDeleting, setIsDeleting] = useState(false)
     const [isVideoOpen, setIsVideoOpen] = useState(false)
-
-    const words = ["MODERN EDGE", "PERFECT LOOK", "BEAUTY NEEDS", "STYLE GOALS"]
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (heroRef.current) {
-                const scrolled = window.scrollY
-                const parallaxSpeed = 0.5
-                heroRef.current.style.transform = `translateY(${scrolled * parallaxSpeed}px)`
-            }
-        }
-
-        window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
-
-    // Typewriter effect - cycling through words
-    useEffect(() => {
-        const currentWord = words[wordIndex]
-
-        const typingSpeed = isDeleting ? 50 : 100
-        const pauseTime = isDeleting ? 500 : 2000
-
-        const timer = setTimeout(() => {
-            if (!isDeleting) {
-                // Typing
-                if (typewriterText.length < currentWord.length) {
-                    setTypewriterText(currentWord.slice(0, typewriterText.length + 1))
-                } else {
-                    // Pause before deleting
-                    setTimeout(() => setIsDeleting(true), pauseTime)
-                }
-            } else {
-                // Deleting
-                if (typewriterText.length > 0) {
-                    setTypewriterText(currentWord.slice(0, typewriterText.length - 1))
-                } else {
-                    // Move to next word
-                    setIsDeleting(false)
-                    setWordIndex((prev) => (prev + 1) % words.length)
-                }
-            }
-        }, typingSpeed)
-
-        return () => clearTimeout(timer)
-    }, [typewriterText, isDeleting, wordIndex, words])
 
     return (
         <>
@@ -207,46 +157,13 @@ export default function AboutPage() {
             />
 
             <Header />
-            <div className="relative min-h-screen bg-[#0e0e0e]">
-                {/* Hero Section with Parallax Background - 600px height */}
-                <div className="relative overflow-hidden" style={{ height: "600px", maxWidth: "1920px", margin: "0 auto" }}>
-                    {/* Parallax Background */}
-                    <div
-                        ref={heroRef}
-                        className="absolute inset-0 w-full h-full"
-                        style={{
-                            willChange: "transform",
-                        }}
-                    >
-                        <div
-                            className="absolute inset-0 w-full h-full"
-                            style={{
-                                backgroundImage: "url('/about_hero.jpg')",
-                                backgroundSize: "cover",
-                                backgroundPosition: "center center",
-                                backgroundRepeat: "no-repeat",
-                            }}
-                        />
-                        {/* Dark overlay for better text readability */}
-                        <div className="absolute inset-0 bg-black/50" />
-                    </div>
-
-                    {/* Hero Content */}
-                    <div className="relative h-full flex flex-col items-center justify-center text-center px-4 z-10">
-                        <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-wider" style={{ marginTop: '90px' }}>
-                            ABOUT US
-                        </h1>
-
-                        {/* Breadcrumb */}
-                        <div className="flex items-center gap-3 text-white/80 text-sm md:text-base tracking-widest uppercase">
-                            <a href="/" className="hover:text-[#53675C] transition-colors">
-                                HOME
-                            </a>
-                            <span className="text-white/40">||</span>
-                            <span className="text-white">ABOUT US</span>
-                        </div>
-                    </div>
-                </div>
+            <div className="min-h-screen bg-black mt-10 md:mt-25">
+                <PageHeader
+                    label="About Us"
+                    title="About"
+                    titleAccent="Us"
+                    description="Discover our story, meet our expert team, and learn why 1000+ customers trust Anaplak for their beauty needs"
+                />
 
                 {/* Unique Beauty Section - Full Width */}
                 <section className="w-full bg-white py-20 md:py-32">
@@ -302,8 +219,7 @@ export default function AboutPage() {
                                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif leading-tight text-black mb-0">
                                         EACH SPECIALIST IS DEDICATED TO UNDERSTANDING YOUR GOALS, ENSURING TREATMENTS{" "}
                                         <span className="italic font-serif text-[#53675C]">
-                                            ARE TAILORED TO YOUR UNIQUE {typewriterText}
-                                            <span className="animate-pulse">|</span>
+                                            ARE TAILORED TO YOUR UNIQUE BEAUTY NEEDS
                                         </span>
                                     </h2>
                                 </div>
