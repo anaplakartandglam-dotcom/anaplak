@@ -1360,6 +1360,8 @@ export function searchBlogs(query: string): Blog[] {
   )
 }
 
+export const BLOGS_PER_PAGE = 9
+
 export function getAllCategories(): string[] {
   const categories = new Set(blogData.map(blog => blog.category))
   return Array.from(categories)
