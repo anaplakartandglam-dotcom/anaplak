@@ -7,9 +7,9 @@ interface PageHeaderProps {
 
 export default function PageHeader({ label, title, titleAccent, description }: PageHeaderProps) {
   return (
-    <section className="pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+    <section className="pt-30 pb-10 md:pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center">
           <p className="text-[#F8C8DC] uppercase tracking-[0.3em] text-sm mb-4 font-medium">
             {label}
           </p>

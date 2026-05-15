@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: '📍 Contact Anaplak Salon Maduravoyal | Book Now ☎️ +91-9840088867',
-        description: '🏆 #1 Rated Salon | 📍 MMDA Colony, Chennai | ⏰ Open 10AM-9PM Daily | 🚗 Parking Available | 📱 WhatsApp Booking | Walk-ins Welcome! Book Your Appointment Today!',
+        description: '🏆 #No 1 Rated Salon | 📍 MMDA Colony, Chennai | ⏰ Open 10AM-9PM Daily | 🚗 Parking Available | 📱 WhatsApp Booking | Walk-ins Welcome! Book Your Appointment Today!',
         url: 'https://anaplakartandglamsalon.com/contact',
         siteName: 'Anaplak Art And Glam Salon',
         type: 'website',
