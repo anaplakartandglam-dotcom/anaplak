@@ -7,20 +7,20 @@ import WhyChooseUs from '@/components/why-choose-us'
 import CTASection from '@/components/ui/CTASection'
 
 // Dynamic imports for below-the-fold components with loading states
-const Pricing = dynamic(() => import("@/components/pricing"), {
-  loading: () => <div className="min-h-[400px] bg-black" />,
-  ssr: true,
-})
+// const Pricing = dynamic(() => import("@/components/pricing"), {
+//   loading: () => <div className="min-h-[400px] bg-black" />,
+//   ssr: true,
+// })
 
-const Services = dynamic(() => import("@/components/services"), {
-  loading: () => <div className="min-h-[400px] bg-black" />,
-  ssr: true,
-})
+// const Services = dynamic(() => import("@/components/services"), {
+//   loading: () => <div className="min-h-[400px] bg-black" />,
+//   ssr: true,
+// })
 
-const CircularSlider = dynamic(() => import("@/components/circular-slider"), {
-  loading: () => <div className="min-h-[500px] bg-black" />,
-  ssr: true,
-})
+// const CircularSlider = dynamic(() => import("@/components/circular-slider"), {
+//   loading: () => <div className="min-h-[500px] bg-black" />,
+//   ssr: true,
+// })
 
 const ServicesShowcase = dynamic(() => import("@/components/services-showcase"), {
   loading: () => <div className="min-h-[600px] bg-black" />,
@@ -37,10 +37,10 @@ const Features = dynamic(() => import("@/components/features"), {
   ssr: true,
 })
 
-const Contact = dynamic(() => import("@/components/contact"), {
-  loading: () => <div className="min-h-[500px] bg-black" />,
-  ssr: true,
-})
+// const Contact = dynamic(() => import("@/components/contact"), {
+//   loading: () => <div className="min-h-[500px] bg-black" />,
+//   ssr: true,
+// })
 
 const Footer = dynamic(() => import("@/components/footer"), {
   loading: () => <div className="min-h-[300px] bg-black" />,
@@ -58,38 +58,42 @@ const BlogPreview = dynamic(() => import("@/components/sections/BlogPreview"), {
 })
 
 export const metadata: Metadata = {
-  title: 'Home - Anaplak Art And Glam',
-  description: '🏆 #1 Rated Salon in Maduravoyal! ✨ Expert Bridal Makeup, Hair Coloring, Keratin Treatment, Facials & Beauty Treatments. 6+ Years Experience | 1000+ Happy Customers | Premium Products | Ground Floor Parking. Book Now ☎️ +91-9840088867 | Open 10AM-9PM Daily',
+  title: 'Luxury Hair, Skin & Bridal Salon in Maduravoyal, Chennai | Anaplak',
+  description: '✨ Where beauty meets confidence. 💫 Experience personalised hair, skin, nail and bridal services in Maduravoyal. 🤝 Trusted by 1000+ happy clients for stunning transformations. ☎️ Book your appointment today +91-9840088867 | Open 10AM-9PM Daily',
   keywords: [
-    // Primary Commercial Keywords
-    'best bridal makeup artist Chennai',
-    'bridal makeup Maduravoyal',
-    'premium hair salon near me Chennai',
-    'top rated salon Maduravoyal',
+    // Core Business Keywords
+    'luxury salon Maduravoyal',
+    'beauty salon Maduravoyal',
+    'best beauty salon Maduravoyal',
+    'premium salon Maduravoyal',
+    'hair and beauty salon Maduravoyal',
+
+    // Secondary Location Keywords
     'luxury salon Chennai',
+    'beauty salon Chennai',
+    'premium beauty salon Chennai',
+    'top rated salon Chennai',
 
-    // Service Keywords
-    'keratin treatment Chennai',
-    'hair coloring specialist Maduravoyal',
-    'bridal makeup packages Chennai',
-    'facial treatment Chennai',
-    'hair treatment Maduravoyal',
-    'wedding makeup artist Chennai',
+    // High-Value Service Categories
+    'bridal makeup artist Maduravoyal',
+    'bridal makeup Chennai',
+    'hair salon Maduravoyal',
+    'hair coloring Maduravoyal',
+    'keratin treatment Maduravoyal',
+    'facial treatments Maduravoyal',
 
-    // Location Keywords
-    'salon MMDA Colony',
-    'beauty parlour Maduravoyal',
-    'salon near me Chennai 600095',
-    'CDN Nagar salon',
-
-    // Long-tail Keywords
-    'best salon for bridal makeup in Chennai',
-    'affordable luxury salon Maduravoyal',
-    'salon with parking Chennai',
+    // Brand Positioning
     'premium beauty services Maduravoyal',
+    'luxury hair and skin salon',
+    'bridal and beauty studio Maduravoyal',
+    'hair skin and makeup experts Chennai',
+
+    // Nearby Area Keywords
+    'beauty salon MMDA Colony',
+    'beauty salon Chennai 600095'
   ],
   openGraph: {
-    title: '🌟 Best Premium Hair Salon & Bridal Makeup in Maduravoyal | 4.9★ | Anaplak',
+    title: '🌟 Best Premium Hair Salon & Bridal Makeup in Maduravoyal | ⭐4.9 | Anaplak',
     description: '💎 Premium Beauty Services | Bridal Makeup Packages | Hair Coloring & Keratin | Facials & Beauty Treatments | 6+ Years Experience | Book Your Appointment Today!',
     url: 'https://anaplakartandglamsalon.com',
     siteName: 'Anaplak Art And Glam Salon',
@@ -97,7 +101,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     images: [
       {
-        url: '/og-logo.png',
+        url: '/logo_updated.webp',
         width: 1200,
         height: 630,
         alt: 'Anaplak Art And Glam Salon - Best Bridal Makeup & Beauty Salon in Maduravoyal, Chennai',
@@ -106,9 +110,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Premium Hair Salon & Bridal Makeup Maduravoyal | Anaplak ⭐4.9',
-    description: '💎 Premium Beauty Services | Expert Bridal Makeup | Hair Coloring | Facials | Book Now!',
-    images: ['/og-logo.png'],
+    title: '🌟 Best Premium Hair Salon & Bridal Makeup Maduravoyal | ⭐4.9 | Anaplak',
+    description: '💎 Premium Beauty Services | Bridal Makeup Packages | Hair Coloring & Keratin | Facials & Beauty Treatments | 6+ Years Experience | Book Your Appointment Today!',
+    images: ['/logo_updated.webp'],
   },
   alternates: {
     canonical: 'https://anaplakartandglamsalon.com',

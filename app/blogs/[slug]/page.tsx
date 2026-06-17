@@ -7,7 +7,7 @@ import Footer from "@/components/footer"
 import BlogCard from "@/components/blog/BlogCard"
 import TableOfContents from "@/components/blog/TableOfContents"
 import BlogSchema from "@/components/blog/BlogSchema"
-import { getBlogBySlug, blogData, getLatestBlogs } from "@/data/blogData"
+import { getBlogBySlug, blogData, getRelatedBlogs } from "@/data/blogData"
 import { addHeadingIds, extractHeadings, extractCTA, stripCTA } from "@/lib/blogHeadings"
 import { extractFAQs, generateBlogSchema, generateFAQSchema } from "@/lib/blogSchema"
 
@@ -76,7 +76,7 @@ export default async function BlogPage({ params }: Props) {
     notFound()
   }
 
-  const relatedBlogs = getLatestBlogs(3).filter((b) => b.id !== blog.id).slice(0, 2)
+  const relatedBlogs = getRelatedBlogs(blog, 3)
 
   const processedContent = addHeadingIds(stripCTA(blog.content))
   const headings = extractHeadings(blog.content)
@@ -122,21 +122,23 @@ export default async function BlogPage({ params }: Props) {
             <p className="text-gray-300 text-lg mb-8">{blog.description}</p>
 
             <div className="flex flex-wrap items-center gap-6 text-gray-400 text-sm">
-              <div className="flex items-center gap-3">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden bg-[#2A2A2A]">
-                  <Image
-                    src={blog.authorImage}
-                    alt={blog.author}
-                    fill
-                    sizes="48px"
-                    className="object-cover"
-                  />
+              <a href="/kalpana">
+                <div className="flex items-center gap-3">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden bg-[#2A2A2A]">
+                    <Image
+                      src={blog.authorImage}
+                      alt={blog.author}
+                      fill
+                      sizes="48px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">{blog.author}</p>
+                    <p className="text-gray-500">{blog.authorRole}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-white font-medium">{blog.author}</p>
-                  <p className="text-gray-500">{blog.authorRole}</p>
-                </div>
-              </div>
+              </a>
 
               <div className="flex items-center gap-4">
                 <time dateTime={blog.createdAt}>{formatDate(blog.createdAt)}</time>
@@ -218,30 +220,32 @@ export default async function BlogPage({ params }: Props) {
             ))}
           </div>
         </div>
-      </article>
+      </article >
 
-      {relatedBlogs.length > 0 && (
-        <section className="py-16 bg-[#0E0E0E]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Recent Articles</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {relatedBlogs.map((relatedBlog) => (
-                <BlogCard key={relatedBlog.id} blog={relatedBlog} />
-              ))}
+      {
+        relatedBlogs.length > 0 && (
+          <section className="py-16 bg-[#0E0E0E]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Related Articles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {relatedBlogs.map((relatedBlog) => (
+                  <BlogCard key={relatedBlog.id} blog={relatedBlog} />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )
+      }
 
-      <section className="py-20 bg-black relative overflow-hidden">
+      < section className="py-20 bg-black relative overflow-hidden" >
         {/* Spiral gradient background */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        < div className="absolute inset-0 flex items-center justify-center pointer-events-none" >
           <div className="w-[800px] h-[800px] relative">
             <div className="absolute inset-0 bg-gradient-conic from-[#F8C8DC] via-transparent to-[#F8C8DC] opacity-20 blur-3xl animate-spin-slow" />
             <div className="absolute inset-[10%] bg-gradient-conic from-[#F8C8DC] via-transparent to-[#F8C8DC] opacity-15 blur-2xl animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '15s' }} />
             <div className="absolute inset-[20%] bg-gradient-conic from-[#F8C8DC] via-transparent to-[#F8C8DC] opacity-10 blur-xl animate-spin-slow" style={{ animationDuration: '20s' }} />
           </div>
-        </div>
+        </div >
 
         <div className="max-w-4xl mx-auto text-center px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
@@ -275,9 +279,9 @@ export default async function BlogPage({ params }: Props) {
             </a>
           </div>
         </div>
-      </section>
+      </section >
 
       <Footer />
-    </main>
+    </main >
   )
 }

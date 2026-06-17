@@ -20,8 +20,8 @@ export interface Blog {
 export const blogData: Blog[] = [
   {
     id: "bridal-makeup-trends-2026",
-    title: "Top Bridal Makeup Trends for 2026: A Complete Guide",
-    description: "Discover the latest bridal makeup trends for 2026. From natural glam to bold statements, find your perfect wedding day look at Anaplak Art and Glam Salon in Chennai.",
+    title: "2026 Bridal Makeup Trends: 7 Stunning Looks Every Chennai Bride Must See",
+    description: "Your wedding day look can make or break your photos. See the 7 bridal makeup trends Chennai brides are obsessed with in 2026 — from dewy natural glam to bold HD finishes at Anaplak Art and Glam Salon.",
     content: `<p>The bridal makeup landscape has evolved dramatically in 2026, with brides embracing everything from natural elegance to bold, statement-making looks. At <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai, we've curated the most sought-after trends that modern brides are requesting — and we're here to help you find yours.</p>
 
 <h2>The Rise of Natural Glam</h2>
@@ -91,7 +91,7 @@ A: Yes, we offer <strong>bridal makeup home service in Chennai</strong> for brid
     image: "/blogs/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg",
     category: "Bridal",
     tags: ["bridal makeup", "wedding makeup", "makeup trends 2026", "bridal beauty", "HD bridal makeup", "airbrush bridal makeup", "natural bridal makeup", "South Indian bridal makeup", "North Indian bridal makeup", "bridal makeup Chennai", "bridal makeup Maduravoyal", "bridal consultation Chennai", "bridal studio Chennai", "bride makeup", "wedding day makeup", "bridal makeup package Chennai", "bridal makeup artist Maduravoyal", "luxury bridal makeup", "premium bridal makeup", "professional bridal makeup", "bridal party makeup", "bridal makeup and hair", "destination wedding makeup"],
-    keywords: ["bridal makeup Chennai", "bridal makeup trends 2026", "wedding makeup Chennai", "bridal consultation Maduravoyal", "best bridal makeup artist Chennai", "top bridal makeup artist", "bridal makeup studio Chennai", "bridal makeup package Chennai", "bridal makeup Maduravoyal", "HD bridal makeup Chennai", "airbrush bridal makeup Chennai", "natural bridal makeup look", "South Indian bridal makeup Chennai", "North Indian bridal makeup Chennai", "traditional bridal makeup", "modern bridal makeup", "luxury bridal makeup Chennai", "premium bridal makeup", "professional bridal makeup artist", "bridal makeup trial", "bridal makeup consultation Chennai", "bridal party makeup", "bridal makeup and hair package", "destination wedding makeup Chennai", "bridal makeup at home Chennai", "bridal makeup home service", "wedding bridal makeup", "bridal makeup near me", "bridal makeup artist near me", "best bridal makeup Chennai", "top rated bridal makeup artist", "bridal makeup reviews Chennai", "bridal makeup portfolio", "bridal makeup specialist Chennai", "bridal makeup expert Maduravoyal", "celebrity bridal makeup", "glamorous bridal makeup", "bridal makeup styles", "bridal makeup ideas", "bridal makeup inspiration", "Kalpana bridal makeup", "Anaplak bridal studio", "Anaplak bridal makeup Chennai"],
+    keywords: ["bridal makeup", "bridal makeup Chennai", "bridal makeup trends 2026", "wedding makeup Chennai", "bridal consultation Maduravoyal", "best bridal makeup artist Chennai", "top bridal makeup artist", "bridal makeup studio Chennai", "bridal makeup package Chennai", "bridal makeup Maduravoyal", "HD bridal makeup Chennai", "airbrush bridal makeup Chennai", "natural bridal makeup look", "South Indian bridal makeup Chennai", "North Indian bridal makeup Chennai", "traditional bridal makeup", "modern bridal makeup", "luxury bridal makeup Chennai", "premium bridal makeup", "professional bridal makeup artist", "bridal makeup trial", "bridal makeup consultation Chennai", "bridal party makeup", "bridal makeup and hair package", "destination wedding makeup Chennai", "bridal makeup at home Chennai", "bridal makeup home service", "wedding bridal makeup", "bridal makeup near me", "bridal makeup artist near me", "best bridal makeup Chennai", "top rated bridal makeup artist", "bridal makeup reviews Chennai", "bridal makeup portfolio", "bridal makeup specialist Chennai", "bridal makeup expert Maduravoyal", "celebrity bridal makeup", "glamorous bridal makeup", "bridal makeup styles", "bridal makeup ideas", "bridal makeup inspiration", "Kalpana bridal makeup", "Anaplak bridal studio", "Anaplak bridal makeup Chennai"],
     author: "Kalpana",
     authorImage: "/kalpana.jpg",
     authorRole: "Chief Stylist & Founder",
@@ -103,8 +103,8 @@ A: Yes, we offer <strong>bridal makeup home service in Chennai</strong> for brid
   },
   {
     id: "keratin-treatment-guide",
-    title: "Everything You Need to Know About Keratin Hair Treatments",
-    description: "A complete guide to keratin treatments. Learn about benefits, process, aftercare, and whether it's right for your hair type at Anaplak Art and Glam Salon in Chennai.",
+    title: "Keratin Treatment: The Complete Guide Before You Book Your Appointment",
+    description: "Thinking about keratin but not sure what to expect? This guide covers everything — the real cost, how long it lasts, what happens during the process, and whether it's actually right for your hair at Anaplak Art and Glam Salon.",
     content: `<p>Keratin treatments have revolutionized hair care, offering a solution for frizzy, unmanageable hair. But what exactly does this treatment involve, and is it right for you? At <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai, we specialize in providing professional keratin treatments that transform your hair.</p>
 
 <h2>What is a Keratin Treatment?</h2>
@@ -217,8 +217,8 @@ A: Absolutely! <strong>Keratin treatment for frizzy hair</strong> is one of our 
   },
   {
     id: "skincare-routine-facial-treatments",
-    title: "Build the Perfect Skincare Routine with Professional Facials",
-    description: "Learn how professional facials can transform your skincare routine. Expert tips on choosing the right treatment for your skin type at Anaplak Art and Glam Salon in Chennai.",
+    title: "Professional Facials Changed My Skin: Here's Exactly What Each One Does",
+    description: "Wasting money on skincare that doesn't work? Professional facials target what home products can't. See which facial actually fixes your skin concern — from acne to anti-aging at Anaplak Art and Glam Salon.",
     content: `<p>Your skin is unique, and your skincare routine should be too. Professional facials at <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai can be the foundation of a truly personalized skincare plan — one that delivers results you can see and feel. Our <strong>facial treatment in Chennai</strong> services are designed to address all skin concerns.</p>
 
 <h2>Why Professional Facials Matter</h2>
@@ -341,8 +341,8 @@ A: For <strong>glowing skin treatment</strong>, we recommend monthly facials com
   },
   {
     id: "hair-color-trends",
-    title: "Best Hair Coloring Trends: From Balayage to Highlights",
-    description: "Explore the latest hair coloring techniques in Chennai. From subtle balayage to bold statement colors, find your perfect shade at Anaplak Art and Glam Salon.",
+    title: "Hair Color Trends 2026: 8 Shades That Will Make You Book an Appointment Today",
+    description: "Still choosing between basic black and brown? 2026's hair color trends are anything but boring. From melted brunettes to bold fashion colors — see the shades everyone's asking for at Anaplak Art and Glam Salon.",
     content: `<p>Hair coloring has become an art form, with techniques that can transform your look from subtle to dramatic. At <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai, our color specialists help you find the technique and shade that perfectly complements your style, skin tone, and lifestyle. We offer professional <strong>hair coloring services in Chennai</strong> using the latest trends and premium products.</p>
 
 <h2>Balayage: The Natural Choice</h2>
@@ -471,8 +471,8 @@ A: <strong>Hair coloring price in Chennai</strong> varies based on technique and
   },
   {
     id: "monsoon-hair-care-tips",
-    title: "Monsoon Hair Care Tips: Protect Your Hair This Rainy Season",
-    description: "Essential monsoon hair care tips for the rainy season in Chennai. Learn how to protect your hair from humidity, frizz, and damage at Anaplak Art and Glam Salon.",
+    title: "Monsoon Hair Care: 9 Tips to Stop Frizz Before It Ruins Your Hair",
+    description: "Every Chennai monsoon turns great hair into a frizzy mess. These 9 proven tips — from pre-wash oiling to the right hair spa — actually work. Stop fighting humidity at Anaplak Art and Glam Salon.",
     content: `<p>Monsoon season brings relief from the scorching heat — but it also brings a wave of hair troubles. High humidity, acidic rainwater, and constant dampness can leave your hair frizzy, flat, and damaged. At <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai, we've helped hundreds of clients keep their hair healthy through every season. Our <strong>hair care services in Chennai</strong> are designed to combat monsoon damage effectively.</p>
 
 <h2>Common Monsoon Hair Problems</h2>
@@ -609,8 +609,8 @@ A: Low-maintenance styles like layered cuts, bobs, or pixie cuts work best as th
   },
   {
     id: "top-hair-styling-trends-women-2026",
-    title: "Top Hair Styling Trends in 2026 for Women",
-    description: "Discover the latest women's hair styling trends in 2026. From butterfly cuts to balayage, find your perfect look at Anaplak Art and Glam Salon in Chennai.",
+    title: "Women's Hair Styling 2026: 10 Cuts That Look Good on Literally Everyone",
+    description: "Tired of haircuts that look amazing in photos but fall flat on you? These 10 trending styles for 2026 actually work with real hair textures and face shapes. Find your next look at Anaplak Art and Glam Salon Chennai.",
     content: `<p>Keeping up with changing hair trends can feel overwhelming—especially when you want a style that looks modern, suits your face, and is easy to maintain in Chennai's humid climate. Choosing the wrong hairstyle can lead to frustration, high maintenance, and an outdated look. That's why understanding the <strong>top hair styling trends in 2026 for women</strong> is essential. This guide from <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai will help you discover the latest trending hairstyles that are stylish, practical, and perfect for women in Chennai who want to look effortlessly beautiful.</p>
 
 <h2>Why Hair Trends Matter for Women in 2026</h2>
@@ -782,8 +782,8 @@ A: <strong>Haircut price in Chennai</strong> varies by style and length. Contact
   },
   {
     id: "top-hair-styling-trends-men-2026",
-    title: "Top Hair Styling Trends in 2026 for Men",
-    description: "Discover the latest men's hair styling trends in 2026. From textured crops to curly hair embraces, find the perfect style at Anaplak Art and Glam Salon in Chennai.",
+    title: "Men's Hair Trends 2026: 7 Styles That Make You Look Sharper Instantly",
+    description: "Still rocking the same haircut from 3 years ago? These 7 styling trends for 2026 — from textured crops to modern slick backs — are proven to make men look more put-together at Anaplak Art and Glam Salon Chennai.",
     content: `<p>Men's grooming is evolving faster than ever, and keeping up with the latest styles can feel overwhelming. Choosing the wrong haircut can affect your confidence, appearance, and even how others perceive you. That's why understanding the <strong>top hair styling trends in 2026 for men</strong> is essential—especially for men in Chennai, where climate, lifestyle, and personal style all play a role. This guide from <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai will help you discover modern, stylish, and practical hair trends that suit your personality while staying easy to maintain.</p>
 
 <h2>Why Hair Trends Matter for Men in 2026</h2>
@@ -958,8 +958,8 @@ A: <strong>Men's haircut price in Chennai</strong> varies by style. Contact us f
   },
   {
     id: "bridal-beauty-checklist-before-wedding",
-    title: "Ultimate Bridal Beauty Checklist Before Your Wedding",
-    description: "A complete bridal beauty checklist for brides in Chennai. Follow this timeline for glowing skin, perfect hair, and stress-free wedding day prep at Anaplak Art and Glam Salon.",
+    title: "Bridal Beauty Checklist: The 3-Month Timeline That Saves You From Wedding Day Disasters",
+    description: "One bad facial can ruin months of skin prep. This month-by-month bridal beauty checklist tells you exactly what to do — and what to avoid — so you look flawless on your wedding day at Anaplak Art and Glam Salon.",
     content: `<p>Every bride dreams of looking flawless on her wedding day—but without a proper plan, beauty prep can quickly become stressful and overwhelming. This <strong>ultimate bridal beauty checklist before your wedding</strong> is designed to help brides in Chennai stay organized, stress-free, and glowing from head to toe. Whether your wedding is months away or just around the corner, following the right steps at the right time ensures you look your absolute best on your big day at our <strong>bridal studio in Chennai</strong>.</p>
 
 <h2>What is a Bridal Beauty Checklist?</h2>
@@ -1159,7 +1159,7 @@ A: <strong>Bridal makeup price in Chennai</strong> varies based on services incl
     image: "/blogs/Ultimate-Bridal-Beauty-Checklist-Before-Wedding.webp",
     category: "Bridal",
     tags: ["bridal beauty", "wedding checklist", "bridal skincare", "bridal preparation", "bridal beauty checklist Chennai", "bride preparation Chennai", "pre wedding beauty", "bridal grooming", "wedding beauty timeline", "bridal beauty timeline", "bride to be beauty", "pre bridal packages", "bridal makeover", "wedding day preparation", "bridal skin care", "bridal hair care", "bridal makeup trial", "bridal facial Chennai", "bridal hair styling Chennai", "bridal packages Chennai", "bridal services Maduravoyal", "bridal studio Chennai", "best bridal studio Chennai", "bridal beauty services Chennai"],
-    keywords: ["bridal beauty checklist Chennai", "wedding preparation checklist Chennai", "bride beauty tips Maduravoyal", "bridal skincare timeline Chennai", "best bridal salon Chennai", "bridal beauty checklist", "wedding beauty checklist Chennai", "bridal preparation timeline", "pre wedding beauty checklist", "bride preparation checklist Chennai", "bridal skincare routine", "bridal hair care routine", "bridal makeup timeline Chennai", "wedding beauty timeline Chennai", "bridal beauty preparation", "bridal beauty services Chennai", "bridal makeup services Maduravoyal", "bridal hairstyling Chennai", "bridal packages Chennai", "bridal makeup price Chennai", "bridal makeup cost Chennai", "bridal makeup studio Chennai", "bridal studio Maduravoyal", "bridal studio near me Chennai", "best bridal makeup Chennai", "top bridal makeup artist Chennai", "professional bridal makeup Chennai", "luxury bridal makeup Chennai", "premium bridal services Chennai", "bridal beauty salon Chennai", "bridal beauty studio Maduravoyal", "wedding makeup and hair Chennai", "bridal package includes", "bridal trial session Chennai", "bridal consultation Chennai", "pre wedding facial Chennai", "bridal facial packages Chennai", "bridal skincare treatment Chennai", "Anaplak bridal services", "Anaplak bridal makeup Chennai", "Kalpana bridal studio Chennai", "Maduravoyal bridal salon", "Chennai bridal services near me"],
+    keywords: ["bridal makeup", "bridal beauty checklist Chennai", "wedding preparation checklist Chennai", "bride beauty tips Maduravoyal", "bridal skincare timeline Chennai", "best bridal salon Chennai", "bridal beauty checklist", "wedding beauty checklist Chennai", "bridal preparation timeline", "pre wedding beauty checklist", "bride preparation checklist Chennai", "bridal skincare routine", "bridal hair care routine", "bridal makeup timeline Chennai", "wedding beauty timeline Chennai", "bridal beauty preparation", "bridal beauty services Chennai", "bridal makeup services Maduravoyal", "bridal hairstyling Chennai", "bridal packages Chennai", "bridal makeup price Chennai", "bridal makeup cost Chennai", "bridal makeup studio Chennai", "bridal studio Maduravoyal", "bridal studio near me Chennai", "best bridal makeup Chennai", "top bridal makeup artist Chennai", "professional bridal makeup Chennai", "luxury bridal makeup Chennai", "premium bridal services Chennai", "bridal beauty salon Chennai", "bridal beauty studio Maduravoyal", "wedding makeup and hair Chennai", "bridal package includes", "bridal trial session Chennai", "bridal consultation Chennai", "pre wedding facial Chennai", "bridal facial packages Chennai", "bridal skincare treatment Chennai", "Anaplak bridal services", "Anaplak bridal makeup Chennai", "Kalpana bridal studio Chennai", "Maduravoyal bridal salon", "Chennai bridal services near me"],
     author: "Kalpana",
     authorImage: "/kalpana.jpg",
     authorRole: "Chief Stylist & Founder",
@@ -1171,8 +1171,8 @@ A: <strong>Bridal makeup price in Chennai</strong> varies based on services incl
   },
   {
     id: "anti-aging-skincare-routine",
-    title: "Anti-Aging Skincare Routine: Expert Guide to Youthful, Glowing Skin",
-    description: "Discover the best anti-aging skincare routine for men and women in Chennai. Learn about retinol, vitamin C, sunscreen, and professional treatments at Anaplak Art and Glam Salon.",
+    title: "Anti-Aging Skincare: The Routine That Actually Works (No Gimmicks, Just Results)",
+    description: "Most anti-aging advice is either too expensive or too complicated. This routine uses proven ingredients — retinol, vitamin C, sunscreen — and real dermatologist logic to visibly reduce fine lines and dullness at Anaplak Art and Glam Salon.",
     content: `<p>Aging is natural — but premature aging doesn't have to be. Fine lines, dull skin, uneven tone, and loss of firmness often appear earlier due to stress, sun exposure, and poor skincare habits. The good news? With the right <strong>anti-aging skincare routine</strong>, you can maintain youthful, radiant skin for years. At <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai, we combine expert guidance with professional treatments to help you age gracefully and glow confidently.</p>
 
 <h2>What is an Anti-Aging Skincare Routine?</h2>
@@ -1333,8 +1333,8 @@ A: At <strong>Anaplak Art and Glam Salon</strong>, we offer gold facials, collag
   },
   {
     id: "best-hair-treatments-for-damaged-hair",
-    title: "Best Hair Treatments for Damaged Hair: Expert Guide to Repair & Restore",
-    description: "Discover the best hair treatments for damaged hair in Chennai. From Olaplex to keratin, hair spa, and hair botox — find the right repair solution at Anaplak Art and Glam Salon.",
+    title: "Damaged Hair? These 6 Salon Treatments Actually Reverse It (Not Just Mask It)",
+    description: "Olaplex, keratin, hair spa, hair botox — which one actually fixes your damage? We break down what each treatment does, who it's for, and what results you can realistically expect at Anaplak Art and Glam Salon.",
     content: `<p>Dealing with dry, frizzy, or lifeless hair can be frustrating — especially when regular oils and shampoos don't seem to work anymore. Damage from heat styling, coloring, pollution, and Chennai's humid climate can weaken your hair over time. The good news? The right <strong>best hair treatments for damaged hair</strong> can restore strength, shine, and smoothness. In this guide, you'll discover the most effective salon and professional treatments to repair your hair and bring it back to life at <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai.</p>
 
 <h2>What Causes Hair Damage?</h2>
@@ -1507,8 +1507,8 @@ A: Pricing varies based on the treatment type and hair length. Contact us for pe
   },
   {
     id: "bridal-skincare-routine-3-months-plan",
-    title: "Bridal Skincare Routine: 3 Months Plan for Flawless Wedding Day Glow",
-    description: "Follow this 3-month bridal skincare routine in Chennai. Get a step-by-step plan with monthly facials, daily care tips, and professional treatments at Anaplak Art and Glam Salon.",
+    title: "Bridal Skincare: The 3-Month Plan That Guarantees You Glow on Your Wedding Day",
+    description: "Last-minute facials before your wedding are a recipe for breakouts. This step-by-step 3-month plan tells you exactly what to do each month — from skin prep to the final glow facial at Anaplak Art and Glam Salon.",
     content: `<p>Every bride wants that natural, radiant glow on her wedding day — but achieving flawless skin doesn't happen overnight. Last-minute facials and random products often lead to breakouts, dullness, or uneven skin tone. That's why following a structured <strong>bridal skincare routine: 3 months plan</strong> is essential, especially for brides in Chennai where heat and humidity can affect your skin. With the right plan, you can build healthy, glowing skin step by step and walk into your wedding with confidence and zero stress at <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai.</p>
 
 <h2>What is a Bridal Skincare Routine: 3 Months Plan?</h2>
@@ -1687,7 +1687,7 @@ A: Our <strong>bridal skincare packages</strong> at Anaplak Art and Glam Salon a
     image: "/blogs/bridal-skincare-routine-3-months-plan.jpg",
     category: "Bridal",
     tags: ["bridal skincare", "bridal skincare routine", "3 months plan", "bridal glow", "bridal facial", "bridal skincare Chennai", "bridal facial Chennai", "bridal glow plan", "bridal skin preparation", "pre wedding skincare", "bridal beauty routine", "bridal skin care Maduravoyal", "bridal facials Chennai", "best bridal facial Chennai", "bridal glow facial", "gold facial bridal", "bridal skincare timeline", "wedding skin prep", "bridal skin care plan", "bridal facial packages Chennai", "bridal skin consultation", "bridal brightening facial", "bridal hydrating facial", "anti aging bridal facial", "bridal makeup preparation Chennai", "skincare before wedding", "bridal face glow tips", "bridal skincare for Chennai weather", "pre wedding facial Chennai"],
-    keywords: ["bridal skincare routine 3 months plan Chennai", "bridal facial Chennai", "bridal glow plan Maduravoyal", "bridal skincare timeline Chennai", "pre wedding skincare Chennai", "bridal facial packages Chennai", "best bridal facial Chennai", "bridal glow facial Chennai", "bridal skin preparation Chennai", "bridal skincare for Chennai weather", "gold facial for brides Chennai", "bridal brightening facial Chennai", "3 month bridal skincare plan", "bridal skin consultation Chennai", "wedding skin prep Chennai", "bridal beauty routine Chennai", "bridal skin care Maduravoyal", "bridal facial near me Chennai", "pre wedding facial Chennai", "bridal skincare tips Chennai", "bridal glow tips before wedding", "bridal facial cost Chennai", "bridal skincare package Chennai", "bridal facial for oily skin Chennai", "bridal facial for dry skin Chennai", "bridal skincare routine step by step", "Anaplak bridal facial", "bridal salon Maduravoyal", "bridal skincare expert Chennai"],
+    keywords: ["bridal makeup", "bridal skincare routine 3 months plan Chennai", "bridal facial Chennai", "bridal glow plan Maduravoyal", "bridal skincare timeline Chennai", "pre wedding skincare Chennai", "bridal facial packages Chennai", "best bridal facial Chennai", "bridal glow facial Chennai", "bridal skin preparation Chennai", "bridal skincare for Chennai weather", "gold facial for brides Chennai", "bridal brightening facial Chennai", "3 month bridal skincare plan", "bridal skin consultation Chennai", "wedding skin prep Chennai", "bridal beauty routine Chennai", "bridal skin care Maduravoyal", "bridal facial near me Chennai", "pre wedding facial Chennai", "bridal skincare tips Chennai", "bridal glow tips before wedding", "bridal facial cost Chennai", "bridal skincare package Chennai", "bridal facial for oily skin Chennai", "bridal facial for dry skin Chennai", "bridal skincare routine step by step", "Anaplak bridal facial", "bridal salon Maduravoyal", "bridal skincare expert Chennai"],
     author: "Kalpana",
     authorImage: "/kalpana.jpg",
     authorRole: "Chief Stylist & Founder",
@@ -1699,8 +1699,8 @@ A: Our <strong>bridal skincare packages</strong> at Anaplak Art and Glam Salon a
   },
   {
     id: "hair-spa-benefits-explained",
-    title: "Hair Spa Benefits Explained: Why Your Hair Needs Regular Care",
-    description: "Learn the top hair spa benefits, how the treatment works, who should get it, and how often to do it for healthier, shinier, stronger hair.",
+    title: "Hair Spa Treatment: 7 Reasons Your Hair Is Begging for One Right Now",
+    description: "If your hair feels dry, frizzy, or lifeless no matter what shampoo you use, a professional hair spa might be exactly what it needs. Here's what it actually does, who needs it, and how often you should go at Anaplak Art and Glam Salon.",
     content: `<p>If your hair feels dry, frizzy, or lifeless, you're not alone. Daily exposure to pollution, heat styling, and stress can damage your hair more than you realize. That's where a hair spa treatment comes in - a powerful solution to restore health, shine, and strength.</p>
 
 <p>In this guide, we'll break down <strong>Hair Spa Benefits Explained</strong> so you understand why this treatment is not just a luxury, but a necessity for maintaining beautiful, healthy hair.</p>
@@ -1813,8 +1813,8 @@ A: Home treatments help, but professional hair spa provides deeper and more effe
   },
   {
     id: "how-to-choose-perfect-bridal-makeup-artist",
-    title: "How to Choose the Perfect Bridal Makeup Artist",
-    description: "Complete guide to finding the best bridal makeup artist. Learn what to look for, questions to ask, and how to book the right artist for your wedding day at Anaplak Art and Glam Salon.",
+    title: "How to Pick a Bridal Makeup Artist Who Won't Ruin Your Wedding Day Look",
+    description: "The wrong bridal makeup artist can turn your dream wedding into a disaster. This guide shows you exactly what to check — portfolios, trials, hygiene, pricing — before you book at Anaplak Art and Glam Salon.",
     content: `<p>As your big day approaches, there are many things to look forward to — and being photographed while looking your absolute best is one of them. But selecting the right person to help you prepare for that moment can feel overwhelming. If you've ever wondered <strong>how to choose the perfect bridal makeup artist</strong>, this guide will walk you through every step. From understanding what a bridal makeup artist does to evaluating portfolios, conducting trials, and avoiding common mistakes — we've covered everything you need to feel confident that your wedding day look will be flawless, photogenic, and true to your natural beauty at <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai.</p>
 
 <h2>What Does a Bridal Makeup Artist Do?</h2>
@@ -1960,7 +1960,7 @@ A: <strong>Bridal makeup prices in Chennai</strong> vary based on the artist, te
     image: "/blogs/how-to-choose-perfect-bridal-makeup-artist.jpg",
     category: "Bridal",
     tags: ["bridal makeup artist", "bridal makeup", "wedding makeup", "bridal makeup Chennai", "bridal makeup artist Chennai", "wedding makeup artist", "bridal makeup trial", "bridal makeup Maduravoyal", "best bridal makeup artist Chennai", "bridal makeup tips", "how to choose bridal makeup artist", "bridal makeup guide", "airbrush bridal makeup Chennai", "HD bridal makeup Chennai", "bridal makeup consultation", "bridal makeup portfolio", "bridal makeup packages Chennai", "bridal makeup cost Chennai", "bridal makeup review", "bridal makeup studio Chennai", "south Indian bridal makeup", "bridal makeup for Chennai weather", "bridal makeup trial Chennai", "professional bridal makeup Chennai"],
-    keywords: ["how to choose perfect bridal makeup artist Chennai", "bridal makeup artist Chennai", "wedding makeup artist Maduravoyal", "best bridal makeup Chennai", "bridal makeup trial Chennai", "bridal makeup tips Chennai", "bridal makeup consultation Chennai", "bridal makeup packages Chennai", "bridal makeup cost Chennai", "bridal makeup guide Chennai", "airbrush bridal makeup Chennai", "HD bridal makeup Chennai", "bridal makeup studio Chennai", "professional bridal makeup artist Chennai", "bridal makeup portfolio Chennai", "bridal makeup for Chennai weather", "south Indian bridal makeup Chennai", "bridal makeup artist near me Chennai", "bridal makeup review Chennai", "bridal makeup trial session Chennai", "how to find bridal makeup artist", "bridal makeup tips for brides", "bridal makeup mistakes to avoid", "Anaplak bridal makeup", "bridal makeup salon Maduravoyal", "wedding day makeup Chennai"],
+    keywords: ["bridal makeup", "how to choose perfect bridal makeup artist Chennai", "bridal makeup artist Chennai", "wedding makeup artist Maduravoyal", "best bridal makeup Chennai", "bridal makeup trial Chennai", "bridal makeup tips Chennai", "bridal makeup consultation Chennai", "bridal makeup packages Chennai", "bridal makeup cost Chennai", "bridal makeup guide Chennai", "airbrush bridal makeup Chennai", "HD bridal makeup Chennai", "bridal makeup studio Chennai", "professional bridal makeup artist Chennai", "bridal makeup portfolio Chennai", "bridal makeup for Chennai weather", "south Indian bridal makeup Chennai", "bridal makeup artist near me Chennai", "bridal makeup review Chennai", "bridal makeup trial session Chennai", "how to find bridal makeup artist", "bridal makeup tips for brides", "bridal makeup mistakes to avoid", "Anaplak bridal makeup", "bridal makeup salon Maduravoyal", "wedding day makeup Chennai"],
     author: "Kalpana",
     authorImage: "/kalpana.jpg",
     authorRole: "Chief Stylist & Founder",
@@ -1972,8 +1972,8 @@ A: <strong>Bridal makeup prices in Chennai</strong> vary based on the artist, te
   },
   {
     id: "keratin-vs-smoothening",
-    title: "Keratin vs Smoothening: Which Hair Treatment is Better for You?",
-    description: "Keratin vs Smoothening — which is right for your hair? Compare benefits, process, duration, aftercare, and cost to make the best choice at Anaplak Art and Glam Salon in Chennai.",
+    title: "Keratin vs Smoothening: The Honest Comparison Nobody Tells You",
+    description: "Keratin gives natural shine. Smoothening gives pin-straight hair. But which one will actually work for YOUR hair type? We break down the real differences — duration, damage risk, cost, and results at Anaplak Art and Glam Salon.",
     content: `<p>If you're dealing with frizzy, unmanageable hair, you've likely heard about <strong>keratin treatment</strong> and <strong>hair smoothening</strong>. Both promise sleek, shiny results — but choosing the right one can make a huge difference in how your hair looks and feels long-term. In this guide, we'll break down <strong>Keratin vs Smoothening</strong> so you can confidently decide which treatment suits your hair type, lifestyle, and goals at <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, Chennai.</p>
 
 <h2>What is Keratin Treatment?</h2>
@@ -2182,7 +2182,7 @@ A: <strong>Hair smoothening prices in Chennai</strong> depend on hair length, th
     image: "/blogs/keratin-vs-smoothening.jpg",
     category: "Hair Care",
     tags: ["keratin vs smoothening", "keratin treatment", "hair smoothening", "keratin", "smoothening", "keratin treatment Chennai", "hair smoothening Chennai", "keratin vs smoothening comparison", "which is better keratin or smoothening", "keratin treatment benefits", "hair smoothening benefits", "keratin treatment for frizzy hair", "smoothening for straight hair", "keratin treatment cost Chennai", "hair smoothening cost Chennai", "best hair treatment Chennai", "hair treatment Maduravoyal", "frizzy hair solution Chennai", "straight hair treatment Chennai", "keratin smoothening difference", "hair treatment comparison Chennai", "Anaplak keratin treatment", "Anaplak hair smoothening"],
-    keywords: ["keratin vs smoothening Chennai", "keratin treatment Chennai", "hair smoothening Chennai", "keratin vs smoothening which is better", "keratin treatment for frizzy hair Chennai", "hair smoothening for straight hair Chennai", "best hair treatment for frizzy hair Chennai", "keratin treatment cost Chennai", "hair smoothening cost Chennai", "keratin treatment benefits", "hair smoothening benefits", "difference between keratin and smoothening", "keratin treatment duration", "hair smoothening duration", "keratin treatment process Chennai", "hair smoothening process Chennai", "keratin treatment aftercare", "hair smoothening aftercare", "hair treatment comparison Chennai", "hair salon Maduravoyal", "best hair treatment salon Chennai", "frizzy hair solution Chennai", "straight hair treatment Chennai", "Anaplak keratin treatment", "Anaplak hair smoothening"],
+    keywords: ["keratin vs smoothening", "keratin vs smoothening Chennai", "keratin treatment Chennai", "hair smoothening Chennai", "keratin vs smoothening which is better", "keratin treatment for frizzy hair Chennai", "hair smoothening for straight hair Chennai", "best hair treatment for frizzy hair Chennai", "keratin treatment cost Chennai", "hair smoothening cost Chennai", "keratin treatment benefits", "hair smoothening benefits", "difference between keratin and smoothening", "keratin treatment duration", "hair smoothening duration", "keratin treatment process Chennai", "hair smoothening process Chennai", "keratin treatment aftercare", "hair smoothening aftercare", "hair treatment comparison Chennai", "hair salon Maduravoyal", "best hair treatment salon Chennai", "frizzy hair solution Chennai", "straight hair treatment Chennai", "Anaplak keratin treatment", "Anaplak hair smoothening"],
     author: "Kalpana",
     authorImage: "/kalpana.jpg",
     authorRole: "Chief Stylist & Founder",
@@ -2206,6 +2206,31 @@ export function getLatestBlogs(count: number = 3): Blog[] {
   return [...blogData]
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
     .slice(0, count)
+}
+
+export function getRelatedBlogs(currentBlog: Blog, count: number = 3): Blog[] {
+  const tagMatches = blogData
+    .filter(b => b.id !== currentBlog.id)
+    .map(b => {
+      const matchingTags = b.tags.filter(tag => currentBlog.tags.includes(tag))
+      return { blog: b, matchCount: matchingTags.length }
+    })
+    .filter(item => item.matchCount > 0)
+    .sort((a, b) => b.matchCount - a.matchCount)
+
+  if (tagMatches.length >= count) {
+    return tagMatches.slice(0, count).map(item => item.blog)
+  }
+
+  const relatedIds = new Set(tagMatches.map(item => item.blog.id))
+  const recent = [...blogData]
+    .filter(b => b.id !== currentBlog.id && !relatedIds.has(b.id))
+    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+
+  return [
+    ...tagMatches.map(item => item.blog),
+    ...recent,
+  ].slice(0, count)
 }
 
 export function getBlogsByCategory(category: string): Blog[] {

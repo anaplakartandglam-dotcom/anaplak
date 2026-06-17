@@ -536,3 +536,20 @@ html {
 .bg-gradient-conic {
   background: conic-gradient(from 0deg, var(--tw-gradient-stops));
 }
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle 2.5s ease-in-out infinite;
+}

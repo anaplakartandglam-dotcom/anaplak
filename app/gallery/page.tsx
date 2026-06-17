@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: '/og-logo.png',
+                url: '/logo_updated.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Salon Gallery - Bridal Makeup and Hair Styling Portfolio'

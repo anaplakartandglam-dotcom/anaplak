@@ -17,9 +17,10 @@ export default function Header() {
   const navItems = [
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
+    { label: "Pricing", href: "/pricing" },
     { label: "Gallery", href: "/gallery" },
     { label: "Blogs", href: "/blogs" },
-    { label: "Contacts", href: "/contact" },
+    { label: "Contact", href: "/contact" },
   ]
 
   const PRIMARY = "#53675C"
@@ -137,7 +138,7 @@ export default function Header() {
               target="_blank"
             >
               <button
-                className="px-6 py-4 rounded-md text-white text-sm tracking-wider uppercase flex items-center gap-2 transition-all duration-400 cursor-pointer"
+                className="px-6 py-4 rounded-md text-white text-sm tracking-wider uppercase flex items-center gap-2 transition-all duration-400 cursor-pointer font-bold"
                 style={{ backgroundColor: PRIMARY }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = "#F8C8DC"

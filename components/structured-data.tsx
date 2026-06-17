@@ -5,7 +5,7 @@ export default function StructuredData() {
         "@context": "https://schema.org",
         "@type": "HairSalon",
         "name": "Anaplak Art And Glam Salon",
-        "image": "https://anaplakartandglamsalon.com/og-logo.png",
+        "image": "https://anaplakartandglamsalon.com/logo_updated.webp",
         "@id": "https://anaplakartandglamsalon.com",
         "url": "https://anaplakartandglamsalon.com",
         "telephone": "+919840088867",
@@ -104,7 +104,7 @@ export default function StructuredData() {
         "name": "Anaplak Art And Glam Salon",
         "alternateName": "Anaplak Salon",
         "url": "https://anaplakartandglamsalon.com",
-        "logo": "https://anaplakartandglamsalon.com/og-logo.png",
+        "logo": "https://anaplakartandglamsalon.com/logo_updated.webp",
         "description": "Premium hair salon and bridal makeup studio in Maduravoyal, Chennai offering expert hair coloring, keratin treatment, facials, and luxury beauty services.",
         "contactPoint": {
             "@type": "ContactPoint",

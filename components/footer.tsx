@@ -7,6 +7,7 @@ import { MapPin, Phone } from "lucide-react"
 export default function Footer() {
   const words = ["Hair", "Style", "Makeup"]
   const [typedIndex, setTypedIndex] = useState(0)
+  const [currentYear, setCurrentYear] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(
@@ -14,6 +15,11 @@ export default function Footer() {
       2200
     )
     return () => clearInterval(interval)
+  }, [])
+
+  useEffect(() => {
+    const year = new Date()
+    setCurrentYear(year.getFullYear())
   }, [])
 
   return (
@@ -238,7 +244,7 @@ export default function Footer() {
       {/* COPYRIGHT */}
       <div className="w-full border-t border-white/10 mt-10 pt-5">
         <p className="text-center text-gray-400 text-[13px] md:text-[14px] tracking-wide">
-          © Anaplak Art And Glam Salon — All Rights Reserved — 2025
+          © Anaplak Art And Glam Salon — All Rights Reserved — {currentYear}
         </p>
       </div>
     </footer>

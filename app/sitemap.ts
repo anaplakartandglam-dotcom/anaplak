@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { blogData } from '@/data/blogData'
+import { servicePages } from '@/data/serviceData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://anaplakartandglamsalon.com'
@@ -42,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.7,
         },
+        {
+            url: `${baseUrl}/pricing`,
+            lastModified: currentDate,
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
     ]
 
     const blogPages: MetadataRoute.Sitemap = blogData.map((blog) => {
@@ -54,5 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }
     })
 
-    return [...staticPages, ...blogPages]
+    const serviceDetailPages: MetadataRoute.Sitemap = servicePages.map((service) => ({
+        url: `${baseUrl}/services/${service.slug}`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly' as const,
+        priority: 0.85,
+    }))
+
+    return [...staticPages, ...blogPages, ...serviceDetailPages]
 }

@@ -70,7 +70,7 @@ export default function AboutPage() {
 
     return (
         <>
-            {/* SEO Meta Tags */}
+            {/* SEO schema */}
             <Script
                 id="about-page-schema"
                 type="application/ld+json"
@@ -265,7 +265,7 @@ export default function AboutPage() {
                                         <div
                                             className="absolute bottom-4 left-4 md:top-4 md:left-auto md:right-8 md:bottom-auto w-28 h-28 md:w-40 md:h-40 rounded-full flex flex-col items-center justify-center text-white shadow-xl bg-[#53675C] z-10"
                                         >
-                                            <span className="text-4xl md:text-6xl font-bold leading-none mb-1 md:mb-2">16</span>
+                                            <span className="text-4xl md:text-6xl font-bold leading-none mb-1 md:mb-2">6+</span>
                                             <div className="text-[9px] md:text-xs font-semibold uppercase tracking-wide text-center leading-tight">
                                                 <div>YEARS</div>
                                                 <div>OF EXPERIENCE</div>

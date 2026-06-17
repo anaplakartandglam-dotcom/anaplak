@@ -1,74 +1,69 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'About Us - Anaplak Art And Glam',
-    description: '🏆 Discover Anaplak Art And Glam - Maduravoyal\'s #1 Premium Hair Salon & Bridal Makeup Studio. 23 Expert Stylists | 4.9★ Google Rating | 1000+ Happy Customers | Professional Hair Coloring, Keratin Treatment & Luxury Bridal Services. Visit us in MMDA Colony, Chennai.',
+    title: 'About Anaplak Art & Glam | Luxury Hair, Beauty & Bridal Salon in Maduravoyal, Chennai',
+
+    description:
+        'Learn about Anaplak Art & Glam, a trusted beauty destination in Maduravoyal, Chennai. Discover our passion for hair styling, bridal makeup, skincare, nail services, and personalized beauty experiences.',
+
     keywords: [
-        // Premium Hair Salon Keywords (Priority)
-        'premium hair salon Chennai',
-        'luxury hair salon Chennai',
-        'best hair salon Maduravoyal',
-        'professional hair salon Chennai',
-        'top hair salon Chennai',
-        'hair salon MMDA Colony',
-
-        // Bridal Makeup Keywords
-        'bridal makeup artist Maduravoyal',
-        'best bridal makeup Chennai',
-        'professional bridal makeup Chennai',
-        'bridal makeup artist Chennai',
-
-        // Brand & Location
-        'about Anaplak salon',
-        'Anaplak salon Maduravoyal',
-        'beauty salon Maduravoyal',
-        'salon MMDA Colony Chennai',
-
-        // Team & Expertise
-        'experienced hair stylists Chennai',
-        'professional makeup artists Chennai',
-        'expert beauty specialists',
-        'certified makeup artists Chennai',
-        'skilled salon team',
-
-        // Social Proof
-        '1000+ satisfied customers',
-        '4.9 star rated salon',
-        'trusted salon Chennai',
-        'best reviewed salon Maduravoyal',
-        'top rated beauty salon',
-
-        // Services
-        'hair coloring specialist Chennai',
-        'keratin treatment expert',
-        'bridal hair and makeup',
-        'luxury beauty services',
+        'about Anaplak Art and Glam',
+        'hair salon Maduravoyal Chennai',
+        'beauty salon Maduravoyal Chennai',
+        'salon Maduravoyal',
+        'bridal makeup artist Maduravoyal Chennai',
+        'bridal makeup salon Maduravoyal Chennai',
+        'hair styling Maduravoyal Chennai',
+        'hair coloring Maduravoyal Chennai',
+        'keratin treatment Maduravoyal Chennai',
+        'skin care salon Maduravoyal Chennai',
+        'nail salon Maduravoyal Chennai',
+        'beauty studio Maduravoyal Chennai',
+        'luxury salon Maduravoyal Chennai',
+        'professional makeup artists Maduravoyal Chennai',
+        'beauty experts Maduravoyal Chennai',
+        'Maduravoyal salon',
+        'MMDA Colony salon',
+        'best salon Maduravoyal Chennai',
     ],
+
     openGraph: {
-        title: '🌟 About Anaplak | Premium Hair Salon & Bridal Makeup | 4.9★ Maduravoyal',
-        description: '💎 Meet our expert team of 23 beauty specialists. 1000+ happy customers trust us for premium hair services, bridal makeup & luxury beauty treatments. MMDA Colony, Chennai.',
+        title:
+            'About Anaplak Art & Glam | Hair, Beauty & Bridal Experts in Chennai',
+
+        description:
+            'Discover the story behind Anaplak Art & Glam, a premium salon in Maduravoyal, Chennai, offering professional hair, beauty, skincare, nail, and bridal services.',
+
         url: 'https://anaplakartandglamsalon.com/about',
-        siteName: 'Anaplak Art And Glam Salon',
+        siteName: 'Anaplak Art & Glam',
         type: 'website',
         locale: 'en_IN',
+
         images: [
             {
-                url: '/og-logo.png',
+                url: '/logo_updated.webp',
                 width: 1200,
                 height: 630,
-                alt: 'Anaplak Salon Team - Premium Hair Salon & Bridal Makeup Experts in Maduravoyal, Chennai',
+                alt: 'Anaplak Art & Glam - Luxury Hair, Beauty & Bridal Salon in Chennai',
             },
         ],
     },
+
     twitter: {
         card: 'summary_large_image',
-        title: 'About Anaplak | Premium Hair Salon & Bridal Makeup Experts Chennai',
-        description: '🏆 23 Expert Stylists | 1000+ Happy Customers | Premium Hair Services | Luxury Bridal Makeup | Book Now!',
-        images: ['/logo_new.jpeg'],
+        title:
+            'About Anaplak Art & Glam | Premium Salon in Chennai',
+
+        description:
+            'Explore our journey, expert beauty services, bridal makeup, hair styling, skincare, and nail treatments in Maduravoyal, Chennai.',
+
+        images: ['/logo_updated.webp'],
     },
+
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com/about',
     },
+
     robots: {
         index: true,
         follow: true,

@@ -55,7 +55,7 @@ export function generateBlogSchema(blog: {
             "url": siteUrl,
             "logo": {
                 "@type": "ImageObject",
-                "url": `${siteUrl}/og-logo.png`
+                "url": `${siteUrl}/logo_updated.webp`
             }
         },
         "datePublished": blog.createdAt,

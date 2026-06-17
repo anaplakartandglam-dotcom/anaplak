@@ -1,64 +1,53 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Services - Anaplak Art And Glam',
-    description: '💇 Premium Hair Salon Services in Maduravoyal | Professional Hair Coloring & Balayage | Keratin Treatment | Hair Smoothening | Bridal Makeup Packages from ₹15,000 | Facials & Beauty Treatments | Expert Stylists | Book +91-9840088867',
+    title: 'Hair, Beauty & Bridal Services in Chennai | Anaplak Art & Glam',
+    description: 'Discover professional hair coloring, balayage, keratin treatments, hair smoothening, bridal makeup, facials, nail services, and beauty treatments at Anaplak Art & Glam in Maduravoyal, Chennai.',
     keywords: [
-        // Premium Hair Services Keywords (Priority)
-        'premium hair salon Chennai',
-        'hair coloring services Chennai',
-        'professional hair coloring Maduravoyal',
-        'balayage hair color Chennai',
+        // Hair Services
+        'hair salon Chennai',
+        'hair coloring Chennai',
+        'balayage Chennai',
         'hair highlights Chennai',
+        'haircuts Chennai',
+        'hair styling Chennai',
+        'hair spa Chennai',
+
+        // Hair Treatments
         'keratin treatment Chennai',
-        'keratin treatment Maduravoyal',
         'hair smoothening Chennai',
-        'hair straightening Maduravoyal',
-        'hair treatment services Chennai',
+        'hair straightening Chennai',
+        'hair treatment Chennai',
 
-        // Hair Styling Keywords
-        'professional hair styling Chennai',
-        'hair stylist Maduravoyal',
-        'bridal hairstyling Chennai',
-        'hair cutting services Chennai',
-        'luxury hair salon Chennai',
-
-        // Bridal Makeup Services
+        // Bridal Makeup
+        'bridal makeup Chennai',
+        'bridal makeup artist Chennai',
         'bridal makeup packages Chennai',
-        'bridal makeup artist Maduravoyal',
         'wedding makeup Chennai',
         'engagement makeup Chennai',
-        'bridal makeup and hair Chennai',
-        'complete bridal package',
-
-        // Makeup Services
-        'party makeup Chennai',
         'HD makeup Chennai',
         'airbrush makeup Chennai',
-        'professional makeup artist Chennai',
-        'makeup services Maduravoyal',
 
-        // Facial & Skin Services
-        'facial treatment Chennai',
-        'anti-aging facial Chennai',
-        'skin brightening facial',
-        'deep cleansing facial Chennai',
-        'facial services Maduravoyal',
+        // Beauty & Skin
+        'facial treatments Chennai',
+        'skin care services Chennai',
+        'beauty treatments Chennai',
+        'anti aging facial Chennai',
 
-        // Nail & Beauty Services
-        'manicure pedicure Chennai',
+        // Nail Services
         'nail art Chennai',
-        'threading waxing Chennai',
-        'beauty services Maduravoyal',
+        'nail extension Chennai',
+        'manicure pedicure Chennai',
 
-        // General Keywords
-        'salon services Chennai',
+        // Local SEO
         'beauty salon Maduravoyal',
-        'luxury beauty services',
+        'salon services Chennai',
         'premium salon Chennai',
+        'luxury beauty salon Chennai',
+        'Anaplak Art and Glam services'
     ],
     openGraph: {
-        title: '💎 Premium Hair Salon & Bridal Makeup Services | Anaplak Maduravoyal Chennai',
+        title: 'Hair, Beauty & Bridal Services in Chennai | Anaplak Art & Glam',
         description: '✨ Professional Hair Coloring, Keratin Treatment, Hair Smoothening | Bridal Makeup Packages | Facials & Beauty Treatments | Expert Stylists | Premium Products | Book Now!',
         url: 'https://anaplakartandglamsalon.com/services',
         siteName: 'Anaplak Art And Glam Salon',
@@ -66,7 +55,7 @@ export const metadata: Metadata = {
         locale: 'en_IN',
         images: [
             {
-                url: '/og-logo.png',
+                url: '/logo_updated.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Premium Hair Salon Services - Hair Coloring, Keratin Treatment & Bridal Makeup in Maduravoyal, Chennai',

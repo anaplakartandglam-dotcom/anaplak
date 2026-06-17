@@ -354,8 +354,8 @@ export default function ServicesSection() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Beauty Services at Anaplak Salon",
-            "description": "Complete range of premium beauty services including bridal makeup, hair styling, facials, and beauty treatments",
+            "name": "Hair, Beauty & Bridal Services in Chennai | Anaplak Art & Glam",
+            "description": "Discover professional hair coloring, balayage, keratin treatments, hair smoothening, bridal makeup, facials, nail services, and beauty treatments at Anaplak Art & Glam in Maduravoyal, Chennai.",
             "url": "https://anaplakartandglamsalon.com/services",
             "itemListElement": [
               {
