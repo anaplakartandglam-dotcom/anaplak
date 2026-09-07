@@ -16,7 +16,7 @@ export default function VideoParallax() {
             ANAPLAK Art and Glam Salon – Studio Tour
           </h2>
           <p className="text-gray-400 mt-1 text-lg md:text-2xl lg:text-3xl">
-            Explore our premium salon facilities and services in Maduravoyal, Chennai.
+            Explore our premium salon facilities and services in Chennai, Maduravoyal.
           </p>
         </div>
 

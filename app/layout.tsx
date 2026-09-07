@@ -6,7 +6,9 @@ import StructuredData from "@/components/structured-data"
 import WhatsAppFloat from "@/components/whatsapp_float"
 import Script from "next/script"
 import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import SparkleCursor from "@/components/SparkleCursor"
+import { GoogleTagManager } from "@next/third-parties/google";
 
 config.autoAddCss = false
 
@@ -28,7 +30,7 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://anaplakartandglamsalon.com'),
-  title: "Luxury Hair, Skin & Bridal Salon in Chennai | Anaplak",
+  title: "Best Hair, Skin & Bridal Salon in Chennai, Maduravoyal | Anaplak",
   description: "✨ Where beauty meets confidence. 💫 Experience personalised hair, skin, nail and bridal services in Maduravoyal. 🤝 Trusted by 1000+ happy clients for stunning transformations. ☎️ Book your appointment today +91-9840088867 | Open 10AM-9PM Daily",
   keywords: [
 
@@ -38,9 +40,7 @@ export const metadata: Metadata = {
     "hair smoothening price",
     "nearby salon",
     "best salon for men near me",
-    "beauty salon home service",
-    "hair salon home service",
-    "wedding hairdresser",
+    "best salon for women near me",
     "beauty and salon",
     "hair on salon",
     "beauty & salon",
@@ -66,13 +66,13 @@ export const metadata: Metadata = {
     "hair & spa",
     "salon and hair",
     "hair styling",
-    
+
     // Core Business Keywords
-    'luxury salon Maduravoyal, Chennai',
-    'beauty salon Maduravoyal, Chennai',
-    'best beauty salon Maduravoyal, Chennai',
-    'premium salon Maduravoyal, Chennai',
-    'hair and beauty salon Maduravoyal, Chennai',
+    'luxury salon Chennai, Maduravoyal',
+    'beauty salon Chennai, Maduravoyal',
+    'best beauty salon Chennai, Maduravoyal',
+    'premium salon Chennai, Maduravoyal',
+    'hair and beauty salon Chennai, Maduravoyal',
 
     // Secondary Location Keywords
     'luxury salon Chennai',
@@ -81,70 +81,70 @@ export const metadata: Metadata = {
     'top rated salon Chennai',
 
     // High-Value Service Categories
-    'bridal makeup artist Maduravoyal, Chennai',
-    'bridal makeup Maduravoyal, Chennai',
-    'hair salon Maduravoyal, Chennai',
-    'hair coloring Maduravoyal, Chennai',
-    'keratin treatment Maduravoyal, Chennai',
-    'facial treatments Maduravoyal, Chennai',
+    'bridal makeup artist Chennai, Maduravoyal',
+    'bridal makeup Chennai, Maduravoyal',
+    'hair salon Chennai, Maduravoyal',
+    'hair coloring Chennai, Maduravoyal',
+    'keratin treatment Chennai, Maduravoyal',
+    'facial treatments Chennai, Maduravoyal',
 
     // Brand Positioning
-    'premium beauty services Maduravoyal, Chennai',
+    'premium beauty services Chennai, Maduravoyal',
     'luxury hair and skin salon',
-    'bridal and beauty studio Maduravoyal, Chennai',
-    'hair skin and makeup experts Maduravoyal, Chennai',
+    'bridal and beauty studio Chennai, Maduravoyal',
+    'hair skin and makeup experts Chennai, Maduravoyal',
 
     // Nearby Area Keywords
     'beauty salon MMDA Colony',
     'beauty salon Chennai 600095',
 
   ],
-authors: [{ name: "Kalpana" }],
+  authors: [{ name: "Kalpana" }],
   creator: "Kalpana",
-    publisher: "Anaplak Art and Glam Salon",
-      formatDetection: {
-  email: false,
+  publisher: "Anaplak Art and Glam Salon",
+  formatDetection: {
+    email: false,
     address: false,
-      telephone: false,
+    telephone: false,
   },
-openGraph: {
-  type: 'website',
+  openGraph: {
+    type: 'website',
     locale: 'en_IN',
-      url: 'https://anaplakartandglamsalon.com',
-        siteName: 'Anaplak Art and Glam Salon',
-          title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services in Chennai',
-            description: 'Experience luxury beauty services at Anaplak Salon in Maduravoyal, Chennai. Expert bridal makeup, hair styling, coloring, facials & more. 6+ years of excellence. Book now!',
-              images: [
-                {
-                  url: '/logo_updated.webp',
-                  width: 1200,
-                  height: 630,
-                  alt: 'Anaplak Art And Glam Salon - Premium Beauty Services in Chennai',
-                },
-              ],
+    url: 'https://anaplakartandglamsalon.com',
+    siteName: 'Anaplak Art and Glam Salon',
+    title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services in Chennai, Maduravoyal',
+    description: 'Experience luxury beauty services at Anaplak Salon in Chennai, Maduravoyal. Expert bridal makeup, hair styling, coloring, facials & more. 6+ years of excellence. Book now!',
+    images: [
+      {
+        url: '/logo_updated.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Anaplak Art And Glam Salon - Premium Beauty Services in Chennai, Maduravoyal',
+      },
+    ],
   },
-twitter: {
-  card: 'summary_large_image',
+  twitter: {
+    card: 'summary_large_image',
     title: 'Anaplak Art and Glam Salon | Premium Hair & Beauty Services',
-      description: 'Experience luxury beauty services in Maduravoyal, Chennai. Expert bridal makeup, hair styling, facials & more. Book your appointment today!',
-        images: ['/logo_updated.webp'],
+    description: 'Experience luxury beauty services in Chennai, Maduravoyal. Expert bridal makeup, hair styling, facials & more. Book your appointment today!',
+    images: ['/logo_updated.webp'],
   },
-robots: {
-  index: true,
-    follow: true,
-      googleBot: {
+  robots: {
     index: true,
+    follow: true,
+    googleBot: {
+      index: true,
       follow: true,
-        'max-video-preview': -1,
-          'max-image-preview': 'large',
-            'max-snippet': -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
-},
-alternates: {
-  canonical: 'https://anaplakartandglamsalon.com',
   },
-verification: {
-  google: 'oCqa8wjtslCGmaZRYF4EbGN9BztUVLs9c-EQOVwcELk',
+  alternates: {
+    canonical: 'https://anaplakartandglamsalon.com',
+  },
+  verification: {
+    google: 'oCqa8wjtslCGmaZRYF4EbGN9BztUVLs9c-EQOVwcELk',
   },
 }
 
@@ -166,7 +166,7 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} ${redditSans.variable} ${dancingScript.variable} scroll-smooth`}>
       <head>
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMZRTGH4NB"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMZRTGH4NB"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -176,7 +176,7 @@ export default function RootLayout({
               gtag('config', 'G-RMZRTGH4NB');
             `,
           }}
-        />
+        /> */}
         {/* Favicons - Comprehensive Setup */}
         {/* <link rel="icon" type="image/svg+xml" href="/favicon/favicon.png" /> */}
         {/* <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon.png" />
@@ -191,6 +191,7 @@ export default function RootLayout({
       <body className="font-dm-sans antialiased bg-black text-gray-100">
         <StructuredData />
         {children}
+        <GoogleTagManager gtmId="GTM-5N7G5WN4" />
         <WhatsAppFloat />
         <div className="hidden lg:block">
           <SparkleCursor />

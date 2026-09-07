@@ -19,7 +19,7 @@ export default function ContactUs() {
                         "@context": "https://schema.org",
                         "@type": "ContactPage",
                         "name": "Contact Anaplak Art And Glam Salon",
-                        "description": "Contact Anaplak Salon for appointments, inquiries, and directions. Located in Maduravoyal, Chennai with convenient parking.",
+                        "description": "Contact Anaplak Salon for appointments, inquiries, and directions. Located in Chennai, Maduravoyal with convenient parking.",
                         "url": "https://anaplakartandglamsalon.com/contact",
                         "mainEntity": {
                             "@type": "LocalBusiness",
@@ -179,7 +179,7 @@ export default function ContactUs() {
                                                 <br />
                                                 First Main road, 4th block, MMDA Colony,
                                                 <br />
-                                                Maduravoyal, Chennai - 600095
+                                                Chennai, Maduravoyal - 600095
                                             </p>
                                             <a
                                                 href="https://www.google.com/maps/search/?api=1&query=Anaplak+Art+and+Glam+Salon+Chennai"

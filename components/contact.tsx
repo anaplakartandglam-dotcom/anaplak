@@ -85,7 +85,7 @@ export default function Contact() {
             <div className="p-12 rounded-lg border-2 border-[#53675C]/30 bg-[#53675C]/5">
               <h3 className="text-2xl font-bold text-black mb-6">Visit Us</h3>
               <p className="text-black/70 leading-relaxed mb-6">
-                No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony, Maduravoyal, Chennai - 600095
+                No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony, Chennai, Maduravoyal - 600095
               </p>
               <p className="text-[#53675C] font-bold mb-2">Email:</p>
               <a href="mailto:anaplakartandglamsalon@gmail.com" className="text-black hover:text-[#53675C] transition">

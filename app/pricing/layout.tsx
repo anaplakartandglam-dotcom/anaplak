@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: "Salon Pricing & Beauty Packages in Chennai | Anaplak Art & Glam",
-    description: "View pricing for haircuts, hair coloring, keratin treatments, bridal makeup, facials, nail services, waxing, and beauty packages at Anaplak Art & Glam in Maduravoyal, Chennai.",
+    title: "Salon Pricing & Beauty Packages in Chennai, Maduravoyal | Anaplak Art & Glam",
+    description: "View pricing for haircuts, hair coloring, keratin treatments, bridal makeup, facials, nail services, waxing, and beauty packages at Anaplak Art & Glam in Chennai, Maduravoyal.",
     keywords: [
         "salon pricing Chennai",
         "salon price list Chennai",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
         "Anaplak Art and Glam pricing"
     ],
     openGraph: {
-        title: "Salon Pricing & Beauty Packages in Chennai | Anaplak Art & Glam",
-        description: "Browse transparent pricing for hair, beauty, skincare, nail, and bridal makeup services at Anaplak Art & Glam in Chennai.",
+        title: "Salon Pricing & Beauty Packages in Chennai, Maduravoyal | Anaplak Art & Glam",
+        description: "Browse transparent pricing for hair, beauty, skincare, nail, and bridal makeup services at Anaplak Art & Glam in Chennai, Maduravoyal.",
         url: 'https://anaplakartandglamsalon.com/pricing',
         siteName: 'Anaplak Art And Glam Salon',
         type: 'website',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: "Salon Pricing & Beauty Packages | Anaplak Art & Glam",
-        description: "Check pricing for haircuts, hair coloring, bridal makeup, facials, nail services, waxing, and beauty packages in Chennai.",
+        description: "Check pricing for haircuts, hair coloring, bridal makeup, facials, nail services, waxing, and beauty packages in Chennai, Maduravoyal.",
         images: ['/logo_new.jpeg'],
     },
     alternates: {

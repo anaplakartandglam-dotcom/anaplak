@@ -21,26 +21,24 @@ interface PriceCategory {
 export default function PricingPage() {
     const categories: PriceCategory[] = [
         {
-            title: "Hair Styling — Men",
+            title: "Styling — Men",
             items: [
                 // { name: "Senior Stylist", price: "700" },
                 { name: "Premier Stylist", price: "900" },
                 { name: "Top Stylist", price: "1100" },
                 { name: "Salon Director", price: "1300" },
-                { name: "Hair Tattoo", price: "800" },
-                { name: "Hair Wash", price: "800" },
                 { name: "Beard Trim", price: "200" },
                 { name: "Beard Design", price: "400" },
                 { name: "Executive Shave", price: "400" },
                 { name: "Kids Cut (Below 7 Years)", price: "650" },
                 { name: "Moustache Colour", price: "250" },
                 { name: "Beard Colour", price: "400" },
-                { name: "Beard & Moustache Colour", price: "500" },
+                { name: "Beard & Moustache Colour", price: "600" },
                 { name: "Oil Massage", price: "1000" },
             ],
         },
         {
-            title: "Hair Styling — Women",
+            title: "Styling — Women",
             items: [
                 // { name: "Senior Stylist", price: "900" },
                 { name: "Premier Stylist", price: "1200" },
@@ -58,8 +56,8 @@ export default function PricingPage() {
                 { name: "Blow Dry", price: "1500" },
                 { name: "Tongs", price: "1700" },
                 { name: "Ironing", price: "1800" },
-                { name: "Updos", price: "2500" },
-                { name: "Bridal Updos", price: "3000" },
+                { name: "EPRES (Add On)", price: "2000" },
+                { name: "Deep Conditioning", price: "2000" },
             ],
         },
         {
@@ -82,37 +80,34 @@ export default function PricingPage() {
                     name: "Ammonia Free (Global Colour)",
                     price: { men: "4,000", women: "5,000" },
                 },
-                { name: "Fashion", price: { men: "4,000 (onwards)", women: "5,000 (onwards)" } },
-                { name: "Partial Head Highlight", price: { men: "3,000 (onwards)", women: "4,500 (onwards)" } },
-                { name: "Full Head Highlight", price: { men: "3,500 (onwards)", women: "5,000 (onwards)" } },
-                { name: "Colour Refresh", price: { men: "2,000 (onwards)", women: "3,000 (onwards)" } },
-                { name: "Creative Colour", price: { men: "5,000 (onwards)", women: "7,000 (onwards)" } },
-                { name: "Per Streak", price: { men: "300", women: "400" } },
+                { name: "Fashion (price onwards)", price: { men: "5,000", women: "7,000" } },
+                { name: "Partial Head Highlight (price onwards)", price: { men: "3,000", women: "4,500" } },
+                { name: "Full Head Highlight (price onwards)", price: { men: "5,000", women: "6,000" } },
+                { name: "Colour Refresh (price onwards)", price: { men: "3,000", women: "4,000" } },
+                { name: "Creative Colour (price onwards)", price: { men: "5,000", women: "7,000" } },
+                { name: "Per Streak", price: { men: "400", women: "500" } },
             ],
         },
         {
             title: "Texture & Smoothing",
             items: [
                 { name: "Perming (Partial)", price: "3,500", note: "onwards" },
-                { name: "Smoothing (Partial)", price: "3,000", note: "onwards" },
-                { name: "Keratin (Partial)", price: "3,000", note: "onwards" },
-                { name: "Perming", price: "7,000 (onwards)", note: "onwards" },
-                { name: "Smoothing", price: "7,000 (onwards)", note: "onwards" },
-                { name: "Keratin", price: "7,000 (onwards)", note: "customised" },
-                { name: "Botox", price: "7,000 (onwards)", note: "customised" },
-                { name: "Nano Plastia", price: "8,000 (onwards)", note: "customised" },
-                { name: "Botoplex", price: "8,000 (onwards)", note: "onwards" },
+                { name: "Keratin (Partial)", price: "3,500", note: "onwards" },
+                { name: "Perming", price: "7,000", note: "onwards" },
+                { name: "Keratin", price: "7,000", note: "onwards" },
+                { name: "Botox", price: "8,000", note: "customised" },
+                { name: "Botoplex", price: "8,000", note: "customised" },
+                { name: "Nano Plastia", price: "9,000", note: "customised" },
             ],
         },
         {
             title: "Hair Treatment",
             items: [
-                { name: "EPRES (Add On)", price: "2,000" },
-                { name: "Deep Conditioning", price: "2,000" },
-                { name: "L'Oréal Hair Spa", price: "2,500" },
                 { name: "Classic Hair Spa", price: "3,000" },
-                { name: "Shea Hair Spa", price: "4,000" },
-                { name: "3TENX Hair Spa", price: "4,000" },
+                { name: "Shea Hair Spa", price: "4,000", note: "onwards" },
+                { name: "3TENX Hair Spa", price: "4,000", note: "onwards" },
+                { name: "Dandruff Treatment", price: "4,000", note: "onwards" },
+                { name: "&Done Bond Strengthening", price: "5,000", note: "onwards" },
             ],
         },
         {
@@ -120,6 +115,7 @@ export default function PricingPage() {
             items: [
                 { name: "Tape Hair Extension", price: "30,000", note: "100g onwards" },
                 { name: "Nano Hair Extension", price: "30,000", note: "100g onwards" },
+                { name: "Mens Patch", price: "25,000", note: "100g onwards" },
                 { name: "Clip & Go", price: "20,000", note: "100g onwards" },
                 { name: "Maintenance", price: "10,000" },
             ],
@@ -194,15 +190,13 @@ export default function PricingPage() {
             title: "Waxing",
             items: [
                 { name: "Under Arms", price: "300" },
-                { name: "Half Arms", price: "300" },
-                { name: "Full Arms", price: "600" },
-                { name: "Half Legs", price: "400" },
                 { name: "Half Hands", price: "400" },
                 { name: "Full Hands", price: "800" },
-                { name: "Full Face", price: "1,000" },
+                { name: "Half Legs", price: "400" },
                 { name: "Full Legs", price: "800" },
                 { name: "Half Back", price: "500" },
                 { name: "Full Back", price: "1,000" },
+                { name: "Full Face", price: "1,000" },
                 { name: "Abdomen", price: "700" },
                 { name: "Full Body", price: "4,500" },
             ],
@@ -213,8 +207,10 @@ export default function PricingPage() {
                 { name: "Classic Cleanup", price: "2,000" },
                 { name: "Skin Brightening", price: "3,000" },
                 { name: "Skin Miracle Facial", price: "4,000" },
-                { name: "Gensely Facial", price: "5,000", note: "Jamaican Sorrel" },
-                { name: "Anaplak Signature Facial", price: "6,000" },
+                { name: "Furutsu Avocado Facial", price: "4,000" },
+                { name: "Glutathione Facial", price: "5,000" },
+                { name: "Anaplak Gensly Facial", price: "5,000" },
+                { name: "Bride & Groom Spl", price: "6,000" },
                 { name: "Casmara Facial", price: "7,000" },
             ],
         },
@@ -222,7 +218,7 @@ export default function PricingPage() {
             title: "Detan",
             items: [
                 { name: "Face / Neck Detan", price: "1,300" },
-                { name: "Under Arms Detan", price: "300" },
+                { name: "Under Arms Detan", price: "400" },
                 { name: "Half Arms Detan", price: "500" },
                 { name: "Full Arms Detan", price: "700" },
                 { name: "Half Legs Detan", price: "700" },
@@ -241,7 +237,7 @@ export default function PricingPage() {
                 { name: "Air Brush", price: "30,000" },
                 { name: "Groom (Men's)", price: "6,000" },
                 { name: "Bridesmaids Makeup", price: "7,000" },
-                { name: "Party Makeup", price: "6,000" },
+                { name: "Party Makeup", price: "10,000" },
                 { name: "Kids Makeup (Below 15)", price: "3,000" },
                 { name: "Saree Drapping", price: "2,000" },
                 { name: "Hair Style", price: "3,000" },
@@ -271,15 +267,15 @@ export default function PricingPage() {
     const salonPackages = [
         {
             title: "Classic Package — Men",
-            services: ["Premier Stylist", "Beard Trim", "L'Oréal Hair Spa", "Classic Pedicure", "Skin Brightening Facial"],
-            originalPrice: "7,600",
+            services: ["Top Stylist", "Beard Trim", "Classic Hair Spa", "Classic Pedicure", "Face & Neck Detan"],
+            originalPrice: "6,800",
             offerPrice: "4,999",
             featured: false,
         },
         {
             title: "Classic Package — Women",
-            services: ["Premier Stylist", "L'Oréal Hair Spa", "Gel Polish", "Classic Pedicure", "Eyebrow Threading", "Skin Brightening Facial"],
-            originalPrice: "8,830",
+            services: ["Top Stylist", "Classic Hair Spa", "Classic Pedicure", "Eyebrow Threading", "Clean Up"],
+            originalPrice: "7,630",
             offerPrice: "5,999",
             featured: false,
         },
@@ -287,36 +283,15 @@ export default function PricingPage() {
             title: "Premium Package — Men",
             services: ["Top Stylist", "Beard Trim", "L'Oréal Hair Spa", "Spa Pedicure", "Spa Manicure", "Skin Miracle Facial"],
             originalPrice: "11,000",
-            offerPrice: "6,999",
+            offerPrice: "7,999",
             featured: true,
         },
         {
             title: "Premium Package — Women",
-            services: ["Top Stylist", "L'Oréal Hair Spa", "Spa Pedicure", "Spa Manicure", "Gel Polish", "Eyebrow Threading", "Half Arm Waxing", "Half Legs Waxing", "Skin Miracle Facial"],
+            services: ["Top Stylist", "L'Oréal Hair Spa", "Spa Pedicure", "Spa Manicure", "Gel Polish", "Eyebrow Threading", "Skin Miracle Facial"],
             originalPrice: "13,030",
-            offerPrice: "7,999",
+            offerPrice: "8,999",
             featured: true,
-        },
-    ]
-
-    const subscriptionPlans = [
-        {
-            title: "Men",
-            services: ["Top Stylist (6 sittings)", "Beard Trim (6 sittings)", "Ammonia Free (Root Touch Up)", "Spa Pedicure (6 sittings)"],
-            originalPrice: "30,000",
-            offerPrice: "28,000",
-        },
-        {
-            title: "Women (Basic)",
-            services: ["Top Stylist (6 sittings)", "Ammonia Free (Root Touch Up) (6 sittings)", "Spa Pedicure (6 sittings)"],
-            originalPrice: "32,400",
-            offerPrice: "30,000",
-        },
-        {
-            title: "Women (Hair Spa)",
-            services: ["Top Stylist (6 sittings)", "L'Oréal Hair Spa (6 sittings)"],
-            originalPrice: "21,600",
-            offerPrice: "18,000",
         },
     ]
 
@@ -542,7 +517,12 @@ export default function PricingPage() {
                             <div className="space-y-4">
                                 {textureSmoothing.items.map((item, idx) => (
                                     <div key={idx} className="service-row flex items-baseline">
-                                        <span className="text-gray-300 text-sm">{item.name}</span>
+                                        <span className="text-gray-300 text-sm">
+                                            {item.name}
+                                            {item.note && (
+                                                <span className="text-gray-600 text-xs ml-1">({item.note})</span>
+                                            )}
+                                        </span>
                                         <div className="price-leader"></div>
                                         <span className="text-white text-sm font-medium whitespace-nowrap">
                                             ₹{item.price as string}
@@ -566,7 +546,12 @@ export default function PricingPage() {
                                 <div className="space-y-4">
                                     {hairTreatment.items.map((item, idx) => (
                                         <div key={idx} className="service-row flex items-baseline">
-                                            <span className="text-gray-300 text-sm">{item.name}</span>
+                                            <span className="text-gray-300 text-sm">
+                                                {item.name}
+                                                {item.note && (
+                                                    <span className="text-gray-600 text-xs ml-1">({item.note})</span>
+                                                )}
+                                            </span>
                                             <div className="price-leader"></div>
                                             <span className="text-white text-sm font-medium whitespace-nowrap">
                                                 ₹{item.price as string}
@@ -708,75 +693,6 @@ export default function PricingPage() {
                                 </div>
                             ))}
                         </div>
-                    </div>
-                </section>
-
-                {/* Budget Saver Plans */}
-                <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-                    <div className="text-center mb-14">
-                        <p
-                            className="uppercase tracking-[0.3em] text-xs mb-4 font-bold"
-                            style={{ color: accent }}
-                        >
-                            Save More
-                        </p>
-                        <h2 className="text-3xl md:text-5xl font-reddit-sans font-bold text-white mb-4">
-                            <span className="italic" style={{ color: accent }}>Budget Saver</span> Plans
-                        </h2>
-                        <p className="text-gray-400 text-base max-w-2xl mx-auto">
-                            Pay for 6 services & enjoy 8 — 8 months validity plans
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {subscriptionPlans.map((plan, idx) => (
-                            <div
-                                key={idx}
-                                className="group relative flex flex-col items-center text-center p-8 transition-all duration-500 bg-[#1a1a1a] border border-white/10 hover:border-[#F8C8DC]/50"
-                            >
-                                <div
-                                    className="w-14 h-14 rounded-full flex items-center justify-center mb-5"
-                                    style={{ backgroundColor: "rgba(248,200,220,0.1)", color: accent }}
-                                >
-                                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 15l-4.24 2.23.81-4.73L5.14 9.27l4.74-.69L12 4.26l2.12 4.32 4.74.69-3.43 3.23.81 4.73z" />
-                                    </svg>
-                                </div>
-                                <h4
-                                    className="text-base font-reddit-sans font-bold mb-6 uppercase tracking-widest"
-                                    style={{ color: accent }}
-                                >
-                                    {plan.title}
-                                </h4>
-                                <div className="flex-grow space-y-2.5 mb-8 text-gray-400 text-sm">
-                                    {plan.services.map((svc, i) => (
-                                        <p key={i}>{svc}</p>
-                                    ))}
-                                </div>
-                                <div className="w-full pt-6 border-t border-white/10">
-                                    <p className="text-gray-500 line-through text-xs">₹{plan.originalPrice}</p>
-                                    <p
-                                        className="text-3xl font-reddit-sans font-bold mt-1"
-                                        style={{ color: accent }}
-                                    >
-                                        ₹{plan.offerPrice}
-                                    </p>
-                                    <a
-                                        href={`https://wa.me/919840088867?text=${encodeURIComponent(`Hi, I'm interested in the ${plan.title} Membership Plan. Please share more details.`)}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-6 w-full py-3 border text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:brightness-110 inline-block"
-                                        style={{
-                                            borderColor: accent,
-                                            color: accent,
-                                            backgroundColor: "transparent",
-                                        }}
-                                    >
-                                        Choose Plan
-                                    </a>
-                                </div>
-                            </div>
-                        ))}
                     </div>
                 </section>
 

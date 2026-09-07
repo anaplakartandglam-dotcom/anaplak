@@ -165,7 +165,7 @@
 ## 📞 Contact Information (For SEO)
 
 **Business Name:** Anaplak Art and Glam Salon
-**Address:** 2nd Floor, TNHB, : 3, 2nd Main Rd, 4th Block, CDN Nagar, MMDA Colony, Maduravoyal, Chennai - 600095
+**Address:** 2nd Floor, TNHB, : 3, 2nd Main Rd, 4th Block, CDN Nagar, MMDA Colony, Chennai, Maduravoyal - 600095
 **Phone:** +91 98400 88867, +91 98400 88861
 **Email:** anaplakartandglamsalon@gmail.com
 **Website:** https://anaplakartandglamsalon.com

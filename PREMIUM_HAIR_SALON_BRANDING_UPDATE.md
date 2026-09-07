@@ -44,8 +44,8 @@ Update all "hair salon" references to "premium hair salon" throughout the websit
 ### 4. Documentation (`/PAGE_METADATA_OPTIMIZATION.md`)
 **Lines Modified:**
 - **Line 11**: Homepage title
-  - **Before**: `Best Hair & Beauty Salon in Maduravoyal, Chennai`
-  - **After**: `Best Premium Hair Salon & Bridal Makeup in Maduravoyal, Chennai`
+  - **Before**: `Best Hair & Beauty Salon in Chennai, Maduravoyal`
+  - **After**: `Best Premium Hair Salon & Bridal Makeup in Chennai, Maduravoyal`
   
 - **Line 30**: Target keywords
   - **Before**: `hair salon near me Chennai`

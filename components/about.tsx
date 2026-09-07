@@ -114,7 +114,7 @@ export default function About() {
           {/* ----------------------------
              HEADING + TYPEWRITER EFFECT
           ----------------------------- */}
-          <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-6xl leading-[1.2] max-w-2xl mb-6">
+          <h2 className="text-white font-bold  text-2xl md:text-4xl leading-[1.2] max-w-2xl mb-6">
             Find the perfect balance between elegance and comfort with{" "}
             <span
               className="text-[#F8C8DC]"

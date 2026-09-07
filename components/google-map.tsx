@@ -13,7 +13,7 @@ export default function GoogleMap() {
                         FIND US ON THE MAP
                     </h2>
                     <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-                        Located in the heart of Maduravoyal, Chennai. Visit us for a premium salon experience.
+                        Located in the heart of Chennai, Maduravoyal. Visit us for a premium salon experience.
                     </p>
                 </div>
 

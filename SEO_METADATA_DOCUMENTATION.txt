@@ -1,0 +1,332 @@
+ANAPLAK ART AND GLAM SALON
+SEO Metadata Documentation
+Chennai, Maduravoyal 600095
+
+
+GLOBAL DEFAULT (app/layout.tsx)
+
+Title
+Best Hair, Skin & Bridal Salon in Chennai, Maduravoyal | Anaplak
+
+Description
+Where beauty meets confidence. Experience personalised hair, skin, nail and bridal services in Maduravoyal. Trusted by 1000+ happy clients for stunning transformations. Book your appointment today +91-9840088867 | Open 10AM-9PM Daily
+
+
+HOMEPAGE
+
+Title
+Best Hair, Skin & Bridal Salon in Chennai, Maduravoyal | Anaplak
+
+Description
+Where beauty meets confidence. Experience personalised hair, skin, nail and bridal services in Maduravoyal. Trusted by 1000+ happy clients for stunning transformations. Book your appointment today +91-9840088867 | Open 10AM-9PM Daily
+
+
+ABOUT PAGE
+
+Title
+About Anaplak Art & Glam | Luxury Hair, Beauty & Bridal Salon in Chennai, Maduravoyal
+
+Description
+Learn about Anaplak Art & Glam, a trusted beauty destination in Chennai, Maduravoyal. Discover our passion for hair styling, bridal makeup, skincare, nail services, and personalized beauty experiences.
+
+
+CONTACT PAGE
+
+Title
+Contact Anaplak Art & Glam | Book Your Salon Appointment in Chennai, Maduravoyal
+
+Description
+Visit Anaplak Salon: No.4B/9, 2nd Floor, MMDA Colony, Chennai, Maduravoyal 600095 | Call: +91-9840088867 | WhatsApp Booking Available | Open 10AM-9PM Daily | Ground Floor Parking | Book Bridal Makeup, Hair Styling & Beauty Services Online or Walk-in Welcome!
+
+
+GALLERY PAGE
+
+Title
+Gallery | Anaplak Art and Glam Salon - Bridal Makeup & Hair Styling Portfolio
+
+Description
+Explore stunning bridal makeup, hair styling, hair coloring, and beauty transformation photos from Anaplak Salon - Chennai's premium beauty destination in Maduravoyal, MMDA Colony.
+
+
+KALPANA PAGE
+
+Title
+Kalpana | Founder at Anaplak Art & Glam Chennai
+
+Description
+Meet Kalpana, Founder of Anaplak Art & Glam in Chennai, Maduravoyal. Known for bridal makeup artistry, hair transformations, and personalized beauty experiences, she leads one of Maduravoyal's trusted beauty destinations.
+
+
+PRICING PAGE
+
+Title
+Salon Pricing & Beauty Packages in Chennai, Maduravoyal | Anaplak Art & Glam
+
+Description
+View pricing for haircuts, hair coloring, keratin treatments, bridal makeup, facials, nail services, waxing, and beauty packages at Anaplak Art & Glam in Chennai, Maduravoyal.
+
+
+BLOGS LISTING PAGE
+
+Title
+Beauty Tips, Hair Care & Bridal Makeup Blogs | Anaplak Art & Glam
+
+Description
+Discover expert beauty tips, hair care guides, skincare advice, bridal makeup trends, and salon insights from Anaplak Art & Glam in Chennai, Maduravoyal. Stay updated with the latest beauty trends and professional recommendations.
+
+
+SERVICES LISTING PAGE
+
+Title
+Hair, Beauty & Bridal Services in Chennai, Maduravoyal | Anaplak Art & Glam
+
+Description
+Discover professional hair coloring, balayage, keratin treatments, hair smoothening, bridal makeup, facials, nail services, and beauty treatments at Anaplak Art & Glam in Chennai, Maduravoyal.
+
+
+BRIDAL MAKEUP
+
+Title
+Bridal Makeup in Chennai, Maduravoyal | Flawless Wedding Looks from Rs 15,000
+
+Description
+Book professional bridal makeup in Chennai from Rs 15,000. HD makeup, hairstyling, draping, trial sessions, and expert bridal beauty planning at Anaplak Art and Glam, Maduravoyal.
+
+
+ENGAGEMENT MAKEUP
+
+Title
+Engagement Makeup in Chennai, Maduravoyal | HD Makeup Starting at Rs 7,000
+
+Description
+Book professional engagement makeup in Chennai, Maduravoyal from Rs 7,000. HD makeup, hairstyling, and long-lasting beauty for engagement ceremonies and photoshoots at Anaplak Art and Glam, Maduravoyal.
+
+
+HAIR STYLING
+
+Title
+Hair Styling in Chennai, Maduravoyal | Professional Haircuts & Updos
+
+Description
+Professional hair styling in Chennai for men and women. Haircuts, blow dry, bridal updos, and special occasion styling at Anaplak Art and Glam, Maduravoyal from Rs 900.
+
+
+HAIR TEXTURE TREATMENTS
+
+Title
+Keratin & Hair Smoothing in Chennai, Maduravoyal | Frizz-Free Hair
+
+Description
+Professional keratin, smoothing, botox, nano plastia and perming treatments in Chennai, Maduravoyal. Get smoother, healthier, manageable hair at Anaplak Art and Glam, Maduravoyal from Rs 3,000.
+
+
+HAIR COLOURING
+
+Title
+Hair Colouring in Chennai, Maduravoyal | Highlights, Global Colour & More
+
+Description
+Professional hair colouring in Chennai with highlights, global colour, fashion shades and ammonia-free options. Book your colour consultation at Anaplak Art and Glam, Maduravoyal from Rs 1,800.
+
+
+PARTY MAKEUP
+
+Title
+Party Makeup in Chennai, Maduravoyal | Professional Event Makeup from Rs 6,000
+
+Description
+Book professional party makeup in Chennai from Rs 6,000. Long-lasting, photo-ready makeup for birthdays, anniversaries, cocktail parties, and special events at Anaplak Art and Glam, Maduravoyal.
+
+
+HAIR EXTENSIONS
+
+Title
+Hair Extensions in Chennai, Maduravoyal | Tape, Nano & Clip-In Extensions
+
+Description
+Get longer, fuller hair instantly with premium hair extensions in Chennai. Tape, nano and clip-in extensions professionally applied at Anaplak Art and Glam, Maduravoyal from Rs 20,000.
+
+
+FASHION AND EDITORIAL MAKEUP
+
+Title
+Fashion Makeup Artist in Chennai, Maduravoyal | Editorial & Photoshoot Makeup
+
+Description
+Professional fashion and editorial makeup in Chennai for photoshoots, campaigns, runway shows, and creative projects. Consultation-based pricing at Anaplak Art and Glam, Maduravoyal.
+
+
+FACIAL TREATMENTS
+
+Title
+Facial Treatments in Chennai, Maduravoyal | Glowing Skin from Rs 2,000
+
+Description
+Professional facial treatments in Chennai from Rs 2,000. Deep cleansing, hydration, brightening and advanced facials for healthy, glowing skin at Anaplak Art and Glam, Maduravoyal.
+
+
+THREADING AND WAXING
+
+Title
+Threading & Waxing in Chennai, Maduravoyal | Professional Hair Removal
+
+Description
+Professional threading and waxing services in Chennai. Eyebrow threading from Rs 130, facial threading, body waxing, and full body hair removal at Anaplak Art and Glam, Maduravoyal.
+
+
+NAIL ART AND EXTENSIONS
+
+Title
+Nail Art & Nail Extensions in Chennai, Maduravoyal | Creative Nail Designs
+
+Description
+Professional nail art and nail extensions in Chennai. Gel, acrylic, poly gel extensions, bridal nail art, French nails, chrome, ombre and more at Anaplak Art and Glam, Maduravoyal from Rs 500.
+
+
+MANICURE AND PEDICURE
+
+Title
+Manicure & Pedicure in Chennai, Maduravoyal | Professional Nail Care
+
+Description
+Professional manicure and pedicure services in Chennai. Relaxing nail care from Rs 800 with gel polish, spa treatments, and signature experiences at Anaplak Art and Glam, Maduravoyal.
+
+
+ANTI AGING TREATMENTS
+
+Title
+Anti-Aging Treatments in Chennai, Maduravoyal | Youthful, Radiant Skin
+
+Description
+Advanced anti-aging treatments in Chennai for youthful, radiant skin. Rejuvenate and revitalize with professional skincare at Anaplak Art and Glam, Maduravoyal.
+
+
+BLOG POSTS
+
+BLOG 1: BRIDAL MAKEUP TRENDS 2026
+
+Title
+2026 Bridal Makeup Trends: 7 Stunning Looks Every Chennai Bride Must See | Anaplak Art and Glam Salon
+
+Description
+Your wedding day look can make or break your photos. See the 7 bridal makeup trends Chennai brides are obsessed with in 2026 from dewy natural glam to bold HD finishes at Anaplak Art and Glam Salon.
+
+
+BLOG 2: KERATIN TREATMENT GUIDE
+
+Title
+Keratin Treatment: The Complete Guide Before You Book Your Appointment | Anaplak Art and Glam Salon
+
+Description
+Thinking about keratin but not sure what to expect? This guide covers everything the real cost, how long it lasts, what happens during the process, and whether it's actually right for your hair at Anaplak Art and Glam Salon.
+
+
+BLOG 3: SKINCARE ROUTINE AND FACIAL TREATMENTS
+
+Title
+Professional Facials Changed My Skin: Here's Exactly What Each One Does | Anaplak Art and Glam Salon
+
+Description
+Wasting money on skincare that doesn't work? Professional facials target what home products can't. See which facial actually fixes your skin concern from acne to anti-aging at Anaplak Art and Glam Salon.
+
+
+BLOG 4: HAIR COLOR TRENDS
+
+Title
+Hair Color Trends 2026: 8 Shades That Will Make You Book an Appointment Today | Anaplak Art and Glam Salon
+
+Description
+Still choosing between basic black and brown? 2026's hair color trends are anything but boring. From melted brunettes to bold fashion colors see the shades everyone's asking for at Anaplak Art and Glam Salon.
+
+
+BLOG 5: MONSOON HAIR CARE
+
+Title
+Monsoon Hair Care: 9 Tips to Stop Frizz Before It Ruins Your Hair | Anaplak Art and Glam Salon
+
+Description
+Every Chennai monsoon turns great hair into a frizzy mess. These 9 proven tips from pre-wash oiling to the right hair spa actually work. Stop fighting humidity at Anaplak Art and Glam Salon.
+
+
+BLOG 6: WOMENS HAIR STYLING TRENDS
+
+Title
+Women's Hair Styling 2026: 10 Cuts That Look Good on Literally Everyone | Anaplak Art and Glam Salon
+
+Description
+Tired of haircuts that look amazing in photos but fall flat on you? These 10 trending styles for 2026 actually work with real hair textures and face shapes. Find your next look at Anaplak Art and Glam Salon Chennai.
+
+
+BLOG 7: MENS HAIR TRENDS
+
+Title
+Men's Hair Trends 2026: 7 Styles That Make You Look Sharper Instantly | Anaplak Art and Glam Salon
+
+Description
+Still rocking the same haircut from 3 years ago? These 7 styling trends for 2026 from textured crops to modern slick backs are proven to make men look more put together at Anaplak Art and Glam Salon Chennai.
+
+
+BLOG 8: BRIDAL BEAUTY CHECKLIST
+
+Title
+Bridal Beauty Checklist: The 3-Month Timeline That Saves You From Wedding Day Disasters | Anaplak Art and Glam Salon
+
+Description
+One bad facial can ruin months of skin prep. This month-by-month bridal beauty checklist tells you exactly what to do and what to avoid so you look flawless on your wedding day at Anaplak Art and Glam Salon.
+
+
+BLOG 9: ANTI AGING SKINCARE
+
+Title
+Anti-Aging Skincare: The Routine That Actually Works (No Gimmicks, Just Results) | Anaplak Art and Glam Salon
+
+Description
+Most anti-aging advice is either too expensive or too complicated. This routine uses proven ingredients retinol, vitamin C, sunscreen and real dermatologist logic to visibly reduce fine lines and dullness at Anaplak Art and Glam Salon.
+
+
+BLOG 10: DAMAGED HAIR TREATMENTS
+
+Title
+Damaged Hair? These 6 Salon Treatments Actually Reverse It (Not Just Mask It) | Anaplak Art and Glam Salon
+
+Description
+Olaplex, keratin, hair spa, hair botox which one actually fixes your damage? We break down what each treatment does, who it's for, and what results you can realistically expect at Anaplak Art and Glam Salon.
+
+
+BLOG 11: BRIDAL SKINCARE 3 MONTH PLAN
+
+Title
+Bridal Skincare: The 3-Month Plan That Guarantees You Glow on Your Wedding Day | Anaplak Art and Glam Salon
+
+Description
+Last-minute facials before your wedding are a recipe for breakouts. This step-by-step 3-month plan tells you exactly what to do each month from skin prep to the final glow facial at Anaplak Art and Glam Salon.
+
+
+BLOG 12: HAIR SPA BENEFITS
+
+Title
+Hair Spa Treatment: 7 Reasons Your Hair Is Begging for One Right Now | Anaplak Art and Glam Salon
+
+Description
+If your hair feels dry, frizzy, or lifeless no matter what shampoo you use, a professional hair spa might be exactly what it needs. Here's what it actually does, who needs it, and how often you should go at Anaplak Art and Glam Salon.
+
+
+BLOG 13: CHOOSING BRIDAL MAKEUP ARTIST
+
+Title
+How to Pick a Bridal Makeup Artist Who Won't Ruin Your Wedding Day Look | Anaplak Art and Glam Salon
+
+Description
+The wrong bridal makeup artist can turn your dream wedding into a disaster. This guide shows you exactly what to check portfolios, trials, hygiene, pricing before you book at Anaplak Art and Glam Salon.
+
+
+BLOG 14: KERATIN VS SMOOTHENING
+
+Title
+Keratin vs Smoothening: The Honest Comparison Nobody Tells You | Anaplak Art and Glam Salon
+
+Description
+Keratin gives natural shine. Smoothening gives pin-straight hair. But which one will actually work for your hair type? We break down the real differences duration, damage risk, cost, and results at Anaplak Art and Glam Salon.
+
+
+END OF DOCUMENTATION

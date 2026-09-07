@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'About Anaplak Art & Glam | Luxury Hair, Beauty & Bridal Salon in Maduravoyal, Chennai',
+    title: 'About Anaplak Art & Glam | Luxury Hair, Beauty & Bridal Salon in Chennai, Maduravoyal',
 
     description:
-        'Learn about Anaplak Art & Glam, a trusted beauty destination in Maduravoyal, Chennai. Discover our passion for hair styling, bridal makeup, skincare, nail services, and personalized beauty experiences.',
+        'Learn about Anaplak Art & Glam, a trusted beauty destination in Chennai, Maduravoyal. Discover our passion for hair styling, bridal makeup, skincare, nail services, and personalized beauty experiences.',
 
     keywords: [
         'about Anaplak Art and Glam',
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
 
     openGraph: {
         title:
-            'About Anaplak Art & Glam | Hair, Beauty & Bridal Experts in Chennai',
+            'About Anaplak Art & Glam | Hair, Beauty & Bridal Experts in Chennai, Maduravoyal',
 
         description:
-            'Discover the story behind Anaplak Art & Glam, a premium salon in Maduravoyal, Chennai, offering professional hair, beauty, skincare, nail, and bridal services.',
+            'Discover the story behind Anaplak Art & Glam, a premium salon in Chennai, Maduravoyal, offering professional hair, beauty, skincare, nail, and bridal services.',
 
         url: 'https://anaplakartandglamsalon.com/about',
         siteName: 'Anaplak Art & Glam',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
                 url: '/logo_updated.webp',
                 width: 1200,
                 height: 630,
-                alt: 'Anaplak Art & Glam - Luxury Hair, Beauty & Bridal Salon in Chennai',
+                alt: 'Anaplak Art & Glam - Luxury Hair, Beauty & Bridal Salon in Chennai, Maduravoyal',
             },
         ],
     },
@@ -52,10 +52,10 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title:
-            'About Anaplak Art & Glam | Premium Salon in Chennai',
+            'About Anaplak Art & Glam | Premium Salon in Chennai, Maduravoyal',
 
         description:
-            'Explore our journey, expert beauty services, bridal makeup, hair styling, skincare, and nail treatments in Maduravoyal, Chennai.',
+            'Explore our journey, expert beauty services, bridal makeup, hair styling, skincare, and nail treatments in Chennai, Maduravoyal.',
 
         images: ['/logo_updated.webp'],
     },

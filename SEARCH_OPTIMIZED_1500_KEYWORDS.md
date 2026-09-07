@@ -3,7 +3,7 @@
 **Based on Real Search Data, Search Volume & User Intent**
 
 **Brand:** Anaplak Art & Glam | Kalpana Bridal Studio | Kalpana Makeover  
-**Location:** Maduravoyal, Chennai, Tamil Nadu  
+**Location:** Chennai, Maduravoyal, Tamil Nadu  
 **Generated:** December 21, 2025
 
 ---

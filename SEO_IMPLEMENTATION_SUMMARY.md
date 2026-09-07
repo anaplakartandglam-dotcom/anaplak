@@ -19,7 +19,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 ### Key Features:
 ✅ Emoji-enhanced titles for higher CTR
 ✅ Social proof in meta description (1000+ customers, 4.9★ rating)
-✅ Location-specific keywords (Maduravoyal, Chennai, MMDA Colony)
+✅ Location-specific keywords (Chennai, Maduravoyal, MMDA Colony)
 ✅ Service-specific keywords (Bridal Makeup, Keratin, Hair Coloring)
 ✅ Commercial intent keywords (best, top rated, luxury)
 
@@ -165,7 +165,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 ### 4. **Local SEO Focus**
 - **NAP Consistency**: Name, Address, Phone across all pages
 - **Google Maps Integration**: Embedded and linked
-- **Local Keywords**: Maduravoyal, Chennai, MMDA Colony
+- **Local Keywords**: Chennai, Maduravoyal, MMDA Colony
 - **Service Area**: Chennai and surrounding areas
 - **Business Hours**: Clearly displayed
 - **Parking Information**: Highlighted for convenience
@@ -295,7 +295,7 @@ All 4 pages (Home, About, Services, Contact) have been enhanced with advanced SE
 
 Ensure consistency across all platforms:
 - **Business Name**: Anaplak Art & Glam Salon
-- **Address**: No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony, Maduravoyal, Chennai 600095
+- **Address**: No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony, Chennai, Maduravoyal 600095
 - **Phone**: +91-9840088867, +91-9840088861
 - **Email**: anaplakartandglamsalon@gmail.com
 - **Website**: https://anaplakartandglamsalon.com

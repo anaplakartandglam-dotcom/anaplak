@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Beauty Tips, Hair Care & Bridal Makeup Blogs | Anaplak Art & Glam",
 
   description:
-    "Discover expert beauty tips, hair care guides, skincare advice, bridal makeup trends, and salon insights from Anaplak Art & Glam in Chennai. Stay updated with the latest beauty trends and professional recommendations.",
+    "Discover expert beauty tips, hair care guides, skincare advice, bridal makeup trends, and salon insights from Anaplak Art & Glam in Chennai, Maduravoyal. Stay updated with the latest beauty trends and professional recommendations.",
 
   keywords: [
     "beauty blog Chennai",

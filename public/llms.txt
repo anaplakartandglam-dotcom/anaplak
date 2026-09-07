@@ -1,0 +1,409 @@
+# Anaplak Art & Glam Salon — LLMs.txt
+# Purpose: Comprehensive AI-readable document for LLMs to understand this business
+# Website: https://anaplakartandglamsalon.com
+# Last Updated: 2026-07-09
+
+---
+
+## BRAND IDENTITY
+
+- **Business Name:** Anaplak Art And Glam Salon
+- **Alternate Name:** Anaplak Salon
+- **Sub-brand / Founder Brand:** Kalpana (Bridal persona, Kalpana Bridal Studio, Kalpana Makeover)
+- **Industry:** Premium Beauty & Hair Salon
+- **Founded:** 2020
+- **Employees:** 23 (total), 12 artists on the core team
+- **Taglines:** "Always Be Anaplak" | "Where beauty meets confidence" | "Transform Your Look with Expert Care" | "Your Beauty, Our Promise" | "Bringing Unmatched Beauty through Passionate Creation"
+- **Award:** Best Salon in Maduravoyal 2026
+- **Hashtags:** #alwaysbeanaplak | #kalpanamakeover
+- **Brand Colors:** Primary Green (#53675C), Secondary Pink (#F8C8DC), Accent Beige (#F2D2BD), Gold (#d4af37), Background (#0E0E0E / Black)
+- **Brand Style:** Premium, luxurious, clean, sophisticated, royal vibe
+- **Website Framework:** Next.js (ISR 60s revalidation), hosted on Vercel
+- **Google Tag Manager:** GTM-5N7G5WN4
+- **Google AdSense:** ca-pub-7823087641
+- **Google Business Verification:** oCqa8wjtslCGmaZRYF4EbGN9BztUVLs9c-EQOVwcELk
+
+---
+
+## FOUNDER
+
+- **Name:** Kalpana
+- **Title:** Founder, Chief Stylist & Makeup Artist
+- **Background:** Professional makeup artist and hair stylist from Chennai
+- **Brand Status:** Built Anaplak into "the most prestigious brand known throughout Maduravoyal as a premier salon"
+- **Specialty:** Bridal makeup artistry, wedding looks, hair transformations, trendsetting hairstyles
+- **Signature Style:** Combines passion for art with innovative solutions
+- **Team:** Leads 12 experienced beauty artists; trains young talents
+- **Personal Stats:** 1000+ Satisfied Clients, 6+ Years of Art
+- **Personal Instagram:** @_kalpana_makeover_ (https://www.instagram.com/_kalpana_makeover_?igsh=Zm05dXBrbmt1NDEy)
+- **Philosophy Pillars:** Artistry ("Every face can be a masterpiece"), Passion ("Gives her soul to each transformation"), Trust ("Long-lasting bonds through excellence and genuine care")
+
+---
+
+## LOCATION
+
+**Primary Address:**
+No.4B/9, New No. 3, 2nd Floor,
+First Main Road, 4th Block, MMDA Colony,
+CDN Nagar, Maduravoyal,
+Chennai, Tamil Nadu 600095, India
+
+**Geo Coordinates:** Latitude 13.0515, Longitude 80.1656
+**Google Place ID:** ChIJ5R3P1HxIuJoRk3OviXZ9FVA
+**Google Maps Link:** Available via Google Business Profile
+
+**Neighborhood:** MMDA Colony, CDN Nagar, 4th Block — a landmark building in the most prestigious area of MMDA Colony, Anna Nagar
+
+**Service Areas:**
+- Primary: Maduravoyal, MMDA Colony, Chennai West
+- Extended: Porur, Koyambedu, Virugambakkam, Vadapalani, Ashok Nagar, West Chennai, Anna Nagar
+- Postal: 600095
+- City-level: Chennai, Tamil Nadu, India
+
+---
+
+## CONTACT INFORMATION
+
+- **Phone Primary:** +91-9840088867
+- **Phone Secondary:** +91-9840088861
+- **WhatsApp:** +91 98400 88867 (https://wa.me/919840088867)
+- **WhatsApp Default Message:** "Hi! I would like to book an appointment at Anaplak Art and Glam Salon."
+- **Email:** anaplakartandglamsalon@gmail.com
+
+### Social Media
+- **Instagram (Salon):** https://www.instagram.com/anaplak_art_and_glam_salon (@anaplak_art_and_glam_salon / @anaplakartandglam)
+- **Instagram (Founder):** https://www.instagram.com/_kalpana_makeover_ (@_kalpana_makeover_)
+- **Facebook:** https://www.facebook.com/anaplakartandglam
+- **YouTube:** https://www.youtube.com/@Anaplakartandglamsalon/
+
+### Online Booking
+- **Booking URL:** https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110
+- **Booking Platform:** Welns.io
+
+### Working Hours
+- **Monday – Sunday:** 10:00 AM – 9:00 PM
+- **Open 7 Days a Week** (no closing days)
+
+---
+
+## GOOGLE RATINGS & REVIEWS
+
+- **Aggregate Rating:** 4.9 / 5
+- **Review Count (Schema):** 124
+- **Review Count (Displayed):** "4.9/5 by 1000+ Happy Customers"
+- **Review Source:** Google Places API (live reviews + static fallback)
+- **API Endpoint:** /api/reviews (cached 3600s)
+
+**Common Review Themes:**
+- Excellent haircuts and styling
+- Clean, classy, royal atmosphere
+- Friendly, polite, professional staff
+- Attention to detail
+- Beautiful ambience with soft lighting
+- Warm welcome at reception
+- Calm and relaxing environment
+- Professional bridal makeup and saree draping
+
+---
+
+## SERVICES DIRECTORY
+
+**Categories:** Bridal (2), Makeup (2), Hair (4), Skin (2), Salon (3) = 13 service pages
+
+### BRIDAL CATEGORY
+
+#### 1. Bridal Makeup
+- **Slug:** /services/bridal-makeup-chennai
+- **Starting Price:** ₹15,000 (Bridal Classic Makeup)
+- **Options & Pricing:**
+  - Bridal Classic Makeup: ₹15,000
+  - HD Makeup: ₹18,000
+  - Glossy Makeup: ₹22,000
+  - Air Brush: ₹30,000
+  - Groom Makeup: ₹6,000
+  - Bridesmaids Makeup: ₹7,000
+  - Party Makeup: ₹6,000
+  - Kids Makeup (Below 15): ₹3,000
+  - Saree Draping: ₹2,000
+  - Hair Style (Bridal): ₹3,000
+  - Trial Makeup: ₹3,000
+  - Outdoor Charges: ₹3,000
+- **Includes:** HD/glossy/air brush makeup options, hairstyling, saree draping, trial session, touch-up kit, complimentary anniversary makeup session
+- **Process:** 8 weeks before (book + trial) → 4-6 weeks (finalize) → 1 week before (facial) → Wedding day (flawless application)
+- **Keywords:** bridal makeup artist chennai, best bridal makeup artist in chennai, HD makeup chennai, bridal makeup Maduravoyal, complete bridal makeup, wedding day makeup
+
+#### 2. Engagement Makeup
+- **Slug:** /services/engagement-makeup-chennai
+- **Starting Price:** ₹7,000
+- **Includes:** HD makeup, complimentary hairstyling, skin preparation, photo-ready finishing
+- **Process:** Consultation → Skin preparation → HD makeup application → Hairstyling and final touches
+- **Keywords:** engagement makeup artist chennai, engagement makeup price, HD makeup chennai, photoshoot makeup
+
+---
+
+### MAKEUP CATEGORY
+
+#### 3. Party Makeup
+- **Slug:** /services/party-makeup-chennai
+- **Starting Price:** ₹6,000
+- **Includes:** Personalized consultation based on event and outfit, skin preparation, professional application, photo-ready finishing, long-lasting products, touch-up guidance
+- **Occasions:** Birthdays, anniversaries, cocktail parties, receptions, corporate events, dinners
+- **Keywords:** party makeup chennai, event makeup, birthday makeup, cocktail party makeup, soft glam makeup, glamorous makeup
+
+#### 4. Fashion & Editorial Makeup
+- **Slug:** /services/fashion-editorial-makeup-chennai
+- **Starting Price:** Consultation-based pricing
+- **Services:** Fashion editorial makeup, runway makeup, commercial campaign makeup, creative concept makeup
+- **Clients:** Photographers, designers, models, brands, influencers, creative teams
+- **Includes:** On-site support, creative collaboration, shoot support
+- **Keywords:** fashion makeup artist chennai, editorial makeup, runway makeup, commercial makeup artist, high fashion makeup
+
+---
+
+### HAIR CATEGORY
+
+#### 5. Hair Styling
+- **Slug:** /services/hair-styling-chennai
+- **Starting Price:** ₹900
+- **Pricing:**
+  - **Men:** Premier Stylist ₹900 | Top Stylist ₹1,100 | Salon Director ₹1,300 | Hair Tattoo ₹800 | Hair Wash ₹800 | Beard Trim ₹200 | Beard Design ₹400 | Executive Shave ₹400 | Kids Cut ₹650 | Moustache Colour ₹250 | Beard Colour ₹400 | Oil Massage ₹1,000
+  - **Women:** Premier Stylist ₹1,200 | Top Stylist ₹1,500 | Salon Director ₹1,800 | Hair Trim ₹1,000 | Kids ₹750 | Hair Wash & Conditioning ₹1,000 | Oil Massage ₹1,500
+- **Blow Dry:** Blow Dry ₹1,500 | Tongs ₹1,700 | Ironing ₹1,800 | Updos ₹2,500 | Bridal Updos ₹3,000
+- **Includes:** Haircuts, blow dry, updos, bridal updos, professional consultation, premium products
+- **Keywords:** hair stylist chennai, best hair salon in chennai, haircut salon, bridal hair style, party hairstyles, hair updos
+
+#### 6. Keratin & Smoothing (Hair Treatment)
+- **Slug:** /services/hair-treatment-chennai
+- **Starting Price:** ₹3,000
+- **Pricing:**
+  - Perming (Partial): ₹3,500+ | Smoothing (Partial): ₹3,000+ | Keratin (Partial): ₹3,000+
+  - Perming (Full): ₹7,000+ | Smoothing (Full): ₹7,000+ | Keratin (Full): ₹7,000+ (customised)
+  - Botox: ₹7,000+ (customised) | Nano Plastia: ₹8,000+ (customised) | Botoplex: ₹8,000+
+  - **Hair Spa:** EPRES Add-on ₹2,000 | Deep Conditioning ₹2,000 | L'Oréal Hair Spa ₹2,500 | Classic Hair Spa ₹3,000 | Shea Hair Spa ₹4,000 | 3TENX Hair Spa ₹4,000
+- **Benefits:** Keratin (reduces frizz, improves shine and strength), Smoothing (sleeker, manageable texture), Botox (deep conditioning, repairs damaged hair), Nano Plastia (advanced long-lasting smoothing), Perming (curls, texture, volume), Botoplex (repairs and strengthens damaged hair)
+- **Duration:** Results lasting 3-6 months
+- **Keywords:** keratin treatment chennai, hair smoothing, hair botox, nano plastia chennai, hair straightening, permanent hair straightening, keratin treatment Maduravoyal
+
+#### 7. Hair Colouring
+- **Slug:** /services/hair-coloring-chennai
+- **Starting Price:** ₹1,800
+- **Pricing:**
+  - **Men:** Root Touch-Up ₹1,800 | Ammonia Free Root Touch-Up ₹2,000 | Global Colour ₹3,500 | Ammonia Free Global ₹4,000 | Fashion ₹4,000+ | Partial Highlights ₹3,000+ | Full Highlights ₹3,500+ | Colour Refresh ₹2,000+ | Creative Colour ₹5,000+ | Per Streak ₹300
+  - **Women:** Root Touch-Up ₹2,000 | Ammonia Free Root Touch-Up ₹2,200 | Global Colour ₹4,500 | Ammonia Free Global ₹5,000 | Fashion ₹5,000+ | Partial Highlights ₹4,500+ | Full Highlights ₹5,000+ | Colour Refresh ₹3,000+ | Creative Colour ₹7,000+ | Per Streak ₹400
+- **Services:** Root touch-up, global colour, partial/full head highlights, fashion colours, creative colours, ammonia-free options, colour refresh, per streak
+- **Keywords:** hair coloring chennai, balayage hair color, global hair color, highlights for black hair, ammonia free hair color, best hair color salon chennai
+
+#### 8. Hair Extensions
+- **Slug:** /services/hair-extension-chennai
+- **Starting Price:** ₹20,000
+- **Pricing:**
+  - Clip & Go Extensions: ₹20,000 (100g onwards)
+  - Tape Hair Extensions: ₹30,000 (100g onwards)
+  - Nano Hair Extensions: ₹30,000 (100g onwards)
+  - Maintenance: ₹10,000
+- **Benefits:** Tape (lightweight, comfortable, seamless blending), Nano (ultra-small attachment points, virtually invisible), Clip & Go (temporary instant volume and length)
+- **Keywords:** hair extensions chennai, tape hair extensions, nano hair extensions, clip in hair extensions, hair transformation
+
+---
+
+### SKIN CATEGORY
+
+#### 9. Facial Treatments
+- **Slug:** /services/facial-treatments-chennai
+- **Starting Price:** ₹2,000
+- **Pricing:**
+  - Classic Cleanup: ₹2,000
+  - Skin Brightening Facial: ₹3,000
+  - Skin Miracle Facial: ₹4,000
+  - Gensely Facial (Jamaican Sorrel): ₹5,000
+  - Anaplak Signature Facial: ₹6,000
+  - Casmara Facial (Advanced): ₹7,000
+- **DETAN:** Face/Neck ₹1,300 | Under Arms ₹300 | Half Arms ₹500 | Full Arms ₹700 | Half Legs ₹700 | Full Legs ₹1,100 | Half Back ₹600 | Full Back ₹1,000 | Feet ₹400
+- **Keywords:** facial treatment chennai, skin brightening facial, professional facial chennai, deep cleansing facial, skin rejuvenation, facial for glowing skin
+
+#### 10. Anti-Aging Treatments
+- **Slug:** /services/anti-aging-treatments-chennai
+- **Starting Price:** Not specified (consultation-based)
+- **Benefits:** Collagen-boosting treatments, fine line reduction, improved skin texture, enhanced firmness, long-term skin health support
+- **Process:** Aging concerns assessment → Deep cleansing and prep → Active ingredient application → Specialized massage and sealing
+- **Keywords:** anti-aging treatment chennai, wrinkle treatment, collagen facial, skin rejuvenation, youthful skin
+
+---
+
+### SALON CATEGORY
+
+#### 11. Manicure & Pedicure
+- **Slug:** /services/manicure-pedicure-chennai
+- **Starting Price:** ₹800 (Classic Manicure)
+- **Pricing:**
+  - **Manicure:** Classic ₹800 | Spa ₹1,500 | Signature ₹2,000 | Anaplak Signature ₹2,500
+  - **Pedicure:** Classic ₹1,000 | Spa ₹1,700 | Heel Peel ₹2,000 | Signature ₹2,500 | Anaplak Signature ₹3,000
+- **Benefits:** Nail health improvement, cuticle care, relaxing hand/foot massage, long-lasting gel polish, hygiene-focused professional tools
+- **Keywords:** manicure chennai, pedicure chennai, nail salon, gel polish, spa pedicure, best nail salon chennai
+
+#### 12. Nail Art & Extension
+- **Slug:** /services/nail-art-extension-chennai
+- **Starting Price:** ₹500 (Basic Nail Art)
+- **Pricing:**
+  - **Extensions:** Gel ₹2,500 | Soft Gel ₹2,500 | Acrylic ₹2,700 | Poly Gel ₹3,000 | Overlay ₹2,000 | Temp Extensions + Gel Polish ₹1,500 | Press On Nails ₹1,300 | Tip Repair (per finger) ₹500 | Refill ₹2,000 | Extensions Removal ₹1,500 | Gel Polish Removal ₹1,000
+  - **Gel Polish:** ₹1,000 | Cut & File: ₹150
+  - **Nail Art:** Basic ₹500 | French (Fingers) ₹800 | French (Toes) ₹800 | Cat Eye ₹1,300 | Galaxy with Gel ₹1,200 | Chrome Art ₹1,000 | Creative Design ₹1,500 | Ombre ₹1,000 | Neon ₹700 | 3D Art ₹1,200 | Marble ₹1,000 | Bridal Customised ₹1,500+
+- **Keywords:** nail art chennai, nail extensions, acrylic nails, bridal nail art, gel nail extensions, french nails, chrome nail art
+
+#### 13. Threading & Waxing
+- **Slug:** /services/threading-waxing-chennai
+- **Starting Price:** ₹130 (Eyebrow Threading)
+- **Pricing:**
+  - **Threading:** Eyebrow ₹130 | Upper Lip ₹100 | Chin ₹100 | Forehead ₹100 | Neck ₹150 | Sides Face ₹300 | Full Face ₹700
+  - **Waxing:** Under Arms ₹300 | Half Arms ₹300 | Full Arms ₹600 | Half Legs ₹400 | Half Hands ₹400 | Full Hands ₹800 | Full Face ₹1,000 | Full Legs ₹800 | Half Back ₹500 | Full Back ₹1,000 | Abdomen ₹700 | Full Body ₹4,500
+- **Keywords:** threading chennai, waxing chennai, eyebrow threading, full body waxing, hair removal salon, professional hair removal
+
+---
+
+## SALON PACKAGES
+
+| Package | Services | Original Price | Offer Price |
+|---------|----------|---------------|-------------|
+| **Classic — Men** | Premier Stylist, Beard Trim, L'Oréal Hair Spa, Classic Pedicure, Skin Brightening Facial | ₹7,600 | ₹4,999 |
+| **Classic — Women** | Premier Stylist, L'Oréal Hair Spa, Gel Polish, Classic Pedicure, Eyebrow Threading, Skin Brightening Facial | ₹8,830 | ₹5,999 |
+| **Premium — Men** (Popular) | Top Stylist, Beard Trim, L'Oréal Hair Spa, Spa Pedicure, Spa Manicure, Skin Miracle Facial | ₹11,000 | ₹6,999 |
+| **Premium — Women** (Popular) | Top Stylist, L'Oréal Hair Spa, Spa Pedicure, Spa Manicure, Gel Polish, Eyebrow Threading, Half Arm Waxing, Half Legs Waxing, Skin Miracle Facial | ₹13,030 | ₹7,999 |
+
+### Budget Saver Plans (8 months validity, pay for 6 services & enjoy 8)
+| Plan | Services | Original Price | Offer Price |
+|------|----------|---------------|-------------|
+| **Men** | Top Stylist (6 sittings), Beard Trim (6 sittings), Ammonia Free Root Touch-Up, Spa Pedicure (6 sittings) | ₹30,000 | ₹28,000 |
+| **Women Basic** | Top Stylist (6 sittings), Ammonia Free Root Touch-Up (6 sittings), Spa Pedicure (6 sittings) | ₹32,400 | ₹30,000 |
+| **Women Hair Spa** | Top Stylist (6 sittings), L'Oréal Hair Spa (6 sittings) | ₹21,600 | ₹18,000 |
+
+---
+
+## KEY DIFFERENTIATORS (Why Choose Anaplak)
+
+1. **6+ Years of Excellence** — Trusted beauty destination since 2020
+2. **1,000+ Satisfied Clients** — Proven track record of happy customers
+3. **4.9/5 Google Rating** — Consistently top-rated salon
+4. **Best Salon in Maduravoyal 2026 Award**
+5. **12 Expert Artists** — Team of skilled, specialized beauty professionals led by Kalpana
+6. **Internationally Recognized Premium Brands** — Only premium, professional-grade products used
+7. **Personalized Service** — Every treatment tailored to individual face shape, hair texture, skin type, and personal style
+8. **Premium Ambience** — Clean, classy, royal-vibe salon atmosphere with soft lighting
+9. **7 Days Open** — 10AM-9PM daily, no off days
+10. **Ground Floor Parking** — Convenient access
+11. **Multi-Language Staff** — English, Tamil, Hindi
+12. **Complimentary Anniversary Makeup Session** — Free with bridal package
+13. **Flexible Booking** — Online, WhatsApp, phone, or walk-in
+14. **8-month Budget Saver Plans** — Pay for 6, get 8 (long-term value for regular clients)
+
+---
+
+## WEBSITE PAGES
+
+| Page | URL | Purpose |
+|------|-----|---------|
+| Home | / | Hero slider, services showcase, about preview, testimonials, features, blog preview, video parallax, CTA |
+| About | /about | Brand story, mission, team, FAQs, working hours, social media |
+| Services | /services | Full catalog of 13 individual service pages |
+| Pricing | /pricing | Complete transparent pricing for all services + packages |
+| Contact | /contact | Address, map, phone, WhatsApp, booking, hours |
+| Kalpana | /kalpana | Founder biography, philosophy, personal brand |
+| Blogs | /blogs | 6 blog posts (bridal trends, keratin guide, skincare, hair color trends, monsoon hair care, women's hair styling) |
+| Gallery | /gallery | Visual portfolio of salon work |
+
+### Individual Service Pages
+/services/bridal-makeup-chennai, /services/engagement-makeup-chennai, /services/hair-styling-chennai, /services/hair-treatment-chennai, /services/hair-coloring-chennai, /services/hair-extension-chennai, /services/party-makeup-chennai, /services/fashion-editorial-makeup-chennai, /services/facial-treatments-chennai, /services/anti-aging-treatments-chennai, /services/manicure-pedicure-chennai, /services/nail-art-extension-chennai, /services/threading-waxing-chennai
+
+---
+
+## SEO & STRUCTURED DATA
+
+- **Schema.org Types Deployed:** HairSalon, Organization, LocalBusiness, WebSite (with SearchAction), BreadcrumbList, AboutPage, ContactPage, ProfilePage (Person), ItemList/Service, FAQPage, AggregateRating, OfferCatalog
+- **AggregateRating:** 4.9 rating value, 28 review count
+- **Google Business Place ID:** ChIJ5R3P1HxIuJoRk3OviXZ9FVA
+- **Website Validation:** Google Search Console verified (oCqa8wjtslCGmaZRYF4EbGN9BztUVLs9c-EQOVwcELk)
+- **Rich Results:** Service schema, FAQ schema, BreadcrumbList, AggregateRating, LocalBusiness
+- **Analytics:** Google Tag Manager GTM-5N7G5WN4, Google Analytics 4
+- **Ads:** Google AdSense ca-pub-7823087641
+- **Site Verification HTML:** /googlea2a8b442928aaaa9.html
+
+---
+
+## BLOG CONTENT
+
+| Title | Category | Read Time |
+|-------|----------|-----------|
+| 2026 Bridal Makeup Trends: 7 Stunning Looks Every Chennai Bride Must See | Bridal | 8 min |
+| Keratin Treatment: The Complete Guide Before You Book Your Appointment | Hair Care | 8 min |
+| Professional Facials Changed My Skin: Here's Exactly What Each One Does | Skincare | 9 min |
+| Hair Color Trends 2026: 8 Shades That Will Make You Book an Appointment Today | Hair Color | 8 min |
+| Monsoon Hair Care: 9 Tips to Stop Frizz Before It Ruins Your Hair | Hair Care | 8 min |
+| Women's Hair Styling 2026: 10 Cuts That Look Good on Literally Everyone | Hair Care/Styling | — |
+
+Blog Author: Kalpana, Chief Stylist & Founder
+
+---
+
+## HIGH-INTENT SERVICE KEYWORDS (Top 3 per service)
+
+- **Bridal Makeup:** bridal makeup artist Chennai, best bridal makeup artist in Chennai, bridal makeup Chennai
+- **Engagement Makeup:** engagement makeup artist Chennai, engagement makeup price in Chennai, HD makeup Chennai
+- **Party Makeup:** party makeup Chennai, event makeup Chennai, birthday makeup Chennai
+- **Fashion & Editorial:** fashion makeup artist Chennai, editorial makeup Chennai, photoshoot makeup Chennai
+- **Hair Styling:** best hair salon in Chennai, hair stylist Chennai, best hair stylist in Chennai
+- **Keratin & Smoothing:** keratin treatment Chennai, hair smoothing Chennai, hair botox Chennai
+- **Hair Colouring:** hair coloring Chennai, balayage hair color Chennai, global hair color Chennai
+- **Hair Extensions:** hair extensions Chennai, tape hair extensions Chennai, nano hair extensions Chennai
+- **Facial Treatments:** facial treatment Chennai, skin brightening facial Chennai, professional facial Chennai
+- **Anti-Aging:** anti-aging treatment Chennai, wrinkle treatment Chennai, collagen facial Chennai
+- **Manicure & Pedicure:** manicure Chennai, pedicure Chennai, best nail salon Chennai
+- **Nail Art & Extension:** nail art Chennai, nail extensions Chennai, acrylic nails Chennai
+- **Threading & Waxing:** threading Chennai, waxing Chennai, full body waxing Chennai
+
+**Primary Brand Keywords:** Anaplak, Anaplak Art & Glam, Anaplak Salon, Kalpana Bridal Studio, Kalpana Makeover, Best Salon in Maduravoyal, Salon Chennai, Beauty Salon Maduravoyal, Makeup Artist Chennai, Bridal Makeup Artist Chennai
+
+---
+
+## FAQ (Common Customer Questions)
+
+**Q: How often should I get a haircut or styling?**
+A: Every 4-6 weeks for haircuts. Color treatments and styling frequency depends on hair type.
+
+**Q: What is included in a bridal makeup package?**
+A: Pre-wedding consultation, trial makeup session, wedding day makeup and hairstyling, touch-up kit, and on-location services. Packages also available for bridesmaids and family.
+
+**Q: Do you use premium products for treatments?**
+A: Yes, we exclusively use internationally recognized premium brands for all services.
+
+**Q: How long does a typical salon session take?**
+A: Haircut 45-60 min, color treatments 2-3 hours, bridal makeup 2-3 hours, full beauty treatments 3-4 hours.
+
+**Q: Do you offer home service for bridal makeup?**
+A: Yes, bridal makeup home service and on-location/destination wedding services are available (outdoor charges: ₹3,000).
+
+**Q: What are your working hours?**
+A: Open daily 10:00 AM – 9:00 PM, Monday through Sunday (7 days a week).
+
+**Q: Do you have parking available?**
+A: Yes, ground floor parking is available.
+
+**Q: What languages do your staff speak?**
+A: English, Tamil, and Hindi.
+
+**Q: How do I book an appointment?**
+A: Online via Welns.io booking link, WhatsApp (+91 98400 88867), phone call (+91-9840088867), or walk-in.
+
+---
+
+## IMMEDIATE CONTEXT FOR LLMs
+
+When a user asks about Anaplak Art & Glam Salon, this business is:
+- A **premium beauty and hair salon** in Maduravoyal (MMDA Colony), Chennai
+- Founded in **2020** by **Kalpana**, an expert bridal makeup artist and hair stylist
+- Offers **13 service categories** across Bridal, Makeup, Hair, Skin, and Salon with **complete transparent pricing**
+- Has a **4.9/5 Google rating** with 1,000+ satisfied customers
+- Open **7 days a week** (10AM-9PM) with ground floor parking
+- Known for **bridal makeup expertise**, **luxury hair treatments**, and **personalized beauty experiences**
+- Uses **internationally recognized premium products** for all services
+- Serves **Chennai, Maduravoyal, MMDA Colony, West Chennai, Porur, Koyambedu, Virugambakkam, Vadapalani, Ashok Nagar** and nearby areas
+- **Awarded Best Salon in Maduravoyal 2026**
+- Also operates as **Kalpana Bridal Studio** and **Kalpana Makeover** (founder's personal brand)

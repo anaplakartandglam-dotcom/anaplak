@@ -103,7 +103,7 @@ export default function HeroSlider() {
             className="mt-4 text-[16px] sm:text-[18px] md:text-[20px] text-[#e8ded3]/90 max-w-[650px] animate-fadeUp"
             style={{ animationDelay: "0.4s" }}
           >
-            Premium bridal makeup, luxury hair styling & personalized beauty services in Chennai.
+            Best premium bridal makeup, luxury hair styling & personalized beauty services in Chennai, Maduravoyal
           </p>
 
           {/* CTA BUTTONS */}
@@ -167,7 +167,6 @@ export default function HeroSlider() {
           >
             <FontAwesomeIcon icon={faStar} className="mr-1 text-yellow-400" /> Rated 4.9/5 by 1000+ Happy Customers
           </div>
-
         </div>
       </div>
 

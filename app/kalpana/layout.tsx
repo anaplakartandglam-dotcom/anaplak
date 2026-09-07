@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: "Kalpana | Founder at Anaplak Art & Glam Chennai",
-    description: "Meet Kalpana, Founder of Anaplak Art & Glam in Chennai. Known for bridal makeup artistry, hair transformations, and personalized beauty experiences, she leads one of Maduravoyal's trusted beauty destinations.",
+    description: "Meet Kalpana, Founder of Anaplak Art & Glam in Chennai, Maduravoyal. Known for bridal makeup artistry, hair transformations, and personalized beauty experiences, she leads one of Maduravoyal's trusted beauty destinations.",
     keywords: [
         "Kalpana",
         "Kalpana Chennai",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: 'Kalpana | Founder | Anaplak Art And Glam',
-        description: 'Discover the artistry of Kalpana – the creative force behind Anaplak Salon. Expert bridal makeup artist and hair stylist based in Chennai.',
+        description: 'Discover the artistry of Kalpana – the creative force behind Anaplak Salon. Expert bridal makeup artist and hair stylist based in Chennai, Maduravoyal.',
         url: 'https://anaplakartandglamsalon.com/kalpana',
         siteName: 'Anaplak Art And Glam Salon',
         type: 'profile',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Kalpana | Founder | Anaplak Salon',
-        description: 'Meet Kalpana – the visionary makeup artist and founder behind Anaplak Art And Glam. Expert bridal makeup & hair styling in Chennai.',
+        description: 'Meet Kalpana – the visionary makeup artist and founder behind Anaplak Art And Glam. Expert bridal makeup & hair styling in Chennai, Maduravoyal.',
         images: ['/logo_new.jpeg'],
     },
     alternates: {

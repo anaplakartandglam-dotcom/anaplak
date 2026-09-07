@@ -1,8 +1,9 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ChevronDown, Sparkles, Scissors, Palette, Heart, Crown } from "lucide-react"
+import { Sparkles, Scissors, Palette, Heart, Crown } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -17,7 +18,7 @@ const services = [
       {
         title: "Complete Bridal Package",
         description: "Transform into the most radiant version of yourself on your special day",
-        image: "/elegant-bride-makeup-and-hairstyling-beauty-portra.webp",
+        image: "/elegant-bride-makeup.jpg",
         details:
           "Our signature bridal experience includes pre-wedding consultations, trial sessions, and day-of services. We create a personalized beauty timeline ensuring you look flawless from ceremony to reception.",
         benefits: [
@@ -39,21 +40,9 @@ const services = [
         title: "Engagement Makeup",
         description: "Look stunning for your engagement ceremony and photoshoot",
         image: "/engagement-makeup-look-natural-glowing-beauty.webp",
-        details:
-          "Specially designed for engagement ceremonies, this service ensures you look radiant in person and photos. We use high-definition makeup techniques perfect for both traditional and modern celebrations.",
-        benefits: [
-          "HD makeup for flawless photos",
-          "Long-lasting formula",
-          "Style consultation included",
-          "Complimentary hair styling",
-          "Pre-event skin preparation guide",
-        ],
-        process: [
-          "Discuss your outfit and theme",
-          "Skin preparation recommendations",
-          "Professional makeup application",
-          "Final styling and setting",
-        ],
+        details: "Specially designed for engagement ceremonies, this service ensures you look radiant in person and photos.",
+        benefits: ["HD makeup for flawless photos", "Long-lasting formula", "Style consultation included"],
+        process: ["Discuss your outfit and theme", "Skin prep", "Professional application", "Final styling"],
         deliverables: "Complete makeup look, hair styling, and touch-up recommendations",
       },
     ],
@@ -66,7 +55,7 @@ const services = [
       {
         title: "Hair Styling",
         description: "Expert hair styling services for any occasion",
-        image: "/transformation-1.webp",
+        image: "/hair-styling.jpg",
         details:
           "From everyday styles to special occasion updos, our hair specialists create looks that complement your features and lifestyle. We use premium products to ensure your hair stays healthy and vibrant.",
         benefits: [
@@ -87,7 +76,7 @@ const services = [
       {
         title: "Hair Treatment",
         description: "Advanced texture treatments for healthy, manageable hair",
-        image: "/professional-hair-styling-salon-treatment-luxury.webp",
+        image: "/hair-treatment.jpg",
         details:
           "Transform your hair with our premium texture treatments. From smoothing and straightening to adding volume and curls, we offer a complete range of advanced hair treatments using the latest techniques and products for long-lasting, beautiful results. Our treatments include Perming, Keratin, Smoothing, Botox, Nano Plastia, and Botoplex - all customized to your hair type and desired results.",
         benefits: [
@@ -109,7 +98,7 @@ const services = [
       {
         title: "Hair Coloring",
         description: "Transform your look with expert color services",
-        image: "/hair-coloring.webp",
+        image: "/hair-coloring.jpg",
         details:
           "Whether you want subtle highlights or a complete color transformation, our colorists use the latest techniques and premium products to achieve stunning, long-lasting results.",
         benefits: [
@@ -130,7 +119,7 @@ const services = [
       {
         title: "Hair Extension",
         description: "Add length, volume, and style with premium hair extensions",
-        image: "/hair_extension.webp",
+        image: "/hair-extension.jpg",
         details:
           "Transform your look instantly with our premium hair extension services. From tape-in to nano extensions, we offer a variety of methods to add length, volume, and dimension to your hair. Our expert stylists ensure seamless blending and natural-looking results.",
         benefits: [
@@ -157,7 +146,7 @@ const services = [
       {
         title: "Party Makeup",
         description: "Glamorous looks for any celebration or special event",
-        image: "/glamorous-party-makeup-evening-look-celebration.jpg",
+        image: "/party-makeup.jpg",
         details:
           "Perfect for birthdays, anniversaries, cocktail parties, and social events. We create stunning looks that photograph beautifully and last throughout your event.",
         benefits: [
@@ -178,23 +167,11 @@ const services = [
       {
         title: "Fashion & Editorial Makeup",
         description: "Bold, creative looks for photoshoots and fashion events",
-        image: "/professional-makeup-artist-beauty-glamour-studio.webp",
-        details:
-          "Specialized makeup artistry for fashion shows, editorial shoots, and creative projects. We collaborate with photographers and designers to bring artistic visions to life.",
-        benefits: [
-          "Avant-garde techniques",
-          "Camera and lighting expertise",
-          "Collaborative creative process",
-          "Portfolio-worthy results",
-          "Trend-forward styling",
-        ],
-        process: [
-          "Brief understanding and mood board review",
-          "Creative concept development",
-          "Artistic application",
-          "On-set touch-ups and adjustments",
-        ],
-        deliverables: "High-fashion makeup looks optimized for photography and runway",
+        image: "/fashion-editorial-makeup.jpg",
+        details: "Specialized makeup artistry for fashion shows, editorial shoots, and creative projects.",
+        benefits: ["Avant-garde techniques", "Camera-ready results", "Portfolio-worthy looks"],
+        process: ["Brief and mood board", "Creative concept", "Artistic application", "On-set touch-ups"],
+        deliverables: "High-fashion makeup optimized for photography and runway",
       },
     ],
   },
@@ -206,7 +183,7 @@ const services = [
       {
         title: "Facial Treatments",
         description: "Rejuvenate and refresh your skin with our signature facials",
-        image: "/luxury-facial-treatment-spa-skincare-relaxation.webp",
+        image: "/facial-treatments.jpg",
         details:
           "Our facial treatments are customized to your skin type and concerns. Using advanced techniques and premium products, we help you achieve healthy, glowing skin.",
         benefits: [
@@ -228,21 +205,9 @@ const services = [
         title: "Anti-Aging Treatments",
         description: "Advanced solutions for youthful, radiant skin",
         image: "/anti-aging-skincare-treatment-youthful-glowing-ski.webp",
-        details:
-          "Combat signs of aging with our specialized treatments that target fine lines, wrinkles, and loss of elasticity. We use clinically-proven ingredients and techniques for visible results.",
-        benefits: [
-          "Collagen-boosting treatments",
-          "Fine line reduction",
-          "Improved skin texture",
-          "Enhanced firmness",
-          "Long-term skin health support",
-        ],
-        process: [
-          "Aging concerns assessment",
-          "Deep cleansing and prep",
-          "Active ingredient application",
-          "Specialized massage and sealing",
-        ],
+        details: "Combat signs of aging with specialized treatments targeting fine lines, wrinkles, and loss of elasticity.",
+        benefits: ["Collagen-boosting", "Fine line reduction", "Improved texture", "Enhanced firmness"],
+        process: ["Aging assessment", "Deep cleansing", "Active ingredient application", "Specialized massage"],
         deliverables: "Visibly younger-looking skin with continued improvement recommendations",
       },
     ],
@@ -276,7 +241,7 @@ const services = [
       {
         title: "Threading & Waxing",
         description: "Professional hair removal for smooth, beautiful skin",
-        image: "/eyebrow-and-waxing.webp",
+        image: "/threading-waxing.jpg",
         details:
           "Our expert technicians provide gentle, effective hair removal services using premium products. We ensure minimal discomfort while delivering smooth, long-lasting results.",
         benefits: [
@@ -320,7 +285,6 @@ const services = [
 ]
 
 export default function ServicesSection() {
-  const [expandedService, setExpandedService] = useState<string | null>(null)
   const [visibleCategories, setVisibleCategories] = useState<Set<string>>(new Set())
 
   useEffect(() => {
@@ -340,13 +304,24 @@ export default function ServicesSection() {
     return () => observer.disconnect()
   }, [])
 
-  const toggleService = (serviceTitle: string) => {
-    setExpandedService(expandedService === serviceTitle ? null : serviceTitle)
+  const serviceSlugs: Record<string, string> = {
+    "Complete Bridal Package": "/services/bridal-makeup-chennai",
+    "Engagement Makeup": "/services/engagement-makeup-chennai",
+    "Hair Styling": "/services/hair-styling-chennai",
+    "Hair Treatment": "/services/hair-treatment-chennai",
+    "Hair Coloring": "/services/hair-coloring-chennai",
+    "Hair Extension": "/services/hair-extension-chennai",
+    "Party Makeup": "/services/party-makeup-chennai",
+    "Fashion & Editorial Makeup": "/services/fashion-editorial-makeup-chennai",
+    "Facial Treatments": "/services/facial-treatments-chennai",
+    "Anti-Aging Treatments": "/services/anti-aging-treatments-chennai",
+    "Manicure & Pedicure": "/services/manicure-pedicure-chennai",
+    "Threading & Waxing": "/services/threading-waxing-chennai",
+    "Nail Art & Extension": "/services/nail-art-extension-chennai",
   }
 
   return (
     <>
-      {/* Services Schema Markup */}
       <Script
         id="services-schema"
         type="application/ld+json"
@@ -355,59 +330,18 @@ export default function ServicesSection() {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "name": "Hair, Beauty & Bridal Services in Chennai | Anaplak Art & Glam",
-            "description": "Discover professional hair coloring, balayage, keratin treatments, hair smoothening, bridal makeup, facials, nail services, and beauty treatments at Anaplak Art & Glam in Maduravoyal, Chennai.",
+            "description": "Discover professional hair coloring, balayage, keratin treatments, hair smoothening, bridal makeup, facials, nail services, and beauty treatments at Anaplak Art & Glam in Chennai, Maduravoyal.",
             "url": "https://anaplakartandglamsalon.com/services",
             "itemListElement": [
-              {
-                "@type": "Service",
-                "name": "Complete Bridal Package",
-                "provider": {
-                  "@type": "BeautySalon",
-                  "name": "Anaplak Art And Glam Salon"
-                },
-                "serviceType": "Bridal Makeup",
-                "areaServed": "Chennai",
-                "description": "Transform into the most radiant version of yourself on your special day with our complete bridal package"
-              },
-              {
-                "@type": "Service",
-                "name": "Hair Coloring",
-                "provider": {
-                  "@type": "BeautySalon",
-                  "name": "Anaplak Art And Glam Salon"
-                },
-                "serviceType": "Hair Services",
-                "areaServed": "Chennai",
-                "description": "Expert hair coloring services with premium products and latest techniques"
-              },
-              {
-                "@type": "Service",
-                "name": "Facial Treatments",
-                "provider": {
-                  "@type": "BeautySalon",
-                  "name": "Anaplak Art And Glam Salon"
-                },
-                "serviceType": "Skin Care",
-                "areaServed": "Chennai",
-                "description": "Rejuvenating facial treatments customized to your skin type"
-              },
-              {
-                "@type": "Service",
-                "name": "Manicure & Pedicure",
-                "provider": {
-                  "@type": "BeautySalon",
-                  "name": "Anaplak Art And Glam Salon"
-                },
-                "serviceType": "Nail Care",
-                "areaServed": "Chennai",
-                "description": "Luxury nail care services with premium products"
-              }
+              { "@type": "Service", "name": "Complete Bridal Package", "provider": { "@type": "BeautySalon", "name": "Anaplak Art And Glam Salon" }, "serviceType": "Bridal Makeup", "areaServed": "Chennai", "description": "Transform into the most radiant version of yourself on your special day" },
+              { "@type": "Service", "name": "Hair Coloring", "provider": { "@type": "BeautySalon", "name": "Anaplak Art And Glam Salon" }, "serviceType": "Hair Services", "areaServed": "Chennai", "description": "Expert hair coloring services with premium products and latest techniques" },
+              { "@type": "Service", "name": "Facial Treatments", "provider": { "@type": "BeautySalon", "name": "Anaplak Art And Glam Salon" }, "serviceType": "Skin Care", "areaServed": "Chennai", "description": "Rejuvenating facial treatments customized to your skin type" },
+              { "@type": "Service", "name": "Manicure & Pedicure", "provider": { "@type": "BeautySalon", "name": "Anaplak Art And Glam Salon" }, "serviceType": "Nail Care", "areaServed": "Chennai", "description": "Luxury nail care services with premium products" },
             ]
           })
         }}
       />
 
-      {/* Breadcrumb Schema */}
       <Script
         id="services-breadcrumb"
         type="application/ld+json"
@@ -416,18 +350,8 @@ export default function ServicesSection() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://anaplakartandglamsalon.com"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Services",
-                "item": "https://anaplakartandglamsalon.com/services"
-              }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anaplakartandglamsalon.com" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://anaplakartandglamsalon.com/services" },
             ]
           })
         }}
@@ -442,7 +366,6 @@ export default function ServicesSection() {
           description="Discover our comprehensive range of beauty and wellness services, tailored to bring out your natural elegance"
         />
 
-        {/* Services Grid */}
         <div className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
           {services.map((category) => {
             const Icon = category.icon
@@ -452,10 +375,8 @@ export default function ServicesSection() {
               <div
                 key={category.category}
                 data-category={category.category}
-                className={`mb-16 transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                  }`}
+                className={`mb-16 transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
               >
-                {/* Category Header */}
                 <div className="mb-8 flex items-center gap-3">
                   <Icon className="h-8 w-8" style={{ color: category.color }} />
                   <h2 className="font-serif text-3xl font-bold" style={{ color: category.color }}>
@@ -463,153 +384,63 @@ export default function ServicesSection() {
                   </h2>
                 </div>
 
-                {/* Service Cards */}
                 <div className="grid gap-6 md:grid-cols-3">
-                  {category.items.map((service) => {
-                    const isExpanded = expandedService === service.title
-
-                    return (
-                      <div
-                        key={service.title}
-                        className="group relative overflow-hidden rounded-lg bg-zinc-800/50 backdrop-blur transition-all"
-                        style={{ borderWidth: "1px", borderColor: "#ffffff26" }}
-                      >
-                        <div className="relative h-100 w-full overflow-hidden">
-                          <Image
-                            src={service.image || "/placeholder.svg"}
-                            alt={service.title}
-                            fill
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e]/90 to-transparent"></div>
-                        </div>
-
-                        <button 
-                          onClick={() => toggleService(service.title)} 
-                          className="w-full p-6 text-left"
-                          aria-controls={`service-content-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                          aria-expanded={isExpanded}
-                          id={`service-button-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                        >
-                          <div className="flex items-start justify-between gap-4">
-                            <div className="flex-1">
-                              <h3 className="text-xl font-semibold text-white">{service.title}</h3>
-                              <p className="mt-2 text-zinc-400">{service.description}</p>
-                            </div>
-                            <ChevronDown
-                              className={`h-5 w-5 flex-shrink-0 text-zinc-400 transition-transform ${isExpanded ? "rotate-180" : ""
-                                }`}
-                            />
-                          </div>
-                        </button>
-
-                        {/* Expanded Content */}
-                        <div
-                          id={`service-content-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                          role="region"
-                          aria-labelledby={`service-button-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                          className={`overflow-hidden transition-all duration-300 ${isExpanded ? "max-h-[2000px]" : "max-h-0"
-                            }`}
-                        >
-                          <div className="p-6 pt-6" style={{ borderTopWidth: "1px", borderTopColor: "#ffffff26" }}>
-                            <p className="mb-6 leading-relaxed text-zinc-300">{service.details}</p>
-
-                            {/* Benefits */}
-                            <div className="mb-6">
-                              <h4 className="mb-3 font-semibold" style={{ color: category.color }}>
-                                Benefits
-                              </h4>
-                              <ul className="space-y-2">
-                                {service.benefits.map((benefit, idx) => (
-                                  <li key={idx} className="flex items-start gap-2 text-sm text-zinc-300">
-                                    <span
-                                      className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full"
-                                      style={{ backgroundColor: category.color }}
-                                    ></span>
-                                    <span>{benefit}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            {/* Process */}
-                            <div className="mb-6">
-                              <h4 className="mb-3 font-semibold" style={{ color: category.color }}>
-                                Process
-                              </h4>
-                              <ol className="space-y-2">
-                                {service.process.map((step, idx) => (
-                                  <li key={idx} className="flex items-start gap-3 text-sm text-zinc-300">
-                                    <span
-                                      className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-xs font-semibold"
-                                      style={{ backgroundColor: category.color, color: "#fff" }}
-                                    >
-                                      {idx + 1}
-                                    </span>
-                                    <span className="pt-0.5">{step}</span>
-                                  </li>
-                                ))}
-                              </ol>
-                            </div>
-
-                            {/* Deliverables */}
-                            <div className="rounded-lg p-4" style={{ backgroundColor: "#0e0e0e" }}>
-                              <h4 className="mb-2 text-sm font-semibold" style={{ color: category.color }}>
-                                What You Get
-                              </h4>
-                              <p className="text-sm leading-relaxed text-zinc-300">{service.deliverables}</p>
-                            </div>
-                          </div>
-                        </div>
+                  {category.items.map((service) => (
+                    <div
+                      key={service.title}
+                      className="group relative overflow-hidden rounded-lg bg-zinc-800/50 backdrop-blur transition-all hover:scale-[1.02]"
+                      style={{ borderWidth: "1px", borderColor: "#ffffff26" }}
+                    >
+                      <div className="relative h-56 w-full overflow-hidden">
+                        <Image
+                          src={service.image || "/placeholder.svg"}
+                          alt={service.title}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e]/90 to-transparent"></div>
                       </div>
-                    )
-                  })}
+
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold text-white">{service.title}</h3>
+                        <p className="mt-2 text-zinc-400 text-sm">{service.description}</p>
+                        <Link
+                          href={serviceSlugs[service.title] || "#"}
+                          className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#F8C8DC] hover:text-white transition-colors group/link"
+                        >
+                          Learn More
+                          <svg className="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             )
           })}
         </div>
 
-        {/* Booking CTA Section */}
         <div className="relative mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
-          <div
-            className="relative overflow-hidden rounded-2xl p-12 text-center"
-            style={{
-              background: "linear-gradient(135deg, #53675C 0%, #0e0e0e 100%)",
-              borderWidth: "1px",
-              borderColor: "#ffffff26",
-            }}
-          >
+          <div className="relative overflow-hidden rounded-2xl p-12 text-center" style={{ background: "linear-gradient(135deg, #53675C 0%, #0e0e0e 100%)", borderWidth: "1px", borderColor: "#ffffff26" }}>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-[#f8c8dc]/20 via-transparent to-transparent"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#f2d2bd]/20 via-transparent to-transparent"></div>
 
             <div className="relative">
-              <h2 className="text-balance font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                Ready to Transform Your Look?
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-200">
-                Book your appointment today and experience the luxury of personalized beauty services
-              </p>
+              <h2 className="text-balance font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Ready to Transform Your Look?</h2>
+              <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-200">Book your appointment today and experience the luxury of personalized beauty services</p>
 
               <a
                 href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-                style={{
-                  background: "linear-gradient(90deg, #f8c8dc 0%, #f2d2bd 100%)",
-                }}
+                style={{ background: "linear-gradient(90deg, #f8c8dc 0%, #f2d2bd 100%)" }}
               >
-                {/* Animated shine effect */}
                 <span className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/30 to-transparent"></span>
-
                 <span className="relative text-[#0e0e0e]">Book Your Appointment</span>
-                <svg
-                  className="relative h-5 w-5 text-[#0e0e0e] transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                <svg className="relative h-5 w-5 text-[#0e0e0e] transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </a>

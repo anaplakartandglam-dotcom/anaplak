@@ -105,7 +105,7 @@ export default function StructuredData() {
         "alternateName": "Anaplak Salon",
         "url": "https://anaplakartandglamsalon.com",
         "logo": "https://anaplakartandglamsalon.com/logo_updated.webp",
-        "description": "Premium hair salon and bridal makeup studio in Maduravoyal, Chennai offering expert hair coloring, keratin treatment, facials, and luxury beauty services.",
+        "description": "Premium hair salon and bridal makeup studio in Chennai, Maduravoyal offering expert hair coloring, keratin treatment, facials, and luxury beauty services.",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+919840088867",

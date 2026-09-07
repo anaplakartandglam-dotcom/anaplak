@@ -8,7 +8,7 @@
 
 ### Title (60 characters)
 ```
-Best Premium Hair Salon & Bridal Makeup in Maduravoyal, Chennai | Anaplak Art and Glam
+Best Premium Hair Salon & Bridal Makeup in Chennai, Maduravoyal | Anaplak Art and Glam
 ```
 
 ### Description (155 characters)
@@ -18,7 +18,7 @@ Top-rated salon in Maduravoyal with 4.9★ rating! Expert bridal makeup, hair st
 
 ### Why It Works:
 ✅ Includes "Best" for competitive searches
-✅ Location-specific (Maduravoyal, Chennai)
+✅ Location-specific (Chennai, Maduravoyal)
 ✅ Social proof (4.9★ rating)
 ✅ Key services mentioned
 ✅ Call-to-action (Book online or call)
@@ -70,7 +70,7 @@ Our Services - Bridal Makeup, Hair Styling & Beauty Treatments | Anaplak Madurav
 
 ### Description (160 characters)
 ```
-Explore premium beauty services at Anaplak Salon: Bridal Makeup Packages, Hair Styling & Coloring, Keratin Treatment, Facials, Anti-Aging, Manicure/Pedicure, Threading & Waxing. Expert services with premium products. Book your appointment in Maduravoyal, Chennai.
+Explore premium beauty services at Anaplak Salon: Bridal Makeup Packages, Hair Styling & Coloring, Keratin Treatment, Facials, Anti-Aging, Manicure/Pedicure, Threading & Waxing. Expert services with premium products. Book your appointment in Chennai, Maduravoyal.
 ```
 
 ### Why It Works:
