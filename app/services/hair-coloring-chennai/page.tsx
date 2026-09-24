@@ -7,7 +7,6 @@ const slug = "hair-coloring-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Hair Colouring in Chennai, Maduravoyal | Highlights, Global Colour & More",
     description: "Professional hair colouring in Chennai with highlights, global colour, fashion shades and ammonia-free options. Book your colour consultation at Anaplak Art and Glam, Maduravoyal from ₹1,800.",
-    keywords: ["hair coloring chennai", "balayage hair color", "global hair color", "highlights for black hair", "ammonia free hair color chennai", "hair colour Maduravoyal", "best hair color salon chennai", "hair streaks price", "fashion colour chennai", "creative colour salon"],
     image: "/hair-coloring.webp",
     slug,
 })

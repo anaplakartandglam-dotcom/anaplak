@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
-            url: `${baseUrl}/pricing`,
+            url: `${baseUrl}/menu`,
             lastModified: currentDate,
             changeFrequency: 'weekly',
             priority: 0.9,
@@ -53,7 +53,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/best-salon-in-chennai`,
             lastModified: currentDate,
             changeFrequency: 'weekly',
-            priority: 1.0,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/kalpana`,
+            lastModified: currentDate,
+            changeFrequency: 'monthly',
+            priority: 0.6,
         },
     ]
 

@@ -67,6 +67,9 @@ export default function SparkleCursor() {
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
 
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) return;
+
         const handleMouseMove = (e: MouseEvent) => {
             sparkles.current.push({
                 x: e.clientX,

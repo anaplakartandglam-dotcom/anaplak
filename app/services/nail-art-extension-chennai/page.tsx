@@ -7,7 +7,6 @@ const slug = "nail-art-extension-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Nail Art & Nail Extensions in Chennai, Maduravoyal | Creative Nail Designs",
     description: "Professional nail art and nail extensions in Chennai. Gel polish from ₹1,000, gel, acrylic, poly gel extensions, bridal nail art, French nails, chrome, ombre and more at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["nail art chennai", "nail extensions chennai", "best nail art in chennai", "acrylic nails chennai", "bridal nail art chennai", "nail salon chennai", "gel nail extensions chennai", "nail art Maduravoyal", "french nails", "chrome nail art"],
     image: "/nails-2.webp",
     slug,
 })

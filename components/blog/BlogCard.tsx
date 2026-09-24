@@ -48,7 +48,7 @@ export default function BlogCard({ blog, priority = false }: BlogCardProps) {
           </p>
 
           <div className="flex items-center justify-between pt-4 border-t border-[#2A2A2A]">
-            <a href="/kalpana">
+            <div>
               <div className="flex items-center gap-3">
                 <div className="relative w-10 h-10 rounded-full overflow-hidden bg-[#2A2A2A]">
                   <Image
@@ -64,7 +64,7 @@ export default function BlogCard({ blog, priority = false }: BlogCardProps) {
                   <p className="text-gray-400 text-sm">{blog.authorRole}</p>
                 </div>
               </div>
-            </a>
+            </div>
 
             <div className="flex flex-col items-end justify-center">
               <div className="flex items-center gap-2 text-gray-500 text-sm">

@@ -1,3 +1,5 @@
+import { businessInfo } from "@/data/businessInfo"
+
 interface FAQ {
     question: string
     answer: string
@@ -30,7 +32,7 @@ export function generateBlogSchema(blog: {
     keywords: string[]
     id: string
 }) {
-    const siteUrl = "https://anaplakartandglamsalon.com"
+    const siteUrl = businessInfo.url
     const blogUrl = `${siteUrl}/blogs/${blog.id}`
 
     const articleSchema = {

@@ -1,6 +1,12 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+  title: "Page Not Found | Anaplak Art & Glam",
+  robots: { index: false, follow: true },
+}
 
 export default function NotFound() {
   return (

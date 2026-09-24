@@ -1,9 +1,12 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import TrackLink from "@/components/track-link"
+import { businessInfo } from "@/data/businessInfo"
 import {
   faCrown,
   faScissors,
@@ -37,7 +40,7 @@ export default function ServicesShowcase() {
     features: ["Trial Session", "Premium Products", "Complete Bridal Styling"],
     cta: "Book Bridal Consultation",
     color: "#FF8FAB",
-    image: "/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg"
+    image: "/elegant-bride-makeup-and-hairstyling-beauty-portra.webp"
   },
   {
     icon: faScissors,
@@ -125,9 +128,12 @@ export default function ServicesShowcase() {
 
               {/* Background Image */}
               <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition">
-                <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{ backgroundImage: `url(${service.image})` }}
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
                 />
               </div>
 
@@ -165,15 +171,16 @@ export default function ServicesShowcase() {
                 </ul>
 
                 {/* CTA */}
-                <a
-                  href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+                <TrackLink
+                  kind="booking_click"
+                  href={businessInfo.bookingUrl}
                   target="_blank"
                   className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide transition hover:gap-3"
                   style={{ color: service.color }}
                 >
                   {service.cta}
                   <ArrowRight size={16} />
-                </a>
+                </TrackLink>
               </div>
             </div>
           ))}
@@ -197,13 +204,14 @@ export default function ServicesShowcase() {
               Explore Services
             </Link>
 
-            <a
-              href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+            <TrackLink
+              kind="booking_click"
+              href={businessInfo.bookingUrl}
               target="_blank"
               className="px-6 py-3 border border-[#F8C8DC] text-[#F8C8DC] rounded-full hover:bg-[#F8C8DC] hover:text-black transition"
             >
               Book Appointment
-            </a>
+            </TrackLink>
           </div>
         </div>
 

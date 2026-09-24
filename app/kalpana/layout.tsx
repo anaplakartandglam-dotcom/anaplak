@@ -1,28 +1,10 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: "Kalpana | Founder at Anaplak Art & Glam Chennai",
+    title: "Kalpana - Beauty & Bridal Makeup Artist in Chennai, Maduravoyal | Anaplak Art & Glam",
     description: "Meet Kalpana, Founder of Anaplak Art & Glam in Chennai, Maduravoyal. Known for bridal makeup artistry, hair transformations, and personalized beauty experiences, she leads one of Maduravoyal's trusted beauty destinations.",
-    keywords: [
-        "Kalpana",
-        "Kalpana Chennai",
-        "Kalpana makeup artist",
-        "Kalpana bridal makeup artist Chennai",
-        "Founder Anaplak Art and Glam",
-        "bridal makeup artist Chennai",
-        "professional makeup artist Chennai",
-        "hair stylist Chennai",
-        "beauty expert Chennai",
-        "bridal beauty specialist Chennai",
-        "makeup artist Maduravoyal",
-        "beauty entrepreneur Chennai",
-        "Anaplak Art and Glam founder",
-        "salon founder Chennai",
-        "bridal makeover Chennai",
-        "hair and makeup expert Chennai"
-    ],
     openGraph: {
-        title: 'Kalpana | Founder | Anaplak Art And Glam',
+        title: 'Kalpana - Beauty & Bridal Makeup Artist in Chennai, Maduravoyal | Anaplak Art & Glam',
         description: 'Discover the artistry of Kalpana – the creative force behind Anaplak Salon. Expert bridal makeup artist and hair stylist based in Chennai, Maduravoyal.',
         url: 'https://anaplakartandglamsalon.com/kalpana',
         siteName: 'Anaplak Art And Glam Salon',
@@ -40,7 +22,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kalpana | Founder | Anaplak Salon',
+        title: 'Kalpana - Beauty & Bridal Makeup Artist in Chennai, Maduravoyal | Anaplak Art & Glam',
         description: 'Meet Kalpana – the visionary makeup artist and founder behind Anaplak Art And Glam. Expert bridal makeup & hair styling in Chennai, Maduravoyal.',
         images: ['/logo_new.jpeg'],
     },

@@ -7,7 +7,6 @@ const slug = "bridal-makeup-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Bridal Makeup in Chennai, Maduravoyal | Flawless Wedding Looks from ₹15,000",
     description: "Book professional bridal makeup in Chennai from ₹15,000. HD makeup, hairstyling, draping, trial sessions, and expert bridal beauty planning at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["bridal makeup artist chennai", "best bridal makeup artist in chennai", "bridal makeup chennai", "bridal makeup in chennai", "chennai bridal makeup", "groom makeup chennai", "wedding hairstyling", "bridal hairstyles", "bridal makeup price", "hd makeup chennai", "bridal makeup Maduravoyal"],
     image: "/blogs/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg",
     slug,
 })

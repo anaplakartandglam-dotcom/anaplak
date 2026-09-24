@@ -1,75 +1,26 @@
 "use client"
 
-import React from 'react'
-import Image from 'next/image'
+import Image from "next/image"
+import { whatsappDeepLink } from "@/data/businessInfo"
+import TrackLink from "@/components/track-link"
 
 export default function WhatsAppFloat() {
-    const whatsappMessage = encodeURIComponent("Hi! I would like to book an appointment at Anaplak Art and Glam Salon.")
-    const whatsappUrl = `https://api.whatsapp.com/send/?phone=919840088867&text=${whatsappMessage}&type=phone_number&app_absent=0`
-
     return (
-        <a
-            href={whatsappUrl}
+        <TrackLink
+            kind="whatsapp_click"
+            href={whatsappDeepLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="whatsapp-float"
             aria-label="Contact us on WhatsApp"
+            className="fixed bottom-[20px] right-[20px] sm:bottom-[30px] sm:right-[30px] z-[9999] cursor-pointer transition-transform duration-300 hover:scale-110 hover:[animation:none] animate-[wa-pulse_2s_infinite]"
         >
             <Image
                 src="/whatsapp_float.webp"
                 alt="WhatsApp"
                 width={60}
                 height={60}
-                className="whatsapp-icon"
+                className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] drop-shadow-[0_4px_12px_rgba(37,211,102,0.5)]"
             />
-            <style jsx>{`
-        .whatsapp-float {
-          position: fixed;
-          bottom: 30px;
-          right: 30px;
-          z-index: 9999;
-          transition: all 0.3s ease;
-          animation: pulse 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-          transform: scale(1.1);
-          animation: none;
-        }
-
-        .whatsapp-icon {
-          filter: drop-shadow(0 4px 12px rgba(37, 211, 102, 0.5));
-          transition: filter 0.3s ease;
-        }
-
-        .whatsapp-float:hover .whatsapp-icon {
-          filter: drop-shadow(0 6px 20px rgba(37, 211, 102, 0.8));
-        }
-
-        @keyframes pulse {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.05);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-
-        @media (max-width: 768px) {
-          .whatsapp-float {
-            bottom: 20px;
-            right: 20px;
-          }
-          
-          .whatsapp-icon {
-            width: 50px;
-            height: 50px;
-          }
-        }
-      `}</style>
-        </a>
+        </TrackLink>
     )
 }

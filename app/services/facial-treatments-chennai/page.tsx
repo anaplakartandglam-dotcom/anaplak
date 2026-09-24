@@ -7,7 +7,6 @@ const slug = "facial-treatments-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Facial Treatments in Chennai, Maduravoyal | Glowing Skin from ₹2,000",
     description: "Professional facial treatments in Chennai from ₹2,000. Deep cleansing, hydration, brightening and advanced facials for healthy, glowing skin at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["facial treatment chennai", "facial salon chennai", "skin brightening facial chennai", "professional facial chennai", "facial services chennai", "facial Maduravoyal", "deep cleansing facial", "skin rejuvenation", "facial for glowing skin"],
     image: "/luxury-facial-treatment-spa-skincare-relaxation.webp",
     slug,
 })

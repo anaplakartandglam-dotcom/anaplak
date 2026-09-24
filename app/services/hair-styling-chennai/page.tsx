@@ -7,7 +7,6 @@ const slug = "hair-styling-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Hair Styling in Chennai, Maduravoyal | Professional Haircuts & Updos",
     description: "Professional hair styling in Chennai for men and women. Haircuts, blow dry, bridal updos, and special occasion styling at Anaplak Art and Glam, Maduravoyal from ₹900.",
-    keywords: ["hair stylist chennai", "best hair salon in chennai", "best hair stylist in chennai for males", "best haircut salon in chennai", "best hair dresser in chennai", "hair salon chennai", "hair styling Maduravoyal", "hair updos", "bridal hair style", "blow dry chennai", "party hairstyles"],
     image: "/transformation-1.webp",
     slug,
 })

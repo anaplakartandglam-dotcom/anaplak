@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { businessInfo } from '@/data/businessInfo'
 
 export const revalidate = 3600
 
@@ -23,7 +24,9 @@ interface GooglePlaceDetailsResponse {
 export async function GET() {
     try {
         const apiKey = process.env.GOOGLE_PLACES_API_KEY
-        const placeId = process.env.GOOGLE_PLACE_ID
+        // Single source of truth for the Place ID (data/businessInfo.ts).
+        // Ensure GOOGLE_PLACE_ID in .env (if present) matches this value after verification.
+        const placeId = process.env.GOOGLE_PLACE_ID || businessInfo.placeId
 
         if (!apiKey || !placeId) {
             // Silently return error without verbose logging

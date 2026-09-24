@@ -57,7 +57,7 @@ A comprehensive value proposition section featuring:
 ### Call-to-Action
 - **Primary CTA**: "Book Your Appointment" button (gradient style)
 - **Secondary CTA**: "Call +91 98400 88867" button (outline style)
-- **Social proof**: "⭐ Rated 4.9/5 by 1000+ Happy Customers"
+- **Social proof**: "⭐ Rated 4.8/5 by 1000+ Happy Customers"
 
 ## Technical Implementation
 
@@ -128,7 +128,7 @@ A comprehensive value proposition section featuring:
 ┌─────────────────────────────────────────┐
 │           Call-to-Action                 │
 │  [Book Appointment] [Call Now]          │
-│  ⭐ Rated 4.9/5 by 1000+ Customers      │
+│  ⭐ Rated 4.8/5 by 1000+ Customers      │
 └─────────────────────────────────────────┘
 ```
 
@@ -161,7 +161,7 @@ Each card communicates:
 - **Position**: Next to primary CTA
 
 ### Trust Elements
-- 4.9/5 star rating display
+- 4.8/5 star rating display
 - 1000+ customer count
 - 6+ years experience badge
 - Award-winning mention

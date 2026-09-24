@@ -2,6 +2,8 @@
 
 import Masonry from "react-masonry-css"
 import Image from "next/image"
+import TrackLink from "@/components/track-link"
+import { businessInfo } from "@/data/businessInfo"
 
 export default function Features() {
   const items = [
@@ -69,6 +71,21 @@ export default function Features() {
             </div>
           ))}
         </Masonry>
+
+        <div className="flex justify-center mt-8">
+          <TrackLink
+            kind="booking_click"
+            href={businessInfo.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 hover:scale-105"
+          >
+            Transform Me
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </TrackLink>
+        </div>
 
       </div>
     </section>

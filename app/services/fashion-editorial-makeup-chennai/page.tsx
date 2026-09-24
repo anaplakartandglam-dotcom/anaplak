@@ -7,7 +7,6 @@ const slug = "fashion-editorial-makeup-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Fashion Makeup Artist in Chennai, Maduravoyal | Editorial & Photoshoot Makeup",
     description: "Professional fashion and editorial makeup in Chennai for photoshoots, campaigns, runway shows, and creative projects. Consultation-based pricing at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["fashion makeup artist chennai", "editorial makeup chennai", "model makeup chennai", "high fashion makeup", "runway makeup chennai", "photoshoot makeup", "commercial makeup artist", "creative makeup chennai"],
     image: "/professional-makeup-artist-beauty-glamour-studio.webp",
     slug,
 })

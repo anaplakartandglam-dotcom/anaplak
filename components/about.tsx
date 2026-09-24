@@ -97,9 +97,9 @@ export default function About() {
           </div>
 
 
-          <h6 className="uppercase mt-6 text-white font-semibold text-[16px] leading-relaxed max-w-[450px] text-justify">
+          <p className="uppercase mt-6 text-white font-semibold text-[16px] leading-relaxed max-w-[450px] text-justify">
             Embrace exceptional hair artistry guided by experts who honor your comfort, your time, and your transformation journey.
-          </h6>
+          </p>
         </div>
 
         {/* RIGHT CONTENT BLOCK */}
@@ -107,9 +107,9 @@ export default function About() {
           className={`transition-all duration-[1200ms] delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          <h6 className="uppercase text-[#F8C8DC] tracking-[0.3em] text-sm mb-6">
+          <p className="uppercase text-[#F8C8DC] tracking-[0.3em] text-sm mb-6">
             about premium hair salon
-          </h6>
+          </p>
 
           {/* ----------------------------
              HEADING + TYPEWRITER EFFECT

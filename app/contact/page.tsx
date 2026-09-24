@@ -5,6 +5,8 @@ import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import PageHeader from "@/components/page-header"
+import { businessInfo, mapsEmbedSrc, whatsappDeepLink } from "@/data/businessInfo"
+import TrackLink from "@/components/track-link"
 
 
 export default function ContactUs() {
@@ -18,36 +20,36 @@ export default function ContactUs() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "ContactPage",
-                        "name": "Contact Anaplak Art And Glam Salon",
+                        "name": `Contact ${businessInfo.name}`,
                         "description": "Contact Anaplak Salon for appointments, inquiries, and directions. Located in Chennai, Maduravoyal with convenient parking.",
-                        "url": "https://anaplakartandglamsalon.com/contact",
+                        "url": `${businessInfo.url}/contact`,
                         "mainEntity": {
                             "@type": "LocalBusiness",
-                            "name": "Anaplak Art And Glam Salon",
-                            "telephone": "+91-9840088867",
-                            "email": "anaplakartandglamsalon@gmail.com",
+                            "name": businessInfo.name,
+                            "telephone": businessInfo.phone.primary,
+                            "email": businessInfo.email,
                             "address": {
                                 "@type": "PostalAddress",
-                                "streetAddress": "No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony",
-                                "addressLocality": "Maduravoyal",
-                                "addressRegion": "Chennai",
-                                "postalCode": "600095",
-                                "addressCountry": "IN"
+                                "streetAddress": businessInfo.address.streetAddress,
+                                "addressLocality": businessInfo.address.addressLocality,
+                                "addressRegion": businessInfo.address.addressRegion,
+                                "postalCode": businessInfo.address.postalCode,
+                                "addressCountry": businessInfo.address.addressCountry
                             },
                             "geo": {
                                 "@type": "GeoCoordinates",
-                                "latitude": "13.0515",
-                                "longitude": "80.1656"
+                                "latitude": businessInfo.geo.latitude,
+                                "longitude": businessInfo.geo.longitude
                             },
                             "openingHoursSpecification": [
                                 {
                                     "@type": "OpeningHoursSpecification",
-                                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                                    "opens": "10:00",
-                                    "closes": "21:00"
+                                    "dayOfWeek": businessInfo.hours.everyDay,
+                                    "opens": businessInfo.hours.opens,
+                                    "closes": businessInfo.hours.closes
                                 }
                             ],
-                            "hasMap": "https://www.google.com/maps/search/?api=1&query=Anaplak+Art+and+Glam+Salon+No.4B/9+New+No.+3+2nd+floor+First+Main+road+4th+block+MMDA+Colony+Maduravoyal+Chennai+600095",
+                            "hasMap": businessInfo.maps.searchUrl,
                             "amenityFeature": [
                                 {
                                     "@type": "LocationFeatureSpecification",
@@ -63,13 +65,13 @@ export default function ContactUs() {
                                     "@type": "ListItem",
                                     "position": 1,
                                     "name": "Home",
-                                    "item": "https://anaplakartandglamsalon.com"
+                                    "item": businessInfo.url
                                 },
                                 {
                                     "@type": "ListItem",
                                     "position": 2,
                                     "name": "Contact",
-                                    "item": "https://anaplakartandglamsalon.com/contact"
+                                    "item": `${businessInfo.url}/contact`
                                 }
                             ]
                         }
@@ -95,7 +97,7 @@ export default function ContactUs() {
                             {/* Map Embed */}
                             <div className="relative w-full h-[450px] md:h-[550px] rounded-lg overflow-hidden shadow-2xl mb-6">
                                 <iframe
-                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Anaplak+Art+and+Glam+Salon,No.4B/9,+New+No.+3,+2nd+floor,+First+Main+road,+4th+block,+MMDA+Colony,+Maduravoyal,+Chennai+600095"
+                                    src={mapsEmbedSrc()}
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -108,8 +110,9 @@ export default function ContactUs() {
 
 
                             {/* View on Google Maps Button */}
-                            <a
-                                href="https://www.google.com/maps/search/?api=1&query=Anaplak+Art+and+Glam+Salon+No.4B/9+New+No.+3+2nd+floor+First+Main+road+4th+block+MMDA+Colony+Maduravoyal+Chennai+600095"
+                            <TrackLink
+                                kind="map_click"
+                                href={businessInfo.maps.searchUrl}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="group relative w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#53675C] to-[#3d4d46] text-white font-semibold text-sm uppercase tracking-widest rounded-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
@@ -154,7 +157,7 @@ export default function ContactUs() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                     </svg>
                                 </span>
-                            </a>
+                            </TrackLink>
                         </div>
 
                         {/* Right Column: Contact Info & Details */}
@@ -175,20 +178,22 @@ export default function ContactUs() {
                                         <div>
                                             <h3 className="font-bold text-lg text-white mb-1">Anaplak Art And Glam Salon</h3>
                                             <p className="text-white/70 leading-relaxed">
-                                                No.4B/9, New No. 3, 2nd floor,
-                                                <br />
-                                                First Main road, 4th block, MMDA Colony,
-                                                <br />
-                                                Chennai, Maduravoyal - 600095
+                                                {businessInfo.address.displayLines.map((line, i) => (
+                                                    <span key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </span>
+                                                ))}
                                             </p>
-                                            <a
-                                                href="https://www.google.com/maps/search/?api=1&query=Anaplak+Art+and+Glam+Salon+Chennai"
+                                            <TrackLink
+                                                kind="map_click"
+                                                href={businessInfo.maps.searchUrl}
                                                 target="_blank"
                                                 rel="noreferrer"
                                                 className="inline-block mt-2 text-[#53675C] font-semibold hover:underline text-sm uppercase tracking-wide"
                                             >
                                                 View on Google Maps
-                                            </a>
+                                            </TrackLink>
                                         </div>
                                     </div>
 
@@ -201,10 +206,10 @@ export default function ContactUs() {
                                             <h3 className="font-bold text-lg text-white mb-1">Working Hours</h3>
                                             <ul className="text-white/70 space-y-1">
                                                 <li className="flex justify-between gap-4">
-                                                    <span>Mon - Sat:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
+                                                    <span>Mon - Sun:</span> <span className="whitespace-nowrap">{businessInfo.hours.weekdaysLabel}</span>
                                                 </li>
                                                 <li className="flex justify-between gap-4">
-                                                    <span>Sunday:</span> <span className="whitespace-nowrap">10:00 AM - 9:00 PM</span>
+                                                    <span>Sunday:</span> <span className="whitespace-nowrap">{businessInfo.hours.sundayLabel}</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -218,21 +223,23 @@ export default function ContactUs() {
                                         <div>
                                             <h3 className="font-bold text-lg text-white mb-3">Quick Contact</h3>
                                             <div className="flex flex-col gap-3">
-                                                <a
-                                                    href="tel:+919840088867"
+                                                <TrackLink
+                                                    kind="phone_click"
+                                                    href={businessInfo.phone.primaryHref}
                                                     className="flex items-center gap-2 text-white hover:text-[#53675C] transition-colors cursor-pointer"
                                                 >
-                                                    <span className="font-medium">+91-9840088867</span>
-                                                </a>
-                                                <a
-                                                    href="tel:+919840088861"
+                                                    <span className="font-medium">{businessInfo.phone.primaryDisplay.replace(" ", "")}</span>
+                                                </TrackLink>
+                                                <TrackLink
+                                                    kind="phone_click"
+                                                    href={businessInfo.phone.secondaryHref}
                                                     className="flex items-center gap-2 text-white hover:text-[#53675C] transition-colors cursor-pointer"
                                                 >
-                                                    <span className="font-medium">+91-9840088861</span>
-                                                </a>
+                                                    <span className="font-medium">{businessInfo.phone.secondaryDisplay.replace(" ", "")}</span>
+                                                </TrackLink>
                                                 <div className="flex items-center gap-2 text-white mt-1 cursor-default">
                                                     <Mail size={16} />
-                                                    <span>anaplakartandglamsalon@gmail.com</span>
+                                                    <span>{businessInfo.email}</span>
                                                 </div>
                                             </div>
                                         </div>

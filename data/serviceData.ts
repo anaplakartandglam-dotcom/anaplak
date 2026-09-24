@@ -8,7 +8,7 @@ export interface ServicePageData {
     benefits: string[]
     process: string[]
     deliverables: string
-    keywords: string[]
+    keywords?: string[]
 }
 
 export const servicePages: ServicePageData[] = [

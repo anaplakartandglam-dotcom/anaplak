@@ -7,7 +7,6 @@ const slug = "engagement-makeup-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Engagement Makeup in Chennai, Maduravoyal | HD Makeup Starting at ₹15,000",
     description: "Book professional engagement makeup in Chennai, Maduravoyal from ₹15,000. HD makeup, hairstyling, and long-lasting beauty for engagement ceremonies and photoshoots at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["engagement makeup artist chennai", "engagement makeup price in chennai", "engagement makeup salon chennai", "hd makeup chennai", "engagement makeup in maduravoyal", "engagement photo makeup", "professional makeup for engagement", "best engagement makeup artist in chennai"],
     image: "/engagement-makeup-look-natural-glowing-beauty.webp",
     slug,
 })

@@ -1,5 +1,8 @@
 "use client"
 
+import { businessInfo, mapsEmbedSrc } from '@/data/businessInfo'
+import TrackLink from '@/components/track-link'
+
 export default function GoogleMap() {
     return (
         <section className="py-16 md:py-24 bg-[#0F0F0F]">
@@ -20,7 +23,7 @@ export default function GoogleMap() {
                 {/* Google Map Embed */}
                 <div className="relative w-full h-[500px] md:h-[600px] rounded-lg overflow-hidden shadow-2xl">
                     <iframe
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=place_id:ChIJ5R3P1HxIuJoRk3OviXZ9FVA"
+                        src={mapsEmbedSrc()}
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
@@ -43,9 +46,9 @@ export default function GoogleMap() {
                         </div>
                         <h3 className="text-white font-semibold text-lg mb-2">Address</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            2nd Floor, TNHB, : 3, 2nd Main Rd, 4th Block,<br />
-                            CDN Nagar, MMDA Colony, Maduravoyal,<br />
-                            Chennai, Tamil Nadu 600095
+                            {businessInfo.address.displayLines.map((line, i) => (
+                                <span key={i}>{line}<br /></span>
+                            ))}
                         </p>
                     </div>
 
@@ -58,8 +61,8 @@ export default function GoogleMap() {
                         </div>
                         <h3 className="text-white font-semibold text-lg mb-2">Phone</h3>
                         <p className="text-gray-400 text-sm">
-                            <a href="tel:+919840088867" className="hover:text-[#F8C8DC] transition-colors">+91 98400 88867</a><br />
-                            <a href="tel:+919840088861" className="hover:text-[#F8C8DC] transition-colors">+91 98400 88861</a>
+                            <TrackLink kind="phone_click" href={businessInfo.phone.primaryHref} className="hover:text-[#F8C8DC] transition-colors">{businessInfo.phone.primaryDisplay}</TrackLink><br />
+                            <TrackLink kind="phone_click" href={businessInfo.phone.secondaryHref} className="hover:text-[#F8C8DC] transition-colors">{businessInfo.phone.secondaryDisplay}</TrackLink>
                         </p>
                     </div>
 
@@ -72,8 +75,8 @@ export default function GoogleMap() {
                         </div>
                         <h3 className="text-white font-semibold text-lg mb-2">Working Hours</h3>
                         <p className="text-gray-400 text-sm">
-                            Mon - Sat: 10:00 AM - 9:00 PM<br />
-                            Sunday: 10:00 AM - 9:00 PM
+                            {businessInfo.hours.weekdaysLabel}<br />
+                            {businessInfo.hours.sundayLabel}
                         </p>
                     </div>
                 </div>

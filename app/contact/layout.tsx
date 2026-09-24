@@ -1,31 +1,11 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Contact Anaplak Art & Glam | Book Your Salon Appointment in Chennai, Maduravoyal',
-    description: '📍 Visit Anaplak Salon: No.4B/9, 2nd Floor, MMDA Colony, Chennai, Maduravoyal 600095 | ☎️ Call: +91-9840088867 | 📱 WhatsApp Booking Available | ⏰ Open 10AM-9PM Daily | 🚗 Ground Floor Parking | Book Bridal Makeup, Hair Styling & Beauty Services Online or Walk-in Welcome!',
-    keywords: [
-        "contact Anaplak Art and Glam",
-        "salon appointment Chennai",
-        "book salon appointment Chennai",
-        "beauty salon Maduravoyal",
-        "hair salon Chennai",
-        "bridal makeup booking Chennai",
-        "bridal makeup salon Chennai",
-        "beauty salon contact Chennai",
-        "salon near MMDA Colony",
-        "salon Maduravoyal",
-        "hair styling Chennai",
-        "hair coloring Chennai",
-        "keratin treatment Chennai",
-        "beauty services Chennai",
-        "nail salon Chennai",
-        "skin care salon Chennai",
-        "beauty studio Chennai",
-        "luxury salon Chennai"
-    ],
+    title: 'Book Your Salon Appointment in Chennai, Maduravoyal | Anaplak Art & Glam',
+    description: 'Visit Anaplak Art & Glam Salon in MMDA Colony, Maduravoyal, Chennai. Call +91 98400 88867, book on WhatsApp or online. Open daily 10AM-9PM with parking available.',
     openGraph: {
-        title: '📍 Contact Anaplak Salon Maduravoyal | Book Now ☎️ +91-9840088867',
-        description: '🏆 # No 1 Rated Salon | 📍 MMDA Colony, Chennai | ⏰ Open 10AM-9PM Daily | 🚗 Parking Available | 📱 WhatsApp Booking | Walk-ins Welcome! Book Your Appointment Today!',
+        title: 'Book Your Salon Appointment in Chennai, Maduravoyal | Anaplak Art & Glam',
+        description: 'Find, call or book Anaplak Salon in Maduravoyal, Chennai. Ground floor parking, open daily 10AM-9PM, online booking available.',
         url: 'https://anaplakartandglamsalon.com/contact',
         siteName: 'Anaplak Art And Glam Salon',
         type: 'website',
@@ -41,8 +21,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Contact Anaplak Salon | Book Appointment ☎️ +91-9840088867',
-        description: '📍 Chennai, Maduravoyal | ⏰ Open Daily 10AM-9PM | Book Now!',
+        title: 'Book Your Salon Appointment in Chennai, Maduravoyal | Anaplak Art & Glam',
+        description: 'Chennai, Maduravoyal salon. Open daily 10AM-9PM. Book your appointment today.',
         images: ['/logo_new.jpeg'],
     },
     alternates: {

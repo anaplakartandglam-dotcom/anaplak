@@ -37,6 +37,7 @@ export default function VideoParallax() {
             <button 
               onClick={() => setOpen(true)} 
               className="group relative"
+              aria-label="Play salon video tour"
               aria-controls="video-player-modal"
               aria-expanded={open}
               aria-haspopup="dialog"

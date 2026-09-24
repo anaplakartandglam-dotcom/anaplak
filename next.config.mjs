@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-
   images: {
     qualities: [25, 50, 75, 90],
     formats: ['image/avif', 'image/webp'],
@@ -89,6 +85,16 @@ const nextConfig = {
             value: 'public, max-age=31536000, immutable',
           },
         ],
+      },
+    ]
+  },
+
+  async redirects() {
+    return [
+      {
+        source: '/pricing',
+        destination: '/menu',
+        permanent: true,
       },
     ]
   },

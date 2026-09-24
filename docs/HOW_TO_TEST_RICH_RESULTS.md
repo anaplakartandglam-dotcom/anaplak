@@ -132,7 +132,7 @@ scripts.forEach((script, index) => {
 
 ### **Home Page** (`/`)
 - ✅ **LocalBusiness** rich snippet
-- ✅ **Aggregate Rating** (4.9 stars)
+- ✅ **Aggregate Rating** (4.8 stars)
 - ✅ **Opening Hours**
 - ✅ **Service Catalog**
 
@@ -283,7 +283,7 @@ scripts.forEach((script, index) => {
 
 You'll know your rich results are working when you see:
 
-1. ✅ **Star ratings** in search results (4.9★)
+1. ✅ **Star ratings** in search results (4.8★)
 2. ✅ **FAQ expandable sections** in search
 3. ✅ **Business hours** displayed
 4. ✅ **Phone number** click-to-call

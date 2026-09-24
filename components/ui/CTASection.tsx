@@ -1,5 +1,10 @@
 "use client"
 
+import TrackLink from "@/components/track-link"
+import { businessInfo, whatsappDeepLink } from "@/data/businessInfo"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWandMagicSparkles, faFaceSmile } from "@fortawesome/free-solid-svg-icons"
+
 export default function CTASection() {
   return (
     <section className="bg-[#0E0E0E] py-20 md:py-28 border-t border-white/10">
@@ -20,30 +25,33 @@ export default function CTASection() {
         <div className="flex flex-wrap justify-center gap-4 mb-6">
 
           {/* PRIMARY CTA */}
-          <a
-            href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+          <TrackLink
+            kind="booking_click"
+            href={businessInfo.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             Book Appointment
-          </a>
+          </TrackLink>
 
           {/* SECONDARY CTA */}
-          <a
-            href="https://wa.me/919840088867"
+          <TrackLink
+            kind="whatsapp_click"
+            href={whatsappDeepLink()}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 border border-[#F8C8DC] text-[#F8C8DC] rounded-full transition-all duration-300 hover:bg-[#F8C8DC] hover:text-black"
           >
             WhatsApp Now
-          </a>
+          </TrackLink>
 
         </div>
 
         {/* TRUST LINE */}
-        <p className="text-gray-400 text-sm">
-          ✨ 1000+ transformations. Countless smiles.
+        <p className="flex items-center justify-center gap-2 text-gray-400 text-sm">
+          <FontAwesomeIcon icon={faWandMagicSparkles} className="text-white" /> 1000+ transformations. Countless smiles.{" "}
+          <FontAwesomeIcon icon={faFaceSmile} className="text-yellow-400" />
         </p>
 
       </div>

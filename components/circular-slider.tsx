@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import Image from "next/image"
 
 export default function CircleSection() {
   const innerTextRef = useRef<HTMLDivElement>(null)
@@ -27,13 +28,13 @@ export default function CircleSection() {
       {/* LEFT/RIGHT IMAGES — HIDDEN ON MOBILE */}
       <div className="absolute left-[2%] top-[18%] hidden lg:block">
         <div className="w-[260px] h-[260px] border border-white/10 rounded-full flex items-center justify-center">
-          <img src="/circle_l-500x500.jpg" alt="" className="w-[210px] h-[210px] rounded-full object-cover" />
+          <Image src="/circle_l-500x500.jpg" alt="" width={210} height={210} className="w-[210px] h-[210px] rounded-full object-cover" />
         </div>
       </div>
 
       <div className="absolute right-[2%] top-[58%] hidden lg:block">
         <div className="w-[260px] h-[260px] border border-white/10 rounded-full flex items-center justify-center">
-          <img src="/circle_r.jpg" alt="" className="w-[210px] h-[210px] rounded-full object-cover" />
+          <Image src="/circle_r.jpg" alt="" width={210} height={210} className="w-[210px] h-[210px] rounded-full object-cover" />
         </div>
       </div>
 
@@ -64,10 +65,12 @@ export default function CircleSection() {
             xs:w-[120px] xs:h-[120px]
           "
         >
-          <img
+          <Image
             src="/newk.png"
             alt=""
-            className="w-full h-full object-cover"
+            fill
+            sizes="(max-width: 768px) 150px, 380px"
+            className="object-cover"
             style={{ objectPosition: '52% center' }}
           />
         </div>

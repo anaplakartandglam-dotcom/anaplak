@@ -1,14 +1,20 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
+import Script from "next/script"
+import { MapPin } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { getRelatedServices, ServicePageData } from "@/data/serviceData"
+import { businessInfo, mapsEmbedSrc, whatsappDeepLink } from "@/data/businessInfo"
+import { PAA_BY_SERVICE } from "@/data/paaData"
+import { NEARBY_LOCATIONS } from "@/data/nearbyLocations"
+import TrackLink from "@/components/track-link"
 
 export interface ServiceDetailMeta {
     title: string
     description: string
-    keywords: string[]
+    keywords?: string[]
     image: string
     slug: string
 }
@@ -26,16 +32,15 @@ export interface ServiceDetailData extends ServicePageData {
 
 export function buildServiceMetadata(data: ServiceDetailMeta): Metadata {
     return {
-        title: `${data.title} | Anaplak Art and Glam Salon`,
+        title: `${data.title} | Anaplak Art & Glam`,
         description: data.description,
-        keywords: data.keywords,
         openGraph: {
-            title: `${data.title} | Anaplak Art and Glam Salon`,
+            title: `${data.title} | Anaplak Art & Glam`,
             description: data.description,
             type: "website",
             images: [{ url: data.image, width: 1200, height: 630, alt: data.title }],
         },
-        twitter: { card: "summary_large_image", title: `${data.title} | Anaplak Art and Glam Salon`, description: data.description, images: [data.image] },
+        twitter: { card: "summary_large_image", title: `${data.title} | Anaplak Art & Glam`, description: data.description, images: [data.image] },
         alternates: { canonical: `https://anaplakartandglamsalon.com/services/${data.slug}` },
         robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 } },
     }
@@ -54,9 +59,9 @@ export function StarRating() {
 }
 
 const defaultTestimonials = [
-    { text: "Kalpana did my bridal makeup and I've never felt more beautiful. Every detail was perfect.", name: "Priya S.", service: "Bridal" },
-    { text: "The best salon experience in Maduravoyal. My treatment transformed my hair completely.", name: "Ananya R.", service: "Hair" },
-    { text: "I've been coming for facials for over a year. My skin has never looked this good.", name: "Deepa M.", service: "Skin" },
+    { text: "We had a wonderful experience at this salon today! From the moment we walked in, the hospitality was top-notch and the ambience was so relaxing and stylish. The haircuts turned out perfectly for my daughters.", name: "Satish Kumar", service: "Hair Styling" },
+    { text: "One of the best salons in Maduravoyal. Wonderful experience — I had my pedicure done here! Very friendly people, great care, and the massage chair was amazing during the pedicure session. Highly recommended for haircut and styling.", name: "Santhosh Anto", service: "Haircut & Pedicure" },
+    { text: "The ambiance was very relaxing and premium, and the service was excellent from start to finish. I took a dandruff treatment and I'm fully satisfied with the results and the way they handled everything professionally.", name: "Manesh D", service: "Hair Treatment" },
 ]
 
 export default function ServiceDetailPage({ data, customSection }: { data: ServiceDetailData; customSection?: React.ReactNode }) {
@@ -64,8 +69,65 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
     const p = data.pricing
     const testimonials = data.testimonials ?? defaultTestimonials
 
+    const allFaqs = [...data.faqs, ...(PAA_BY_SERVICE[data.slug] ?? [])]
+
+    const priceDigits = p.startingAt.replace(/[^\d]/g, "")
+    const serviceUrl = `${businessInfo.url}/services/${data.slug}`
+
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: data.title,
+        description: data.description,
+        serviceType: data.category,
+        url: serviceUrl,
+        image: `${businessInfo.url}${data.image}`,
+        provider: {
+            "@type": "BeautySalon",
+            name: businessInfo.name,
+            url: businessInfo.url,
+            telephone: businessInfo.phone.primary,
+            image: `${businessInfo.url}/logo_updated.webp`,
+            "@id": `${businessInfo.url}#organization`,
+        },
+        areaServed: { "@type": "City", name: "Chennai" },
+        brand: { "@type": "Brand", name: businessInfo.name },
+        ...(priceDigits ? {
+            offers: {
+                "@type": "Offer",
+                price: priceDigits,
+                priceCurrency: "INR",
+                availability: "https://schema.org/InStock",
+                url: serviceUrl,
+            },
+        } : {}),
+    }
+
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: allFaqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+    }
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: businessInfo.url },
+            { "@type": "ListItem", position: 2, name: "Services", item: `${businessInfo.url}/services` },
+            { "@type": "ListItem", position: 3, name: data.title, item: serviceUrl },
+        ],
+    }
+
     return (
         <main className="min-h-screen bg-black">
+            <Script id={`service-schema-${data.slug}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+            <Script id={`service-faq-${data.slug}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <Script id={`service-breadcrumb-${data.slug}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Header />
 
             {/* Hero */}
@@ -75,15 +137,15 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                     <div className="absolute inset-0 bg-black/80 md:bg-black/70"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent"></div>
                 </div>
-                {/* <nav className="mt-20 absolute top-14 left-10">
-                        <ol className="flex items-center gap-2 text-sm text-gray-400">
-                            <li><Link href="/" className="hover:text-[#F8C8DC] transition">Home</Link></li>
-                            <li>/</li>
-                            <li><Link href="/services" className="hover:text-[#F8C8DC] transition">Services</Link></li>
-                            <li>/</li>
-                            <li className="text-[#F8C8DC]">{data.category}</li>
-                        </ol>
-                    </nav> */}
+                <nav className="absolute top-14 left-6 sm:left-10 z-10" aria-label="Breadcrumb">
+                    <ol className="flex items-center gap-2 text-sm text-gray-400">
+                        <li><Link href="/" className="hover:text-[#F8C8DC] transition">Home</Link></li>
+                        <li>/</li>
+                        <li><Link href="/services" className="hover:text-[#F8C8DC] transition">Services</Link></li>
+                        <li>/</li>
+                        <li className="text-[#F8C8DC]">{data.title}</li>
+                    </ol>
+                </nav>
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 mt-15">
                     {/* <span className="inline-block bg-[#F8C8DC]/20 text-[#F8C8DC] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-4">
                         {data.category}
@@ -95,14 +157,14 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                         {data.description} {p.duration ? `Typically takes ${p.duration}.` : ""} Starting at <strong className="text-[#F8C8DC]">{p.startingAt}</strong>. Available at Anaplak Art and Glam Salon in Chennai, Maduravoyal.
                     </p>
                     <div className="flex flex-col justify-center items-center sm:flex-row gap-4">
-                        <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 hover:scale-105">
+                        <TrackLink kind="booking_click" href={businessInfo.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 hover:scale-105">
                             {data.heroCta}
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                        </a>
-                        <a href={`https://wa.me/919840088867?text=${encodeURIComponent(`Hi, I'm interested in ${data.title} at Anaplak.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all duration-300">
-                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.299-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.26 9.26 0 01-4.721-1.274l-.339-.2-3.519.924.94-3.433-.223-.357a9.253 9.253 0 01-1.42-4.929c.002-5.12 4.17-9.287 9.293-9.287a9.246 9.246 0 016.585 2.734 9.218 9.218 0 012.708 6.576c-.003 5.12-4.172 9.287-9.295 9.287m8.145-17.442C17.383 1.113 14.823.008 12.05.004 5.46.004.004 5.46.002 12.053c0 1.99.52 3.937 1.51 5.667L0 24l6.405-1.68a11.356 11.356 0 005.426 1.385h.004c6.59 0 11.947-5.363 11.95-11.95a11.854 11.854 0 00-3.494-8.442z" /></svg>
+                        </TrackLink>
+                        <TrackLink kind="whatsapp_click" href={whatsappDeepLink(`Hi, I'm interested in ${data.title} at Anaplak.`)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all duration-300">
+                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.26 9.26 0 01-4.721-1.274l-.339-.2-3.519.924.94-3.433-.223-.357a9.253 9.253 0 01-1.42-4.929c.002-5.12 4.17-9.287 9.293-9.287a9.246 9.246 0 016.585 2.734 9.218 9.218 0 012.708 6.576c-.003 5.12-4.172 9.287-9.295 9.287m8.145-17.442C17.383 1.113 14.823.008 12.05.004 5.46.004.004 5.46.002 12.053c0 1.99.52 3.937 1.51 5.667L0 24l6.405-1.68a11.356 11.356 0 005.426 1.385h.004c6.59 0 11.947-5.363 11.95-11.95a11.854 11.854 0 00-3.494-8.442z" /></svg>
                             WhatsApp Us
-                        </a>
+                        </TrackLink>
                     </div>
                 </div>
             </section>
@@ -144,13 +206,13 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                                 )}
                                 <div className="pt-4 border-t border-[#2A2A2A]">
                                     <p className="text-gray-500 text-xs leading-relaxed">* {p.disclaimer ?? "Final price depends on the specific service and add-ons selected."}</p>
-                                    <Link href="/pricing" className="text-[#F8C8DC] hover:underline text-xs font-medium mt-1.5 inline-block">
+                                    <Link href="/menu" className="text-[#F8C8DC] hover:underline text-xs font-medium mt-1.5 inline-block">
                                         Check the pricing page for the service you want →
                                     </Link>
                                 </div>
-                                <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer" className="w-full inline-block text-center py-3 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all">
+                                <TrackLink kind="booking_click" href={businessInfo.bookingUrl} target="_blank" rel="noopener noreferrer" className="w-full inline-block text-center py-3 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all">
                                     Check Availability
-                                </a>
+                                </TrackLink>
                             </div>
                         </div>
                     </div>
@@ -180,7 +242,15 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                         </div>
                     </div>
                     <div className="text-center mt-8">
-                        <Link href="/pricing" className="text-[#F8C8DC] hover:underline text-sm font-medium">View full pricing guide →</Link>
+                        <Link
+                            href="/menu"
+                            className="inline-flex items-center gap-2 px-8 py-3.5 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all duration-300"
+                        >
+                            Know Exact Pricing
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -213,10 +283,10 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                         ))}
                     </div>
                     <div className="text-center mt-10">
-                        <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all">
+                        <TrackLink kind="booking_click" href={businessInfo.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all">
                             Get Consultation
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                        </a>
+                        </TrackLink>
                     </div>
                 </div>
             </section>
@@ -230,7 +300,7 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                     <div className="text-center md:text-left">
                         <p className="text-[#F8C8DC] text-xs uppercase tracking-wider font-bold mb-1">Led by</p>
                         <h3 className="text-xl font-bold text-white mb-2">Kalpana, Founder & Creative Director</h3>
-                        <p className="text-gray-400 text-sm max-w-xl mb-4">6+ years of artistry, 1000+ satisfied clients. Every service at Anaplak is overseen by Kalpana and her team of 23 expert artists.</p>
+                        <p className="text-gray-400 text-sm max-w-xl mb-4">6+ years of artistry, 1000+ satisfied clients. Every service at Anaplak is overseen by Kalpana and her expert beauty team.</p>
                         <Link href="/kalpana" className="inline-flex items-center gap-2 text-[#F8C8DC] font-semibold text-sm hover:underline">Meet Kalpana →</Link>
                     </div>
                 </div>
@@ -258,7 +328,7 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
             <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
                 <div className="space-y-3">
-                    {data.faqs.map((faq, idx) => (
+                    {allFaqs.map((faq, idx) => (
                         <details key={idx} className="group bg-[#1B1B1B] border border-[#2A2A2A] rounded-xl overflow-hidden">
                             <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
                                 <span className="text-white font-medium pr-4">{faq.q}</span>
@@ -277,21 +347,43 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                         <div className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-xl p-5 text-center">
                             <svg className="w-8 h-8 text-[#F8C8DC] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            <p className="text-gray-400 text-sm">No 48/9, New No. 3, 2nd Floor<br />First Main Road, 4th Block<br />MMDA Colony, Maduravoyal<br />Chennai, 600095</p>
+                            <p className="text-gray-400 text-sm">{businessInfo.address.displayLines.map((line, i) => (
+                            <span key={i}>{line}<br /></span>
+                          ))}</p>
                         </div>
                         <div className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-xl p-5 text-center">
                             <svg className="w-8 h-8 text-[#F8C8DC] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             <p className="text-white font-medium text-sm">Business Hours</p>
-                            <p className="text-gray-400 text-sm mt-1">Mon to Sat: 10:00 AM to 8:00 PM<br />Sun: 10:00 AM to 6:00 PM</p>
+                            <p className="text-gray-400 text-sm mt-1">{businessInfo.hours.weekdaysLabel}<br />{businessInfo.hours.sundayLabel}</p>
                         </div>
                         <div className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-xl p-5 text-center">
                             <svg className="w-8 h-8 text-[#F8C8DC] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
                             <p className="text-white font-medium text-sm">Contact</p>
-                            <p className="text-gray-400 text-sm mt-1">+91 98400 88867<br />+91 98400 88861</p>
+                            <p className="text-gray-400 text-sm mt-1">{businessInfo.phone.primaryDisplay}<br />{businessInfo.phone.secondaryDisplay}</p>
                         </div>
                     </div>
                     <div className="relative w-full h-[300px] rounded-xl overflow-hidden border border-[#2A2A2A]">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.8130995545284!2d80.17255923695531!3d13.064976954507559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52617cd4cf1de5%3A0x50157d7689af7393!2sAnaplak%20Art%20And%20Glam%20Salon!5e1!3m2!1sen!2sin!4v1782217094437!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Anaplak Salon Location" />
+                        <iframe src={mapsEmbedSrc()} width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Anaplak Salon Location" />
+                    </div>
+                </div>
+            </section>
+
+            {/* Near Locations */}
+            <section className="py-16 bg-black border-t border-white/10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <p className="text-[#F8C8DC] uppercase tracking-[0.3em] text-xs font-bold mb-3">Areas We Serve</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white">The Best {data.category} Studio Near <span className="italic text-[#F8C8DC]">You</span></h2>
+                        <p className="text-gray-400 mt-4 max-w-2xl mx-auto">Located in Maduravoyal, MMDA Colony. Our {data.title.toLowerCase()} service is easily accessible from all these Chennai neighbourhoods.</p>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                        {NEARBY_LOCATIONS.map((loc, i) => (
+                            <div key={i} className="bg-[#0E0E0E] border border-[#1E1E1E] rounded-xl p-5 text-center hover:border-[#F8C8DC]/40 transition">
+                                <MapPin size={20} className="text-[#F8C8DC] mx-auto mb-2" />
+                                <h4 className="text-white font-bold">{loc.name}</h4>
+                                <p className="text-gray-500 text-xs mt-1">{loc.distance}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -307,14 +399,14 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to <span className="text-[#F8C8DC] italic">Book Your Session?</span></h2>
                     <p className="text-gray-300 text-lg mb-8 max-w-xl mx-auto">Limited slots available. Experience premium {data.title.toLowerCase()} at Chennai&apos;s most trusted salon.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all hover:scale-105">
+                        <TrackLink kind="booking_click" href={businessInfo.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all hover:scale-105">
                             Book {data.title}
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                        </a>
-                        <a href={`https://wa.me/919840088867?text=${encodeURIComponent(`Hi, I'd like to know more about ${data.title} at Anaplak.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all">
+                        </TrackLink>
+                        <TrackLink kind="whatsapp_click" href={whatsappDeepLink(`Hi, I'd like to know more about ${data.title} at Anaplak.`)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all">
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.299-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.26 9.26 0 01-4.721-1.274l-.339-.2-3.519.924.94-3.433-.223-.357a9.253 9.253 0 01-1.42-4.929c.002-5.12 4.17-9.287 9.293-9.287a9.246 9.246 0 016.585 2.734 9.218 9.218 0 012.708 6.576c-.003 5.12-4.172 9.287-9.295 9.287m8.145-17.442C17.383 1.113 14.823.008 12.05.004 5.46.004.004 5.46.002 12.053c0 1.99.52 3.937 1.51 5.667L0 24l6.405-1.68a11.356 11.356 0 005.426 1.385h.004c6.59 0 11.947-5.363 11.95-11.95a11.854 11.854 0 00-3.494-8.442z" /></svg>
                             Ask a Question
-                        </a>
+                        </TrackLink>
                     </div>
                 </div>
             </section>

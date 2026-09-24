@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState(2)
@@ -47,9 +48,11 @@ export default function Pricing() {
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* MORE VISIBLE SCISSORS BG */}
-      <img
+      <Image
         src={bg}
         alt=""
+        width={1300}
+        height={1300}
         className="
           absolute top-1/2 left-1/2
           -translate-x-1/2 -translate-y-1/2

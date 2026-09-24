@@ -7,7 +7,6 @@ const slug = "anti-aging-treatments-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Anti-Aging Treatments in Chennai, Maduravoyal | Youthful, Radiant Skin",
     description: "Advanced anti-aging treatments in Chennai for youthful, radiant skin. Rejuvenate and revitalize with professional skincare at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["anti-aging treatment chennai", "wrinkle treatment chennai", "skin rejuvenation chennai", "collagen facial chennai", "youthful skin treatment", "anti-aging Maduravoyal", "skin firming treatment"],
     image: "/anti-aging-skincare-treatment-youthful-glowing-ski.webp",
     slug,
 })

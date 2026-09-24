@@ -1,12 +1,15 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import Script from "next/script"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import PageHeader from "@/components/page-header"
 import VideoPlayerModal from "@/components/video-player-modal"
 import Testimonials from "@/components/testimonials"
+import TrackLink from "@/components/track-link"
+import { businessInfo, whatsappDeepLink } from "@/data/businessInfo"
 
 // FAQ Accordion Component
 function FAQAccordion() {
@@ -85,7 +88,6 @@ export default function AboutPage() {
                             "@type": "BeautySalon",
                             "name": "Anaplak Art And Glam Salon",
                             "foundingDate": "2020",
-                            "numberOfEmployees": "23",
                             "slogan": "Transform Your Look with Expert Care",
                             "award": "Best Salon in Maduravoyal 2026"
                         },
@@ -201,9 +203,11 @@ export default function AboutPage() {
                                         e.currentTarget.style.borderRadius = "0px";
                                     }}
                                 >
-                                    <img
+                                    <Image
                                         src="/aboutus.webp"
                                         alt="Professional Hair Styling"
+                                        width={900}
+                                        height={1100}
                                         className="w-full h-[650px] md:h-[780px] object-cover object-top rounded-xl"
                                     />
                                 </div>
@@ -256,9 +260,11 @@ export default function AboutPage() {
                                             e.currentTarget.style.borderRadius = "0px";
                                         }}
                                     >
-                                        <img
+                                        <Image
                                             src="/aboutus2.webp"
                                             alt="Beauty Specialist"
+                                            width={900}
+                                            height={1100}
                                             className="w-full h-[480px] md:h-[580px] object-cover object-[50%_15%] rounded-xl"
                                         />
                                         {/* Experience Badge */}
@@ -367,12 +373,18 @@ export default function AboutPage() {
                 {/* Video Tour Section - Full Width with Torn Edge */}
                 <section className="relative w-full bg-[#0e0e0e]">
                     <div
-                        className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] bg-fixed bg-cover bg-center"
+                        className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden"
                         style={{
-                            backgroundImage: "url('/video_parralax.jpg')",
                             clipPath: "polygon(0 0, 100% 0, 100% 95%, 98% 96%, 95% 95%, 92% 97%, 88% 96%, 85% 98%, 80% 97%, 75% 99%, 70% 97%, 65% 98%, 60% 96%, 55% 98%, 50% 97%, 45% 99%, 40% 97%, 35% 98%, 30% 96%, 25% 98%, 20% 97%, 15% 99%, 10% 97%, 5% 98%, 2% 96%, 0 95%)"
                         }}
                     >
+                        <Image
+                            src="/video_parralax.jpg"
+                            alt="Video tour of Anaplak Art and Glam Salon"
+                            fill
+                            sizes="100vw"
+                            className="object-cover"
+                        />
                         {/* Dark overlay */}
                         <div className="absolute inset-0 bg-black/40" />
 
@@ -421,10 +433,12 @@ export default function AboutPage() {
                                 {/* Center Circular Image */}
                                 <div className="lg:col-span-4 flex justify-center">
                                     <div className="relative w-[450px] h-[450px] rounded-full overflow-hidden">
-                                        <img
+                                        <Image
                                             src="/aboutus2.webp"
                                             alt="Professional Barber"
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            sizes="450px"
+                                            className="object-cover"
                                         />
                                     </div>
                                 </div>
@@ -490,8 +504,8 @@ export default function AboutPage() {
 
                                 {/* Stat 2 */}
                                 <div className="text-center">
-                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">15</h2>
-                                    <p className="text-xs uppercase tracking-wider text-black font-medium">EXPERIENCED BARBERS</p>
+                                    <h2 className="text-5xl md:text-6xl font-bold text-[#53675C] mb-2">7</h2>
+                                    <p className="text-xs uppercase tracking-wider text-black font-medium">DAYS OPEN</p>
                                 </div>
 
                                 {/* Stat 3 */}
@@ -541,9 +555,11 @@ export default function AboutPage() {
 
                                 {/* Right - Image */}
                                 <div className="relative">
-                                    <img
+                                    <Image
                                         src="/faq_img-1.webp"
                                         alt="Professional Salon Tools"
+                                        width={600}
+                                        height={600}
                                         className="w-full h-auto"
                                     />
                                 </div>
@@ -655,8 +671,9 @@ export default function AboutPage() {
                                 </a>
 
                                 {/* WhatsApp */}
-                                <a
-                                    href="https://wa.me/919840088867"
+                                <TrackLink
+                                    kind="whatsapp_click"
+                                    href={whatsappDeepLink()}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="group relative bg-gradient-to-br from-[#F8C8DC]/10 to-[#F8C8DC]/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-[#F8C8DC]/30 hover:border-[#F8C8DC] transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden"
@@ -672,7 +689,7 @@ export default function AboutPage() {
                                             </svg>
                                         </div>
                                         <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#F8C8DC] transition-colors">WhatsApp</h3>
-                                        <p className="text-gray-400 text-sm mb-4">+91 98400 88867</p>
+                                        <p className="text-gray-400 text-sm mb-4">{businessInfo.phone.primaryDisplay}</p>
                                         <div className="text-[#F8C8DC] font-semibold group-hover:underline flex items-center justify-center gap-2">
                                             Chat Now
                                             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -680,7 +697,7 @@ export default function AboutPage() {
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </TrackLink>
                             </div>
 
                             {/* Bottom CTA */}

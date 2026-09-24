@@ -18,35 +18,35 @@ interface Review {
 const FALLBACK_REVIEWS: Review[] = [
   {
     name: "Bala Murugan",
-    role: "Google Review",
+    role: "Client review (sample)",
     iconColor: "#53675C",
     text: "I visited Anaplak Art and Glam Salon for a haircut, and I was styled by Vignesh, their senior stylist. He did an excellent job, understood exactly what I wanted, and the final result was perfect. The staff members were very friendly, polite, and professional. The salon's atmosphere is clean, classy, and gives a very royal vibe.",
     rating: 5,
   },
   {
     name: "Lokesh R",
-    role: "Google Review",
+    role: "Client review (sample)",
     iconColor: "#F8C8DC",
     text: "Just got an amazing haircut at Anaplak Art And Glam Salon and I'm loving it! The stylist was super skilled and listened to exactly what I wanted. The vibe was chill, and I felt totally at ease. Left feeling fresh and confident - thanks to the awesome team!",
     rating: 5,
   },
   {
     name: "Ajay Thenneti",
-    role: "Google Review",
+    role: "Client review (sample)",
     iconColor: "#8B9A8E",
     text: "The salon ambience was outstanding—clean, well-organized, and beautifully designed. The lighting was soft and relaxing, the seating was comfortable, and the entire space felt fresh and welcoming. The moment I walked in, I felt calm and taken care of.",
     rating: 5,
   },
   {
     name: "Anand V",
-    role: "Google Review",
+    role: "Client review (sample)",
     iconColor: "#A68A89",
     text: "Excellent service by staff Vignesh, eye brows raise ambience, warm welcome staffs. Keep rocking CEO in the house Kalpana!",
     rating: 5,
   },
   {
     name: "Santhi Babu",
-    role: "Google Review",
+    role: "Client review (sample)",
     iconColor: "#6B7F73",
     text: "I received an excellent service from Rajani. Her attention to detail, professionalism, and friendly approach made the experience exceptional. Highly recommended!",
     rating: 5,
@@ -176,6 +176,62 @@ export default function Testimonials() {
 
     return () => clearInterval(interval)
   }, [testimonials.length])
+
+  // Load live Google reviews via the API route. Falls back to the labelled
+  // sample reviews above when the API is unavailable (e.g. missing env vars).
+  useEffect(() => {
+    let cancelled = false
+
+    const loadReviews = async () => {
+      setLoading(true)
+      try {
+        const res = await fetch("/api/reviews")
+        if (!res.ok) throw new Error("reviews unavailable")
+        const data: {
+          reviews?: {
+            name: string
+            text: string
+            rating: number
+            time?: number
+            relativeTime?: string
+            photoUrl?: string
+          }[]
+          totalRating?: number
+          totalReviews?: number
+        } = await res.json()
+
+        if (cancelled || !Array.isArray(data.reviews) || data.reviews.length === 0) return
+
+        setTestimonials(
+          data.reviews.map((r, i) => ({
+            name: r.name,
+            role: "Google Review",
+            iconColor: ICON_COLORS[i % ICON_COLORS.length],
+            text: r.text,
+            rating: r.rating,
+            time: r.time,
+            relativeTime: r.relativeTime,
+            photoUrl: r.photoUrl,
+          }))
+        )
+
+        if (data.totalRating != null && data.totalReviews != null) {
+          setTotalRating(data.totalRating)
+          setTotalReviews(data.totalReviews)
+          setIsFromGoogle(true)
+        }
+      } catch {
+        // keep the labelled fallback reviews
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
+    }
+
+    loadReviews()
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const totalPages = Math.ceil(testimonials.length / 2)
 

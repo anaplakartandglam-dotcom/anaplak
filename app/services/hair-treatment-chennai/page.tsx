@@ -7,7 +7,6 @@ const slug = "hair-treatment-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Hair Texture Treatments in Chennai, Maduravoyal | Keratin, Smoothing & More",
     description: "Professional keratin, smoothing, botox, nano plastia, perming, hair spa and bond strengthening treatments in Chennai, Maduravoyal. Get smoother, healthier, manageable hair at Anaplak Art and Glam, Maduravoyal from ₹3,000.",
-    keywords: ["keratin treatment chennai", "hair smoothing chennai", "hair botox chennai", "best keratin treatment in chennai", "hair smoothening cost chennai", "perming hair cost in chennai", "nano plastia chennai", "hair straightening chennai", "keratin treatment Maduravoyal", "hair botox treatment", "hair spa chennai", "dandruff treatment chennai", "bond strengthening treatment chennai", "hair treatment maduravoyal"],
     image: "/professional-hair-styling-salon-treatment-luxury.webp",
     slug,
 })

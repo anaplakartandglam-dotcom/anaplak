@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Award, Shield, Sparkles, Users, Clock, Heart } from "lucide-react"
+import TrackLink from "@/components/track-link"
+import { businessInfo } from "@/data/businessInfo"
 
 export default function WhyChooseUs() {
     const sectionRef = useRef<HTMLDivElement>(null)
@@ -150,21 +152,23 @@ export default function WhyChooseUs() {
                         }`}
                 >
                     <div className="inline-flex flex-col sm:flex-row gap-4 items-center justify-center">
-                        <a
-                            href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+                        <TrackLink
+                            kind="booking_click"
+                            href={businessInfo.bookingUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative px-8 py-4 bg-gradient-to-r from-[#F8C8DC] to-[#F8C8DC] text-black font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                         >
                             <span className="relative z-10">Book Your Appointment</span>
                             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                        </a>
-                        <a
-                            href="tel:+919840088867"
+                        </TrackLink>
+                        <TrackLink
+                            kind="phone_click"
+                            href={businessInfo.phone.primaryHref}
                             className="px-8 py-4 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all duration-300"
                         >
-                            Call +91 98400 88867
-                        </a>
+                            Call {businessInfo.phone.primaryDisplay}
+                        </TrackLink>
                     </div>
                 </div>
             </div>

@@ -2,9 +2,12 @@
 
 import Script from "next/script"
 import Image from "next/image"
+import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import PageHeader from "@/components/page-header"
+import TrackLink from "@/components/track-link"
+import { businessInfo, whatsappDeepLink } from "@/data/businessInfo"
 
 interface PriceItem {
     name: string
@@ -16,6 +19,28 @@ interface PriceCategory {
     title: string
     subtitle?: string
     items: PriceItem[]
+}
+
+function MenuActions({ slug }: { slug: string }) {
+    return (
+        <div className="flex flex-wrap items-center gap-3 pt-6">
+            <TrackLink
+                kind="booking_click"
+                href={businessInfo.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 bg-[#F8C8DC] text-black text-xs font-bold tracking-widest uppercase hover:brightness-95 transition-all"
+            >
+                Book Now
+            </TrackLink>
+            <Link
+                href={`/services/${slug}`}
+                className="px-5 py-2.5 border border-white/25 text-gray-200 text-xs font-bold tracking-widest uppercase hover:border-[#F8C8DC] hover:text-white transition-all"
+            >
+                Read More
+            </Link>
+        </div>
+    )
 }
 
 export default function PricingPage() {
@@ -310,12 +335,12 @@ export default function PricingPage() {
                         "@type": "WebPage",
                         "name": "Pricing | Salon Services & Packages | Anaplak Art And Glam",
                         "description": "Complete pricing guide for all salon services including hair styling, colour, treatments, bridal makeup, nail art, facials, waxing & more at Anaplak Art And Glam Salon, Chennai.",
-                        "url": "https://anaplakartandglamsalon.com/pricing",
+                        "url": "https://anaplakartandglamsalon.com/menu",
                         "breadcrumb": {
                             "@type": "BreadcrumbList",
                             "itemListElement": [
                                 { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anaplakartandglamsalon.com" },
-                                { "@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://anaplakartandglamsalon.com/pricing" },
+                                { "@type": "ListItem", "position": 2, "name": "Menu", "item": "https://anaplakartandglamsalon.com/menu" },
                             ],
                         },
                     }),
@@ -325,10 +350,10 @@ export default function PricingPage() {
             <Header />
             <div className="min-h-screen bg-[#000] mt-10 md:mt-25">
                 <PageHeader
-                    label="Our Pricing"
-                    title="Pricing"
-                    titleAccent="Guide"
-                    description=""
+                    label="Our Menu & Pricing"
+                    title="Salon"
+                    titleAccent="Menu"
+                    description="Explore our full menu of salon services with transparent pricing. Pick your favourite service, book it instantly, or read more about each treatment before you visit."
                 />
 
                 <style jsx global>{`
@@ -368,6 +393,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="hair-styling-chennai" />
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div className="relative w-full aspect-[4/3] overflow-hidden border border-white/10">
@@ -403,6 +429,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="hair-styling-chennai" />
                             </div>
                             <div className="w-full md:w-1/2 md:order-1">
                                 <div className="relative w-full aspect-[4/3] overflow-hidden border border-white/10">
@@ -441,14 +468,7 @@ export default function PricingPage() {
                                     <p className="text-gray-500 text-sm mt-2">
                                         Personalized shade matching included with all color services.
                                     </p>
-                                    <a
-                                        href="https://wa.me/919840088867?text=Hi%2C%20I%20would%20like%20to%20book%20a%20hair%20colour%20appointment."
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-5 inline-block px-6 py-2.5 bg-[#53675C] text-white text-xs font-bold tracking-widest uppercase hover:brightness-110 transition-all"
-                                    >
-                                        Book an Appointment
-                                    </a>
+                                    <MenuActions slug="hair-coloring-chennai" />
                                 </div>
                             </div>
 
@@ -528,9 +548,10 @@ export default function PricingPage() {
                                             ₹{item.price as string}
                                         </span>
                                     </div>
-                                ))}
+))}
+                                </div>
+                                <MenuActions slug="hair-treatment-chennai" />
                             </div>
-                        </div>
 
                         {/* Hair Treatment & Extension Stack */}
                         <div className="space-y-16">
@@ -559,6 +580,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="hair-treatment-chennai" />
                             </div>
 
                             {/* Hair Extension */}
@@ -586,6 +608,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="hair-extension-chennai" />
                             </div>
                         </div>
                     </div>
@@ -676,8 +699,9 @@ export default function PricingPage() {
                                         >
                                             Offer Price
                                         </span>
-                                        <a
-                                            href={`https://wa.me/919840088867?text=${encodeURIComponent(`Hi, I'm interested in the ${pkg.title} Bridal Package. Please share more details.`)}`}
+                                        <TrackLink
+                                            kind="whatsapp_click"
+                                            href={whatsappDeepLink(`Hi, I'm interested in the ${pkg.title} Bridal Package. Please share more details.`)}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="mt-4 w-full py-3 border text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:brightness-110 inline-block text-center"
@@ -688,7 +712,7 @@ export default function PricingPage() {
                                             }}
                                         >
                                             Choose Plan
-                                        </a>
+                                        </TrackLink>
                                     </div>
                                 </div>
                             ))}
@@ -719,6 +743,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="hair-styling-chennai" />
 
                                 <h3
                                     className="text-lg md:text-xl font-reddit-sans font-bold mt-16 mb-10 flex items-center"
@@ -738,6 +763,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="manicure-pedicure-chennai" />
 
                                 <h3
                                     className="text-lg md:text-xl font-reddit-sans font-bold mt-16 mb-10 flex items-center"
@@ -757,6 +783,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="manicure-pedicure-chennai" />
                             </div>
 
                             <div>
@@ -778,6 +805,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="threading-waxing-chennai" />
 
                                 <h3
                                     className="text-lg md:text-xl font-reddit-sans font-bold mt-16 mb-10 flex items-center"
@@ -802,6 +830,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="facial-treatments-chennai" />
 
                                 <h3
                                     className="text-lg md:text-xl font-reddit-sans font-bold mt-16 mb-10 flex items-center"
@@ -821,6 +850,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="facial-treatments-chennai" />
                             </div>
                         </div>
                     </div>
@@ -847,17 +877,18 @@ export default function PricingPage() {
                                 NAIL EXTENSION
                             </h3>
                             <div className="space-y-4">
-                                {nailExtension.items.map((item, idx) => (
-                                    <div key={idx} className="service-row flex items-baseline">
-                                        <span className="text-gray-300 text-sm">{item.name}</span>
-                                        <div className="price-leader"></div>
-                                        <span className="text-white text-sm font-medium whitespace-nowrap">
-                                            ₹{item.price as string}
-                                        </span>
-                                    </div>
-                                ))}
+{nailExtension.items.map((item, idx) => (
+                                        <div key={idx} className="service-row flex items-baseline">
+                                            <span className="text-gray-300 text-sm">{item.name}</span>
+                                            <div className="price-leader"></div>
+                                            <span className="text-white text-sm font-medium whitespace-nowrap">
+                                                ₹{item.price as string}
+                                            </span>
+                                        </div>
+                                    ))}
+                                </div>
+                                <MenuActions slug="nail-art-extension-chennai" />
                             </div>
-                        </div>
                         <div>
                             <h3
                                 className="text-lg md:text-xl font-reddit-sans font-bold mb-10 flex items-center"
@@ -880,10 +911,11 @@ export default function PricingPage() {
                                             ₹{item.price as string}
                                         </span>
                                     </div>
-                                ))}
+))}
+                                </div>
+                                <MenuActions slug="nail-art-extension-chennai" />
                             </div>
                         </div>
-                    </div>
                 </section>
 
                 {/* Waxing & Bridal Makeup */}
@@ -909,6 +941,7 @@ export default function PricingPage() {
                                         </div>
                                     ))}
                                 </div>
+                                <MenuActions slug="threading-waxing-chennai" />
                             </div>
                             <div>
                                 <h3

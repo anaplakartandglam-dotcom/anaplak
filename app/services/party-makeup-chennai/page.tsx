@@ -7,7 +7,6 @@ const slug = "party-makeup-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Party Makeup in Chennai, Maduravoyal | Professional Event Makeup from ₹10,000",
     description: "Book professional party makeup in Chennai from ₹10,000. Long-lasting, photo-ready makeup for birthdays, anniversaries, cocktail parties, and special events at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["party makeup chennai", "party makeup artist chennai", "event makeup chennai", "professional makeup chennai", "birthday makeup chennai", "party makeup Maduravoyal", "cocktail party makeup", "reception makeup", "soft glam makeup", "glamorous makeup"],
     image: "/glamorous-party-makeup-evening-look-celebration.jpg",
     slug,
 })

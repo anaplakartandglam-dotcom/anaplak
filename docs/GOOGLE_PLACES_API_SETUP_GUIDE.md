@@ -152,7 +152,7 @@ Received reviews data: {...}
 
 ✅ Website will show:
 - Real Google reviews from customers
-- Google rating badge (4.9★)
+- Google rating badge (4.8★)
 - Customer profile photos
 - Review timestamps ("2 weeks ago", etc.)
 - Auto-rotating carousel

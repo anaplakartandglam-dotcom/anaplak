@@ -20,7 +20,7 @@
   - Name, address, phone, hours
   - Geographic coordinates
   - Price range
-  - Aggregate rating (4.9 stars, 28 reviews)
+  - Aggregate rating (4.8 stars, 28 reviews)
 - ✅ Service catalog with 5 main services
 - ✅ Social media profiles
 - ✅ Breadcrumb schema

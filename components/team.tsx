@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef } from "react"
+import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function Team() {
@@ -11,7 +12,7 @@ export default function Team() {
     { name: "Martina Greco", role: "Colorist", level: "SENIOR", rating: "4.7", img: "/team_03-360x500.jpg" },
     { name: "Fabio Santoro", role: "Beauty Artist", level: "JUNIOR", rating: "4.4", img: "/team_04-360x500.jpg" },
     { name: "Matteo Ricci", role: "Stylist", level: "MASTER", rating: "4.8", img: "/team_05-360x500.jpg" },
-    { name: "Alessandro Moretti", role: "Beauty Artist", level: "SENIOR", rating: "4.9", img: "/team_06-360x500.jpg" },
+    { name: "Alessandro Moretti", role: "Beauty Artist", level: "SENIOR", rating: "4.8", img: "/team_06-360x500.jpg" },
     { name: "Bianca Corsini", role: "Stylist", level: "SENIOR", rating: "4.7", img: "/team_07-360x500.jpg" },
     { name: "Enzo Romano", role: "Beauty Artist", level: "MASTER", rating: "4.8", img: "/team_08-360x500.jpg" },
   ]
@@ -101,8 +102,8 @@ export default function Team() {
               className="flex-shrink-0 w-full lg:w-1/4"
               style={{ scrollSnapAlign: "start" }}
             >
-              <div className="w-full h-[420px] overflow-hidden rounded-lg mb-3">
-                <img src={m.img} alt={m.name} className="w-full h-full object-cover" />
+              <div className="relative w-full h-[420px] overflow-hidden rounded-lg mb-3">
+                <Image src={m.img} alt={m.name} fill sizes="(max-width: 1024px) 100vw, 25vw" className="object-cover" />
               </div>
 
               <h3 className="text-white text-lg font-semibold">{m.name}</h3>

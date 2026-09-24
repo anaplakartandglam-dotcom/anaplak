@@ -3,6 +3,8 @@
 import type React from "react"
 import { useState } from "react"
 import { Phone } from "lucide-react"
+import { businessInfo, whatsappDeepLink } from "@/data/businessInfo"
+import TrackLink from "@/components/track-link"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -72,11 +74,11 @@ export default function Contact() {
               <h3 className="text-black font-bold mb-4">Make an appointment by phone:</h3>
               <div className="flex items-center gap-3 text-[#53675C] font-bold text-lg">
                 <Phone size={20} />
-                <a href="tel:+919840088867">+91-9840088867</a>
+                <TrackLink kind="phone_click" href={businessInfo.phone.primaryHref}>{businessInfo.phone.primaryDisplay}</TrackLink>
               </div>
               <div className="flex items-center gap-3 text-[#53675C] font-bold text-lg mt-2">
                 <Phone size={20} />
-                <a href="tel:+919840088861">+91-9840088861</a>
+                <TrackLink kind="phone_click" href={businessInfo.phone.secondaryHref}>{businessInfo.phone.secondaryDisplay}</TrackLink>
               </div>
             </div>
           </div>
@@ -85,12 +87,20 @@ export default function Contact() {
             <div className="p-12 rounded-lg border-2 border-[#53675C]/30 bg-[#53675C]/5">
               <h3 className="text-2xl font-bold text-black mb-6">Visit Us</h3>
               <p className="text-black/70 leading-relaxed mb-6">
-                No.4B/9, New No. 3, 2nd floor, First Main road, 4th block, MMDA Colony, Chennai, Maduravoyal - 600095
+                {businessInfo.address.oneLine}
               </p>
               <p className="text-[#53675C] font-bold mb-2">Email:</p>
-              <a href="mailto:anaplakartandglamsalon@gmail.com" className="text-black hover:text-[#53675C] transition">
-                anaplakartandglamsalon@gmail.com
+              <a href={`mailto:${businessInfo.email}`} className="text-black hover:text-[#53675C] transition">
+                {businessInfo.email}
               </a>
+              <div className="mt-4 flex flex-col gap-2">
+                <TrackLink kind="map_click" href={businessInfo.maps.searchUrl} target="_blank" rel="noopener noreferrer" className="text-[#53675C] font-semibold hover:text-black transition">
+                  View on Google Maps
+                </TrackLink>
+                <TrackLink kind="whatsapp_click" href={whatsappDeepLink()} target="_blank" rel="noopener noreferrer" className="text-[#53675C] font-semibold hover:text-black transition">
+                  Book on WhatsApp
+                </TrackLink>
+              </div>
             </div>
           </div>
         </div>

@@ -10,9 +10,19 @@ import BlogSchema from "@/components/blog/BlogSchema"
 import { getBlogBySlug, blogData, getRelatedBlogs } from "@/data/blogData"
 import { addHeadingIds, extractHeadings, extractCTA, stripCTA } from "@/lib/blogHeadings"
 import { extractFAQs, generateBlogSchema, generateFAQSchema } from "@/lib/blogSchema"
+import { businessInfo, whatsappDeepLink } from "@/data/businessInfo"
+import TrackLink from "@/components/track-link"
 
 interface Props {
   params: Promise<{ slug: string }>
+}
+
+const categoryServiceLinks: Record<string, string> = {
+  Bridal: "/services/bridal-makeup-chennai",
+  "Hair Care": "/services/hair-treatment-chennai",
+  Skincare: "/services/facial-treatments-chennai",
+  "Hair Color": "/services/hair-coloring-chennai",
+  "Hair Styling": "/services/hair-styling-chennai",
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -21,16 +31,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!blog) {
     return {
-      title: "Blog Not Found | Anaplak Art and Glam Salon",
+      title: "Blog Not Found | Anaplak Art & Glam",
     }
   }
 
   return {
-    title: `${blog.title} | Anaplak Art and Glam Salon`,
+    title: `${blog.title} | Anaplak Art & Glam`,
     description: blog.description,
-    keywords: blog.keywords,
+    alternates: {
+      canonical: `${businessInfo.url}/blogs/${blog.id}`,
+    },
     openGraph: {
-      title: blog.title,
+      title: `${blog.title} | Anaplak Art & Glam`,
       description: blog.description,
       type: "article",
       publishedTime: blog.createdAt,
@@ -46,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: blog.title,
+      title: `${blog.title} | Anaplak Art & Glam`,
       description: blog.description,
       images: [blog.image],
     },
@@ -175,8 +187,9 @@ export default async function BlogPage({ params }: Props) {
                   <h2 className="cta-heading">{cta.heading}</h2>
                   <p className="cta-text">{cta.text}</p>
                   <div className="cta-actions">
-                    <a
-                      href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+                    <TrackLink
+                      kind="booking_click"
+                      href={businessInfo.bookingUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn-primary"
@@ -185,9 +198,10 @@ export default async function BlogPage({ params }: Props) {
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://wa.me/919840088867?text=${encodeURIComponent(blog.whatsappMessage || "Hi, I'd like to book an appointment at Anaplak Art and Glam Salon.")}`}
+                    </TrackLink>
+                    <TrackLink
+                      kind="whatsapp_click"
+                      href={whatsappDeepLink(blog.whatsappMessage || "Hi, I'd like to book an appointment at Anaplak Art and Glam Salon.")}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn-whatsapp"
@@ -196,7 +210,7 @@ export default async function BlogPage({ params }: Props) {
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.299-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.26 9.26 0 01-4.721-1.274l-.339-.2-3.519.924.94-3.433-.223-.357a9.253 9.253 0 01-1.42-4.929c.002-5.12 4.17-9.287 9.293-9.287a9.246 9.246 0 016.585 2.734 9.218 9.218 0 012.708 6.576c-.003 5.12-4.172 9.287-9.295 9.287m8.145-17.442C17.383 1.113 14.823.008 12.05.004 5.46.004.004 5.46.002 12.053c0 1.99.52 3.937 1.51 5.667L0 24l6.405-1.68a11.356 11.356 0 005.426 1.385h.004c6.59 0 11.947-5.363 11.95-11.95a11.854 11.854 0 00-3.494-8.442z" />
                       </svg>
                       WhatsApp Us
-                    </a>
+                    </TrackLink>
                   </div>
                 </div>
               )}
@@ -219,6 +233,25 @@ export default async function BlogPage({ params }: Props) {
               </span>
             ))}
           </div>
+
+          {categoryServiceLinks[blog.category] && (
+            <div className="mt-12 bg-[#F8C8DC]/10 border border-[#F8C8DC]/30 rounded-2xl p-6 md:p-8">
+              <h2 className="text-xl md:text-2xl font-bold text-white mb-2">Get This Done at Anaplak</h2>
+              <p className="text-gray-300 text-sm md:text-base mb-5 leading-relaxed">
+                Ready for the real experience? Our expert team at Anaplak Art and Glam Salon in Chennai, Maduravoyal offers
+                professional {blog.category.toLowerCase()} services tailored just for you.
+              </p>
+              <Link
+                href={categoryServiceLinks[blog.category]}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all duration-300"
+              >
+                Explore {blog.category} Services
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          )}
         </div>
       </article >
 
@@ -255,8 +288,9 @@ export default async function BlogPage({ params }: Props) {
             {blog.ctaText || "Book your appointment today and experience the Anaplak difference."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+            <TrackLink
+              kind="booking_click"
+              href={businessInfo.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 hover:scale-105"
@@ -265,9 +299,10 @@ export default async function BlogPage({ params }: Props) {
               <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
-            <a
-              href={`https://wa.me/919840088867?text=${encodeURIComponent(blog.whatsappMessage || "Hi, I'd like to book an appointment at Anaplak Art and Glam Salon.")}`}
+            </TrackLink>
+            <TrackLink
+              kind="whatsapp_click"
+              href={whatsappDeepLink(blog.whatsappMessage || "Hi, I'd like to book an appointment at Anaplak Art and Glam Salon.")}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 border-2 border-[#F8C8DC] text-[#F8C8DC] font-semibold rounded-full hover:bg-[#F8C8DC] hover:text-black transition-all duration-300"
@@ -276,7 +311,7 @@ export default async function BlogPage({ params }: Props) {
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.299-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.26 9.26 0 01-4.721-1.274l-.339-.2-3.519.924.94-3.433-.223-.357a9.253 9.253 0 01-1.42-4.929c.002-5.12 4.17-9.287 9.293-9.287a9.246 9.246 0 016.585 2.734 9.218 9.218 0 012.708 6.576c-.003 5.12-4.172 9.287-9.295 9.287m8.145-17.442C17.383 1.113 14.823.008 12.05.004 5.46.004.004 5.46.002 12.053c0 1.99.52 3.937 1.51 5.667L0 24l6.405-1.68a11.356 11.356 0 005.426 1.385h.004c6.59 0 11.947-5.363 11.95-11.95a11.854 11.854 0 00-3.494-8.442z" />
               </svg>
               WhatsApp Us
-            </a>
+            </TrackLink>
           </div>
         </div>
       </section >

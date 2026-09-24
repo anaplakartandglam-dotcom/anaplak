@@ -1,9 +1,12 @@
 "use client"
 
 import Script from "next/script"
+import Image from "next/image"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import PageHeader from "@/components/page-header"
+import TrackLink from "@/components/track-link"
+import { whatsappDeepLink } from "@/data/businessInfo"
 
 export default function KalpanaPage() {
     return (
@@ -16,7 +19,7 @@ export default function KalpanaPage() {
                         "@context": "https://schema.org",
                         "@type": "ProfilePage",
                         "name": "Kalpana - Founder | Anaplak Art And Glam",
-                        "description": "Kalpana is the Founder of Anaplak Art And Glam Salon, Chennai's premier beauty destination. As a visionary makeup artist and hair stylist, she leads a team of 12 experts delivering luxury bridal makeup, hair artistry, and transformative beauty services.",
+                        "description": "Kalpana is the Founder of Anaplak Art And Glam Salon, Chennai's premier beauty destination. As a visionary makeup artist and hair stylist, she leads a team of experienced experts delivering luxury bridal makeup, hair artistry, and transformative beauty services.",
                         "url": "https://anaplakartandglamsalon.com/kalpana",
                         "mainEntity": {
                             "@type": "Person",
@@ -50,7 +53,7 @@ export default function KalpanaPage() {
                     label="Founder"
                     title="Kalpana"
                     titleAccent=""
-                    description="Anaplak Art And Glam's artistic founder – turning beautiful into a work of art through makeup!"
+                    description="I'm Kalpana, the founder of Anaplak Art And Glam – turning beautiful into a work of art through makeup!"
                 />
 
                 {/* Founder Profile Section */}
@@ -77,9 +80,11 @@ export default function KalpanaPage() {
                                         e.currentTarget.style.borderRadius = "0px"
                                     }}
                                 >
-                                    <img
+                                    <Image
                                         src="/aboutus2.webp"
                                         alt="Kalpana - Founder of Anaplak Art And Glam"
+                                        width={900}
+                                        height={1100}
                                         className="w-full h-[350px] md:h-[780px] object-cover object-top rounded-xl"
                                     />
                                 </div>
@@ -97,13 +102,13 @@ export default function KalpanaPage() {
                                     </h2>
                                     <div className="space-y-5 text-gray-600 leading-relaxed">
                                         <p className="text-base">
-                                            A professional makeup artist and hair stylist from Chennai, Kalpana is the founder of the prestigious brand that is known throughout Maduravoyal as a premier salon.
+                                            Hi, I'm Kalpana — the founder of Anaplak Art And Glam. My story began right here in Chennai, Maduravoyal, where I fell in love with the way makeup and hair styling can make a woman feel truly confident, not just beautiful.
                                         </p>
                                         <p className="text-base">
-                                            With great attention to detail and a deep love for the beauty industry, she creates unforgettable wedding looks and sets new trends in hairstyling. Her signature style combines a passion for art with innovative solutions that allow you to feel confident about your appearance every day.
+                                            I started Anaplak with a simple dream: to give every client the care, patience, and artistry they deserve. From styling a bride on her wedding morning to helping you find the haircut that finally feels like you, I pour my heart into every single transformation that walks through our doors.
                                         </p>
                                         <p className="text-base">
-                                            Today, Kalpana is leading a team of experienced beauty artists at Anaplak Art And Glam. She trains young talents and encourages new discoveries of herself as an artist. Thanks to her, Anaplak Art And Glam Salon got its premium status in Maduravoyal.
+                                            Today, I lead a team of brilliant beauty artists who share this passion, and I love training young talent to discover the artist within themselves. What makes me proudest isn't awards or numbers — it's the trust of thousands of clients who keep coming back and bring their families with them. That trust is what made Anaplak the premier salon it is today, and it's what I promise you every time you visit.
                                         </p>
                                     </div>
                                 </div>
@@ -119,8 +124,8 @@ export default function KalpanaPage() {
                                         <p className="text-xs uppercase tracking-wider text-gray-500">Years of Art</p>
                                     </div>
                                     <div className="text-center">
-                                        <h3 className="text-3xl md:text-4xl font-bold text-[#53675C] mb-1">12</h3>
-                                        <p className="text-xs uppercase tracking-wider text-gray-500">Team Artists</p>
+                                        <h3 className="text-3xl md:text-4xl font-bold text-[#53675C] mb-1">7</h3>
+                                        <p className="text-xs uppercase tracking-wider text-gray-500">Days Open</p>
                                     </div>
                                 </div>
                                 <div className="hidden lg:flex items-center justify-center">
@@ -159,7 +164,7 @@ export default function KalpanaPage() {
                                 </div>
                                 <h3 className="text-lg font-bold uppercase tracking-wide text-black">Artistry</h3>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Every client&apos;s face can be turned into a masterpiece. The makeup artist sees an art piece in each face and skillfully uses her talents to make your look special.
+                                    I believe every face is a canvas. I see an art piece in each client and carefully use my skill to make your look special — exactly the way you envisioned it.
                                 </p>
                             </div>
                             <div className="space-y-4">
@@ -170,7 +175,7 @@ export default function KalpanaPage() {
                                 </div>
                                 <h3 className="text-lg font-bold uppercase tracking-wide text-black">Passion</h3>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Motivated by her relentless passion for beauty, Kalpana gives her soul to each one of her transformations and clients.
+                                    Beauty is my relentless passion. I put my whole soul into every transformation and every client who sits in my chair — nothing is ever done halfway.
                                 </p>
                             </div>
                             <div className="space-y-4">
@@ -181,7 +186,7 @@ export default function KalpanaPage() {
                                 </div>
                                 <h3 className="text-lg font-bold uppercase tracking-wide text-black">Trust</h3>
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    Fostering long-lasting bonds through trustworthiness, excellence, and the assurance that comes from genuinely caring about all of her clients.
+                                    I build long-lasting bonds with my clients through excellence and genuine care. When you trust me with your look, I treat it like my own — always.
                                 </p>
                             </div>
                         </div>
@@ -252,14 +257,15 @@ export default function KalpanaPage() {
 
                         <div className="text-center bg-gradient-to-r from-[#F8C8DC]/10 to-[#F8C8DC]/10 border border-[#F8C8DC]/30 rounded-2xl p-8 max-w-3xl mx-auto">
                             <p className="text-white text-xl mb-3 font-medium">
-                                Transform your look with an artist who truly cares.
+                                Let me transform your look — with an artist who truly cares.
                             </p>
                             <p className="text-gray-400 text-base mb-6">
                                 📸 Share your moment with <span className="text-[#F8C8DC] font-semibold">#alwaysbeanaplak</span> and{" "}
                                 <span className="text-[#F8C8DC] font-semibold">#kalpanamakeover</span>
                             </p>
-                            <a
-                                href="https://wa.me/919840088867"
+                            <TrackLink
+                                kind="whatsapp_click"
+                                href={whatsappDeepLink()}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-8 py-3 bg-[#25D366] text-white font-semibold rounded-full hover:scale-105 transition-transform shadow-lg"
@@ -268,7 +274,7 @@ export default function KalpanaPage() {
                                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                                 </svg>
                                 Book a Consultation
-                            </a>
+                            </TrackLink>
                         </div>
                     </div>
                 </section>

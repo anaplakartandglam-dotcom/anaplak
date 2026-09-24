@@ -1,54 +1,38 @@
 import Script from 'next/script'
+import { businessInfo } from '@/data/businessInfo'
 
 export default function StructuredData() {
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "HairSalon",
-        "name": "Anaplak Art And Glam Salon",
-        "image": "https://anaplakartandglamsalon.com/logo_updated.webp",
-        "@id": "https://anaplakartandglamsalon.com",
-        "url": "https://anaplakartandglamsalon.com",
-        "telephone": "+919840088867",
+        "@type": "BeautySalon",
+        "name": businessInfo.name,
+        "image": `${businessInfo.url}/logo_updated.webp`,
+        "@id": businessInfo.url,
+        "url": businessInfo.url,
+        "telephone": businessInfo.phone.primary,
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "2nd Floor, TNHB, : 3, 2nd Main Rd, 4th Block, CDN Nagar, MMDA Colony",
-            "addressLocality": "Maduravoyal",
-            "addressRegion": "Chennai",
-            "postalCode": "600095",
-            "addressCountry": "IN"
+            "streetAddress": businessInfo.address.streetAddress,
+            "addressLocality": businessInfo.address.addressLocality,
+            "addressRegion": businessInfo.address.addressRegion,
+            "postalCode": businessInfo.address.postalCode,
+            "addressCountry": businessInfo.address.addressCountry
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 13.0515,
-            "longitude": 80.1656
+            "latitude": businessInfo.geo.latitude,
+            "longitude": businessInfo.geo.longitude
         },
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "10:00",
-                "closes": "21:00"
+                "dayOfWeek": businessInfo.hours.everyDay,
+                "opens": businessInfo.hours.opens,
+                "closes": businessInfo.hours.closes
             }
         ],
-        "sameAs": [
-            "https://www.facebook.com/anaplakartandglam",
-            "https://www.instagram.com/anaplak_art_and_glam_salon",
-            "https://www.youtube.com/@Anaplakartandglamsalon/"
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "28"
-        },
+        "sameAs": businessInfo.sameAs,
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Beauty Services",
@@ -101,76 +85,28 @@ export default function StructuredData() {
     const organizationSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Anaplak Art And Glam Salon",
-        "alternateName": "Anaplak Salon",
-        "url": "https://anaplakartandglamsalon.com",
-        "logo": "https://anaplakartandglamsalon.com/logo_updated.webp",
-        "description": "Premium hair salon and bridal makeup studio in Chennai, Maduravoyal offering expert hair coloring, keratin treatment, facials, and luxury beauty services.",
+        "name": businessInfo.name,
+        "alternateName": businessInfo.alternateName,
+        "url": businessInfo.url,
+        "logo": `${businessInfo.url}/logo_updated.webp`,
+        "description": businessInfo.description,
+        "email": businessInfo.email,
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+919840088867",
+            "telephone": businessInfo.phone.primary,
             "contactType": "customer service",
             "areaServed": "IN",
             "availableLanguage": ["English", "Tamil", "Hindi"]
         },
-        "sameAs": [
-            "https://www.facebook.com/anaplakartandglam",
-            "https://www.instagram.com/anaplak_art_and_glam_salon",
-            "https://www.youtube.com/@Anaplakartandglamsalon/"
-        ]
+        "sameAs": businessInfo.sameAs
     }
 
-    // WebSite Schema with Sitelinks SearchBox
+    // WebSite Schema
     const websiteSchema = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Anaplak Art And Glam Salon",
-        "url": "https://anaplakartandglamsalon.com",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://anaplakartandglamsalon.com/services?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-        }
-    }
-
-    const breadcrumbSchema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://anaplakartandglamsalon.com"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "About",
-                "item": "https://anaplakartandglamsalon.com/about"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Services",
-                "item": "https://anaplakartandglamsalon.com/services"
-            },
-            {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Gallery",
-                "item": "https://anaplakartandglamsalon.com/gallery"
-            },
-            {
-                "@type": "ListItem",
-                "position": 5,
-                "name": "Contact",
-                "item": "https://anaplakartandglamsalon.com/contact"
-            }
-        ]
+        "name": businessInfo.name,
+        "url": businessInfo.url
     }
 
     return (
@@ -194,13 +130,6 @@ export default function StructuredData() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(websiteSchema)
-                }}
-            />
-            <Script
-                id="breadcrumb-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(breadcrumbSchema)
                 }}
             />
         </>

@@ -1,13 +1,14 @@
 import { Metadata } from "next"
 import ServiceDetailPage, { buildServiceMetadata } from "@/components/service-detail-page"
 import { getServiceBySlug } from "@/data/serviceData"
+import TrackLink from "@/components/track-link"
+import { whatsappDeepLink } from "@/data/businessInfo"
 
 const slug = "hair-extension-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
     title: "Hair Extensions & Men's Bald Patch Coverage in Chennai | Anaplak",
     description: "Premium hair extensions and non-surgical men's bald patch coverage in Chennai. Tape, nano, clip-in extensions and custom hair patches from ₹20,000 at Anaplak Art and Glam, Maduravoyal.",
-    keywords: ["hair extensions chennai", "tape hair extensions chennai", "nano hair extensions chennai", "hair extension salon chennai", "hair extension Maduravoyal", "clip in hair extensions chennai", "hair volume extensions chennai", "best hair extensions chennai", "hair extension maintenance", "men bald patch treatment chennai", "hair patch for men chennai", "non-surgical hair replacement chennai", "bald patch coverage chennai", "men hair patch Maduravoyal"],
     image: "/hair_extension.webp",
     slug,
 })
@@ -77,10 +78,10 @@ export default function Page() {
                                         </div>
                                     ))}
                                 </div>
-                                <a href="https://wa.me/919840088867?text=Hi%2C%20I%27m%20interested%20in%20men%27s%20bald%20patch%20coverage%20at%20Anaplak." target="_blank" rel="noopener noreferrer" className="w-full mt-6 inline-flex items-center justify-center gap-2 py-3 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all">
+                                <TrackLink kind="whatsapp_click" href={whatsappDeepLink("Hi, I'm interested in men's bald patch coverage at Anaplak.")} target="_blank" rel="noopener noreferrer" className="w-full mt-6 inline-flex items-center justify-center gap-2 py-3 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all">
                                     Enquire on WhatsApp
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                                </a>
+                                </TrackLink>
                             </div>
                         </div>
                     </div>

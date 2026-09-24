@@ -9,6 +9,9 @@ import {
   ArrowRight,
   Phone,
 } from "lucide-react"
+import { businessInfo } from "@/data/businessInfo"
+import TrackLink from "@/components/track-link"
+import { pushEvent } from "@/lib/gtm"
 
 export default function Header() {
   const [isSticky, setSticky] = useState(false)
@@ -17,7 +20,7 @@ export default function Header() {
   const navItems = [
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
-    { label: "Pricing", href: "/pricing" },
+    { label: "Menu", href: "/menu" },
     { label: "Gallery", href: "/gallery" },
     { label: "Blogs", href: "/blogs" },
     { label: "Contact", href: "/contact" },
@@ -54,19 +57,19 @@ export default function Header() {
         <div className="w-full px-4 flex justify-between items-center">
 
           {/* Mobile Number */}
-          <a href="tel:+919840088867" className="flex md:hidden items-center gap-2 text-white text-xs tracking-wide hover:text-[#F8C8DC] transition">
+          <TrackLink kind="phone_click" href={businessInfo.phone.primaryHref} className="flex md:hidden items-center gap-2 text-white text-xs tracking-wide hover:text-[#F8C8DC] transition">
             <Phone size={15} />
-            <span>+91-98400&nbsp;88867</span>
-          </a>
+            <span>{businessInfo.phone.primaryDisplay.replace("+91 ", "+91-")}</span>
+          </TrackLink>
 
           {/* Desktop Numbers */}
           <div className="hidden md:flex items-center gap-6 text-white text-sm tracking-wide">
-            <a href="tel:+919840088867" className="flex items-center gap-1 hover:text-[#F8C8DC] transition">
-              <Phone size={15} /> +91-98400&nbsp;88867
-            </a>
-            <a href="tel:+919840088861" className="flex items-center gap-1 hover:text-[#F8C8DC] transition">
-              <Phone size={15} /> +91-98400&nbsp;88861
-            </a>
+            <TrackLink kind="phone_click" href={businessInfo.phone.primaryHref} className="flex items-center gap-1 hover:text-[#F8C8DC] transition">
+              <Phone size={15} /> {businessInfo.phone.primaryDisplay.replace("+91 ", "+91-")}
+            </TrackLink>
+            <TrackLink kind="phone_click" href={businessInfo.phone.secondaryHref} className="flex items-center gap-1 hover:text-[#F8C8DC] transition">
+              <Phone size={15} /> {businessInfo.phone.secondaryDisplay.replace("+91 ", "+91-")}
+            </TrackLink>
           </div>
 
           {/* Social Icons */}
@@ -134,8 +137,9 @@ export default function Header() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-6 cursor-pointer">
             <Link
-              href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+              href={businessInfo.bookingUrl}
               target="_blank"
+              onClick={() => pushEvent("booking_click")}
             >
               <button
                 className="px-6 py-4 rounded-md text-white text-sm tracking-wider uppercase flex items-center gap-2 transition-all duration-400 cursor-pointer font-bold"
@@ -224,8 +228,9 @@ export default function Header() {
         {/* Mobile CTA */}
         <div className="mt-4">
           <Link
-            href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110"
+            href={businessInfo.bookingUrl}
             target="_blank"
+            onClick={() => pushEvent("booking_click")}
           >
             <button
               className="w-full py-3 rounded-md text-white text-sm tracking-wider uppercase flex items-center justify-center gap-2 cursor-pointer"
