@@ -19,13 +19,21 @@
 ### **Step 1: Rebuild the Application**
 ```bash
 cd /root/anaplakartweb
-npm run build
+npm run build:clean   # clears stale .next first, then runs next build
 ```
+
+> `npm run build:clean` avoids the "stale route cache" build error (e.g. after renaming a route like `/pricing` → `/menu`). A plain `npm run build` is fine if `.next` was never touched by a failed build or a concurrent `next dev`.
 
 ### **Step 2: Restart PM2**
 ```bash
-pm2 restart anaplakartweb
+pm2 restart anaplakartweb   # or whatever the exact app name is: pm2 list
 ```
+
+> ⚠️ `npm start` / `pm2 start npm --name anaplak` runs `next start`, which REQUIRES a build to exist in `.next` first. If you ever see:
+> ```
+> Error: Could not find a production build in the '.next' directory.
+> ```
+> it means the PM2 app was started (or restarted) **before** `npm run build:clean` completed — either rebuild first, or stop the app while building (`pm2 stop anaplak`), then rebuild, then `pm2 restart anaplak`.
 
 ### **Step 3: Clear Any CDN/Proxy Cache** (if applicable)
 If you're using Cloudflare, Nginx, or any CDN:
@@ -123,8 +131,8 @@ Browser → API (/api/reviews?t=1234567890)
 ```bash
 # Full deployment sequence
 cd /root/anaplakartweb
-npm run build
-pm2 restart anaplakartweb
+npm run build:clean
+pm2 restart anaplakartweb   # use the exact app name from: pm2 list
 pm2 logs anaplakartweb --lines 20
 ```
 
