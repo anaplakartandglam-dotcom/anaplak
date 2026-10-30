@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "party-makeup-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Party Makeup in Chennai, Maduravoyal | Professional Event Makeup from ₹10,000",
-    description: "Book professional party makeup in Chennai from ₹10,000. Long-lasting, photo-ready makeup for birthdays, anniversaries, cocktail parties, and special events at Anaplak Art and Glam, Maduravoyal.",
-    image: "/glamorous-party-makeup-evening-look-celebration.jpg",
+    title: "Party Makeup in Chennai from ₹10,000",
+    description: "Party makeup in Chennai from ₹10,000 for birthdays, anniversaries and special events. Long-lasting, photo-ready looks at Anaplak, Maduravoyal.",
+    image: "/images/services/party-makeup-chennai.jpg",
     slug,
 })
 

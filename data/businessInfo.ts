@@ -1,6 +1,6 @@
 export const businessInfo = {
-  name: "Anaplak Art And Glam Salon",
-  alternateName: "Anaplak Salon",
+  name: "Anaplak Art & Glam",
+  alternateName: "Anaplak Art And Glam Salon",
   url: "https://anaplakartandglamsalon.com",
   foundingDate: "2020",
   award: "Best Salon in Maduravoyal 2026",

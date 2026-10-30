@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "engagement-makeup-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Engagement Makeup in Chennai, Maduravoyal | HD Makeup Starting at ₹15,000",
-    description: "Book professional engagement makeup in Chennai, Maduravoyal from ₹15,000. HD makeup, hairstyling, and long-lasting beauty for engagement ceremonies and photoshoots at Anaplak Art and Glam, Maduravoyal.",
-    image: "/engagement-makeup-look-natural-glowing-beauty.webp",
+    title: "Engagement Makeup in Chennai",
+    description: "Engagement makeup in Chennai from ₹15,000 — HD makeup, hairstyling and long-lasting looks for your ring ceremony at Anaplak, Maduravoyal.",
+    image: "/images/services/engagement-makeup-chennai.webp",
     slug,
 })
 

@@ -28,13 +28,13 @@ export default function CircleSection() {
       {/* LEFT/RIGHT IMAGES — HIDDEN ON MOBILE */}
       <div className="absolute left-[2%] top-[18%] hidden lg:block">
         <div className="w-[260px] h-[260px] border border-white/10 rounded-full flex items-center justify-center">
-          <Image src="/circle_l-500x500.jpg" alt="" width={210} height={210} className="w-[210px] h-[210px] rounded-full object-cover" />
+          <Image src="/images/gallery/anaplak-salon-circular-left.jpg" alt="" width={210} height={210} className="w-[210px] h-[210px] rounded-full object-cover" />
         </div>
       </div>
 
       <div className="absolute right-[2%] top-[58%] hidden lg:block">
         <div className="w-[260px] h-[260px] border border-white/10 rounded-full flex items-center justify-center">
-          <Image src="/circle_r.jpg" alt="" width={210} height={210} className="w-[210px] h-[210px] rounded-full object-cover" />
+          <Image src="/images/gallery/anaplak-salon-circular-right.jpg" alt="" width={210} height={210} className="w-[210px] h-[210px] rounded-full object-cover" />
         </div>
       </div>
 
@@ -66,7 +66,7 @@ export default function CircleSection() {
           "
         >
           <Image
-            src="/newk.png"
+            src="/images/brand/anaplak-monogram-icon.png"
             alt=""
             fill
             sizes="(max-width: 768px) 150px, 380px"

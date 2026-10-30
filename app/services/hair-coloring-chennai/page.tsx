@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "hair-coloring-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Hair Colouring in Chennai, Maduravoyal | Highlights, Global Colour & More",
-    description: "Professional hair colouring in Chennai with highlights, global colour, fashion shades and ammonia-free options. Book your colour consultation at Anaplak Art and Glam, Maduravoyal from ₹1,800.",
-    image: "/hair-coloring.webp",
+    title: "Hair Colouring in Chennai from ₹1,800",
+    description: "Hair colouring in Chennai from ₹1,800 — highlights, global colour, balayage and ammonia-free options at Anaplak Art & Glam, Maduravoyal.",
+    image: "/images/services/hair-coloring-chennai.webp",
     slug,
 })
 

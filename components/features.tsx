@@ -7,12 +7,12 @@ import { businessInfo } from "@/data/businessInfo"
 
 export default function Features() {
   const items = [
-    { title: "", image: "/transformation-1.webp", alt: "Professional hair styling transformation at Anaplak salon" },
-    { title: "", image: "/transformation-2.webp", alt: "Bridal makeup and hair styling service" },
-    { title: "", image: "/transformation-3.webp", alt: "Expert haircut and styling result" },
-    { title: "", image: "/transformation-4.webp", alt: "Hair coloring and highlights transformation" },
-    { title: "", image: "/transformation-5.webp", alt: "Premium hair treatment results" },
-    { title: "", image: "/transformation-6.webp", alt: "Creative hairstyling and beauty transformation" },
+    { title: "", image: "/images/gallery/salon-hair-transformation-chennai-01.webp", alt: "Professional hair styling transformation at Anaplak salon" },
+    { title: "", image: "/images/gallery/bridal-makeup-transformation-chennai-02.webp", alt: "Bridal makeup and hair styling service" },
+    { title: "", image: "/images/gallery/haircut-transformation-chennai-03.webp", alt: "Expert haircut and styling result" },
+    { title: "", image: "/images/gallery/hair-coloring-transformation-chennai-04.webp", alt: "Hair coloring and highlights transformation" },
+    { title: "", image: "/images/gallery/hair-treatment-transformation-chennai-05.webp", alt: "Premium hair treatment results" },
+    { title: "", image: "/images/gallery/hairstyling-transformation-chennai-06.webp", alt: "Creative hairstyling and beauty transformation" },
   ]
 
   const breakpoints = {

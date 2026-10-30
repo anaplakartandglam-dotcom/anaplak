@@ -19,7 +19,7 @@ export const HOMEPAGE_FAQS: PaaFaq[] = [
   },
   {
     q: "Does keratin treatment stop frizzy hair?",
-    a: "Yes. Keratin coats the hair cuticle, seals the frizzy outer layer, and adds smoothness for roughly 3 to 6 months with proper care. At Anaplak, keratin treatment is available from ₹3,000 to ₹7,000 depending on hair length, plus Botox, Botoplex and Nano Plastia options for damaged or very frizzy hair.",
+    a: "Yes. Keratin coats the hair cuticle, seals the frizzy outer layer, and adds smoothness for roughly 3 to 6 months with proper care. At Anaplak, keratin treatment is available from ₹3,500 to ₹7,000 depending on hair length, plus Botox, Botoplex and Nano Plastia options for damaged or very frizzy hair.",
   },
   {
     q: "How much does bridal makeup cost in Chennai?",
@@ -47,7 +47,7 @@ export const PAA_BY_SERVICE: Record<string, PaaFaq[]> = {
     },
     {
       q: "Should I do my own bridal makeup?",
-      a: "A wedding look has to last through a 4–6 hour event, photography, humidity and touch-up cycles, which is hard to replicate at home. A professional bridal artist uses HD products, hairstyling and draping support (included in our bridal packages, with party makeup at ₹10,000 and bridesmaid looks at ₹7,000).",
+      a: "A wedding look has to last through a 4–6 hour event, photography, humidity and touch-up cycles, which is hard to replicate at home. A professional bridal artist uses HD products, hairstyling and a saree draping add-on at ₹2,000 (party makeup is ₹10,000 and bridesmaid looks start at ₹7,000).",
     },
     {
       q: "What is trending in bridal makeup now?",
@@ -75,7 +75,7 @@ export const PAA_BY_SERVICE: Record<string, PaaFaq[]> = {
     },
     {
       q: "What is the difference between party makeup and bridal makeup?",
-      a: "Party makeup is lighter, quicker (about 3 hours in-salon) and uses less coverage than a bridal look. Bridal packages add draping support, trial sessions and longer wear for the wedding day. Please contact the salon on 98400 88867 for event or group bookings.",
+      a: "Party makeup is lighter, quicker (about 3 hours in-salon) and uses less coverage than a bridal look. Bridal packages add saree draping (add-on ₹2,000), trial sessions and longer wear for the wedding day. Please contact the salon on 98400 88867 for event or group bookings.",
     },
   ],
   "fashion-editorial-makeup-chennai": [
@@ -117,7 +117,7 @@ export const PAA_BY_SERVICE: Record<string, PaaFaq[]> = {
     },
     {
       q: "Which is costly, keratin or smoothing?",
-      a: "At Anaplak, keratin treatment is ₹3,000 to ₹7,000 depending on hair length, Hair Botox and Botoplex are from ₹8,000, and Nano Plastia is from ₹9,000. There is no single 'costlier' option — final pricing depends on hair length and density, and is confirmed before the service.",
+      a: "At Anaplak, keratin treatment is ₹3,500 to ₹7,000 depending on hair length, Hair Botox and Botoplex are from ₹8,000, and Nano Plastia is from ₹9,000. There is no single 'costlier' option — final pricing depends on hair length and density, and is confirmed before the service.",
     },
     {
       q: "What happens after 3 months of keratin treatment?",
@@ -126,6 +126,24 @@ export const PAA_BY_SERVICE: Record<string, PaaFaq[]> = {
     {
       q: "Can I wash my hair after keratin treatment?",
       a: "Usually yes, but only after the waiting period recommended by the stylist — typically about 72 hours — and then only with sulfate-free, keratin-safe shampoo to make the treatment last.",
+    },
+  ],
+  "hair-botox-treatment-chennai": [
+    {
+      q: "Is hair botox better than keratin for damaged hair?",
+      a: "For damaged or over-processed hair, hair botox is usually the gentler first step because it repairs and conditions without straightening. Keratin is better once the hair has recovered and you want longer-lasting frizz control. Our stylists assess your hair and recommend one or a sequence of both.",
+    },
+    {
+      q: "Does hair botox cause hair fall?",
+      a: "Hair botox is a conditioning treatment and does not cause hair fall when applied correctly. If your scalp is sensitive or you have active hair fall, tell the stylist during consultation so the formula and application can be adjusted or postponed.",
+    },
+    {
+      q: "How often can I do hair botox?",
+      a: "Most clients repeat hair botox every 4 to 6 weeks, or whenever the hair starts feeling dry again. Spacing it out and using sulphate-free home care keeps the hair from becoming over-conditioned.",
+    },
+    {
+      q: "What is the difference between hair botox and botoplex?",
+      a: "Both are reparative conditioning treatments. Hair botox focuses on softness, shine and frizz reduction, while botoplex uses nano-molecular technology to strengthen and rebuild damaged hair. Your stylist will choose based on your hair's condition.",
     },
   ],
   "hair-coloring-chennai": [

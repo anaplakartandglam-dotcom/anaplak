@@ -43,7 +43,7 @@ const CATEGORY_META = [
 const services = CATEGORY_META.map((meta) => ({
   ...meta,
   items: servicePages
-    .filter((s) => s.category === meta.category)
+    .filter((s) => s.category === meta.category && !s.isSubpage)
     .map((s) => ({
       title: s.title,
       description: s.description,
@@ -88,7 +88,7 @@ export default function ServicesSection() {
             "name": "Hair, Beauty & Bridal Services in Chennai | Anaplak Art & Glam",
             "description": "Discover professional hair coloring, balayage, keratin treatments, hair smoothening, bridal makeup, facials, nail services, and beauty treatments at Anaplak Art & Glam in Chennai, Maduravoyal.",
             "url": `${businessInfo.url}/services`,
-            "itemListElement": servicePages.map((service, index) => ({
+            "itemListElement": servicePages.filter((s) => !s.isSubpage).map((service, index) => ({
               "@type": "Service",
               "position": index + 1,
               "name": service.title,
@@ -153,7 +153,7 @@ export default function ServicesSection() {
                     >
                       <div className="relative h-56 w-full overflow-hidden">
                         <Image
-                          src={service.image || "/placeholder.svg"}
+                          src={service.image || "/images/ui/placeholder.svg"}
                           alt={service.title}
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"

@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "hair-styling-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Hair Styling in Chennai, Maduravoyal | Professional Haircuts & Updos",
-    description: "Professional hair styling in Chennai for men and women. Haircuts, blow dry, bridal updos, and special occasion styling at Anaplak Art and Glam, Maduravoyal from ₹900.",
-    image: "/transformation-1.webp",
+    title: "Hair Styling & Haircuts in Chennai",
+    description: "Hair styling in Chennai for men and women — haircuts, blow dry, bridal updos and occasion styling from ₹900 at Anaplak, Maduravoyal.",
+    image: "/images/gallery/salon-hair-transformation-chennai-01.webp",
     slug,
 })
 

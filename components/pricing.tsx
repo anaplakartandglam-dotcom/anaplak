@@ -39,7 +39,7 @@ export default function Pricing() {
     },
   ]
 
-  const bg = "/price_bg.png"
+  const bg = "/images/ui/pricing-background.png"
 
   return (
     <section className="relative py-20 md:py-32 text-white overflow-hidden bg-[#0f0f0f]">

@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "manicure-pedicure-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Manicure & Pedicure in Chennai, Maduravoyal | Professional Nail Care",
-    description: "Professional manicure and pedicure services in Chennai. Relaxing nail care from ₹800 with gel polish, spa treatments, and signature experiences at Anaplak Art and Glam, Maduravoyal.",
-    image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.webp",
+    title: "Manicure & Pedicure in Chennai",
+    description: "Manicure and pedicure in Chennai from ₹800 — gel polish, spa treatments and signature nail care at Anaplak Art & Glam, Maduravoyal.",
+    image: "/images/services/manicure-pedicure-chennai.webp",
     slug,
 })
 

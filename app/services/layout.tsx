@@ -1,18 +1,18 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Hair, Beauty & Bridal Services in Chennai, Maduravoyal | Anaplak Art & Glam',
-    description: 'Discover professional hair coloring, balayage, keratin treatments, hair smoothening, bridal makeup, facials, nail services, and beauty treatments at Anaplak Art & Glam in Chennai, Maduravoyal.',
+    title: 'Salon Services in Chennai | Anaplak Art & Glam',
+    description: 'Hair colouring, keratin, bridal makeup, facials, nails and more at Anaplak Art & Glam, Maduravoyal, Chennai. Open daily 10AM–9PM. Book today.',
     openGraph: {
-        title: 'Hair, Beauty & Bridal Services in Chennai, Maduravoyal | Anaplak Art & Glam',
-        description: 'Professional hair coloring, keratin treatment, hair smoothening, bridal makeup packages, facials and beauty treatments by expert stylists using premium products. Book now.',
+        title: 'Salon Services in Chennai | Anaplak Art & Glam',
+        description: 'Hair colouring, keratin, bridal makeup, facials and nails at Anaplak Art & Glam, Maduravoyal, Chennai. Book your appointment today.',
         url: 'https://anaplakartandglamsalon.com/services',
-        siteName: 'Anaplak Art And Glam Salon',
+        siteName: 'Anaplak Art & Glam',
         type: 'website',
         locale: 'en_IN',
         images: [
             {
-                url: '/logo_updated.webp',
+                url: '/images/brand/anaplak-art-and-glam-logo.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Premium Hair Salon Services - Hair Coloring, Keratin Treatment & Bridal Makeup in Chennai, Maduravoyal',
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Premium Hair & Bridal Salon Services in Chennai, Maduravoyal | Anaplak Art & Glam',
-        description: 'Hair coloring and keratin, bridal makeup, facials and nail care. Book your appointment today.',
-        images: ['/logo_new.jpeg'],
+        title: 'Salon Services in Chennai | Anaplak Art & Glam',
+        description: 'Hair colouring, keratin, bridal makeup, facials and nail care at Anaplak Art & Glam, Maduravoyal. Book your appointment today.',
+        images: ['/images/brand/anaplak-art-and-glam-logo.webp'],
     },
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com/services',

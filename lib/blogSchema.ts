@@ -57,7 +57,7 @@ export function generateBlogSchema(blog: {
             "url": siteUrl,
             "logo": {
                 "@type": "ImageObject",
-                "url": `${siteUrl}/logo_updated.webp`
+                "url": `${siteUrl}/images/brand/anaplak-art-and-glam-logo.webp`
             }
         },
         "datePublished": blog.createdAt,

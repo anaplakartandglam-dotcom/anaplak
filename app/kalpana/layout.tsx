@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: "Kalpana - Beauty & Bridal Makeup Artist in Chennai, Maduravoyal | Anaplak Art & Glam",
-    description: "Meet Kalpana, Founder of Anaplak Art & Glam in Chennai, Maduravoyal. Known for bridal makeup artistry, hair transformations, and personalized beauty experiences, she leads one of Maduravoyal's trusted beauty destinations.",
+    title: "Kalpana — Bridal Makeup Artist in Chennai | Anaplak",
+    description: "Meet Kalpana, founder of Anaplak Art & Glam, Maduravoyal. Bridal makeup artistry, hair transformations and personalised beauty care in Chennai.'s trusted beauty destinations.",
     openGraph: {
-        title: 'Kalpana - Beauty & Bridal Makeup Artist in Chennai, Maduravoyal | Anaplak Art & Glam',
+        title: 'Kalpana — Bridal Makeup Artist in Chennai | Anaplak',
         description: 'Discover the artistry of Kalpana – the creative force behind Anaplak Salon. Expert bridal makeup artist and hair stylist based in Chennai, Maduravoyal.',
         url: 'https://anaplakartandglamsalon.com/kalpana',
         siteName: 'Anaplak Art And Glam Salon',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
         firstName: 'Kalpana',
         images: [
             {
-                url: '/logo_updated.webp',
+                url: '/images/brand/anaplak-art-and-glam-logo.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Kalpana - Founder of Anaplak Art And Glam Salon',
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kalpana - Beauty & Bridal Makeup Artist in Chennai, Maduravoyal | Anaplak Art & Glam',
+        title: 'Kalpana — Bridal Makeup Artist in Chennai | Anaplak',
         description: 'Meet Kalpana – the visionary makeup artist and founder behind Anaplak Art And Glam. Expert bridal makeup & hair styling in Chennai, Maduravoyal.',
-        images: ['/logo_new.jpeg'],
+        images: ['/images/brand/anaplak-art-and-glam-logo.jpeg'],
     },
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com/kalpana',

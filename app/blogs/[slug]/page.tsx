@@ -12,6 +12,9 @@ import { addHeadingIds, extractHeadings, extractCTA, stripCTA } from "@/lib/blog
 import { extractFAQs, generateBlogSchema, generateFAQSchema } from "@/lib/blogSchema"
 import { businessInfo, whatsappDeepLink } from "@/data/businessInfo"
 import TrackLink from "@/components/track-link"
+import AiSummaryBar from "@/components/ai-summary-bar"
+import PreferredSourceButton from "@/components/preferred-source-button"
+import { toHashtags } from "@/lib/hashtags"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -36,13 +39,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${blog.title} | Anaplak Art & Glam`,
+    title: `${blog.title}`,
     description: blog.description,
     alternates: {
       canonical: `${businessInfo.url}/blogs/${blog.id}`,
     },
     openGraph: {
-      title: `${blog.title} | Anaplak Art & Glam`,
+      title: `${blog.title}`,
       description: blog.description,
       type: "article",
       publishedTime: blog.createdAt,
@@ -58,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${blog.title} | Anaplak Art & Glam`,
+      title: `${blog.title}`,
       description: blog.description,
       images: [blog.image],
     },
@@ -164,6 +167,8 @@ export default async function BlogPage({ params }: Props) {
             <TableOfContents headings={headings} />
           </div>
 
+          <AiSummaryBar url={`${businessInfo.url}/blogs/${blog.id}`} />
+
           <div className="relative w-full h-[300px] md:h-[450px] mb-12 rounded-2xl overflow-hidden">
             <Image
               src={blog.image}
@@ -174,6 +179,32 @@ export default async function BlogPage({ params }: Props) {
               priority
             />
           </div>
+
+          {blog.tldr && blog.tldr.length > 0 && (
+            <section className="mb-12 rounded-2xl border border-[#F8C8DC]/30 bg-[#1B1B1B] p-6 md:p-8">
+              <h2 className="text-sm font-bold uppercase tracking-[0.25em] text-[#F8C8DC] mb-4">TL;DR</h2>
+              <ul className="space-y-2.5">
+                {blog.tldr.map((item, index) => (
+                  <li key={index} className="flex gap-3 text-sm md:text-base text-gray-300 leading-relaxed">
+                    <span aria-hidden="true" className="text-[#F8C8DC] mt-0.5">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 pt-5 border-t border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <p className="text-sm text-gray-400">Don&apos;t have time to read the full guide?</p>
+                <TrackLink
+                  kind="booking_click"
+                  href={businessInfo.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-[#F8C8DC] px-5 py-2.5 text-sm font-semibold text-black hover:bg-white transition-colors"
+                >
+                  Get a consultation
+                </TrackLink>
+              </div>
+            </section>
+          )}
 
           <div className="flex gap-12">
             <div className="min-w-0">
@@ -223,8 +254,8 @@ export default async function BlogPage({ params }: Props) {
             </aside>
           </div>
 
-          <div className="flex flex-wrap gap-2 mb-12">
-            {blog.tags.map((tag) => (
+          <div className="flex flex-wrap gap-2 mb-8">
+            {toHashtags([...blog.tags, ...blog.keywords], 10).map((tag) => (
               <span
                 key={tag}
                 className="bg-[#1B1B1B] border border-[#2A2A2A] text-gray-400 text-sm px-3 py-1 rounded-full"
@@ -232,6 +263,14 @@ export default async function BlogPage({ params }: Props) {
                 #{tag}
               </span>
             ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 rounded-2xl border border-white/10 bg-[#141414] p-4 md:p-5 mb-12">
+            <div className="flex-1">
+              <p className="text-sm font-semibold text-white">Like this guide?</p>
+              <p className="text-xs text-gray-400 mt-1">Add Anaplak as a preferred source on Google to see more of our guides.</p>
+            </div>
+            <PreferredSourceButton />
           </div>
 
           {categoryServiceLinks[blog.category] && (

@@ -4,26 +4,26 @@ import Footer from '@/components/footer';
 import GalleryShowcase from '@/components/gallery-showcase';
 
 export const metadata: Metadata = {
-    title: 'Bridal Makeup & Hair Styling Portfolio Gallery in Chennai, Maduravoyal | Anaplak Art & Glam',
-    description: 'Explore stunning bridal makeup, hair styling, hair coloring, and beauty transformation photos from Anaplak Salon - Chennai\'s premium beauty destination in Maduravoyal, MMDA Colony.',
+    title: 'Salon Makeup & Hair Gallery in Chennai | Anaplak',
+    description: 'Explore makeup, hair styling, hair colouring and beauty transformation photos from Anaplak Art & Glam Salon in Maduravoyal, Chennai.',
     openGraph: {
-        title: 'Bridal Makeup & Hair Styling Portfolio in Chennai, Maduravoyal | Anaplak Art & Glam',
-        description: 'Browse our stunning portfolio of bridal makeup, hair styling, and beauty transformations. See real client results from Chennai\'s top-rated premium salon.',
+        title: 'Salon Makeup & Hair Portfolio in Chennai | Anaplak',
+        description: 'Browse our portfolio of makeup, hair styling and beauty transformations from Chennai\'s premium salon.',
         url: 'https://anaplakartandglamsalon.com/gallery',
         type: 'website',
         images: [
             {
-                url: '/logo_updated.webp',
+                url: '/images/brand/anaplak-art-and-glam-logo.webp',
                 width: 1200,
                 height: 630,
-                alt: 'Anaplak Salon Gallery - Bridal Makeup and Hair Styling Portfolio'
+                alt: 'Anaplak Art & Glam salon portfolio'
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Bridal Makeup & Hair Styling Portfolio in Chennai, Maduravoyal | Anaplak Art & Glam',
-        description: 'Stunning bridal makeup and hair styling transformations from Chennai\'s premium salon',
+        title: 'Salon Makeup & Hair Portfolio in Chennai | Anaplak',
+        description: 'Makeup, hair styling and beauty transformations from Anaplak Art & Glam in Maduravoyal, Chennai',
     },
     alternates: {
         canonical: 'https://anaplakartandglamsalon.com/gallery',

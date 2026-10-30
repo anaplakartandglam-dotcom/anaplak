@@ -30,7 +30,7 @@ export default function VideoParallax() {
             overflow-hidden
             bg-fixed bg-cover bg-center
           "
-          style={{ backgroundImage: "url('/anaplak.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero/anaplak-salon-brand-poster.jpg')" }}
         >
 
           <div className="relative z-20 h-full flex flex-col items-center justify-center">

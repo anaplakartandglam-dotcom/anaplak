@@ -9,7 +9,7 @@ const slug = "hair-extension-chennai"
 export const metadata: Metadata = buildServiceMetadata({
     title: "Hair Extensions & Men's Bald Patch Coverage in Chennai | Anaplak",
     description: "Premium hair extensions and non-surgical men's bald patch coverage in Chennai. Tape, nano, clip-in extensions and custom hair patches from ₹20,000 at Anaplak Art and Glam, Maduravoyal.",
-    image: "/hair_extension.webp",
+    image: "/images/services/hair-extension-chennai.webp",
     slug,
 })
 

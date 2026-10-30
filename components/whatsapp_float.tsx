@@ -15,7 +15,7 @@ export default function WhatsAppFloat() {
             className="fixed bottom-[20px] right-[20px] sm:bottom-[30px] sm:right-[30px] z-[9999] cursor-pointer transition-transform duration-300 hover:scale-110 hover:[animation:none] animate-[wa-pulse_2s_infinite]"
         >
             <Image
-                src="/whatsapp_float.webp"
+                src="/images/brand/whatsapp-chat-icon.webp"
                 alt="WhatsApp"
                 width={60}
                 height={60}

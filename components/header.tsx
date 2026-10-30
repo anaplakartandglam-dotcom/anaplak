@@ -75,16 +75,16 @@ export default function Header() {
           {/* Social Icons */}
           <div className="flex items-center gap-4 md:gap-6 text-white">
             <a href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-              <Image src="/instagram.webp" alt="Instagram" width={18} height={18} className="w-[18px] h-[18px]" priority />
+              <Image src="/images/brand/instagram-icon.webp" alt="Instagram" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
             <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-              <Image src="/facebook.webp" alt="Facebook" width={18} height={18} className="w-[18px] h-[18px]" priority />
+              <Image src="/images/brand/facebook-icon.webp" alt="Facebook" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
             {/* <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-              <Image src="/whatsapp.webp" alt="WhatsApp" width={18} height={18} className="w-[18px] h-[18px]" priority />
+              <Image src="/images/brand/whatsapp-icon.webp" alt="WhatsApp" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a> */}
             <a href="https://www.youtube.com/@Anaplakartandglamsalon/" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-              <Image src="/youtube.webp" alt="YouTube" width={18} height={18} className="w-[18px] h-[18px]" priority />
+              <Image src="/images/brand/youtube-icon.webp" alt="YouTube" width={18} height={18} className="w-[18px] h-[18px]" priority />
             </a>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 md:gap-4" style={{ marginTop: '13px' }}>
             <div className="w-[160px] md:w-[200px] h-auto flex items-center justify-center mb-2 relative" style={{ height: '60px' }}>
               <Image
-                src="/logo_updated.webp"
+                src="/images/brand/anaplak-art-and-glam-logo.webp"
                 alt="Anaplak Art and Glam Salon"
                 fill
                 sizes="(max-width: 768px) 160px, 200px"
@@ -203,7 +203,7 @@ export default function Header() {
         {/* Mobile Logo */}
         <div className="w-[150px] h-auto mt-6 relative" style={{ height: '50px' }}>
           <Image
-            src="/logo_updated.webp"
+            src="/images/brand/anaplak-art-and-glam-logo.webp"
             alt="Anaplak Art and Glam Salon"
             fill
             sizes="150px"
@@ -245,16 +245,16 @@ export default function Header() {
         {/* Social Icons */}
         <div className="flex gap-6 text-white items-center justify-center">
           <a href="https://www.instagram.com/anaplak_art_and_glam_salon?igsh=MW9vcjV3cDl3dGFvZg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-            <Image src="/instagram.webp" alt="Instagram" width={24} height={24} className="w-[24px] h-[24px]" />
+            <Image src="/images/brand/instagram-icon.webp" alt="Instagram" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
           <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-            <Image src="/facebook.webp" alt="Facebook" width={24} height={24} className="w-[24px] h-[24px]" />
+            <Image src="/images/brand/facebook-icon.webp" alt="Facebook" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
           {/* <a href="https://wa.me/919840088867" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-            <Image src="/whatsapp.webp" alt="WhatsApp" width={24} height={24} className="w-[24px] h-[24px]" />
+            <Image src="/images/brand/whatsapp-icon.webp" alt="WhatsApp" width={24} height={24} className="w-[24px] h-[24px]" />
           </a> */}
           <a href="https://www.youtube.com/@Anaplakartandglamsalon/" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-            <Image src="/youtube.webp" alt="YouTube" width={24} height={24} className="w-[24px] h-[24px]" />
+            <Image src="/images/brand/youtube-icon.webp" alt="YouTube" width={24} height={24} className="w-[24px] h-[24px]" />
           </a>
         </div>
       </div>

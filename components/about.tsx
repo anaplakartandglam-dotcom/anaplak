@@ -88,7 +88,7 @@ export default function About() {
         >
           <div className="relative w-full h-[650px] md:h-[780px]">
             <Image
-              src="/make-up.webp"
+              src="/images/about/bridal-makeup-artist-at-work.webp"
               alt="Professional bridal makeup artist at Anaplak salon"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -133,7 +133,7 @@ export default function About() {
           <div className="relative w-full">
             <div className="relative w-full h-[480px] md:h-[580px]">
               <Image
-                src="/haircut.webp"
+                src="/images/about/hairstylist-haircut-salon.webp"
                 alt="Expert hairstylist creating elegant transformations"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -160,7 +160,7 @@ export default function About() {
    "
             >
               <Image
-                src="/newk.webp"
+                src="/images/brand/anaplak-monogram-icon.webp"
                 alt="Anaplak logo"
                 width={70}
                 height={70}

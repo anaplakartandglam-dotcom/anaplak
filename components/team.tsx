@@ -8,13 +8,13 @@ export default function Team() {
   const scrollRef = useRef<HTMLDivElement>(null)
 
   const team = [
-    { name: "Enzo Romano", role: "Stylist", level: "MASTER", rating: "4.6", img: "/team_02-360x500.jpg" },
-    { name: "Martina Greco", role: "Colorist", level: "SENIOR", rating: "4.7", img: "/team_03-360x500.jpg" },
-    { name: "Fabio Santoro", role: "Beauty Artist", level: "JUNIOR", rating: "4.4", img: "/team_04-360x500.jpg" },
-    { name: "Matteo Ricci", role: "Stylist", level: "MASTER", rating: "4.8", img: "/team_05-360x500.jpg" },
-    { name: "Alessandro Moretti", role: "Beauty Artist", level: "SENIOR", rating: "4.8", img: "/team_06-360x500.jpg" },
-    { name: "Bianca Corsini", role: "Stylist", level: "SENIOR", rating: "4.7", img: "/team_07-360x500.jpg" },
-    { name: "Enzo Romano", role: "Beauty Artist", level: "MASTER", rating: "4.8", img: "/team_08-360x500.jpg" },
+    { name: "Enzo Romano", role: "Stylist", level: "MASTER", rating: "4.6", img: "/images/team/anaplak-stylist-02.jpg" },
+    { name: "Martina Greco", role: "Colorist", level: "SENIOR", rating: "4.7", img: "/images/team/anaplak-stylist-03.jpg" },
+    { name: "Fabio Santoro", role: "Beauty Artist", level: "JUNIOR", rating: "4.4", img: "/images/team/anaplak-stylist-04.jpg" },
+    { name: "Matteo Ricci", role: "Stylist", level: "MASTER", rating: "4.8", img: "/images/team/anaplak-stylist-05.jpg" },
+    { name: "Alessandro Moretti", role: "Beauty Artist", level: "SENIOR", rating: "4.8", img: "/images/team/anaplak-stylist-06.jpg" },
+    { name: "Bianca Corsini", role: "Stylist", level: "SENIOR", rating: "4.7", img: "/images/team/anaplak-stylist-07.jpg" },
+    { name: "Enzo Romano", role: "Beauty Artist", level: "MASTER", rating: "4.8", img: "/images/team/anaplak-stylist-08.jpg" },
   ]
 
   const scroll = (dir: "left" | "right") => {

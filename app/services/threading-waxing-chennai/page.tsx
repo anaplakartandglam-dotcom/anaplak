@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "threading-waxing-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Threading & Waxing in Chennai, Maduravoyal | Professional Hair Removal",
-    description: "Professional threading and waxing services in Chennai. Eyebrow threading from ₹130, facial threading, body waxing, and full body hair removal at Anaplak Art and Glam, Maduravoyal.",
-    image: "/eyebrow-and-waxing.webp",
+    title: "Threading & Waxing in Chennai",
+    description: "Threading and waxing in Chennai — eyebrow threading from ₹130, facial threading, body waxing and full-body hair removal at Anaplak, Maduravoyal.",
+    image: "/images/services/eyebrow-threading-waxing-chennai.webp",
     slug,
 })
 

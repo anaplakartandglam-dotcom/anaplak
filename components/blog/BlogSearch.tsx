@@ -1,19 +1,24 @@
 "use client"
 
 import { useState } from "react"
+import { BlogSort, SORT_OPTIONS } from "@/lib/blogSort"
 
 interface BlogSearchProps {
   onSearch: (query: string) => void
   onCategoryFilter: (category: string | null) => void
   categories: string[]
   activeCategory: string | null
+  sortBy: BlogSort
+  onSortChange: (sort: BlogSort) => void
 }
 
 export default function BlogSearch({ 
   onSearch, 
   onCategoryFilter, 
   categories, 
-  activeCategory 
+  activeCategory,
+  sortBy,
+  onSortChange,
 }: BlogSearchProps) {
   const [searchValue, setSearchValue] = useState("")
 
@@ -53,32 +58,50 @@ export default function BlogSearch({
         </svg>
       </div>
 
-      <div className="flex flex-wrap gap-3">
-        <button
-          onClick={() => handleCategoryClick(null)}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-            activeCategory === null
-              ? "bg-[#F8C8DC] text-black"
-              : "bg-[#1B1B1B] text-gray-300 border border-[#2A2A2A] hover:border-[#F8C8DC]"
-          }`}
-          aria-pressed={activeCategory === null}
-        >
-          All Posts
-        </button>
-        {categories.map((category) => (
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-wrap gap-3">
           <button
-            key={category}
-            onClick={() => handleCategoryClick(category)}
+            onClick={() => handleCategoryClick(null)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-              activeCategory === category
+              activeCategory === null
                 ? "bg-[#F8C8DC] text-black"
                 : "bg-[#1B1B1B] text-gray-300 border border-[#2A2A2A] hover:border-[#F8C8DC]"
             }`}
-            aria-pressed={activeCategory === category}
+            aria-pressed={activeCategory === null}
           >
-            {category}
+            All Posts
           </button>
-        ))}
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => handleCategoryClick(category)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                activeCategory === category
+                  ? "bg-[#F8C8DC] text-black"
+                  : "bg-[#1B1B1B] text-gray-300 border border-[#2A2A2A] hover:border-[#F8C8DC]"
+              }`}
+              aria-pressed={activeCategory === category}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        <label className="flex items-center gap-2 text-sm text-gray-400">
+          <span className="whitespace-nowrap">Sort by</span>
+          <select
+            value={sortBy}
+            onChange={(e) => onSortChange(e.target.value as BlogSort)}
+            className="rounded-full border border-[#2A2A2A] bg-[#1B1B1B] px-4 py-2 text-sm text-white transition-colors focus:border-[#F8C8DC] focus:outline-none"
+            aria-label="Sort blog posts"
+          >
+            {SORT_OPTIONS.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
     </div>
   )

@@ -31,7 +31,7 @@ const faqs = [
     { q: "What makes Anaplak the best salon in Chennai for bridal makeup?", a: "Every bridal service is overseen by Kalpana, our Founder and Creative Director with 6+ years of industry experience. We provide personalized consultations, trial sessions, HD and air brush makeup, hairstyling and saree draping all under one roof." },
     { q: "Is Anaplak the best beauty parlour in Chennai for skin and hair?", a: "Yes. We are a full service beauty salon offering professional hair styling, colour, keratin smoothing, facials, manicure, pedicure, threading, waxing, nail extensions and bridal packages. Our team of specialists ensures consistent quality across every service." },
     { q: "Which is the best men's salon in Chennai for grooming?", a: "Our men's styling includes precision haircuts from Rs 900, beard trim, beard design, executive shave and hair colour services. We are rated as one of the best men's hair salons in Chennai by clients across Maduravoyal, Anna Nagar, Koyambedu and Ambattur." },
-    { q: "Do you offer keratin treatment at your Chennai salon?", a: "Yes, we are one of the best salons for keratin treatment in Chennai. We offer keratin, smoothing, botox, nano plastia and perming treatments starting from Rs 7,000 with customized plans based on your hair type and goals." },
+    { q: "Do you offer keratin treatment at your Chennai salon?", a: "Yes, we are one of the best salons for keratin treatment in Chennai. Keratin and perming start at Rs 3,500 for a partial head and Rs 7,000 for a full head, hair botox and botoplex are Rs 8,000, and nano plastia starts at Rs 9,000." },
     { q: "What are your salon business hours?", a: "We are open Monday to Sunday from 10:00 AM to 9:00 PM. Walk-ins are welcome but appointments are recommended especially during weekends and wedding seasons." },
     { q: "Which areas do you serve as the best salon in Chennai?", a: "Our salon is located in Maduravoyal, MMDA Colony. We serve clients from Arumbakkam (2 km), Koyambedu (2 km), Virugambakkam (3 km), Mogappair (3 km), Anna Nagar (4 km), Ambattur (7 km) and across Chennai." },
     { q: "How do I book an appointment at the best hair salon in Chennai?", a: "You can book by calling +91 98400 88867, sending a WhatsApp message, or using the quick booking form on this page. We also accept walk-in appointments based on availability." },
@@ -49,10 +49,10 @@ const topServices = [
 ]
 
 // const instagramReels = [
-//     { title: "Bridal Makeup Transformation", src: "/bridal/reels-1.mp4", thumb: "/blogs/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg" },
-//     { title: "Hair Colouring Results", src: "/hair/reels-1.mp4", thumb: "/hair-coloring.webp" },
-//     { title: "Keratin Treatment", src: "/hair/reels-2.mp4", thumb: "/professional-hair-styling-salon-treatment-luxury.webp" },
-//     { title: "Engement Makeup Look", src: "/makeup/reels-1.mp4", thumb: "/glamorous-party-makeup-evening-look-celebration.jpg" },
+//     { title: "Bridal Makeup Transformation", src: "/bridal/reels-1.mp4", thumb: "/images/blog/bridal-makeup-hairstyling-chennai.jpg" },
+//     { title: "Hair Colouring Results", src: "/hair/reels-1.mp4", thumb: "/images/services/hair-coloring-chennai.webp" },
+//     { title: "Keratin Treatment", src: "/hair/reels-2.mp4", thumb: "/images/services/hair-treatment-chennai.webp" },
+//     { title: "Engement Makeup Look", src: "/makeup/reels-1.mp4", thumb: "/images/services/party-makeup-chennai.jpg" },
 // ]
 
 export default function BestSalonPage() {
@@ -83,7 +83,7 @@ export default function BestSalonPage() {
                 {/* Hero Section with Form */}
                 <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
                     <div className="absolute inset-0 z-0">
-                        <Image src="/elegant-modern-barbershop-interior-with-warm-light.jpg" alt="Best Salon in Chennai" fill sizes="100vw" className="object-cover opacity-30" priority />
+                        <Image src="/images/services/mens-salon-barbershop-chennai.jpg" alt="Best Salon in Chennai" fill sizes="100vw" className="object-cover opacity-30" priority />
                         <div className="absolute inset-0 bg-linear-to-r from-black via-black/60 to-black/60" />
                     </div>
                     <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

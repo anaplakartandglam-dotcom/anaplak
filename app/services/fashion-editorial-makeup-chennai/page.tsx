@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "fashion-editorial-makeup-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Fashion Makeup Artist in Chennai, Maduravoyal | Editorial & Photoshoot Makeup",
-    description: "Professional fashion and editorial makeup in Chennai for photoshoots, campaigns, runway shows, and creative projects. Consultation-based pricing at Anaplak Art and Glam, Maduravoyal.",
-    image: "/professional-makeup-artist-beauty-glamour-studio.webp",
+    title: "Fashion & Editorial Makeup Chennai",
+    description: "Fashion and editorial makeup in Chennai for photoshoots, campaigns and runway shows. Consultation-based pricing at Anaplak, Maduravoyal.",
+    image: "/images/services/fashion-editorial-makeup-studio-chennai.webp",
     slug,
 })
 
@@ -30,7 +30,10 @@ export default function Page() {
                     { q: "Do you provide runway makeup?", a: "Yes. Runway makeup services can be customized according to the designer's vision and event requirements." },
                     { q: "How early should I book?", a: "For commercial shoots and fashion projects, advance booking is recommended to ensure availability and allow time for creative planning." },
                 ],
-                testimonials: [],
+                testimonials: [
+                    { text: "I absolutely loved all three looks she created for me! Each look was exactly what I had envisioned and suited every occasion perfectly. Thank you for bringing my ideas to life so flawlessly. Highly recommended!", name: "Anisha Kamal", service: "Party Makeup" },
+                    { text: "Stylist Kalpana did an excellent job with my haircut. She understood exactly what I wanted and delivered it perfectly. Very professional and friendly service.", name: "Aravindhan V", service: "Haircut" },
+                ],
             }}
         />
     )

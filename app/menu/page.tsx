@@ -398,7 +398,7 @@ export default function PricingPage() {
                             <div className="w-full md:w-1/2">
                                 <div className="relative w-full aspect-[4/3] overflow-hidden border border-white/10">
                                     <Image
-                                        src="/men_hair_stylist.jpg"
+                                        src="/images/services/mens-hair-styling-chennai.jpg"
                                         alt="Men hair styling"
                                         fill
                                         sizes="(max-width: 768px) 100vw, 40vw"
@@ -434,7 +434,7 @@ export default function PricingPage() {
                             <div className="w-full md:w-1/2 md:order-1">
                                 <div className="relative w-full aspect-[4/3] overflow-hidden border border-white/10">
                                     <Image
-                                        src="/women_hair_stylist.jpg"
+                                        src="/images/services/womens-hair-styling-chennai.jpg"
                                         alt="Women hair styling"
                                         fill
                                         sizes="(max-width: 768px) 100vw, 40vw"
@@ -508,15 +508,6 @@ export default function PricingPage() {
                                         </tbody>
                                     </table>
                                 </div>
-                                {/* <div className="relative w-full h-48 overflow-hidden border border-white/10">
-                                    <Image
-                                        src="/hair_coloring.png"
-                                        alt="Hair coloring"
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, 60vw"
-                                        className="object-cover"
-                                    />
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -621,7 +612,7 @@ export default function PricingPage() {
                 >
                     <div className="absolute inset-0 z-0 opacity-15">
                         <Image
-                            src="/bridal_bg.png"
+                            src="/images/hero/bridal-makeup-menu-banner.png"
                             alt=""
                             fill
                             sizes="100vw"
@@ -860,7 +851,7 @@ export default function PricingPage() {
                 <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
                     <div className="relative w-full h-52 md:h-64 overflow-hidden border border-white/10 mb-12">
                         <Image
-                            src="/nail_styling.jpg"
+                            src="/images/services/nail-styling-chennai.jpg"
                             alt="Nail styling"
                             fill
                             sizes="(max-width: 768px) 100vw, 80vw"

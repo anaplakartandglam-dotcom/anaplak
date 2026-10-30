@@ -81,7 +81,7 @@ export default function KalpanaPage() {
                                     }}
                                 >
                                     <Image
-                                        src="/aboutus2.webp"
+                                        src="/images/about/anaplak-salon-team.webp"
                                         alt="Kalpana - Founder of Anaplak Art And Glam"
                                         width={900}
                                         height={1100}

@@ -9,38 +9,37 @@ import PageHeader from '@/components/page-header';
 interface GalleryImage {
     src: string;
     alt: string;
-    category: string;
 }
 
 const galleryImages: GalleryImage[] = [
-    { src: '/gal1.webp', alt: 'Bridal Makeup - Glamorous Look', category: 'Bridal Makeup' },
-    { src: '/gal2.webp', alt: 'Bridal Transformation - Complete Look', category: 'Bridal Makeup' },
-    { src: '/gal3.webp', alt: 'Bridal Makeup - Elegant Style', category: 'Bridal Makeup' },
-    { src: '/gal4.webp', alt: 'Bridal Hairstyling - Traditional Style', category: 'Bridal Hair' },
-    { src: '/gal5.webp', alt: 'Bridal Makeup - Radiant Look', category: 'Bridal Makeup' },
-    { src: '/gal6.webp', alt: 'Bridal Makeup - Classic Beauty', category: 'Bridal Makeup' },
-    { src: '/gal7.webp', alt: 'Bridal Makeup - Stunning Transformation', category: 'Bridal Makeup' },
-    { src: '/gal8.webp', alt: 'Bridal Makeup - Premium Style', category: 'Bridal Makeup' },
-    { src: '/gal9.webp', alt: 'Bridal Makeup - Sophisticated Look', category: 'Bridal Makeup' },
-    { src: '/gal10.webp', alt: 'Bridal Makeup - Gorgeous Style', category: 'Bridal Makeup' },
-    { src: '/gal11.webp', alt: 'Bridal Makeup - Beautiful Transformation', category: 'Bridal Makeup' },
-    { src: '/gal12.webp', alt: 'Bridal Hairstyling - Elegant Design', category: 'Bridal Hair' },
-    { src: '/gal13.webp', alt: 'Bridal Makeup - Flawless Look', category: 'Bridal Makeup' },
-    { src: '/gal14.webp', alt: 'Bridal Hairstyling - Modern Style', category: 'Bridal Hair' },
-    { src: '/gal15.webp', alt: 'Bridal Makeup - Exquisite Beauty', category: 'Bridal Makeup' },
-    { src: '/gal16.webp', alt: 'Bridal Makeup - Graceful Look', category: 'Bridal Makeup' },
-    { src: '/gal17.webp', alt: 'Bridal Hairstyling - Stunning Design', category: 'Bridal Hair' },
-    { src: '/gal18.webp', alt: 'Bridal Hairstyling - Perfect Finish', category: 'Bridal Hair' },
-    { src: '/gal19.webp', alt: 'Bridal Makeup - Timeless Elegance', category: 'Bridal Makeup' },
-    { src: '/gal20.webp', alt: 'Bridal Hairstyling - Luxurious Style', category: 'Bridal Hair' },
-    { src: '/gal21.webp', alt: 'Bridal Makeup - Radiant Glow', category: 'Bridal Makeup' },
-    { src: '/gal22.webp', alt: 'Bridal Makeup - Captivating Look', category: 'Bridal Makeup' },
-    { src: '/gal23.webp', alt: 'Bridal Hairstyling - Classic Updo', category: 'Bridal Hair' },
-    { src: '/gal24.webp', alt: 'Bridal Makeup - Enchanting Beauty', category: 'Bridal Makeup' },
-    { src: '/gal25.webp', alt: 'Bridal Makeup - Divine Look', category: 'Bridal Makeup' },
-    { src: '/gal26.webp', alt: 'Bridal Hairstyling - Regal Style', category: 'Bridal Hair' },
-    { src: '/gal27.webp', alt: 'Bridal Makeup - Mesmerizing Transformation', category: 'Bridal Makeup' },
-    { src: '/gal28.webp', alt: 'Bridal Hairstyling - Graceful Design', category: 'Bridal Hair' },
+    { src: '/images/gallery/bridal-makeup-chennai-01.webp', alt: 'Anaplak Art & Glam salon portfolio image 01' },
+    { src: '/images/gallery/bridal-makeup-chennai-02.webp', alt: 'Anaplak Art & Glam salon portfolio image 02' },
+    { src: '/images/gallery/bridal-makeup-chennai-03.webp', alt: 'Anaplak Art & Glam salon portfolio image 03' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-04.webp', alt: 'Anaplak Art & Glam salon portfolio image 04' },
+    { src: '/images/gallery/bridal-makeup-chennai-05.webp', alt: 'Anaplak Art & Glam salon portfolio image 05' },
+    { src: '/images/gallery/bridal-makeup-chennai-06.webp', alt: 'Anaplak Art & Glam salon portfolio image 06' },
+    { src: '/images/gallery/bridal-makeup-chennai-07.webp', alt: 'Anaplak Art & Glam salon portfolio image 07' },
+    { src: '/images/gallery/bridal-makeup-chennai-08.webp', alt: 'Anaplak Art & Glam salon portfolio image 08' },
+    { src: '/images/gallery/bridal-makeup-chennai-09.webp', alt: 'Anaplak Art & Glam salon portfolio image 09' },
+    { src: '/images/gallery/bridal-makeup-chennai-10.webp', alt: 'Anaplak Art & Glam salon portfolio image 10' },
+    { src: '/images/gallery/bridal-makeup-chennai-11.webp', alt: 'Anaplak Art & Glam salon portfolio image 11' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-12.webp', alt: 'Anaplak Art & Glam salon portfolio image 12' },
+    { src: '/images/gallery/bridal-makeup-chennai-13.webp', alt: 'Anaplak Art & Glam salon portfolio image 13' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-14.webp', alt: 'Anaplak Art & Glam salon portfolio image 14' },
+    { src: '/images/gallery/bridal-makeup-chennai-15.webp', alt: 'Anaplak Art & Glam salon portfolio image 15' },
+    { src: '/images/gallery/bridal-makeup-chennai-16.webp', alt: 'Anaplak Art & Glam salon portfolio image 16' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-17.webp', alt: 'Anaplak Art & Glam salon portfolio image 17' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-18.webp', alt: 'Anaplak Art & Glam salon portfolio image 18' },
+    { src: '/images/gallery/bridal-makeup-chennai-19.webp', alt: 'Anaplak Art & Glam salon portfolio image 19' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-20.webp', alt: 'Anaplak Art & Glam salon portfolio image 20' },
+    { src: '/images/gallery/bridal-makeup-chennai-21.webp', alt: 'Anaplak Art & Glam salon portfolio image 21' },
+    { src: '/images/gallery/bridal-makeup-chennai-22.webp', alt: 'Anaplak Art & Glam salon portfolio image 22' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-23.webp', alt: 'Anaplak Art & Glam salon portfolio image 23' },
+    { src: '/images/gallery/bridal-makeup-chennai-24.webp', alt: 'Anaplak Art & Glam salon portfolio image 24' },
+    { src: '/images/gallery/bridal-makeup-chennai-25.webp', alt: 'Anaplak Art & Glam salon portfolio image 25' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-26.webp', alt: 'Anaplak Art & Glam salon portfolio image 26' },
+    { src: '/images/gallery/bridal-makeup-chennai-27.webp', alt: 'Anaplak Art & Glam salon portfolio image 27' },
+    { src: '/images/gallery/bridal-hairstyling-chennai-28.webp', alt: 'Anaplak Art & Glam salon portfolio image 28' },
 ];
 
 export default function GalleryShowcase() {
@@ -85,7 +84,7 @@ export default function GalleryShowcase() {
                 label="Our Gallery"
                 title="Our"
                 titleAccent="Gallery"
-                description="Explore our stunning portfolio of bridal makeup, hair styling, and beauty transformations"
+                description="Explore our portfolio of makeup, hair styling, and beauty transformations"
             />
 
             {/* Gallery Grid - No Filter Section */}
@@ -118,12 +117,7 @@ export default function GalleryShowcase() {
                                 />
 
                                 {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                                        <p className="font-semibold text-lg mb-1">{image.alt}</p>
-                                        <p className="text-sm text-gray-200">{image.category}</p>
-                                    </div>
-
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                         <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
                                             <ZoomIn size={32} className="text-white" />
@@ -209,11 +203,8 @@ export default function GalleryShowcase() {
                         {/* Image Info */}
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                             <div className="container mx-auto">
-                                <h3 className="text-xl md:text-2xl font-bold mb-2">
-                                    {galleryImages[selectedImage].alt}
-                                </h3>
                                 <p className="text-gray-300">
-                                    {galleryImages[selectedImage].category} • {selectedImage + 1} of {galleryImages.length}
+                                    {selectedImage + 1} of {galleryImages.length}
                                 </p>
                             </div>
                         </div>

@@ -4,7 +4,8 @@ import { servicePages } from '@/data/serviceData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://anaplakartandglamsalon.com'
-    const currentDate = new Date()
+    const lastUpdated = new Date('2026-10-01')
+    const currentDate = lastUpdated
 
     const staticPages: MetadataRoute.Sitemap = [
         {

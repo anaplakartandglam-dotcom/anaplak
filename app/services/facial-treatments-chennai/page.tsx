@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "facial-treatments-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Facial Treatments in Chennai, Maduravoyal | Glowing Skin from ₹2,000",
-    description: "Professional facial treatments in Chennai from ₹2,000. Deep cleansing, hydration, brightening and advanced facials for healthy, glowing skin at Anaplak Art and Glam, Maduravoyal.",
-    image: "/luxury-facial-treatment-spa-skincare-relaxation.webp",
+    title: "Facials in Chennai from ₹2,000",
+    description: "Facials in Chennai from ₹2,000 — deep cleansing, hydration, brightening and advanced treatments at Anaplak Art & Glam, Maduravoyal.",
+    image: "/images/services/facial-treatment-spa-chennai.webp",
     slug,
 })
 

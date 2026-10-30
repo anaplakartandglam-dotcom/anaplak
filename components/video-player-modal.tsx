@@ -90,7 +90,7 @@ export default function VideoPlayerModal({
           {!isPlaying && (
             <>
               <Image
-                src="/video_parralax.jpg"
+                src="/images/hero/anaplak-salon-video-thumbnail.jpg"
                 fill
                 sizes="(max-width: 420px) 100vw, 420px"
                 className="object-cover opacity-80"

@@ -20,22 +20,22 @@ export default function HeroSlider() {
     {
       line1: "PREMIUM SALON",
       line2: "BEAUTY EXPERTS",
-      image: "/SLIDE_01.webp",
+      image: "/images/hero/premium-salon-beauty-experts-chennai.webp",
     },
     {
       line1: "BRIDAL MAKEUP",
       line2: "GLAM STUDIO",
-      image: "/SLIDE_02.webp",
+      image: "/images/hero/bridal-makeup-glam-studio-chennai.webp",
     },
     {
       line1: "STYLE DESIGN",
       line2: "HAIR ARTISTS",
-      image: "/SLIDE_03.webp",
+      image: "/images/hero/hair-styling-artists-chennai.webp",
     },
     {
       line1: "SKIN CARE",
       line2: "BEAUTY BAR",
-      image: "/SLIDE_04.webp",
+      image: "/images/hero/skin-care-beauty-bar-chennai.webp",
     },
   ]
 

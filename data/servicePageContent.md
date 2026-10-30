@@ -1,5 +1,7 @@
 # SEO Metadata
 
+> **Price note:** `app/menu/page.tsx` is the only source of truth for pricing. Some prices in this legacy draft may be outdated. Never copy a price from this file into a live page or blog without checking the menu.
+
 ## SEO Title
 
 Bridal Makeup in Chennai | Flawless Wedding Looks from ₹15,000

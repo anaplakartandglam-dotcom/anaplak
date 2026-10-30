@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "anti-aging-treatments-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Anti-Aging Treatments in Chennai, Maduravoyal | Youthful, Radiant Skin",
+    title: "Anti-Aging Treatments in Chennai",
     description: "Advanced anti-aging treatments in Chennai for youthful, radiant skin. Rejuvenate and revitalize with professional skincare at Anaplak Art and Glam, Maduravoyal.",
-    image: "/anti-aging-skincare-treatment-youthful-glowing-ski.webp",
+    image: "/images/services/anti-aging-treatment-chennai.webp",
     slug,
 })
 

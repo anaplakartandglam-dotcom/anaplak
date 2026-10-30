@@ -1,14 +1,14 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Luxury Hair, Beauty & Bridal Salon in Chennai, Maduravoyal | Anaplak Art & Glam',
+    title: 'About Anaplak Art & Glam Salon, Maduravoyal, Chennai',
 
     description:
         'Learn about Anaplak Art & Glam, a trusted beauty destination in Chennai, Maduravoyal. Discover our passion for hair styling, bridal makeup, skincare, nail services, and personalized beauty experiences.',
 
     openGraph: {
         title:
-            'Luxury Hair, Beauty & Bridal Salon in Chennai, Maduravoyal | Anaplak Art & Glam',
+            'About Anaplak Art & Glam Salon, Maduravoyal, Chennai',
 
         description:
             'Discover the story behind Anaplak Art & Glam, a premium salon in Chennai, Maduravoyal, offering professional hair, beauty, skincare, nail, and bridal services.',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
         images: [
             {
-                url: '/logo_updated.webp',
+                url: '/images/brand/anaplak-art-and-glam-logo.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Anaplak Art & Glam - Luxury Hair, Beauty & Bridal Salon in Chennai, Maduravoyal',
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title:
-            'Luxury Hair, Beauty & Bridal Salon in Chennai, Maduravoyal | Anaplak Art & Glam',
+            'About Anaplak Art & Glam Salon, Maduravoyal, Chennai',
 
         description:
             'Explore our journey, expert beauty services, bridal makeup, hair styling, skincare, and nail treatments in Chennai, Maduravoyal.',
 
-        images: ['/logo_updated.webp'],
+        images: ['/images/brand/anaplak-art-and-glam-logo.webp'],
     },
 
     alternates: {

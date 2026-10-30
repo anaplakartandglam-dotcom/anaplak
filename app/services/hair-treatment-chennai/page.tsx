@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "hair-treatment-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Hair Texture Treatments in Chennai, Maduravoyal | Keratin, Smoothing & More",
-    description: "Professional keratin, smoothing, botox, nano plastia, perming, hair spa and bond strengthening treatments in Chennai, Maduravoyal. Get smoother, healthier, manageable hair at Anaplak Art and Glam, Maduravoyal from ₹3,000.",
-    image: "/professional-hair-styling-salon-treatment-luxury.webp",
+    title: "Hair Botox, Keratin & Smoothing Chennai",
+    description: "Keratin, smoothing, hair botox, perming and hair spa treatments in Maduravoyal, Chennai. Healthier, smoother hair from ₹3,000. Book today.",
+    image: "/images/services/hair-treatment-chennai.webp",
     slug,
 })
 
@@ -47,12 +47,13 @@ export default function Page() {
                         <h3 className="text-lg font-bold text-[#F8C8DC] mb-4 text-center">Texture & Smoothing Treatments</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
                             {[
-                                { title: "Keratin Treatment", price: "from ₹7,000", duration: "2 to 3 hours", text: "Reduces frizz, improves shine and strength with long-lasting smoothness." },
-                                { title: "Hair Smoothing", price: "from ₹7,000", duration: "2 to 3 hours", text: "Controls frizz and creates a sleeker, more manageable texture." },
-                                { title: "Hair Botox", price: "from ₹7,000", duration: "2 to 3 hours", text: "Deep conditioning treatment to repair and nourish damaged hair." },
-                                { title: "Nano Plastia", price: "from ₹9,000", duration: "3 to 4 hours", text: "Advanced smoothing with long-lasting results and formaldehyde-free formula." },
-                                { title: "Perming", price: "from ₹3,500", duration: "2 to 3 hours", text: "Adds curls, texture, and volume for a completely new look." },
-                                { title: "Botoplex", price: "from ₹8,000", duration: "2 to 3 hours", text: "Repairs and strengthens damaged hair using nano-molecular technology." },
+                                { title: "Keratin (Partial)", price: "from ₹3,500", duration: "2 to 3 hours", text: "Reduces frizz and improves shine." },
+                                { title: "Keratin (Full Head)", price: "from ₹7,000", duration: "2 to 3 hours", text: "Longer-lasting smoothness for the full head." },
+                                { title: "Perming (Partial)", price: "from ₹3,500", duration: "2 to 3 hours", text: "Adds curls and texture to part of the hair." },
+                                { title: "Perming (Full Head)", price: "from ₹7,000", duration: "2 to 3 hours", text: "Fuller curls and volume." },
+                                { title: "Hair Botox", price: "₹8,000", duration: "2 to 3 hours", text: "Deep conditioning repair for damaged hair." },
+                                { title: "Botoplex", price: "₹8,000", duration: "2 to 3 hours", text: "Repairs and strengthens damaged hair." },
+                                { title: "Nano Plastia", price: "from ₹9,000", duration: "3 to 4 hours", text: "Advanced smoothing with long-lasting results." },
                             ].map((item, i) => (
                                 <div key={i} className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-xl p-5">
                                     <p className="text-[#F8C8DC] text-xs uppercase tracking-wider font-bold mb-1">{item.title}</p>
@@ -68,10 +69,10 @@ export default function Page() {
                         <h3 className="text-lg font-bold text-[#F8C8DC] mb-4 text-center">Hair Care & Spa Treatments</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
                             {[
-                                { title: "Hair Spa", price: "from ₹3,000", duration: "30 to 45 min", text: "Deep conditioning and nourishment for dry, damaged, and dull hair." },
+                                { title: "Classic Hair Spa", price: "₹3,000", duration: "30 to 45 min", text: "Deep conditioning and nourishment for dry, damaged, and dull hair." },
                                 { title: "Dandruff Treatment", price: "from ₹4,000", duration: "45 min to 1 hour", text: "Soothes the scalp, controls flaking, and restores scalp health." },
                                 { title: "Bond Strengthening", price: "from ₹5,000", duration: "Varies", text: "Repairs internal hair bonds to restore strength and reduce breakage." },
-                                { title: "Hair Dryness Spa", price: "from ₹4,000", duration: "45 min to 1 hour", text: "Intensive moisture therapy for dry, frizzy, and lifeless hair." },
+                                { title: "Shea / 3TENX Hair Spa", price: "from ₹4,000", duration: "45 min to 1 hour", text: "Intensive moisture therapy for dry, frizzy, and lifeless hair." },
                             ].map((item, i) => (
                                 <div key={i} className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-xl p-5">
                                     <p className="text-[#F8C8DC] text-xs uppercase tracking-wider font-bold mb-1">{item.title}</p>

@@ -1,17 +1,17 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Beauty Tips, Hair Care & Bridal Makeup Blogs in Chennai, Maduravoyal | Anaplak Art & Glam",
+  title: "Beauty, Hair & Bridal Blog | Anaplak Art & Glam Chennai",
 
   description:
-    "Discover expert beauty tips, hair care guides, skincare advice, bridal makeup trends, and salon insights from Anaplak Art & Glam in Chennai, Maduravoyal. Stay updated with the latest beauty trends and professional recommendations.",
+    "Expert beauty tips, hair care guides, skincare advice and bridal makeup trends from Anaplak Art & Glam, Maduravoyal, Chennai. Read and book today.",
 
   openGraph: {
     title:
-      "Beauty Tips, Hair Care & Bridal Makeup Blogs in Chennai, Maduravoyal | Anaplak Art & Glam",
+      "Beauty, Hair & Bridal Blog | Anaplak Art & Glam Chennai",
 
     description:
-      "Explore expert beauty advice, skincare tips, hair care guides, bridal makeup trends, and professional salon insights from Chennai beauty experts.",
+      "Beauty tips, skincare advice, hair care guides and bridal makeup trends from Anaplak Art & Glam, Chennai.",
 
     url: "https://anaplakartandglamsalon.com/blogs",
     siteName: "Anaplak Art & Glam",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/logo_updated.webp",
+        url: "/images/brand/anaplak-art-and-glam-logo.webp",
         width: 1200,
         height: 630,
         alt: "Beauty Tips, Hair Care & Bridal Makeup Blog - Anaplak Art & Glam",
@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Beauty Tips, Hair Care & Bridal Makeup Blogs in Chennai, Maduravoyal | Anaplak Art & Glam",
+      "Beauty, Hair & Bridal Blog | Anaplak Art & Glam Chennai",
 
     description:
-      "Expert beauty tips, skincare advice, hair care guides, bridal makeup trends, and salon insights from Chennai beauty professionals.",
+      "Beauty tips, skincare advice, hair care guides and bridal makeup trends from Anaplak Art & Glam, Chennai.",
 
-    images: ["/logo_updated.webp"],
+    images: ["/images/brand/anaplak-art-and-glam-logo.webp"],
   },
 
   alternates: {

@@ -204,7 +204,7 @@ export default function AboutPage() {
                                     }}
                                 >
                                     <Image
-                                        src="/aboutus.webp"
+                                        src="/images/about/anaplak-salon-interior.webp"
                                         alt="Professional Hair Styling"
                                         width={900}
                                         height={1100}
@@ -261,7 +261,7 @@ export default function AboutPage() {
                                         }}
                                     >
                                         <Image
-                                            src="/aboutus2.webp"
+                                            src="/images/about/anaplak-salon-team.webp"
                                             alt="Beauty Specialist"
                                             width={900}
                                             height={1100}
@@ -379,7 +379,7 @@ export default function AboutPage() {
                         }}
                     >
                         <Image
-                            src="/video_parralax.jpg"
+                            src="/images/hero/anaplak-salon-video-thumbnail.jpg"
                             alt="Video tour of Anaplak Art and Glam Salon"
                             fill
                             sizes="100vw"
@@ -434,7 +434,7 @@ export default function AboutPage() {
                                 <div className="lg:col-span-4 flex justify-center">
                                     <div className="relative w-[450px] h-[450px] rounded-full overflow-hidden">
                                         <Image
-                                            src="/aboutus2.webp"
+                                            src="/images/about/anaplak-salon-team.webp"
                                             alt="Professional Barber"
                                             fill
                                             sizes="450px"
@@ -556,7 +556,7 @@ export default function AboutPage() {
                                 {/* Right - Image */}
                                 <div className="relative">
                                     <Image
-                                        src="/faq_img-1.webp"
+                                        src="/images/about/anaplak-salon-faq.webp"
                                         alt="Professional Salon Tools"
                                         width={600}
                                         height={600}

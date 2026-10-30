@@ -86,14 +86,83 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: '/favicon/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
     ]
   },
 
   async redirects() {
     return [
       {
+        source: '/logo_updated.webp',
+        destination: '/images/brand/anaplak-art-and-glam-logo.webp',
+        permanent: true,
+      },
+      {
+        source: '/logo_new.jpeg',
+        destination: '/images/brand/anaplak-art-and-glam-logo.jpeg',
+        permanent: true,
+      },
+      {
         source: '/pricing',
         destination: '/menu',
+        permanent: true,
+      },
+      {
+        source: '/services/hair-styling',
+        destination: '/services/hair-styling-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/hair-coloring',
+        destination: '/services/hair-coloring-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/hair-treatment',
+        destination: '/services/hair-treatment-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/hair-extension',
+        destination: '/services/hair-extension-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/facial-treatments',
+        destination: '/services/facial-treatments-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/manicure-pedicure',
+        destination: '/services/manicure-pedicure-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/nail-art-extension',
+        destination: '/services/nail-art-extension-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/party-makeup',
+        destination: '/services/party-makeup-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/engagement-makeup',
+        destination: '/services/engagement-makeup-chennai',
+        permanent: true,
+      },
+      {
+        source: '/services/complete-bridal-package',
+        destination: '/services/bridal-makeup-chennai',
         permanent: true,
       },
     ]

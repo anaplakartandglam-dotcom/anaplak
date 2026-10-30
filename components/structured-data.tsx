@@ -6,7 +6,7 @@ export default function StructuredData() {
         "@context": "https://schema.org",
         "@type": "BeautySalon",
         "name": businessInfo.name,
-        "image": `${businessInfo.url}/logo_updated.webp`,
+        "image": `${businessInfo.url}/images/brand/anaplak-art-and-glam-logo.webp`,
         "@id": businessInfo.url,
         "url": businessInfo.url,
         "telephone": businessInfo.phone.primary,
@@ -88,7 +88,7 @@ export default function StructuredData() {
         "name": businessInfo.name,
         "alternateName": businessInfo.alternateName,
         "url": businessInfo.url,
-        "logo": `${businessInfo.url}/logo_updated.webp`,
+        "logo": `${businessInfo.url}/images/brand/anaplak-art-and-glam-logo.webp`,
         "description": businessInfo.description,
         "email": businessInfo.email,
         "contactPoint": {
@@ -106,6 +106,7 @@ export default function StructuredData() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": businessInfo.name,
+        "alternateName": businessInfo.alternateName,
         "url": businessInfo.url
     }
 

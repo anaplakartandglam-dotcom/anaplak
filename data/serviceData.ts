@@ -9,6 +9,9 @@ export interface ServicePageData {
     process: string[]
     deliverables: string
     keywords?: string[]
+    parent?: string
+    isSubpage?: boolean
+    updatedAt?: string
 }
 
 export const servicePages: ServicePageData[] = [
@@ -16,13 +19,13 @@ export const servicePages: ServicePageData[] = [
         slug: "bridal-makeup-chennai",
         category: "Bridal",
         title: "Bridal Makeup",
-        description: "Book professional bridal makeup in Chennai from ₹15,000. HD makeup, hairstyling, draping, trial sessions, and expert bridal beauty planning at Anaplak Art and Glam, Maduravoyal.",
-        image: "/elegant-bride-makeup.jpg",
+        description: "Book professional bridal makeup in Chennai from ₹15,000. HD makeup, hairstyling, trial sessions, saree draping add-on (₹2,000) and expert bridal beauty planning at Anaplak Art and Glam, Maduravoyal.",
+        image: "/images/services/bridal-makeup-chennai.jpg",
         details: "Your wedding photographs will stay with you for a lifetime. The right bridal makeup doesn't just enhance your appearance, it helps you feel confident and radiant throughout every ceremony, photo session, and celebration. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, we provide complete bridal beauty services designed around your unique style, wedding attire, skin tone, and event schedule.",
         benefits: [
             "Personalized bridal consultation and trial session",
             "Professional HD, glossy, and air brush makeup options",
-            "Hairstyling and saree draping assistance",
+            "Hairstyling, with saree draping available as an add-on (₹2,000)",
             "Premium long-lasting beauty products",
             "Complimentary anniversary makeup session",
             "Touch-up kit for confidence all day",
@@ -31,9 +34,9 @@ export const servicePages: ServicePageData[] = [
             "8 weeks before ,  Book your bridal package and schedule a trial session",
             "4-6 weeks before ,  Attend your trial and finalize makeup, hairstyle, and draping",
             "1 week before ,  Complete facial treatments and skincare routine",
-            "Wedding day ,  Flawless makeup application, hairstyling, draping, and final touch-ups",
+            "Wedding day ,  Flawless makeup application, hairstyling, saree draping add-on, and final touch-ups",
         ],
-        deliverables: "Bridal makeup, hair styling, draping assistance, touch-up kit, and photography-ready finish with complimentary anniversary makeup session",
+        deliverables: "Bridal makeup, hair styling, saree draping add-on (₹2,000), touch-up kit, and photography-ready finish with complimentary anniversary makeup session",
         keywords: ["bridal makeup artist chennai", "best bridal makeup artist in chennai", "bridal makeup chennai", "bridal makeup in chennai", "chennai bridal makeup", "groom makeup chennai", "wedding hairstyling", "bridal hairstyles", "bridal makeup price", "hd makeup chennai", "bridal makeup Maduravoyal", "bridal beauty package", "complete bridal makeup", "wedding day makeup"],
     },
     {
@@ -41,7 +44,7 @@ export const servicePages: ServicePageData[] = [
         category: "Bridal",
         title: "Engagement Makeup",
         description: "Book professional engagement makeup in Chennai from ₹15,000. HD makeup, hairstyling, and long-lasting beauty for engagement ceremonies and photoshoots at Anaplak Art and Glam, Maduravoyal.",
-        image: "/engagement-makeup-look-natural-glowing-beauty.webp",
+        image: "/images/services/engagement-makeup-chennai.webp",
         details: "Your engagement ceremony marks the beginning of an exciting new chapter. It is one of the most photographed events before the wedding, making professional makeup an essential part of your preparation. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, our engagement makeup service uses HD techniques and long-lasting products to create a look that appears flawless both in person and in photographs.",
         benefits: [
             "HD makeup for flawless photos and long-lasting wear",
@@ -64,7 +67,7 @@ export const servicePages: ServicePageData[] = [
         category: "Hair",
         title: "Hair Styling",
         description: "Professional hair styling in Chennai for men and women. Haircuts, blow dry, bridal updos, and special occasion styling at Anaplak Art and Glam, Maduravoyal from ₹900.",
-        image: "/hair-styling.jpg",
+        image: "/images/services/hair-styling-chennai.jpg",
         details: "Your hairstyle plays a major role in your overall appearance. Whether you're preparing for an important event, attending a wedding, updating your everyday look, or simply maintaining your personal style, professional hair styling helps you look polished and confident. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, our hairstylists create customized looks based on your face shape, hair texture, lifestyle, and personal preferences.",
         benefits: [
             "Precision haircuts for men and women by experienced stylists",
@@ -87,16 +90,17 @@ export const servicePages: ServicePageData[] = [
         category: "Hair",
         title: "Hair Texture Treatments",
         description: "Professional keratin, smoothing, botox, nano plastia, perming, hair spa and bond strengthening treatments in Chennai. Get smoother, healthier, manageable hair at Anaplak Art and Glam, Maduravoyal from ₹3,000.",
-        image: "/hair-treatment.jpg",
+        image: "/images/services/hair-treatment-salon-chennai.jpg",
         details: "Frizzy, difficult-to-manage hair can add unnecessary time to your daily routine. Advanced texture treatments help reduce frizz, improve smoothness, and make hair easier to style while maintaining a healthier appearance. At Anaplak Art and Glam Salon, we offer a complete range of professional hair treatments including keratin, smoothing, perming, botox, nano plastia, botoplex, hair spa, dandruff treatment, and bond strengthening — all customized according to your hair condition and desired results.",
         benefits: [
-            "Keratin treatment — Reduces frizz, improves shine and strength — from ₹7,000",
-            "Hair smoothing — Controls frizz and creates a sleeker, manageable texture — from ₹7,000",
-            "Hair botox — Deep conditioning treatment to repair and nourish damaged hair — from ₹7,000",
+            "Keratin (partial) — Reduces frizz and improves shine — from ₹3,500",
+            "Keratin (full head) — Longer-lasting smoothness — from ₹7,000",
+            "Hair botox — Deep conditioning repair for damaged hair — ₹8,000",
             "Nano plastia — Advanced smoothing with long-lasting results — from ₹9,000",
-            "Perming — Adds curls, texture, and volume — from ₹3,500",
+            "Perming (partial) — Adds curls and texture — from ₹3,500",
+            "Perming (full head) — Fuller curls and volume — from ₹7,000",
             "Botoplex — Repairs and strengthens damaged hair — from ₹8,000",
-            "Hair spa — Deep nourishment for dry and damaged hair — from ₹3,000",
+            "Classic hair spa — Deep nourishment for dry hair — from ₹3,000",
             "Dandruff treatment — Soothes the scalp and controls flaking — from ₹4,000",
             "Bond strengthening treatment — Repairs internal bonds for stronger, healthier hair — from ₹5,000",
         ],
@@ -110,11 +114,38 @@ export const servicePages: ServicePageData[] = [
         keywords: ["keratin treatment chennai", "hair smoothing chennai", "hair botox chennai", "best keratin treatment in chennai", "hair smoothening cost chennai", "best hair smoothening in chennai", "perming hair cost in chennai", "nano plastia chennai", "hair straightening chennai", "keratin treatment Maduravoyal", "hair smoothening", "hair botox treatment", "permanent hair straightening"],
     },
     {
+        slug: "hair-botox-treatment-chennai",
+        category: "Hair",
+        title: "Hair Botox Treatment",
+        description: "Hair botox treatment in Chennai from ₹8,000. Deep-conditioning repair for dry, damaged and frizzy hair at Anaplak Art & Glam, Maduravoyal.",
+        image: "/images/services/hair-treatment-chennai.jpg",
+        details: "Hair botox is a deep-conditioning treatment that fills the gaps in damaged hair with proteins, amino acids and conditioning agents, leaving it smoother, fuller and easier to manage. Unlike keratin or smoothening, it does not straighten the hair or change its structure — it restores softness, shine and strength to hair that feels dry, brittle or over-processed. At Anaplak Art and Glam Salon in Maduravoyal, Chennai, every hair botox treatment starts with a hair and scalp analysis so the formula and intensity suit your hair type, porosity and level of damage.",
+        benefits: [
+            "Deep repair for dry, brittle and over-processed hair",
+            "Reduces frizz and adds visible shine without straightening",
+            "Improves softness, manageability and comb-through",
+            "Safe option after colouring, bleaching or heat damage",
+            "Customised formula based on hair porosity and damage level",
+            "Professional aftercare plan to extend results",
+        ],
+        process: [
+            "Hair and scalp analysis — assess porosity, damage and previous treatments",
+            "Consultation — choose the right hair botox intensity and aftercare",
+            "Application — section-by-section application of the conditioning treatment",
+            "Seal and finish — rinse, blow dry and style with a home-care plan",
+        ],
+        deliverables: "A complete hair botox treatment with a personalised aftercare routine, recommended product list and a maintenance schedule for results lasting 4 to 6 weeks",
+        keywords: ["hair botox chennai", "hair botox treatment chennai", "hair botox near me", "hair botox cost chennai", "hair botox Maduravoyal", "deep conditioning treatment chennai", "damaged hair repair chennai", "frizzy hair treatment chennai", "hair botox vs keratin", "hair botox after colour"],
+        parent: "hair-treatment-chennai",
+        isSubpage: true,
+        updatedAt: "29 October 2026",
+    },
+    {
         slug: "hair-coloring-chennai",
         category: "Hair",
         title: "Hair Colouring",
         description: "Professional hair colouring in Chennai with highlights, global colour, fashion and creative shades and ammonia-free options. Book your colour consultation at Anaplak Art and Glam, Maduravoyal from ₹1,800.",
-        image: "/hair-coloring.jpg",
+        image: "/images/services/hair-coloring-chennai.jpg",
         details: "Hair colour is one of the most effective ways to refresh your appearance, express your personality, or completely reinvent your look. Whether you're covering greys, adding dimension with highlights, or experimenting with bold fashion shades, professional colour services help achieve beautiful, long-lasting results while maintaining hair health. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, our experienced colour specialists create customized colour solutions based on your hair type, skin tone, lifestyle, and desired outcome.",
         benefits: [
             "Root touch-up and global colour ,  grey coverage and full colour transformation",
@@ -138,7 +169,7 @@ export const servicePages: ServicePageData[] = [
         category: "Hair",
         title: "Hair Extensions",
         description: "Get longer, fuller hair instantly with premium hair extensions in Chennai. Tape, nano and clip-in extensions professionally applied at Anaplak Art and Glam, Maduravoyal from ₹20,000.",
-        image: "/hair-extension.jpg",
+        image: "/images/services/hair-extension-chennai.jpg",
         details: "Waiting months for your hair to grow isn't the only option. Hair extensions offer an immediate way to achieve longer, fuller, and more voluminous hair while maintaining a natural appearance. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, we offer premium hair extension services designed to blend seamlessly with your natural hair. Whether you're preparing for a wedding, special event, photoshoot, or simply want more volume and length, our specialists help you achieve beautiful, confidence-boosting results. We also provide non-surgical men's bald patch coverage with custom-fitted hair patches for targeted thinning or bald areas.",
         benefits: [
             "Tape hair extensions ,  Lightweight, comfortable, and seamless blending from ₹30,000",
@@ -162,7 +193,7 @@ export const servicePages: ServicePageData[] = [
         category: "Makeup",
         title: "Party Makeup",
         description: "Book professional party makeup in Chennai from ₹10,000. Long-lasting, photo-ready makeup for birthdays, anniversaries, cocktail parties, and special events at Anaplak Art and Glam, Maduravoyal.",
-        image: "/party-makeup.jpg",
+        image: "/images/services/party-makeup-salon-chennai.jpg",
         details: "Every special occasion deserves a look that makes you feel confident, elegant, and camera-ready. Whether you're attending a birthday celebration, anniversary party, engagement function, cocktail event, or corporate gathering, professional makeup helps you look polished throughout the event. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, our party makeup services are designed to complement your outfit, event type, and personal style using professional products and expert techniques.",
         benefits: [
             "Personalized consultation based on your event and outfit",
@@ -185,7 +216,7 @@ export const servicePages: ServicePageData[] = [
         category: "Makeup",
         title: "Fashion & Editorial Makeup",
         description: "Professional fashion and editorial makeup in Chennai for photoshoots, campaigns, runway shows, and creative projects. Consultation-based pricing at Anaplak Art and Glam, Maduravoyal.",
-        image: "/fashion-editorial-makeup.jpg",
+        image: "/images/services/fashion-editorial-makeup-chennai.jpg",
         details: "Fashion and editorial makeup is where creativity meets technical expertise. Every photoshoot, campaign, runway show, and creative project requires makeup that performs under professional lighting, high-resolution photography, and artistic direction. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, we provide professional fashion and editorial makeup services tailored to photographers, designers, models, brands, influencers, and creative teams.",
         benefits: [
             "Fashion editorial makeup ,  trend-driven looks designed for fashion shoots",
@@ -208,7 +239,7 @@ export const servicePages: ServicePageData[] = [
         category: "Skin",
         title: "Facial Treatments",
         description: "Professional facial treatments in Chennai from ₹2,000. Deep cleansing, hydration, brightening and advanced facials for healthy, glowing skin at Anaplak Art and Glam, Maduravoyal.",
-        image: "/facial-treatments.jpg",
+        image: "/images/services/facial-treatments-chennai.jpg",
         details: "Healthy skin doesn't happen by accident. Daily exposure to pollution, sun damage, stress, and lifestyle factors can leave skin looking dull, tired, and dehydrated. Professional facial treatments help restore balance, improve skin appearance, and support long-term skin health. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, our facial treatments are customized according to your skin type, concerns, and beauty goals.",
         benefits: [
             "Classic Cleanup ,  Regular skin maintenance and deep cleansing from ₹2,000",
@@ -234,7 +265,7 @@ export const servicePages: ServicePageData[] = [
         category: "Skin",
         title: "Anti-Aging Treatments",
         description: "Advanced anti-aging treatments in Chennai for youthful, radiant skin. Rejuvenate and revitalize with professional skincare at Anaplak Art and Glam, Maduravoyal.",
-        image: "/anti-aging-skincare-treatment-youthful-glowing-ski.webp",
+        image: "/images/services/anti-aging-treatment-chennai.webp",
         details: "Combat signs of aging with our specialized treatments that target fine lines, wrinkles, and loss of elasticity. We use clinically-proven ingredients and techniques for visible results at Anaplak Art and Glam Salon, Chennai, Maduravoyal.",
         benefits: [
             "Collagen-boosting treatments",
@@ -257,7 +288,7 @@ export const servicePages: ServicePageData[] = [
         category: "Salon",
         title: "Manicure & Pedicure",
         description: "Professional manicure and pedicure services in Chennai. Relaxing nail care from ₹800 with gel polish, spa treatments, and signature experiences at Anaplak Art and Glam, Maduravoyal.",
-        image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.webp",
+        image: "/images/services/manicure-pedicure-chennai.webp",
         details: "Indulge in our luxurious manicure and pedicure services. We use premium products and techniques to give you beautiful, healthy nails while providing a relaxing beauty experience at Anaplak Art and Glam Salon, Chennai, Maduravoyal.",
         benefits: [
             "Nail health improvement and cuticle care",
@@ -280,7 +311,7 @@ export const servicePages: ServicePageData[] = [
         category: "Salon",
         title: "Threading & Waxing",
         description: "Professional threading and waxing services in Chennai. Eyebrow threading from ₹130, facial threading, body waxing, and full body hair removal at Anaplak Art and Glam, Maduravoyal.",
-        image: "/threading-waxing.jpg",
+        image: "/images/services/threading-waxing-chennai.jpg",
         details: "Professional hair removal helps maintain smooth skin, enhance grooming, and create a polished appearance. Whether you're looking for eyebrow shaping, facial threading, body waxing, or full-body hair removal, professional services deliver cleaner and more precise results than at-home alternatives. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, we offer professional threading and waxing services performed by experienced beauty professionals.",
         benefits: [
             "Eyebrow threading for precise shaping and definition from ₹130",
@@ -303,7 +334,7 @@ export const servicePages: ServicePageData[] = [
         category: "Salon",
         title: "Nail Art & Extension",
         description: "Professional nail art and nail extensions in Chennai. Gel polish from ₹1,000, gel, acrylic, poly gel extensions, bridal nail art, French nails, chrome, ombre and more at Anaplak Art and Glam, Maduravoyal.",
-        image: "/nails-2.webp",
+        image: "/images/services/nail-art-extension-chennai.webp",
         details: "Beautiful nails are more than a finishing touch, they're a reflection of your personal style. Whether you prefer elegant everyday designs, bold statement nails, bridal nail art, or long-lasting extensions, professional nail services help create polished, eye-catching results. At Anaplak Art and Glam Salon in Chennai, Maduravoyal, we offer a complete range of nail art and nail extension services designed to suit every occasion and personality.",
         benefits: [
             "Gel extensions and soft gel extensions from ₹2,500",

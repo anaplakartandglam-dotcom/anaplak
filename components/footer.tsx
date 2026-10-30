@@ -6,6 +6,7 @@ import { MapPin, Phone } from "lucide-react"
 import { businessInfo, whatsappDeepLink } from "@/data/businessInfo"
 import { servicePages } from "@/data/serviceData"
 import TrackLink from "@/components/track-link"
+import PreferredSourceButton from "@/components/preferred-source-button"
 
 export default function Footer() {
   const words = ["Hair", "Style", "Makeup"]
@@ -30,7 +31,7 @@ export default function Footer() {
       className="relative isolate bg-cover bg-center bg-no-repeat pt-16 md:pt-20 pb-10 md:pb-12"
     >
       <Image
-        src="/footer_bg.jpg"
+        src="/images/ui/footer-background.jpg"
         alt=""
         fill
         sizes="100vw"
@@ -46,7 +47,7 @@ export default function Footer() {
         {/* MOBILE LOGO */}
         <div className="w-[200px] h-auto overflow-hidden flex items-center justify-center mb-6 mt-2 relative" style={{ height: '70px' }}>
           <Image
-            src="/logo_updated.webp"
+            src="/images/brand/anaplak-art-and-glam-logo.webp"
             alt="Anaplak Art And Glam Salon"
             fill
             sizes="200px"
@@ -105,16 +106,16 @@ export default function Footer() {
         {/* SOCIAL (MOBILE) */}
         <div className="flex gap-10 text-[#D2B6B6] mt-2 mb-6">
           <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-            <Image src="/facebook.webp" alt="Facebook" width={28} height={28} className="w-[28px] h-[28px]" />
+            <Image src="/images/brand/facebook-icon.webp" alt="Facebook" width={28} height={28} className="w-[28px] h-[28px]" />
           </a>
           <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-            <Image src="/instagram.webp" alt="Instagram" width={28} height={28} className="w-[28px] h-[28px]" />
+            <Image src="/images/brand/instagram-icon.webp" alt="Instagram" width={28} height={28} className="w-[28px] h-[28px]" />
           </a>
           <TrackLink kind="whatsapp_click" href={whatsappDeepLink()} target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-            <Image src="/whatsapp.webp" alt="WhatsApp" width={28} height={28} className="w-[28px] h-[28px]" />
+            <Image src="/images/brand/whatsapp-icon.webp" alt="WhatsApp" width={28} height={28} className="w-[28px] h-[28px]" />
           </TrackLink>
           <a href={businessInfo.socials.youtube} target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-            <Image src="/youtube.webp" alt="YouTube" width={28} height={28} className="w-[28px] h-[28px]" />
+            <Image src="/images/brand/youtube-icon.webp" alt="YouTube" width={28} height={28} className="w-[28px] h-[28px]" />
           </a>
         </div>
       </div>
@@ -128,7 +129,7 @@ export default function Footer() {
         <div className="flex md:block items-center md:items-start">
           <div className="w-[280px] h-auto overflow-hidden flex items-center relative" style={{ height: '90px' }}>
             <Image
-              src="/logo_updated.webp"
+              src="/images/brand/anaplak-art-and-glam-logo.webp"
               alt="Anaplak Art And Glam Salon"
               fill
               sizes="(max-width: 768px) 200px, 280px"
@@ -227,16 +228,16 @@ export default function Footer() {
             {/* SOCIAL */}
             <div className="flex gap-4 pt-1 text-[#F8C8DC]">
               <a href="https://www.facebook.com/anaplakartandglam" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                <Image src="/facebook.webp" alt="Facebook" width={20} height={20} className="w-[20px] h-[20px]" />
+                <Image src="/images/brand/facebook-icon.webp" alt="Facebook" width={20} height={20} className="w-[20px] h-[20px]" />
               </a>
               <a href="https://www.instagram.com/anaplak_art_and_glam_salon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                <Image src="/instagram.webp" alt="Instagram" width={20} height={20} className="w-[20px] h-[20px]" />
+                <Image src="/images/brand/instagram-icon.webp" alt="Instagram" width={20} height={20} className="w-[20px] h-[20px]" />
               </a>
               <TrackLink kind="whatsapp_click" href={whatsappDeepLink()} target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-                <Image src="/whatsapp.webp" alt="WhatsApp" width={20} height={20} className="w-[20px] h-[20px]" />
+                <Image src="/images/brand/whatsapp-icon.webp" alt="WhatsApp" width={20} height={20} className="w-[20px] h-[20px]" />
               </TrackLink>
               <a href={businessInfo.socials.youtube} target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-                <Image src="/youtube.webp" alt="YouTube" width={22} height={22} className="w-[22px] h-[22px]" />
+                <Image src="/images/brand/youtube-icon.webp" alt="YouTube" width={22} height={22} className="w-[22px] h-[22px]" />
               </a>
             </div>
 
@@ -250,7 +251,7 @@ export default function Footer() {
           Our Services
         </p>
         <ul className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3 text-[13px] md:text-[14px] uppercase tracking-[0.14em] text-white/80">
-          {servicePages.map((service) => (
+          {servicePages.filter((service) => !service.isSubpage).map((service) => (
             <li key={service.slug}>
               <a href={`/services/${service.slug}`} className="hover:text-[#F8C8DC] transition">
                 {service.title} +
@@ -263,6 +264,11 @@ export default function Footer() {
             </a>
           </li>
         </ul>
+      </div>
+
+      {/* PREFERRED SOURCE */}
+      <div className="max-w-[1350px] mx-auto px-6 lg:px-10 mt-10 flex justify-center">
+        <PreferredSourceButton />
       </div>
 
       {/* COPYRIGHT */}

@@ -5,11 +5,14 @@ import Script from "next/script"
 import { MapPin } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { getRelatedServices, ServicePageData } from "@/data/serviceData"
+import { getRelatedServices, getServiceBySlug, ServicePageData } from "@/data/serviceData"
 import { businessInfo, mapsEmbedSrc, whatsappDeepLink } from "@/data/businessInfo"
 import { PAA_BY_SERVICE } from "@/data/paaData"
 import { NEARBY_LOCATIONS } from "@/data/nearbyLocations"
 import TrackLink from "@/components/track-link"
+import BlogCard from "@/components/blog/BlogCard"
+import { getBlogsForService } from "@/data/blogData"
+import { toHashtags } from "@/lib/hashtags"
 
 export interface ServiceDetailMeta {
     title: string
@@ -64,10 +67,20 @@ const defaultTestimonials = [
     { text: "The ambiance was very relaxing and premium, and the service was excellent from start to finish. I took a dandruff treatment and I'm fully satisfied with the results and the way they handled everything professionally.", name: "Manesh D", service: "Hair Treatment" },
 ]
 
+const simpleServiceHashtags: Record<string, string[]> = {
+    Bridal: ["bridal", "bridal makeup", "wedding makeup"],
+    Makeup: ["makeup", "party makeup", "bridal makeup"],
+    Hair: ["hair care", "hair styling", "hair treatment"],
+    Skin: ["skincare", "skin care", "facial"],
+    Salon: ["salon", "beauty", "beauty salon"],
+}
+
 export default function ServiceDetailPage({ data, customSection }: { data: ServiceDetailData; customSection?: React.ReactNode }) {
     const relatedServices = getRelatedServices(data.slug, 3)
+    const relatedBlogs = getBlogsForService(data.slug, 3)
+    const serviceHashtags = toHashtags([...(simpleServiceHashtags[data.category] ?? []), ...(data.keywords ?? [])], 10)
     const p = data.pricing
-    const testimonials = data.testimonials ?? defaultTestimonials
+    const testimonials = data.testimonials && data.testimonials.length > 0 ? data.testimonials : defaultTestimonials
 
     const allFaqs = [...data.faqs, ...(PAA_BY_SERVICE[data.slug] ?? [])]
 
@@ -87,7 +100,7 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
             name: businessInfo.name,
             url: businessInfo.url,
             telephone: businessInfo.phone.primary,
-            image: `${businessInfo.url}/logo_updated.webp`,
+            image: `${businessInfo.url}/images/brand/anaplak-art-and-glam-logo.webp`,
             "@id": `${businessInfo.url}#organization`,
         },
         areaServed: { "@type": "City", name: "Chennai" },
@@ -113,14 +126,23 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
         })),
     }
 
+    const parentService = data.parent ? getServiceBySlug(data.parent) : undefined
+    const breadcrumbs = [
+        { name: "Home", url: businessInfo.url },
+        { name: "Services", url: `${businessInfo.url}/services` },
+        ...(parentService ? [{ name: parentService.title, url: `${businessInfo.url}/services/${parentService.slug}` }] : []),
+        { name: data.title, url: serviceUrl },
+    ]
+
     const breadcrumbSchema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: businessInfo.url },
-            { "@type": "ListItem", position: 2, name: "Services", item: `${businessInfo.url}/services` },
-            { "@type": "ListItem", position: 3, name: data.title, item: serviceUrl },
-        ],
+        itemListElement: breadcrumbs.map((b, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: b.name,
+            item: b.url,
+        })),
     }
 
     return (
@@ -138,12 +160,19 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent"></div>
                 </div>
                 <nav className="absolute top-14 left-6 sm:left-10 z-10" aria-label="Breadcrumb">
-                    <ol className="flex items-center gap-2 text-sm text-gray-400">
-                        <li><Link href="/" className="hover:text-[#F8C8DC] transition">Home</Link></li>
-                        <li>/</li>
-                        <li><Link href="/services" className="hover:text-[#F8C8DC] transition">Services</Link></li>
-                        <li>/</li>
-                        <li className="text-[#F8C8DC]">{data.title}</li>
+                    <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-400">
+                        {breadcrumbs.map((b, i) => (
+                            <li key={b.url} className="flex items-center gap-2">
+                                {i > 0 && <span aria-hidden="true">/</span>}
+                                {i === breadcrumbs.length - 1 ? (
+                                    <span className="text-[#F8C8DC]">{b.name}</span>
+                                ) : (
+                                    <Link href={i === 0 ? "/" : i === 1 ? "/services" : `/services/${parentService?.slug}`} className="hover:text-[#F8C8DC] transition">
+                                        {b.name}
+                                    </Link>
+                                )}
+                            </li>
+                        ))}
                     </ol>
                 </nav>
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 mt-15">
@@ -156,6 +185,9 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                     <p className="text-gray-300 text-base md:text-lg mb-6 leading-relaxed text-center">
                         {data.description} {p.duration ? `Typically takes ${p.duration}.` : ""} Starting at <strong className="text-[#F8C8DC]">{p.startingAt}</strong>. Available at Anaplak Art and Glam Salon in Chennai, Maduravoyal.
                     </p>
+                    {data.updatedAt && (
+                        <p className="text-xs text-gray-500 text-center mb-4">Last updated: {data.updatedAt}</p>
+                    )}
                     <div className="flex flex-col justify-center items-center sm:flex-row gap-4">
                         <TrackLink kind="booking_click" href={businessInfo.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F8C8DC] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 hover:scale-105">
                             {data.heroCta}
@@ -295,7 +327,7 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
             <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
                 <div className="bg-[#1B1B1B] border border-[#2A2A2A] rounded-2xl p-6 md:p-10 flex flex-col md:flex-row gap-8 items-center">
                     <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#F8C8DC]/30">
-                        <Image src="/aboutus2.webp" alt="Kalpana, Founder" fill sizes="128px" className="object-cover object-top" />
+                        <Image src="/images/about/anaplak-salon-team.webp" alt="Kalpana, Founder" fill sizes="128px" className="object-cover object-top" />
                     </div>
                     <div className="text-center md:text-left">
                         <p className="text-[#F8C8DC] text-xs uppercase tracking-wider font-bold mb-1">Led by</p>
@@ -410,6 +442,39 @@ export default function ServiceDetailPage({ data, customSection }: { data: Servi
                     </div>
                 </div>
             </section>
+
+            {/* Related Guides */}
+            {relatedBlogs.length > 0 && (
+                <section className="py-16 bg-black border-t border-white/10">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="mb-8">
+                            <p className="text-[#F8C8DC] uppercase tracking-[0.3em] text-xs font-bold mb-3">From the Blog</p>
+                            <h2 className="text-2xl md:text-3xl font-bold text-white">Related Guides</h2>
+                            <div className="flex flex-wrap gap-2 mt-4">
+                                {serviceHashtags.map((tag) => (
+                                    <span key={tag} className="text-[11px] text-[#F8C8DC] bg-[#F8C8DC]/10 border border-[#F8C8DC]/25 rounded-full px-2.5 py-1">
+                                        #{tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            {relatedBlogs.map((blog) => (
+                                <div key={blog.id}>
+                                    <BlogCard blog={blog} />
+                                    <div className="flex flex-wrap gap-1.5 mt-3">
+                                        {toHashtags(blog.tags, 4).map((tag) => (
+                                            <span key={tag} className="text-[11px] text-gray-400 bg-[#1B1B1B] border border-[#2A2A2A] rounded-full px-2 py-0.5">
+                                                #{tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* Related */}
             <section className="py-16 bg-[#0E0E0E] border-t border-white/10">

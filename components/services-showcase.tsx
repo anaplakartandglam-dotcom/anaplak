@@ -40,7 +40,7 @@ export default function ServicesShowcase() {
     features: ["Trial Session", "Premium Products", "Complete Bridal Styling"],
     cta: "Book Bridal Consultation",
     color: "#FF8FAB",
-    image: "/elegant-bride-makeup-and-hairstyling-beauty-portra.webp"
+    image: "/images/services/bridal-makeup-hairstyling-chennai.webp"
   },
   {
     icon: faScissors,
@@ -49,7 +49,7 @@ export default function ServicesShowcase() {
     features: ["Customized Styling", "Bridal Hairstyles", "Party Looks"],
     cta: "Get Hair Styling",
     color: "#FF8FAB", // vibrant pink
-    image: "/professional-hair-styling-salon-treatment-luxury.jpg"
+    image: "/images/services/hair-treatment-chennai.jpg"
   },
   {
     icon: faWandMagicSparkles,
@@ -58,7 +58,7 @@ export default function ServicesShowcase() {
     features: ["Keratin", "Smoothening", "Damage Repair"],
     cta: "Explore Treatments",
     color: "#FF8FAB", // soft rose
-    image: "/professional-hair-styling-salon-treatment-luxury.jpg"
+    image: "/images/services/hair-treatment-chennai.jpg"
   },
   {
     icon: faPalette,
@@ -67,7 +67,7 @@ export default function ServicesShowcase() {
     features: ["Balayage", "Highlights", "Ammonia-Free"],
     cta: "View Colors",
     color: "#FF8FAB", // peach tone
-    image: "/hair-coloring-highlights-balayage-salon-transforma.jpg"
+    image: "/images/services/hair-coloring-balayage-chennai.jpg"
   },
   {
     icon: faSpa,
@@ -76,7 +76,7 @@ export default function ServicesShowcase() {
     features: ["Deep Clean", "Anti-Aging", "Brightening"],
     cta: "Book Facial",
     color: "#FF8FAB", // light pink
-    image: "/luxury-facial-treatment-spa-skincare-relaxation.jpg"
+    image: "/images/services/facial-treatment-spa-chennai.jpg"
   },
   {
     icon: faHandSparkles,
@@ -85,7 +85,7 @@ export default function ServicesShowcase() {
     features: ["Gel Polish", "Nail Art", "Spa Care"],
     cta: "Book Nail Service",
     color: "#FF8FAB", // stronger pink (eye-catching)
-    image: "/luxury-manicure-pedicure-nail-salon-spa-treatment.jpg"
+    image: "/images/services/manicure-pedicure-chennai.jpg"
   },
 ]
 

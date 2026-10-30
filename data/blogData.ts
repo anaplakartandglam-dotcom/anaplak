@@ -2,6 +2,7 @@ export interface Blog {
   id: string
   title: string
   description: string
+  tldr?: string[]
   content: string
   image: string
   category: string
@@ -21,79 +22,59 @@ export const blogData: Blog[] = [
   {
     id: "bridal-makeup-trends-2026",
     title: "2026 Bridal Makeup Trends: 7 Stunning Looks Every Chennai Bride Must See",
-    description: "Your wedding day look can make or break your photos. See the 7 bridal makeup trends Chennai brides are obsessed with in 2026 — from dewy natural glam to bold HD finishes at Anaplak Art and Glam Salon.",
-    content: `<p>The bridal makeup landscape has evolved dramatically in 2026, with brides embracing everything from natural elegance to bold, statement-making looks. At <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal, we've curated the most sought-after trends that modern brides are requesting — and we're here to help you find yours.</p>
+    description: "Your wedding day look can make or break your photos. See the 7 bridal makeup trends Chennai brides are obsessed with in 2026, from dewy natural glam to bold HD finishes at Anaplak Art and Glam Salon.",
+    tldr: [
+      "2026 bridal looks lean natural and dewy rather than heavy.",
+      "Bold lips with soft eyes are the easiest way to modernise a classic look.",
+      "HD and airbrush both photograph well; the base match matters more than the label.",
+      "Book a trial 3 to 6 months ahead and test the look in daylight and flash.",
+    ],
+    content: `<p>Bridal makeup in 2026 is moving away from heavy contour and towards skin that looks like skin. Brides still want to look polished in photos. They also want to recognise themselves in the mirror.</p>
 
-<h2>The Rise of Natural Glam</h2>
-<p>2026 has seen a significant shift towards natural, radiant beauty. Brides are opting for looks that enhance their features rather than mask them. Think:</p>
-<ul>
-<li>Dewy, luminous skin with strategic highlighting</li>
-<li>Soft, feathery brows that frame the face</li>
-<li>Nude and soft pink lip colors</li>
-<li>Minimal contouring for a fresh-faced appearance</li>
-</ul>
-<p>Pairing natural bridal makeup with a professional <strong>facial treatment</strong> weeks before the big day ensures your skin is at its radiant best. Our <strong>bridal makeup studio</strong> in Chennai specializes in creating these flawless looks.</p>
+<h2>Natural and glossy</h2>
+<p>Dewy skin, soft brows and a healthy highlight are the base of most looks I do now. The finish is glossy rather than matte, especially for receptions. It photographs well when the skin is prepped properly and the products are flash-safe.</p>
+<p>This does not mean no coverage. It means the coverage is placed where it is needed, not layered over the whole face.</p>
 
-<h2>Bold Lips Make a Statement</h2>
-<p>While natural looks are trending, bold lips are making a comeback. Classic reds, deep berries, and even unconventional shades like burnt orange are making appearances. The key is pairing a statement lip with minimal eye makeup for balance.</p>
+<h2>Bold lips, softer eyes</h2>
+<p>A strong lip is the easiest way to make a classic look feel current. Brick red, maroon and rosewood work for traditional ceremonies. For a modern look, a warm nude with a defined liner is more flattering than a pale pink.</p>
+<p>If the lips are bold, I keep the eyes cleaner. Heavy eyes and a heavy lip fight each other in photos.</p>
 
-<h2>Sustainable Beauty Choices</h2>
-<p>More brides are conscious of their environmental impact. We're seeing increased demand for:</p>
-<ul>
-<li>Cruelty-free and vegan makeup products</li>
-<li>Long-lasting formulas that don't require touch-ups</li>
-<li>Skincare-infused cosmetics for added benefits</li>
-</ul>
+<h2>HD and airbrush</h2>
+<p>Both are still requested. HD gives more coverage and is easier to touch up. Airbrush feels lighter and lasts longer in humidity. The right choice depends on your skin and the length of the ceremony, not on which one sounds more premium.</p>
 
-<h2>Personalized Bridal Consultations</h2>
-<p>Every bride is unique, and 2026 is all about customization. At Anaplak, our bridal consultations include:</p>
-<ul>
-<li>Skin analysis and preparation routine</li>
-<li>Color matching for your wedding theme</li>
-<li>Trial sessions to perfect your look</li>
-<li>Day-of touch-up kits</li>
-</ul>
-<p>We also recommend combining your bridal consultation with our <strong>keratin treatment service</strong> for silky, manageable hair that completes your wedding day look.</p>
+<h2>South Indian and North Indian looks</h2>
+<p>South Indian brides are asking for gold, bronze and maroon eyes with jadai and temple jewellery. North Indian brides are leaning towards softer glam with defined brows and a strong lip. Both work. The mistake is choosing a look that does not suit your outfit, jewellery or venue.</p>
+<p>A trial is where that gets sorted. My <a href="/blogs/bridal-makeup-trial-guide">bridal trial guide</a> explains what to bring.</p>
+
+<h2>What to book</h2>
+<p>Book the trial four to eight weeks before the wedding. Confirm the finish, the hairstyle and the draping. Bridal packages at Anaplak start at ₹15,000, with HD at ₹18,000, Glossy at ₹22,000 and Airbrush at ₹30,000. A trial is ₹3,000. Details are on our <a href="/menu">salon menu</a>.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Planning your bridal look?</strong> A personalized bridal consultation at our <strong>bridal studio in Chennai</strong> ensures your makeup matches your style perfectly. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Bridal Consultation →</a></p>
-</div>
-
-<h2>HD Bridal Makeup vs Airbrush Bridal Makeup</h2>
-<p>Choosing the right makeup technique matters for your wedding photos. Our <strong>HD bridal makeup</strong> uses high-definition products that photograph beautifully without flashback, while <strong>airbrush bridal makeup</strong> offers an impossibly flawless, lightweight finish perfect for destination weddings in Chennai's humid climate.</p>
-
-<h2>South Indian Bridal Makeup & North Indian Bridal Makeup</h2>
-<p>Whether you're looking for traditional South Indian bridal makeup with its iconic red and gold palettes or modern North Indian bridal makeup with glamorous eyes and defined brows, our expert makeup artists at Anaplak Art and Glam Salon in Maduravoyal create authentic looks for every ceremony.</p>
-
-<div class="blog-mid-cta">
-<p><strong>HD or Airbrush — which bridal makeup is right for you?</strong> Our <strong>bridal makeup experts in Chennai</strong> will help you choose the best technique for your skin type, wedding venue, and personal style. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Makeup Trial →</a></p>
+<p><strong>Want to see the trend on your own face?</strong> Book a bridal trial at our Maduravoyal studio. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Trial →</a></p>
 </div>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: How early should I book my bridal makeup trial?</strong><br>
-A: We recommend booking your trial at least 3-6 months before your wedding. This gives you enough time for adjustments and ensures we have availability on your big day at our <strong>bridal studio in Chennai</strong>.</p>
+<p><strong>Q: What is the biggest bridal makeup trend for 2026?</strong><br>
+A: Skin-like bases with a glossy finish. Heavy contour is giving way to targeted coverage and a strong lip.</p>
 
-<p><strong>Q: Can I get a facial before my bridal makeup?</strong><br>
-A: Absolutely! We suggest scheduling a <strong>hydrating facial</strong> 1-2 weeks before the wedding for that extra glow. Avoid any treatments closer than 3 days to the event.</p>
+<p><strong>Q: Is natural bridal makeup suitable for photos?</strong><br>
+A: Yes, when the base is matched and the products are flash-safe. Natural does not mean invisible.</p>
 
-<p><strong>Q: Do you offer bridal packages that include hair styling?</strong><br>
-A: Yes — our complete bridal packages include both makeup and hair styling. We also offer <strong>hair coloring services</strong> if you want a fresh color before the wedding.</p>
+<p><strong>Q: Should I choose HD or airbrush?</strong><br>
+A: Test both at the trial. Airbrush lasts longer in humidity. HD covers more.</p>
 
-<p><strong>Q: What makeup brands do you use?</strong><br>
-A: We use a curated selection of premium, long-wear brands — including cruelty-free and vegan options for eco-conscious brides at our <strong>beauty salon in Maduravoyal</strong>.</p>
+<p><strong>Q: How early should I book?</strong><br>
+A: Three to six months for peak season. Four to eight weeks is the minimum for a trial.</p>
 
-<p><strong>Q: Do you offer bridal makeup at home?</strong><br>
-A: Yes, we offer <strong>bridal makeup home service in Chennai</strong> for brides who prefer the comfort of their own space. Our team brings all professional equipment needed for a flawless finish.</p>
-
-<h2 class="blog-cta">Book Your Bridal Makeup Consultation</h2>
-<p class="blog-cta-text">Your wedding day deserves a look that's as unforgettable as the moment itself. At Anaplak Art and Glam Salon, our expert bridal artists specialize in personalized makeovers — from dewy natural glam to bold, statement looks. Don't leave your bridal look to chance. Schedule your trial session today at our <strong>bridal makeup studio in Chennai</strong> and let us bring your vision to life.</p>`,
-    image: "/blogs/elegant-bride-makeup-and-hairstyling-beauty-portra.jpg",
+<h2 class="blog-cta">Book Your Bridal Trial</h2>
+<p class="blog-cta-text">Bring your outfit and references. We will find the version of the trend that suits your face, not the one on the mood board.</p>`,
+    image: "/images/blog/bridal-makeup-hairstyling-chennai.jpg",
     category: "Bridal",
     tags: ["bridal makeup", "wedding makeup", "makeup trends 2026", "bridal beauty", "HD bridal makeup", "airbrush bridal makeup", "natural bridal makeup", "South Indian bridal makeup", "North Indian bridal makeup", "bridal makeup Chennai", "bridal makeup Maduravoyal", "bridal consultation Chennai", "bridal studio Chennai", "bride makeup", "wedding day makeup", "bridal makeup package Chennai", "bridal makeup artist Maduravoyal", "luxury bridal makeup", "premium bridal makeup", "professional bridal makeup", "bridal party makeup", "bridal makeup and hair", "destination wedding makeup"],
     keywords: ["bridal makeup", "bridal makeup Chennai", "bridal makeup trends 2026", "wedding makeup Chennai", "bridal consultation Maduravoyal", "best bridal makeup artist Chennai", "top bridal makeup artist", "bridal makeup studio Chennai", "bridal makeup package Chennai", "bridal makeup Maduravoyal", "HD bridal makeup Chennai", "airbrush bridal makeup Chennai", "natural bridal makeup look", "South Indian bridal makeup Chennai", "North Indian bridal makeup Chennai", "traditional bridal makeup", "modern bridal makeup", "luxury bridal makeup Chennai", "premium bridal makeup", "professional bridal makeup artist", "bridal makeup trial", "bridal makeup consultation Chennai", "bridal party makeup", "bridal makeup and hair package", "destination wedding makeup Chennai", "bridal makeup at home Chennai", "bridal makeup home service", "wedding bridal makeup", "bridal makeup near me", "bridal makeup artist near me", "best bridal makeup Chennai", "top rated bridal makeup artist", "bridal makeup reviews Chennai", "bridal makeup portfolio", "bridal makeup specialist Chennai", "bridal makeup expert Maduravoyal", "celebrity bridal makeup", "glamorous bridal makeup", "bridal makeup styles", "bridal makeup ideas", "bridal makeup inspiration", "Kalpana bridal makeup", "Anaplak bridal studio", "Anaplak bridal makeup Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-04-04",
     readTime: "8 min read",
@@ -104,111 +85,74 @@ A: Yes, we offer <strong>bridal makeup home service in Chennai</strong> for brid
   {
     id: "keratin-treatment-guide",
     title: "Keratin Treatment: The Complete Guide Before You Book Your Appointment",
-    description: "Thinking about keratin but not sure what to expect? This guide covers everything — the real cost, how long it lasts, what happens during the process, and whether it's actually right for your hair at Anaplak Art and Glam Salon.",
-    content: `<p>Keratin treatments have revolutionized hair care, offering a solution for frizzy, unmanageable hair. But what exactly does this treatment involve, and is it right for you? At <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal, we specialize in providing professional keratin treatments that transform your hair.</p>
+    description: "Thinking about keratin but not sure what to expect? This guide covers everything: the real cost, how long it lasts, what happens during the process, and whether it's actually right for your hair at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Keratin smooths frizz by coating the cuticle, and results last about 3 to 6 months.",
+      "It suits frizzy, unmanageable hair, not hair that needs volume.",
+      "Expect 2 to 3 hours in the salon and no washing for about 72 hours.",
+      "Use sulphate-free shampoo to make it last and book a top-up when frizz returns.",
+    ],
+    content: `<p>Keratin is a smoothing treatment, not a repair treatment. That one distinction explains most of the disappointment people bring to consultations.</p>
 
-<h2>What is a Keratin Treatment?</h2>
-<p>A keratin treatment is a semi-permanent hair smoothing procedure that adds keratin protein back into your hair strands. This protein, naturally found in hair, skin, and nails, helps smooth the hair cuticle, resulting in:</p>
-<ul>
-<li>Reduced frizz and flyaways</li>
-<li>Enhanced shine and smoothness</li>
-<li>Easier styling and management</li>
-<li>Shortened blow-dry time</li>
-</ul>
-<p>For those battling humidity-induced frizz, a keratin treatment at our <strong>hair salon in Chennai</strong> can be a game changer. This is one of our most sought-after <strong>hair treatments in Chennai</strong>.</p>
+<h2>What it does</h2>
+<p>Keratin coats the cuticle, fills in rough spots and reduces frizz. It adds shine and makes hair easier to manage. It does not rebuild broken bonds, and it does not make the hair pin-straight.</p>
 
-<h2>Who Should Get a Keratin Treatment?</h2>
-<p>This treatment is ideal for those with:</p>
-<ul>
-<li>Frizzy or curly hair seeking smoother texture</li>
-<li>Unruly hair that's difficult to manage</li>
-<li>Hair damaged by heat styling</li>
-<li>Those wanting low-maintenance styling</li>
-</ul>
+<h2>Who it suits</h2>
+<p>It suits frizzy, unmanageable hair that needs shine and control. It is a poor fit for hair that is breaking, recently bleached or already very dry. In those cases the hair needs repair first.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Not sure if keratin is right for you?</strong> Our <strong>hair treatment experts in Chennai</strong> can assess your hair type and recommend the best smoothing option. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Assessment →</a></p>
-</div>
+<h2>The process</h2>
+<p>The hair is clarified, the keratin is applied section by section, then sealed with heat. Depending on length and density, it takes two to four hours. You should not wash it for about 72 hours.</p>
 
-<h2>Keratin Treatment vs Hair Smoothing vs Rebonding</h2>
-<p>Understanding the difference helps you choose the right service:</p>
-<ul>
-<li><strong>Keratin Treatment:</strong> Reduces frizz while maintaining natural texture. Results last 3-4 months.</li>
-<li><strong>Hair Smoothing:</strong> Semi-permanent straightening with some frizz reduction. Results last 2-3 months.</li>
-<li><strong>Hair Rebonding:</strong> Permanent straightening that completely alters hair structure. Results last 6-12 months.</li>
-</ul>
-<p>Our <strong>hair smoothing treatment in Maduravoyal</strong> offers various options to suit your needs.</p>
+<h2>Results and aftercare</h2>
+<p>Results usually last three to six months. Use sulphate-free shampoo. Add a weekly mask. Avoid chlorine and salt water for a week. Book a top-up when the frizz returns, not when the hair is already unmanageable.</p>
 
-<h2>The Treatment Process</h2>
-<p>At Anaplak Art and Glam Salon, your keratin treatment includes:</p>
-<ol>
-<li><strong>Hair Assessment:</strong> We analyze your hair type and condition</li>
-<li><strong>Deep Cleansing:</strong> A clarifying wash removes product buildup</li>
-<li><strong>Keratin Application:</strong> The solution is carefully applied section by section</li>
-<li><strong>Processing:</strong> Hair processes for 20-30 minutes</li>
-<li><strong>Sealing:</strong> Heat seals the keratin into your hair shaft</li>
-<li><strong>Final Rinse:</strong> We rinse and style your newly smooth locks</li>
-</ol>
+<h2>Cost</h2>
+<p>At Anaplak, keratin starts at ₹3,500 for a partial head and ₹7,000 for a full head. The final price depends on length and density. The full list is on our <a href="/menu">salon menu</a>.</p>
+
+<h2>What can go wrong</h2>
+<p>Over-processing makes hair drier and more brittle. Applying keratin to damaged hair without assessing it can make the damage worse. A cheap treatment with weak aftercare often fades in weeks. Ask what is included and what aftercare is recommended.</p>
+
+<h2>Who should avoid it</h2>
+<p>Skip keratin if the hair is breaking, recently bleached or already very dry. Repair the hair first. If your scalp is irritated or you have an open wound, wait. If you are pregnant, ask your doctor about the formula.</p>
+
+<h2>What the process feels like</h2>
+<p>The hair is washed and dried, then the product is applied section by section. It sits for a while, then it is sealed with heat. The room can feel warm. You will leave with straight, smooth hair, and you should not wash it for about 72 hours.</p>
+
+<h2>Keratin, botox or smoothening</h2>
+<p>Keratin smooths frizz and adds shine. Hair botox is a deep-conditioning treatment that does not straighten. Smoothening relaxes the hair straighter. If your goal is softer hair with movement, keratin or botox. If your goal is a straighter finish, smoothening. My <a href="/blogs/keratin-vs-smoothening">keratin vs smoothening guide</a> covers the difference in detail.</p>
+
+<h2>Price and timing</h2>
+<p>Keratin starts at ₹3,500 for a partial head and ₹7,000 for a full head. Hair botox is ₹8,000 and nano plastia starts at ₹9,000. Plan for two to four hours in the salon.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Experience the keratin difference.</strong> Our <strong>keratin treatment in Chennai</strong> uses premium products and expert techniques for salon-quality results that last months. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Keratin Treatment →</a></p>
+<p><strong>Not sure if your hair is ready for keratin?</strong> Book a consultation and we will assess it first. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Consultation →</a></p>
 </div>
-
-<h2>Brazilian Keratin vs Japanese Keratin</h2>
-<p>We offer both <strong>Brazilian keratin treatment</strong> and Japanese keratin at our Chennai salon. Brazilian keratin uses formaldehyde-based formulas for intense shine and smoothing, while Japanese keratin uses gentler formulas for a more natural finish. Our experts help you choose the best option for your hair.</p>
-
-<h2>Aftercare Tips</h2>
-<p>To maintain your results:</p>
-<ul>
-<li>Wait 72 hours before washing your hair</li>
-<li>Use sulfate-free, keratin-safe shampoos</li>
-<li>Avoid chlorine and salt water</li>
-<li>Schedule touch-ups every 3-4 months</li>
-</ul>
-<p>Pro tip: Pair your keratin treatment with our <strong>deep conditioning service</strong> for extended results and healthier-looking hair.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Extend your keratin results with professional aftercare.</strong> Our <strong>hair spa services in Chennai</strong> include specialized post-keratin treatments that keep your hair smooth longer. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Spa →</a></p>
-</div>
-
-<h2>Common Myths Debunked</h2>
-<p><strong>Myth:</strong> Keratin makes hair completely straight.<br>
-<strong>Fact:</strong> It smooths and reduces frizz while maintaining your natural texture.</p>
-
-<p><strong>Myth:</strong> Results are permanent.<br>
-<strong>Fact:</strong> Results typically last 3-4 months with proper care at our <strong>hair spa in Maduravoyal</strong>.</p>
-
-<p><strong>Myth:</strong> Keratin damages hair.<br>
-<strong>Fact:</strong> When done professionally with quality products, keratin actually strengthens and protects hair.</p>
-
-<h2>Keratin Treatment Cost in Chennai</h2>
-<p>Pricing varies based on hair length and thickness. At Anaplak Art and Glam Salon, we offer competitive pricing for premium <strong>keratin treatment services in Chennai</strong>. Contact us for a personalized quote during your consultation.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: How long does a keratin treatment take?</strong><br>
-A: The entire process takes approximately 2-3 hours depending on hair length and thickness.</p>
+<p><strong>Q: Does keratin make hair straight?</strong><br>
+A: No. It reduces frizz and adds shine. The hair keeps some natural movement.</p>
 
-<p><strong>Q: Can I color my hair after a keratin treatment?</strong><br>
-A: We recommend waiting at least 2 weeks after your <strong>hair coloring service</strong> before getting a keratin treatment, and vice versa.</p>
+<p><strong>Q: How long does keratin last?</strong><br>
+A: Three to six months, depending on hair type and aftercare.</p>
 
-<p><strong>Q: Is keratin safe for all hair types?</strong><br>
-A: While keratin works for most hair types, our stylists at Anaplak will assess your hair during a consultation to confirm it's the right choice for you.</p>
+<p><strong>Q: Can I do keratin on coloured hair?</strong><br>
+A: Yes, after a consultation. Timing depends on how recently the hair was coloured or bleached.</p>
 
-<p><strong>Q: How much does a keratin treatment cost in Chennai?</strong><br>
-A: Pricing varies based on hair length and thickness. Contact us for a personalized quote — we offer competitive pricing for premium service at our <strong>beauty salon in Maduravoyal</strong>.</p>
+<p><strong>Q: Can I wash my hair immediately after?</strong><br>
+A: No. Wait about 72 hours.</p>
 
-<p><strong>Q: Can I get keratin treatment for frizzy hair in Chennai humidity?</strong><br>
-A: Absolutely! <strong>Keratin treatment for frizzy hair</strong> is one of our most popular services. It creates a protective barrier that repels humidity and keeps your hair sleek even in Chennai's climate.</p>
+<p><strong>Q: Is keratin safe for pregnant women?</strong><br>
+A: Ask your doctor. Some formulas contain ingredients you may prefer to avoid.</p>
 
-<h2 class="blog-cta">Book Your Keratin Treatment</h2>
-<p class="blog-cta-text">Say goodbye to frizz and hello to silky, manageable hair. Our keratin specialists at Anaplak Art and Glam Salon have helped hundreds of clients transform their hair. Visit our <strong>hair salon in Chennai</strong> and book your personalized consultation today to step out with confidence.</p>`,
-    image: "/blogs/professional-hair-styling-salon-treatment-luxury.jpg",
+<h2 class="blog-cta">Book a Keratin Consultation</h2>
+<p class="blog-cta-text">Bring your hair history. We will tell you if keratin is the right treatment or if your hair needs repair first.</p>`,
+    image: "/images/blog/keratin-treatment-chennai.jpg",
     category: "Hair Care",
     tags: ["keratin treatment", "hair treatment", "smooth hair", "frizzy hair", "hair care", "keratin Chennai", "hair smoothing", "hair straightening", "keratin Maduravoyal", "Brazilian keratin", "Japanese keratin", "keratin aftercare", "keratin for humid weather", "keratin treatment cost Chennai", "keratin salon Chennai", "keratin specialist Maduravoyal", "frizzy hair treatment Chennai", "hair spa Maduravoyal", "hair smoothing Chennai"],
     keywords: ["keratin treatment Chennai", "hair smoothening Chennai", "frizzy hair treatment Maduravoyal", "keratin hair treatment cost Chennai", "best keratin salon Chennai", "keratin treatment Maduravoyal", "hair treatment Chennai", "hair spa Chennai", "Brazilian keratin Chennai", "Japanese keratin Chennai", "keratin smoothing treatment", "hair straightening Chennai", "hair rebonding Chennai", "keratin for frizzy hair", "keratin aftercare tips", "keratin treatment duration", "how long does keratin last", "keratin maintenance", "deep conditioning Chennai", "hair conditioning treatment", "hair protein treatment", "keratin specialist Chennai", "best hair salon Maduravoyal", "Anaplak hair treatment", "hair smoothing Maduravoyal", "frizz control treatment Chennai", "anti frizz hair treatment", "silky hair treatment Chennai", "manageable hair Chennai", "low maintenance hair treatment", "humidity proof hair treatment Chennai", "keratin salon near me", "hair salon near me Maduravoyal", "professional hair treatment Chennai", "affordable keratin treatment Chennai", "premium keratin service"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-04-07",
     readTime: "8 min read",
@@ -218,121 +162,59 @@ A: Absolutely! <strong>Keratin treatment for frizzy hair</strong> is one of our 
   {
     id: "skincare-routine-facial-treatments",
     title: "Professional Facials Changed My Skin: Here's Exactly What Each One Does",
-    description: "Wasting money on skincare that doesn't work? Professional facials target what home products can't. See which facial actually fixes your skin concern — from acne to anti-aging at Anaplak Art and Glam Salon.",
-    content: `<p>Your skin is unique, and your skincare routine should be too. Professional facials at <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal can be the foundation of a truly personalized skincare plan — one that delivers results you can see and feel. Our <strong>facial treatment in Chennai</strong> services are designed to address all skin concerns.</p>
+    description: "Wasting money on skincare that doesn't work? Professional facials target what home products can't. See which facial actually fixes your skin concern, from acne to anti-aging at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Facials target concerns home products struggle with, like congestion and pigmentation.",
+      "Choose by concern: hydrating, deep cleansing, brightening or anti-aging.",
+      "Most skin types benefit from a facial every 4 to 6 weeks.",
+      "Skip exfoliation 3 days before and direct sun for 24 hours after.",
+    ],
+    content: `<p>A facial is not a magic reset. It is a targeted treatment that supports the routine you follow at home. If the home routine is inconsistent, the facial will not hold its result for long.</p>
 
-<h2>Why Professional Facials Matter</h2>
-<p>While at-home skincare is essential, professional facials offer benefits that home treatments cannot:</p>
-<ul>
-<li>Deep extraction of impurities</li>
-<li>Professional-grade products and equipment</li>
-<li>Expert skin analysis and recommendations</li>
-<li>Stress relief and relaxation benefits</li>
-</ul>
-<p>At our <strong>beauty salon in Chennai</strong>, we combine advanced techniques with premium products for transformative results.</p>
+<h2>What facials do</h2>
+<p>Facials cleanse deeper than daily washing, remove dead skin, support hydration and target specific concerns. They can calm congestion, improve brightness and help with dryness. They do not replace sunscreen, and they do not fix years of damage in one session.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Not sure which facial is right for you?</strong> A professional skin assessment at our <strong>facial clinic in Chennai</strong> can pinpoint exactly what your skin needs. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Skin Assessment →</a></p>
-</div>
+<h2>Which facial for which concern</h2>
+<p>A classic cleanup suits regular maintenance. Skin brightening suits dullness and pigmentation. A hydrating facial suits dryness. A deep cleansing facial suits oily and acne-prone skin. Anti-aging facials suit fine lines and texture. At Anaplak, facials start at ₹2,000. Brightening is ₹3,000, skin miracle and avocado are ₹4,000, glutathione and Gensly are ₹5,000, and Casmara is ₹7,000.</p>
 
-<h2>Types of Facials We Offer</h2>
+<h2>How often</h2>
+<p>Most skin types do well with a facial every four to six weeks. Oily or congested skin may need every four weeks. Sensitive skin may need every six to eight weeks. More frequent facials can irritate the skin.</p>
 
-<h3>Classic Facial</h3>
-<p>Perfect for all skin types, this treatment includes cleansing, exfoliation, extraction, and hydration. Ideal for maintaining healthy, glowing skin.</p>
+<h2>What happens in the session</h2>
+<p>We start with a skin assessment, then cleanse, exfoliate and extract if needed. A mask and massage follow. The products are chosen for your skin type, not a fixed kit. Tell us about actives, retinol or recent treatments before we start.</p>
 
-<h3>Anti-Aging Facial</h3>
-<p>Target fine lines and wrinkles with our advanced anti-aging treatment. Includes collagen-boosting serums and specialized massage techniques. Our <strong>anti aging facial in Chennai</strong> uses cutting-edge technology for visible results.</p>
-
-<h3>Deep Cleansing Facial</h3>
-<p>Designed for oily and acne-prone skin, this treatment deeply cleanses pores and helps prevent future breakouts. Our <strong>deep cleansing facial</strong> is one of our most popular <strong>skin treatments in Chennai</strong>.</p>
-
-<h3>Hydrating Facial</h3>
-<p>Restore moisture to dry, dehydrated skin with our intensive hydrating treatment. Perfect for Chennai's dry climate and air-conditioned environments.</p>
-
-<h3>Brightening Facial</h3>
-<p>Even out skin tone and reduce hyperpigmentation with our specialized brightening treatment. Our <strong>skin brightening facial</strong> uses vitamin C and other potent brightening ingredients.</p>
-
-<h3>Gold Facial & Diamond Facial</h3>
-<p>Experience luxury with our premium facials. Our <strong>gold facial in Chennai</strong> and <strong>diamond facial in Maduravoyal</strong> offer anti-aging benefits while providing an indulgent spa experience.</p>
+<h2>Aftercare</h2>
+<p>Skip exfoliation for three days. Avoid direct sun for 24 hours. Keep the routine simple for a week. If the skin feels sensitive, stop the active you were using and let it settle.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Experience luxury skincare.</strong> Our <strong>gold and diamond facials in Chennai</strong> deliver visible radiance after just one session. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Gold Facial →</a></p>
+<p><strong>Not sure which facial suits your skin?</strong> Book a skin assessment at Anaplak. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Skin Assessment →</a></p>
 </div>
-
-<h2>Advanced Skin Treatments</h2>
-<p>Beyond basic facials, we offer specialized treatments:</p>
-<ul>
-<li><strong>Chemical Peel:</strong> Exfoliates and rejuvenates skin texture</li>
-<li><strong>Microdermabrasion:</strong> Gentle exfoliation for smoother skin</li>
-<li><strong>Collagen Facial:</strong> Boosts collagen production for firmer skin</li>
-<li><strong>Vitamin C Facial:</strong> Brightens and protects against environmental damage</li>
-</ul>
-
-<h2>How Often Should You Get a Facial?</h2>
-<p>For optimal results, we recommend:</p>
-<ul>
-<li><strong>Normal skin:</strong> Every 4-6 weeks</li>
-<li><strong>Oily/Acne-prone:</strong> Every 2-4 weeks</li>
-<li><strong>Dry/Sensitive:</strong> Every 4-6 weeks with gentle treatments</li>
-</ul>
-
-<h2>Preparing for Your Facial</h2>
-<p>Maximize your treatment results by:</p>
-<ul>
-<li>Arriving with clean skin (no heavy makeup)</li>
-<li>Discussing any skin concerns with your esthetician</li>
-<li>Avoiding exfoliation 3 days before your appointment</li>
-<li>Staying hydrated before and after treatment</li>
-</ul>
-
-<h2>Post-Facial Care</h2>
-<p>After your facial:</p>
-<ul>
-<li>Avoid direct sun exposure for 24 hours</li>
-<li>Skip heavy makeup for the day</li>
-<li>Use gentle, non-active skincare products</li>
-<li>Follow your esthetician's specific recommendations</li>
-</ul>
-<p>Many clients pair their facial with a <strong>bridal makeup session</strong> or <strong>hair treatment</strong> for a complete salon experience at our <strong>beauty spa in Maduravoyal</strong>.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Prep your skin for a special occasion.</strong> Combine a facial with our <strong>bridal makeup</strong> or <strong>hair treatment services in Chennai</strong> for a full salon transformation. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Complete Package →</a></p>
-</div>
-
-<h2>Facials for Specific Skin Concerns</h2>
-<ul>
-<li><strong>Acne Treatment Facial:</strong> For acne-prone and breakout-prone skin</li>
-<li><strong>Pigmentation Treatment Facial:</strong> Targets dark spots and uneven skin tone</li>
-<li><strong>Tan Removal Facial:</strong> Restores natural skin tone after sun exposure</li>
-<li><strong>De-Tan Facial:</strong> Removes sun tan accumulated in Chennai's climate</li>
-<li><strong>Dark Circle Treatment:</strong> Under-eye care for refreshed appearance</li>
-</ul>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: Which facial is best for my skin type?</strong><br>
-A: Our estheticians will assess your skin during a free consultation and recommend the best treatment. Generally, dry skin benefits from hydrating facials, oily skin from deep cleansing, and mature skin from anti-aging treatments at our <strong>facial specialist clinic in Chennai</strong>.</p>
+<p><strong>Q: How often should I get a facial?</strong><br>
+A: Every four to six weeks for most skin types. Sensitive skin may need longer gaps.</p>
 
-<p><strong>Q: Can I get a facial before a special event?</strong><br>
-A: We recommend getting your facial 3-5 days before any big event. Pair it with our <strong>bridal makeup service</strong> for weddings or special occasions.</p>
+<p><strong>Q: Can facials clear acne?</strong><br>
+A: They can calm congestion, but active acne needs a dermatologist. Do not rely on facials alone.</p>
 
-<p><strong>Q: Are facials suitable for sensitive skin?</strong><br>
-A: Yes! We customize every treatment based on your skin's needs. Our classic facial is particularly gentle and suitable for sensitive skin types.</p>
+<p><strong>Q: Should I get a facial before an event?</strong><br>
+A: One to two weeks before, not the day before. A late facial can leave the skin flushed.</p>
 
-<p><strong>Q: What is the cost of facial treatment in Chennai?</strong><br>
-A: Pricing varies based on the type of facial. Contact us for detailed information about our <strong>facial price in Chennai</strong> and available packages.</p>
+<p><strong>Q: Can I do a facial at home?</strong><br>
+A: A simple mask is fine. Extraction and strong exfoliation are better left to a professional.</p>
 
-<p><strong>Q: How often should I get facial for glowing skin?</strong><br>
-A: For <strong>glowing skin treatment</strong>, we recommend monthly facials combined with a proper at-home skincare routine.</p>
+<p><strong>Q: What should I avoid after a facial?</strong><br>
+A: Exfoliation for three days, direct sun for 24 hours and strong actives for a week.</p>
 
-<h2 class="blog-cta">Book Your Facial Treatment</h2>
-<p class="blog-cta-text">Glowing skin isn't a luxury — it's a result of consistent, expert care. At Anaplak Art and Glam Salon, our facial specialists create personalized treatment plans that address your unique skin concerns. Visit our <strong>beauty salon in Chennai, Maduravoyal</strong> and let our experts craft the perfect skincare routine for you. Stop guessing and start seeing results. Book your consultation today.</p>`,
-    image: "/blogs/luxury-facial-treatment-spa-skincare-relaxation.webp",
+<h2 class="blog-cta">Book a Facial</h2>
+<p class="blog-cta-text">Tell us your concern and your current routine. We will choose the facial that supports it instead of the strongest one on the menu.</p>`,
+    image: "/images/blog/skincare-routine-facial-treatments-chennai.webp",
     category: "Skincare",
     tags: ["facial", "skincare", "skin treatment", "beauty tips", "glowing skin", "facial Chennai", "skincare routine Chennai", "anti aging facial", "hydrating facial", "brightening facial", "deep cleansing facial", "gold facial", "diamond facial", " collagen facial", "vitamin C facial", "acne facial", "tan removal facial", "de-tan facial", "facial for sensitive skin", "facial for dry skin", "facial for oily skin", "facial for combination skin", "professional facial Chennai", "spa facial Chennai", "luxury facial Chennai", "facial treatment Maduravoyal", "skin care Chennai", "skin treatment Chennai", "beauty spa Maduravoyal", "facial price Chennai", "best facial salon Chennai", "facial specialist Chennai", "glow facial Chennai", "instant glow facial", "pre bridal facial", "bridal facial Chennai", "skin brightening Chennai", "skin rejuvenation Chennai", "healthy skin care", "skincare tips Chennai"],
     keywords: ["facial treatment Chennai", "best facial salon Maduravoyal", "skincare routine Chennai", "professional facial Chennai", "glowing skin treatment Chennai", "facial Chennai", "facial Maduravoyal", "facial salon Chennai", "beauty facial Chennai", "skin care Chennai", "skin treatment Chennai", "anti aging facial Chennai", "hydrating facial Chennai", "deep cleansing facial Chennai", "brightening facial Chennai", "gold facial Chennai", "diamond facial Chennai", "collagen facial Chennai", "vitamin C facial Chennai", "acne facial Chennai", "pimple treatment Chennai", "tan removal facial Chennai", "de-tan facial Chennai", "dark circle treatment Chennai", "under eye treatment Chennai", "pigmentation treatment Chennai", "skin brightening treatment Chennai", "skin rejuvenation Chennai", "facial for sensitive skin", "facial for dry skin", "facial for oily skin", "facial for acne prone skin", "facial for combination skin", "spa facial Maduravoyal", "luxury spa facial Chennai", "facial price Chennai", "facial cost Chennai", "facial packages Chennai", "facial offers Chennai", "facial deals Chennai", "monthly facial Chennai", "facial subscription Chennai", "facial for glowing skin", "instant glow facial Chennai", "pre wedding facial Chennai", "bridal facial package Chennai", "party facial Chennai", "occasion facial Chennai", "skin care tips Chennai", "healthy skin tips", "skincare for humid weather Chennai", "best facial near me", "facial studio Chennai", "beauty center Chennai", "skin clinic Chennai", "esthetician Chennai", "professional skin care Chennai", "Anaplak facial", "Anaplak skincare Chennai", "Maduravoyal beauty salon facial"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-04-10",
     readTime: "9 min read",
@@ -342,127 +224,74 @@ A: For <strong>glowing skin treatment</strong>, we recommend monthly facials com
   {
     id: "hair-color-trends",
     title: "Hair Color Trends 2026: 8 Shades That Will Make You Book an Appointment Today",
-    description: "Still choosing between basic black and brown? 2026's hair color trends are anything but boring. From melted brunettes to bold fashion colors — see the shades everyone's asking for at Anaplak Art and Glam Salon.",
-    content: `<p>Hair coloring has become an art form, with techniques that can transform your look from subtle to dramatic. At <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal, our color specialists help you find the technique and shade that perfectly complements your style, skin tone, and lifestyle. We offer professional <strong>hair coloring services in Chennai</strong> using the latest trends and premium products.</p>
+    description: "Still choosing between basic black and brown? 2026's hair color trends are anything but boring. From melted brunettes to bold fashion colors. See the shades everyone's asking for at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Balayage and ombré grow out gracefully; full highlights need more maintenance.",
+      "Warm undertones suit honey and caramel, cool undertones suit ash and mocha.",
+      "Ammonia-free and bond-protecting options reduce damage.",
+      "Arrive with unwashed hair and bring reference photos to the consultation.",
+    ],
+    content: `<p>Hair colour is the service people regret most when it is chosen from a trend photo instead of a consultation. The right shade depends on your undertone, your base colour and how much maintenance you can handle.</p>
 
-<h2>Balayage: The Natural Choice</h2>
-<p>Balayage, French for "to sweep," is a freehand highlighting technique that creates natural, sun-kissed highlights. Benefits include:</p>
-<ul>
-<li>Low maintenance (grows out naturally)</li>
-<li>Customizable placement</li>
-<li>Natural-looking results</li>
-<li>Less frequent salon visits</li>
-</ul>
-<p>Balayage is especially popular for its effortless, beachy look that works beautifully in Chennai's warm climate. Our <strong>balayage hair coloring in Chennai</strong> is one of our most requested services.</p>
+<h2>Balayage and highlights</h2>
+<p>Balayage is painted by hand for a softer grow-out. Highlights are woven through foils for more brightness. Both add dimension. Balayage needs less maintenance, while full highlights need a touch-up every six to eight weeks.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Ready for a color transformation?</strong> Our <strong>hair color specialists in Chennai</strong> will help you pick the perfect shade for your skin tone and lifestyle. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Color Consultation →</a></p>
-</div>
+<h2>Global colour and root touch-ups</h2>
+<p>Global colour changes the whole head. Root touch-ups cover regrowth. At Anaplak, root touch-ups start at ₹1,800 for men and ₹2,000 for women. Global colour starts at ₹3,500 and ₹4,500. Partial highlights start at ₹3,000 and ₹4,500.</p>
 
-<h2>Highlights: Classic Dimension</h2>
-<p>Traditional highlights use foil to create uniform streaks of lighter color. Perfect for those who want:</p>
-<ul>
-<li>Bold, noticeable contrast</li>
-<li>Even, consistent results</li>
-<li>All-over brightness</li>
-</ul>
-<p>We offer <strong>foil highlights in Chennai</strong> as well as freehand techniques for a more natural effect.</p>
+<h2>Fashion shades</h2>
+<p>Fashion and creative colours start at ₹5,000 for men and ₹7,000 for women. These need more maintenance and often require lightening first. If your hair is already dry or damaged, repair it before lightening.</p>
 
-<h2>Ombré & Sombré: Gradual Gradient</h2>
-<p>Ombré creates a gradual transition from dark roots to light ends. This style offers:</p>
-<ul>
-<li>Painless grow-out (no root maintenance)</li>
-<li>Statement-making appearance</li>
-<li>Versatility in color choices</li>
-</ul>
-<p>Our <strong>ombre hair color in Maduravoyal</strong> and <strong>sombre hair coloring</strong> services create stunning dimensional effects.</p>
+<h2>Choosing a shade</h2>
+<p>Warm undertones suit honey, caramel and copper. Cool undertones suit ash, mocha and cool brown. If you are unsure, choose a shade close to your natural colour for the first appointment. You can always go stronger later.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Love bold color or subtle dimension?</strong> Whether it's ombré, sombré, or fashion colors, our <strong>hair color experts in Chennai</strong> bring your vision to life. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Color Service →</a></p>
-</div>
+<h2>Maintenance</h2>
+<p>Use a colour-safe shampoo. Wash less often. Add a mask weekly. Avoid chlorine. Book a gloss or root touch-up before the colour looks tired, not after.</p>
 
-<h2>Fashion Colors & Vivid Hues</h2>
-<p>For the bold and adventurous, we offer trendy fashion colors:</p>
-<ul>
-<li>Pastel shades (pink, lavender, mint)</li>
-<li>Vibrant colors (blue, green, purple)</li>
-<li>Bold reds and coppers</li>
-<li>Multicolor and rainbow effects</li>
-</ul>
-<p>Our <strong>fashion hair coloring in Chennai</strong> uses professional-grade products that minimize damage while maximizing vibrancy.</p>
+<h2>What to bring</h2>
+<p>Bring two or three reference photos in different lighting. Tell the stylist about previous colour, bleach and treatments. Do not wash your hair right before the appointment. Day-old hair is easier to work with.</p>
 
-<h2>Choosing Your Shade</h2>
-<p>Your perfect color depends on several factors:</p>
+<h2>Colour correction</h2>
+<p>If a previous colour went brassy, patchy or too dark, correction takes more than one session. Do not try to fix it with a box dye. A consultation will tell you how many sessions you need and what the hair can handle.</p>
 
-<h3>Skin Tone Considerations</h3>
-<ul>
-<li><strong>Warm undertones:</strong> Golden, honey, and caramel shades</li>
-<li><strong>Cool undertones:</strong> Ash, platinum, and mocha tones</li>
-<li><strong>Neutral undertones:</strong> Most shades work beautifully</li>
-</ul>
+<h2>Grey coverage</h2>
+<p>Root touch-ups cover grey without changing the rest of the hair. At Anaplak, root touch-ups start at ₹1,800 for men and ₹2,000 for women. If you have a lot of grey, a global colour may give a more even result.</p>
 
-<h3>Lifestyle Factors</h3>
-<ul>
-<li><strong>Low maintenance:</strong> Balayage or ombré</li>
-<li><strong>High impact:</strong> Full highlights or bold colors</li>
-<li><strong>Professional setting:</strong> Natural-looking highlights</li>
-</ul>
+<h2>Aftercare</h2>
+<p>Use a colour-safe shampoo. Wash less often. Add a mask weekly. Avoid chlorine and salt water. Book a gloss or touch-up before the colour looks tired. If the hair feels dry, cut back on heat styling.</p>
 
-<h2>Color Safety First</h2>
-<p>At Anaplak, we prioritize hair health:</p>
-<ul>
-<li>Ammonia-free options available</li>
-<li>Bond-protecting treatments included</li>
-<li>Post-color care recommendations</li>
-<li>Quality products only</li>
-</ul>
-<p>We recommend a <strong>deep conditioning treatment</strong> after coloring to restore moisture and extend vibrancy. Our <strong>hair spa services in Chennai</strong> include specialized post-color care.</p>
+<h2>Price and timing</h2>
+<p>Global colour starts at ₹3,500 for men and ₹4,500 for women. Partial highlights start at ₹3,000 and ₹4,500. Fashion shades start at ₹5,000 and ₹7,000. Plan for one to three hours depending on the service.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Protect your color investment.</strong> Pair your coloring with a <strong>deep conditioning treatment at Anaplak</strong> for longer-lasting, healthier color. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Color + Care Package →</a></p>
+<p><strong>Not sure which shade suits you?</strong> Book a colour consultation at Anaplak. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Colour Consultation →</a></p>
 </div>
-
-<h2>Gray Coverage & Root Touch-Up</h2>
-<p>Our <strong>gray hair coverage in Chennai</strong> provides seamless, natural-looking results. We also offer <strong>root touch-up services</strong> to maintain your color between appointments.</p>
-
-<h2>Hair Color Correction</h2>
-<p>Made a coloring mistake elsewhere? Our <strong>hair color correction services in Chennai</strong> can fix uneven tones, brassiness, or unwanted shades using professional techniques and premium products.</p>
-
-<h2>Aftercare Essentials</h2>
-<p>Maintain your color with:</p>
-<ul>
-<li>Color-safe shampoos and conditioners</li>
-<li>Weekly deep conditioning treatments</li>
-<li>UV protection sprays</li>
-<li>Reduced heat styling</li>
-</ul>
-<p>Visit our <strong>beauty salon in Maduravoyal</strong> for recommended products and professional aftercare advice.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: How long does hair coloring last?</strong><br>
-A: Permanent color lasts until your roots grow out (4-8 weeks). Balayage and ombré can last 3-4 months as they grow out naturally.</p>
+<p><strong>Q: What is the difference between balayage and highlights?</strong><br>
+A: Balayage is hand-painted and grows out softly. Highlights are foiled and give more uniform brightness.</p>
 
-<p><strong>Q: Can I color damaged hair?</strong><br>
-A: We recommend a <strong>keratin treatment</strong> or deep conditioning session first to strengthen your hair before coloring. Our stylists will assess your hair during a consultation.</p>
+<p><strong>Q: How much does hair colour cost in Chennai?</strong><br>
+A: At Anaplak, root touch-ups start at ₹1,800 for men and ₹2,000 for women. Global colour starts at ₹3,500 and ₹4,500.</p>
 
-<p><strong>Q: What's the difference between highlights and balayage?</strong><br>
-A: Highlights use foil for uniform, structured streaks, while balayage is hand-painted for a natural, blended look. Both are available at our salon.</p>
+<p><strong>Q: Can I colour damaged hair?</strong><br>
+A: Only after an assessment. Lightening damaged hair can make it break.</p>
 
-<p><strong>Q: How do I prepare for a color appointment?</strong><br>
-A: Arrive with unwashed hair (1-2 days), avoid heavy styling products, and bring reference photos of the look you want.</p>
+<p><strong>Q: How often should I touch up my roots?</strong><br>
+A: Every four to six weeks for global colour. Balayage can go longer.</p>
 
-<p><strong>Q: How much does hair coloring cost in Chennai?</strong><br>
-A: <strong>Hair coloring price in Chennai</strong> varies based on technique and length. Contact us for detailed pricing on our <strong>hair coloring packages in Chennai</strong>.</p>
+<p><strong>Q: Will colour make my hair dry?</strong><br>
+A: It can. Use a colour-safe shampoo and a weekly mask, and space out lightening sessions.</p>
 
-<h2 class="blog-cta">Book Your Hair Color Consultation</h2>
-<p class="blog-cta-text">Your hair color should be as unique as you are. Whether you want sun-kissed balayage, bold highlights, or a complete transformation, our color experts at Anaplak Art and Glam Salon will create a look that turns heads. Visit our <strong>hair salon in Chennai</strong> today and discover your perfect shade. Don't settle for ordinary — book your color consultation now.</p>`,
-    image: "/blogs/hair-coloring-highlights-balayage-salon-transforma.jpg",
+<h2 class="blog-cta">Book a Colour Consultation</h2>
+<p class="blog-cta-text">Bring your references and your hair history. We will choose a shade you can maintain at home, not a shade that only works in the salon.</p>`,
+    image: "/images/blog/hair-color-trends-chennai.jpg",
     category: "Hair Color",
     tags: ["hair color", "balayage", "highlights", "hair coloring", "ombre", "hair color Chennai", "balayage Chennai", "hair highlights", "hair dye", "hair tinting", "hair coloring Chennai", "hair color Maduravoyal", "hair coloring services", "professional hair coloring", "balayage hair coloring", "ombre hair color", "sombre hair", "fashion hair colors", "vivid hair colors", "pastel hair colors", "natural hair colors", "hair color correction", "gray hair coverage", "root touch up", "hair color maintenance", "color treated hair care", "hair coloring price Chennai", "hair coloring offers Chennai", "hair coloring package Chennai"],
     keywords: ["hair coloring Chennai", "balayage Chennai", "hair highlights Maduravoyal", "best hair color salon Chennai", "ombre hair treatment Chennai", "hair color Chennai", "hair coloring Maduravoyal", "balayage hair coloring Chennai", "hair highlights Chennai", "foil highlights Chennai", "ombre hair color Chennai", "sombre hair coloring Chennai", "fashion colors Chennai", "vivid hair color Chennai", "pastel hair color Chennai", "natural hair color Chennai", "hair color specialist Chennai", "professional hair coloring Chennai", "hair dye Chennai", "hair tinting Maduravoyal", "hair color services Chennai", "hair color packages Chennai", "hair coloring price Chennai", "hair coloring cost Chennai", "hair coloring offers Chennai", "hair coloring deals Chennai", "gray coverage Chennai", "root touch up Chennai", "hair color correction Chennai", "post color treatment Chennai", "color safe shampoo Chennai", "hair coloring maintenance", "balayage maintenance", "hair color aftercare", "low maintenance hair color", "hair color for humid weather", "hair color for busy professionals", "hair color for sensitive scalp", "professional hair color near me", "best hair stylist for coloring Chennai", "Anaplak hair color", "Maduravoyal hair coloring", "hair salon for coloring Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-04-13",
     readTime: "8 min read",
@@ -472,135 +301,71 @@ A: <strong>Hair coloring price in Chennai</strong> varies based on technique and
   {
     id: "monsoon-hair-care-tips",
     title: "Monsoon Hair Care: 9 Tips to Stop Frizz Before It Ruins Your Hair",
-    description: "Every Chennai monsoon turns great hair into a frizzy mess. These 9 proven tips — from pre-wash oiling to the right hair spa — actually work. Stop fighting humidity at Anaplak Art and Glam Salon.",
-    content: `<p>Monsoon season brings relief from the scorching heat — but it also brings a wave of hair troubles. High humidity, acidic rainwater, and constant dampness can leave your hair frizzy, flat, and damaged. At <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal, we've helped hundreds of clients keep their hair healthy through every season. Our <strong>hair care services in Chennai</strong> are designed to combat monsoon damage effectively.</p>
+    description: "Every Chennai monsoon turns great hair into a frizzy mess. These 9 proven tips, from pre-wash oiling to the right hair spa, actually work. Stop fighting humidity at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Humidity lifts the cuticle, which is why hair frizzes in the monsoon.",
+      "Wash less often and use a sulphate-free shampoo.",
+      "Deep condition weekly and dry hair fully before stepping out.",
+      "A smoothing or keratin treatment controls frizz for months, not days.",
+    ],
+    content: `<p>Chennai monsoon makes hair frizzy. It also makes the scalp damp, the cuticle swell and the ends tangle. A few changes in the routine go further than a new product.</p>
 
-<h2>Common Monsoon Hair Problems</h2>
-<ul>
-<li><strong>Frizz:</strong> Humidity causes hair shaft to swell</li>
-<li><strong>Hair Fall:</strong> Weakened roots due to moisture</li>
-<li><strong>Dandruff:</strong> Fungal growth in humid conditions</li>
-<li><strong>Scalp Infections:</strong> Bacterial growth in damp conditions</li>
-</ul>
-<p>These issues are especially prevalent in Chennai's monsoon climate, making professional <strong>hair treatment in Chennai</strong> essential.</p>
+<h2>Wash less, condition more</h2>
+<p>Wash two or three times a week unless your scalp gets very oily. Use a sulphate-free shampoo and condition from the mid-lengths to the ends. Rinse with cool water to close the cuticle.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Struggling with monsoon hair problems?</strong> Our <strong>monsoon hair treatment in Chennai</strong> targets frizz, hair fall, and scalp issues caused by humidity. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Monsoon Hair Treatment →</a></p>
-</div>
+<h2>Dry the scalp</h2>
+<p>Do not tie wet hair or leave it damp for hours. Dry the scalp first, then the lengths. If you have thick hair, a quick blow-dry on low heat is better than letting it stay wet.</p>
 
-<h2>Essential Monsoon Hair Care Tips</h2>
+<h2>Hair spa and treatments</h2>
+<p>A hair spa every three to four weeks helps with dryness and frizz. For stronger frizz control, keratin or smoothening can help, but only after an assessment. At Anaplak, a classic hair spa is ₹3,000 and keratin starts at ₹3,500 for a partial head.</p>
 
-<h3>1. Keep Hair Dry</h3>
-<p>Rainwater contains pollutants and acids that damage hair. Always:</p>
-<ul>
-<li>Carry an umbrella or raincoat</li>
-<li>Tie long hair when going out</li>
-<li>Dry hair immediately if it gets wet</li>
-</ul>
+<h2>What to avoid</h2>
+<p>Avoid tight ponytails on wet hair. Avoid brushing wet hair from the roots. Avoid heavy oiling if your scalp is already oily. Avoid leaving the same towel on your hair for hours.</p>
 
-<h3>2. Choose the Right Shampoo</h3>
-<p>Use a gentle, sulfate-free shampoo that cleanses without stripping natural oils. Look for ingredients like:</p>
-<ul>
-<li>Aloe vera for hydration</li>
-<li>Tea tree oil for scalp health</li>
-<li>Keratin for strength</li>
-</ul>
-<p>Our <strong>hair salon in Maduravoyal</strong> recommends professional-grade products for monsoon care.</p>
+<h2>When to book a treatment</h2>
+<p>If your hair is breaking, matting or shedding more than usual, book a consultation. Monsoon makes existing damage worse. Treating it early is cheaper than repairing it later.</p>
 
-<h3>3. Condition Properly</h3>
-<p>Moisture is key during monsoon:</p>
-<ul>
-<li>Use conditioner after every wash</li>
-<li>Focus on mid-lengths and ends</li>
-<li>Apply a deep conditioning mask weekly</li>
-</ul>
+<h2>Scalp care</h2>
+<p>The scalp stays damp in the monsoon, which makes dandruff and itching worse. Wash it properly, dry it fully, and do not leave oil on for days. If flaking persists, book a dandruff treatment. At Anaplak it starts at ₹4,000.</p>
 
-<h3>4. Minimize Heat Styling</h3>
-<p>Your hair is already stressed by humidity. Give it a break:</p>
-<ul>
-<li>Air dry when possible</li>
-<li>Use heat protectant if styling is necessary</li>
-<li>Limit straightening to special occasions</li>
-</ul>
+<h2>Products that help</h2>
+<p>A sulphate-free shampoo, a light conditioner and a weekly mask cover most of it. A leave-in serum helps with frizz. Avoid heavy oil on the scalp if you already have dandruff. Use a wide-tooth comb on wet hair.</p>
 
-<h3>5. Oil Massage Weekly</h3>
-<p>Strengthen roots with regular oil massages:</p>
-<ul>
-<li>Warm coconut or almond oil</li>
-<li>Gentle massage for 10-15 minutes</li>
-<li>Leave for at least an hour before washing</li>
-</ul>
+<h2>Styling in humidity</h2>
+<p>Do not fight the frizz with more heat. A loose braid, a low bun or a half-up style holds better in humid weather. If you need a blow-dry, use a heat protectant and keep the heat moderate.</p>
+
+<h2>When to see a stylist</h2>
+<p>Book a consultation if your hair is matting, breaking or shedding more than usual. Monsoon makes existing damage worse. A hair spa every three to four weeks helps, and keratin can control frizz if the hair is healthy enough.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Home care works best with professional support.</strong> A <strong>keratin treatment at Anaplak</strong> creates a humidity shield that keeps your hair sleek all season long. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Keratin Treatment →</a></p>
+<p><strong>Struggling with monsoon frizz?</strong> Book a hair consultation at Anaplak and we will find the right routine. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Consultation →</a></p>
 </div>
-
-<h2>Professional Treatments for Monsoon</h2>
-<p>At Anaplak, we offer treatments perfect for monsoon:</p>
-<ul>
-<li><strong>Keratin Treatment:</strong> Controls frizz for months — a must-have for humid weather</li>
-<li><strong>Deep Conditioning:</strong> Restores moisture balance</li>
-<li><strong>Scalp Treatment:</strong> Prevents infections and dandruff</li>
-<li><strong>Hair Spa:</strong> Intensive hydration and repair</li>
-</ul>
-<p>Consider combining a keratin treatment with a <strong>regular trim</strong> to remove split ends and keep your style fresh all season.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Beat the monsoon frizz for good.</strong> Our <strong>monsoon-special hair treatments in Chennai</strong> combine keratin, deep conditioning, and scalp care for complete protection. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Monsoon Package →</a></p>
-</div>
-
-<h2>Monsoon Hair Care for Different Hair Types</h2>
-<ul>
-<li><strong>Frizzy Hair:</strong> Keratin treatment and anti-frizz serums</li>
-<li><strong>Oily Scalp:</strong> Frequent washing with gentle shampoo</li>
-<li><strong>Dry Hair:</strong> Deep conditioning and leave-in conditioners</li>
-<li><strong>Colored Hair:</strong> Color-protecting products and reduced washing</li>
-</ul>
-
-<h2>Diet for Healthy Monsoon Hair</h2>
-<p>Support hair health from within:</p>
-<ul>
-<li>Vitamin C rich foods for collagen</li>
-<li>Omega-3 fatty acids for shine</li>
-<li>Biotin-rich foods for strength</li>
-<li>Stay hydrated (8-10 glasses daily)</li>
-</ul>
-
-<h2>When to See a Professional</h2>
-<p>Visit our <strong>beauty salon in Chennai</strong> if you experience:</p>
-<ul>
-<li>Excessive hair fall</li>
-<li>Persistent dandruff</li>
-<li>Scalp irritation or itching</li>
-<li>Change in hair texture</li>
-</ul>
-<p>Our <strong>hair fall treatment in Chennai</strong> and <strong>anti-dandruff treatment</strong> services can address these issues effectively.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: How often should I wash my hair during monsoon?</strong><br>
-A: Every 2-3 days with a gentle, sulfate-free shampoo. Overwashing strips natural oils, while underwashing leads to buildup.</p>
+<p><strong>Q: Why does hair get frizzy in the monsoon?</strong><br>
+A: Humidity lifts the cuticle and lets moisture in, which makes the hair swell and frizz.</p>
 
-<p><strong>Q: Is keratin treatment good for monsoon?</strong><br>
-A: Absolutely! <strong>Keratin treatment</strong> is one of the best defenses against monsoon frizz. It creates a protective barrier that seals the hair cuticle and repels humidity for up to 3-4 months.</p>
+<p><strong>Q: How often should I wash my hair in the monsoon?</strong><br>
+A: Two or three times a week for most people. Wash more if your scalp gets oily.</p>
 
-<p><strong>Q: Can I get a hair color during monsoon?</strong><br>
-A: Yes, but take extra care with aftercare. Visit our salon for <strong>hair coloring</strong> with bond-protecting treatments that help color last even in humid conditions.</p>
+<p><strong>Q: Does hair spa help with monsoon frizz?</strong><br>
+A: It helps with dryness and manageability. For stronger frizz control, a smoothing treatment may be needed.</p>
 
-<p><strong>Q: My scalp is itchy during rains. What should I do?</strong><br>
-A: This is likely due to fungal growth from humidity. Our <strong>scalp treatment service</strong> can address this — book a consultation for a proper diagnosis and treatment plan.</p>
+<p><strong>Q: Can I oil my hair in the monsoon?</strong><br>
+A: Yes, if your scalp tolerates it. Do not leave oil on for days, and wash it out properly.</p>
 
-<p><strong>Q: What is the best hairstyle for monsoon weather in Chennai?</strong><br>
-A: Low-maintenance styles like layered cuts, bobs, or pixie cuts work best as they dry faster and require less styling in humid weather.</p>
+<p><strong>Q: Should I get keratin in the monsoon?</strong><br>
+A: It can help, but the hair needs to be healthy enough. Book a consultation first.</p>
 
-<h2 class="blog-cta">Book Your Monsoon Hair Care Session</h2>
-<p class="blog-cta-text">Don't let the rains ruin your hair. Whether it's a frizz-fighting keratin treatment, a restorative deep conditioning session, or a professional scalp treatment — Anaplak Art and Glam Salon has you covered. Our monsoon-special packages are designed to keep your hair silky, strong, and stunning all season long. Visit our <strong>hair salon in Chennai, Maduravoyal</strong> and book your session today before the next downpour.</p>`,
-    image: "/blogs/hair-treatment-care-salon-professional-beauty.jpg",
+<h2 class="blog-cta">Book a Monsoon Hair Check</h2>
+<p class="blog-cta-text">Bring your hair concerns. We will build a routine for the season instead of guessing at products.</p>`,
+    image: "/images/blog/damaged-hair-treatments-chennai.jpg",
     category: "Hair Care",
     tags: ["monsoon hair care", "hair care", "frizzy hair", "hair tips", "seasonal care", "monsoon hair care Chennai", "hair treatment Chennai", "hair spa Chennai", "rainy season hair care", "humidity hair care", "hair fall treatment", "anti dandruff treatment", "scalp treatment Chennai", "deep conditioning Chennai", "keratin monsoon", "hair frizz control", "hair protection monsoon", "monsoon hair solutions", "hair care tips rainy season", "hair styling Chennai"],
     keywords: ["monsoon hair care Chennai", "frizzy hair treatment Chennai", "hair care tips rainy season", "keratin treatment monsoon Chennai", "best hair salon Maduravoyal", "hair care Chennai", "hair treatment Maduravoyal", "hair spa Chennai", "rainy season hair care", "humidity hair care Chennai", "frizzy hair solutions Chennai", "hair fall treatment Chennai", "hair fall control Chennai", "anti dandruff treatment Chennai", "dandruff treatment Maduravoyal", "scalp treatment Chennai", "scalp care Chennai", "deep conditioning Chennai", "hair conditioning treatment Chennai", "hair spa Maduravoyal", "keratin for humidity", "anti frizz treatment Chennai", "monsoon hair protection", "hair protection Chennai", "hair care for humid weather", "professional hair care Chennai", "hair treatment packages Chennai", "monsoon hair solutions", "healthy hair monsoon", "hair care routine monsoon", "hair styling for rainy season", "low maintenance hairstyle monsoon", "haircut for humidity Chennai", "best hairstyle for Chennai weather", "Anaplak hair care Chennai", "Maduravoyal hair salon", "hair salon near me Chennai monsoon"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-04-15",
     readTime: "8 min read",
@@ -611,169 +376,70 @@ A: Low-maintenance styles like layered cuts, bobs, or pixie cuts work best as th
     id: "top-hair-styling-trends-women-2026",
     title: "Women's Hair Styling 2026: 10 Cuts That Look Good on Literally Everyone",
     description: "Tired of haircuts that look amazing in photos but fall flat on you? These 10 trending styles for 2026 actually work with real hair textures and face shapes. Find your next look at Anaplak Art and Glam Salon Chennai.",
-    content: `<p>Keeping up with changing hair trends can feel overwhelming—especially when you want a style that looks modern, suits your face, and is easy to maintain in Chennai's humid climate. Choosing the wrong hairstyle can lead to frustration, high maintenance, and an outdated look. That's why understanding the <strong>top hair styling trends in 2026 for women</strong> is essential. This guide from <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal will help you discover the latest trending hairstyles that are stylish, practical, and perfect for women in Chennai who want to look effortlessly beautiful.</p>
+    tldr: [
+      "Soft layers, curtain bangs and the butterfly cut dominate 2026.",
+      "Face-framing layers flatter most face shapes.",
+      "Low-maintenance cuts still need a trim every 6 to 8 weeks.",
+      "Bring two reference photos and be honest about your daily styling time.",
+    ],
+    content: `<p>The strongest haircut trends in 2026 are the ones that grow out well. Soft layers, curtain bangs and the butterfly cut are popular because they suit Indian hair and do not need daily styling.</p>
 
-<h2>Why Hair Trends Matter for Women in 2026</h2>
-<p>Hair trends in 2026 are all about natural texture, effortless styling, and long-lasting shapes that grow out beautifully.</p>
-<ul>
-<li>Enhances your overall appearance</li>
-<li>Matches your personality and lifestyle</li>
-<li>Reduces daily styling effort</li>
-<li>Keeps your look fresh and modern</li>
-</ul>
-<p>Following the <strong>top hair styling trends in 2026 for women</strong> ensures you stay stylish without spending hours on maintenance. Our <strong>hair styling services in Chennai</strong> are designed to help you achieve these trending looks.</p>
+<h2>Soft layers</h2>
+<p>Soft layers add movement without thinning the ends. They suit medium to long hair and work with wavy or straight textures. Ask for layers that start below the chin, not at the cheekbone, unless you want a rounder shape.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Ready for a style upgrade?</strong> Our <strong>hair styling experts in Chennai</strong> will help you find the perfect trending look for your face shape and lifestyle. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Styling Consultation →</a></p>
-</div>
+<h2>Curtain bangs</h2>
+<p>Curtain bangs frame the face and soften the forehead. They need a trim every four to six weeks. If your hair is very curly, ask for a longer, blended version.</p>
 
-<h2>Top Hair Styling Trends in 2026 for Women You Should Try</h2>
+<h2>Butterfly cut and bobs</h2>
+<p>The butterfly cut is a layered shape with shorter face-framing pieces and longer lengths. It looks polished but needs styling to sit well. Bobs and lobs are still strong, especially one-length bobs for fine hair.</p>
 
-<h3>Soft Layered Cuts (Butterfly Cut & Long Layers)</h3>
-<p>Layered hairstyles are dominating 2026.</p>
-<ul>
-<li>Adds volume and movement</li>
-<li>Works for both long and medium hair</li>
-<li>Perfect for Chennai weather (light and breathable)</li>
-</ul>
-<p>Styles like <strong>butterfly cuts</strong> and soft layers are designed to look good even without heavy styling. Our <strong>layered hair cut in Chennai</strong> services create this modern, effortless look.</p>
+<h2>What suits your face shape</h2>
+<p>Round faces do well with longer layers and a side part. Square faces suit soft waves and curtain bangs. Long faces suit a fringe or a chin-length bob. Oval faces can carry most shapes. These are starting points, not rules.</p>
 
-<h3>Modern Bob & Lob (Long Bob)</h3>
-<p>Bobs are making a strong comeback with modern upgrades.</p>
-<ul>
-<li>Rounded lob and textured bob are trending</li>
-<li>Easy to maintain and style</li>
-<li>Suitable for all face shapes</li>
-</ul>
-<p>The <strong>lob hairstyle</strong> remains popular because of its versatility and low maintenance. Our <strong>hair salon in Maduravoyal</strong> offers expert <strong>bob cut services in Chennai</strong>.</p>
+<h2>Maintenance</h2>
+<p>Most of these cuts need a trim every six to eight weeks. Layers can look grown out quickly. If you do not want to style daily, choose a cut that works with your natural texture.</p>
 
-<h3>Curtain Bangs & Face-Framing Layers</h3>
-<p>Curtain bangs continue to dominate in 2026.</p>
-<ul>
-<li>Softly frames the face</li>
-<li>Adds a stylish touch without drastic change</li>
-<li>Works with almost all hairstyles</li>
-</ul>
-<p>They blend naturally with layers, making them easy to maintain. Our <strong>face framing layers</strong> and <strong>curtain bangs styling</strong> services at our <strong>beauty salon in Chennai</strong> create this effortlessly chic look.</p>
+<h2>Face shape guide</h2>
+<p>Round faces benefit from longer layers and a side part. Square faces soften with waves and curtain bangs. Long faces suit a fringe or a chin-length bob. Heart-shaped faces do well with layers that add volume below the cheekbones. Bring a photo of your face shape and the haircut.</p>
 
-<h3>Textured Shag & Natural Waves</h3>
-<p>Effortless, messy styles are trending more than ever.</p>
-<ul>
-<li>Embraces natural hair texture</li>
-<li>Low styling effort</li>
-<li>Ideal for a casual, modern look</li>
-</ul>
-<p>Shag styles in 2026 are more polished with softer layers and better structure. Our <strong>shag haircut in Chennai</strong> and <strong>natural waves styling</strong> services achieve this contemporary look.</p>
+<h2>Styling at home</h2>
+<p>Soft layers need a round brush or a quick blow-dry. Curtain bangs need a brush and a little heat. The butterfly cut looks best with volume at the crown. If you want a wash-and-go cut, tell the stylist before they start.</p>
 
-<h3>Sleek Straight & Glass Hair</h3>
-<p>Minimalist styles are also trending.</p>
-<ul>
-<li>Ultra-smooth, shiny finish</li>
-<li>Clean and elegant look</li>
-<li>Perfect for formal occasions</li>
-</ul>
-<p>This trend focuses on healthy, glossy hair rather than heavy styling. Our <strong>hair straightening services in Chennai</strong> and <strong>keratin treatments</strong> create this sleek <strong>glass hair</strong> effect.</p>
+<h2>Colour with the cut</h2>
+<p>Highlights and balayage show layers better than a single flat colour. If you colour your hair, plan the cut and colour in the same consultation so the placement works together. Root touch-ups start at ₹2,000 for women.</p>
 
-<h3>Hair Color Trends (Soft & Dimensional)</h3>
-<p>Color plays a big role in 2026 hair trends.</p>
-<ul>
-<li>Warm tones like honey blonde and amber shades</li>
-<li>Subtle highlights and balayage</li>
-<li>Natural-looking color blending</li>
-</ul>
-<p>Dimensional colors create depth and enhance overall style. Our <strong>balayage hair coloring in Chennai</strong> and <strong>highlights services</strong> create these trendy looks.</p>
+<h2>Price and timing</h2>
+<p>Women's styling at Anaplak starts at ₹1,200 with a Premier stylist, ₹1,500 with a Top stylist and ₹1,800 with the Salon Director. A wash and blow-dry is ₹1,000 and ironing is ₹1,800. Plan for 45 to 90 minutes depending on length.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Find your perfect color to complement your style.</strong> From subtle balayage to bold highlights, our <strong>color specialists in Chennai</strong> create dimensional looks that turn heads. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Color Consultation →</a></p>
+<p><strong>Want a cut that suits your hair type?</strong> Book a consultation at Anaplak. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Styling Appointment →</a></p>
 </div>
-
-<h3>Half-Up, Half-Down & Soft Styling</h3>
-<p>Simple yet elegant styles are trending.</p>
-<ul>
-<li>Easy to create and maintain</li>
-<li>Works for casual and formal looks</li>
-<li>Suitable for all hair lengths</li>
-</ul>
-<p>This style remains popular due to its versatility and simplicity. Our <strong>hairstyling services</strong> at Anaplak can create these looks for any occasion.</p>
-
-<h2>Hairstyles for Different Face Shapes</h2>
-<p>Not every trend will suit everyone—choose wisely based on your face shape.</p>
-
-<h3>Face Shape Guide</h3>
-<ul>
-<li><strong>Round face →</strong> Layers and volume on top</li>
-<li><strong>Oval face →</strong> Most styles work beautifully</li>
-<li><strong>Square face →</strong> Soft waves and layers to soften angles</li>
-<li><strong>Heart face →</strong> Side-swept bangs and layers</li>
-</ul>
-
-<h3>Hair Type Guide</h3>
-<ul>
-<li><strong>Thin hair →</strong> Blunt cuts or lobs for volume</li>
-<li><strong>Thick hair →</strong> Layers or shag styles for manageability</li>
-<li><strong>Curly hair →</strong> Natural texture styles and deva cuts</li>
-<li><strong>Straight hair →</strong> Sleek styles and polished looks</li>
-</ul>
-
-<h3>Lifestyle Considerations</h3>
-<ul>
-<li><strong>Busy women →</strong> Low maintenance styles like lobs and bobs</li>
-<li><strong>Professional →</strong> Sleek and structured looks</li>
-<li><strong>Creative field →</strong> Experiment with bangs and colors</li>
-</ul>
-
-<h2>Hair Care Tips to Maintain Trending Styles</h2>
-<ul>
-<li>Use sulfate-free shampoos</li>
-<li>Avoid excessive heat styling</li>
-<li>Trim every 6–8 weeks</li>
-<li>Use lightweight products (important in Chennai humidity)</li>
-<li>Deep condition regularly</li>
-</ul>
-<p>Healthy hair makes any hairstyle look better. Our <strong>hair spa services in Chennai</strong> help maintain your style between appointments.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Keep your style looking fresh.</strong> Regular <strong>hair spa sessions at Anaplak</strong> maintain the health and shine of your hair, making any style look its best. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Spa →</a></p>
-</div>
-
-<h2>Common Mistakes to Avoid</h2>
-<ul>
-<li>Following trends without considering face shape</li>
-<li>Over-layering hair</li>
-<li>Ignoring hair health</li>
-<li>Using too many styling products</li>
-<li>Choosing high-maintenance styles without time</li>
-</ul>
-<p>Avoiding these mistakes helps maintain your look effortlessly.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: Which hairstyle is best for Chennai weather?</strong><br>
-A: Layered cuts, lobs, and natural waves work best due to humidity. Our <strong>hair stylist in Chennai</strong> can recommend the best options for your hair type.</p>
+<p><strong>Q: What haircut is trending for women in 2026?</strong><br>
+A: Soft layers, curtain bangs and the butterfly cut. Bobs and lobs are still popular.</p>
 
-<p><strong>Q: Are short hairstyles trending in 2026?</strong><br>
-A: Yes, bobs and pixie cuts are very popular. Our <strong>short hair styling services</strong> create these modern looks.</p>
+<p><strong>Q: Will layers make my hair look thinner?</strong><br>
+A: Badly placed layers can. Ask for layers that add movement without removing weight from the ends.</p>
 
-<p><strong>Q: Is hair coloring necessary to stay trendy?</strong><br>
-A: No, but subtle highlights can enhance your look. Our <strong>hair coloring services</strong> offer everything from natural to bold.</p>
+<p><strong>Q: How often should I trim my hair?</strong><br>
+A: Every six to eight weeks for most cuts.</p>
 
-<p><strong>Q: How often should I change my hairstyle?</strong><br>
-A: Every few months or when you want a fresh look. Regular <strong>hair trims in Chennai</strong> keep your style fresh.</p>
+<p><strong>Q: Can I get curtain bangs with curly hair?</strong><br>
+A: Yes, ask for a longer, blended version that works with your curl pattern.</p>
 
-<p><strong>Q: Are bangs hard to maintain?</strong><br>
-A: Curtain bangs are easier compared to blunt bangs. Our <strong>bang styling services</strong> help you maintain the perfect fringe.</p>
+<p><strong>Q: What haircut suits a round face?</strong><br>
+A: Longer layers and a side part usually work well. Avoid heavy, blunt fringes.</p>
 
-<p><strong>Q: How much does a haircut cost in Chennai?</strong><br>
-A: <strong>Haircut price in Chennai</strong> varies by style and length. Contact us for detailed <strong>hair styling packages</strong>.</p>
-
-<h2 class="blog-cta">Book Your Hair Styling in Chennai</h2>
-<p class="blog-cta-text">Your hairstyle defines your look—don't settle for outdated styles. Whether you want a trendy haircut, a stylish transformation, or expert advice tailored to your face and hair type, the professional stylists at <strong>Anaplak Art and Glam Salon</strong> can help you achieve the perfect look. Visit our <strong>beauty salon in Chennai, Maduravoyal</strong> and book your hair styling service today to stay ahead with the latest 2026 trends. Limited slots are available—secure your appointment now and transform your look with confidence.</p>`,
-    image: "/blogs/top-hair-styling-trends-for-women.webp",
+<h2 class="blog-cta">Book a Hair Styling Appointment</h2>
+<p class="blog-cta-text">Bring two reference photos and your routine. We will choose a cut you can maintain at home.</p>`,
+    image: "/images/blog/womens-hair-styling-trends-2026-chennai.webp",
     category: "Hair Styling",
     tags: ["women hair styling", "hair styling", "hairstyles 2026", "hair trends women", "haircut Chennai", "womens hairstyle Chennai", "bob cut", "lob haircut", "layered haircut", "butterfly cut", "curtain bangs", "shag haircut", "hair trends 2026 women", "modern bob", "pixie cut", "face framing layers", "natural waves", "glass hair", "straight hair styling", "half up half down hairstyle", "women haircut Chennai", "hair styling for women", "hairstyling services Chennai", "women hair salon Chennai", "hair salon Maduravoyal", "best hair stylist women Chennai", "hair transformation Chennai", "trendy haircut 2026", "new hairstyle women", "hair styling ideas Chennai"],
     keywords: ["women hair styling Chennai", "haircut trends 2026 Chennai", "hairstyles for women Maduravoyal", "best hair stylist Chennai women", "hair styling service Chennai", "hair styling Chennai", "women hairstyle Chennai", "hairstyle for women Chennai", "hair trends 2026 Chennai", "latest hairstyles for women", "trendy haircuts 2026", "modern bob haircut Chennai", "lob hairstyle Chennai", "layered haircut Chennai", "butterfly cut Chennai", "curtain bangs Chennai", "shag haircut Chennai", "pixie cut Chennai", "short haircut women Chennai", "long haircut women Chennai", "medium haircut Chennai", "hair transformation Chennai", "hair styling services Chennai", "professional hair styling Chennai", "expert hair stylist Chennai", "hair styling near me", "beauty salon hair styling Chennai", "hair salon Maduravoyal women", "best hair salon for women Chennai", "hair makeover Chennai", "hairstyle consultation Chennai", "haircut package Chennai", "hair styling price Chennai", "haircut cost Chennai", "women hair salon near me", "Anaplak hair styling", "Anaplak women's haircut", "Maduravoyal hair salon for women", "Chennai women hair expert", "women hairstylist Chennai", "haircut for round face Chennai", "haircut for oval face Chennai", "haircut for square face Chennai", "hairstyle for humid weather Chennai", "low maintenance haircut Chennai", "easy hairstyle for busy women Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-05-05",
     readTime: "9 min read",
@@ -783,173 +449,77 @@ A: <strong>Haircut price in Chennai</strong> varies by style and length. Contact
   {
     id: "top-hair-styling-trends-men-2026",
     title: "Men's Hair Trends 2026: 7 Styles That Make You Look Sharper Instantly",
-    description: "Still rocking the same haircut from 3 years ago? These 7 styling trends for 2026 — from textured crops to modern slick backs — are proven to make men look more put-together at Anaplak Art and Glam Salon Chennai.",
-    content: `<p>Men's grooming is evolving faster than ever, and keeping up with the latest styles can feel overwhelming. Choosing the wrong haircut can affect your confidence, appearance, and even how others perceive you. That's why understanding the <strong>top hair styling trends in 2026 for men</strong> is essential—especially for men in Chennai, where climate, lifestyle, and personal style all play a role. This guide from <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal will help you discover modern, stylish, and practical hair trends that suit your personality while staying easy to maintain.</p>
+    description: "Still rocking the same haircut from 3 years ago? These 7 styling trends for 2026, from textured crops to modern slick backs, are proven to make men look more put-together at Anaplak Art and Glam Salon Chennai.",
+    tldr: [
+      "Textured crops, taper fades and soft quiffs are the safe 2026 choices.",
+      "Ask for a cut that works with your hair type, not against it.",
+      "Book a trim every 3 to 5 weeks to keep the shape.",
+      "Beard shaping changes the face as much as the haircut.",
+    ],
+    content: `<p>Men's hair in 2026 is about texture and a clean outline. The cut should work with your hair type, not against it.</p>
 
-<h2>Why Hair Trends Matter for Men in 2026</h2>
-<p>Hair is no longer just about looking neat—it's about expressing your identity.</p>
+<h2>Textured crop</h2>
+<p>The textured crop is short on the sides with texture on top. It suits straight to wavy hair and works well in Chennai humidity. Ask for point cutting on top so it does not look flat.</p>
+
+<h2>Taper fade</h2>
+<p>A taper fade keeps the length on top and gradually shortens the sides. It is cleaner than a full skin fade and grows out well. It suits most face shapes.</p>
+
+<h2>Quiff and slick back</h2>
+<p>The quiff adds height at the front and works with medium length. The slick back needs length and a strong hold product. Both need regular trims to keep the shape.</p>
+
+<h2>Beard shaping</h2>
+<p>Beard shaping changes the face as much as the haircut. Keep the neckline clean and the cheek line natural. A beard trim is ₹200, beard design is ₹400 and an executive shave is ₹400.</p>
+
+<h2>Maintenance</h2>
+<p>Book a trim every three to five weeks. Use a light styling product. Wash less often if your scalp is dry. Do not fight your hair type. If it is curly, work with the curl.</p>
+
+<h2>Face shape and hair type</h2>
+<p>A round face suits height on top and tighter sides. A long face suits a fringe or a softer, wider shape. A square jaw can carry a short crop or a fade. These are starting points. Your hair density and growth pattern decide what is realistic.</p>
+<p>Straight hair holds a crop well. Wavy hair works with texture. Curly hair needs a cut that leaves room for the curl to shrink. If your hair is thinning, a shorter taper looks cleaner than a long comb-over.</p>
+
+<h2>Styling products</h2>
+<p>Use a matte clay for texture, a sea salt spray for volume, or a light pomade for a slick back. Start with a small amount and build. Heavy product in Chennai humidity makes the hair look greasy by afternoon.</p>
+
+<h2>What to tell your stylist</h2>
 <ul>
-<li>Enhances personality and confidence</li>
-<li>Keeps your look modern and relevant</li>
-<li>Helps you stand out professionally and socially</li>
-<li>Complements your face shape and lifestyle</li>
+<li>How much time you will spend styling on a normal morning</li>
+<li>Fade or scissor cut on the sides</li>
+<li>How your hair behaved after the last cut</li>
+<li>Beard growing out or shaped</li>
 </ul>
-<p>Following the <strong>top hair styling trends in 2026 for men</strong> ensures you stay ahead while maintaining a polished appearance at our <strong>men's hair salon in Chennai</strong>.</p>
+
+<h2>Price and timing</h2>
+<p>A men's cut at Anaplak starts at ₹900 with a Premier stylist, ₹1,100 with a Top stylist and ₹1,300 with the Salon Director. A beard trim is ₹200 and beard design is ₹400. Plan for 30 to 45 minutes.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Upgrade your look this year.</strong> Our <strong>men's hair stylists in Chennai</strong> specialize in the latest trends that suit your face shape and lifestyle. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Men's Styling →</a></p>
+<p><strong>Want a cut that suits your hair type?</strong> Book a men's styling appointment at Anaplak. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Men's Styling →</a></p>
 </div>
-
-<h2>Top Hair Styling Trends in 2026 for Men You Should Try</h2>
-
-<h3>Textured Crop with Fade</h3>
-<p>This continues to dominate in 2026 due to its versatility and low maintenance.</p>
-<ul>
-<li>Short sides with a textured top</li>
-<li>Works well in Chennai's humid weather</li>
-<li>Easy to style daily</li>
-</ul>
-<p>Our <strong>textured crop haircut in Chennai</strong> and <strong>fade haircut services</strong> create this modern look.</p>
-
-<h3>Modern Slick Back</h3>
-<p>A refined version of the classic slick back with a natural finish.</p>
-<ul>
-<li>Less greasy, more volume</li>
-<li>Perfect for formal and business looks</li>
-<li>Best paired with medium-length hair</li>
-</ul>
-<p>Our <strong>slick back hair styling</strong> at Anaplak gives you a sophisticated, polished appearance suitable for the <strong>corporate environment in Chennai</strong>.</p>
-
-<h3>Messy Medium-Length Hair</h3>
-<p>Natural, effortless styles are trending more than ever.</p>
-<ul>
-<li>Ideal for men who prefer a relaxed look</li>
-<li>Requires minimal styling products</li>
-<li>Works great with wavy or thick hair</li>
-</ul>
-<p>Our <strong>medium length hair styling</strong> services create this casual, contemporary vibe.</p>
-
-<h3>Taper Fade with Beard Blend</h3>
-<p>Clean, sharp, and masculine.</p>
-<ul>
-<li>Smooth transition from hair to beard</li>
-<li>Enhances facial structure</li>
-<li>Popular among professionals and young men</li>
-</ul>
-<p>Our <strong>taper fade haircut Chennai</strong> combined with our <strong>beard styling services</strong> creates this cohesive look.</p>
-
-<h3>Curly Hair Embrace</h3>
-<p>Instead of straightening, men are embracing natural curls.</p>
-<ul>
-<li>Defined curls with proper styling</li>
-<li>Requires hydration-focused products</li>
-<li>Perfect for a bold, unique look</li>
-</ul>
-<p>Our <strong>curly hair styling Chennai</strong> and <strong>curl definition services</strong> help you rock your natural texture.</p>
-
-<h3>Buzz Cut with Design</h3>
-<p>Minimal yet stylish.</p>
-<ul>
-<li>Clean buzz cut with subtle patterns or lines</li>
-<li>Low maintenance and ideal for hot climates like Chennai</li>
-<li>Sharp and edgy appearance</li>
-</ul>
-<p>Our <strong>buzz cut haircut Chennai</strong> and <strong>hair design services</strong> create personalized, statement-making looks.</p>
-
-<h2>How to Choose the Right Hair Trend for You</h2>
-<p>Not every trend suits everyone. Here's how to pick the right one:</p>
-
-<h3>Face Shape Guide</h3>
-<ul>
-<li><strong>Round face →</strong> Go for volume on top, avoid side parts</li>
-<li><strong>Oval face →</strong> Most styles work beautifully</li>
-<li><strong>Square face →</strong> Softer, textured styles to soften angles</li>
-<li><strong>Heart face →</strong> Side-swept styles and medium length</li>
-</ul>
-
-<h3>Hair Type Guide</h3>
-<ul>
-<li><strong>Straight hair →</strong> Slick back, crop, or quiff styles</li>
-<li><strong>Wavy hair →</strong> Medium messy styles, layered cuts</li>
-<li><strong>Curly hair →</strong> Defined curls, curly crop, natural texture</li>
-<li><strong>Thick hair →</strong> Layered cuts, thinning techniques</li>
-<li><strong>Thin hair →</strong> Textured styles with volume on top</li>
-</ul>
-
-<h3>Lifestyle Considerations</h3>
-<ul>
-<li><strong>Busy schedule →</strong> Low maintenance styles like buzz cuts and crops</li>
-<li><strong>Corporate job →</strong> Clean and structured cuts like side parts and slick backs</li>
-<li><strong>Creative field →</strong> Experiment with bold styles, undercuts, and hair designs</li>
-</ul>
-<p>Choosing wisely ensures you benefit from the <strong>top hair styling trends in 2026 for men</strong> without compromising comfort.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Not sure which trend suits you?</strong> Our <strong>men's grooming experts in Chennai</strong> can recommend the perfect style for your face shape, hair type, and daily routine. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Styling Consultation →</a></p>
-</div>
-
-<h2>Men's Grooming Services We Offer</h2>
-<ul>
-<li><strong>Men's Haircut Chennai:</strong> Classic and modern cuts</li>
-<li><strong>Men's Hair Styling:</strong> Daily and special occasion styling</li>
-<li><strong>Beard Styling:</strong> Trim, shape, and style your beard</li>
-<li><strong>Men's Facial:</strong> Clean up and rejuvenate</li>
-<li><strong>Hair Treatment:</strong> Keratin, deep conditioning, and more</li>
-</ul>
-
-<h2>Hair Care Tips to Maintain Trending Styles</h2>
-<p>A good hairstyle needs proper maintenance.</p>
-<ul>
-<li>Wash hair 2–3 times a week with suitable shampoo</li>
-<li>Use conditioner to prevent dryness</li>
-<li>Apply styling products in moderation</li>
-<li>Trim regularly (every 3–4 weeks)</li>
-<li>Protect hair from sun and pollution (important in Chennai)</li>
-</ul>
-<p>Healthy hair enhances any trend you choose. Our <strong>men's hair care services</strong> at Anaplak keep your hair in top condition.</p>
-
-<div class="blog-mid-cta">
-<p><strong>A great cut needs great maintenance.</strong> Our <strong>men's hair care treatments in Chennai</strong> keep your hair healthy, manageable, and style-ready between cuts. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Care →</a></p>
-</div>
-
-<h2>Common Mistakes to Avoid</h2>
-<ul>
-<li>Copying trends without considering face shape</li>
-<li>Overusing styling products</li>
-<li>Ignoring hair health</li>
-<li>Skipping regular trims</li>
-<li>Choosing high-maintenance styles without time to manage them</li>
-</ul>
-<p>Avoiding these mistakes helps you maintain a sharp and consistent look.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: Which hairstyle is best for Chennai weather?</strong><br>
-A: Short styles like textured crop, buzz cut, or fade work best due to humidity. Our <strong>men's hair stylist in Chennai</strong> can recommend the best option for you.</p>
+<p><strong>Q: What men's hairstyle is trending in 2026?</strong><br>
+A: Textured crops, taper fades and soft quiffs. Slick backs are still popular for formal looks.</p>
 
-<p><strong>Q: How often should I get a haircut?</strong><br>
-A: Every 3–4 weeks to maintain shape and cleanliness. Our <strong>men's haircut packages in Chennai</strong> make regular visits affordable.</p>
+<p><strong>Q: How often should men get a haircut?</strong><br>
+A: Every three to five weeks to keep the shape.</p>
 
-<p><strong>Q: Are long hairstyles difficult to maintain?</strong><br>
-A: Yes, they require more care, products, and styling time. Our <strong>long hair styling services</strong> help manage longer locks.</p>
+<p><strong>Q: What suits curly hair?</strong><br>
+A: A textured crop or a taper fade with length on top. Work with the curl instead of straightening it every day.</p>
 
-<p><strong>Q: Can I switch styles frequently?</strong><br>
-A: Yes, but ensure your hair health is maintained. Our expert <strong>men's hair stylists</strong> can guide you on sustainable styling.</p>
+<p><strong>Q: Should I shave my beard in summer?</strong><br>
+A: It is a personal choice. A trimmed beard is easier to maintain in humidity.</p>
 
-<p><strong>Q: Do I need professional styling products?</strong><br>
-A: Using quality products improves results and hair health. We recommend <strong>professional hair products</strong> available at our <strong>beauty salon in Maduravoyal</strong>.</p>
+<p><strong>Q: How much is a men's haircut at Anaplak?</strong><br>
+A: Premier stylist cuts start at ₹900, Top stylist at ₹1,100 and Salon Director at ₹1,300.</p>
 
-<p><strong>Q: How much does a men's haircut cost in Chennai?</strong><br>
-A: <strong>Men's haircut price in Chennai</strong> varies by style. Contact us for detailed <strong>men's grooming packages</strong>.</p>
-
-<h2 class="blog-cta">Book Your Hair Styling in Chennai</h2>
-<p class="blog-cta-text">Your hairstyle is one of the first things people notice—make sure it leaves a strong impression. Whether you want a trendy transformation or a clean, professional look, expert stylists at <strong>Anaplak Art and Glam Salon</strong> can help you achieve the perfect style tailored to your face, hair type, and lifestyle. Visit our <strong>men's hair salon in Chennai, Maduravoyal</strong> and book your hair styling service today to upgrade your look with the latest 2026 trends. Appointments fill quickly, so don't wait—get the style you deserve now.</p>`,
-    image: "/blogs/top-hair-styling-trends-for-men.webp",
+<h2 class="blog-cta">Book Men's Styling</h2>
+<p class="blog-cta-text">Bring a reference and tell us how much time you want to spend styling. We will keep the cut practical.</p>`,
+    image: "/images/blog/mens-hair-styling-trends-2026-chennai.webp",
     category: "Hair Styling",
     tags: ["men hair styling", "men haircut", "mens grooming", "hair trends 2026 men", "mens hairstyle Chennai", "men hair salon Chennai", "textured crop", "fade haircut men", "slick back men", "messy hair men", "taper fade", "beard styling men", "curly hair men", "buzz cut men", "men hair design", "mens hair trends 2026", "men hairstyle trends", "men haircut Chennai", "men hair styling Maduravoyal", "best men haircut Chennai", "men hair stylist Chennai", "men grooming Chennai", "men hair salon near me", "men haircut near me Chennai", "mens hairstylist Maduravoyal", "modern men haircut", "classic men haircut", "professional men haircut", "business haircut men", "casual men hairstyle", "trendy men haircut", "cool men haircut Chennai"],
     keywords: ["men hair styling Chennai", "haircut trends 2026 Chennai", "mens grooming Maduravoyal", "best hair stylist Chennai men", "hair styling service Chennai", "men hair styling Chennai", "men haircut Chennai", "men hairstyle Chennai", "men hair trends 2026", "mens hair trends Chennai", "hair styling for men Chennai", "men hair stylist Maduravoyal", "men hair salon Chennai", "men hair salon Maduravoyal", "men haircut near me Chennai", "best men haircut Chennai", "mens haircut Maduravoyal", "professional men haircut Chennai", "men hair grooming Chennai", "men styling services Chennai", "textured crop men Chennai", "fade haircut men Chennai", "slick back men Chennai", "taper fade men Chennai", "undercut men Chennai", "quiff men Chennai", "crew cut men Chennai", "buzz cut men Chennai", "pomade men hairstyle Chennai", "clay men hairstyle Chennai", "curly hair men Chennai", "wavy hair men styling Chennai", "medium length hair men Chennai", "long hair men styling Chennai", "men beard styling Chennai", "beard trim Chennai", "men facial Chennai", "men grooming packages Chennai", "men haircut price Chennai", "men haircut cost Chennai", "affordable men haircut Chennai", "premium men hair styling Chennai", "Anaplak men hair styling", "Anaplak men haircut Chennai", "Maduravoyal men hair salon", "Chennai men hair expert", "men hairstylist near me Chennai", "men haircut for round face Chennai", "men haircut for oval face Chennai", "men haircut for square face Chennai", "low maintenance men haircut Chennai", "easy men hairstyle for busy professionals Chennai", "men hairstyle for corporate Chennai", "men hairstyle for creative professionals Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-04-28",
     readTime: "8 min read",
@@ -959,209 +529,66 @@ A: <strong>Men's haircut price in Chennai</strong> varies by style. Contact us f
   {
     id: "bridal-beauty-checklist-before-wedding",
     title: "Bridal Beauty Checklist: The 3-Month Timeline That Saves You From Wedding Day Disasters",
-    description: "One bad facial can ruin months of skin prep. This month-by-month bridal beauty checklist tells you exactly what to do — and what to avoid — so you look flawless on your wedding day at Anaplak Art and Glam Salon.",
-    content: `<p>Every bride dreams of looking flawless on her wedding day—but without a proper plan, beauty prep can quickly become stressful and overwhelming. This <strong>ultimate bridal beauty checklist before your wedding</strong> is designed to help brides in Chennai stay organized, stress-free, and glowing from head to toe. Whether your wedding is months away or just around the corner, following the right steps at the right time ensures you look your absolute best on your big day at our <strong>bridal studio in Chennai</strong>.</p>
+    description: "One bad facial can ruin months of skin prep. This month-by-month bridal beauty checklist tells you exactly what to do and what to avoid, so you look flawless on your wedding day at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Start bridal skin and hair prep about 3 months before the wedding.",
+      "Book the makeup trial 4 to 8 weeks out.",
+      "Avoid new treatments in the final 2 weeks.",
+      "Confirm the wedding-day schedule, touch-up kit and draping in advance.",
+    ],
+    content: `<p>A bridal checklist is not a countdown for its own sake. It is a way to stop three months of prep from collapsing into the last week.</p>
 
-<h2>What is a Bridal Beauty Checklist?</h2>
-<p>A bridal beauty checklist is a structured timeline of skincare, haircare, and grooming tasks that brides should follow before their wedding. Instead of last-minute panic bookings, this checklist helps you prepare in advance, ensuring every detail—from glowing skin to perfect hair—is taken care of. For brides in Chennai, where weather and humidity can affect skin and hair, having a proper checklist becomes even more important.</p>
+<h2>Three months out</h2>
+<p>Start with the basics. Book your trial, settle on a skincare routine and stop changing products every week. If you have acne or pigmentation, see a dermatologist now rather than in the final month.</p>
+<p>Book facials every four weeks. The last one should be one to two weeks before the wedding, not the day before. Start hair treatments if you are planning keratin, smoothening or a hair spa, because these need time to settle. If you colour your hair, do the final touch-up at least two weeks out.</p>
+<p>For the body, start waxing and manicure routines now so your skin is used to them. Do not try a new treatment for the first time in the final month.</p>
 
-<h2>Why Every Bride Needs a Bridal Beauty Checklist Before Your Wedding</h2>
-<p>Planning your beauty routine isn't just about looking good—it's about feeling confident. A well-planned <strong>bridal beauty checklist before your wedding</strong> can make a huge difference in your overall bridal look. Here's why:</p>
-<ul>
-<li><strong>Prevents last-minute stress:</strong> No more rushing appointments or panic booking at the <strong>best bridal salon in Chennai</strong></li>
-<li><strong>Helps achieve radiant, healthy skin:</strong> Proper timeline for facials and treatments</li>
-<li><strong>Ensures all treatments are done at the right time:</strong> Spacing allows for recovery</li>
-<li><strong>Avoids skin reactions before the wedding:</strong> Patch tests and gradual introduction of products</li>
-<li><strong>Keeps everything organized and smooth:</strong> Know exactly what to do and when</li>
-</ul>
-<p>At <strong>Anaplak Art and Glam Salon</strong> in Maduravoyal, we help brides follow this structured approach for picture-perfect results.</p>
+<h2>One month out</h2>
+<p>Confirm the trial look, the hairstyle and the draping. Get the final hair trim, not a big cut. Book your bridal facial and any detan or brightening treatment. Buy the makeup you plan to keep in your touch-up kit and test it once.</p>
+<p>This is also the time to confirm timings with the family. Early muhurthams need a start time between 3 and 5 AM, and the artist needs to know how many people are getting ready.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Don't leave your bridal beauty to chance.</strong> Our <strong>bridal beauty experts in Chennai</strong> will create a personalized timeline so you look flawless on your big day. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Bridal Consultation →</a></p>
-</div>
+<h2>Two weeks out</h2>
+<p>Stop experimenting. Keep the routine you have used for months. Avoid new facials, strong actives, waxing or threading within three days of the wedding. If a breakout appears, treat it calmly. Do not pick at it.</p>
+<p>Confirm the final outfit, jewellery and saree. If you are booking draping, bring the saree in advance for pre-pleating.</p>
 
-<h2>3 Months Before Wedding: Foundation Phase</h2>
-<p>This is the most important phase where you build the base for your bridal glow. Starting early gives your skin and hair time to adjust to new treatments and routines.</p>
+<h2>One week out</h2>
+<p>Do your last facial at least five to seven days before. Get the final hair spa and colour touch-up if needed. Finish the manicure and pedicure, threading and waxing. Lay out the outfit and accessories. Pack the touch-up kit.</p>
 
-<h3>Skincare Routine</h3>
-<ul>
-<li>Start regular facials suited to your skin type</li>
-<li>Consult a dermatologist if you have acne or pigmentation</li>
-<li>Begin a CTM routine (Cleanse, Tone, Moisturize)</li>
-<li>Schedule your <strong>bridal makeup trial</strong> at our <strong>bridal makeup studio in Chennai</strong></li>
-</ul>
+<h2>The day before</h2>
+<p>Wash your hair the previous day, not the morning of. Sleep early. Hydrate. Do not try a new product on your face. Keep the evening simple.</p>
 
-<h3>Hair Care</h3>
-<ul>
-<li>Start oiling and deep conditioning weekly</li>
-<li>Trim split ends to maintain hair health</li>
-<li>Begin any <strong>hair coloring treatments</strong> if planned</li>
-<li>Consider a <strong>keratin treatment</strong> for smoother styling on your wedding day</li>
-</ul>
-
-<h3>Body Care</h3>
-<ul>
-<li>Begin body polishing or spa treatments</li>
-<li>Maintain hydration and a healthy diet</li>
-<li>Start your fitness routine if desired</li>
-</ul>
+<h2>On the day</h2>
+<p>Eat something before the artist arrives. Wear a button-down shirt if you are getting hair done before the outfit. Keep the room well lit. Hand the touch-up kit to one person and tell them where it is.</p>
 
 <div class="blog-mid-cta">
-<p><strong>3 months out is when the magic starts.</strong> Begin your bridal skin and hair prep with our <strong>bridal facial and keratin packages in Chennai</strong> designed for brides-to-be. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Bridal Package →</a></p>
+<p><strong>Want help building the timeline?</strong> Book a bridal consultation and we will map it around your wedding date. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Consultation →</a></p>
 </div>
-
-<h2>1 Month Before Wedding: Enhancement Phase</h2>
-<p>Now it's time to enhance your glow and refine details. This phase focuses on advanced treatments that give you that bridal radiance.</p>
-
-<h3>Skin Treatments</h3>
-<ul>
-<li>Go for advanced facials like hydrating or brightening facials</li>
-<li>Avoid trying new treatments that might cause reactions</li>
-<li>Consider <strong>anti-aging facial</strong> or <strong>gold facial</strong> for extra glow</li>
-</ul>
-
-<h3>Hair Prep</h3>
-<ul>
-<li>Hair spa sessions for smooth and shiny hair</li>
-<li>Decide your wedding hairstyle with your stylist</li>
-<li>Final <strong>hair color touch-up</strong> if needed</li>
-</ul>
-
-<h3>Grooming</h3>
-<ul>
-<li>Eyebrow shaping for a polished look</li>
-<li>Waxing routine (maintain consistency)</li>
-<li><strong>Manicure and pedicure</strong> for perfect hands and feet</li>
-</ul>
-
-<div class="blog-mid-cta">
-<p><strong>1 month to go — time to enhance your glow.</strong> Our <strong>bridal facials and hair spa sessions in Chennai</strong> give you that radiant, camera-ready look for the big day. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Pre-Wedding Facial →</a></p>
-</div>
-
-<h2>2 Weeks Before Wedding: Final Polish Phase</h2>
-<ul>
-<li>Deep cleansing facial to purify skin</li>
-<li>Final hair spa session</li>
-<li>Lip and under-eye treatment for smoothness</li>
-<li>All <strong>bridal makeup products</strong> should be finalized and tested</li>
-</ul>
-
-<h2>1 Week Before Wedding: Final Touch Phase</h2>
-<p>This phase is all about polishing your look. By now, your skin should be glowing and hair in great condition.</p>
-
-<h3>Skin</h3>
-<ul>
-<li>Last facial (at least 5–7 days before wedding)</li>
-<li>Avoid harsh treatments that might cause irritation</li>
-<li>Use gentle, hydrating skincare products</li>
-</ul>
-
-<h3>Hair</h3>
-<ul>
-<li>Final hair spa session</li>
-<li>Hair color touch-up if needed</li>
-<li>Discuss final <strong>bridal hairstyle</strong> with your stylist</li>
-</ul>
-
-<h3>Body & Grooming</h3>
-<ul>
-<li>Full body waxing</li>
-<li>Manicure & pedicure for perfect hands and feet</li>
-<li>Threading for smooth facial hair removal</li>
-<li><strong>Bridal henna/mehendi</strong> application if part of tradition</li>
-</ul>
-
-<h2>1 Day Before Wedding: Relax & Glow</h2>
-<p>This is NOT the time to experiment. Your <strong>beauty checklist before your wedding</strong> should include these essential steps:</p>
-<ul>
-<li>Take a relaxing spa or massage to unwind</li>
-<li>Stay hydrated—your skin will thank you</li>
-<li>Get proper sleep for that natural glow</li>
-<li>Avoid new products you haven't tested before</li>
-<li>Prep your bridal kit (makeup essentials, safety pins, etc.)</li>
-<li>Lay out your bridal outfit and accessories</li>
-</ul>
-
-<h2>Wedding Day Essentials Kit</h2>
-<ul>
-<li>Touch-up makeup and powder</li>
-<li>Lipstick or lip balm</li>
-<li>Hairpins and hair spray</li>
-<li>Blotting papers for oily skin</li>
-<li>Deodorant</li>
-<li>Mini sewing kit</li>
-<li>Safety pins (multiple)</li>
-<li>Mint or breath freshener</li>
-</ul>
-
-<h2>Essential Tips for Brides in Chennai</h2>
-<p>The Chennai climate can be humid, so keep these tips in mind when planning your bridal beauty routine:</p>
-<ul>
-<li>Use lightweight, non-greasy skincare products</li>
-<li>Stay hydrated to prevent dullness and dehydration</li>
-<li>Opt for long-lasting, <strong>HD bridal makeup</strong> that withstands humidity</li>
-<li>Schedule treatments considering weather conditions</li>
-<li>Choose <strong>airbrush bridal makeup</strong> for a lighter, more natural finish</li>
-</ul>
-<p>Following a <strong>bridal beauty checklist before your wedding</strong> tailored for Chennai ensures your skin and hair stay fresh despite the heat.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Your bridal checklist, perfected by professionals.</strong> At <strong>Anaplak Art and Glam Salon</strong>, our <strong>bridal beauty packages in Chennai</strong> cover every step — from facials to hair styling. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Complete Bridal Package →</a></p>
-</div>
-
-<h2>Common Mistakes to Avoid</h2>
-<p>Don't let these common pitfalls derail your bridal beauty preparation:</p>
-<ul>
-<li>Trying new skincare treatments too close to the wedding</li>
-<li>Skipping patch tests for new products</li>
-<li>Ignoring diet and hydration in the weeks before</li>
-<li>Overloading your schedule with last-minute appointments</li>
-<li>Not communicating your vision clearly to your makeup artist</li>
-</ul>
-<p>Avoiding these mistakes can save you from unnecessary stress and skin issues on your big day.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Avoid bridal beauty disasters.</strong> Our experts at Anaplak ensure you follow the right timeline and treatments, so there are no surprises. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Bridal Consultation →</a></p>
-</div>
-
-<h2>Our Bridal Services at Anaplak Art and Glam Salon</h2>
-<ul>
-<li><strong>Bridal Makeup:</strong> Complete wedding day makeup with trial sessions</li>
-<li><strong>Bridal Hairstyling:</strong> Professional styling for all wedding functions</li>
-<li><strong>Bridal Facials:</strong> Pre-wedding skin preparation packages</li>
-<li><strong>Keratin Treatment:</strong> Smooth, frizz-free hair for your big day</li>
-<li><strong>Hair Coloring:</strong> Highlights or color to complement your bridal look</li>
-<li><strong>Manicure & Pedicure:</strong> Perfect hands and feet for your wedding photos</li>
-</ul>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: When should I start my bridal beauty routine?</strong><br>
-A: Ideally, 2–3 months before your wedding for best results. Starting early gives your skin time to adjust and recover from any treatments at our <strong>bridal studio in Chennai</strong>.</p>
+<p><strong>Q: When should I start bridal skincare?</strong><br>
+A: Three months before is ideal. It gives the skin time to adjust without risking a reaction in the final weeks.</p>
 
-<p><strong>Q: Can I do a facial one day before my wedding?</strong><br>
-A: Not recommended. Always do it at least 5–7 days before to avoid any potential reactions or redness on your big day.</p>
+<p><strong>Q: Can I get a facial the day before my wedding?</strong><br>
+A: I would not recommend it. Do the last facial one to two weeks before.</p>
 
-<p><strong>Q: How often should I do a hair spa?</strong><br>
-A: Once every 2–3 weeks leading up to your wedding helps maintain smooth, shiny, and manageable hair.</p>
+<p><strong>Q: Should I get a haircut before the wedding?</strong><br>
+A: A trim yes, a big cut no. Do it at least two weeks before so it settles.</p>
 
-<p><strong>Q: Is professional skincare necessary?</strong><br>
-A: Yes, especially if you want long-lasting results and expert guidance. Our <strong>facial treatments</strong> and <strong>bridal makeup services</strong> at Anaplak are designed to give you that perfect bridal glow.</p>
+<p><strong>Q: When should I do waxing and threading?</strong><br>
+A: At least three days before the wedding. Not on the day before or the morning of.</p>
 
-<p><strong>Q: What is included in a bridal package at Anaplak?</strong><br>
-A: Our <strong>bridal packages in Chennai</strong> include pre-wedding consultations, trial sessions, wedding day makeup and hair, and touch-up support. Contact us for customized packages.</p>
+<p><strong>Q: What goes in the touch-up kit?</strong><br>
+A: Blotting paper, powder, the exact lip colour, a concealer pen, cotton buds and hair pins.</p>
 
-<p><strong>Q: How much does bridal makeup cost in Chennai?</strong><br>
-A: <strong>Bridal makeup price in Chennai</strong> varies based on services included. Our <strong>bridal makeup packages</strong> are designed to fit different budgets while maintaining premium quality.</p>
-
-<h2 class="blog-cta">Book Your Bridal Beauty Services in Chennai</h2>
-<p class="blog-cta-text">Your wedding is one of the most important days of your life—don't leave your beauty preparation to chance. With expert care, personalized treatments, and a structured bridal plan at <strong>Anaplak Art and Glam Salon</strong>, you can achieve that flawless, radiant look effortlessly. Visit our <strong>bridal studio in Chennai, Maduravoyal</strong> and book your bridal beauty services today. Let our professionals take care of every detail, so you can focus on enjoying your special day with confidence and elegance. Limited slots fill fast—secure your appointment now.</p>`,
-    image: "/blogs/Ultimate-Bridal-Beauty-Checklist-Before-Wedding.webp",
+<h2 class="blog-cta">Plan Your Bridal Prep</h2>
+<p class="blog-cta-text">Bring your date and your concerns to Anaplak in Maduravoyal. We will build a timeline that fits your skin, hair and wedding schedule.</p>`,
+    image: "/images/blog/bridal-beauty-checklist-chennai.webp",
     category: "Bridal",
     tags: ["bridal beauty", "wedding checklist", "bridal skincare", "bridal preparation", "bridal beauty checklist Chennai", "bride preparation Chennai", "pre wedding beauty", "bridal grooming", "wedding beauty timeline", "bridal beauty timeline", "bride to be beauty", "pre bridal packages", "bridal makeover", "wedding day preparation", "bridal skin care", "bridal hair care", "bridal makeup trial", "bridal facial Chennai", "bridal hair styling Chennai", "bridal packages Chennai", "bridal services Maduravoyal", "bridal studio Chennai", "best bridal studio Chennai", "bridal beauty services Chennai"],
     keywords: ["bridal makeup", "bridal beauty checklist Chennai", "wedding preparation checklist Chennai", "bride beauty tips Maduravoyal", "bridal skincare timeline Chennai", "best bridal salon Chennai", "bridal beauty checklist", "wedding beauty checklist Chennai", "bridal preparation timeline", "pre wedding beauty checklist", "bride preparation checklist Chennai", "bridal skincare routine", "bridal hair care routine", "bridal makeup timeline Chennai", "wedding beauty timeline Chennai", "bridal beauty preparation", "bridal beauty services Chennai", "bridal makeup services Maduravoyal", "bridal hairstyling Chennai", "bridal packages Chennai", "bridal makeup price Chennai", "bridal makeup cost Chennai", "bridal makeup studio Chennai", "bridal studio Maduravoyal", "bridal studio near me Chennai", "best bridal makeup Chennai", "top bridal makeup artist Chennai", "professional bridal makeup Chennai", "luxury bridal makeup Chennai", "premium bridal services Chennai", "bridal beauty salon Chennai", "bridal beauty studio Maduravoyal", "wedding makeup and hair Chennai", "bridal package includes", "bridal trial session Chennai", "bridal consultation Chennai", "pre wedding facial Chennai", "bridal facial packages Chennai", "bridal skincare treatment Chennai", "Anaplak bridal services", "Anaplak bridal makeup Chennai", "Kalpana bridal studio Chennai", "Maduravoyal bridal salon", "Chennai bridal services near me"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-04-24",
     readTime: "10 min read",
@@ -1172,158 +599,62 @@ A: <strong>Bridal makeup price in Chennai</strong> varies based on services incl
   {
     id: "anti-aging-skincare-routine",
     title: "Anti-Aging Skincare: The Routine That Actually Works (No Gimmicks, Just Results)",
-    description: "Most anti-aging advice is either too expensive or too complicated. This routine uses proven ingredients — retinol, vitamin C, sunscreen — and real dermatologist logic to visibly reduce fine lines and dullness at Anaplak Art and Glam Salon.",
-    content: `<p>Aging is natural — but premature aging doesn't have to be. Fine lines, dull skin, uneven tone, and loss of firmness often appear earlier due to stress, sun exposure, and poor skincare habits. The good news? With the right <strong>anti-aging skincare routine</strong>, you can maintain youthful, radiant skin for years. At <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal, we combine expert guidance with professional treatments to help you age gracefully and glow confidently.</p>
+    description: "Most anti-aging advice is either too expensive or too complicated. This routine uses proven ingredients such as retinol, vitamin C and sunscreen, plus real dermatologist logic to visibly reduce fine lines and dullness at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Sunscreen and retinoids do most of the heavy lifting.",
+      "Introduce actives slowly and keep the routine simple.",
+      "In-salon treatments every 4 to 6 weeks support home care.",
+      "Results build over months, not days.",
+    ],
+    content: `<p>Most anti-aging routines fail because they try to do too much at once. A simple routine you follow for months beats a shelf of products you use for a week.</p>
 
-<h2>What is an Anti-Aging Skincare Routine?</h2>
-<p>An anti-aging skincare routine is a structured set of daily and weekly steps designed to:</p>
-<ul>
-<li>Reduce fine lines and wrinkles</li>
-<li>Improve skin elasticity and firmness</li>
-<li>Boost hydration and natural glow</li>
-<li>Protect against environmental damage and UV rays</li>
-</ul>
-<p>The goal is not to stop aging — but to age gracefully with healthy, glowing skin. Our <strong>anti-aging facial treatments in Chennai</strong> are designed to complement your daily routine for maximum results.</p>
+<h2>Sunscreen does the heavy lifting</h2>
+<p>If you use one product, make it sunscreen. UV exposure causes pigmentation, fine lines and loss of elasticity. Apply it every morning, indoors included, and reapply if you are outside for long.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Ready to start your anti-aging journey?</strong> Our skin experts at Anaplak Art and Glam Salon can assess your skin and recommend the perfect <strong>anti-aging treatment in Chennai</strong>. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Your Consultation →</a></p>
-</div>
+<h2>Retinol, used slowly</h2>
+<p>Retinol helps fine lines and texture, but it needs months and it can irritate. Start with a low percentage twice a week. Buffer it with moisturiser if your skin is dry. Do not use it with strong acids on the same night. If you are pregnant or breastfeeding, ask your doctor first.</p>
 
-<h2>Morning Anti-Aging Skincare Routine</h2>
-<p>Your morning routine should focus on <strong>protection and hydration</strong> — shielding your skin from the day's environmental stressors.</p>
+<h2>Vitamin C and moisturiser</h2>
+<p>Vitamin C in the morning supports brightness and helps with pigmentation. A moisturiser keeps the barrier healthy. Neither works overnight. Give them eight to twelve weeks.</p>
 
-<h3>1. Gentle Cleanser</h3>
-<p>Start with a mild cleanser to remove oil and impurities without stripping your skin. A harsh cleanser can damage your skin barrier, making fine lines more visible.</p>
+<h2>In-salon treatments</h2>
+<p>Facials every four to six weeks support the home routine. At Anaplak, facials start at ₹2,000. Brightening facials are ₹3,000, skin miracle and avocado facials are ₹4,000, glutathione and Gensly facials are ₹5,000, and Casmara is ₹7,000. None of these replace sunscreen or retinol.</p>
 
-<h3>2. Vitamin C Serum</h3>
-<p>A powerful antioxidant that:</p>
-<ul>
-<li>Brightens skin and evens out tone</li>
-<li>Fights free radicals from pollution and UV exposure</li>
-<li>Reduces pigmentation and dark spots</li>
-<li>Boosts collagen production</li>
-</ul>
+<h2>What not to do</h2>
+<p>Do not start three new products in one week. Do not over-exfoliate. Do not expect a facial to fix years of sun damage in one session. Do not skip sleep and water and then look for a cream to fix it.</p>
 
-<h3>3. Moisturizer</h3>
-<p>Hydrates and locks in moisture, keeping skin plump and smooth. Choose one with hyaluronic acid for deep hydration — essential in Chennai's climate.</p>
-
-<h3>4. Sunscreen (SPF 30 or Higher)</h3>
-<p>The most important step. Sun exposure is the <strong>#1 cause of premature aging</strong>. Never skip sunscreen — even on cloudy days. UV rays penetrate clouds and windows, causing wrinkles, pigmentation, and loss of elasticity.</p>
+<h2>What to expect</h2>
+<p>Fine lines soften slowly. Pigmentation fades slowly. Texture improves slowly. If a clinic promises a dramatic change in two weeks, ask what is in the treatment and what the recovery time is.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Need professional help with your morning routine?</strong> Our <strong>facial treatments in Chennai</strong> include deep cleansing and Vitamin C facials that supercharge your skin's morning defense. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Facial →</a></p>
+<p><strong>Want a routine for your skin?</strong> Book a skin consultation at Anaplak and we will keep it simple. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Skin Consultation →</a></p>
 </div>
-
-<h2>Night Anti-Aging Skincare Routine</h2>
-<p>Nighttime is when your skin repairs itself, so your routine should focus on <strong>treatment and recovery</strong>.</p>
-
-<h3>1. Cleanser</h3>
-<p>Remove dirt, oil, and makeup buildup from the day. Double cleansing is recommended — first with an oil-based cleanser, then a water-based one.</p>
-
-<h3>2. Retinol or Anti-Aging Serum</h3>
-<p>Retinol is the gold standard for anti-aging. It helps:</p>
-<ul>
-<li>Boost collagen production</li>
-<li>Reduce fine lines and wrinkles</li>
-<li>Improve skin texture and tone</li>
-<li>Speed up cell turnover</li>
-</ul>
-<p>Start with a low concentration and gradually increase. Our <strong>anti-aging facial in Maduravoyal</strong> can complement your retinol routine with professional-grade treatments.</p>
-
-<h3>3. Eye Cream</h3>
-<p>The skin around your eyes is the thinnest on your body. A dedicated eye cream targets dark circles, puffiness, and fine lines — areas that show aging first.</p>
-
-<h3>4. Night Cream or Moisturizer</h3>
-<p>Deep hydration to support skin repair overnight. Look for ingredients like ceramides, peptides, and niacinamide.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Your skin repairs itself at night — give it the right tools.</strong> A professional <strong>night repair facial at Anaplak</strong> can accelerate your skin's recovery while you sleep. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Night Repair Facial →</a></p>
-</div>
-
-<h2>Weekly Anti-Aging Skincare Essentials</h2>
-<p>To enhance your routine, include these 1–2 times a week:</p>
-
-<h3>Exfoliation</h3>
-<p>Removes dead skin cells and improves skin renewal. Use a gentle chemical exfoliant (AHA or BHA) rather than harsh physical scrubs. Over-exfoliation can damage your skin barrier.</p>
-
-<h3>Face Masks</h3>
-<p>Hydrating or collagen-boosting masks improve glow and firmness. Sheet masks, clay masks, and overnight masks each serve different purposes.</p>
-
-<h3>Professional Facial Treatments</h3>
-<p>Professional facials can deeply nourish and rejuvenate your skin in ways home products cannot. At Anaplak, our <strong>anti-aging facial treatments in Chennai</strong> include:</p>
-<ul>
-<li><strong>Gold Facial:</strong> Boosts collagen and adds radiance</li>
-<li><strong>Collagen Facial:</strong> Firms and plumps aging skin</li>
-<li><strong>Vitamin C Facial:</strong> Brightens and protects against damage</li>
-<li><strong>Deep Cleansing Facial:</strong> Clears pores and improves texture</li>
-<li><strong>Anti-Aging Facial:</strong> Targets fine lines, wrinkles, and loss of firmness</li>
-</ul>
-
-<div class="blog-mid-cta">
-<p><strong>Professional facials deliver results home products can't.</strong> Our <strong>anti-aging facials in Chennai</strong> use professional-grade products and techniques for visible improvement. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Anti-Aging Facial →</a></p>
-</div>
-
-<h2>Key Ingredients to Look For</h2>
-<p>When choosing anti-aging products, focus on these proven ingredients:</p>
-<ul>
-<li><strong>Retinol →</strong> Reduces wrinkles and boosts collagen production</li>
-<li><strong>Hyaluronic Acid →</strong> Deep hydration and plumping effect</li>
-<li><strong>Vitamin C →</strong> Brightens skin and protects against environmental damage</li>
-<li><strong>Niacinamide →</strong> Improves texture, tone, and reduces pore appearance</li>
-<li><strong>Peptides →</strong> Strengthens skin barrier and promotes firmness</li>
-</ul>
-<p>Our <strong>skincare specialists in Maduravoyal</strong> can recommend the right products tailored to your skin type and concerns.</p>
-
-<h2>Who Should Start an Anti-Aging Routine?</h2>
-<ul>
-<li><strong>In your early 20s →</strong> Start with prevention (sunscreen + hydration)</li>
-<li><strong>In your 30s →</strong> Add active ingredients like retinol and vitamin C</li>
-<li><strong>In your 40s+ →</strong> Focus on repair, hydration, and professional treatments</li>
-</ul>
-<p>It's never too early — or too late — to start caring for your skin. Prevention is always easier than correction, so starting even a basic routine in your 20s pays off significantly.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Not sure where to start?</strong> Our experts at Anaplak can assess your skin and create a personalized <strong>anti-aging routine in Chennai</strong> based on your age, skin type, and concerns. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Get a Skin Assessment →</a></p>
-</div>
-
-<h2>Common Mistakes to Avoid</h2>
-<ul>
-<li><strong>Skipping sunscreen</strong> — The single biggest aging accelerator</li>
-<li><strong>Using too many products at once</strong> — Overloading skin causes irritation</li>
-<li><strong>Over-exfoliating</strong> — Damages your skin barrier, causing sensitivity</li>
-<li><strong>Ignoring hydration</strong> — Even oily skin needs moisture to stay balanced</li>
-<li><strong>Expecting instant results</strong> — Anti-aging takes 4–8 weeks of consistent use</li>
-</ul>
-<p>Consistency is the real secret to youthful skin. Sticking with your routine and supplementing with professional treatments gives the best long-term results.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: When should I start an anti-aging routine?</strong><br>
-A: You can start as early as your 20s with basic protection and hydration. Sunscreen and moisturizer form the foundation at any age at our <strong>skincare clinic in Chennai</strong>.</p>
+<p><strong>Q: At what age should I start anti-aging skincare?</strong><br>
+A: Sunscreen and moisturiser can start in your twenties. Retinol is usually introduced in your late twenties or early thirties, depending on your skin.</p>
 
-<p><strong>Q: Is retinol safe for beginners?</strong><br>
-A: Yes, start with a low concentration (0.025%) and use it 2–3 times a week. Gradually increase as your skin adjusts.</p>
+<p><strong>Q: Can retinol reverse wrinkles?</strong><br>
+A: It can soften fine lines and improve texture. It does not remove deep wrinkles.</p>
 
-<p><strong>Q: How long before I see results?</strong><br>
-A: Visible results usually appear within 4–8 weeks with consistent use. Professional treatments at our <strong>anti-aging salon in Maduravoyal</strong> can accelerate results.</p>
+<p><strong>Q: How often should I get an anti-aging facial?</strong><br>
+A: Every four to six weeks, alongside your home routine.</p>
 
-<p><strong>Q: Can I skip moisturizer if I have oily skin?</strong><br>
-A: No, even oily skin needs hydration to stay balanced. Use a lightweight, oil-free moisturizer instead.</p>
+<p><strong>Q: Is vitamin C necessary?</strong><br>
+A: It helps with brightness and pigmentation, but sunscreen matters more. If you can only afford one, choose sunscreen.</p>
 
-<p><strong>Q: Are professional treatments necessary?</strong><br>
-A: They're not mandatory, but they significantly boost your results. Our <strong>anti-aging facials in Chennai</strong> use medical-grade products that home products can't match.</p>
+<p><strong>Q: Can I use retinol and vitamin C together?</strong><br>
+A: Many people use vitamin C in the morning and retinol at night. If your skin is sensitive, introduce one at a time.</p>
 
-<p><strong>Q: What is the best anti-aging facial in Chennai?</strong><br>
-A: At <strong>Anaplak Art and Glam Salon</strong>, we offer gold facials, collagen facials, and specialized anti-aging facials tailored to your skin type. Our facials deliver visible results after just one session.</p>
-
-<h2 class="blog-cta">Book Your Skincare Consultation</h2>
-<p class="blog-cta-text">Want expert guidance tailored to your skin type and concerns? A professional consultation at Anaplak Art and Glam Salon can help you choose the right treatments, products, and routine for long-term results. Visit our <strong>skincare clinic in Chennai, Maduravoyal</strong> and take the first step toward healthier, glowing skin today — because the earlier you start, the better your results will be.</p>`,
-    image: "/blogs/anti-aging-skincare-routine-facial-treatment.jpg",
+<h2 class="blog-cta">Book a Skin Consultation</h2>
+<p class="blog-cta-text">Bring your current routine and your concerns. We will remove what you do not need and keep what works.</p>`,
+    image: "/images/blog/anti-aging-skincare-routine-chennai.jpg",
     category: "Skincare",
     tags: ["anti-aging", "skincare routine", "anti-aging skincare", "skincare", "wrinkle treatment", "anti-aging Chennai", "anti-aging facial Chennai", "skincare routine Chennai", "retinol", "vitamin C serum", "sunscreen", "anti-aging treatment Maduravoyal", "best anti-aging facial Chennai", "collagen facial Chennai", "gold facial Chennai", "anti-aging products", "fine lines treatment", "wrinkle reduction Chennai", "aging skin treatment", "skin rejuvenation Chennai", "anti-aging tips Chennai", "skincare for aging skin", "premature aging treatment", "anti-aging salon Chennai", "professional anti-aging facial", "night skincare routine", "morning skincare routine", "youthful skin Chennai", "glowing skin treatment Chennai"],
     keywords: ["anti-aging skincare routine Chennai", "best anti-aging facial Chennai", "skincare routine for aging skin", "anti-aging treatment Maduravoyal", "wrinkle treatment Chennai", "fine lines treatment Chennai", "anti-aging facial Chennai", "collagen facial Chennai", "gold facial Chennai", "vitamin C facial Chennai", "anti-aging salon Chennai", "skincare clinic Maduravoyal", "retinol treatment Chennai", "skin rejuvenation Chennai", "anti-aging tips Chennai", "best anti-aging products", "sunscreen importance anti-aging", "night skincare routine Chennai", "morning skincare routine", "prevent aging Chennai", "youthful skin treatment Chennai", "professional anti-aging facial Chennai", "anti-aging facials near me", "anti-aging skincare tips", "how to prevent wrinkles", "best anti-aging routine", "skincare for 30s", "skincare for 40s", "skincare for 20s prevention", "Anaplak anti-aging facial", "Maduravoyal skincare", "Chennai skin clinic", "best facial for aging skin Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-05-12",
     readTime: "9 min read",
@@ -1333,171 +664,63 @@ A: At <strong>Anaplak Art and Glam Salon</strong>, we offer gold facials, collag
   },
   {
     id: "best-hair-treatments-for-damaged-hair",
-    title: "Damaged Hair? These 6 Salon Treatments Actually Reverse It (Not Just Mask It)",
-    description: "Olaplex, keratin, hair spa, hair botox — which one actually fixes your damage? We break down what each treatment does, who it's for, and what results you can realistically expect at Anaplak Art and Glam Salon.",
-    content: `<p>Dealing with dry, frizzy, or lifeless hair can be frustrating — especially when regular oils and shampoos don't seem to work anymore. Damage from heat styling, coloring, pollution, and Chennai's humid climate can weaken your hair over time. The good news? The right <strong>best hair treatments for damaged hair</strong> can restore strength, shine, and smoothness. In this guide, you'll discover the most effective salon and professional treatments to repair your hair and bring it back to life at <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal.</p>
+    title: "Damaged Hair? 6 Salon Treatments That Actually Repair It",
+    description: "Olaplex, keratin, hair spa, hair botox: which one actually fixes your damage? We break down what each treatment does, who it's for, and what results you can realistically expect at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Match the treatment to the damage: protein for breakage, moisture for dryness.",
+      "Hair botox and bond builders repair; keratin and smoothing mainly control frizz.",
+      "Trim split ends first, or the damage travels up the strand.",
+      "Space strong treatments and use sulphate-free home care.",
+    ],
+    content: `<p>Damaged hair is not one problem. Breakage, dryness, frizz and split ends need different fixes. Choosing the strongest treatment is not the same as choosing the right one.</p>
 
-<h2>What Causes Hair Damage?</h2>
-<p>Before choosing a treatment, it's important to understand the root cause of your hair damage:</p>
-<ul>
-<li><strong>Excessive heat styling</strong> — Straighteners, blow dryers, and curling irons weaken hair structure</li>
-<li><strong>Chemical treatments</strong> — Coloring, bleaching, and rebonding strip natural proteins</li>
-<li><strong>Pollution and sun exposure</strong> — Common in Chennai, UV rays and pollutants degrade hair quality</li>
-<li><strong>Lack of proper hair care routine</strong> — Skipping conditioning, using harsh products</li>
-<li><strong>Over-washing or harsh products</strong> — Strips natural oils and causes dryness</li>
-</ul>
-<p>Damaged hair usually shows signs like dryness, split ends, breakage, and dullness. Identifying the cause helps you pick the right solution from the <strong>best hair treatments for damaged hair</strong> available at our <strong>hair salon in Chennai</strong>.</p>
+<h2>Match the treatment to the damage</h2>
+<p>If the hair snaps when wet and feels mushy, it needs protein. If it feels dry and rough but stretches, it needs moisture. If it is frizzy and unmanageable, a smoothing treatment helps. If the ends are split, no treatment fixes them. They need a trim.</p>
 
-<h2>Best Hair Treatments for Damaged Hair You Should Consider</h2>
+<h2>Bond builders and botox</h2>
+<p>Bond strengthening treatments repair the internal structure after colour, bleach or heat damage. Hair botox is a deep-conditioning treatment that adds softness and shine without straightening. At Anaplak, hair botox is <strong>₹8,000</strong>, botoplex is ₹8,000 and bond strengthening starts at ₹5,000.</p>
 
-<h3>Olaplex Hair Repair Treatment</h3>
-<p>One of the most advanced treatments available today. Olaplex works differently from traditional treatments:</p>
-<ul>
-<li>Repairs broken hair bonds at a molecular level</li>
-<li>Strengthens hair from within</li>
-<li>Reduces breakage and improves elasticity</li>
-</ul>
-<p>Unlike regular conditioners that just coat the hair, Olaplex actually rebuilds damaged hair structure. It's ideal for chemically treated or heavily damaged hair. Our <strong>Olaplex hair treatment in Chennai</strong> delivers visible results even after a single session.</p>
+<h2>Keratin, smoothening and nano plastia</h2>
+<p>Keratin smooths frizz and adds shine. Smoothening relaxes the hair straighter. Nano plastia is an advanced smoothing option. These are finishing treatments, not repairs. If the hair is breaking, repair it first. Keratin starts at ₹3,500 for a partial head and ₹7,000 for a full head. Nano plastia starts at ₹9,000.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Is Olaplex right for your hair?</strong> Our <strong>hair treatment experts in Chennai</strong> can assess your damage level and recommend the best repair option. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Assessment →</a></p>
-</div>
+<h2>Hair spa and scalp care</h2>
+<p>A hair spa is deep conditioning. It helps dry, dull hair and makes styling easier. It will not rebuild broken bonds on its own. Classic hair spa is ₹3,000, and dandruff treatment starts at ₹4,000.</p>
 
-<h3>Keratin Treatment</h3>
-<p>Perfect for those struggling with frizz and rough texture. Keratin is one of the most popular <strong>hair treatments for damaged hair in Chennai</strong>:</p>
-<ul>
-<li>Smoothens hair and adds shine</li>
-<li>Reduces frizz and makes hair manageable</li>
-<li>Results last up to 3–4 months with proper care</li>
-</ul>
-<p>Keratin works by filling gaps in the hair shaft with protein, making hair smoother and stronger. It's especially effective against Chennai's humidity. Our <strong>keratin treatment in Maduravoyal</strong> is one of our most requested services for damaged hair repair.</p>
+<h2>What to do before a treatment</h2>
+<p>Trim the split ends. Tell the stylist about colour, bleach and previous treatments. Do not stack two strong treatments in one week. If your scalp is irritated, treat that first.</p>
 
-<h3>Hair Spa Treatment</h3>
-<p>A must-have for regular maintenance and mild damage. <strong>Hair spa treatments</strong> at our <strong>beauty salon in Chennai</strong> provide:</p>
-<ul>
-<li>Deep conditioning and hydration</li>
-<li>Improved scalp health</li>
-<li>Added softness and shine</li>
-<li>Relaxation and stress relief</li>
-</ul>
-<p>Hair spa treatments are designed to nourish both scalp and hair, making them suitable for all hair types. Regular sessions keep your hair healthy and prevent future damage.</p>
+<h2>Aftercare</h2>
+<p>Use a sulphate-free shampoo. Add a weekly mask. Limit heat styling and use a heat protectant. Do not skip trims. A treatment buys time, but it does not replace basic care.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Regular hair spa sessions prevent damage before it starts.</strong> Our <strong>hair spa in Chennai</strong> includes deep conditioning, scalp massage, and professional-grade products. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Spa →</a></p>
+<p><strong>Not sure which treatment your hair needs?</strong> Book a hair consultation at Anaplak and we will assess the damage first. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Consultation →</a></p>
 </div>
-
-<h3>Hair Botox Treatment</h3>
-<p>A deep repair and rejuvenation treatment for severely damaged hair:</p>
-<ul>
-<li>Restores moisture and smoothness</li>
-<li>Repairs damaged fibers</li>
-<li>Makes hair thicker and healthier-looking</li>
-<li>Reduces frizz and adds volume</li>
-</ul>
-<p>Hair botox works by filling damaged areas with nutrients like keratin, collagen, and vitamins for a fuller, smoother appearance. If your hair feels beyond repair, our <strong>hair botox treatment in Chennai</strong> can bring it back to life.</p>
-
-<h3>Deep Conditioning Treatment</h3>
-<p>Simple but highly effective for restoring moisture:</p>
-<ul>
-<li>Adds intense moisture to dry hair</li>
-<li>Reduces frizz and split ends</li>
-<li>Improves texture and manageability</li>
-<li>Quick treatment with immediate results</li>
-</ul>
-<p>Deep conditioning is one of the easiest ways to maintain hair health and prevent further damage. Pair it with a <strong>hair spa session at Anaplak</strong> for maximum benefits.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Don't know which treatment suits your hair?</strong> Our <strong>hair damage repair specialists in Chennai</strong> will recommend the right treatment based on your hair type and damage level. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Consultation →</a></p>
-</div>
-
-<h3>Scalp Detox Treatment</h3>
-<p>Often overlooked but essential for healthy hair growth:</p>
-<ul>
-<li>Removes buildup and impurities from the scalp</li>
-<li>Improves hair growth by unclogging follicles</li>
-<li>Enhances effectiveness of other treatments</li>
-<li>Reduces dandruff and itchiness</li>
-</ul>
-<p>A healthy scalp is the foundation of healthy hair. Our <strong>scalp treatment in Chennai</strong> prepares your scalp to absorb nutrients better, making all other treatments more effective.</p>
-
-<h2>How to Choose the Best Hair Treatment for Your Hair Type</h2>
-<p>Not all treatments work the same for everyone. Understanding your hair condition helps you pick the most effective solution:</p>
-
-<h3>For Frizzy Hair</h3>
-<p><strong>Best treatment:</strong> Keratin treatment — smooths frizz and adds shine for months</p>
-
-<h3>For Chemically Damaged Hair</h3>
-<p><strong>Best treatment:</strong> Olaplex treatment — rebuilds broken bonds from coloring, bleaching, or rebonding</p>
-
-<h3>For Dry and Dull Hair</h3>
-<p><strong>Best treatment:</strong> Hair spa or deep conditioning — restores moisture and glow</p>
-
-<h3>For Severely Damaged Hair</h3>
-<p><strong>Best treatment:</strong> Hair botox or combination treatments — deep repair for hair that seems beyond recovery</p>
-
-<div class="blog-mid-cta">
-<p><strong>Get a personalized treatment plan.</strong> Our <strong>hair specialists at Anaplak Art and Glam Salon</strong> assess your damage level and create a customized repair plan. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Assessment →</a></p>
-</div>
-
-<h2>Benefits of Professional Hair Treatments</h2>
-<ul>
-<li><strong>Long-lasting results</strong> compared to home remedies</li>
-<li><strong>Customized solutions</strong> for your specific hair type and damage level</li>
-<li><strong>High-quality, professional products</strong> not available over the counter</li>
-<li><strong>Immediate visible improvement</strong> after just one session</li>
-<li><strong>Expert guidance</strong> on maintaining results at home</li>
-</ul>
-<p>Professional treatments can target deeper damage that regular products cannot fix. At our <strong>hair treatment salon in Maduravoyal</strong>, we use only premium products for lasting results.</p>
-
-<h2>Hair Care Tips After Treatment</h2>
-<p>To maintain your treatment results:</p>
-<ul>
-<li>Use sulfate-free shampoos to extend treatment life</li>
-<li>Avoid excessive heat styling — let hair air dry when possible</li>
-<li>Oil your hair regularly with coconut or argan oil</li>
-<li>Trim split ends every 6–8 weeks</li>
-<li>Protect hair from sun and pollution with scarves or UV sprays</li>
-</ul>
-<p>Consistency is key to keeping your hair healthy after treatment. Our <strong>hair care experts in Chennai</strong> provide personalized aftercare advice with every session.</p>
-
-<h2>Common Mistakes to Avoid</h2>
-<ul>
-<li><strong>Choosing treatments without consultation</strong> — Wrong treatment can worsen damage</li>
-<li><strong>Overdoing chemical treatments</strong> — Space them out to allow recovery</li>
-<li><strong>Ignoring scalp health</strong> — Healthy hair starts with a healthy scalp</li>
-<li><strong>Expecting instant results from a single session</strong> — Deep repair takes 2–3 sessions</li>
-<li><strong>Skip aftercare</strong> — Post-treatment care is as important as the treatment itself</li>
-</ul>
-<p>Avoiding these mistakes ensures better and longer-lasting results from the <strong>best hair treatments for damaged hair</strong>.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: Which is the best treatment for severely damaged hair?</strong><br>
-A: Olaplex or hair botox treatments are ideal for deep repair. Our <strong>hair damage repair specialists in Chennai</strong> can assess your hair and recommend the right option.</p>
+<p><strong>Q: Which treatment is best for damaged hair?</strong><br>
+A: It depends on the damage. Protein for breakage, moisture for dryness, bond builders for chemical damage. A consultation is the only way to know.</p>
 
-<p><strong>Q: How often should I do a hair spa?</strong><br>
-A: Once every 3–4 weeks for maintenance. More frequently if your hair is severely damaged.</p>
+<p><strong>Q: Does hair botox repair damage?</strong><br>
+A: It improves softness, shine and manageability. It does not rebuild the hair structure the way a bond builder can.</p>
 
-<p><strong>Q: Is keratin safe for all hair types?</strong><br>
-A: Yes, but it's best for frizzy and unmanageable hair. A consultation at our <strong>hair salon in Maduravoyal</strong> can confirm if it's right for you.</p>
+<p><strong>Q: Can I do keratin on damaged hair?</strong><br>
+A: Only after the damage is assessed. Keratin can make brittle hair look better, but it does not repair it.</p>
 
-<p><strong>Q: Can damaged hair be fully repaired?</strong><br>
-A: With the right treatments and care, it can be significantly restored. Professional treatments at <strong>Anaplak Art and Glam Salon</strong> target damage at the molecular level for real repair.</p>
+<p><strong>Q: How often should I get a hair spa?</strong><br>
+A: Every three to four weeks for dry or damaged hair. Every four to six weeks for normal hair.</p>
 
-<p><strong>Q: Which treatment is best for Chennai weather?</strong><br>
-A: Keratin and hair spa treatments help control frizz and humidity. Our <strong>hair treatments in Chennai</strong> are specifically designed for the local climate.</p>
+<p><strong>Q: Do I need to trim before a treatment?</strong><br>
+A: Yes, if the ends are split. Otherwise the damage travels up the strand.</p>
 
-<p><strong>Q: How much does a hair treatment cost in Chennai?</strong><br>
-A: Pricing varies based on the treatment type and hair length. Contact us for personalized <strong>hair treatment packages in Chennai</strong>.</p>
-
-<h2 class="blog-cta">Book Your Hair Treatment in Chennai</h2>
-<p class="blog-cta-text">Don't let damaged hair affect your confidence. With the right professional care, you can restore strength, shine, and smoothness faster than you think. Book your <strong>hair treatment in Chennai</strong> today at <strong>Anaplak Art and Glam Salon</strong> and get expert-recommended solutions tailored to your hair type. Whether you need deep repair or frizz control, now is the perfect time to transform your hair and achieve salon-quality results. Limited slots are available — secure your appointment now.</p>`,
-    image: "/blogs/best-hair-treatments-for-damaged-hair.jpg",
+<h2 class="blog-cta">Book a Hair Treatment Consultation</h2>
+<p class="blog-cta-text">Bring your hair history and your concerns. We will match the treatment to the damage instead of selling you the strongest one.</p>`,
+    image: "/images/blog/best-hair-treatments-damaged-hair-chennai.jpg",
     category: "Hair Care",
     tags: ["hair treatment", "damaged hair", "hair repair", "hair spa", "keratin treatment", "Olaplex", "hair botox", "deep conditioning", "hair treatment Chennai", "damaged hair repair Chennai", "hair spa Chennai", "keratin treatment for damaged hair", "Olaplex treatment Chennai", "hair botox Chennai", "scalp detox treatment", "dry hair treatment", "frizzy hair treatment", "hair damage repair Maduravoyal", "best hair treatment Chennai", "professional hair treatment Chennai", "hair conditioning treatment", "hair repair salon Chennai", "hair treatment for colored hair", "hair treatment for heat damaged hair", "post bleach hair treatment Chennai", "hair treatment packages Chennai", "best salon for hair treatment Chennai"],
     keywords: ["best hair treatment for damaged hair Chennai", "hair damage repair Chennai", "hair treatment Maduravoyal", "Olaplex treatment Chennai", "keratin treatment for damaged hair", "hair botox Chennai", "hair spa Chennai", "deep conditioning treatment Chennai", "scalp detox treatment Chennai", "best hair treatment salon Chennai", "professional hair treatment Chennai", "damaged hair repair salon", "dry hair treatment Chennai", "frizzy hair treatment Chennai", "hair repair Chennai", "hair conditioning treatment", "hair spa Maduravoyal", "best hair spa Chennai", "hair treatment for colored hair Chennai", "hair treatment for heat damage Chennai", "post bleach hair treatment", "hair botox treatment cost Chennai", "Olaplex treatment cost Chennai", "keratin treatment for frizzy hair Chennai", "hair treatment packages Chennai", "best salon for hair treatment Maduravoyal", "affordable hair treatment Chennai", "premium hair treatment Chennai", "Anaplak hair treatment", "hair treatment near me Chennai", "hair repair treatment near me", "hair damage treatment salon", "professional hair care Chennai", "salon hair treatment Chennai", "hair treatment for humid weather Chennai", "hair treatment for pollution damage Chennai", "split ends treatment Chennai", "breakage treatment Chennai", "hair strengthening treatment Chennai", "hair smoothing treatment Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-05-13",
     readTime: "9 min read",
@@ -1507,189 +730,62 @@ A: Pricing varies based on the treatment type and hair length. Contact us for pe
   },
   {
     id: "bridal-skincare-routine-3-months-plan",
-    title: "Bridal Skincare: The 3-Month Plan That Guarantees You Glow on Your Wedding Day",
-    description: "Last-minute facials before your wedding are a recipe for breakouts. This step-by-step 3-month plan tells you exactly what to do each month — from skin prep to the final glow facial at Anaplak Art and Glam Salon.",
-    content: `<p>Every bride wants that natural, radiant glow on her wedding day — but achieving flawless skin doesn't happen overnight. Last-minute facials and random products often lead to breakouts, dullness, or uneven skin tone. That's why following a structured <strong>bridal skincare routine: 3 months plan</strong> is essential, especially for brides in Chennai where heat and humidity can affect your skin. With the right plan, you can build healthy, glowing skin step by step and walk into your wedding with confidence and zero stress at <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal.</p>
+    title: "Bridal Skincare: The 3-Month Plan for Wedding-Day Glow",
+    description: "Last-minute facials before your wedding are a recipe for breakouts. This step-by-step 3-month plan tells you exactly what to do each month, from skin prep to the final glow facial at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Start 12 weeks out with a simple cleanse, moisturise and sunscreen routine.",
+      "Book facials every 4 weeks, with the last one 1 to 2 weeks before.",
+      "Do not try new actives or treatments in the final month.",
+      "Sleep, water and consistency matter more than product count.",
+    ],
+    content: `<p>Skin does not change in a week. Three months is enough time to see a real difference without risking a reaction.</p>
 
-<h2>What is a Bridal Skincare Routine: 3 Months Plan?</h2>
-<p>A bridal skincare routine: 3 months plan is a carefully designed timeline that prepares your skin gradually for your wedding day. Instead of quick fixes, it focuses on consistent care, professional treatments, and healthy habits to achieve long-lasting results.</p>
-<p>This plan includes:</p>
-<ul>
-<li><strong>Daily skincare routines</strong> — Cleansing, toning, moisturizing, and sun protection</li>
-<li><strong>Monthly professional treatments</strong> — Facials, exfoliation, and targeted procedures</li>
-<li><strong>Diet and hydration habits</strong> — Nourishing your skin from within</li>
-<li><strong>Skin-specific solutions</strong> — For concerns like acne, pigmentation, or dullness</li>
-</ul>
-<p>For Chennai brides, this plan also helps manage oiliness, sweat, and environmental damage that can affect your bridal glow.</p>
+<h2>Month one: basics</h2>
+<p>Start with a cleanser, a moisturiser and sunscreen. That is the whole routine. If you already use these, keep them. The goal is consistency, not a shelf full of products.</p>
+<p>Book a facial suited to your skin type. If you have acne or pigmentation, see a dermatologist and get a plan. Do not start strong actives and a new facial in the same week.</p>
+<p>Drink water, eat vegetables, sleep seven to eight hours. It sounds ordinary because it works.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Not sure where to start your bridal skincare?</strong> Our <strong>bridal skincare experts in Chennai</strong> will assess your skin and create a personalized 3-month plan aligned with your wedding date. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Bridal Skin Assessment →</a></p>
-</div>
+<h2>Month two: target the concern</h2>
+<p>Now you can add one active. Vitamin C in the morning for brightness, or hyaluronic acid for hydration. Use it for two weeks before adding anything else. If your skin reacts, stop.</p>
+<p>Continue facials every four weeks. Brightening facials help tone. Hydrating facials help dryness. For fine lines, an anti-aging facial can be added, but keep the rest of the routine stable.</p>
+<p>Exfoliate once or twice a week, not more. Over-exfoliating makes the skin red and sensitive before the wedding.</p>
 
-<h2>Why You Need a Bridal Skincare Routine Before Your Wedding</h2>
-<p>Investing time in your skin before your wedding ensures:</p>
-<ul>
-<li><strong>Clear, acne-free skin</strong> — No last-minute breakouts to worry about</li>
-<li><strong>Even skin tone and texture</strong> — Flawless base for bridal makeup</li>
-<li><strong>Natural glow without heavy makeup</strong> — Your skin looks radiant on its own</li>
-<li><strong>Reduced stress about last-minute skin issues</strong> — You're prepared and confident</li>
-<li><strong>Better makeup finish and longevity</strong> — Healthy skin holds makeup beautifully all day</li>
-</ul>
-<p>Following a <strong>bridal skincare routine: 3 months plan</strong> gives your skin enough time to heal, adapt, and glow naturally for the most important day of your life.</p>
+<h2>Month three: protect the result</h2>
+<p>Do not introduce new products. Keep sunscreen, keep moisturiser, keep the facial schedule. The last facial should be one to two weeks before the wedding. Anything later can leave the skin flushed or sensitive.</p>
+<p>Stop waxing, threading and new treatments three days before. If a spot appears, treat it gently. Do not pick at it.</p>
 
-<h2>Month 1 — Skin Preparation Phase</h2>
-<p>The first month is all about understanding and preparing your skin. This is the foundation of your bridal glow.</p>
-
-<h3>Consult a Professional</h3>
-<ul>
-<li>Visit a skincare expert or dermatologist</li>
-<li>Identify your skin type and concerns</li>
-<li>Get a personalized treatment plan</li>
-</ul>
-<p>Our <strong>bridal skin assessment in Chennai</strong> at Anaplak Art and Glam Salon gives you a clear understanding of your skin's needs and a month-by-month plan.</p>
-
-<h3>Start a Basic Routine</h3>
-<ul>
-<li><strong>Cleanser</strong> (twice daily) — Remove impurities without stripping natural oils</li>
-<li><strong>Toner</strong> — Balance pH and tighten pores</li>
-<li><strong>Moisturizer</strong> — Hydrate according to your skin type</li>
-<li><strong>Sunscreen</strong> — Mandatory, especially in Chennai's climate</li>
-</ul>
-
-<h3>Professional Treatments (Month 1)</h3>
-<ul>
-<li>Begin monthly facials suited to your skin type</li>
-<li>Consider mild treatments for acne or pigmentation</li>
-<li>Start a professional <strong>bridal facial in Maduravoyal</strong> for consistent results</li>
-</ul>
-
-<h3>Lifestyle Changes</h3>
-<ul>
-<li>Drink at least 2–3 liters of water daily</li>
-<li>Reduce junk food and sugar</li>
-<li>Include fruits and vegetables in every meal</li>
-<li>Get 7–8 hours of sleep</li>
-</ul>
-<p>This phase builds the foundation for your bridal glow. Skipping Month 1 means your skin won't be ready for the corrective treatments in Month 2.</p>
+<h2>What actually matters</h2>
+<p>Sunscreen does more for pigmentation and ageing than any serum. Retinol helps fine lines, but it needs months and it can irritate. Do not start retinol in the final month. A simple routine you follow beats a complicated one you abandon.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Start your bridal skin prep early.</strong> Our <strong>bridal facials in Chennai</strong> are designed to prepare, correct, and perfect your skin over 3 months. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Month 1 Facial →</a></p>
+<p><strong>Want a plan for your skin type?</strong> Book a bridal skin assessment at Anaplak. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Skin Assessment →</a></p>
 </div>
-
-<h2>Month 2 — Correction Phase</h2>
-<p>Now that your skin is prepped, it's time to target specific concerns and visibly improve your skin tone and texture.</p>
-
-<h3>Advanced Skincare</h3>
-<ul>
-<li>Introduce <strong>Vitamin C serum</strong> for glow and brightening</li>
-<li>Add <strong>Hyaluronic Acid</strong> for deep hydration</li>
-<li>Continue sunscreen strictly — never skip, even indoors</li>
-<li>Use gentle exfoliation 1–2 times per week</li>
-</ul>
-
-<h3>Professional Treatments (Month 2)</h3>
-<ul>
-<li><strong>Brightening facials</strong> to improve skin tone</li>
-<li><strong>Hydrating treatments</strong> for dry or combination skin</li>
-<li><strong>Mild exfoliation treatments</strong> to improve texture and remove dead skin</li>
-<li>Consider <strong>anti-aging facial</strong> if fine lines are a concern</li>
-</ul>
-
-<h3>Consistency is Key</h3>
-<ul>
-<li>Stick to your routine without skipping</li>
-<li>Avoid experimenting with new products</li>
-<li>Track your progress with weekly photos</li>
-<li>Stay hydrated and maintain your diet</li>
-</ul>
-<p>This stage is crucial in the bridal skincare routine: 3 months plan as it improves skin tone and texture visibly. Our <strong>bridal skincare treatments in Chennai</strong> at Anaplak are specifically designed for this correction phase.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Month 2 is where the transformation happens.</strong> Our <strong>bridal brightening and hydrating facials</strong> at Anaplak Art and Glam Salon target your specific skin concerns for visible improvement. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Month 2 Facial →</a></p>
-</div>
-
-<h2>Month 3 — Glow & Maintenance Phase</h2>
-<p>The final month is about enhancing your glow and maintaining results so your skin looks fresh, healthy, and wedding-ready.</p>
-
-<h3>Facials & Treatments (Month 3)</h3>
-<ul>
-<li>Schedule your <strong>last facial 5–7 days before the wedding</strong></li>
-<li>Avoid harsh treatments or new products</li>
-<li>Opt for <strong>gold or diamond facials</strong> for that bridal radiance</li>
-<li>Consider a <strong>bridal glow facial</strong> for instant luminosity</li>
-</ul>
-
-<h3>Daily Care (Month 3)</h3>
-<ul>
-<li>Focus on hydration and gentle skincare</li>
-<li>Use soothing products to maintain skin balance</li>
-<li>Continue sunscreen religiously</li>
-<li>Avoid touching your face frequently</li>
-</ul>
-
-<h3>Pre-Wedding Care</h3>
-<ul>
-<li>Ice your face occasionally for tightening and depuffing</li>
-<li>Get proper sleep (7–8 hours minimum)</li>
-<li>Avoid stress as much as possible</li>
-<li>Stay off experimenting with new products</li>
-</ul>
-<p>This phase ensures your skin looks fresh, healthy, and wedding-ready. Our <strong>bridal glow facials in Chennai</strong> are the perfect finishing touch for your bridal skincare journey.</p>
-
-<div class="blog-mid-cta">
-<p><strong>One month to go — make it count.</strong> Our <strong>bridal glow facial</strong> is designed for the final month, giving you that luminous, camera-ready skin for your wedding day. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Bridal Glow Facial →</a></p>
-</div>
-
-<h2>Essential Skincare Tips for Brides in Chennai</h2>
-<p>Chennai's climate requires special attention for your bridal skincare routine:</p>
-<ul>
-<li>Use <strong>oil-free or lightweight moisturizers</strong> to prevent greasiness</li>
-<li>Never skip sunscreen (even indoors) — UV rays penetrate windows</li>
-<li>Carry blotting paper to control oil throughout the day</li>
-<li>Stay hydrated to prevent dullness from heat exposure</li>
-<li>Avoid heavy creams that clog pores in humid weather</li>
-<li>Choose <strong>long-lasting bridal makeup</strong> designed for humid climates</li>
-</ul>
-<p>Following a <strong>bridal skincare routine: 3 months plan</strong> tailored for Chennai helps maintain glow despite humidity and heat. Our <strong>bridal beauty salon in Maduravoyal</strong> specializes in climate-appropriate bridal skincare.</p>
-
-<h2>Common Mistakes to Avoid</h2>
-<ul>
-<li><strong>Trying new products just before the wedding</strong> — Risk of allergic reactions or breakouts</li>
-<li><strong>Over-exfoliating your skin</strong> — Damages the skin barrier and causes sensitivity</li>
-<li><strong>Skipping sunscreen</strong> — The #1 cause of uneven tone and premature aging</li>
-<li><strong>Ignoring diet and hydration</strong> — Skincare alone isn't enough; nourish from within</li>
-<li><strong>Delaying skincare until the last month</strong> — 3 months gives your skin time to truly transform</li>
-</ul>
-<p>Avoiding these mistakes is just as important as following the routine. Our <strong>bridal skincare experts in Chennai</strong> guide you through every step to ensure no missteps.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: When should I start my bridal skincare routine?</strong><br>
-A: Ideally, at least 3 months before your wedding. Starting early gives your skin time to adjust, heal, and glow naturally before the big day.</p>
+<p><strong>Q: Can I fix acne in three months?</strong><br>
+A: You can calm it and reduce breakouts, but active acne needs a dermatologist. Start early rather than relying on makeup to cover it.</p>
 
-<p><strong>Q: Can I achieve glowing skin in one month?</strong><br>
-A: You may see improvements, but 3 months gives the best results. A one-month rush can cause breakouts or uneven texture.</p>
+<p><strong>Q: How often should I get a facial?</strong><br>
+A: Every four weeks. The last one should be one to two weeks before the wedding.</p>
 
-<p><strong>Q: Are facials necessary?</strong><br>
-A: Yes, professional treatments enhance your results significantly. Our <strong>bridal facials in Chennai</strong> are designed to complement your daily routine for maximum impact.</p>
+<p><strong>Q: Can I start retinol before the wedding?</strong><br>
+A: Only if you have at least three months and you introduce it slowly. Do not start it in the final month.</p>
 
-<p><strong>Q: What if I have acne-prone skin?</strong><br>
-A: Consult a dermatologist early and follow a consistent routine. Month 1 of the plan focuses on calming and preparing acne-prone skin before corrective treatments.</p>
+<p><strong>Q: Do I need a detan?</strong><br>
+A: If you have tanning or uneven tone, a detan one to two weeks before can help. It is not a substitute for sunscreen.</p>
 
-<p><strong>Q: Can I use home remedies?</strong><br>
-A: Yes, but avoid experimenting too close to the wedding day. Stick to tried-and-tested remedies and consult our <strong>bridal skincare specialists</strong> for guidance.</p>
+<p><strong>Q: What should I avoid in the final week?</strong><br>
+A: New products, strong actives, waxing, threading, and facials later than one week before.</p>
 
-<p><strong>Q: How much does a bridal skincare package cost in Chennai?</strong><br>
-A: Our <strong>bridal skincare packages</strong> at Anaplak Art and Glam Salon are customized based on your skin type and wedding timeline. Contact us for personalized pricing.</p>
-
-<h2 class="blog-cta">Book Your Bridal Skincare in Chennai</h2>
-<p class="blog-cta-text">Your dream bridal glow starts with the right care and expert guidance. Don't rely on last-minute fixes when you can achieve naturally radiant, healthy skin with a professional bridal skincare plan. Book your <strong>bridal skincare services in Chennai</strong> today at <strong>Anaplak Art and Glam Salon</strong> and enjoy customized treatments designed for your skin type and wedding timeline. With limited appointments available, now is the best time to start your journey toward flawless, glowing skin.</p>`,
-    image: "/blogs/bridal-skincare-routine-3-months-plan.jpg",
+<h2 class="blog-cta">Book Your Bridal Skin Assessment</h2>
+<p class="blog-cta-text">Bring your skin concerns and your wedding date. We will build a plan you can actually follow for three months.</p>`,
+    image: "/images/blog/bridal-skincare-routine-3-month-plan-chennai.jpg",
     category: "Bridal",
     tags: ["bridal skincare", "bridal skincare routine", "3 months plan", "bridal glow", "bridal facial", "bridal skincare Chennai", "bridal facial Chennai", "bridal glow plan", "bridal skin preparation", "pre wedding skincare", "bridal beauty routine", "bridal skin care Maduravoyal", "bridal facials Chennai", "best bridal facial Chennai", "bridal glow facial", "gold facial bridal", "bridal skincare timeline", "wedding skin prep", "bridal skin care plan", "bridal facial packages Chennai", "bridal skin consultation", "bridal brightening facial", "bridal hydrating facial", "anti aging bridal facial", "bridal makeup preparation Chennai", "skincare before wedding", "bridal face glow tips", "bridal skincare for Chennai weather", "pre wedding facial Chennai"],
     keywords: ["bridal makeup", "bridal skincare routine 3 months plan Chennai", "bridal facial Chennai", "bridal glow plan Maduravoyal", "bridal skincare timeline Chennai", "pre wedding skincare Chennai", "bridal facial packages Chennai", "best bridal facial Chennai", "bridal glow facial Chennai", "bridal skin preparation Chennai", "bridal skincare for Chennai weather", "gold facial for brides Chennai", "bridal brightening facial Chennai", "3 month bridal skincare plan", "bridal skin consultation Chennai", "wedding skin prep Chennai", "bridal beauty routine Chennai", "bridal skin care Maduravoyal", "bridal facial near me Chennai", "pre wedding facial Chennai", "bridal skincare tips Chennai", "bridal glow tips before wedding", "bridal facial cost Chennai", "bridal skincare package Chennai", "bridal facial for oily skin Chennai", "bridal facial for dry skin Chennai", "bridal skincare routine step by step", "Anaplak bridal facial", "bridal salon Maduravoyal", "bridal skincare expert Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-05-14",
     readTime: "10 min read",
@@ -1701,109 +797,70 @@ A: Our <strong>bridal skincare packages</strong> at Anaplak Art and Glam Salon a
     id: "hair-spa-benefits-explained",
     title: "Hair Spa Treatment: 7 Reasons Your Hair Is Begging for One Right Now",
     description: "If your hair feels dry, frizzy, or lifeless no matter what shampoo you use, a professional hair spa might be exactly what it needs. Here's what it actually does, who needs it, and how often you should go at Anaplak Art and Glam Salon.",
-    content: `<p>If your hair feels dry, frizzy, or lifeless, you're not alone. Daily exposure to pollution, heat styling, and stress can damage your hair more than you realize. That's where a hair spa treatment comes in - a powerful solution to restore health, shine, and strength.</p>
+    tldr: [
+      "Hair spa is deep conditioning, not a medical treatment.",
+      "It helps dry, frizzy and chemically treated hair.",
+      "Expect softer hair for 2 to 4 weeks with monthly sessions.",
+      "Pair it with a trim and sulphate-free aftercare.",
+    ],
+    content: `<p>A hair spa is deep conditioning with a massage. It is not a medical treatment, and it will not fix hair that is breaking from the inside. It will make dry, dull hair softer and easier to manage.</p>
 
-<p>In this guide, we'll break down <strong>Hair Spa Benefits Explained</strong> so you understand why this treatment is not just a luxury, but a necessity for maintaining beautiful, healthy hair.</p>
+<h2>What happens in a session</h2>
+<p>The scalp is cleansed, a mask is applied, and the hair is steamed or wrapped to help absorption. A massage is part of the service. It ends with a rinse and a blow-dry. A classic hair spa at Anaplak is ₹3,000 and takes about 30 to 45 minutes.</p>
 
-<h2>What Is a Hair Spa Treatment?</h2>
-<p>A hair spa is a deep conditioning and rejuvenation therapy designed to improve scalp health and repair damaged hair. Unlike regular conditioning, it works at a deeper level to nourish roots and strengthen strands.</p>
+<h2>Who it helps</h2>
+<p>It helps dry, frizzy and chemically treated hair. It also helps if your scalp feels tight or your hair looks dull. It is not a treatment for hair fall or dandruff on its own. Those need a scalp assessment.</p>
 
-<p>Key elements of a hair spa include:</p>
-<ul>
-<li>Deep cleansing of the scalp</li>
-<li>Intensive conditioning</li>
-<li>Massage to improve blood circulation</li>
-<li>Repair and hydration treatment</li>
-</ul>
+<h2>How often</h2>
+<p>Every three to four weeks for dry or damaged hair. Every four to six weeks for normal hair. Doing it every week is unnecessary unless a stylist recommends it.</p>
 
-<h2>Top Hair Spa Benefits You Should Know</h2>
+<h2>Aftercare</h2>
+<p>Use a sulphate-free shampoo. Avoid heat styling for a day. Add a weekly mask at home if your hair stays dry. Do not oil the scalp heavily right after a spa.</p>
 
-<h3>1. Deep Nourishment for Hair</h3>
-<p>Hair spa treatments provide essential nutrients that your hair loses due to environmental damage. This helps restore softness and smoothness and is perfect for dry, brittle, or chemically treated hair.</p>
+<h2>What it will not do</h2>
+<p>It will not repair split ends. It will not rebuild broken bonds. It will not make hair grow faster. If you need repair, ask about a bond builder or hair botox. If you need frizz control, ask about keratin.</p>
 
-<h3>2. Reduces Hair Fall</h3>
-<p>A healthy scalp is the foundation of strong hair. Hair spa improves blood circulation, strengthens roots, and helps reduce hair fall significantly.</p>
+<h2>What it actually helps</h2>
+<p>A hair spa improves softness, shine and manageability. It helps dry, frizzy and chemically treated hair. It also makes the scalp feel cleaner and less tight. It will not fix hair fall, split ends or breakage on its own.</p>
 
-<h3>3. Controls Dandruff and Scalp Issues</h3>
-<p>If you struggle with dandruff, itchiness, or scalp irritation, hair spa treatments cleanse and balance the scalp, promoting a healthier environment for hair growth.</p>
+<h2>The massage matters</h2>
+<p>The scalp massage improves blood flow and makes the service feel less rushed. It is not a medical treatment, but it helps with relaxation and scalp comfort. If your scalp is inflamed, tell the stylist before the massage.</p>
 
-<h3>4. Repairs Damaged Hair</h3>
-<p>Frequent styling, coloring, or exposure to heat can damage your hair structure. Hair spa treatments help repair and rebuild hair from within.</p>
+<h2>Hair spa or hair treatment?</h2>
+<p>A hair spa is maintenance. A bond builder, hair botox or keratin is a treatment for a specific problem. If your hair is breaking, ask for a repair treatment. If it is dry and dull, a spa is enough.</p>
 
-<h3>5. Improves Hair Texture</h3>
-<p>Regular hair spa sessions make your hair smoother, shinier, and more manageable.</p>
+<h2>Price and timing</h2>
+<p>A classic hair spa is ₹3,000 and takes about 30 to 45 minutes. Shea and 3TENX start at ₹4,000. Dandruff treatment starts at ₹4,000 and bond strengthening at ₹5,000. Book every three to four weeks if your hair is dry.</p>
 
-<h3>6. Relieves Stress</h3>
-<p>The relaxing massage involved in a hair spa session not only benefits your scalp but also helps reduce stress and tension.</p>
-
-<h2>Who Should Get a Hair Spa?</h2>
-<p>Hair spa is suitable for almost everyone, especially if you have:</p>
-<ul>
-<li>Dry or frizzy hair</li>
-<li>Hair fall issues</li>
-<li>Dandruff or scalp problems</li>
-<li>Chemically treated hair</li>
-<li>Dull and lifeless hair</li>
-</ul>
-<p>Even if your hair looks healthy, regular sessions help maintain its condition.</p>
-
-<h2>Hair Spa Process: What to Expect</h2>
-<p>A typical professional hair spa session includes:</p>
-<ol>
-<li><strong>Hair Analysis:</strong> Understanding your hair type and concerns</li>
-<li><strong>Cleansing:</strong> Removing dirt and product buildup</li>
-<li><strong>Massage:</strong> Boosting blood circulation</li>
-<li><strong>Mask Application:</strong> Deep nourishment treatment</li>
-<li><strong>Steam Therapy:</strong> Helps absorption of nutrients</li>
-<li><strong>Rinse and Styling:</strong> Final finish for smooth, shiny hair</li>
-</ol>
-
-<h2>How Often Should You Do Hair Spa?</h2>
-<ul>
-<li><strong>Normal hair:</strong> Once every 3-4 weeks</li>
-<li><strong>Dry or damaged hair:</strong> Every 2 weeks</li>
-<li><strong>Severe hair issues:</strong> As recommended by a professional</li>
-</ul>
-<p>Consistency is key to seeing long-term benefits.</p>
-
-<h2>Aftercare Tips for Better Results</h2>
-<ul>
-<li>Use mild, sulfate-free shampoos</li>
-<li>Avoid excessive heat styling</li>
-<li>Oil your hair regularly</li>
-<li>Maintain a healthy diet</li>
-<li>Stay hydrated</li>
-</ul>
-<p>Proper care ensures the results last longer and improve over time.</p>
+<div class="blog-mid-cta">
+<p><strong>Want softer, more manageable hair?</strong> Book a hair spa at Anaplak in Maduravoyal. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Spa →</a></p>
+</div>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: Is hair spa good for hair growth?</strong><br>
-A: Yes, it improves scalp health and circulation, which supports better hair growth.</p>
+<p><strong>Q: How often should I get a hair spa?</strong><br>
+A: Every three to four weeks for dry or damaged hair. Every four to six weeks for normal hair.</p>
 
-<p><strong>Q: Can hair spa reduce frizz?</strong><br>
-A: Absolutely. It deeply conditions hair, making it smoother and more manageable.</p>
+<p><strong>Q: Does hair spa reduce hair fall?</strong><br>
+A: Not directly. It improves softness and scalp comfort. Hair fall needs a proper assessment.</p>
 
-<p><strong>Q: Is hair spa suitable for oily hair?</strong><br>
-A: Yes, it helps balance oil production and cleanses the scalp effectively.</p>
+<p><strong>Q: Can I do a hair spa at home?</strong><br>
+A: A mask at home helps. A salon spa adds steam, massage and a proper rinse.</p>
 
-<p><strong>Q: Are there any side effects?</strong><br>
-A: When done professionally, hair spa is safe and beneficial for all hair types.</p>
+<p><strong>Q: Is hair spa good for dandruff?</strong><br>
+A: It can soothe the scalp, but dandruff needs a specific treatment. Ask for a scalp assessment.</p>
 
-<p><strong>Q: Can I do hair spa at home?</strong><br>
-A: Home treatments help, but professional hair spa provides deeper and more effective results.</p>
+<p><strong>Q: How much does a hair spa cost?</strong><br>
+A: A classic hair spa at Anaplak is ₹3,000. Shea and 3TENX start at ₹4,000.</p>
 
-<h2>Final Thoughts</h2>
-<p>Understanding <strong>Hair Spa Benefits Explained</strong> makes it clear that this treatment is essential for maintaining strong, healthy, and beautiful hair. It's not just about appearance - it's about long-term hair care and confidence.</p>
-
-<h2 class="blog-cta">Book Your Hair Spa Treatment</h2>
-<p class="blog-cta-text">Ready to give your hair the care it deserves? A professional hair spa can completely transform your hair - making it smoother, stronger, and visibly healthier from the first session. Don't wait until damage becomes severe. Book your hair spa treatment today and enjoy a relaxing, rejuvenating experience that your hair will thank you for.</p>`,
-    image: "/blogs/hair-spa-benefits-explained.jpg",
+<h2 class="blog-cta">Book a Hair Spa</h2>
+<p class="blog-cta-text">Tell us how your hair feels and how often you wash it. We will choose the right spa and aftercare.</p>`,
+    image: "/images/blog/hair-spa-benefits-chennai.jpg",
     category: "Hair Care",
     tags: ["hair spa benefits", "hair spa treatment", "hair care", "dry hair", "frizzy hair", "hair fall", "dandruff care", "scalp health", "hair repair", "hair spa Chennai"],
     keywords: ["hair spa benefits explained", "hair spa treatment Chennai", "benefits of hair spa", "hair spa for dry hair", "hair spa for frizzy hair", "hair spa for hair fall", "hair spa for dandruff", "scalp treatment Chennai", "professional hair spa Chennai", "best hair spa Maduravoyal"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-05-19",
     readTime: "8 min read",
@@ -1814,155 +871,71 @@ A: Home treatments help, but professional hair spa provides deeper and more effe
   {
     id: "how-to-choose-perfect-bridal-makeup-artist",
     title: "How to Pick a Bridal Makeup Artist Who Won't Ruin Your Wedding Day Look",
-    description: "The wrong bridal makeup artist can turn your dream wedding into a disaster. This guide shows you exactly what to check — portfolios, trials, hygiene, pricing — before you book at Anaplak Art and Glam Salon.",
-    content: `<p>As your big day approaches, there are many things to look forward to — and being photographed while looking your absolute best is one of them. But selecting the right person to help you prepare for that moment can feel overwhelming. If you've ever wondered <strong>how to choose the perfect bridal makeup artist</strong>, this guide will walk you through every step. From understanding what a bridal makeup artist does to evaluating portfolios, conducting trials, and avoiding common mistakes — we've covered everything you need to feel confident that your wedding day look will be flawless, photogenic, and true to your natural beauty at <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal.</p>
+    description: "The wrong bridal makeup artist can turn your dream wedding into a disaster. This guide shows you exactly what to check, including portfolios, trials, hygiene and pricing, before you book at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Ask for real bridal photos, not filtered portfolio shots.",
+      "Confirm who will actually do your makeup on the day.",
+      "Get the trial, travel, touch-up kit and family pricing in writing.",
+      "Book early for peak wedding season.",
+    ],
+    content: `<p>The right bridal makeup artist is the one whose work still looks like you at 11 PM, after the photos, the crying and the humidity. Everything else is secondary.</p>
 
-<h2>What Does a Bridal Makeup Artist Do?</h2>
-<p>A bridal makeup artist does far more than just apply makeup. These professionals carefully design a look that complements your outfit, enhances your natural features, and stands the test of time — from the first ceremony to the last dance.</p>
-<p>A skilled <strong>bridal makeup artist in Chennai</strong> considers:</p>
+<h2>Ask for real wedding work</h2>
+<p>Studio shoots and filtered portfolio images tell you very little. Ask for photos from actual weddings, ideally in similar lighting. Look at the base first. Does the face match the neck and chest? Can you see texture, or has the skin been flattened into a mask? Then look at the eyes. A good artist changes the shape for the face in front of them.</p>
+<p>If the portfolio only shows one skin tone, one face shape or one style, that is the only look they have practised. You want range.</p>
+
+<h2>Check how they talk about skin</h2>
+<p>During the consultation, listen for questions about your skin type, allergies, previous treatments and the products you already use. An artist who starts with a look and works backwards will struggle on the day. I ask about acne, pigmentation, dryness and sensitivity before I open a foundation bottle.</p>
+
+<h2>Book the trial</h2>
+<p>The trial is where promises turn into evidence. You should see the complete makeup and hair, not a half-face sample. Sit in daylight, take photos with flash, and check the result two hours later. If the base separates around your nose or the lip colour feels wrong, say so. A good artist adjusts without taking it personally.</p>
+<p>My <a href="/blogs/bridal-makeup-trial-guide">bridal makeup trial guide</a> covers what to bring and what to ask.</p>
+
+<h2>Ask who will actually do your makeup</h2>
+<p>Some studios sell you on a senior artist and send a junior on the day. Ask directly. If the person at the trial will not be there for the wedding, find out who will and meet them first.</p>
+
+<h2>Get the costs in writing</h2>
+<p>Ask what the package includes: makeup, hair, draping, lashes, lenses, touch-up kit, travel and family members. At Anaplak, bridal looks start at <strong>₹15,000</strong>, with HD at ₹18,000, Glossy at ₹22,000 and Airbrush at ₹30,000. A trial is ₹3,000 and saree draping is ₹2,000. The full list is on our <a href="/menu">salon menu</a>.</p>
+<p>Travel charges matter in Chennai. Confirm the venue, the start time and whether outdoor charges apply.</p>
+
+<h2>Red flags</h2>
 <ul>
-<li><strong>Skin type and tone</strong> — Oily, dry, combination, or sensitive — each needs different products and techniques</li>
-<li><strong>Wedding lighting</strong> — Daylight vs. evening reception lighting requires different makeup approaches</li>
-<li><strong>Outfit color palette and jewelry</strong> — Your makeup should harmonize with your lehenga, saree, or gown</li>
-<li><strong>Weather and humidity</strong> — Especially important in Chennai, where sweat and humidity can break down makeup fast</li>
-</ul>
-<p>By selecting the right artist, you ensure you look stunning both in person and in your wedding day photos for years to come.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Looking for the right bridal makeup artist?</strong> Our <strong>bridal makeup specialists in Chennai</strong> have years of experience creating flawless, long-lasting bridal looks tailored to your style and skin type. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Makeup Trial →</a></p>
-</div>
-
-<h2>Why Choosing the Perfect Bridal Makeup Artist Matters</h2>
-<p>When it comes to your bridal preparations, the makeup artist you choose can make or break your entire experience:</p>
-<ul>
-<li><strong>Long-lasting results</strong> — Professional techniques ensure your makeup stays flawless for hours, even in Chennai's humidity</li>
-<li><strong>Natural, not overdone</strong> — A skilled artist enhances your features without making you look like someone else</li>
-<li><strong>Stress-free morning</strong> — A professional handles everything so you can relax and enjoy getting ready</li>
-<li><strong>Industry-grade products</strong> — Quality products that photograph beautifully and are safe for your skin</li>
-<li><strong>Confidence in front of the camera</strong> — When you know you look great, it shows in every photo</li>
-</ul>
-<p>Learning how to find the ideal <strong>bridal makeup artist in Chennai</strong> eliminates last-minute regrets and ensures your wedding day goes exactly as you envisioned.</p>
-
-<h2>Where to Find the Ideal Bridal Makeup Artist</h2>
-
-<h3>Review the Artist's Style and Portfolio</h3>
-<p>First, figure out your personal style. Do you prefer a subtle, dewy look or full glam? Then evaluate potential artists:</p>
-<ul>
-<li>Review their before-and-after transformations — do they look natural and consistent?</li>
-<li>Check their portfolio across multiple brides — is their work consistent?</li>
-<li>Look for a style that mirrors your own aesthetic preferences</li>
-<li>Pay attention to how their makeup photographs in different lighting conditions</li>
+<li>No real bridal photos, only studio or filtered images</li>
+<li>No questions about your skin or previous treatments</li>
+<li>A trial that is rushed or done under one light only</li>
+<li>A quote that changes when you ask what is included</li>
+<li>No clear plan for touch-ups or a long ceremony</li>
 </ul>
 
 <div class="blog-mid-cta">
-<p><strong>See real bridal transformations.</strong> Browse our <strong>bridal makeup portfolio in Chennai</strong> to see consistent, stunning results across diverse brides and wedding styles. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">View Bridal Portfolio →</a></p>
+<p><strong>Want to test the artist before the wedding?</strong> Book a trial at our Maduravoyal studio. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Trial →</a></p>
 </div>
-
-<h3>Consider Ratings and Testimonials</h3>
-<p>What other brides say about their experience tells you a lot:</p>
-<ul>
-<li>Read reviews on Google, social media, and wedding platforms</li>
-<li>Pay attention to specifics — were they on time? Professional? Responsive to feedback?</li>
-<li>Look for artists who receive consistent praise for both their skill and their demeanor</li>
-<li>Ask friends and family for personal recommendations</li>
-</ul>
-<p>At Anaplak Art and Glam Salon, our <strong>bridal makeup reviews in Maduravoyal</strong> speak for themselves — brides consistently praise our professionalism, punctuality, and stunning results.</p>
-
-<h3>Secure a Makeup Trial</h3>
-<p>A makeup trial is non-negotiable when choosing your bridal artist. Here's why:</p>
-<ul>
-<li><strong>Visualize your look</strong> — See how the makeup ages on your skin throughout the day</li>
-<li><strong>Test longevity</strong> — Does it survive 6+ hours, tears, and Chennai humidity?</li>
-<li><strong>Assess communication</strong> — Does the artist listen to your preferences and adjust accordingly?</li>
-<li><strong>Photograph the result</strong> — Take photos in natural and artificial light to see how it looks on camera</li>
-</ul>
-<p>A trial session at our <strong>bridal makeup studio in Chennai</strong> gives you complete confidence before your wedding day.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Never skip the makeup trial.</strong> Our <strong>bridal makeup trial in Chennai</strong> lets you test your look, provide feedback, and finalize every detail before the big day. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Makeup Trial →</a></p>
-</div>
-
-<h2>Assess the Products and Safety</h2>
-<p>The products your artist uses directly impact your skin and your look:</p>
-<ul>
-<li><strong>Ask about product brands</strong> — Are they using skin-safe, hypoallergenic products?</li>
-<li><strong>Check tool hygiene</strong> — Clean brushes and sanitized equipment prevent breakouts and infections</li>
-<li><strong>Chennai climate compatibility</strong> — Products must withstand humidity, sweat, and long hours without melting or cakeing</li>
-<li><strong>Skin sensitivity</strong> — If you have sensitive skin, ensure the artist has gentle, dermatologist-approved options</li>
-</ul>
-<p>At Anaplak, we use only premium, <strong>HD and airbrush bridal makeup products</strong> that are safe, long-lasting, and designed for Indian bridal photography.</p>
-
-<h2>Talk About the Price and Packages</h2>
-<p>Bridal makeup pricing varies widely, so understanding what's included is crucial:</p>
-<ul>
-<li><strong>Understand the full package</strong> — Does it include trial sessions? Touch-ups? Draping? Hair styling?</li>
-<li><strong>Ask about travel costs</strong> — Some artists charge extra for on-location services</li>
-<li><strong>Watch for hidden fees</strong> — Get a clear breakdown of every cost before booking</li>
-<li><strong>Don't choose based on price alone</strong> — The cheapest option is rarely the best for your wedding day</li>
-</ul>
-<p>Our <strong>bridal makeup packages in Chennai</strong> are transparent, customizable, and designed to fit different budgets without compromising quality.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Get a clear, transparent bridal makeup quote.</strong> Our <strong>bridal makeup packages in Maduravoyal</strong> include trial sessions, touch-ups, and on-location services with no hidden fees. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Get Bridal Package Quote →</a></p>
-</div>
-
-<h2>Confirm Availability and Timing</h2>
-<p>Top bridal makeup artists in Chennai get booked months in advance:</p>
-<ul>
-<li>Confirm availability <strong>at least 2–4 months before your wedding</strong></li>
-<li>Discuss the <strong>timeline for your wedding day</strong> — when will they arrive, how long for makeup, and can they adjust for delays?</li>
-<li>Ask if they have a <strong>backup team</strong> for large weddings with multiple people needing makeup</li>
-<li>Ensure they can handle <strong>multiple events</strong> (mehendi, sangeet, reception) if needed</li>
-</ul>
-
-<h2>Best Results Tips for Brides</h2>
-<ul>
-<li><strong>Book your artist 2–3 months ahead</strong> of your wedding day to secure your preferred date</li>
-<li><strong>Collect reference images</strong> — Pinterest boards and Instagram screenshots help explain exactly what you want</li>
-<li><strong>Communicate clearly</strong> — Don't be shy about saying what you like and dislike during your trial</li>
-<li><strong>Stick to your skincare routine</strong> — Avoid trying new products in the weeks before the wedding</li>
-<li><strong>Stay hydrated</strong> — Glowing skin starts from within; drink plenty of water in the weeks leading up to your wedding</li>
-</ul>
-<p>Following these tips ensures you get the best results from your <strong>bridal makeup artist in Chennai</strong> and enjoy a stress-free experience.</p>
-
-<h2>Common Mistakes to Avoid</h2>
-<ul>
-<li><strong>Choosing solely on the lowest price</strong> — Quality matters more than saving a few hundred rupees on your wedding day</li>
-<li><strong>Skipsping the makeup trial</strong> — The trial is essential to avoid surprises on your wedding day</li>
-<li><strong>Not checking hygiene standards</strong> — Dirty brushes and expired products can cause breakouts or infections</li>
-<li><strong>Booking too close to the date</strong> — Best artists are booked months in advance</li>
-<li><strong>Not discussing your vision clearly</strong> — Miscommunication leads to disappointment</li>
-</ul>
-<p>Avoiding these mistakes ensures a smooth, successful bridal makeup experience at our <strong>bridal makeup studio in Chennai</strong>.</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: When should I book a makeup artist in Chennai?</strong><br>
-A: Ideally 2–4 months before your wedding. Top artists like those at <strong>Anaplak Art and Glam Salon</strong> get booked quickly during wedding season.</p>
-
-<p><strong>Q: Should I get a makeup trial?</strong><br>
-A: Absolutely. A trial lets you test your look, check longevity, provide feedback, and finalize details before the big day. Our <strong>bridal makeup trial in Chennai</strong> is comprehensive and stress-free.</p>
-
-<p><strong>Q: How long does bridal makeup take?</strong><br>
-A: Typically 1.5–3 hours depending on the complexity of the look. South Indian bridal makeup with elaborate draping may take longer.</p>
-
-<p><strong>Q: What works best for Chennai humidity?</strong><br>
-A: Professional techniques like <strong>airbrush bridal makeup</strong> and <strong>HD bridal makeup</strong> are designed to withstand humidity and sweat. Our artists specialize in long-lasting, humidity-resistant bridal looks.</p>
-
-<p><strong>Q: Can I get a look that matches my style?</strong><br>
-A: Yes. A good artist will adapt their technique to suit your preferences — whether you want natural, glam, traditional, or contemporary. Our <strong>bridal makeup specialists in Maduravoyal</strong> customize every look.</p>
+<p><strong>Q: How early should I book a bridal makeup artist?</strong><br>
+A: Three to six months ahead for peak season. Chennai dates fill quickly between November and March.</p>
 
 <p><strong>Q: How much does bridal makeup cost in Chennai?</strong><br>
-A: <strong>Bridal makeup prices in Chennai</strong> vary based on the artist, technique, and inclusions. Our packages include trial sessions, touch-ups, and on-location service. Contact us for personalized pricing.</p>
+A: At Anaplak it starts at ₹15,000 for Classic, ₹18,000 for HD, ₹22,000 for Glossy and ₹30,000 for Airbrush. A trial is ₹3,000.</p>
 
-<h2 class="blog-cta">Book Your Bridal Makeup Artist in Chennai</h2>
-<p class="blog-cta-text">Your bridal appearance deserves a special kind of care and precision. Don't leave it to chance on one of the biggest days of your life. At <strong>Anaplak Art and Glam Salon</strong>, our <strong>bridal makeup artists in Chennai</strong> bring the skill, quality products, and creative vision to give you a flawless, long-lasting finish that photographs beautifully. Whether you're looking for a traditional South Indian bridal look or a modern glam transformation, our experts will help you achieve exactly what you envision. Book your bridal makeup consultation today — limited dates available during wedding season.</p>`,
-    image: "/blogs/how-to-choose-perfect-bridal-makeup-artist.jpg",
+<p><strong>Q: Is a trial necessary?</strong><br>
+A: Yes. It is the only way to test the base in daylight and flash, and to see how your skin reacts.</p>
+
+<p><strong>Q: Can the artist travel to my venue?</strong><br>
+A: Yes, with outdoor charges starting at ₹3,000 depending on distance.</p>
+
+<p><strong>Q: What if I have sensitive skin?</strong><br>
+A: Tell the artist before the trial. We patch test products and avoid anything that has caused a reaction before.</p>
+
+<h2 class="blog-cta">Book Your Bridal Makeup Consultation</h2>
+<p class="blog-cta-text">Bring your outfit, references and questions. We will talk through the look, the timings and the budget before you commit.</p>`,
+    image: "/images/blog/choose-bridal-makeup-artist-chennai.jpg",
     category: "Bridal",
     tags: ["bridal makeup artist", "bridal makeup", "wedding makeup", "bridal makeup Chennai", "bridal makeup artist Chennai", "wedding makeup artist", "bridal makeup trial", "bridal makeup Maduravoyal", "best bridal makeup artist Chennai", "bridal makeup tips", "how to choose bridal makeup artist", "bridal makeup guide", "airbrush bridal makeup Chennai", "HD bridal makeup Chennai", "bridal makeup consultation", "bridal makeup portfolio", "bridal makeup packages Chennai", "bridal makeup cost Chennai", "bridal makeup review", "bridal makeup studio Chennai", "south Indian bridal makeup", "bridal makeup for Chennai weather", "bridal makeup trial Chennai", "professional bridal makeup Chennai"],
     keywords: ["bridal makeup", "how to choose perfect bridal makeup artist Chennai", "bridal makeup artist Chennai", "wedding makeup artist Maduravoyal", "best bridal makeup Chennai", "bridal makeup trial Chennai", "bridal makeup tips Chennai", "bridal makeup consultation Chennai", "bridal makeup packages Chennai", "bridal makeup cost Chennai", "bridal makeup guide Chennai", "airbrush bridal makeup Chennai", "HD bridal makeup Chennai", "bridal makeup studio Chennai", "professional bridal makeup artist Chennai", "bridal makeup portfolio Chennai", "bridal makeup for Chennai weather", "south Indian bridal makeup Chennai", "bridal makeup artist near me Chennai", "bridal makeup review Chennai", "bridal makeup trial session Chennai", "how to find bridal makeup artist", "bridal makeup tips for brides", "bridal makeup mistakes to avoid", "Anaplak bridal makeup", "bridal makeup salon Maduravoyal", "wedding day makeup Chennai"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-05-20",
     readTime: "10 min read",
@@ -1973,224 +946,475 @@ A: <strong>Bridal makeup prices in Chennai</strong> vary based on the artist, te
   {
     id: "keratin-vs-smoothening",
     title: "Keratin vs Smoothening: The Honest Comparison Nobody Tells You",
-    description: "Keratin gives natural shine. Smoothening gives pin-straight hair. But which one will actually work for YOUR hair type? We break down the real differences — duration, damage risk, cost, and results at Anaplak Art and Glam Salon.",
-    content: `<p>If you're dealing with frizzy, unmanageable hair, you've likely heard about <strong>keratin treatment</strong> and <strong>hair smoothening</strong>. Both promise sleek, shiny results — but choosing the right one can make a huge difference in how your hair looks and feels long-term. In this guide, we'll break down <strong>Keratin vs Smoothening</strong> so you can confidently decide which treatment suits your hair type, lifestyle, and goals at <strong>Anaplak Art and Glam Salon</strong> in Chennai, Maduravoyal.</p>
+    description: "Keratin gives natural shine. Smoothening gives pin-straight hair. But which one will actually work for YOUR hair type? We break down the real differences: duration, damage risk, cost and results at Anaplak Art and Glam Salon.",
+    tldr: [
+      "Keratin adds protein and smooths frizz; smoothening relaxes hair straighter.",
+      "Keratin suits frizzy hair that needs shine; smoothening suits hair that needs a straighter finish.",
+      "Both last months and need sulphate-free care.",
+      "Neither repairs damage, so repair the hair first if it is breaking.",
+    ],
+    content: `<p>Keratin and smoothening are often sold as the same thing. They are not. One adds protein and smooths frizz. The other relaxes the hair straighter. Choosing the wrong one can leave you with hair that is flatter, drier or more damaged than you wanted.</p>
 
-<h2>What is Keratin Treatment?</h2>
-<p>Keratin treatment is a protein-based hair treatment designed to restore the natural keratin in your hair. Over time, exposure to heat styling, pollution, and chemical services reduces keratin, making hair dry and frizzy. A <strong>keratin treatment in Chennai</strong> replenishes this lost protein, leaving your hair smoother, shinier, and more manageable.</p>
+<h2>What keratin does</h2>
+<p>Keratin coats the cuticle, fills in rough spots and reduces frizz. It adds shine and makes hair easier to manage. It does not make the hair pin-straight. If your hair is wavy, it will still have some movement.</p>
 
-<h3>Key Benefits</h3>
-<ul>
-<li>Reduces frizz and adds shine</li>
-<li>Improves hair strength and texture</li>
-<li>Maintains a natural, soft look</li>
-<li>Makes styling easier and quicker</li>
-<li>Controls humidity-related frizz — essential for Chennai's climate</li>
-</ul>
+<h2>What smoothening does</h2>
+<p>Smoothening relaxes the hair structure to create a straighter, sleeker finish. It lasts longer than keratin and changes the texture more. It also has a higher risk of damage if the hair is already weak or over-processed.</p>
 
-<h3>Best For</h3>
-<ul>
-<li>Dry, damaged, or frizzy hair</li>
-<li>Slightly wavy hair</li>
-<li>People who want smooth hair without losing volume</li>
-<li>Those who prefer a natural-looking finish</li>
-</ul>
+<h2>Results and maintenance</h2>
+<p>Keratin usually lasts three to six months. Smoothening can last four to six months. Both need sulphate-free shampoo and regular conditioning. Neither is permanent. New hair grows in without treatment, so the roots will eventually need attention.</p>
 
-<div class="blog-mid-cta">
-<p><strong>Not sure which treatment suits your hair?</strong> Our <strong>hair treatment experts in Chennai</strong> can assess your hair type and recommend the perfect option — keratin, smoothening, or something else entirely. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Assessment →</a></p>
-</div>
+<h2>Cost</h2>
+<p>At Anaplak, keratin starts at ₹3,500 for a partial head and ₹7,000 for a full head. Smoothening is priced by length and density, and the final quote is confirmed after a consultation. Do not choose based on the lowest price alone.</p>
 
-<h2>What is Hair Smoothening?</h2>
-<p>Hair smoothening is a chemical process that restructures hair bonds to make it straighter and sleeker. It delivers a more polished and straight finish compared to keratin, making it ideal for those who want pin-straight, glossy hair.</p>
+<h2>Which one to choose</h2>
+<p>If your main problem is frizz and you want soft, shiny hair with movement, keratin is usually the better fit. If your hair is strong and you want a straighter finish, smoothening may suit you. If the hair is breaking or has been bleached recently, repair it first.</p>
 
-<h3>Key Benefits</h3>
-<ul>
-<li>Gives a straight, glossy look</li>
-<li>Controls heavy frizz and volume</li>
-<li>Long-lasting results (6–8 months)</li>
-<li>Reduces daily styling effort significantly</li>
-</ul>
-
-<h3>Best For</h3>
-<ul>
-<li>Thick, curly, or highly frizzy hair</li>
-<li>People who want pin-straight hair</li>
-<li>Those who prefer a more structured, styled look</li>
-<li>Anyone tired of daily straightening with heat tools</li>
-</ul>
-
-<h2>Keratin vs Smoothening: Key Differences</h2>
-
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Keratin Treatment</th>
-<th>Hair Smoothening</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Goal</strong></td>
-<td>Repair & nourish</td>
-<td>Straighten & smooth</td>
-</tr>
-<tr>
-<td><strong>Finish</strong></td>
-<td>Natural, soft</td>
-<td>Sleek, straight</td>
-</tr>
-<tr>
-<td><strong>Hair Health</strong></td>
-<td>Improves over time</td>
-<td>May cause dryness if overdone</td>
-</tr>
-<tr>
-<td><strong>Duration</strong></td>
-<td>3–5 months</td>
-<td>6–8 months</td>
-</tr>
-<tr>
-<td><strong>Maintenance</strong></td>
-<td>Low</td>
-<td>Moderate</td>
-</tr>
-<tr>
-<td><strong>Chemical Strength</strong></td>
-<td>Mild</td>
-<td>Stronger</td>
-</tr>
-</tbody>
-</table>
-
-<p>If you want a healthy, natural finish, <strong>keratin is ideal</strong>. If you want a straight, polished look, <strong>smoothening is the better choice</strong>.</p>
+<h2>Aftercare</h2>
+<p>Use sulphate-free shampoo. Wait at least 72 hours before washing after either treatment. Avoid chlorine and salt water for a week. Use a heat protectant. Book a top-up when the frizz returns, not when the hair is already unmanageable.</p>
 
 <div class="blog-mid-cta">
-<p><strong>Still confused between keratin and smoothening?</strong> Visit our <strong>hair salon in Maduravoyal</strong> for a free hair assessment. We'll help you pick the right treatment based on your hair type, lifestyle, and goals. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Free Consultation →</a></p>
+<p><strong>Not sure which one suits your hair?</strong> Book a consultation and we will assess the hair before recommending either. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Hair Consultation →</a></p>
 </div>
-
-<h2>Which is Better for You?</h2>
-
-<h3>Choose Keratin if:</h3>
-<ul>
-<li>You want frizz-free but natural-looking hair</li>
-<li>You prefer volume and movement</li>
-<li>Your hair is moderately damaged</li>
-<li>You want a gentler treatment</li>
-<li>You live in a humid climate like Chennai and want manageability without flatness</li>
-</ul>
-
-<h3>Choose Smoothening if:</h3>
-<ul>
-<li>You want straight, sleek hair daily</li>
-<li>Your hair is very thick or curly</li>
-<li>You want longer-lasting results</li>
-<li>You don't mind periodic touch-ups</li>
-<li>You want to eliminate your daily straightening routine entirely</li>
-</ul>
-
-<h2>Benefits of Keratin Treatment</h2>
-<ul>
-<li><strong>Restores hair health</strong> — Replenishes lost protein and strengthens hair from within</li>
-<li><strong>Adds shine and smoothness</strong> — Noticeable improvement after the first session</li>
-<li><strong>Controls humidity-related frizz</strong> — Essential for Chennai's weather</li>
-<li><strong>Reduces breakage</strong> — Makes hair more resilient to damage</li>
-<li><strong>Cuts styling time in half</strong> — Wake up with manageable hair</li>
-</ul>
-
-<h2>Benefits of Hair Smoothening</h2>
-<ul>
-<li><strong>Long-lasting straight hair</strong> — Results last 6–8 months with proper care</li>
-<li><strong>Eliminates curls and waves</strong> — Transforms even the most stubborn hair textures</li>
-<li><strong>Creates a polished appearance</strong> — Hair looks professionally styled every day</li>
-<li><strong>Saves styling time</strong> — No more daily straightening or blow-drying</li>
-</ul>
-
-<div class="blog-mid-cta">
-<p><strong>Experience the difference yourself.</strong> Our <strong>keratin and smoothening treatments in Chennai</strong> use premium products and expert techniques for salon-quality results that last months. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Treatment →</a></p>
-</div>
-
-<h2>Treatment Process: What to Expect</h2>
-
-<h3>Keratin Treatment Steps</h3>
-<ol>
-<li><strong>Deep cleansing</strong> — Hair is washed with a clarifying shampoo to remove product buildup</li>
-<li><strong>Application of keratin formula</strong> — The protein-rich formula is applied section by section</li>
-<li><strong>Blow-drying and heat sealing</strong> — A flat iron seals the keratin into each strand</li>
-<li><strong>Final rinse and styling</strong> — Hair is rinsed and styled to reveal the results</li>
-</ol>
-
-<h3>Smoothening Treatment Steps</h3>
-<ol>
-<li><strong>Hair cleansing</strong> — Deep clean to prepare hair for chemical processing</li>
-<li><strong>Application of chemical solution</strong> — The restructuring formula is applied to break and rebuild bonds</li>
-<li><strong>Heat ironing</strong> — Flat iron locks in the straightness at high temperature</li>
-<li><strong>Neutralizing and conditioning</strong> — A neutralizer fixes the new shape, followed by deep conditioning</li>
-</ol>
-
-<p>Both treatments at <strong>Anaplak Art and Glam Salon</strong> are performed by experienced stylists using premium products for the best results.</p>
-
-<h2>Aftercare Tips for Long-Lasting Results</h2>
-<ul>
-<li>Use <strong>sulfate-free shampoos</strong> to extend the life of your treatment</li>
-<li>Avoid washing your hair for 48–72 hours after the treatment</li>
-<li>Minimize heat styling — let your treatment do the work</li>
-<li>Get occasional <strong>hair spa treatments</strong> to maintain hydration and shine</li>
-<li>Protect hair from harsh environmental exposure and chlorine</li>
-<li>Schedule regular trims to keep ends healthy</li>
-</ul>
-<p>Proper aftercare can significantly extend the life of both treatments. Our <strong>hair care experts in Chennai</strong> provide detailed aftercare instructions with every session.</p>
-
-<div class="blog-mid-cta">
-<p><strong>Protect your investment with proper aftercare.</strong> Our <strong>hair spa and maintenance services in Chennai</strong> keep your keratin or smoothening results looking fresh for months. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book Hair Spa →</a></p>
-</div>
-
-<h2>Common Mistakes to Avoid</h2>
-<ul>
-<li><strong>Choosing without consulting a professional</strong> — The wrong treatment can worsen your hair condition</li>
-<li><strong>Washing hair too soon after treatment</strong> — Wait at least 48–72 hours</li>
-<li><strong>Using sulfate-based shampoos</strong> — They strip the treatment and reduce longevity</li>
-<li><strong>Over-processing with back-to-back treatments</strong> — Give your hair time to recover between sessions</li>
-<li><strong>Skipping aftercare</strong> — Proper maintenance is essential for lasting results</li>
-</ul>
 
 <h3>Frequently Asked Questions</h3>
 
-<p><strong>Q: Which treatment is safer?</strong><br>
-A: Keratin is generally safer as it focuses on nourishing hair, while smoothening uses stronger chemicals. Our <strong>hair specialists in Chennai</strong> can recommend the safest option for your hair type.</p>
+<p><strong>Q: Is keratin better than smoothening?</strong><br>
+A: It depends on your hair and the result you want. Keratin smooths frizz and keeps movement. Smoothening gives a straighter finish.</p>
 
-<p><strong>Q: Will my hair lose volume?</strong><br>
-A: Keratin maintains natural volume, whereas smoothening may reduce it. If volume is important to you, keratin is the better choice.</p>
-
-<p><strong>Q: Can I switch between treatments?</strong><br>
-A: Yes, but it's best to consult a professional before switching. We recommend waiting until your current treatment fades before trying a different one.</p>
+<p><strong>Q: Does keratin make hair straight?</strong><br>
+A: No. It reduces frizz and adds shine. The hair will still have some natural movement.</p>
 
 <p><strong>Q: Which lasts longer?</strong><br>
-A: Smoothening lasts longer (6–8 months), but keratin (3–5 months) is healthier for regular use and repeat applications.</p>
+A: Smoothening usually lasts longer, but it also changes the texture more.</p>
 
-<p><strong>Q: Is maintenance difficult?</strong><br>
-A: Both require basic care — sulfate-free shampoo, minimal heat, and regular hair spa sessions. Smoothening may need more frequent touch-ups at the roots.</p>
+<p><strong>Q: Can I do either on coloured hair?</strong><br>
+A: Yes, after a consultation. The timing depends on how recently the hair was coloured or bleached.</p>
 
-<p><strong>Q: How much does keratin treatment cost in Chennai?</strong><br>
-A: <strong>Keratin treatment prices in Chennai</strong> vary based on hair length and thickness. Contact us for personalized pricing at Anaplak Art and Glam Salon.</p>
+<p><strong>Q: How often can I repeat the treatment?</strong><br>
+A: Usually every three to six months, depending on growth and frizz. Do not stack treatments too close together.</p>
 
-<p><strong>Q: How much does hair smoothening cost in Chennai?</strong><br>
-A: <strong>Hair smoothening prices in Chennai</strong> depend on hair length, thickness, and the specific technique used. We offer competitive pricing with premium products.</p>
-
-<h2 class="blog-cta">Book Your Hair Treatment in Chennai</h2>
-<p class="blog-cta-text">Ready to transform your hair? Whether you want smooth, frizz-free shine with <strong>keratin treatment</strong> or sleek, straight perfection with <strong>hair smoothening</strong>, our expert stylists at <strong>Anaplak Art and Glam Salon</strong> will customize the perfect treatment for you. Don't wait — healthier, more manageable hair is just one appointment away. Book now and experience a noticeable transformation from the very first session. Limited slots are available — secure your appointment today.</p>`,
-    image: "/blogs/keratin-vs-smoothening.jpg",
+<h2 class="blog-cta">Book a Hair Consultation</h2>
+<p class="blog-cta-text">Bring your hair history. We will tell you which treatment suits your hair, and which one to avoid.</p>`,
+    image: "/images/blog/keratin-vs-smoothening-chennai.jpg",
     category: "Hair Care",
     tags: ["keratin vs smoothening", "keratin treatment", "hair smoothening", "keratin", "smoothening", "keratin treatment Chennai", "hair smoothening Chennai", "keratin vs smoothening comparison", "which is better keratin or smoothening", "keratin treatment benefits", "hair smoothening benefits", "keratin treatment for frizzy hair", "smoothening for straight hair", "keratin treatment cost Chennai", "hair smoothening cost Chennai", "best hair treatment Chennai", "hair treatment Maduravoyal", "frizzy hair solution Chennai", "straight hair treatment Chennai", "keratin smoothening difference", "hair treatment comparison Chennai", "Anaplak keratin treatment", "Anaplak hair smoothening"],
     keywords: ["keratin vs smoothening", "keratin vs smoothening Chennai", "keratin treatment Chennai", "hair smoothening Chennai", "keratin vs smoothening which is better", "keratin treatment for frizzy hair Chennai", "hair smoothening for straight hair Chennai", "best hair treatment for frizzy hair Chennai", "keratin treatment cost Chennai", "hair smoothening cost Chennai", "keratin treatment benefits", "hair smoothening benefits", "difference between keratin and smoothening", "keratin treatment duration", "hair smoothening duration", "keratin treatment process Chennai", "hair smoothening process Chennai", "keratin treatment aftercare", "hair smoothening aftercare", "hair treatment comparison Chennai", "hair salon Maduravoyal", "best hair treatment salon Chennai", "frizzy hair solution Chennai", "straight hair treatment Chennai", "Anaplak keratin treatment", "Anaplak hair smoothening"],
     author: "Kalpana",
-    authorImage: "/kalpana.jpg",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
     authorRole: "Chief Stylist & Founder",
     createdAt: "2026-05-21",
     readTime: "9 min read",
     featured: false,
     ctaText: "Book Hair Treatment",
     whatsappMessage: "Hi, I just read your blog about keratin vs smoothening and I'm interested. Can I book a consultation?"
+  },
+  {
+    id: "bridal-makeup-trial-guide",
+    title: "Bridal Makeup Trial: What Really Happens and What to Ask",
+    description: "Booked a bridal makeup trial? Here is exactly what happens in the session, what to bring with you, and the questions that prevent wedding-day surprises.",
+    tldr: [
+      "Book the trial 4 to 8 weeks before the wedding.",
+      "Bring your outfit, jewellery and reference photos.",
+      "Ask about longevity, touch-ups, timings and who styles the family.",
+      "Test the look in daylight and with flash before you approve it.",
+    ],
+    content: `<p>A bridal trial is the one appointment where you can change your mind without consequences. I use it to test the makeup, the hair, the timing and the light. Brides usually arrive worried about looking overdone. They leave with decisions settled.</p>
+
+<h2>What we are actually testing</h2>
+<p>We run the full makeup and hair session weeks before the wedding, the same way we will on the day. You wear the look, sit under daylight and flash, and we take photos. If a lip colour feels wrong or the base catches the light, we fix it in the room. The point is to remove surprises from your wedding morning.</p>
+<p>I also watch how your skin behaves. Some foundations look fine for an hour and then separate around the nose. A trial is where that shows up, not at 5 AM on the wedding day.</p>
+
+<h2>When to book</h2>
+<p>Four to eight weeks before the wedding works for most brides. For dates between November and March, when Chennai books up fast, I ask for three to six months. Book the trial and the wedding date together. A trial without a confirmed date is just a nice afternoon.</p>
+<p>If you are still shortlisting artists, read <a href="/blogs/how-to-choose-perfect-bridal-makeup-artist">how to choose a bridal makeup artist</a> first.</p>
+
+<h2>What happens in the session</h2>
+<p>I start with questions. Your outfit, jewellery, venue, the time you need to be ready, and who else is getting ready with you. Then we get to the makeup.</p>
+<p>Skin prep comes first, chosen for your skin type rather than pulled from a fixed kit. I match the base at the jawline and step into daylight. That part takes as long as it takes. I would rather spend twenty extra minutes there than fix a grey cast in your album later.</p>
+<p>Next are the eyes, then blush and lips. You can stop me at any point and change direction. We set the hair with your veil, gajra or jewellery in place, and check the saree drape if you are booking it. Before you leave, I photograph the finished look in daylight and with flash, then write down every product and shade so the wedding day is repeatable.</p>
+
+<h2>What to bring</h2>
+<ul>
+<li>Your wedding outfit, or a fabric swatch in the same colour</li>
+<li>Your jewellery, especially the maang tikka and earrings</li>
+<li>Your saree or dupatta if draping is part of the package</li>
+<li>Three to five reference photos you love, and one you dislike</li>
+<li>Your usual makeup bag, so I can see what your skin already tolerates</li>
+<li>Contact lenses if you wear them</li>
+<li>A clean face, with hair washed the previous day</li>
+</ul>
+
+<h2>Questions worth asking</h2>
+<ul>
+<li>Which finish suits my skin and the venue lighting?</li>
+<li>How many hours will this last in Chennai humidity?</li>
+<li>What will the base look like in flash photos?</li>
+<li>HD or airbrush, and why that one for me?</li>
+<li>What happens if I cry or sweat during the ceremony?</li>
+<li>What is in the touch-up kit, and who carries it?</li>
+<li>How long will the wedding-day application take?</li>
+<li>Who else in the family can be styled, and at what cost?</li>
+<li>What should I do to my skin in the final week?</li>
+<li>Are lashes, lenses and draping included or add-ons?</li>
+</ul>
+
+<h2>Time and cost</h2>
+<p>Plan for two to three hours with me. A bridal trial at Anaplak is <strong>₹3,000</strong>. Package pricing for bridal makeup, hair and draping is on our <a href="/menu">salon menu</a>. Come with your date confirmed so I can hold the same artist for the wedding.</p>
+
+<h2>When to walk away</h2>
+<p>Ask questions if an artist does not look at your skin, does not check the base in daylight, or cannot explain why a product suits you. A trial that works in the salon mirror but not in your own camera roll is not finished. My <a href="/services/bridal-makeup-chennai">bridal makeup service</a> includes a skin and lighting check for that reason.</p>
+
+<div class="blog-mid-cta">
+<p><strong>Want to test your bridal look before the wedding?</strong> Book a trial at our Maduravoyal studio and leave with a written plan. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Trial →</a></p>
+</div>
+
+<h3>Frequently Asked Questions</h3>
+
+<p><strong>Q: Should I wash my hair before a bridal makeup trial?</strong><br>
+A: Wash it the previous day. Day-old hair holds pins better, and it shows me how the hairstyle will sit on the wedding day.</p>
+
+<p><strong>Q: Can I bring a friend?</strong><br>
+A: One person is useful for a second opinion. More than one turns the session into a debate, so keep the group small.</p>
+
+<p><strong>Q: What if I do not like the trial look?</strong><br>
+A: That is what the trial is for. We adjust the base, eye shape or lip colour in the same session, or book one follow-up. Nothing is final until you are happy.</p>
+
+<p><strong>Q: Do I need a trial if I am booking a full package?</strong><br>
+A: Yes. The trial is where I personalise the package, and it lets me time the wedding morning properly, especially for early muhurthams.</p>
+
+<p><strong>Q: Can you do the trial at home?</strong><br>
+A: I usually do trials at the salon because I need proper lighting and my full kit. Home trials are possible on request, depending on availability and travel charges.</p>
+
+<h2 class="blog-cta">Book Your Bridal Makeup Trial</h2>
+<p class="blog-cta-text">Bring your outfit, jewellery and references to Anaplak Art and Glam in Maduravoyal. I will build a look you can trust in photos and in person, and you will know exactly what to expect on the wedding morning.</p>`,
+    image: "/images/blog/bridal-makeup-trial-chennai-2026.webp",
+    category: "Bridal",
+    tags: ["bridal makeup trial", "bridal makeup trial questions", "bridal makeup trial cost", "what to expect at a bridal makeup trial", "bridal trial checklist", "bridal makeup Chennai", "bridal makeup Maduravoyal", "bridal makeup artist Chennai", "wedding makeup trial", "bridal consultation", "bridal makeup package", "South Indian bride", "wedding makeup checklist"],
+    keywords: ["bridal makeup trial", "bridal makeup trial Chennai", "bridal makeup trial cost", "what to expect at a bridal makeup trial", "bridal makeup trial questions to ask", "bridal makeup trial checklist", "bridal makeup trial near me", "bridal makeup artist Chennai", "bridal makeup Maduravoyal", "wedding makeup trial Chennai", "bridal consultation Chennai", "bridal trial outfit", "bridal trial tips", "bridal makeup package Chennai", "bridal makeup price Chennai", "HD bridal makeup trial", "airbrush bridal makeup trial", "bridal makeup booking", "wedding makeup appointment", "bridal makeup trial before booking", "Anaplak bridal trial", "Kalpana bridal makeup"],
+    author: "Kalpana",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
+    authorRole: "Chief Stylist & Founder",
+    createdAt: "2026-10-26",
+    readTime: "8 min read",
+    featured: false,
+    ctaText: "Book Bridal Trial",
+    whatsappMessage: "Hi, I just read your blog about bridal makeup trials and I'd like to book one. Can you share availability?"
+  },
+  {
+    id: "hd-vs-airbrush-bridal-makeup",
+    title: "HD vs Airbrush Bridal Makeup: Which Survives Chennai Heat?",
+    description: "HD or airbrush bridal makeup? Compare the finish, coverage, longevity in Chennai humidity, photography results and cost before you book your trial.",
+    tldr: [
+      "HD is hand-applied and buildable; airbrush is sprayed and lighter.",
+      "Airbrush lasts longer in humidity; HD covers texture and marks more easily.",
+      "Both photograph well when the base matches your skin.",
+      "Test both at the trial if you are undecided.",
+    ],
+    content: `<p>The HD versus airbrush question usually comes before the bride has taken off her coat. I have applied both to the same face in one afternoon, so I can tell you where they actually differ.</p>
+
+<h2>What changes between the two</h2>
+<p>HD makeup is applied by hand with brushes and sponges. I can build coverage in thin layers and work around acne marks or pigmentation. Airbrush makeup is sprayed through a compressor in fine layers. It feels lighter on the skin and gives a very even finish.</p>
+
+<table>
+<thead>
+<tr><th>Factor</th><th>HD makeup</th><th>Airbrush makeup</th></tr>
+</thead>
+<tbody>
+<tr><td>Application</td><td>Brushes, sponges, hand-blending</td><td>Compressor and airbrush gun</td></tr>
+<tr><td>Coverage</td><td>Medium to full, buildable</td><td>Light to medium, layered</td></tr>
+<tr><td>Finish</td><td>Skin-like, matte or dewy</td><td>Smooth and even, satin</td></tr>
+<tr><td>Longevity</td><td>8 to 10 hours with setting</td><td>Up to 12 to 16 hours</td></tr>
+<tr><td>Best for</td><td>Most skin types, acne marks, texture</td><td>Humidity, long ceremonies, camera-heavy events</td></tr>
+<tr><td>Touch-ups</td><td>Easy with a compact and sponge</td><td>Blotting and light powder work best</td></tr>
+<tr><td>Price at Anaplak</td><td>From ₹18,000</td><td>₹30,000</td></tr>
+</tbody>
+</table>
+
+<h2>Humidity and long ceremonies</h2>
+<p>If your muhurtham is outdoors or your reception runs past midnight, airbrush usually holds better. The layers are thinner and sit closer to the skin. HD can last just as long when I set it properly and pack a real touch-up kit. I have seen both fail, and it was almost always a prep or setting mistake rather than the product.</p>
+
+<h2>What photographs better</h2>
+<p>Both photograph well when the base matches your skin and the products are flash-safe. HD gives me more control over coverage, which helps with acne marks, pigmentation and texture. Airbrush looks more uniform in 4K video and candid shots.</p>
+
+<h2>Which suits your skin</h2>
+<p>Oily skin does better with airbrush or a matte HD base, set carefully. Dry skin needs a hydrating base under either. Acne-prone or textured skin usually gets better coverage from HD with targeted concealing. Sensitive skin needs a patch test at the trial. Mature skin often prefers the lighter feel of airbrush, though HD with a satin finish works too.</p>
+
+<h2>Classic, HD, glossy or airbrush</h2>
+<p>HD and airbrush describe the application. The finish is a separate decision. My bridal packages run from <strong>Bridal Classic at ₹15,000</strong> and <strong>HD at ₹18,000</strong> to <strong>Glossy at ₹22,000</strong> and <strong>Airbrush at ₹30,000</strong>. Glossy is the dewy finish many 2026 brides ask for. Classic is softer and more natural. The full list is on our <a href="/menu">salon menu</a>.</p>
+
+<h2>How I help you choose</h2>
+<p>At the trial I show you the base in daylight, with flash, and again two hours later. Whichever still looks like skin at that point is the one I recommend. If you are torn, my <a href="/services/bridal-makeup-chennai">bridal makeup team</a> can test both finishes in one session.</p>
+
+<h2>What ruins either finish</h2>
+<ul>
+<li>Testing the base only under salon lights</li>
+<li>Using a primer that does not suit your skin</li>
+<li>Applying too much product in one layer</li>
+<li>Skipping the setting step and blaming the product</li>
+<li>Choosing a finish before considering the venue and ceremony length</li>
+</ul>
+
+<div class="blog-mid-cta">
+<p><strong>Still choosing between HD and airbrush?</strong> Book a trial and compare both finishes on your own skin before you commit. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Trial →</a></p>
+</div>
+
+<h3>Frequently Asked Questions</h3>
+
+<p><strong>Q: Is airbrush better than HD?</strong><br>
+A: It depends. Airbrush lasts longer and feels lighter. HD covers more and is easier to touch up. I choose based on your skin, the ceremony length and the venue.</p>
+
+<p><strong>Q: Does airbrush look cakey?</strong><br>
+A: Not when it is applied properly. Cakey airbrush usually means too much product was sprayed too close. I build thin layers and check the finish in daylight.</p>
+
+<p><strong>Q: Which lasts longer in Chennai heat?</strong><br>
+A: Airbrush generally wins in heat and humidity. A well-set HD base with a touch-up kit can still hold through a full wedding day.</p>
+
+<p><strong>Q: Can I switch from HD at the trial to airbrush on the wedding day?</strong><br>
+A: I would not recommend it. Switching on the day leaves no time to test how the finish photographs or how your skin reacts.</p>
+
+<p><strong>Q: Does airbrush cover acne and pigmentation?</strong><br>
+A: It can even out tone, but deep marks usually need targeted concealing first. HD handles heavier coverage more predictably.</p>
+
+<h2 class="blog-cta">Book Your Bridal Makeup Consultation</h2>
+<p class="blog-cta-text">Bring your outfit, references and questions. I will test the finish that suits your skin and your wedding timings, and explain how it will hold through a Chennai ceremony.</p>`,
+    image: "/images/blog/hd-vs-airbrush-bridal-makeup-chennai-2026.webp",
+    category: "Bridal",
+    tags: ["HD bridal makeup", "airbrush bridal makeup", "HD vs airbrush", "bridal makeup Chennai", "bridal makeup Maduravoyal", "bridal makeup artist Chennai", "wedding makeup", "long-lasting bridal makeup", "bridal makeup for humidity", "airbrush makeup Chennai", "HD makeup Chennai", "bridal makeup trial", "bridal makeup price Chennai", "South Indian bridal makeup"],
+    keywords: ["HD vs airbrush bridal makeup", "airbrush vs HD bridal makeup", "which makeup is best for bridal HD or airbrush", "difference between airbrush and HD makeup", "HD bridal makeup Chennai", "airbrush bridal makeup Chennai", "bridal makeup Chennai", "bridal makeup Maduravoyal", "best bridal makeup for Chennai humidity", "long-lasting bridal makeup", "airbrush makeup cost Chennai", "HD makeup price Chennai", "bridal makeup artist Chennai", "bridal makeup trial Chennai", "wedding makeup Chennai", "bridal makeup for oily skin", "bridal makeup photography", "flash photography makeup", "bridal makeup finish", "glossy bridal makeup", "bridal makeup package Chennai"],
+    author: "Kalpana",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
+    authorRole: "Chief Stylist & Founder",
+    createdAt: "2026-10-27",
+    readTime: "8 min read",
+    featured: false,
+    ctaText: "Book Bridal Consultation",
+    whatsappMessage: "Hi, I just read your blog comparing HD and airbrush bridal makeup. Which one would you recommend for my wedding?"
+  },
+  {
+    id: "bridal-makeup-oily-skin-chennai",
+    title: "Bridal Makeup for Oily Skin: A Chennai Humidity-Proof Plan",
+    description: "Oily skin and Chennai humidity can break a bridal base. Here is the prep, product and touch-up plan that keeps makeup fresh from muhurtham to reception.",
+    tldr: [
+      "Prepare oily skin 3 months out with a simple routine and regular facials.",
+      "Use thin layers of oil-free base and set only the T-zone.",
+      "Blot before powder instead of layering powder over shine.",
+      "Keep blotting paper, powder and lip colour in the touch-up kit.",
+    ],
+    content: `<p>Oily skin does not ruin bridal makeup. A base that was never built for it does. I have done June weddings in Chennai where the makeup held from the muhurtham to the reception.</p>
+
+<h2>What happens under humidity</h2>
+<p>Heat and humidity increase sebum, and sebum breaks down foundation from underneath. You get shine on the T-zone, patchy coverage around the nose, and makeup that starts moving by the reception. More powder on the day does not fix it. The prep weeks before does.</p>
+
+<h2>The three-month prep</h2>
+<p>Keep the routine simple: a gentle cleanser, a light moisturiser and sunscreen. Book a facial every four to six weeks. Our <a href="/services/facial-treatments-chennai">facial treatments</a> include deep cleansing and oil-balancing options.</p>
+<p>Do not start strong actives in the final month. A purge has no time to settle. Drink water, cut back on fried food where you can, and get consistent sleep. It sounds ordinary because it is.</p>
+
+<h2>Wedding week</h2>
+<p>Confirm your routine instead of testing new things. Finish the trial, stop experimenting with facials, and avoid waxing or threading within three days of the wedding. If a breakout appears, treat it calmly with your dermatologist. Do not pick at it.</p>
+
+<h2>The base I build</h2>
+<p>I cleanse and mattify first, then use a lightweight oil-free moisturiser and a mattifying primer on the T-zone. Foundation goes on in two thin layers. One heavy layer moves more.</p>
+<p>Powder goes on the T-zone, chin and around the nose. I leave the cheeks luminous so the face does not look flat. Through the day, blot with tissue or blotting paper before adding powder. Powder over shine turns patchy.</p>
+<p>Oil-free and non-comedogenic formulas are the baseline. A matte or satin finish holds better than a high-gloss finish, though glossy bridal makeup can work with the right setting routine. My <a href="/services/bridal-makeup-chennai">bridal makeup service</a> matches the finish to your skin instead of applying one house style to every bride.</p>
+
+<h2>What goes in the touch-up kit</h2>
+<ul>
+<li>Blotting paper for shine</li>
+<li>A small pressed powder and a velour puff</li>
+<li>The exact lip colour and a liner</li>
+<li>A concealer pen for redness around the nose</li>
+<li>Cotton buds for smudges</li>
+<li>Two hair pins and a small comb</li>
+</ul>
+
+<h2>What makes it fail</h2>
+<p>Too much primer can pill under foundation. Powdering the whole face heavily at the start makes the base look flat. A dewy setting spray on an already oily base adds shine. Touching your face through the day makes it worse. And skipping the trial means nobody knows how your skin reacts.</p>
+
+<div class="blog-mid-cta">
+<p><strong>Worried about shine in your wedding photos?</strong> Book a trial and we will build a base and touch-up plan for your skin type. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Trial →</a></p>
+</div>
+
+<h3>Frequently Asked Questions</h3>
+
+<p><strong>Q: Which foundation is best for oily skin?</strong><br>
+A: A long-wear, oil-free foundation matched to your undertone, set with a light powder. How I apply and set it matters more than the brand.</p>
+
+<p><strong>Q: Will my makeup melt in Chennai humidity?</strong><br>
+A: It can if the base is heavy. Thin layers, targeted setting and blotting through the day keep it intact. Airbrush is a good option for very long ceremonies.</p>
+
+<p><strong>Q: Should I get a facial before the wedding?</strong><br>
+A: Yes, one to two weeks before. Not the day before. A late facial can leave the skin sensitive or flushed.</p>
+
+<p><strong>Q: How do I control oil without drying my skin?</strong><br>
+A: Use a gentle cleanser and a light moisturiser, and mattify only where needed. Over-drying triggers more oil.</p>
+
+<p><strong>Q: Can I use blotting paper over bridal makeup?</strong><br>
+A: Yes. Press, do not rub, then touch up with a little powder. Keep blotting paper in your kit.</p>
+
+<h2 class="blog-cta">Book Your Bridal Makeup Consultation</h2>
+<p class="blog-cta-text">Bring your skin concerns and your wedding timings. I will plan the prep, the base and the touch-up kit so your makeup looks fresh from the first photo to the last.</p>`,
+    image: "/images/blog/bridal-makeup-oily-skin-chennai-2026.webp",
+    category: "Bridal",
+    tags: ["bridal makeup for oily skin", "oily skin bridal makeup", "wedding makeup oily skin", "bridal makeup Chennai humidity", "long-lasting bridal makeup", "bridal makeup Chennai", "bridal makeup Maduravoyal", "bridal makeup trial", "bridal skincare", "foundation for oily skin", "matte bridal makeup", "bridal makeup tips"],
+    keywords: ["bridal makeup for oily skin", "wedding makeup for oily skin", "best bridal makeup for oily skin", "bridal foundation for oily skin", "bridal makeup for oily skin Chennai", "bridal makeup Chennai humidity", "long-lasting bridal makeup Chennai", "bridal makeup Maduravoyal", "matte bridal makeup", "oil-free foundation bridal", "bridal makeup touch-up kit", "bridal skincare routine", "facial before wedding", "bridal makeup trial Chennai", "bridal makeup artist Chennai", "bridal makeup for oily dusky skin", "wedding makeup tips Chennai", "bridal makeup products"],
+    author: "Kalpana",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
+    authorRole: "Chief Stylist & Founder",
+    createdAt: "2026-10-28",
+    readTime: "8 min read",
+    featured: false,
+    ctaText: "Book Bridal Consultation",
+    whatsappMessage: "Hi, I have oily skin and I'm getting married in Chennai. Can we plan a bridal trial and a humidity-proof base?"
+  },
+  {
+    id: "bridal-makeup-dusky-skin-tones",
+    title: "Bridal Makeup for Dusky Skin: Shades That Don't Turn Grey",
+    description: "Dusky and wheatish brides need undertone-matched bases, not lighter foundation. See how to choose shades, blush, eyes and lip colours that photograph well.",
+    tldr: [
+      "Match the base to your neck and chest, never a lighter shade.",
+      "Choose warm, golden or olive undertones over pink.",
+      "Terracotta, brick and berry blush and lips show up in photos.",
+      "Test the finished look with flash at the trial.",
+    ],
+    content: `<p>Brides sometimes ask me to make them two shades lighter. I say no, then explain why. Your neck, chest and face need to match. A lighter base shows up as a grey mask in flash photos, and you will see it in every album.</p>
+
+<h2>Undertone before shade</h2>
+<p>Look at the veins on your wrist and how your skin reacts to gold and silver. Warm undertones lean golden or olive. Cool undertones lean pink or red. Neutral sits between.</p>
+<p>Most Indian skin tones are warm or olive, which is why foundations with a strong pink base look ashy. Find the undertone first. The shade number matters less.</p>
+
+<h2>Matching the base</h2>
+<p>I match at the jawline and check in daylight, not salon lighting. I test two shades and blend both sides of the face. A warm, golden or olive undertone almost always beats a pink one.</p>
+<p>Pigmentation gets colour corrector before foundation. Piling on more foundation never hides it well. If your blouse is low-cut, I keep the chest and shoulders consistent so the face does not end at the neck.</p>
+
+<h2>Blush, highlight and lip colour</h2>
+<p>Soft pinks disappear on deeper skin. Warm terracotta, coral, brick and berry show up and look natural in photos. For highlight, I use warm gold or champagne. Silver and icy tones turn grey on camera. It goes on the high points of the cheek, not all over the face.</p>
+<p>For lips, brick red, maroon, rosewood and warm browns photograph beautifully. If you want something lighter, choose a warm nude with a defined liner. Pale pink will wash you out.</p>
+
+<h2>Eyes</h2>
+<p>Traditional South Indian looks pair deep kajal with gold, bronze, copper or maroon shadow. Those tones flatter warm and olive skin and hold up in temple and hall lighting. Keep the brows filled softly. A hard, drawn-on brow fights the rest of the face.</p>
+
+<h2>What flash does to deeper skin</h2>
+<p>Deep skin reflects flash differently. The base needs to be flash-safe, and I avoid heavy silica powder because it leaves a white cast. At the trial I shoot with flash, in daylight, and on your phone before you leave.</p>
+
+<h2>What to tell your artist</h2>
+<ul>
+<li>Show photos of brides with a similar skin tone, not lighter ones</li>
+<li>Say clearly that you do not want to look fairer</li>
+<li>Point out pigmentation or darkness around the mouth and eyes</li>
+<li>Ask which blush and lip shades they plan to use, and why</li>
+<li>Check the look on your own phone before you leave</li>
+</ul>
+
+<div class="blog-mid-cta">
+<p><strong>Want a base matched to your skin tone?</strong> Book a trial and see what a proper undertone match does in photos. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Trial →</a></p>
+</div>
+
+<h3>Frequently Asked Questions</h3>
+
+<p><strong>Q: Which foundation shade is best for dusky skin?</strong><br>
+A: One that matches your neck and chest with a warm, golden or olive undertone. Match the depth first, then worry about the finish.</p>
+
+<p><strong>Q: How do I stop my makeup looking grey in photos?</strong><br>
+A: Avoid a pink or lighter base, use a warm colour corrector on dark areas, and skip heavy silica powder. Test with flash at the trial.</p>
+
+<p><strong>Q: Which lipstick suits dusky skin?</strong><br>
+A: Brick red, maroon, rosewood, warm brown and terracotta. Pale pinks and frosts tend to wash out deeper skin.</p>
+
+<p><strong>Q: Can I wear a red bridal lehenga with dusky skin?</strong><br>
+A: Yes. Deep reds, maroons and gold look striking on warm and olive skin. I balance the makeup with the outfit.</p>
+
+<p><strong>Q: Do I need different makeup for the reception?</strong><br>
+A: Often yes. I go deeper on the eyes and lips because reception lighting is warmer. I keep the base consistent so the photos match.</p>
+
+<h2 class="blog-cta">Book Your Bridal Makeup Consultation</h2>
+<p class="blog-cta-text">Bring your outfit, jewellery and reference photos. I will match the base to your skin tone, choose shades that show up in photos, and test everything before the wedding day.</p>`,
+    image: "/images/blog/bridal-makeup-dusky-skin-chennai-2026.webp",
+    category: "Bridal",
+    tags: ["bridal makeup for dusky skin", "dusky skin bridal makeup", "bridal makeup for brown skin", "wheatish skin bridal makeup", "Indian bridal makeup", "bridal makeup Chennai", "bridal makeup Maduravoyal", "foundation matching", "bridal makeup for dark skin", "South Indian bridal makeup", "bridal makeup tips"],
+    keywords: ["bridal makeup for dusky skin", "bridal makeup for dusky skin tone", "bridal makeup for dark skin Indian", "bridal makeup for brown skin", "bridal makeup for wheatish skin tone", "wedding makeup for dusky skin", "bridal makeup for dark skin tone", "bridal makeup Chennai", "bridal makeup Maduravoyal", "foundation for dusky skin", "best lipstick for dusky skin", "blush for dusky skin", "bridal makeup undertone", "bridal makeup photography", "South Indian bridal makeup for dusky skin", "bridal makeup artist Chennai", "bridal makeup trial Chennai"],
+    author: "Kalpana",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
+    authorRole: "Chief Stylist & Founder",
+    createdAt: "2026-10-29",
+    readTime: "8 min read",
+    featured: false,
+    ctaText: "Book Bridal Consultation",
+    whatsappMessage: "Hi, I have dusky skin and I'd like bridal makeup that matches my tone. Can I book a trial?"
+  },
+  {
+    id: "south-indian-bridal-makeup-guide",
+    title: "South Indian Bridal Makeup: The Complete Look, Step by Step",
+    description: "A complete South Indian bridal look takes more than makeup. Here is how the base, eyes, jadai, jewellery and Kanjeevaram draping come together for the muhurtham.",
+    tldr: [
+      "The look is a skin-matched base, defined eyes, traditional lips and jadai.",
+      "Gold, bronze and maroon shadows pair naturally with temple jewellery.",
+      "Pre-pleat and pin the saree; draping is an add-on at ₹2,000.",
+      "Book the trial early and allow 2 to 3 hours on the wedding morning.",
+    ],
+    content: `<p>Muhurthams in Chennai often start before sunrise. By the time a bride reaches the temple, the makeup has to survive a car ride, a crowded hall and a photographer's flash. That is the standard I plan for.</p>
+
+<h2>What the look needs</h2>
+<p>Warm, golden skin, deep eyes and traditional jewellery do most of the work. I keep the base skin-like, let the eyes carry the look, and pick a lip colour that sits with the Kanjeevaram. The whole thing has to hold through an early muhurtham and a long day.</p>
+
+<h2>Base</h2>
+<p>I match warm, golden and olive undertones at the jawline. The aim is even skin. Concealer goes on pigmentation and under the eyes, then I set lightly so the skin still looks like skin in photos.</p>
+
+<h2>Eyes and brows</h2>
+<p>Kajal, a clean winged liner and a defined crease are the core. Gold, bronze, copper and maroon shadows pair naturally with temple jewellery. I keep lashes natural to strong. Heavy falsies overpower a traditional look.</p>
+<p>Brows are filled softly. The shape should suit your face, not follow a trend.</p>
+
+<h2>Lips and blush</h2>
+<p>Brick red, maroon, rosewood and warm brown are the safest lip choices, with a defined liner to help the colour last through meals. Blush is warm coral, terracotta or berry. The highlight is gold or champagne, kept subtle so it does not fight the jewellery.</p>
+
+<h2>Hair and jadai</h2>
+<p>The classic look is a low bun or braid with jadai, flowers and jewellery pinned in place. I set the hairstyle after the jewellery is positioned so the weight is balanced and nothing pulls. If you are wearing a veil or a long gajra, bring it to the trial so I can test the pins.</p>
+
+<h2>Jewellery and saree</h2>
+<p>Temple jewellery, a maang tikka, jhumkas and a nose ring all sit close to the face. Put them on before the final check so I can adjust the base and highlight around them. Heavy jewellery usually means a simpler eye and a stronger lip.</p>
+<p>The saree is part of the look. A Kanjeevaram that is pre-pleated and pinned correctly sits better, photographs better and saves time on the wedding morning. Saree draping at Anaplak is an add-on at <strong>₹2,000</strong>, and pre-pleating can be booked separately. My <a href="/services/bridal-makeup-chennai">bridal makeup service</a> coordinates draping with the makeup timeline so nothing is rushed.</p>
+
+<h2>Muhurtham and reception</h2>
+<p>For the muhurtham I keep the base softer, define the eyes, choose a traditional lip and set a low bun with jadai and flowers. For the reception I go deeper on the eyes and lips, change the hairstyle, and choose jewellery for the evening outfit. The base stays consistent so the photos look like the same bride.</p>
+
+<h2>Timing</h2>
+<p>Book the trial four to eight weeks before the wedding. Confirm the saree, jewellery and hair accessories at the trial. On the day, allow two to three hours for makeup, hair and draping, and add time if the family is also getting styled. Early muhurthams usually need a start time between 3 and 5 AM.</p>
+
+<div class="blog-mid-cta">
+<p><strong>Planning a traditional South Indian bridal look?</strong> Bring your Kanjeevaram, jewellery and accessories to a trial and we will put the full look together. <a href="https://www.welns.io/product/booking/WFRCHN984305/Anaplak?bk_src=GMAPS110" target="_blank" rel="noopener noreferrer">Book a Bridal Trial →</a></p>
+</div>
+
+<h3>Frequently Asked Questions</h3>
+
+<p><strong>Q: What makeup do South Indian brides wear?</strong><br>
+A: A skin-matched base, defined eyes with kajal and gold or maroon shadow, soft brows, and a traditional lip in brick red, maroon or rosewood. We finish with jadai, flowers and temple jewellery.</p>
+
+<p><strong>Q: Is HD makeup suitable for a South Indian wedding?</strong><br>
+A: Yes. HD gives me the coverage and control I need for photography and long ceremonies. Airbrush is a good option for very humid or outdoor venues.</p>
+
+<p><strong>Q: Do you provide saree draping?</strong><br>
+A: Yes. Draping is an add-on at ₹2,000, and pre-pleating can be booked separately. Bring the saree to the trial so I can check the drape.</p>
+
+<p><strong>Q: How early should I book for a muhurtham?</strong><br>
+A: Three to six months ahead for peak wedding season. For early morning muhurthams, confirm the start time so I can plan the schedule.</p>
+
+<p><strong>Q: Can I wear the same look for the reception?</strong><br>
+A: You can, but most brides change the hairstyle and deepen the eyes or lips. Keeping the base consistent helps the photos match.</p>
+
+<h2 class="blog-cta">Book Your South Indian Bridal Look</h2>
+<p class="blog-cta-text">Bring your saree, jewellery and references to Anaplak Art and Glam in Maduravoyal. I will plan the makeup, hair, draping and timings so the morning stays calm and the look holds through every ceremony.</p>`,
+    image: "/images/blog/south-indian-bridal-makeup-chennai-2026.webp",
+    category: "Bridal",
+    tags: ["South Indian bridal makeup", "South Indian bride", "Kanjeevaram bridal look", "temple jewellery bridal", "jadai hairstyle", "saree draping", "bridal makeup Chennai", "bridal makeup Maduravoyal", "muhurtham makeup", "South Indian wedding makeup", "bridal hairstyle", "bridal makeup trial"],
+    keywords: ["South Indian bridal makeup", "South Indian bridal makeup look", "South Indian bride makeup Chennai", "South Indian bridal makeup for dusky skin", "South Indian bridal makeup artist near me", "South Indian bridal makeup and hairstyle", "Kanjeevaram bridal look", "temple jewellery bridal makeup", "jadai hairstyle bridal", "saree draping Chennai", "bridal saree pre-pleating", "muhurtham bridal makeup", "South Indian wedding makeup Chennai", "bridal makeup Chennai", "bridal makeup Maduravoyal", "bridal hairstyle Chennai", "bridal makeup trial Chennai", "traditional bridal makeup", "bridal makeup artist Chennai"],
+    author: "Kalpana",
+    authorImage: "/images/team/kalpana-bridal-makeup-artist-chennai.jpg",
+    authorRole: "Chief Stylist & Founder",
+    createdAt: "2026-10-30",
+    readTime: "9 min read",
+    featured: false,
+    ctaText: "Book South Indian Bridal Look",
+    whatsappMessage: "Hi, I'm planning a South Indian bridal look and would like to book a trial. Can you share availability?"
   }
 ]
 
@@ -2251,4 +1475,70 @@ export const BLOGS_PER_PAGE = 9
 export function getAllCategories(): string[] {
   const categories = new Set(blogData.map(blog => blog.category))
   return Array.from(categories)
+}
+
+const serviceBlogMap: Record<string, string[]> = {
+  "bridal-makeup-chennai": [
+    "bridal-makeup-trial-guide",
+    "south-indian-bridal-makeup-guide",
+    "bridal-makeup-dusky-skin-tones",
+    "hd-vs-airbrush-bridal-makeup",
+    "bridal-makeup-oily-skin-chennai",
+  ],
+  "engagement-makeup-chennai": [
+    "bridal-makeup-trial-guide",
+    "hd-vs-airbrush-bridal-makeup",
+    "bridal-makeup-dusky-skin-tones",
+  ],
+  "party-makeup-chennai": [
+    "hd-vs-airbrush-bridal-makeup",
+    "bridal-makeup-oily-skin-chennai",
+    "bridal-makeup-trends-2026",
+  ],
+  "fashion-editorial-makeup-chennai": [
+    "bridal-makeup-trends-2026",
+    "hd-vs-airbrush-bridal-makeup",
+  ],
+  "hair-styling-chennai": [
+    "top-hair-styling-trends-women-2026",
+    "top-hair-styling-trends-men-2026",
+    "monsoon-hair-care-tips",
+  ],
+  "hair-treatment-chennai": [
+    "keratin-treatment-guide",
+    "keratin-vs-smoothening",
+    "best-hair-treatments-for-damaged-hair",
+    "hair-spa-benefits-explained",
+  ],
+  "hair-botox-treatment-chennai": [
+    "best-hair-treatments-for-damaged-hair",
+    "keratin-vs-smoothening",
+    "keratin-treatment-guide",
+    "hair-spa-benefits-explained",
+  ],
+  "hair-coloring-chennai": [
+    "hair-color-trends",
+    "top-hair-styling-trends-women-2026",
+  ],
+  "hair-extension-chennai": [
+    "monsoon-hair-care-tips",
+    "best-hair-treatments-for-damaged-hair",
+  ],
+  "facial-treatments-chennai": [
+    "skincare-routine-facial-treatments",
+    "anti-aging-skincare-routine",
+    "bridal-skincare-routine-3-months-plan",
+  ],
+  "anti-aging-treatments-chennai": [
+    "anti-aging-skincare-routine",
+    "skincare-routine-facial-treatments",
+  ],
+}
+
+export function getBlogsForService(slug: string, limit = 3): Blog[] {
+  const ids = serviceBlogMap[slug] ?? []
+  return ids
+    .map((id) => blogData.find((blog) => blog.id === id))
+    .filter((blog): blog is Blog => Boolean(blog))
+    .slice(0, limit)
 }

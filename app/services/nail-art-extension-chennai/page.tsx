@@ -5,9 +5,9 @@ import { getServiceBySlug } from "@/data/serviceData"
 const slug = "nail-art-extension-chennai"
 
 export const metadata: Metadata = buildServiceMetadata({
-    title: "Nail Art & Nail Extensions in Chennai, Maduravoyal | Creative Nail Designs",
-    description: "Professional nail art and nail extensions in Chennai. Gel polish from ₹1,000, gel, acrylic, poly gel extensions, bridal nail art, French nails, chrome, ombre and more at Anaplak Art and Glam, Maduravoyal.",
-    image: "/nails-2.webp",
+    title: "Nail Art & Extensions in Chennai",
+    description: "Nail art and extensions in Chennai from ₹1,000 — gel, acrylic, poly gel, French, chrome and bridal nail art at Anaplak, Maduravoyal.",
+    image: "/images/services/nail-art-extension-chennai.webp",
     slug,
 })
 

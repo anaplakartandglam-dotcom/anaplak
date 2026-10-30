@@ -13,7 +13,7 @@
 - **Tech stack:** Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, hosted on Vercel
 - **Structured data:** BeautySalon, Organization, WebSite, BreadcrumbList, Service, FAQPage, Article, ItemList
 - **Tag Manager:** GTM-5N7G5WN4
-- **Services:** 13 service pages across Bridal, Makeup, Hair, Skin and Salon categories
+- **Services:** 14 service pages across Bridal, Makeup, Hair, Skin and Salon categories
 
 ## FOUNDER
 
@@ -60,6 +60,7 @@ Prices below are from the salon's public price list (/menu) and are a guide; the
 ### Hair
 - **Hair Styling** (/services/hair-styling-chennai) — men: Premier cut ₹900, Top ₹1,100, Salon Director ₹1,300, kids cut ₹650, beard trim ₹200, beard design ₹400, executive shave ₹400, oil massage ₹1,000; women: Premier ₹1,200, Top ₹1,500, Salon Director ₹1,800, hair trim ₹1,000, kids ₹750, hair wash & conditioning ₹1,000, oil massage ₹1,500; blow dry ₹1,500, tongs ₹1,700, ironing ₹1,800
 - **Keratin & Smoothing (Hair Treatment)** (/services/hair-treatment-chennai) — keratin partial ₹3,500+, keratin full ₹7,000+, perming partial ₹3,500+, perming ₹7,000+, hair botox ₹8,000, botoplex ₹8,000, nano plastia ₹9,000 (customised); hair spa from ₹3,000; dandruff treatment from ₹4,000; results last ~3–6 months
+- **Hair Botox Treatment** (/services/hair-botox-treatment-chennai) — from ₹8,000, 2–3 hours; deep-conditioning repair for dry, damaged and over-processed hair; does not straighten; results last 4–6 weeks
 - **Hair Colouring** (/services/hair-coloring-chennai) — root touch-up ₹1,800 (men)/₹2,000 (women); global colour ₹3,500/₹4,500; partial highlights ₹3,000+/₹4,500+; full highlights ₹5,000+/₹6,000+; fashion colour ₹5,000+/₹7,000+; creative colour ₹5,000+/₹7,000+; ammonia-free options available at a premium
 - **Hair Extensions** (/services/hair-extension-chennai) — Clip & Go ₹20,000 (100g+), Tape ₹30,000 (100g+), Nano ₹30,000 (100g+), Men's patch ₹25,000 (100g+), maintenance ₹10,000
 
@@ -74,15 +75,15 @@ Prices below are from the salon's public price list (/menu) and are a guide; the
 
 ## PACKAGES
 
-- **Classic — Men** ₹4,999 (was ₹7,600): Premier stylist, beard trim, classic hair spa, classic pedicure, skin brightening facial
-- **Classic — Women** ₹5,999 (was ₹8,830): Premier stylist, classic hair spa, gel polish, classic pedicure, eyebrow threading, skin brightening facial
-- **Premium — Men** ₹6,999 (was ₹11,000): Top stylist, beard trim, hair spa, spa pedicure, spa manicure, skin miracle facial
-- **Premium — Women** ₹7,999 (was ₹13,030): Top stylist, hair spa, spa pedicure, spa manicure, gel polish, eyebrow threading, half arm & half leg waxing, skin miracle facial
+- **Classic — Men** ₹4,999 (was ₹6,800): Top stylist, beard trim, classic hair spa, classic pedicure, face and neck detan
+- **Classic — Women** ₹5,999 (was ₹7,630): Top stylist, classic hair spa, classic pedicure, eyebrow threading, clean up
+- **Premium — Men** ₹7,999 (was ₹11,000): Top stylist, beard trim, L'Oréal hair spa, spa pedicure, spa manicure, skin miracle facial
+- **Premium — Women** ₹8,999 (was ₹13,030): Top stylist, L'Oréal hair spa, spa pedicure, spa manicure, gel polish, eyebrow threading, skin miracle facial
 - Variety, budget-saver and bridal packages are listed on the /menu page.
 
 ## BLOGS
 
-14 guides authored for the salon; see full list at /blogs:
+19 guides authored for the salon; see full list at /blogs:
 - 2026 Bridal Makeup Trends: 7 Stunning Looks Every Chennai Bride Must See
 - Keratin Treatment: The Complete Guide Before You Book Your Appointment
 - Professional Facials Changed My Skin: Here's Exactly What Each One Does
@@ -97,6 +98,11 @@ Prices below are from the salon's public price list (/menu) and are a guide; the
 - Hair Spa Treatment: 7 Reasons Your Hair Is Begging for One Right Now
 - How to Pick a Bridal Makeup Artist Who Won't Ruin Your Wedding Day Look
 - Keratin vs Smoothening: The Honest Comparison Nobody Tells You
+- Bridal Makeup Trial: What to Expect, What to Bring, and What to Ask
+- HD vs Airbrush Bridal Makeup: Which Is Better for a Chennai Wedding?
+- Bridal Makeup for Oily Skin in Chennai: A Humidity-Proof Plan
+- Bridal Makeup for Dusky, Brown and Wheatish Skin Tones
+- South Indian Bridal Makeup: Makeup, Hair, Jewellery and Saree Draping
 
 ## FAQ (SUMMARY)
 
@@ -106,7 +112,7 @@ Prices below are from the salon's public price list (/menu) and are a guide; the
 - **Languages:** English, Tamil, Hindi.
 - **Bridal trial:** ₹3,000, recommended 2–3 weeks before the wedding.
 - **Venue travel:** Outdoor charges from ₹3,000 depending on distance within Chennai.
-- **Saree draping:** Available for bridal bookings at ₹2,000.
+- **Saree draping:** Available for bridal bookings at ₹2,000. Pre-pleating and pinning can be booked separately.
 - **Treatment longevity:** Keratin/smoothing results typically last 3–6 months with sulfate-free home care.
 
 ## LLMS
@@ -127,6 +133,7 @@ Prices below are from the salon's public price list (/menu) and are a guide; the
 - [Fashion & Editorial Makeup](https://anaplakartandglamsalon.com/services/fashion-editorial-makeup-chennai): Photoshoot/runway makeup, consultation-priced
 - [Hair Styling](https://anaplakartandglamsalon.com/services/hair-styling-chennai): Cuts, blow-dry, updos — men & women
 - [Hair Treatment](https://anaplakartandglamsalon.com/services/hair-treatment-chennai): Keratin, smoothing, botox, nano plastia
+- [Hair Botox Treatment](https://anaplakartandglamsalon.com/services/hair-botox-treatment-chennai): Deep-conditioning repair for damaged hair from ₹8,000
 - [Hair Colouring](https://anaplakartandglamsalon.com/services/hair-coloring-chennai): Global colour, balayage, highlights, ammonia-free
 - [Hair Extensions](https://anaplakartandglamsalon.com/services/hair-extension-chennai): Tape, nano, clip-in extensions
 - [Facial Treatments](https://anaplakartandglamsalon.com/services/facial-treatments-chennai): Cleanup, brightening, premium facials

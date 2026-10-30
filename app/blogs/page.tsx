@@ -1,19 +1,21 @@
 "use client"
 
-import { useState, useMemo, useEffect, useCallback, useRef } from "react"
+import { useState, useMemo, useEffect, useRef } from "react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import PageHeader from "@/components/page-header"
 import BlogSearch from "@/components/blog/BlogSearch"
 import BlogList from "@/components/blog/BlogList"
+import BlogPagination from "@/components/blog/BlogPagination"
 import { blogData, getAllCategories, searchBlogs, getBlogsByCategory, BLOGS_PER_PAGE } from "@/data/blogData"
+import { BlogSort, sortBlogs } from "@/lib/blogSort"
 
 export default function BlogsPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
-  const [visibleCount, setVisibleCount] = useState(BLOGS_PER_PAGE)
-  const [loading, setLoading] = useState(false)
-  const loaderRef = useRef<HTMLDivElement>(null)
+  const [sortBy, setSortBy] = useState<BlogSort>("newest")
+  const [currentPage, setCurrentPage] = useState(1)
+  const listTopRef = useRef<HTMLDivElement>(null)
 
   const categories = useMemo(() => getAllCategories(), [])
 
@@ -28,49 +30,25 @@ export default function BlogsPage() {
       blogs = searchBlogs(searchQuery)
     }
 
-    return blogs.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-  }, [searchQuery, activeCategory])
+    return sortBlogs(blogs, sortBy)
+  }, [searchQuery, activeCategory, sortBy])
+
+  const totalPages = Math.max(1, Math.ceil(filteredBlogs.length / BLOGS_PER_PAGE))
 
   const displayedBlogs = useMemo(() => {
-    return filteredBlogs.slice(0, visibleCount)
-  }, [filteredBlogs, visibleCount])
-
-  const hasMore = visibleCount < filteredBlogs.length
-
-  const loadMore = useCallback(() => {
-    if (loading || !hasMore) return
-    setLoading(true)
-    setTimeout(() => {
-      setVisibleCount((prev) => Math.min(prev + BLOGS_PER_PAGE, filteredBlogs.length))
-      setLoading(false)
-    }, 600)
-  }, [loading, hasMore, filteredBlogs.length])
+    const start = (currentPage - 1) * BLOGS_PER_PAGE
+    return filteredBlogs.slice(start, start + BLOGS_PER_PAGE)
+  }, [filteredBlogs, currentPage])
 
   useEffect(() => {
-    setVisibleCount(BLOGS_PER_PAGE)
-  }, [searchQuery, activeCategory])
+    setCurrentPage(1)
+  }, [searchQuery, activeCategory, sortBy])
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && hasMore && !loading) {
-          loadMore()
-        }
-      },
-      { rootMargin: "200px" }
-    )
-
-    const currentLoader = loaderRef.current
-    if (currentLoader) {
-      observer.observe(currentLoader)
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages)
     }
-
-    return () => {
-      if (currentLoader) {
-        observer.unobserve(currentLoader)
-      }
-    }
-  }, [hasMore, loadMore, loading])
+  }, [currentPage, totalPages])
 
   const handleSearch = (query: string) => {
     setSearchQuery(query)
@@ -80,10 +58,15 @@ export default function BlogsPage() {
     setActiveCategory(category)
   }
 
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page)
+    listTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
   return (
     <main className="min-h-screen bg-black mt-10 md:mt-25">
       <Header />
-      
+
       <PageHeader
         label="Our Blogs"
         title="Beauty"
@@ -98,18 +81,26 @@ export default function BlogsPage() {
             onCategoryFilter={handleCategoryFilter}
             categories={categories}
             activeCategory={activeCategory}
+            sortBy={sortBy}
+            onSortChange={setSortBy}
           />
+
+          <div ref={listTopRef} className="scroll-mt-28" />
 
           <BlogList
             blogs={displayedBlogs}
-            priorityFirst
-            loading={loading}
+            priorityFirst={currentPage === 1}
+            loading={false}
             skeletonCount={BLOGS_PER_PAGE}
           />
 
-          {hasMore && !loading && (
-            <div ref={loaderRef} className="h-10" />
-          )}
+          <BlogPagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            totalItems={filteredBlogs.length}
+            pageSize={BLOGS_PER_PAGE}
+            onPageChange={handlePageChange}
+          />
         </div>
       </section>
 
